@@ -5,7 +5,7 @@
   font-synthesis: none;
   --bg: #fafbf9;
   --surface: #fff;
-  --sidebar: #f3f6f2;
+  --sen-sidebar: #f3f6f2;
   --text: #283d36;
   --muted: #839087;
   --line: #e5ebe5;
@@ -90,11 +90,11 @@ button:hover,
 a:hover {
   color: var(--green);
 }
-.sidebar {
+.sen-sidebar {
   width: 236px;
   position: fixed;
   inset: 0 auto 0 0;
-  background: var(--sidebar);
+  background: var(--sen-sidebar);
   border-right: 1px solid var(--line);
   padding: 38px 22px 24px;
   display: flex;
@@ -181,7 +181,7 @@ a:hover {
   background: var(--line);
   margin: 29px 16px;
 }
-.sidebar-bottom {
+.sen-sidebar-bottom {
   margin-top: auto;
   padding-top: 40px;
 }
@@ -786,7 +786,7 @@ h1 {
   line-height: 1.8;
 }
 .mobile-menu,
-.sidebar-scrim {
+.sen-sidebar-scrim {
   display: none;
 }
 .sr-only {
@@ -1202,7 +1202,7 @@ h1 {
   color-scheme: dark;
   --bg: #17221d;
   --surface: #202d25;
-  --sidebar: #19271f;
+  --sen-sidebar: #19271f;
   --text: #d6e1d6;
   --muted: #8d9f90;
   --line: #314034;
@@ -1286,7 +1286,7 @@ html[data-theme="dark"] .theme-switch i {
   }
 }
 @media (max-width: 1200px) {
-  .sidebar {
+  .sen-sidebar {
     width: 205px;
     padding-left: 14px;
     padding-right: 14px;
@@ -1353,7 +1353,7 @@ html[data-theme="dark"] .theme-switch i {
   }
 }
 @media (max-width: 960px) {
-  .sidebar {
+  .sen-sidebar {
     width: 185px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1467,7 +1467,7 @@ html[data-theme="dark"] .theme-switch i {
   }
 }
 @media (max-width: 700px) {
-  .sidebar {
+  .sen-sidebar {
     transform: translateX(-100%);
     width: 236px;
     transition: transform 0.2s;
@@ -1475,10 +1475,10 @@ html[data-theme="dark"] .theme-switch i {
   .workspace {
     margin-left: 0;
   }
-  .nav-open .sidebar {
+  .nav-open .sen-sidebar {
     transform: translateX(0);
   }
-  .nav-open .sidebar-scrim {
+  .nav-open .sen-sidebar-scrim {
     display: block;
     position: fixed;
     inset: 0;
@@ -1709,10 +1709,10 @@ html[data-theme="dark"] .theme-switch i {
   }
 }
 @media (max-width: 700px) {
-  .sidebar {
+  .sen-sidebar {
     visibility: hidden;
   }
-  .nav-open .sidebar {
+  .nav-open .sen-sidebar {
     visibility: visible;
   }
 }

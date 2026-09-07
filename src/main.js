@@ -155,7 +155,7 @@ function applyTheme() {
 }
 applyTheme();
 function shell() {
-  app.innerHTML = `<a class="skip-link" href="#main-content">跳到主要内容</a><aside class="sidebar" aria-label="主导航"><a href="#/" class="brand"><span class="brand-mark">森</span><span>森空间<small>A SPACE TO READ</small></span></a><div class="nav-caption">我的空间</div><nav class="main-nav"><button data-view="all">${icon("library")}<span>我的书架</span><small>${documents.length}</small></button><button data-view="recent">${icon("clock")}<span>最近阅读</span></button><button data-view="favorites">${icon("star")}<span>我的收藏</span><small id="favorite-count"></small></button></nav><div class="nav-divider"></div><div class="nav-caption">资料分类</div><nav class="category-nav">${[
+  app.innerHTML = `<a class="skip-link" href="#main-content">跳到主要内容</a><aside class="sen-sidebar" aria-label="主导航"><a href="#/" class="brand"><span class="brand-mark">森</span><span>森空间<small>A SPACE TO READ</small></span></a><div class="nav-caption">我的空间</div><nav class="main-nav"><button data-view="all">${icon("library")}<span>我的书架</span><small>${documents.length}</small></button><button data-view="recent">${icon("clock")}<span>最近阅读</span></button><button data-view="favorites">${icon("star")}<span>我的收藏</span><small id="favorite-count"></small></button></nav><div class="nav-divider"></div><div class="nav-caption">资料分类</div><nav class="category-nav">${[
     ["论文", "file"],
     ["书籍", "book"],
     ["笔记", "note"],
@@ -166,7 +166,7 @@ function shell() {
     )
     .join(
       "",
-    )}</nav><div class="sidebar-bottom"><div class="quiet-note"><span class="tiny-tree">✳</span><p>给思考留一点空间。</p><small>按自己的节奏，慢慢读。</small></div><button id="theme-toggle" class="theme-toggle"></button></div></aside><button class="sidebar-scrim" aria-label="关闭导航"></button><div class="workspace"><header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="打开导航">${icon("menu")}</button><span>个人阅读空间</span><span class="slash">/</span><span id="breadcrumb-current">我的书架</span></div><span class="local-status"><i></i>${storageAvailable ? "记录保存在此浏览器" : "当前浏览器无法保存记录"}</span></header><main id="main-content" tabindex="-1"></main><footer class="site-footer"><span>森空间 <span class="footer-dot">·</span> 读过的，正在读的，值得再读的。</span><span>以阅读，连接新的想法 ${icon("arrow")}</span></footer></div><div id="reader-root"></div>`;
+    )}</nav><div class="sen-sidebar-bottom"><div class="quiet-note"><span class="tiny-tree">✳</span><p>给思考留一点空间。</p><small>按自己的节奏，慢慢读。</small></div><button id="theme-toggle" class="theme-toggle"></button></div></aside><button class="sen-sidebar-scrim" aria-label="关闭导航"></button><div class="workspace"><header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="打开导航">${icon("menu")}</button><span>个人阅读空间</span><span class="slash">/</span><span id="breadcrumb-current">我的书架</span></div><span class="local-status"><i></i>${storageAvailable ? "记录保存在此浏览器" : "当前浏览器无法保存记录"}</span></header><main id="main-content" tabindex="-1"></main><footer class="site-footer"><span>森空间 <span class="footer-dot">·</span> 读过的，正在读的，值得再读的。</span><span>以阅读，连接新的想法 ${icon("arrow")}</span></footer></div><div id="reader-root"></div>`;
   document.querySelector(".brand").onclick = () => {
     view = "all";
     filter = "all";
@@ -187,7 +187,7 @@ function shell() {
   );
   document.querySelector(".mobile-menu").onclick = () =>
     document.body.classList.add("nav-open");
-  document.querySelector(".sidebar-scrim").onclick = () =>
+  document.querySelector(".sen-sidebar-scrim").onclick = () =>
     document.body.classList.remove("nav-open");
   document.querySelector("#theme-toggle").onclick = () => {
     persisted.theme = persisted.theme === "dark" ? "light" : "dark";
@@ -349,7 +349,7 @@ async function route() {
   const root = document.querySelector("#reader-root");
   root.innerHTML = "";
   document.querySelector(".workspace").inert = false;
-  document.querySelector(".sidebar").inert = false;
+  document.querySelector(".sen-sidebar").inert = false;
   const match = location.hash.match(/^#\/read\/([^/]+)$/);
   if (!match) {
     document.title = "森空间 · 我的书架";
@@ -367,7 +367,7 @@ async function route() {
   document.title = `${doc.title} · 森空间`;
   document.body.classList.add("reading");
   document.querySelector(".workspace").inert = true;
-  document.querySelector(".sidebar").inert = true;
+  document.querySelector(".sen-sidebar").inert = true;
   root.innerHTML = `<section class="reader" aria-label="文档阅读器"><header class="reader-header"><a href="#/" class="reader-back" aria-label="返回书架">${icon("back")}<span>书架</span></a><span class="reader-separator"></span><div class="reader-doc-title"><small>${doc.category} ${doc.sample ? "· 示例文档" : ""}</small><h1>${escapeHTML(doc.title)}</h1></div><div class="reader-actions">${bookmark(doc)}<button class="read-button complete-button ${initial.completed ? "is-complete" : ""}">${icon("check")}<span>${initial.completed ? "已读完" : "标记已读"}</span></button><a class="read-button primary" href="${assetURL(doc.file)}" download>${icon("download")}<span>下载原文</span></a></div></header><div id="reader-body"><div class="loading-state"><span class="spinner"></span>正在打开文档…</div></div><footer class="reader-footer"><span>${doc.type === "PDF" ? "PDF 阅读器" : "Markdown 阅读器"}</span><span id="reading-save-status">${storageAvailable ? "阅读进度自动保存在当前浏览器" : "本地存储不可用，进度仅在本页保留"}</span></footer></section>`;
   bindBookmarks(root);
   root.querySelector(".reader-back").focus();
