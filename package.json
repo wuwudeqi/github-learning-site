@@ -1,0 +1,38 @@
+{
+  "name": "github-learning-site",
+  "version": "1.0.0",
+  "description": "森空间 · 个人阅读资料库",
+  "scripts": {
+    "dev": "node scripts/catalog.mjs && vite",
+    "build": "node scripts/catalog.mjs && vite build && node scripts/check-size.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "catalog": "node scripts/catalog.mjs",
+    "format": "prettier --write src scripts index.html vite.config.js README.md .github/workflows/deploy.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuwudeqi/github-learning-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuwudeqi/github-learning-site/issues"
+  },
+  "homepage": "https://github.com/wuwudeqi/github-learning-site#readme",
+  "dependencies": {
+    "dompurify": "^3.4.15",
+    "highlight.js": "^11.12.0",
+    "lucide": "^1.42.0",
+    "marked": "^18.0.11",
+    "pdfjs-dist": "^6.3.289",
+    "vite": "^8.2.2"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "pdf-lib": "^1.17.1",
+    "prettier": "^3.9.6"
+  },
+  "type": "module",
+  "private": true
+}
