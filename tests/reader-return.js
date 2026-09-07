@@ -71,4 +71,4 @@ async (page) => {
     throw new Error("MOBILE_LAYOUT_BROKEN " + JSON.stringify(mobile));
   await page.setViewportSize({ width: 1440, height: 1000 });
   return "PASS: PDF return twice, preserved category, Markdown return, mobile layout.";
-};
+}

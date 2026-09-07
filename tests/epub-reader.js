@@ -175,4 +175,4 @@ async (page) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.getByRole("button", { name: "切换浅色外观", exact: true }).click();
   return "PASS: EPUB filter, text, images, sandbox, pagination, chapter TOC, font, CFI restore, download, dark theme, mobile, return layout.";
-};
+}
