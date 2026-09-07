@@ -3,6 +3,10 @@ import DOMPurify from "dompurify";
 import hljs from "highlight.js/lib/common";
 import "highlight.js/styles/github.css";
 export async function openReader(ctx) {
+  if (ctx.doc.type === "EPUB") {
+    const { openEPUB } = await import("./epub-reader.js");
+    return openEPUB(ctx);
+  }
   return ctx.doc.type === "PDF" ? openPDF(ctx) : openMarkdown(ctx);
 }
 async function openMarkdown({

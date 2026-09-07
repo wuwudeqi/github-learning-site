@@ -22,7 +22,7 @@ async function walk(dir) {
       continue;
     }
     const extension = path.extname(file).toLowerCase();
-    if (![".md", ".pdf"].includes(extension)) continue;
+    if (![".md", ".pdf", ".epub"].includes(extension)) continue;
     const relative = path.relative(content, file).split(path.sep).join("/");
     let meta,
       body = "";
@@ -33,10 +33,10 @@ async function walk(dir) {
     } else {
       try {
         meta = JSON.parse(
-          await readFile(file.replace(/\.pdf$/i, ".json"), "utf8"),
+          await readFile(file.replace(/\.(pdf|epub)$/i, ".json"), "utf8"),
         );
       } catch {
-        throw new Error(`${relative}: PDF 需要同名 .json 元数据文件`);
+        throw new Error(`${relative}: PDF / EPUB 需要同名 .json 元数据文件`);
       }
     }
     if (!meta.id || !/^[a-z0-9][a-z0-9-]*$/.test(meta.id) || ids.has(meta.id))
@@ -58,7 +58,7 @@ async function walk(dir) {
       tags: Array.isArray(meta.tags) ? meta.tags.map(String) : [],
       date: String(meta.date),
       sample: meta.sample === true,
-      type: extension === ".pdf" ? "PDF" : "MD",
+      type: extension.slice(1).toUpperCase(),
       file: `documents/${relative}`,
       size,
       searchText: body
@@ -89,6 +89,8 @@ await writeFile(
   path.join(output, "catalog.json"),
   JSON.stringify({ documents: docs }, null, 2),
 );
+// Regenerate vendor assets cleanly; stale copied files must not enter a release.
+await rm(path.join(output, "pdf-assets"), { recursive: true, force: true });
 for (const dir of ["cmaps", "standard_fonts", "wasm"]) {
   await cp(
     path.join(root, "node_modules/pdfjs-dist", dir),

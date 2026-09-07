@@ -123,9 +123,13 @@ function formatDate(date) {
 function badge(doc, large = false) {
   return `<span class="file-badge ${doc.type.toLowerCase()} ${large ? "large" : ""}" aria-label="${doc.type}"><span>${doc.type}</span></span>`;
 }
+function typeLabel(doc) {
+  return doc.type === "MD" ? "Markdown" : doc.type;
+}
 function progressLabel(doc) {
   const r = record(doc.id);
   if (r.completed) return "已读完";
+  if (doc.type === "EPUB" && r.chapter) return `读到：${escapeHTML(r.chapter)}`;
   if (doc.type === "PDF" && r.page)
     return `读到第 ${r.page}${r.pages ? ` / ${r.pages}` : ""} 页`;
   return r.visited
@@ -251,10 +255,11 @@ function renderLibrary() {
     .filter((d) => record(d.id).visited && !record(d.id).completed)
     .sort((a, b) => record(b.id).visited - record(a.id).visited)
     .slice(0, 2);
-  main.innerHTML = `<section class="page-heading"><div><div class="eyebrow">YOUR PERSONAL LIBRARY</div><h1>${titles[view]}<span class="heading-period">.</span></h1><p>${view === "all" ? "读过的，正在读的，值得再读的。" : view === "recent" ? "接着上次的地方，继续探索。" : view === "favorites" ? "把值得再读的内容，留在手边。" : "让好问题，带来新的理解。"}</p></div><label class="search-box">${icon("search")}<input id="search" type="search" placeholder="搜索标题、作者或正文…" value="${escapeHTML(query)}" aria-label="搜索资料" autocomplete="off"/><kbd>/</kbd></label></section>${view === "all" && !query ? `<section class="continue-section"><div class="section-heading"><h2>${recent.length ? "继续阅读" : "从这一页开始"}</h2><span>${recent.length ? "留在上次的地方，等你回来" : "你的阅读空间，准备好了"}</span></div><div class="continue-grid">${(recent.length ? recent : [documents[0], documents.find((d) => d.type === "PDF")].filter(Boolean)).map((d, i) => `<article class="continue-card ${i === 0 ? "featured" : ""}"><div class="card-top"><span class="mini-label">${d.category} ${d.sample ? " / 示例" : ""}</span>${bookmark(d)}</div><div class="card-content">${badge(d, true)}<div><h3><a href="#/read/${d.id}">${escapeHTML(d.title)}</a></h3><p>${record(d.id).visited ? progressLabel(d) : escapeHTML(d.description)}</p></div></div><div class="card-bottom"><div class="card-progress"><div class="track"><i style="width:${record(d.id).completed ? 100 : Math.min(100, Math.round((record(d.id).progress || 0) * 100))}%"></i></div><small>${record(d.id).visited ? progressLabel(d) : `${d.type === "PDF" ? "PDF 文档" : "Markdown 文档"} · ${formatSize(d.size)}`}</small></div><a class="read-button ${i === 0 ? "primary" : ""}" href="#/read/${d.id}">${record(d.id).visited ? "继续阅读" : "开始阅读"}${icon("next")}</a></div></article>`).join("")}</div></section>` : ""}<section class="library-section"><div class="section-heading library-title"><h2>${view === "all" ? "全部资料" : titles[view]} <span id="result-count" class="count-badge"></span></h2>${documents.every((d) => d.sample) ? '<span class="sample-note">当前内容为示例，可替换为你的资料</span>' : ""}</div><div class="library-toolbar"><div class="type-tabs" role="group" aria-label="文件类型筛选">${[
+  main.innerHTML = `<section class="page-heading"><div><div class="eyebrow">YOUR PERSONAL LIBRARY</div><h1>${titles[view]}<span class="heading-period">.</span></h1><p>${view === "all" ? "读过的，正在读的，值得再读的。" : view === "recent" ? "接着上次的地方，继续探索。" : view === "favorites" ? "把值得再读的内容，留在手边。" : "让好问题，带来新的理解。"}</p></div><label class="search-box">${icon("search")}<input id="search" type="search" placeholder="搜索标题、作者或正文…" value="${escapeHTML(query)}" aria-label="搜索资料" autocomplete="off"/><kbd>/</kbd></label></section>${view === "all" && !query ? `<section class="continue-section"><div class="section-heading"><h2>${recent.length ? "继续阅读" : "从这一页开始"}</h2><span>${recent.length ? "留在上次的地方，等你回来" : "你的阅读空间，准备好了"}</span></div><div class="continue-grid">${(recent.length ? recent : [documents[0], documents.find((d) => d.type === "PDF")].filter(Boolean)).map((d, i) => `<article class="continue-card ${i === 0 ? "featured" : ""}"><div class="card-top"><span class="mini-label">${d.category} ${d.sample ? " / 示例" : ""}</span>${bookmark(d)}</div><div class="card-content">${badge(d, true)}<div><h3><a href="#/read/${d.id}">${escapeHTML(d.title)}</a></h3><p>${record(d.id).visited ? progressLabel(d) : escapeHTML(d.description)}</p></div></div><div class="card-bottom"><div class="card-progress"><div class="track"><i style="width:${record(d.id).completed ? 100 : Math.min(100, Math.round((record(d.id).progress || 0) * 100))}%"></i></div><small>${record(d.id).visited ? progressLabel(d) : `${typeLabel(d)} 文档 · ${formatSize(d.size)}`}</small></div><a class="read-button ${i === 0 ? "primary" : ""}" href="#/read/${d.id}">${record(d.id).visited ? "继续阅读" : "开始阅读"}${icon("next")}</a></div></article>`).join("")}</div></section>` : ""}<section class="library-section"><div class="section-heading library-title"><h2>${view === "all" ? "全部资料" : titles[view]} <span id="result-count" class="count-badge"></span></h2>${documents.every((d) => d.sample) ? '<span class="sample-note">当前内容为示例，可替换为你的资料</span>' : ""}</div><div class="library-toolbar"><div class="type-tabs" role="group" aria-label="文件类型筛选">${[
     ["all", "全部"],
     ["PDF", "PDF"],
     ["MD", "Markdown"],
+    ["EPUB", "EPUB"],
   ]
     .map(
       ([val, title]) =>
@@ -262,7 +267,7 @@ function renderLibrary() {
     )
     .join(
       "",
-    )}</div><label class="sort-control">${icon("filter")}<select id="sort" aria-label="排序方式"><option value="newest">最近更新</option><option value="oldest">最早更新</option><option value="title">标题排序</option></select></label></div><div id="document-list"></div><div class="library-bottom"><span id="list-summary"></span><span>PDF / Markdown</span></div></section>`;
+    )}</div><label class="sort-control">${icon("filter")}<select id="sort" aria-label="排序方式"><option value="newest">最近更新</option><option value="oldest">最早更新</option><option value="title">标题排序</option></select></label></div><div id="document-list"></div><div class="library-bottom"><span id="list-summary"></span><span>PDF / Markdown / EPUB</span></div></section>`;
   document.querySelector("#search").oninput = (e) => {
     query = e.target.value;
     renderRows();
@@ -368,7 +373,7 @@ async function route() {
   document.body.classList.add("reading");
   document.querySelector(".workspace").inert = true;
   document.querySelector(".sen-sidebar").inert = true;
-  root.innerHTML = `<section class="reader" aria-label="文档阅读器"><header class="reader-header"><a href="#/" class="reader-back" aria-label="返回书架">${icon("back")}<span>书架</span></a><span class="reader-separator"></span><div class="reader-doc-title"><small>${doc.category} ${doc.sample ? "· 示例文档" : ""}</small><h1>${escapeHTML(doc.title)}</h1></div><div class="reader-actions">${bookmark(doc)}<button class="read-button complete-button ${initial.completed ? "is-complete" : ""}">${icon("check")}<span>${initial.completed ? "已读完" : "标记已读"}</span></button><a class="read-button primary" href="${assetURL(doc.file)}" download>${icon("download")}<span>下载原文</span></a></div></header><div id="reader-body"><div class="loading-state"><span class="spinner"></span>正在打开文档…</div></div><footer class="reader-footer"><span>${doc.type === "PDF" ? "PDF 阅读器" : "Markdown 阅读器"}</span><span id="reading-save-status">${storageAvailable ? "阅读进度自动保存在当前浏览器" : "本地存储不可用，进度仅在本页保留"}</span></footer></section>`;
+  root.innerHTML = `<section class="reader" aria-label="文档阅读器"><header class="reader-header"><a href="#/" class="reader-back" aria-label="返回书架">${icon("back")}<span>书架</span></a><span class="reader-separator"></span><div class="reader-doc-title"><small>${doc.category} ${doc.sample ? "· 示例文档" : ""}</small><h1>${escapeHTML(doc.title)}</h1></div><div class="reader-actions">${bookmark(doc)}<button class="read-button complete-button ${initial.completed ? "is-complete" : ""}">${icon("check")}<span>${initial.completed ? "已读完" : "标记已读"}</span></button><a class="read-button primary" href="${assetURL(doc.file)}" download>${icon("download")}<span>下载原文</span></a></div></header><div id="reader-body"><div class="loading-state"><span class="spinner"></span>正在打开文档…</div></div><footer class="reader-footer"><span>${typeLabel(doc)} 阅读器</span><span id="reading-save-status">${storageAvailable ? "阅读进度自动保存在当前浏览器" : "本地存储不可用，进度仅在本页保留"}</span></footer></section>`;
   bindBookmarks(root);
   root.querySelector(".reader-back").focus();
   const complete = root.querySelector(".complete-button");
