@@ -1,0 +1,9 @@
+PASS: equal character budget respected
+PASS: middle evidence lost by prefix, retained by targeted excerpt
+PASS: history paired; missing result is never fabricated as success
+PASS: normalization is idempotent for this protocol subset
+PASS: response failure injected after transaction commit
+PASS: retry after reconnect reuses the committed artifact
+PASS: same operation ID with changed parameters is rejected without side effects
+PASS: explicit new operation can create another artifact with identical parameters
+Scope: teaching subset, same-database transaction; no LLM, no external file export.
