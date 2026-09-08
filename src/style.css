@@ -1885,3 +1885,54 @@ html[data-theme="dark"] .file-badge.epub {
     padding: 6px 9px;
   }
 }
+
+/* File browsing follows the same quiet list style as the reading library. */
+.folder-breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+  font-size: 12px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.folder-breadcrumbs a,
+.document-path {
+  color: var(--accent, #237665);
+}
+.folder-breadcrumbs a:hover,
+.document-path:hover {
+  text-decoration: underline;
+}
+.folder-breadcrumbs [aria-current="page"] {
+  font-weight: 600;
+}
+.folder-badge {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 46px;
+  flex: 0 0 38px;
+  color: var(--accent, #237665);
+  background: var(--surface, #edf3ed);
+  border-radius: 6px;
+}
+.folder-badge svg {
+  width: 25px;
+  height: 25px;
+}
+.document-path {
+  display: block;
+  font-size: 10px;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+.folder-hint {
+  color: var(--muted, #77847a);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.folder-link {
+  overflow-wrap: anywhere;
+}

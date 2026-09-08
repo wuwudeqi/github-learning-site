@@ -13,6 +13,7 @@ async (page) => {
     await page
       .getByRole("button", { name: "切换浅色外观", exact: true })
       .click();
+  await page.locator('[data-view="书籍"]').click();
   await page.getByRole("button", { name: "EPUB", exact: true }).click();
   assert(
     (await page.locator(".document-table tbody tr").count()) > 0,

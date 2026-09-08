@@ -19,3 +19,13 @@ playwright-cli --session epub-reader run-code "$(cat tests/epub-reader.js)"
 ```
 
 使用原创 EPUB 示例检查正文、配图、禁用书内脚本、翻页、章节目录、字号、刷新后准确续读、下载、深色模式、手机布局与返回书架。
+
+## 文件夹浏览
+
+```bash
+node --test tests/folders.test.js
+playwright-cli --session folders open http://127.0.0.1:4173/github-learning-site/
+playwright-cli --session folders run-code "$(cat tests/folder-browser.js)"
+```
+
+目录单元测试覆盖多层目录、路径边界、隐藏非阅读附件、自然排序及包含中文和特殊字符的链接。浏览器检查覆盖章节顺序、刷新、返回、配图、收藏、搜索路径、空筛选、面包屑、历史记录、手机宽度和文档直达链接。请使用独立的浏览器测试会话；截图保存到 `output/playwright/`。现有阅读器回归也按目录入口进入资料。
