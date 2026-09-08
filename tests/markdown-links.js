@@ -6,7 +6,7 @@ async (page) => {
   await page.goto(base + "#/read/transformer-00-roadmap");
   const next = page
     .locator(".markdown-content")
-    .getByRole("link", { name: "第 01 章：必要基础", exact: true });
+    .getByRole("link", { name: "01 参数、预测与训练", exact: true });
   await next.waitFor();
   assert(
     (await next.getAttribute("href")) === "#/read/transformer-01-foundations",
@@ -17,7 +17,7 @@ async (page) => {
     "Same-tab navigation",
   );
   const external = page.locator(
-    '.markdown-content a[href="https://arxiv.org/abs/1706.03762"]',
+    '.markdown-content a[href="https://huggingface.co/docs/transformers/main/en/chat_templating"]',
   );
   assert(
     (await external.getAttribute("target")) === "_blank",
@@ -26,7 +26,7 @@ async (page) => {
   await next.click();
   await page
     .locator(".markdown-content h1")
-    .filter({ hasText: "第 01 章" })
+    .filter({ hasText: "参数、预测与训练" })
     .waitFor();
   await page.waitForFunction(() =>
     [...document.querySelectorAll(".markdown-content img")].every(
@@ -51,7 +51,7 @@ async (page) => {
   await next.click();
   const back = page
     .locator(".markdown-content")
-    .getByRole("link", { name: "学习路线", exact: true });
+    .getByRole("link", { name: "返回总览", exact: true });
   await back.waitFor();
   await back.click();
   await next.waitFor();
