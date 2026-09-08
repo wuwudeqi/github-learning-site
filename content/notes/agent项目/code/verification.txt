@@ -1,0 +1,16 @@
+test_01_join_fanout_and_preaggregation (__main__.Invariants.test_01_join_fanout_and_preaggregation) ... ok
+test_02_ratio_of_sums_not_average_of_ratios (__main__.Invariants.test_02_ratio_of_sums_not_average_of_ratios) ... ok
+test_03_zero_budget_is_undefined (__main__.Invariants.test_03_zero_budget_is_undefined) ... ok
+test_04_pinned_release_survives_new_release (__main__.Invariants.test_04_pinned_release_survives_new_release) ... ok
+test_05_retry_after_lost_response_returns_same_task (__main__.Invariants.test_05_retry_after_lost_response_returns_same_task) ... ok
+test_06_same_operation_changed_payload_conflicts (__main__.Invariants.test_06_same_operation_changed_payload_conflicts) ... ok
+test_07_new_intent_same_parameters_is_allowed (__main__.Invariants.test_07_new_intent_same_parameters_is_allowed) ... ok
+test_08_concurrent_duplicates_create_one_logical_task (__main__.Invariants.test_08_concurrent_duplicates_create_one_logical_task) ... ok
+test_09_actor_namespace_does_not_merge_tasks (__main__.Invariants.test_09_actor_namespace_does_not_merge_tasks) ... ok
+test_10_stale_worker_cannot_publish (__main__.Invariants.test_10_stale_worker_cannot_publish) ... ok
+test_11_json_key_order_does_not_change_hash (__main__.Invariants.test_11_json_key_order_does_not_change_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.052s
+
+OK

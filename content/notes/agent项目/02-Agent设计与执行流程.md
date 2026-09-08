@@ -21,11 +21,15 @@ tags: [LangGraph, 工具调用, 状态管理, Agent]
 以下是数据契约示意，不是可直接运行的框架代码。
 
 ```python
+from typing import TypedDict
+
 class AnalysisState(TypedDict):
     run_id: str
     thread_id: str
     request_text: str
     query_plan: dict | None
+    plan_revision: int
+    missing_fields: list[str]
     validated_plan_id: str | None
     clarification: dict | None
     release_id: str | None
@@ -33,6 +37,8 @@ class AnalysisState(TypedDict):
     evidence_refs: list[str]
     visited_queries: list[str]
     step_count: int
+    deadline_at: str
+    termination_reason: str | None
     export_operation_id: str | None
     export_task_id: str | None
     status: str
@@ -115,5 +121,119 @@ LangGraph 的 interrupt 可以暂停等待输入；恢复时相关节点可能�
 分析执行状态由 Python 统一管理，Java 只维护请求归属与 run_id 映射。Python 的受理事务写入 QUEUED 任务，后台 Worker 认领并驱动图；不能只在 HTTP 路由里启动内存协程。request_id 在受信用户范围内唯一，相同请求重试返回相同 run_id；同一 ID 携带不同内容应报冲突。恢复答案也用 command_id 去重并校验等待版本。
 
 停止包括：完成、需要用户输入、不可恢复错误、达到时间/步数预算和取消。首版页面轮询任务；后续若增加 SSE，连接断开仅停止传输。显式取消通过单独接口发出，在节点安全边界检查标记；已创建的导出任务需独立取消，不能认为取消 Agent 自动撤销业务操作。
+
+## 8. 深入面试：一次完整的“观察—决策—行动”
+
+只有状态图还不足以体现 Agent。需要把模型在每一轮看到了什么、允许决定什么、程序否决什么说清楚。
+
+### 一条具体的执行轨迹
+
+以下是合成案例设计，不是实际模型运行记录。
+
+| 步骤 | 已有观察 | 下一动作 | 谁作决定 |
+| --- | --- | --- | --- |
+| 1 | 用户要求“上半年研发预算执行” | 询问年初还是调整后预算 | 规则检测关键字段缺失，模型组织追问 |
+| 2 | 用户确认调整后预算、实际发生额 | 创建绑定 rel-001 的计划 | Java 校验并创建 |
+| 3 | 预算 120 万、实际 126 万 | 选择按费用类别拆分 | 模型从允许维度中选择 |
+| 4 | 外协差异 +8 万、设备差异 -2 万 | 下钻外协相关项目 | 模型根据结果选择；程序校验过滤收窄 |
+| 5 | P01 外协贡献 +7 万，其他外协 +1 万 | 读取 P01 可访问的说明，或标记缺少原因证据 | 模型选择是否需要补充证据 |
+| 6 | 已定位主要贡献，没有业务说明 | 返回差异事实和待核查项 | 程序检查停止条件，模型写解释 |
+
+“外协超支主要集中在 P01”可以由数据支持；“供应商涨价导致超支”不能由这组金额推出。若没有业务说明，必须保持为未确定原因。
+
+### 模型动作契约
+
+模型返回一个有界动作，而不是任意 Python 或 SQL。示意：
+
+```json
+{
+  "action": "DRILL_DOWN",
+  "dimension": "project",
+  "filters": [{"field": "expense_category", "op": "EQ", "value": "OUTSOURCE"}],
+  "evidence_refs": ["ev-category-001"],
+  "reason_code": "LOCATE_VARIANCE_CONTRIBUTOR"
+}
+```
+
+reason_code 是供用户和排查使用的简短决策依据，不要求输出模型内部思维链。执行器校验 dimension 在计划允许列表、filters 不扩大组织和时间范围、evidence_refs 属于当前计划、动作未重复且预算尚有余额。
+
+如果模型提出按“供应商”下钻，而预算仅有费用类别粒度，后端返回 UNSUPPORTED_DIMENSION；不能拿付款单供应商维度去伪造预算分摊。
+
+## 9. 工具设计：粒度、描述和协议匹配
+
+### 为什么不用一个 execute_sql 工具
+
+它把指标口径、连接路径、权限与查询成本同时交给模型判断；执行成功也无法说明结果正确。反过来，为每张报表建立一个工具又会产生大量语义相近的工具，增加选择错误和提示长度。
+
+本项目采用“少量能力型工具 + 受限查询计划”：查询预算执行、下钻明细、查询定义、创建导出。固定的是合法能力与计算规则，变化的是期间、粒度和过滤，因此不是把每个自然语言问题硬编码成一个接口。
+
+### 工具描述至少写四件事
+
+以 query_budget 为例：说明何时使用、前置有效计划、支持的维度、零预算/无数据的返回含义。加入反例：“不能用于查询付款流水，不能自行补全缺失预算版本”。明确错误码比泛泛写“查询财务数据”更有帮助。
+
+工具返回区分 NO_DATA、ZERO_VALUE、PARTIAL_DATA、FORBIDDEN。单纯返回空数组会让模型把不同情况混为一谈。分页结果必须标识完整性，模型不能根据前十行下结论说“全公司只有这些项目”。
+
+### Tool Calling 的调用 ID
+
+常见消息式调用中，模型生成工具名、参数和调用 ID，应用执行后将结果按该 ID 配对返回。多个工具结果不能仅按完成顺序拼接。并行调用只适用于无依赖且没有共享副作用的操作。
+
+模型调用 ID 是本轮协议关联标识，业务 operation_id 是一次操作的持久身份。重试后模型可能生成不同调用 ID，因此不能直接把它当作业务幂等键。
+
+## 10. 状态、记忆、证据和缓存为什么分开
+
+| 对象 | 生命周期 | 例子 | 不能承担的职责 |
+| --- | --- | --- | --- |
+| conversation | 用户连续交互 | “改成下半年” | 不能直接作为授权状态 |
+| run / checkpoint thread | 一次可恢复分析 | 追问前后状态 | 不自动代表跨任务长期记忆 |
+| query plan revision | 一组固定查询语义 | 时间、组织、预算口径 | 不能在进行中的导出里被修改 |
+| evidence | 一次确定性查询结果 | 126 万元汇总 | 不能跨版本随意复用 |
+| preference | 明确允许复用的偏好 | 默认显示万元 | 不能偷偷保存一次猜测为业务默认 |
+| cache | 可重建的加速数据 | 同版本同权限查询结果 | 不能作为任务完成事实来源 |
+
+本项目约定一个 run 对应一个 checkpoint thread。一个 UI 会话可以包含多个 run，后续问题通过显式继承已确认条件建立新计划。若采用框架 thread 承载整个长期会话的另一种映射，需要额外处理并发消息与新任务状态清理，不混用两种约定。
+
+### 条件继承与失效
+
+用户“换成下半年”时继承组织与预算口径，替换期间，创建新计划版本；汇总、明细与原因引用全部失效。用户“把结果显示成万元”只改变呈现，不必重新查询，但应保留原始精度。用户“用最新数据重算”创建绑定新发布版本的分析，不能覆盖旧证据。
+
+### 上下文预算
+
+将模型窗口分为固定指令、当前指标、已确认计划、近期工具摘要和输出余量，具体额度随模型与评测确定。先删除可重新查询的明细，再压缩历史叙述；指标口径、权限边界和有效计划必须保持结构化，不依赖摘要记住。
+
+删除历史工具交互时保持请求和结果配对；不要留下没有对应结果的调用记录。对于超长结果，返回证据 ID、汇总、总行数、截断标志和分页工具入口。
+
+## 11. LangGraph 追问：节点并非只执行一次
+
+StateGraph 的节点返回状态更新；并行写同一键要定义 reducer 或集中汇合。简单列表相加不一定幂等，重放和重复结果可能产生重复证据。本设计优先按 evidence_id 去重合并；查询计划由单一节点更新。[Graph API 文档](https://docs.langchain.com/oss/python/langgraph/graph-api)
+
+下面是接口级示意，需在锁定的依赖版本下集成测试，不是完整应用：
+
+```python
+from langgraph.types import interrupt
+
+def clarify(state):
+    # 此前只读取已持久化的缺失条件，不创建导出、不扣费。
+    answer = interrupt({
+        "plan_revision": state["plan_revision"],
+        "missing_fields": state["missing_fields"],
+    })
+    # 校验失败后由外层进入新的澄清轮次。
+    return validate_clarification(answer, state)
+```
+
+恢复使用原 thread_id 和 Command(resume=...)，节点在恢复时可能从头执行。不要用广泛的 try/except 把 interrupt 当普通失败吞掉。一个节点多个 interrupt 的次序也影响恢复值匹配；本项目一轮只放一个澄清点。[Interrupts 文档](https://docs.langchain.com/oss/python/langgraph/interrupts)
+
+导出拆为 prepare_export 和 submit_export：前者生成稳定 ID 并形成持久化边界，后者才调用 Java。需要验证所选持久化模式在进入副作用节点前确实完成必要状态写入。边界不足时，增加独立的操作意图表，不能假定“有 checkpoint 就一定不会重新生成 ID”。
+
+## 12. 什么时候停止，如何防止循环
+
+仅配置 recursion_limit 只能避免无限运行，无法说明分析是否充分。项目使用两类条件：
+
+- 硬条件：截止时间、模型调用次数、工具次数、最大下钻深度、重复规范化查询。
+- 业务条件：主要差异已定位、无进一步可用维度、没有新的证据、用户目标已完成。
+
+对于差异贡献覆盖率，按正向超支分别计算更容易解释；总差异可能被结余抵消，不用绝对值混算一个看似漂亮的占比。停止时返回 termination_reason，如 GOAL_MET、NO_MORE_EVIDENCE、BUDGET_EXHAUSTED，并说明还有什么未分析。
+
+不能只问模型“是否完成”，也不能达到三步就总是输出“已完成全面分析”。
 
 下一篇：[技术实现与工程边界](03-技术实现与工程边界.md)。
