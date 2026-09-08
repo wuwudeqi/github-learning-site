@@ -47,3 +47,30 @@ test("folder links preserve unicode, spaces and URL punctuation on refresh", () 
   ])
     assert.equal(parseBrowse(hash), null);
 });
+
+test("frontiers first at root, newest dates first, chapter filenames unchanged", () => {
+  const docs = [
+    doc("notes/a.md"),
+    doc("books/a.pdf", "PDF"),
+    doc("papers/a.pdf", "PDF"),
+    doc("frontiers/2026/09/2026-09-08/00.md"),
+    doc("frontiers/2026/09/2026-09-09/01.md"),
+    doc("frontiers/2025/12/2025-12-31/00.md"),
+  ];
+  assert.deepEqual(
+    folderEntries(docs).folders.map((f) => f.name),
+    ["frontiers", "papers", "books", "notes"],
+  );
+  assert.deepEqual(
+    folderEntries(docs, "frontiers").folders.map((f) => f.name),
+    ["2026", "2025"],
+  );
+  assert.deepEqual(
+    folderEntries(docs, "frontiers/2026/09").folders.map((f) => f.name),
+    ["2026-09-09", "2026-09-08"],
+  );
+  assert.deepEqual(parseBrowse(browseURL("前沿", "frontiers")), {
+    view: "前沿",
+    path: "frontiers",
+  });
+});

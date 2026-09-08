@@ -41,7 +41,10 @@ async function walk(dir) {
     }
     if (!meta.id || !/^[a-z0-9][a-z0-9-]*$/.test(meta.id) || ids.has(meta.id))
       throw new Error(`${relative}: id 必须为不重复的英文小写、数字或连字符`);
-    if (!meta.title || !["论文", "书籍", "笔记"].includes(meta.category))
+    if (
+      !meta.title ||
+      !["前沿", "论文", "书籍", "笔记"].includes(meta.category)
+    )
       throw new Error(`${relative}: 缺少标题或有效分类`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(String(meta.date)))
       throw new Error(`${relative}: date 必须是带引号的 YYYY-MM-DD`);

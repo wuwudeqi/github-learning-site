@@ -1,6 +1,16 @@
 // Folder paths are relative to content/. Only catalogued reading formats form entries.
-export const categoryRoots = { 论文: "papers", 书籍: "books", 笔记: "notes" };
-export const folderLabels = { papers: "论文", books: "书籍", notes: "笔记" };
+export const categoryRoots = {
+  前沿: "frontiers",
+  论文: "papers",
+  书籍: "books",
+  笔记: "notes",
+};
+export const folderLabels = {
+  frontiers: "前沿",
+  papers: "论文",
+  books: "书籍",
+  notes: "笔记",
+};
 export const readable = (doc) => ["MD", "PDF", "EPUB"].includes(doc.type);
 export const documentPath = (doc) => doc.file.replace(/^documents\//, "");
 export const parentPath = (doc) =>
@@ -27,7 +37,19 @@ export function folderEntries(docs, path = "") {
   }
   return {
     folders: [...folders.values()].sort((a, b) =>
-      naturalCompare(a.name, b.name),
+      !path
+        ? (Object.values(categoryRoots).indexOf(a.name) < 0
+            ? 99
+            : Object.values(categoryRoots).indexOf(a.name)) -
+            (Object.values(categoryRoots).indexOf(b.name) < 0
+              ? 99
+              : Object.values(categoryRoots).indexOf(b.name)) ||
+          naturalCompare(a.name, b.name)
+        : (path === "frontiers" || path.startsWith("frontiers/")) &&
+            /^\d{2,4}(?:-\d{2}){0,2}$/.test(a.name) &&
+            /^\d{2,4}(?:-\d{2}){0,2}$/.test(b.name)
+          ? naturalCompare(b.name, a.name)
+          : naturalCompare(a.name, b.name),
     ),
     files,
   };

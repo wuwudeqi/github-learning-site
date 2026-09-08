@@ -177,6 +177,7 @@ function applyTheme() {
 applyTheme();
 function shell() {
   app.innerHTML = `<a class="skip-link" href="#main-content">跳到主要内容</a><aside class="sen-sidebar" aria-label="主导航"><a href="#/" class="brand"><span class="brand-mark">夹</span><span>资料夹<small>A SPACE TO READ</small></span></a><div class="nav-caption">我的空间</div><nav class="main-nav"><button data-view="all">${icon("library")}<span>我的书架</span><small>${documents.length}</small></button><button data-view="recent">${icon("clock")}<span>最近阅读</span></button><button data-view="favorites">${icon("star")}<span>我的收藏</span><small id="favorite-count"></small></button></nav><div class="nav-divider"></div><div class="nav-caption">资料分类</div><nav class="category-nav">${[
+    ["前沿", "library"],
     ["论文", "file"],
     ["书籍", "book"],
     ["笔记", "note"],
@@ -283,6 +284,7 @@ function renderLibrary() {
     all: "我的书架",
     recent: "最近阅读",
     favorites: "我的收藏",
+    前沿: "前沿",
     论文: "论文",
     书籍: "书籍",
     笔记: "学习笔记",

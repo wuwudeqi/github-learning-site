@@ -7,8 +7,8 @@ async (page) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.locator(".folder-link").first().waitFor();
   assert(
-    (await page.locator(".folder-link").count()) === 3,
-    "Root has three folders",
+    (await page.locator(".folder-link").count()) === 4,
+    "Root has four folders",
   );
   await page.locator('[data-view="笔记"]').click();
   await page.getByRole("link", { name: "transformer", exact: true }).waitFor();
