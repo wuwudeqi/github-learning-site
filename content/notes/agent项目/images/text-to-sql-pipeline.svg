@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="550" viewBox="0 0 1200 550" role="img" aria-label="Text-to-SQL｜从问题到可信结果">
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9" fill="#55718a"/></marker></defs>
+<rect width="1200" height="550" fill="#f4f7fb"/>
+<g font-family="PingFang SC,Microsoft YaHei,sans-serif">
+<text x="40" y="45" font-size="27" font-weight="700" fill="#152b43">Text-to-SQL｜从问题到可信结果</text>
+<text x="40" y="78" font-size="16" fill="#526880">优化语义与任务正确性；不能以放松权限提高可执行率</text>
+<path d="M360 180 L438 180" fill="none" stroke="#55718a" stroke-width="2.2" marker-end="url(#a)"/>
+<path d="M760 180 L838 180" fill="none" stroke="#55718a" stroke-width="2.2" marker-end="url(#a)"/>
+<path d="M1000 240 L1000 348" fill="none" stroke="#55718a" stroke-width="2.2" marker-end="url(#a)"/>
+<path d="M840 410 L762 410" fill="none" stroke="#55718a" stroke-width="2.2" marker-end="url(#a)"/>
+<path d="M440 410 L362 410" fill="none" stroke="#55718a" stroke-width="2.2" marker-end="url(#a)"/>
+<path d="M600 350 L600 285 L1000 285 L1000 242" fill="none" stroke="#55718a" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="640" y="275" font-size="14" fill="#526880">可修正错误：回到生成并重新校验</text>
+<rect x="40" y="120" width="320" height="120" rx="12" fill="white" stroke="#b9ccdf"/>
+<rect x="40" y="120" width="5" height="120" rx="2" fill="#147e87"/>
+<text x="58" y="150" font-size="20" font-weight="600" fill="#152b43">1. 理解与澄清</text>
+<text x="58" y="179" font-size="16" fill="#526880">指标 · 期间 · 范围 · 口径</text>
+<rect x="440" y="120" width="320" height="120" rx="12" fill="white" stroke="#b9ccdf"/>
+<rect x="440" y="120" width="5" height="120" rx="2" fill="#147e87"/>
+<text x="458" y="150" font-size="20" font-weight="600" fill="#152b43">2. 相关元数据</text>
+<text x="458" y="179" font-size="16" fill="#526880">粒度 · 关联 · 单位</text>
+<text x="458" y="204" font-size="16" fill="#526880">已验证示例与定义版本</text>
+<rect x="840" y="120" width="320" height="120" rx="12" fill="white" stroke="#b9ccdf"/>
+<rect x="840" y="120" width="5" height="120" rx="2" fill="#147e87"/>
+<text x="858" y="150" font-size="20" font-weight="600" fill="#152b43">3. 计划与 SQL 候选</text>
+<text x="858" y="179" font-size="16" fill="#526880">先明确查询语义</text>
+<text x="858" y="204" font-size="16" fill="#526880">再生成限定方言 SQL</text>
+<rect x="840" y="350" width="320" height="120" rx="12" fill="white" stroke="#b9ccdf"/>
+<rect x="840" y="350" width="5" height="120" rx="2" fill="#147e87"/>
+<text x="858" y="380" font-size="20" font-weight="600" fill="#152b43">4. 静态与执行边界</text>
+<text x="858" y="409" font-size="16" fill="#526880">AST · 当前权限 · 资源限制</text>
+<text x="858" y="434" font-size="16" fill="#526880">绑定 validated_query_id</text>
+<rect x="440" y="350" width="320" height="120" rx="12" fill="white" stroke="#b9ccdf"/>
+<rect x="440" y="350" width="5" height="120" rx="2" fill="#147e87"/>
+<text x="458" y="380" font-size="20" font-weight="600" fill="#152b43">5. 执行与结果检查</text>
+<text x="458" y="409" font-size="16" fill="#526880">不变量 · 完整性 · 版本</text>
+<text x="458" y="434" font-size="16" fill="#526880">错误分类，有限修复</text>
+<rect x="40" y="350" width="320" height="120" rx="12" fill="white" stroke="#b9ccdf"/>
+<rect x="40" y="350" width="5" height="120" rx="2" fill="#147e87"/>
+<text x="58" y="380" font-size="20" font-weight="600" fill="#152b43">6. 物化与交付</text>
+<text x="58" y="409" font-size="16" fill="#526880">统一 result_id</text>
+<text x="58" y="434" font-size="16" fill="#526880">展示 / 导出共用结果</text>
+</g></svg>

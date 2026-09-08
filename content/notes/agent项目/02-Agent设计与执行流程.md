@@ -39,6 +39,11 @@ class AnalysisState(TypedDict):
     step_count: int
     deadline_at: str
     termination_reason: str | None
+    skill_revision: str | None
+    tool_catalog_hash: str | None
+    validated_query_id: str | None
+    result_ids: list[str]
+    artifact_job_id: str | None
     export_operation_id: str | None
     export_task_id: str | None
     status: str
@@ -49,6 +54,8 @@ class AnalysisState(TypedDict):
 状态保存计划与证据引用，不保存完整大表。证据对象单独存储，包含归属、版本、查询摘要和保留期。并行节点更新集合时使用明确的合并规则，或先汇集结果再由一个节点更新，防止覆盖与重复。
 
 ## 3. 节点与路由
+
+下面是基础指标路径。目标版本在 understand 后增加 Skill 选择与按需加载；validate_plan 按标准指标/探索 SQL 分支，后者加入 schema 检索、SQL 生成和校验。查询节点返回统一 result_id，最终交付调用产物服务。具体展开见第 07～10 篇，恢复与权限检查仍由固定节点承担。
 
 | 节点 | 工作 | 后续路由 |
 | --- | --- | --- |
@@ -79,6 +86,8 @@ class AnalysisState(TypedDict):
 
 工具名与字段是项目自定义契约。后端每次检查计划归属、当前权限、版本有效性与查询上限。不能因为模型提供了一个合法格式的计划 ID 就直接执行。
 
+目标版本以 [MCP 工具目录](07-Skills与MCP能力管理.md) 中的查询、SQL 校验、结果读取和产物能力为准。上表用于解释原有领域职责，可由适配器映射；不同时实现两套不同语义的预算查询。query_result 由 Java 管理，图状态只保存 ID 和有界摘要。
+
 统一返回结构：
 
 ```json
@@ -86,6 +95,7 @@ class AnalysisState(TypedDict):
   "ok": true,
   "data": {"budget": "1200000.00", "actual": "1260000.00", "execution_rate": "1.05"},
   "unit": "CNY",
+  "result_id": "res-demo-001",
   "release_id": "rel-demo-001",
   "evidence_id": "ev-demo-001",
   "truncated": false
@@ -236,4 +246,4 @@ def clarify(state):
 
 不能只问模型“是否完成”，也不能达到三步就总是输出“已完成全面分析”。
 
-下一篇：[技术实现与工程边界](03-技术实现与工程边界.md)。
+继续阅读：[Skills、MCP 与 Function Calling](07-Skills与MCP能力管理.md)，再进入[技术实现与工程边界](03-技术实现与工程边界.md)。
