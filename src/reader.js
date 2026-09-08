@@ -18,6 +18,8 @@ async function openMarkdown({
   assetURL,
   escapeHTML,
   icon,
+  resolveDocumentLink = () => null,
+  initialAnchor,
 }) {
   const response = await fetch(assetURL(doc.file));
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -60,13 +62,24 @@ async function openMarkdown({
   content.querySelectorAll("a[href]").forEach((a) => {
     const href = a.getAttribute("href");
     if (href.startsWith("#")) {
-      a.dataset.anchor = decodeURIComponent(href.slice(1));
+      try {
+        a.dataset.anchor = decodeURIComponent(href.slice(1));
+      } catch {
+        a.dataset.anchor = href.slice(1);
+      }
       return;
     }
     try {
       const target = new URL(href, url);
       if (!["http:", "https:", "mailto:"].includes(target.protocol)) {
         a.removeAttribute("href");
+        return;
+      }
+      const readerLink =
+        !a.hasAttribute("download") && resolveDocumentLink(href, url);
+      if (readerLink) {
+        a.href = readerLink;
+        a.removeAttribute("target");
         return;
       }
       a.href = target.href;
@@ -162,6 +175,10 @@ async function openMarkdown({
   );
   scroller.scrollTop =
     oldProgress * Math.max(0, scroller.scrollHeight - scroller.clientHeight);
+  if (initialAnchor) {
+    const targetId = slugs.get(initialAnchor) || initialAnchor;
+    headings.find((h) => h.id === targetId)?.scrollIntoView({ block: "start" });
+  }
   restoring = false;
   activeHeading();
   const flush = () => {

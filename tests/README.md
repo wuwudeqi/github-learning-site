@@ -29,3 +29,13 @@ playwright-cli --session folders run-code "$(cat tests/folder-browser.js)"
 ```
 
 目录单元测试覆盖多层目录、路径边界、隐藏非阅读附件、自然排序及包含中文和特殊字符的链接。浏览器检查覆盖章节顺序、刷新、返回、配图、收藏、搜索路径、空筛选、面包屑、历史记录、手机宽度和文档直达链接。请使用独立的浏览器测试会话；截图保存到 `output/playwright/`。现有阅读器回归也按目录入口进入资料。
+
+## Markdown 文档间跳转
+
+```bash
+node --test tests/document-links.test.js
+playwright-cli --session links open http://127.0.0.1:4173/github-learning-site/
+playwright-cli --session links run-code "$(cat tests/markdown-links.js)"
+```
+
+检查 00 与 01 双向跳转、同页阅读、浏览器后退和进度、外链与代码附件、跨文档标题定位，以及连续跳转后返回文件夹。

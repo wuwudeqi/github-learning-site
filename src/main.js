@@ -1,4 +1,5 @@
 import "./style.css";
+import { createDocumentLinkResolver } from "./document-links.js";
 import {
   categoryRoots,
   folderLabels,
@@ -104,6 +105,7 @@ try {
 }
 const app = document.querySelector("#app");
 let documents = [];
+let resolveDocumentLink = () => null;
 let view = "all",
   filter = "all",
   query = "",
@@ -427,7 +429,7 @@ async function route() {
   root.innerHTML = "";
   document.querySelector(".workspace").inert = false;
   document.querySelector(".sen-sidebar").inert = false;
-  const match = location.hash.match(/^#\/read\/([^/]+)$/);
+  const match = location.hash.match(/^#\/read\/([^/?]+)(?:\?(.*))?$/);
   if (!match) {
     const state = parseBrowse(location.hash);
     if (!state) {
@@ -483,6 +485,8 @@ async function route() {
     const cleanup = await openReader({
       doc,
       initial,
+      resolveDocumentLink,
+      initialAnchor: new URLSearchParams(match[2] || "").get("section"),
       element: document.querySelector("#reader-body"),
       onProgress: (patch) => {
         if (token !== routeToken) return;
@@ -534,6 +538,7 @@ try {
   const response = await fetch(assetURL("catalog.json"));
   if (!response.ok) throw new Error("资料目录加载失败");
   documents = (await response.json()).documents.filter(readable);
+  resolveDocumentLink = createDocumentLinkResolver(documents, assetURL);
   shell();
   renderLibrary();
   await route();
