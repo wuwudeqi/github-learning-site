@@ -1,4 +1,4 @@
-# 森空间
+# 资料夹
 
 一个部署在 GitHub Pages 上的个人阅读资料库。PDF、Markdown、EPUB 和阅读器资源均由本站提供，无外部 CDN、字体或在线预览服务。
 
@@ -40,7 +40,7 @@ npm run preview
 id: attention-notes
 title: 注意力机制阅读笔记
 category: 笔记
-author: 森
+author: 资料夹
 date: "2026-09-08"
 description: 用自己的话整理注意力机制。
 tags: [人工智能, 阅读笔记]
@@ -81,7 +81,7 @@ tags: [人工智能, 阅读笔记]
 
 工作流位于 `.github/workflows/deploy.yml`。在仓库 **Settings → Pages → Build and deployment** 中选择 **GitHub Actions**。推送 `main` 后会自动构建发布。
 
-站点地址：[森空间](https://wuwudeqi.github.io/github-learning-site/)。仓库已由所有者授权设为公开，使用免费的 GitHub Pages 与 GitHub Actions 发布。网站代码及资料均公开可访问。
+站点地址：[资料夹](https://wuwudeqi.github.io/github-learning-site/)。仓库已由所有者授权设为公开，使用免费的 GitHub Pages 与 GitHub Actions 发布。网站代码及资料均公开可访问。
 
 若更换仓库名或使用根域名，修改 `vite.config.js` 的 `base`。
 

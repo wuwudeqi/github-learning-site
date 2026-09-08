@@ -13,7 +13,7 @@ const paras = [
   "读完一段内容，试着合上书，用自己的话说明核心意思。如果仍然说不清楚，这不是失败，而是下一次阅读的方向。",
   "笔记可以很短：一个问题、一句解释、一个例子。不要急着把原文全部抄下来，更重要的是留下自己思考过的痕迹。",
   "隔一段时间回到同一页，你可能会注意到以前忽略的细节。新的经历会改变理解，而阅读也会改变我们观察事物的方式。",
-  "这些文字是森空间的原创示例，用于测试 EPUB 的中文排版、章节目录、翻页与进度恢复。它不是正式出版的书籍，可以直接替换为你自己的公开资料。",
+  "这些文字是资料夹的原创示例，用于测试 EPUB 的中文排版、章节目录、翻页与进度恢复。它不是正式出版的书籍，可以直接替换为你自己的公开资料。",
 ];
 zip.file(
   "OEBPS/styles.css",
@@ -26,7 +26,7 @@ zip.file(
 for (let i = 0; i < 3; i++)
   zip.file(
     `OEBPS/chapter-${i + 1}.xhtml`,
-    `<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN"><head><title>${titles[i]}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head><body><h1>${i + 1}. ${titles[i]}</h1>${i === 0 ? '<img src="images/reading.svg" alt="阅读示意图"/>' : ""}<p>森空间 · 原创 EPUB 示例</p>${Array.from({ length: 24 }, (_, n) => `${n % 6 === 0 ? `<h2>第 ${Math.floor(n / 6) + 1} 节 · 慢慢理解</h2>` : ""}<p>${paras[(n + i) % paras.length]}</p>`).join("")}</body></html>`,
+    `<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN"><head><title>${titles[i]}</title><link rel="stylesheet" type="text/css" href="styles.css"/></head><body><h1>${i + 1}. ${titles[i]}</h1>${i === 0 ? '<img src="images/reading.svg" alt="阅读示意图"/>' : ""}<p>资料夹 · 原创 EPUB 示例</p>${Array.from({ length: 24 }, (_, n) => `${n % 6 === 0 ? `<h2>第 ${Math.floor(n / 6) + 1} 节 · 慢慢理解</h2>` : ""}<p>${paras[(n + i) % paras.length]}</p>`).join("")}</body></html>`,
   );
 zip.file(
   "OEBPS/nav.xhtml",
@@ -34,7 +34,7 @@ zip.file(
 );
 zip.file(
   "OEBPS/content.opf",
-  `<?xml version="1.0" encoding="UTF-8"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="book-id" version="3.0"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:identifier id="book-id">urn:sen-space:epub-demo</dc:identifier><dc:title>慢慢读：森空间 EPUB 体验书</dc:title><dc:creator>森空间</dc:creator><dc:language>zh-CN</dc:language><meta property="dcterms:modified">2026-09-08T00:00:00Z</meta></metadata><manifest><item id="nav" href="nav.xhtml" properties="nav" media-type="application/xhtml+xml"/><item id="style" href="styles.css" media-type="text/css"/><item id="image" href="images/reading.svg" media-type="image/svg+xml"/>${titles.map((_, i) => `<item id="c${i + 1}" href="chapter-${i + 1}.xhtml" media-type="application/xhtml+xml"/>`).join("")}</manifest><spine>${titles.map((_, i) => `<itemref idref="c${i + 1}"/>`).join("")}</spine></package>`,
+  `<?xml version="1.0" encoding="UTF-8"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="book-id" version="3.0"><metadata xmlns:dc="http://purl.org/dc/elements/1.1/"><dc:identifier id="book-id">urn:sen-space:epub-demo</dc:identifier><dc:title>慢慢读：资料夹 EPUB 体验书</dc:title><dc:creator>资料夹</dc:creator><dc:language>zh-CN</dc:language><meta property="dcterms:modified">2026-09-08T00:00:00Z</meta></metadata><manifest><item id="nav" href="nav.xhtml" properties="nav" media-type="application/xhtml+xml"/><item id="style" href="styles.css" media-type="text/css"/><item id="image" href="images/reading.svg" media-type="image/svg+xml"/>${titles.map((_, i) => `<item id="c${i + 1}" href="chapter-${i + 1}.xhtml" media-type="application/xhtml+xml"/>`).join("")}</manifest><spine>${titles.map((_, i) => `<itemref idref="c${i + 1}"/>`).join("")}</spine></package>`,
 );
 await writeFile(
   "content/books/epub-demo.epub",
@@ -45,9 +45,9 @@ await writeFile(
   JSON.stringify(
     {
       id: "epub-demo",
-      title: "慢慢读：森空间 EPUB 体验书",
+      title: "慢慢读：资料夹 EPUB 体验书",
       category: "书籍",
-      author: "森空间 · 原创示例",
+      author: "资料夹 · 原创示例",
       date: "2026-09-08",
       description:
         "三章中文原创示例，体验 EPUB 翻页、章节目录、字号调整和阅读进度恢复。",

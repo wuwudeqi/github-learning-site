@@ -159,7 +159,7 @@ function applyTheme() {
 }
 applyTheme();
 function shell() {
-  app.innerHTML = `<a class="skip-link" href="#main-content">跳到主要内容</a><aside class="sen-sidebar" aria-label="主导航"><a href="#/" class="brand"><span class="brand-mark">森</span><span>森空间<small>A SPACE TO READ</small></span></a><div class="nav-caption">我的空间</div><nav class="main-nav"><button data-view="all">${icon("library")}<span>我的书架</span><small>${documents.length}</small></button><button data-view="recent">${icon("clock")}<span>最近阅读</span></button><button data-view="favorites">${icon("star")}<span>我的收藏</span><small id="favorite-count"></small></button></nav><div class="nav-divider"></div><div class="nav-caption">资料分类</div><nav class="category-nav">${[
+  app.innerHTML = `<a class="skip-link" href="#main-content">跳到主要内容</a><aside class="sen-sidebar" aria-label="主导航"><a href="#/" class="brand"><span class="brand-mark">夹</span><span>资料夹<small>A SPACE TO READ</small></span></a><div class="nav-caption">我的空间</div><nav class="main-nav"><button data-view="all">${icon("library")}<span>我的书架</span><small>${documents.length}</small></button><button data-view="recent">${icon("clock")}<span>最近阅读</span></button><button data-view="favorites">${icon("star")}<span>我的收藏</span><small id="favorite-count"></small></button></nav><div class="nav-divider"></div><div class="nav-caption">资料分类</div><nav class="category-nav">${[
     ["论文", "file"],
     ["书籍", "book"],
     ["笔记", "note"],
@@ -170,7 +170,7 @@ function shell() {
     )
     .join(
       "",
-    )}</nav><div class="sen-sidebar-bottom"><div class="quiet-note"><span class="tiny-tree">✳</span><p>给思考留一点空间。</p><small>按自己的节奏，慢慢读。</small></div><button id="theme-toggle" class="theme-toggle"></button></div></aside><button class="sen-sidebar-scrim" aria-label="关闭导航"></button><div class="workspace"><header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="打开导航">${icon("menu")}</button><span>个人阅读空间</span><span class="slash">/</span><span id="breadcrumb-current">我的书架</span></div><span class="local-status"><i></i>${storageAvailable ? "记录保存在此浏览器" : "当前浏览器无法保存记录"}</span></header><main id="main-content" tabindex="-1"></main><footer class="site-footer"><span>森空间 <span class="footer-dot">·</span> 读过的，正在读的，值得再读的。</span><span>以阅读，连接新的想法 ${icon("arrow")}</span></footer></div><div id="reader-root"></div>`;
+    )}</nav><div class="sen-sidebar-bottom"><div class="quiet-note"><span class="tiny-tree">✳</span><p>给思考留一点空间。</p><small>按自己的节奏，慢慢读。</small></div><button id="theme-toggle" class="theme-toggle"></button></div></aside><button class="sen-sidebar-scrim" aria-label="关闭导航"></button><div class="workspace"><header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="打开导航">${icon("menu")}</button><span>个人阅读空间</span><span class="slash">/</span><span id="breadcrumb-current">我的书架</span></div><span class="local-status"><i></i>${storageAvailable ? "记录保存在此浏览器" : "当前浏览器无法保存记录"}</span></header><main id="main-content" tabindex="-1"></main><footer class="site-footer"><span>资料夹 <span class="footer-dot">·</span> 读过的，正在读的，值得再读的。</span><span>以阅读，连接新的想法 ${icon("arrow")}</span></footer></div><div id="reader-root"></div>`;
   document.querySelector(".brand").onclick = () => {
     view = "all";
     filter = "all";
@@ -357,7 +357,7 @@ async function route() {
   document.querySelector(".sen-sidebar").inert = false;
   const match = location.hash.match(/^#\/read\/([^/]+)$/);
   if (!match) {
-    document.title = "森空间 · 我的书架";
+    document.title = "资料夹 · 我的书架";
     renderLibrary();
     return;
   }
@@ -369,7 +369,7 @@ async function route() {
   }
   const initial = { ...record(doc.id) };
   patchRecord(doc.id, { visited: Date.now() });
-  document.title = `${doc.title} · 森空间`;
+  document.title = `${doc.title} · 资料夹`;
   document.body.classList.add("reading");
   document.querySelector(".workspace").inert = true;
   document.querySelector(".sen-sidebar").inert = true;
@@ -445,6 +445,6 @@ try {
   await route();
 } catch (error) {
   console.error(error);
-  app.innerHTML = `<main class="startup-error"><span class="brand-mark">森</span><h1>书架暂时没有打开</h1><p>请检查网络连接，然后重新加载页面。</p><button class="read-button primary" id="reload">重新加载</button></main>`;
+  app.innerHTML = `<main class="startup-error"><span class="brand-mark">夹</span><h1>书架暂时没有打开</h1><p>请检查网络连接，然后重新加载页面。</p><button class="read-button primary" id="reload">重新加载</button></main>`;
   document.querySelector("#reload").onclick = () => location.reload();
 }

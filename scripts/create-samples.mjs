@@ -37,7 +37,7 @@ for (const item of examples) {
   for (let n = 0; n < item.pages; n++) {
     const page = pdf.addPage([595, 842]);
     const green = rgb(0.12, 0.39, 0.32);
-    page.drawText("SEN SPACE  /  ORIGINAL DEMO DOCUMENT", {
+    page.drawText("RESOURCE FOLDER  /  ORIGINAL DEMO DOCUMENT", {
       x: 54,
       y: 788,
       size: 9,
@@ -102,7 +102,7 @@ for (const item of examples) {
       y -= 18;
     }
     page.drawText(
-      `SEN SPACE     |     Demonstration copy                                      ${n + 1} / ${item.pages}`,
+      `RESOURCE FOLDER     |     Demonstration copy                                      ${n + 1} / ${item.pages}`,
       { x: 54, y: 38, size: 9, font: regular, color: green },
     );
   }
@@ -113,7 +113,7 @@ for (const item of examples) {
     JSON.stringify(
       {
         ...meta,
-        author: "森空间 · 原创示例",
+        author: "资料夹 · 原创示例",
         date: "2026-09-05",
         sample: true,
       },

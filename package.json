@@ -1,7 +1,7 @@
 {
   "name": "github-learning-site",
   "version": "1.0.0",
-  "description": "森空间 · 个人阅读资料库",
+  "description": "资料夹 · 个人阅读资料库",
   "scripts": {
     "dev": "node scripts/catalog.mjs && vite",
     "build": "node scripts/catalog.mjs && vite build && node scripts/check-size.mjs",
