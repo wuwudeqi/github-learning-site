@@ -36,11 +36,14 @@ async (page) => {
   assert(
     (
       await page
-        .locator(".markdown-content a")
-        .filter({ hasText: "01_linear_learning.py" })
-        .getAttribute("href")
-    ).endsWith("/code/01_linear_learning.py"),
-    "Code remains an asset link",
+        .locator(".markdown-content pre code.language-python")
+        .textContent()
+    ).includes("def update(samples, w, b, learning_rate):"),
+    "Complete training code is embedded in the article",
+  );
+  assert(
+    (await page.locator('.markdown-content a[href$=".py"]').count()) === 0,
+    "Code no longer requires a separate file link",
   );
   await page.goBack();
   await next.waitFor();
@@ -82,5 +85,5 @@ async (page) => {
     page.url().includes("/notes/transformer"),
     "Return to folder after document chain",
   );
-  return "PASS: 00 → 01 → 00, same tab, browser back/progress, external/code links, heading deep link, return folder";
+  return "PASS: 00 → 01 → 00, same tab, browser back/progress, external links, inline code, heading deep link, return folder";
 }
