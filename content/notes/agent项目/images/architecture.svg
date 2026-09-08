@@ -3,7 +3,7 @@
 <rect width="1100" height="650" fill="#f4f7fb"/>
 <g font-family="PingFang SC,Microsoft YaHei,sans-serif">
 <text x="45" y="48" font-size="28" font-weight="700" fill="#152b43">预算分析与导出 Agent｜整体架构</text>
-<text x="45" y="80" font-size="16" fill="#506580">设计方案 · 模型负责理解与决策，可信业务服务负责授权和执行</text>
+<text x="45" y="80" font-size="16" fill="#506580">两个应用 · 两个 Java 模块属于同一预算应用 · 分析持久化受理后在后台执行</text>
 <path d="M335 170 L398 170" stroke="#63748b" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M555 220 L555 283" stroke="#63748b" stroke-width="2" marker-end="url(#arrow)"/>
 <path d="M400 345 L337 345" stroke="#63748b" stroke-width="2" marker-end="url(#arrow)"/>
@@ -16,16 +16,16 @@
 <text x="65" y="179" font-size="16" fill="#506580">自然语言 · 口径确认 · 结果</text>
 <rect x="400" y="120" width="310" height="100" rx="12" fill="white" stroke="#bfd0e0"/>
 <rect x="400" y="120" width="5" height="100" rx="2" fill="#187d8b"/>
-<text x="420" y="151" font-size="20" font-weight="600" fill="#152b43">Java 接入层</text>
-<text x="420" y="179" font-size="16" fill="#506580">身份认证 · 会话归属 · 任务接口</text>
+<text x="420" y="151" font-size="20" font-weight="600" fill="#152b43">Java 预算应用：接入</text>
+<text x="420" y="179" font-size="16" fill="#506580">鉴权 · 提交任务 · 查询状态</text>
 <rect x="400" y="285" width="310" height="125" rx="12" fill="white" stroke="#bfd0e0"/>
 <rect x="400" y="285" width="5" height="125" rx="2" fill="#187d8b"/>
 <text x="420" y="316" font-size="20" font-weight="600" fill="#152b43">Python / LangGraph</text>
-<text x="420" y="344" font-size="16" fill="#506580">状态与路由 · 追问与下钻</text>
-<text x="420" y="368" font-size="16" fill="#506580">模型接入 · 检查点与恢复</text>
+<text x="420" y="344" font-size="16" fill="#506580">持久化受理 · 后台执行</text>
+<text x="420" y="368" font-size="16" fill="#506580">模型与路由 · 检查点与恢复</text>
 <rect x="775" y="285" width="280" height="125" rx="12" fill="white" stroke="#bfd0e0"/>
 <rect x="775" y="285" width="5" height="125" rx="2" fill="#187d8b"/>
-<text x="795" y="316" font-size="20" font-weight="600" fill="#152b43">Java 业务工具</text>
+<text x="795" y="316" font-size="20" font-weight="600" fill="#152b43">Java 预算应用：工具</text>
 <text x="795" y="344" font-size="16" fill="#506580">权限 · 指标 · 精确计算</text>
 <text x="795" y="368" font-size="16" fill="#506580">查询 · 异步导出 · 幂等</text>
 <rect x="45" y="285" width="290" height="125" rx="12" fill="white" stroke="#bfd0e0"/>

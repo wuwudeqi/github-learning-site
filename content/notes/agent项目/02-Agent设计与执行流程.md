@@ -49,8 +49,7 @@ class AnalysisState(TypedDict):
 | understand | 提取任务目标及候选指标 | resolve_metrics |
 | resolve_metrics | 获取相关指标与合法维度 | clarify 或 validate_plan |
 | clarify | 保存缺失条件，暂停等待回答 | 回答后重新校验计划 |
-| validate_plan | 后端校验参数、授权和业务定义 | bind_release 或明确错误 |
-| bind_release | 固定报表版本和定义版本 | query_summary |
+| validate_plan | 后端校验参数与授权，绑定数据和定义版本，创建有效计划 | query_summary 或明确错误 |
 | query_summary | 返回计算结果与证据引用 | decide_drilldown |
 | decide_drilldown | 模型从允许维度中选择下一步 | drilldown 或 compose |
 | drilldown | 执行受控明细分析 | 回到 decide_drilldown |
@@ -66,7 +65,7 @@ class AnalysisState(TypedDict):
 | 工具 | 核心输入 | 输出 |
 | --- | --- | --- |
 | resolve_metric | 指标关键词与分析意图 | 定义、别名、公式说明、可用维度 |
-| validate_query_plan | 指标、组织候选、期间、口径 | 有效计划 ID 或结构化错误 |
+| validate_query_plan | 指标、组织候选、期间、口径 | 绑定数据与定义版本的有效计划 ID 或结构化错误 |
 | query_budget | 有效计划 ID、允许的分组维度 | 汇总、单位、证据 ID、版本 |
 | query_detail | 有效计划 ID、明细筛选与分页 | 有界明细、总量、证据 ID |
 | create_export | 有效计划 ID、格式；可信层附加操作 ID | 任务 ID 与状态 |
@@ -113,6 +112,8 @@ LangGraph 的 interrupt 可以暂停等待输入；恢复时相关节点可能�
 
 同一 run 的恢复请求必须串行化或用版本比较控制，避免两个恢复同时执行。进程重启后先读取任务状态，不盲目重发所有工具。
 
-停止包括：完成、需要用户输入、不可恢复错误、达到时间/步数预算和取消。浏览器 SSE 断开仅停止传输；显式取消通过单独接口发出，后端在安全边界检查取消标记。
+分析执行状态由 Python 统一管理，Java 只维护请求归属与 run_id 映射。Python 的受理事务写入 QUEUED 任务，后台 Worker 认领并驱动图；不能只在 HTTP 路由里启动内存协程。request_id 在受信用户范围内唯一，相同请求重试返回相同 run_id；同一 ID 携带不同内容应报冲突。恢复答案也用 command_id 去重并校验等待版本。
+
+停止包括：完成、需要用户输入、不可恢复错误、达到时间/步数预算和取消。首版页面轮询任务；后续若增加 SSE，连接断开仅停止传输。显式取消通过单独接口发出，在节点安全边界检查标记；已创建的导出任务需独立取消，不能认为取消 Agent 自动撤销业务操作。
 
 下一篇：[技术实现与工程边界](03-技术实现与工程边界.md)。
