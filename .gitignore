@@ -7,3 +7,7 @@ output/
 .playwright-cli/
 .DS_Store
 .env*
+
+# Python examples
+__pycache__/
+*.py[cod]
