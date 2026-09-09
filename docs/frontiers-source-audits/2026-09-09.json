@@ -119,7 +119,12 @@
       "kind": "company",
       "selected": true,
       "order": 1,
-      "reason": "重大图像模型与产品发布；原首版漏收，必须收录"
+      "reason": "重大图像模型与产品发布；原首版漏收，必须收录",
+      "depthSources": [
+        "https://openai.com/index/introducing-chatgpt-images-2-5/",
+        "https://deploymentsafety.openai.com/chatgpt-images-2-5"
+      ],
+      "depthCheckedThrough": "2026-09-09T09:51:16+08:00"
     },
     {
       "id": "meta-muse",
@@ -130,7 +135,12 @@
       "kind": "company",
       "selected": true,
       "order": 3,
-      "reason": "大型平台个人 Agent 正式推出"
+      "reason": "大型平台个人 Agent 正式推出",
+      "depthSources": [
+        "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "https://research.meta.ai/blog/security-and-safety-for-ai-agents-our-approach-with-muse"
+      ],
+      "depthCheckedThrough": "2026-09-09T09:51:16+08:00"
     },
     {
       "id": "google-alphagenome-atlas",
@@ -141,7 +151,12 @@
       "kind": "company",
       "selected": true,
       "order": 4,
-      "reason": "大厂 AI 科研成果转成可用数据基础设施"
+      "reason": "大厂 AI 科研成果转成可用数据基础设施",
+      "depthSources": [
+        "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "https://github.com/google-deepmind/alphagenome"
+      ],
+      "depthCheckedThrough": "2026-09-09T09:51:16+08:00"
     },
     {
       "id": "microsoft-mdash-government",
@@ -152,7 +167,12 @@
       "kind": "company",
       "selected": true,
       "order": 5,
-      "reason": "受控生产环境的关键开放范围变化"
+      "reason": "受控生产环境的关键开放范围变化",
+      "depthSources": [
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/08/codename-mdash-brings-agentic-ai-security-scanning-to-us-government/",
+        "https://learn.microsoft.com/en-us/security-exposure-management/ai-code-security-overview"
+      ],
+      "depthCheckedThrough": "2026-09-09T09:51:16+08:00"
     },
     {
       "id": "qwen-work-collaboration",
@@ -414,7 +434,13 @@
       "kind": "company",
       "selected": true,
       "order": 2,
-      "reason": "重大研究公告，发布前逐标题复查发现后优先补入；准确限定官方主张与独立验证状态。"
+      "reason": "重大研究公告，发布前逐标题复查发现后优先补入；准确限定官方主张与独立验证状态。",
+      "depthSources": [
+        "https://openai.com/index/navier-stokes-solution/",
+        "https://github.com/openai/NavierStokesAndEuler",
+        "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf"
+      ],
+      "depthCheckedThrough": "2026-09-09T09:51:16+08:00"
     },
     {
       "id": "openai-quantum-case",
@@ -436,5 +462,12 @@
       "selected": false,
       "reason": "公司战略与既有研究进展综述，不把同一 Navier–Stokes 结果拆为第二条。"
     }
-  ]
+  ],
+  "depthReview": {
+    "checkedThrough": "2026-09-09T09:51:16+08:00",
+    "editedAt": "2026-09-09T09:53:58+08:00",
+    "scope": "仅重读并补充核验已入选前五条新闻；原15条选题及09:40选题截止、项目热度快照保持原记录。",
+    "format": "5条重点详解，每条约500至800中文字；10条速读。",
+    "limitations": "未运行图像模型、Muse、MDASH、AlphaGenome或Lean；场景示意与编辑解读不作为实测结果。"
+  }
 }
