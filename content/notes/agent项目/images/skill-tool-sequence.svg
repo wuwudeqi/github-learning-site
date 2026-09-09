@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1300" viewBox="0 0 680 1300" role="img" aria-labelledby="title desc">
+<title id="title">Skill、Function Calling、MCP 和 Java 一次调用的时序</title>
+<desc id="desc">从选择 Skill 到模型申请调用，运行层通过 MCP Client 发送查询，Java 校验并返回结果，最后结果按调用ID交回模型。说明了业务方法、模型申请、工具协议和实际计算的职责。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6C7E93"/></marker></defs>
+<rect width="680" height="1300" rx="22" fill="#F4F7FB"/>
+<g font-family="PingFang SC,Microsoft YaHei,Arial,sans-serif">
+  <text x="32" y="51" font-size="30" font-weight="700" fill="#16314F">查一次预算，谁负责哪一步</text>
+  <text x="32" y="88" font-size="22" fill="#52667C">请求：P01、P02 按部门做汇报</text>
+
+  <rect x="32" y="117" width="616" height="143" rx="16" fill="#FFF0D1" stroke="#E8C579" stroke-width="2"/>
+  <circle cx="66" cy="151" r="20" fill="#93611F"/><text x="66" y="159" text-anchor="middle" font-size="22" font-weight="700" fill="white">1</text>
+  <text x="100" y="159" font-size="24" font-weight="700" fill="#795018">运行层加载 Skill：任务怎么做</text>
+  <text x="56" y="201" font-size="24" fill="#624817">先确认预算口径，再查分摊结果</text>
+  <text x="56" y="237" font-size="22" fill="#7B622E">需要解释术语时，检索对应版本资料</text>
+  <path d="M340 261 V288" stroke="#6C7E93" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="32" y="298" width="616" height="143" rx="16" fill="#F1EBFF" stroke="#C5B1F6" stroke-width="2"/>
+  <circle cx="66" cy="332" r="20" fill="#7041AD"/><text x="66" y="340" text-anchor="middle" font-size="22" font-weight="700" fill="white">2</text>
+  <text x="100" y="340" font-size="24" font-weight="700" fill="#422372">模型返回 Function Calling 申请</text>
+  <text x="56" y="382" font-size="24" fill="#533576">工具 budget_query，计划 plan-demo-002</text>
+  <text x="56" y="418" font-size="22" fill="#604B7C">tool_call_id = call-17；此时尚未查数</text>
+  <path d="M340 442 V469" stroke="#6C7E93" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="32" y="479" width="616" height="143" rx="16" fill="#E8F0FF" stroke="#9DBDF3" stroke-width="2"/>
+  <circle cx="66" cy="513" r="20" fill="#315F9D"/><text x="66" y="521" text-anchor="middle" font-size="22" font-weight="700" fill="white">3</text>
+  <text x="100" y="521" font-size="24" font-weight="700" fill="#173D78">运行层检查 → MCP Client</text>
+  <text x="56" y="563" font-size="24" fill="#294F83">校验当前动作，再发 tools/call</text>
+  <text x="56" y="599" font-size="22" fill="#42658D">MCP 请求 id = mcp-41；身份可信注入</text>
+  <path d="M340 623 V650" stroke="#6C7E93" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="32" y="660" width="616" height="143" rx="16" fill="#E2F5EE" stroke="#7ABDA5" stroke-width="2"/>
+  <circle cx="66" cy="694" r="20" fill="#21745C"/><text x="66" y="702" text-anchor="middle" font-size="22" font-weight="700" fill="white">4</text>
+  <text x="100" y="702" font-size="24" font-weight="700" fill="#0D5842">Java MCP 适配器 → 原业务服务</text>
+  <text x="56" y="744" font-size="24" fill="#175D49">再查权限，按已审核规则计算</text>
+  <text x="56" y="780" font-size="22" fill="#276B58">D_A 预算 52 万、实际 56 万</text>
+  <path d="M340 804 V831" stroke="#6C7E93" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="32" y="841" width="616" height="143" rx="16" fill="#E8F0FF" stroke="#9DBDF3" stroke-width="2"/>
+  <circle cx="66" cy="875" r="20" fill="#315F9D"/><text x="66" y="883" text-anchor="middle" font-size="22" font-weight="700" fill="white">5</text>
+  <text x="100" y="883" font-size="24" font-weight="700" fill="#173D78">运行层验证结果，登记证据</text>
+  <text x="56" y="925" font-size="24" fill="#294F83">result_id = res-dept-001</text>
+  <text x="56" y="961" font-size="22" fill="#42658D">检查所属计划、数据版本、完整性</text>
+  <path d="M340 985 V1012" stroke="#6C7E93" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="32" y="1022" width="616" height="143" rx="16" fill="#F1EBFF" stroke="#C5B1F6" stroke-width="2"/>
+  <circle cx="66" cy="1056" r="20" fill="#7041AD"/><text x="66" y="1064" text-anchor="middle" font-size="22" font-weight="700" fill="white">6</text>
+  <text x="100" y="1064" font-size="24" font-weight="700" fill="#422372">模型收到 call-17 的工具响应</text>
+  <text x="56" y="1106" font-size="24" fill="#533576">决定继续下钻，或进入汇报生成</text>
+  <text x="56" y="1142" font-size="22" fill="#604B7C">完整数据留在服务端，模型读取摘要</text>
+
+  <rect x="32" y="1191" width="616" height="76" rx="14" fill="#17314F"/>
+  <text x="52" y="1223" font-size="23" font-weight="700" fill="#FFFFFF">Skill 是方法，FC 是申请，MCP 是接入。</text>
+  <text x="52" y="1252" font-size="21" fill="#DDEBF8">设计示意；示例金额不代表实际业务或已运行结果。</text>
+</g>
+</svg>

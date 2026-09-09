@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="1250" viewBox="0 0 680 1250" role="img" aria-labelledby="title desc">
+<title id="title">部门汇报中的 Agent 决策循环</title>
+<desc id="desc">员工提出汇报目标，模型提出动作，运行层检查，Java 查询计算，再交回模型决定继续下钻或生成报告。D_A 预算52万元、实际56万元为合成示例。</desc>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#536A85"/></marker>
+  <marker id="looparrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#7C3AED"/></marker>
+</defs>
+<rect width="680" height="1250" rx="22" fill="#F4F7FB"/>
+<g font-family="PingFang SC,Microsoft YaHei,Arial,sans-serif">
+  <text x="34" y="52" font-size="30" font-weight="700" fill="#16314F">一份汇报，怎样越查越清楚</text>
+  <text x="34" y="88" font-size="22" fill="#52667C">部门分摊示例 · 架构设计图</text>
+
+  <rect x="34" y="119" width="544" height="112" rx="16" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="56" y="155" font-size="22" fill="#52667C">员工提出目标</text>
+  <text x="56" y="194" font-size="25" font-weight="700" fill="#16314F">“两个项目按部门看，再做图表”</text>
+  <path d="M306 232 V259" stroke="#536A85" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="34" y="269" width="544" height="124" rx="16" fill="#F1EBFF" stroke="#C5B1F6" stroke-width="2"/>
+  <text x="56" y="307" font-size="22" fill="#6A3EA0">模型提出动作</text>
+  <text x="56" y="347" font-size="25" font-weight="700" fill="#422372">查询部门汇总，或继续下钻</text>
+  <text x="56" y="378" font-size="22" fill="#604B7C">提出工具名与参数，还没有执行</text>
+  <path d="M306 394 V421" stroke="#536A85" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="34" y="431" width="544" height="124" rx="16" fill="#E8F0FF" stroke="#9DBDF3" stroke-width="2"/>
+  <text x="56" y="469" font-size="22" fill="#2F5694">运行层检查</text>
+  <text x="56" y="509" font-size="25" font-weight="700" fill="#173D78">工具、当前计划、次数与参数</text>
+  <text x="56" y="540" font-size="22" fill="#42658D">不合法：解释问题或停止该动作</text>
+  <path d="M306 556 V583" stroke="#536A85" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="34" y="593" width="544" height="153" rx="16" fill="#E2F5EE" stroke="#7ABDA5" stroke-width="2"/>
+  <text x="56" y="631" font-size="22" fill="#21745C">Java 检查权限、执行规则与查询</text>
+  <text x="56" y="673" font-size="28" font-weight="700" fill="#0D5842">D_A：预算 52 万 / 实际 56 万</text>
+  <text x="56" y="715" font-size="22" fill="#276B58">保存 result_id、数据版本和完整性</text>
+  <path d="M306 747 V774" stroke="#536A85" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="34" y="784" width="544" height="146" rx="16" fill="#F1EBFF" stroke="#C5B1F6" stroke-width="2"/>
+  <text x="56" y="822" font-size="22" fill="#6A3EA0">模型观察真实结果</text>
+  <text x="56" y="862" font-size="25" font-weight="700" fill="#422372">差异 4 万，申请按项目查看</text>
+  <text x="56" y="899" font-size="22" fill="#604B7C">有新问题 → 新计划校验 → 再查询</text>
+  <path d="M578 854 H626 V332 H589" fill="none" stroke="#7C3AED" stroke-width="3" marker-end="url(#looparrow)"/>
+  <rect x="603" y="554" width="47" height="170" rx="12" fill="#F1EBFF"/>
+  <text x="626" y="585" text-anchor="middle" font-size="22" fill="#6A3EA0"><tspan x="626" dy="0">继</tspan><tspan x="626" dy="29">续</tspan><tspan x="626" dy="29">下</tspan><tspan x="626" dy="29">钻</tspan></text>
+  <path d="M306 931 V985" stroke="#536A85" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="183" y="946" width="248" height="30" fill="#F4F7FB"/>
+  <text x="306" y="970" text-anchor="middle" font-size="22" fill="#52667C">证据足够，或到达边界</text>
+
+  <rect x="34" y="995" width="544" height="131" rx="16" fill="#17314F"/>
+  <text x="56" y="1035" font-size="25" font-weight="700" fill="#FFFFFF">验证事实，生成汇报材料</text>
+  <text x="56" y="1076" font-size="23" fill="#DDEBF8">图表、Excel 都读取同一份结果</text>
+  <text x="56" y="1108" font-size="22" fill="#DDEBF8">未查明的原因，保留为待核查项</text>
+
+  <rect x="34" y="1151" width="612" height="65" rx="13" fill="#FFF0D1"/>
+  <text x="52" y="1179" font-size="22" font-weight="700" fill="#815014">模型选择下一步，金额来自业务服务。</text>
+  <text x="52" y="1205" font-size="20" fill="#815014">图中金额为合成示例，非实际业务或运行记录。</text>
+</g>
+</svg>

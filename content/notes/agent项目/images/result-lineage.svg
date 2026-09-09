@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="710" viewBox="0 0 960 710" role="img" aria-labelledby="title desc">
+<title id="title">一份结果，三种交付</title><desc id="desc">先保存固定查询结果，再从同一份数据生成查询表、图表和Excel；改变口径需要新结果。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#91a4be"/></marker></defs>
+<rect width="960" height="710" rx="24" fill="#f6f8fc"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, Microsoft YaHei, sans-serif">
+<text x="480" y="52" font-size="32" fill="#172b4d" font-weight="700" text-anchor="middle">一份结果，三种交付</text>
+<text x="480" y="86" font-size="21" fill="#52647e" font-weight="400" text-anchor="middle">查数结束后，图表和文件不再各自查库</text>
+<rect x="65" y="114" width="830" height="64" rx="14" fill="#eaf0ff" stroke="#b9ccf9" stroke-width="1.5"/>
+<text x="480" y="154" font-size="21" fill="#2864d7" font-weight="700" text-anchor="middle">已确认：P01/P02 ＋ 上半年 ＋ 部门口径 ＋ 指定规则</text>
+<line x1="480" y1="178" x2="480" y2="218" stroke="#91a4be" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="260" y="228" width="440" height="112" rx="14" fill="#fff" stroke="#83a6ec" stroke-width="1.5"/>
+<text x="480" y="263" font-size="25" fill="#2864d7" font-weight="700" text-anchor="middle">冻结结果  res-001</text>
+<text x="480" y="295" font-size="21" fill="#172b4d" font-weight="400" text-anchor="middle">D_A：预算 52 万，实际 56 万</text>
+<text x="480" y="324" font-size="21" fill="#172b4d" font-weight="400" text-anchor="middle">D_B：预算 68 万，实际 70 万</text>
+<line x1="480" y1="340" x2="480" y2="381" stroke="#91a4be" stroke-width="2.5"/>
+<line x1="170" y1="381" x2="790" y2="381" stroke="#91a4be" stroke-width="2.5"/>
+<line x1="170" y1="381" x2="170" y2="418" stroke="#91a4be" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="480" y1="381" x2="480" y2="418" stroke="#91a4be" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="790" y1="381" x2="790" y2="418" stroke="#91a4be" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="30" y="428" width="280" height="152" rx="14" fill="#fff" stroke="#d9e2ef" stroke-width="1.5"/>
+<rect x="340" y="428" width="280" height="152" rx="14" fill="#fff" stroke="#d9e2ef" stroke-width="1.5"/>
+<rect x="650" y="428" width="280" height="152" rx="14" fill="#fff" stroke="#d9e2ef" stroke-width="1.5"/>
+<text x="170" y="464" font-size="24" fill="#087f78" font-weight="700" text-anchor="middle">原查询数据</text>
+<text x="170" y="501" font-size="20" fill="#172b4d" font-weight="400" text-anchor="middle">完整行列、类型、精确值</text>
+<text x="170" y="538" font-size="21" fill="#52647e" font-weight="400" text-anchor="middle">JSONL / CSV</text>
+<text x="480" y="464" font-size="24" fill="#2864d7" font-weight="700" text-anchor="middle">图表</text>
+<text x="480" y="501" font-size="19" fill="#172b4d" font-weight="400" text-anchor="middle">ChartSpec 选字段与样式</text>
+<text x="480" y="535" font-size="20" fill="#172b4d" font-weight="400" text-anchor="middle">程序组装数组 → SVG</text>
+<text x="480" y="562" font-size="18" fill="#52647e" font-weight="400" text-anchor="middle">附真正绘制的 chart_data</text>
+<text x="790" y="464" font-size="24" fill="#087f78" font-weight="700" text-anchor="middle">Excel</text>
+<text x="790" y="501" font-size="19" fill="#172b4d" font-weight="400" text-anchor="middle">查询结果页 ＋ 图表数据页</text>
+<text x="790" y="538" font-size="20" fill="#172b4d" font-weight="400" text-anchor="middle">注明期间、口径与来源</text>
+<rect x="30" y="616" width="900" height="66" rx="14" fill="#fff4df" stroke="#edd299" stroke-width="1.5"/>
+<text x="480" y="644" font-size="20" fill="#a65f09" font-weight="700" text-anchor="middle">换颜色、排序、格式 → 复用结果</text>
+<text x="480" y="673" font-size="20" fill="#a65f09" font-weight="400" text-anchor="middle">换期间、项目或分摊轴 → 确认新计划，生成新结果</text>
+</g></svg>

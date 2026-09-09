@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="825" viewBox="0 0 960 825" role="img" aria-labelledby="title desc">
+<title id="title">同一个项目，不同授权能看到不同金额</title>
+<desc id="desc">P01 实际费用 77 万，D_A 承担 46.2 万，D_B 承担 30.8 万。只有 D_A 份额授权的用户不能获得项目全額、投资方视角或未经授权的原始明细。</desc>
+<rect width="960" height="825" rx="24" fill="#f8fafc"/>
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#172554">
+<text x="42" y="54" font-size="29" font-weight="700">看得到项目，不等于看得到全部金额</text>
+<text x="42" y="91" font-size="20" fill="#64748b">P01 合成算例：项目预算 70 万，实际费用 77 万</text>
+<text x="42" y="141" font-size="22" font-weight="700">项目实际费用：77 万</text>
+<rect x="42" y="160" width="525.6" height="85" rx="12" fill="#2563eb"/>
+<rect x="567.6" y="160" width="350.4" height="85" rx="12" fill="#e2e8f0"/>
+<text x="73" y="211" font-size="25" font-weight="700" fill="#fff">D_A：46.2 万</text>
+<text x="604" y="211" font-size="25" font-weight="700" fill="#475569">D_B：30.8 万</text>
+<text x="42" y="278" font-size="19" fill="#64748b">上图用于解释全量分摊；D_A 用户界面不因此获得 D_B 或项目全额。</text>
+<rect x="42" y="309" width="876" height="116" rx="16" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+<text x="67" y="348" font-size="23" font-weight="700" fill="#1d4ed8">授权 A：只看 D_A 部门份额</text>
+<text x="67" y="385" font-size="21">可以：D_A 预算 42 万 / 实际 46.2 万</text>
+<text x="67" y="413" font-size="18" fill="#475569">不能自动取得：D_B 金额、项目全额、投资方视角、个人薪酬</text>
+<rect x="42" y="446" width="876" height="110" rx="16" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="2"/>
+<text x="67" y="485" font-size="23" font-weight="700" fill="#047857">授权 B：看 P01 项目全额</text>
+<text x="67" y="522" font-size="21">可以：预算 70 万 / 实际 77 万；来源明细、敏感列仍需单独授权。</text>
+<rect x="42" y="577" width="876" height="110" rx="16" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+<text x="67" y="616" font-size="23" font-weight="700" fill="#6d28d9">从部门切到投资方：重新判断</text>
+<text x="67" y="653" font-size="21">新分摊轴 → 新规则与目标范围 → 新授权检查 → 新计划与结果</text>
+<rect x="42" y="717" width="876" height="73" rx="14" fill="#fff7ed" stroke="#fed7aa"/>
+<text x="67" y="748" font-size="21" font-weight="700" fill="#9a3412">比例也可能泄露：46.2 万 ÷ 60% ＝ 77 万</text>
+<text x="67" y="777" font-size="19" fill="#9a3412">只允许份额时，精确比例与分摊前总额也要一起检查可见性。</text>
+</g></svg>
