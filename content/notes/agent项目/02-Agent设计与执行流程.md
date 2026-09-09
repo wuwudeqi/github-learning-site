@@ -1,249 +1,334 @@
 ---
 id: budget-agent-design
-title: Agent 项目｜Agent 设计与执行流程
+title: Agent 项目｜从汇报需求到可信结果的执行设计
 category: 笔记
 author: 个人整理
-date: "2026-09-08"
-description: 单 Agent 的状态、工具契约、路由、追问、上下文和恢复设计。
-tags: [LangGraph, 工具调用, 状态管理, Agent]
+date: "2026-09-09"
+description: 围绕多项目及不同分摊口径，设计需求计划、有效计划、澄清、下钻、变更失效、工具契约和可恢复执行。
+tags: [LangGraph, 工具调用, 状态管理, Agent, 分摊口径]
 ---
 
-# Agent 设计与执行流程
+# 从汇报需求到可信结果的执行设计
 
-## 1. 编排方式
+> 本文是基于真实业务背景提出的 Agent 方案，尚不代表线上实现。工具名、字段、版本及运行轨迹均为项目自定义示例，金额为合成数据。必须区分“模型建议”“后端批准”和“实际执行结果”。
 
-采用受控状态图：固定节点保障权限、校验、版本绑定和副作用处理；模型用于理解问题、选择下钻方向和组织解释。这是包含 Agent 决策的工作流，不把整个系统描述成完全自主规划。
+## 1. Agent 要完成什么业务任务
+
+原系统已经集中项目、预算、项目支出、人力费用和投资方相关数据，卡片、图表由开发定制。员工仍需要理解页面入口、筛选条件和分摊口径，临时汇报则导出 Excel 二次加工。Agent 应把“学会系统以后才能取数”改成“描述汇报任务，系统帮助补齐条件并完成取数与加工”。
+
+典型请求：
+
+> 整理 P01、P02 上半年的预算执行情况，按部门看，找出主要费用差异，给我图表和 Excel，附上原查询数据。
+
+交付包含四件可核对的东西：已采用的业务口径、确定性查询结果、关联证据的解释、基于同一结果生成的文件。查不到原因时输出待核查项，不能把金额变化推测成真实业务原因。
+
+本文采用的**实践假设**：部门、重量级团队、投资是同一项目的独立分摊观察轴；预算和实际费用分别绑定已审核的分摊规则。不能把不同轴的结果相加，也不能把部门比例乘以投资比例推导“部门 × 投资方”的联合分摊。真实系统若维护联合规则，应作为单独受控能力接入。
+
+## 2. 受控状态图：哪些判断交给模型
 
 ![Agent 执行流程](./images/flow.svg)
 
-## 2. 状态设计
+图示表达主流程；本项目查询前的“口径”具体包含分摊轴、预算定义、费用范围及各自的规则版本。
 
-以下是数据契约示意，不是可直接运行的框架代码。
+| 阶段 | 模型可以决定 | 程序必须决定 |
+| --- | --- | --- |
+| 理解需求 | 判断“我们部门”可能指组织筛选还是部门分摊，提出候选解释 | 当前用户、可访问项目、候选项合法性 |
+| 形成计划 | 提取项目、期间、指标、分摊轴和呈现要求 | 条件是否缺失、规则是否存在、组合能否计算 |
+| 观察结果 | 按项目或费用类别继续查，或结束分析 | 下钻范围、当前权限、查询预算、重复动作 |
+| 解释结论 | 组织事实、对比和待核查项 | 金额及比率计算、引用归属、完整性 |
+| 生成材料 | 建议卡片或图表类型、排列顺序 | 结果版本、图表配置校验、导出幂等和授权 |
 
-```python
-from typing import TypedDict
+固定流程并不排除 Agent：看到部门 D_A 的差异后，模型可以选择按项目拆分，再判断是否需要费用类别。但它不能重新定义分摊公式，也不能绕过有效计划直接查库。
 
-class AnalysisState(TypedDict):
-    run_id: str
-    thread_id: str
-    request_text: str
-    query_plan: dict | None
-    plan_revision: int
-    missing_fields: list[str]
-    validated_plan_id: str | None
-    clarification: dict | None
-    release_id: str | None
-    metric_version: str | None
-    evidence_refs: list[str]
-    visited_queries: list[str]
-    step_count: int
-    deadline_at: str
-    termination_reason: str | None
-    skill_revision: str | None
-    tool_catalog_hash: str | None
-    validated_query_id: str | None
-    result_ids: list[str]
-    artifact_job_id: str | None
-    export_operation_id: str | None
-    export_task_id: str | None
-    status: str
+首版使用单 Agent。核心复杂度在业务口径、证据和执行可靠性，拆成多个“财务专家 Agent”会先增加上下文传递与结论冲突成本。待单 Agent 评测显示独立子任务确有收益，再考虑并行。
+
+## 3. 两份计划：用户想查什么，系统实际执行什么
+
+### 3.1 requested_plan 保留原始意图与条件来源
+
+“按部门看”至少涉及三个不同概念：`project_scope` 选择哪些项目，`allocation_axis` 选择哪个规则轴计算承担金额，`group_by` 决定在合法分摊结果上按什么粒度呈现。
+
+部门分摊不等于按项目所属部门做 `GROUP BY`。一个项目可以分摊给多个部门；“查看 D_A 承担的费用”也不意味着用户拥有 D_A 全部数据权限。
+
+下面是模型提议的需求计划，`null` 表示待确认，不是让模型猜一个值：
+
+```json
+{
+  "project_scope": {"mode": "EXPLICIT", "project_refs": ["P01", "P02"]},
+  "period": {"start": "2026-01-01", "end_exclusive": "2026-07-01"},
+  "metric_id": "budget_execution",
+  "budget_basis": null,
+  "actual_basis": "ACCRUED",
+  "expense_scope": "labor_and_other_project_costs",
+  "allocation_axis": "DEPARTMENT",
+  "group_by": ["allocation_target_id"],
+  "requested_outputs": ["chart", "xlsx", "query_data"],
+  "field_sources": {
+    "allocation_axis": "USER_EXPLICIT",
+    "period": "USER_EXPLICIT",
+    "actual_basis": "PUBLISHED_METRIC_DEFAULT"
+  }
+}
 ```
 
-身份、授权与凭证放在服务端可信执行上下文，不由模型输出决定。持久化状态也不是授权依据：恢复任务和下载时仍然重新鉴权。
+字段来源区分用户明确表达、已确认上下文、已发布业务默认和模型推断。只有来源可靠且无冲突的值才能自动继承。业务默认必须能从目录查到，不能把模型多次猜中当成默认规则。
 
-状态保存计划与证据引用，不保存完整大表。证据对象单独存储，包含归属、版本、查询摘要和保留期。并行节点更新集合时使用明确的合并规则，或先汇集结果再由一个节点更新，防止覆盖与重复。
+### 3.2 effective_plan 是 Java 创建的执行合同
 
-## 3. 节点与路由
+Java 将名称映射为合法 ID，检查项目范围、规则覆盖、粒度、期间和授权，形成不可变有效计划：
 
-下面是基础指标路径。目标版本在 understand 后增加 Skill 选择与按需加载；validate_plan 按标准指标/探索 SQL 分支，后者加入 schema 检索、SQL 生成和校验。查询节点返回统一 result_id，最终交付调用产物服务。具体展开见第 07～10 篇，恢复与权限检查仍由固定节点承担。
+```json
+{
+  "effective_plan_id": "plan-demo-002",
+  "plan_revision": 2,
+  "project_ids": ["P01", "P02"],
+  "period": {"start": "2026-01-01", "end_exclusive": "2026-07-01"},
+  "budget_basis": "ADJUSTED",
+  "actual_basis": "ACCRUED",
+  "allocation_axis": "DEPARTMENT",
+  "group_by": ["allocation_target_id"],
+  "metric_version": "metric-v1",
+  "allocation_rule_bundle_id": "alloc-bundle-v1",
+  "budget_rule_version": "budget-dept-v1",
+  "actual_rule_version": "actual-dept-v1",
+  "comparison_policy": "APPROVED_SAME_BASIS",
+  "rounding_policy": "PER_FACT_LARGEST_REMAINDER_V1",
+  "data_release": "rel-001",
+  "rule_binding_manifest_id": "bindings-demo-001",
+  "scope_binding_id": "scope-demo-001",
+  "allowed_drilldowns": ["project", "expense_category"],
+  "query_route": "TRUSTED_METRIC"
+}
+```
 
-| 节点 | 工作 | 后续路由 |
+规则包 `alloc-bundle-v1` 固定预算与实际各自命中的规则和比较策略。示例 `APPROVED_SAME_BASIS` 表示已审核的可比口径，不能仅凭版本字符串相等判断可比；不同规则也可以比较，但必须有已批准策略，并在结果中解释差异。`PER_FACT_LARGEST_REMAINDER_V1` 表示本例采用逐事实分摊与最大余数分配的舍入策略，具体算法见技术实现篇。
+
+真实规则可能按项目、费用类别和生效期选择，不能假定一个版本号对应全公司所有比例。这里的两个 `rule_version` 表示规则集合版本，`rule_binding_manifest_id` 指向本次实际命中的项目、期间及规则明细，便于复核。
+
+执行节点使用 Java 返回的计划 ID，不用模型复制回来的对象作为权威。计划保存授权范围以便追溯，但不冻结权限：每次执行和读取仍校验当前授权。用户明确要求无权范围时拒绝或说明可选范围，不能偷偷缩小以后仍标成“全公司”。
+
+标准预算执行走可信指标能力；临时字段组合可进入受限 Text-to-SQL，但 SQL 也绑定同一有效计划及允许数据集。两条路径返回统一 `result_id`，不能形成两套分摊公式。
+
+## 4. 状态契约：恢复、证据和版本都要可追踪
+
+以下是项目逻辑字段，不是框架内置 Schema。
+
+| 状态组 | 字段 | 不变量 |
 | --- | --- | --- |
-| understand | 提取任务目标及候选指标 | resolve_metrics |
-| resolve_metrics | 获取相关指标与合法维度 | clarify 或 validate_plan |
-| clarify | 保存缺失条件，暂停等待回答 | 回答后重新校验计划 |
-| validate_plan | 后端校验参数与授权，绑定数据和定义版本，创建有效计划 | query_summary 或明确错误 |
-| query_summary | 返回计算结果与证据引用 | decide_drilldown |
-| decide_drilldown | 模型从允许维度中选择下一步 | drilldown 或 compose |
-| drilldown | 执行受控明细分析 | 回到 decide_drilldown |
-| compose | 生成事实、说明与待核查项 | verify_answer |
-| verify_answer | 数值、引用、权限输出检查 | prepare_export 或 finish |
-| prepare_export | 持久化操作 ID 与冻结参数 | submit_export |
-| submit_export | 创建或查询已有导出任务 | 返回任务入口 |
+| 任务 | run_id、thread_id、request_id、status | 一个 run 对应一个 checkpoint thread，UI 会话可关联多个 run |
+| 需求 | request_text、requested_plan、field_sources、plan_revision | 用户新意图形成新修订，不覆盖历史 |
+| 执行合同 | effective_plan_id、effective_plan_summary、validated_query_id | 只能接收可信 Java 返回值 |
+| 语义版本 | allocation_axis、metric_version、allocation_rule_bundle_id、budget_rule_version、actual_rule_version、comparison_policy、rounding_policy、data_release、rule_binding_manifest_id | 计算条件变化，旧证据不能支撑新结论 |
+| 方法版本 | skill_revision、guidance_revision_refs、tool_catalog_hash、template_revision | 固定本次实际使用的内容和合同 |
+| 等待 | pending_question、waiting_revision、resume_command_id | 只消费属于当前等待修订的回答，重复恢复可去重 |
+| 证据 | result_ids、active_evidence_refs、evidence_plan_revision | 完整数据在结果服务，状态只存引用与有界摘要 |
+| 控制 | visited_query_hashes、step_count、deadline_at、termination_reason | 重复动作、超时或无新证据时有出口 |
+| 副作用 | artifact_intent_id、export_operation_id、artifact_job_id | 稳定操作 ID 在调用产物服务前持久化 |
 
-循环必须具有硬上限，例如最多三次下钻、重复查询摘要时停止；具体数值为初始实验配置，并非生产最佳值。没有新证据或数据不足时直接结束并说明限制。
+**可信执行上下文与模型状态分开。** actor、租户、服务凭证、委托关系和当前权限来自认证层，不由用户文本、Skill 或模型参数提供。检查点只保存受控上下文引用，恢复时重新取得当前授权，不能把历史权限集合装载为有效授权。
 
-## 4. 工具契约
+状态字段区分写入者：模型生成候选计划与动作，校验节点写有效计划，工具节点写结果引用。把整个状态交给模型随意修改，会让“标记已校验”变成可伪造文本。
 
-| 工具 | 核心输入 | 输出 |
+并行读取携带计划修订号。迟到结果若属于旧修订，只保留审计记录，不进入当前证据集合。证据按 ID 去重，避免列表累加在重放时制造重复结论。LangGraph 的状态更新与 reducer 需要显式设计。[Graph API 文档](https://docs.langchain.com/oss/python/langgraph/graph-api)
+
+## 5. 何时必须澄清，何时直接执行
+
+减少培训成本不是把页面字段换成一长串对话。只有会实质改变金额、范围或解释的歧义才阻止执行。
+
+| 用户表达或系统条件 | 行为 | 原因 |
 | --- | --- | --- |
-| resolve_metric | 指标关键词与分析意图 | 定义、别名、公式说明、可用维度 |
-| validate_query_plan | 指标、组织候选、期间、口径 | 绑定数据与定义版本的有效计划 ID 或结构化错误 |
-| query_budget | 有效计划 ID、允许的分组维度 | 汇总、单位、证据 ID、版本 |
-| query_detail | 有效计划 ID、明细筛选与分页 | 有界明细、总量、证据 ID |
-| create_export | 有效计划 ID、格式；可信层附加操作 ID | 任务 ID 与状态 |
-| get_export_status | 任务 ID | 状态、进度、下载入口或错误 |
+| “按部门看”；项目归属和费用承担均可能，无合法默认 | 问“看项目所属部门，还是部门分摊后的承担金额？” | 两种统计对象不同 |
+| “预算执行”；年初/调整预算均可用，无发布默认 | 问采用哪种预算 | 分母不同会改变执行率 |
+| “我们团队”；组织目录中有多个匹配 | 给出可访问候选，要求选择 | 不靠名称相似猜组织 ID |
+| “把全部导出”；已有明确有效计划 | 导出该计划完整授权结果，显示范围及行数 | 通常是去掉预览分页，不是扩大权限 |
+| “同样一份，改成柱状图” | 复用结果，修改合法 ChartSpec | 呈现不改变查询语义 |
+| “改按投资看” | 继承项目/期间，重新验证规则与授权 | 改变分摊计算，不能只换图例 |
+| 缺少本期已审核分摊规则 | 返回 RULE_COVERAGE_GAP 及受影响范围 | 不自动均分或套用别的项目比例 |
+| 已发布默认显示万元，用户没有冲突要求 | 应用并在条件区显示 | 无损显示单位无需额外追问 |
 
-工具名与字段是项目自定义契约。后端每次检查计划归属、当前权限、版本有效性与查询上限。不能因为模型提供了一个合法格式的计划 ID 就直接执行。
+一次追问一个关键分歧，解释选择含义；已确认条件不重复问。可靠的会话条件可以明确标注“沿用上次项目范围”。用户只要图表时，不强制先走异常分析。
 
-目标版本以 [MCP 工具目录](07-Skills与MCP能力管理.md) 中的查询、SQL 校验、结果读取和产物能力为准。上表用于解释原有领域职责，可由适配器映射；不同时实现两套不同语义的预算查询。query_result 由 Java 管理，图状态只保存 ID 和有界摘要。
+## 6. 完整轨迹：部门汇报，然后切换投资视图
 
-统一返回结构：
+### 6.1 可手工核对的合成输入
+
+仅为便于演示，本例预算和实际在部门轴采用相同比例，真实设计仍分别绑定各自已审核规则。实际费用包含人力费用和其他项目支出，费用分类的互斥性、完整性由指标目录声明。
+
+| 项目 | 调整后预算 | 实际费用 | D_A 比例 | D_B 比例 |
+| --- | ---: | ---: | ---: | ---: |
+| P01 | 700,000 | 770,000 | 60% | 40% |
+| P02 | 500,000 | 490,000 | 20% | 80% |
+| 项目合计（分摊前） | 1,200,000 | 1,260,000 | — | — |
+
+金额单位为元。演示主体可查看这两个项目及两个部门的完整分摊结果，因此可检验轴内总额守恒。真实受限用户只看到部分份额时，不要求可见小计等于全项目总额，也不能借核对暴露隐藏金额。
+
+### 6.2 每一步的输入、决定和证据
+
+| 步骤 | 发生什么 | 固化什么 |
+| --- | --- | --- |
+| 1. 接收 | 用户提出 P01、P02 上半年部门汇报及图表、Excel、查询数据要求 | 原文、request_id、候选 requested_plan |
+| 2. 定义解析 | 目录说明部门分摊视图；预算有两种且无默认 | 合法轴、指标含义、缺失 budget_basis |
+| 3. 澄清 | 用户选择调整后预算 | plan_revision=2、来源 USER_CONFIRMED |
+| 4. 校验 | Java 验证项目、规则覆盖和授权，绑定数据及规则版本 | plan-demo-002，候选计划不能冒充执行结果 |
+| 5. 汇总 | D_A 预算 520,000、实际 560,000；D_B 预算 680,000、实际 700,000 | res-dept-001、单位、完整性和版本 |
+| 6. 决策 | D_A 差异 40,000，大于 D_B 的 20,000；建议先按项目拆 D_A | 动作、依据结果 ID、reason_code |
+| 7. 下钻 | 创建同数据与规则版本的派生计划，限制 D_A，按项目查询 | P01 差异 +42,000，P02 差异 −2,000，合计 +40,000 |
+| 8. 解释 | 可说“D_A 超支主要来自 P01”；无说明时不写“人力投入增加导致” | 事实与原因分开，原因缺口作为待核查项 |
+| 9. 交付 | 核对引用，可信服务生成卡片数据、SVG、Excel和查询数据 | 同一组 result_id、报告清单、稳定导出操作 ID |
+
+D_A 预算为 `700000 × 60% + 500000 × 20% = 520000`；实际为 `770000 × 60% + 490000 × 20% = 560000`。执行率由服务计算为 `560000 / 520000 ≈ 107.69%`，不能平均两个项目的执行率。
+
+若需要解释人力费用贡献，必须确认预算与实际都有可比较的费用分类及分摊规则。只有实际人力明细、没有人力预算时，可以说明“实际费用构成”，不能构造“人力预算超支”。
+
+### 6.3 用户说“同样一份，改按投资看”
+
+1. 继承项目、上半年、调整后预算和输出形式，生成新计划修订；allocation_axis 改为 INVESTOR。
+2. 清空当前可用于新结论的部门结果引用、下钻筛选和数据型图表配置。旧结果保留历史，已有部门导出仍标为部门视图。
+3. Java 检查投资轴支持情况、当前授权、预算/实际投资分摊规则及完整性。原发布版本若不包含对应规则，不能静默切到新数据，应明确选择可用的完整版本。
+4. 创建新有效计划和结果。不能把 D_A、D_B 标签改成投资方，也不能从部门份额乘出投资方金额。
+5. 对话显示“沿用上半年与调整后预算，改为投资维度”；最终报告呈现投资轴及规则，不沿用部门结论。
+
+如果只说“单位改成万元”，则保留计算结果，产生新的呈现版本，不必重查数据库。这是语义变化与显示变化的区别。
+
+## 7. 节点与工具契约
+
+| 节点 | 职责 | 后续 |
+| --- | --- | --- |
+| understand | 提取意图、选择主 Skill，构造 requested_plan | resolve_context |
+| resolve_context | 获取授权范围内的指标、轴、能力及说明版本 | clarify / validate_plan |
+| clarify | 保存一个关键分歧并等待 | 回答后重做条件与版本校验 |
+| validate_plan | Java 创建 effective_plan | 标准指标 / 受限 SQL 分支 |
+| execute_query | 可信服务执行并保存统一结果 | observe |
+| observe | 读取摘要，决定下钻或交付 | 派生计划校验 / compose |
+| compose | 组织事实、说明与待核查项 | verify_output |
+| verify_output | 核对数值、单位、引用、范围、完整性 | prepare_artifact / finish |
+| prepare_artifact | 冻结结果和配置，持久化稳定操作 ID | submit_artifact |
+| submit_artifact | 创建或查询幂等产物任务 | 返回任务入口 |
+
+完整 MCP 目录在第 03 篇，这里仅保留执行主链。以下为项目逻辑合同，不是已经实现的 API。
+
+| 工具 | 模型可提供的参数 | 可信服务返回 |
+| --- | --- | --- |
+| budget_resolve_context | 项目候选、意图、期间、轴候选 | 合法指标/轴/粒度、规则可用性、条件歧义 |
+| budget_validate_plan | requested_plan；下钻时附 parent_plan_id | effective_plan_id、语义摘要、版本或错误 |
+| budget_query | effective_plan_id | result_id、schema、汇总、完整性、版本 |
+| budget_get_result | result_id、合法分页游标、所需字段 | 有界数据、总行数和截断标志 |
+| budget_create_artifact | result_ids、合法格式、ChartSpec、模板 | artifact_job_id、状态 |
+
+budget_query 不允许模型临时覆盖已校验期间、维度或过滤。条件变化必须建立派生计划，由 Java 检查父计划、版本和范围。总行数、总金额也可能敏感，返回前同样受授权控制。
+
+一个成功结果摘要：
 
 ```json
 {
   "ok": true,
-  "data": {"budget": "1200000.00", "actual": "1260000.00", "execution_rate": "1.05"},
+  "result_id": "res-dept-001",
+  "effective_plan_id": "plan-demo-002",
+  "allocation_axis": "DEPARTMENT",
   "unit": "CNY",
-  "result_id": "res-demo-001",
-  "release_id": "rel-demo-001",
-  "evidence_id": "ev-demo-001",
-  "truncated": false
+  "rows": [
+    {"allocation_target_id": "D_A", "budget": "520000.00", "actual": "560000.00", "variance": "40000.00"},
+    {"allocation_target_id": "D_B", "budget": "680000.00", "actual": "700000.00", "variance": "20000.00"}
+  ],
+  "row_count": 2,
+  "completeness": "COMPLETE",
+  "truncated": false,
+  "data_release": "rel-001"
 }
 ```
 
-金额使用十进制字符串传输，后端用精确十进制处理。错误返回 error_code、retryable、用户可理解的信息和 trace_id，不把堆栈、凭证或内部 SQL直接交给模型。
+金额使用十进制字符串传输，Java 精确计算。模型不负责组装大量数据数组，完整数据、schema 和版本清单存于结果服务。
 
-## 5. 模型指令与上下文
+错误按处理语义分类：AMBIGUOUS_BASIS 进入澄清；RULE_COVERAGE_GAP 指向缺失规则；JOINT_ALLOCATION_UNSUPPORTED 拒绝无依据的联合分摊；FORBIDDEN 不重试提权；TEMPORARY_UNAVAILABLE 才考虑有界重试。NO_DATA、ZERO_VALUE、PARTIAL_DATA 分别表示无记录、真实为零、不完整，不能统一返回空数组。
 
-模型上下文包含任务目标、相关指标定义、已确认条件、可用工具和有界结果摘要。组织权限由后端执行，提示词仅解释行为边界。
+## 8. 动作边界、上下文与停止条件
 
-指令约束：不得自行编造指标与组织；缺少关键条件必须返回 clarification；数值只能引用工具证据；业务原因必须关联说明来源；检索内容和用户输入不能修改工具授权或系统规则。
-
-结构化输出只保证结果满足某种结构约束，不能保证业务含义正确，因此仍需校验指标组合、组织映射和期间范围。[LangChain 结构化输出文档](https://docs.langchain.com/oss/python/langchain/structured-output)
-
-会话记录用于理解“换成下半年”等跟进问题。新问题如果改变期间、组织或预算口径，需要生成新有效计划，并使旧的证据与导出参数失效。不同 run 的数据不能仅因同一会话而混用。
-
-## 6. 追问与人工介入
-
-用户没有说明预算版本，且系统没有合法默认规则时，生成一个具体问题：“采用年初预算还是调整后预算？”保存当前状态后等待。恢复接口校验 thread/run 归属、当前等待状态以及回答是否针对同一计划版本。
-
-LangGraph 的 interrupt 可以暂停等待输入；恢复时相关节点可能重新从头执行，因此 interrupt 前的逻辑需可重复执行，外部副作用应拆成独立节点并实现幂等。[官方 interrupts 文档](https://docs.langchain.com/oss/python/langgraph/interrupts)
-
-本项目查询和用户明确要求的导出无需额外审批。人工介入主要用于口径澄清，不人为增加每一步确认。
-
-## 7. 持久化与恢复
-
-开发演示可以用文件型存储，故障恢复实验使用持久化 checkpointer；纯内存状态不能证明跨进程恢复。检查点负责图状态，业务任务表负责操作执行事实，两者通过稳定操作 ID 关联。[LangGraph 持久化文档](https://docs.langchain.com/oss/python/langgraph/persistence)
-
-同一 run 的恢复请求必须串行化或用版本比较控制，避免两个恢复同时执行。进程重启后先读取任务状态，不盲目重发所有工具。
-
-分析执行状态由 Python 统一管理，Java 只维护请求归属与 run_id 映射。Python 的受理事务写入 QUEUED 任务，后台 Worker 认领并驱动图；不能只在 HTTP 路由里启动内存协程。request_id 在受信用户范围内唯一，相同请求重试返回相同 run_id；同一 ID 携带不同内容应报冲突。恢复答案也用 command_id 去重并校验等待版本。
-
-停止包括：完成、需要用户输入、不可恢复错误、达到时间/步数预算和取消。首版页面轮询任务；后续若增加 SSE，连接断开仅停止传输。显式取消通过单独接口发出，在节点安全边界检查标记；已创建的导出任务需独立取消，不能认为取消 Agent 自动撤销业务操作。
-
-## 8. 深入面试：一次完整的“观察—决策—行动”
-
-只有状态图还不足以体现 Agent。需要把模型在每一轮看到了什么、允许决定什么、程序否决什么说清楚。
-
-### 一条具体的执行轨迹
-
-以下是合成案例设计，不是实际模型运行记录。
-
-| 步骤 | 已有观察 | 下一动作 | 谁作决定 |
-| --- | --- | --- | --- |
-| 1 | 用户要求“上半年研发预算执行” | 询问年初还是调整后预算 | 规则检测关键字段缺失，模型组织追问 |
-| 2 | 用户确认调整后预算、实际发生额 | 创建绑定 rel-001 的计划 | Java 校验并创建 |
-| 3 | 预算 120 万、实际 126 万 | 选择按费用类别拆分 | 模型从允许维度中选择 |
-| 4 | 外协差异 +8 万、设备差异 -2 万 | 下钻外协相关项目 | 模型根据结果选择；程序校验过滤收窄 |
-| 5 | P01 外协贡献 +7 万，其他外协 +1 万 | 读取 P01 可访问的说明，或标记缺少原因证据 | 模型选择是否需要补充证据 |
-| 6 | 已定位主要贡献，没有业务说明 | 返回差异事实和待核查项 | 程序检查停止条件，模型写解释 |
-
-“外协超支主要集中在 P01”可以由数据支持；“供应商涨价导致超支”不能由这组金额推出。若没有业务说明，必须保持为未确定原因。
-
-### 模型动作契约
-
-模型返回一个有界动作，而不是任意 Python 或 SQL。示意：
+模型产生有界动作，不是任意脚本：
 
 ```json
 {
   "action": "DRILL_DOWN",
-  "dimension": "project",
-  "filters": [{"field": "expense_category", "op": "EQ", "value": "OUTSOURCE"}],
-  "evidence_refs": ["ev-category-001"],
+  "parent_plan_id": "plan-demo-002",
+  "group_by": ["project"],
+  "filters": [{"field": "allocation_target_id", "op": "EQ", "value": "D_A"}],
+  "evidence_refs": ["res-dept-001"],
   "reason_code": "LOCATE_VARIANCE_CONTRIBUTOR"
 }
 ```
 
-reason_code 是供用户和排查使用的简短决策依据，不要求输出模型内部思维链。执行器校验 dimension 在计划允许列表、filters 不扩大组织和时间范围、evidence_refs 属于当前计划、动作未重复且预算尚有余额。
+运行层检查父计划仍为当前修订、证据归属、过滤范围、合法分组、重复查询及执行预算。reason_code 是简短动作依据，不要求模型输出内部思维链。
 
-如果模型提出按“供应商”下钻，而预算仅有费用类别粒度，后端返回 UNSUPPORTED_DIMENSION；不能拿付款单供应商维度去伪造预算分摊。
+上下文优先保留当前有效计划、指标含义、版本、有效证据和用户最新要求。历史长表与失效结论移出工作上下文，用引用保留。压缩摘要不能把“部门分摊实际费用”变成含糊的“部门金额”。结构化输出约束格式，不能保证业务含义正确，仍需后端验证。[LangChain 结构化输出文档](https://docs.langchain.com/oss/python/langchain/structured-output)
 
-## 9. 工具设计：粒度、描述和协议匹配
+| 改动 | 可继承 | 必须重新建立 |
+| --- | --- | --- |
+| 改单位或图形 | 有效结果、原始精度 | 呈现配置、产物清单 |
+| 改项目、期间、预算定义或分摊轴 | 无冲突的已确认条件 | 有效计划、结果、结论、数据型图表 |
+| 要求最新数据 | 业务目标 | 新 release 绑定及全部查询证据 |
+| 只改汇报措辞 | 有效事实与引用 | 文本验证、报告版本 |
+| 撤权或紧急禁用工具 | 审计历史 | 重新授权，不满足则终止或拒绝读取 |
 
-### 为什么不用一个 execute_sql 工具
+停止包含硬上限（截止时间、模型/工具次数、下钻深度、重复查询）与业务条件（用户需要的图表已完成、主要差异已定位、无可比较维度、没有新证据）。演示可设最多三次下钻，但必须标为实验配置。
 
-它把指标口径、连接路径、权限与查询成本同时交给模型判断；执行成功也无法说明结果正确。反过来，为每张报表建立一个工具又会产生大量语义相近的工具，增加选择错误和提示长度。
+“达到三步”只能说明预算耗尽或部分完成，不能写“已全面分析”。差异贡献区分正向超支和负向结余，避免用被抵消后的净差异制造误导性占比。
 
-本项目采用“少量能力型工具 + 受限查询计划”：查询预算执行、下钻明细、查询定义、创建导出。固定的是合法能力与计算规则，变化的是期间、粒度和过滤，因此不是把每个自然语言问题硬编码成一个接口。
+## 9. 持久化、澄清恢复与导出重试
 
-### 工具描述至少写四件事
+Python 管理分析执行状态，Java 保存请求归属、run 映射和业务操作事实。受理请求持久化为 QUEUED 后由 Worker 认领，不能只在 HTTP 中启动内存协程。首版一个 Worker 足够演示可靠性，再扩展并发认领与 fencing。
 
-以 query_budget 为例：说明何时使用、前置有效计划、支持的维度、零预算/无数据的返回含义。加入反例：“不能用于查询付款流水，不能自行补全缺失预算版本”。明确错误码比泛泛写“查询财务数据”更有帮助。
+request_id 在可信用户范围内唯一；同 ID、同规范化内容返回同一 run，不同内容报冲突。恢复校验 run 归属、等待状态及 waiting_revision，并以 resume_command_id 去重。两个恢复请求通过串行处理或版本比较防止同时推进。
 
-工具返回区分 NO_DATA、ZERO_VALUE、PARTIAL_DATA、FORBIDDEN。单纯返回空数组会让模型把不同情况混为一谈。分页结果必须标识完整性，模型不能根据前十行下结论说“全公司只有这些项目”。
+LangGraph 的持久化检查点保存和恢复图状态；纯内存 checkpointer 不能证明跨进程恢复。检查点与 Java 任务表不构成天然的跨服务事务，需要稳定业务操作身份关联。[LangGraph 持久化文档](https://docs.langchain.com/oss/python/langgraph/persistence)
 
-### Tool Calling 的调用 ID
-
-常见消息式调用中，模型生成工具名、参数和调用 ID，应用执行后将结果按该 ID 配对返回。多个工具结果不能仅按完成顺序拼接。并行调用只适用于无依赖且没有共享副作用的操作。
-
-模型调用 ID 是本轮协议关联标识，业务 operation_id 是一次操作的持久身份。重试后模型可能生成不同调用 ID，因此不能直接把它当作业务幂等键。
-
-## 10. 状态、记忆、证据和缓存为什么分开
-
-| 对象 | 生命周期 | 例子 | 不能承担的职责 |
-| --- | --- | --- | --- |
-| conversation | 用户连续交互 | “改成下半年” | 不能直接作为授权状态 |
-| run / checkpoint thread | 一次可恢复分析 | 追问前后状态 | 不自动代表跨任务长期记忆 |
-| query plan revision | 一组固定查询语义 | 时间、组织、预算口径 | 不能在进行中的导出里被修改 |
-| evidence | 一次确定性查询结果 | 126 万元汇总 | 不能跨版本随意复用 |
-| preference | 明确允许复用的偏好 | 默认显示万元 | 不能偷偷保存一次猜测为业务默认 |
-| cache | 可重建的加速数据 | 同版本同权限查询结果 | 不能作为任务完成事实来源 |
-
-本项目约定一个 run 对应一个 checkpoint thread。一个 UI 会话可以包含多个 run，后续问题通过显式继承已确认条件建立新计划。若采用框架 thread 承载整个长期会话的另一种映射，需要额外处理并发消息与新任务状态清理，不混用两种约定。
-
-### 条件继承与失效
-
-用户“换成下半年”时继承组织与预算口径，替换期间，创建新计划版本；汇总、明细与原因引用全部失效。用户“把结果显示成万元”只改变呈现，不必重新查询，但应保留原始精度。用户“用最新数据重算”创建绑定新发布版本的分析，不能覆盖旧证据。
-
-### 上下文预算
-
-将模型窗口分为固定指令、当前指标、已确认计划、近期工具摘要和输出余量，具体额度随模型与评测确定。先删除可重新查询的明细，再压缩历史叙述；指标口径、权限边界和有效计划必须保持结构化，不依赖摘要记住。
-
-删除历史工具交互时保持请求和结果配对；不要留下没有对应结果的调用记录。对于超长结果，返回证据 ID、汇总、总行数、截断标志和分页工具入口。
-
-## 11. LangGraph 追问：节点并非只执行一次
-
-StateGraph 的节点返回状态更新；并行写同一键要定义 reducer 或集中汇合。简单列表相加不一定幂等，重放和重复结果可能产生重复证据。本设计优先按 evidence_id 去重合并；查询计划由单一节点更新。[Graph API 文档](https://docs.langchain.com/oss/python/langgraph/graph-api)
-
-下面是接口级示意，需在锁定的依赖版本下集成测试，不是完整应用：
+澄清节点示意：
 
 ```python
 from langgraph.types import interrupt
 
 def clarify(state):
-    # 此前只读取已持久化的缺失条件，不创建导出、不扣费。
+    # 此前只读取状态，不创建导出或修改业务规则。
     answer = interrupt({
-        "plan_revision": state["plan_revision"],
-        "missing_fields": state["missing_fields"],
+        "waiting_revision": state["waiting_revision"],
+        "question": state["pending_question"],
     })
-    # 校验失败后由外层进入新的澄清轮次。
-    return validate_clarification(answer, state)
+    return validate_answer_for_revision(answer, state)
 ```
 
-恢复使用原 thread_id 和 Command(resume=...)，节点在恢复时可能从头执行。不要用广泛的 try/except 把 interrupt 当普通失败吞掉。一个节点多个 interrupt 的次序也影响恢复值匹配；本项目一轮只放一个澄清点。[Interrupts 文档](https://docs.langchain.com/oss/python/langgraph/interrupts)
+恢复使用原 thread_id 和 Command(resume=...)；含 interrupt 的节点会从头执行，副作用应独立并幂等，不用宽泛异常捕获吞掉暂停信号。一轮只放一个澄清点，回答无效则记录新的等待状态后进入下一轮。[LangGraph interrupts 文档](https://docs.langchain.com/oss/python/langgraph/interrupts)
 
-导出拆为 prepare_export 和 submit_export：前者生成稳定 ID 并形成持久化边界，后者才调用 Java。需要验证所选持久化模式在进入副作用节点前确实完成必要状态写入。边界不足时，增加独立的操作意图表，不能假定“有 checkpoint 就一定不会重新生成 ID”。
+导出先写稳定意图与 export_operation_id，再调用 Java。若 Java 已创建任务但响应丢失，恢复时用同一 ID 查询或重试。验证所选持久化模式是否在副作用前形成可靠写入边界；不满足时用独立操作意图表，不能声称“有 checkpoint 就只执行一次”。
 
-## 12. 什么时候停止，如何防止循环
+模型 tool_call_id 只配对本轮请求/结果，MCP 请求 ID 只关联协议交互，它们都不是导出幂等键。显示连接断开不等于取消任务；显式取消在节点安全边界处理，已受理产物另行取消。
 
-仅配置 recursion_limit 只能避免无限运行，无法说明分析是否充分。项目使用两类条件：
+## 10. 观测与验收
 
-- 硬条件：截止时间、模型调用次数、工具次数、最大下钻深度、重复规范化查询。
-- 业务条件：主要差异已定位、无进一步可用维度、没有新的证据、用户目标已完成。
+先用合成黄金集验证口径、计算、变更失效与证据，再接模型评估理解和动作选择，不能把生成一张图视为全链路通过。
 
-对于差异贡献覆盖率，按正向超支分别计算更容易解释；总差异可能被结余抵消，不用绝对值混算一个看似漂亮的占比。停止时返回 termination_reason，如 GOAL_MET、NO_MORE_EVIDENCE、BUDGET_EXHAUSTED，并说明还有什么未分析。
+| 验收场景 | 可检查结果 |
+| --- | --- |
+| 部门轴多项目汇报 | 采用已审核规则，D_A 预算 520,000、实际 560,000 |
+| 缺预算口径且无默认 | 只澄清实质歧义，不自行选分母 |
+| 部门切投资，旧查询迟到 | 新计划不含旧证据，旧结果只进入历史 |
+| 要求部门 × 投资，无联合规则 | 明确不支持，不相乘比例猜结果 |
+| 实际有明细、预算无同粒度 | 可输出实际构成，不能伪造细分预算差异 |
+| 说明与后端规则不一致 | 权威规则优先，标记说明版本冲突 |
+| 暂停期间撤权 | 恢复或读取时拒绝，不复用旧权限 |
+| 导出响应丢失 | 复用同一业务任务，不重复创建 |
 
-不能只问模型“是否完成”，也不能达到三步就总是输出“已完成全面分析”。
+每次节点记录 run、计划修订、Skill/工具合同版本、工具名、结果 ID、耗时、重试和停止原因；敏感明细不直接打日志。排查顺序是“用户原意 → 候选计划 → 后端有效计划 → 工具结果 → 输出引用”，定位偏差发生的层次。
 
-继续阅读：[Skills、MCP 与 Function Calling](07-Skills与MCP能力管理.md)，再进入[技术实现与工程边界](03-技术实现与工程边界.md)。
+评测至少关注正确完成率、错误自动执行率、必要澄清召回率、不必要澄清率、工具次数、p95 耗时和每成功任务成本。固定样本与分母后再报告数据，不写未经验证的提升比例。本表仍是待实现验收目标，不与已运行的确定性实验混淆。
+
+## 11. 面试连续追问
+
+**为什么不直接做自然语言转 SQL？** 用户要的是可核对的汇报，还包含口径确认、分摊规则、权限、版本、下钻和多格式交付。Text-to-SQL 是一条查询实现路径，不能替代执行合同与证据闭环。
+
+**有固定节点，Agent 自主性在哪里？** 节点守住边界，模型根据结果在合法维度中选动作。D_A 差异突出时先看项目，再根据粒度判断是否拆人力与其他费用。分析路径可变化，计算规则不可被模型改写。
+
+**怎样证明“按部门看”理解正确？** 保存原文、字段来源及 requested_plan；Java 返回采用部门分摊而非项目归属的 effective_plan，页面显示口径，结果携带规则绑定。真有两种含义且无默认时，先澄清。
+
+**有 checkpoint，重复导出解决了吗？** 没有。恢复可能重放节点，跨服务副作用也可能成功但响应丢失。稳定操作 ID 必须先持久化，Java 用唯一约束和参数哈希识别同一意图；状态恢复与业务幂等分别解决问题。
+
+**同项目换维度，为什么不能复用结果？** 部门与投资是独立计算口径，改变轴就改变规则和可见份额。项目、期间可继承，有效计划和结果需重建；只换图形或显示单位才复用结果。
+
+继续阅读：[Skills、MCP 与 Function Calling](03-Skills与MCP能力管理.md)，再进入[技术实现与工程边界](04-分摊语义与Java工程实现.md)。

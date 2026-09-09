@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="790" viewBox="0 0 1160 790" role="img" aria-labelledby="title desc">
+<title id="title">同一项目多个分摊轴独立守恒</title>
+<desc id="desc">P01与P02总预算120万元、实际126万元，分别按部门、团队、投资分摊。每轴单独核对，跨轴不能求和，边际比例不能推断联合分摊。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#7087a2"/></marker></defs>
+<rect width="1160" height="790" rx="20" fill="#f3f6fa"/>
+<g font-family="PingFang SC, Noto Sans CJK SC, sans-serif">
+<text x="38" y="48" font-size="28" fill="#142e49" font-weight="700">同一批费用，三个独立分摊视图</text>
+<text x="38" y="81" font-size="16" fill="#59718a" font-weight="400">合成数据 · 单位：万元 · 演示中预算与实际采用相同比例</text>
+<rect x="210" y="110" width="740" height="124" rx="14" fill="#173955" stroke="#173955"/>
+<text x="238" y="145" font-size="21" fill="#ffffff" font-weight="600">项目原事实  +  已审核、可追溯的分摊规则包</text>
+<text x="238" y="180" font-size="19" fill="#e2edf7" font-weight="400">P01：预算 70 / 实际 77     P02：预算 50 / 实际 49</text>
+<text x="238" y="213" font-size="17" fill="#bbd7ed" font-weight="400">共同基准：预算 120 / 实际 126；按数据版本、期间和币种固定</text>
+<path d="M580 234 V258 H202 V288" fill="none" stroke="#7087a2" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M580 234 V258 H580 V288" fill="none" stroke="#7087a2" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M580 234 V258 H958 V288" fill="none" stroke="#7087a2" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="32" y="294" width="340" height="222" rx="14" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="44" y="306" width="316" height="45" rx="14" fill="#e9f3fc" stroke="#e9f3fc"/>
+<text x="60" y="336" font-size="21" fill="#142e49" font-weight="600">部门维度</text>
+<text x="52" y="382" font-size="16" fill="#59718a" font-weight="400">D_A：P01 60% / P02 20%</text>
+<text x="52" y="418" font-size="18" fill="#26384d" font-weight="400">D_A：预算 52 / 实际 56</text>
+<text x="52" y="450" font-size="18" fill="#26384d" font-weight="400">D_B：预算 68 / 实际 70</text>
+<text x="52" y="492" font-size="17" fill="#12614a" font-weight="600">轴内合计：预算 120 / 实际 126</text>
+<rect x="410" y="294" width="340" height="222" rx="14" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="422" y="306" width="316" height="45" rx="14" fill="#eaf5ef" stroke="#eaf5ef"/>
+<text x="438" y="336" font-size="21" fill="#142e49" font-weight="600">重量级团队维度</text>
+<text x="430" y="382" font-size="16" fill="#59718a" font-weight="400">T_A：P01 75% / P02 40%</text>
+<text x="430" y="418" font-size="18" fill="#26384d" font-weight="400">T_A：预算 72.5 / 实际 77.35</text>
+<text x="430" y="450" font-size="18" fill="#26384d" font-weight="400">T_B：预算 47.5 / 实际 48.65</text>
+<text x="430" y="492" font-size="17" fill="#12614a" font-weight="600">轴内合计：预算 120 / 实际 126</text>
+<rect x="788" y="294" width="340" height="222" rx="14" fill="#ffffff" stroke="#d9e2ec"/>
+<rect x="800" y="306" width="316" height="45" rx="14" fill="#f5effa" stroke="#f5effa"/>
+<text x="816" y="336" font-size="21" fill="#142e49" font-weight="600">投资维度</text>
+<text x="808" y="382" font-size="16" fill="#59718a" font-weight="400">I_A：P01 50% / P02 30%</text>
+<text x="808" y="418" font-size="18" fill="#26384d" font-weight="400">I_A：预算 50 / 实际 53.2</text>
+<text x="808" y="450" font-size="18" fill="#26384d" font-weight="400">I_B：预算 70 / 实际 72.8</text>
+<text x="808" y="492" font-size="17" fill="#12614a" font-weight="600">轴内合计：预算 120 / 实际 126</text>
+<rect x="32" y="540" width="1096" height="100" rx="14" fill="#fff6e8" stroke="#f0d5aa"/>
+<text x="54" y="574" font-size="21" fill="#825713" font-weight="600">不能跨轴相加，也不能用两个边际比例推导联合分摊</text>
+<text x="54" y="605" font-size="18" fill="#765d39" font-weight="400">部门 60% × 投资 50% ≠ 已获业务认可的 30% 联合分摊；联合视图需要独立规则和权限。</text>
+<rect x="32" y="662" width="1096" height="92" rx="14" fill="#ffffff" stroke="#d9e2ec"/>
+<text x="54" y="696" font-size="20" fill="#142e49" font-weight="600">执行与核对边界</text>
+<text x="54" y="729" font-size="18" fill="#26384d" font-weight="400">固定：事实 + 规则 + 指标 + 维度版本     核对：单轴、同粒度、同币种     交付：仅当前授权范围</text>
+</g></svg>
