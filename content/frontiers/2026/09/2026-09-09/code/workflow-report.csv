@@ -1,0 +1,4 @@
+workflow,tasks,passed,accuracy,total_cost_usd,cost_per_correct_usd,p95_latency_ms
+cheap,8,5,0.625,0.080,0.0160,1700
+routed,8,7,0.875,0.230,0.0329,6700
+strong,8,7,0.875,0.400,0.0571,5700

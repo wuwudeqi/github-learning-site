@@ -1,0 +1,440 @@
+{
+  "issueDate": "2026-09-09",
+  "informationCutoff": "2026-09-09T09:40:52+08:00",
+  "timestampNote": "checkedAt / observedAt 为本次汇总复核截止上界，不是每个 HTTP 请求的精确时间。热度值保留已观察快照，不混合后续刷新。",
+  "coverage": [
+    {
+      "provider": "OpenAI",
+      "status": "read",
+      "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "note": "读取 Images 2.5 全文并核对官方发布入口；社区时间早于首版截止。 09:40 发布前再次逐标题读取官方列表。 新增 Navier–Stokes、量子实验和公司综述候选；前者入选，后两项记录排除理由。",
+      "checkedAt": "2026-09-09T09:40:52+08:00"
+    },
+    {
+      "provider": "Anthropic",
+      "status": "read",
+      "url": "https://www.anthropic.com/news",
+      "note": "官方列表可见最新发布为 09-01；Fable/Mythos 已在昨日收录。本次可见范围未发现更新，不代表全网没有新事件。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Google",
+      "status": "read",
+      "url": "https://deepmind.google/blog/",
+      "note": "检查 DeepMind 官方列表，读取 09-08 AlphaGenome Atlas；图像视频线索回查 Google 官方博客。 09:40 发布前再次逐标题读取官方列表。",
+      "checkedAt": "2026-09-09T09:40:52+08:00"
+    },
+    {
+      "provider": "Meta",
+      "status": "read",
+      "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "note": "已读取 Muse 公告，区别美国首发与后续 Confidential VM 计划。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Microsoft",
+      "status": "read",
+      "url": "https://news.microsoft.com/source/view-all/",
+      "note": "逐项读取 MDASH、MAI-Transcribe-2，并沿官方模型站找到 MAI-Image-2.6；另读 GitHub HydraFusion 技术公告。 09:40 发布前再次逐标题读取官方列表。",
+      "checkedAt": "2026-09-09T09:40:52+08:00"
+    },
+    {
+      "provider": "xAI",
+      "status": "read",
+      "url": "https://x.ai/news/grok-bot-for-enterprise",
+      "note": "官方企业 Bot 公告；最新进展是企业开放，不假称基础 Bot 今日首发。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "NVIDIA",
+      "status": "read",
+      "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+      "note": "官方 IFA 公告核对 PAIR 与 RTX Spark 时间，8 月模型汇总没有当成 9 月新发布。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Alibaba",
+      "status": "read",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "note": "官方模型目录确认 0902 快照；QwenWork 使用注明来源阿里云的发布稿，并以媒体报道交叉核对。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "DeepSeek",
+      "status": "read",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "note": "官方更新记录与研究页已查；V4 Pro 正式版是 08-13，未把近期转载当成新版本。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "ByteDance",
+      "status": "partial",
+      "url": "https://seed.bytedance.com/en/",
+      "note": "直接打开返回空正文；以 Seed 官方域名索引补查，Seed2.1 与 Seedance2.5 命中均为较早发布，保留正文缺口。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Tencent",
+      "status": "partial",
+      "url": "https://www.tencent.com/zh-cn/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "note": "核对原始 Hy4 08-28 公告；09-07 优化只取得 IT之家转录和公告配图，WorkBuddy 官网正文访问失败。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Baidu",
+      "status": "partial",
+      "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "note": "官方新闻索引可见 09-07 商用 OCR 更新；仅列表级线索，缺少相对前版的完整增量证据，未提升为头条。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Zhipu",
+      "status": "partial",
+      "url": "https://www.zhipuai.cn/zh/research",
+      "note": "直读研究列表超时；官方域名索引及 ZCode 发布日志显示 GLM-5.3-Flash 为 08-26，09-08 博文不等于模型首发。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "Kimi",
+      "status": "read",
+      "url": "https://www.kimi.com/help/kimi-work/release-notes",
+      "note": "已读 09-07 3.2.6 插件和 MCP 管理、09-04 3.2.5 手机遥控与 Apps；进入候选后按重要程度排在本期 15 条之外。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    },
+    {
+      "provider": "MiniMax",
+      "status": "partial",
+      "url": "https://www.minimax.io/news",
+      "note": "列表可读取但正文提取有限；官方域名补查 H3，原模型发布 07-31、开源 08-03，未作为今天的新消息。",
+      "checkedAt": "2026-09-09T09:29:55+08:00"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "openai-images-25",
+      "title": "OpenAI 发布 Images 2.5，图像编辑与生成提速",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 1,
+      "reason": "重大图像模型与产品发布；原首版漏收，必须收录"
+    },
+    {
+      "id": "meta-muse",
+      "title": "Meta 发布 Muse，把个人 AI 代理带到独立应用",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 3,
+      "reason": "大型平台个人 Agent 正式推出"
+    },
+    {
+      "id": "google-alphagenome-atlas",
+      "title": "Google DeepMind 发布 AlphaGenome Atlas，预计算 90 亿种 DNA 变异影响",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 4,
+      "reason": "大厂 AI 科研成果转成可用数据基础设施"
+    },
+    {
+      "id": "microsoft-mdash-government",
+      "title": "微软 MDASH 进入 Azure Government，向部分政府客户开放预览",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/08/codename-mdash-brings-agentic-ai-security-scanning-to-us-government/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 5,
+      "reason": "受控生产环境的关键开放范围变化"
+    },
+    {
+      "id": "qwen-work-collaboration",
+      "title": "千问 Work 上线多人工作台，生成应用走向团队协作",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-09-07/doc-iniqyrkc0457412.shtml",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 6,
+      "reason": "生成应用从个人使用扩展到多人业务协作"
+    },
+    {
+      "id": "tencent-hy4-thinking-update",
+      "title": "腾讯回应 Hy4 preview“思考过长”，优化 WorkBuddy 中的任务执行",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://m.ithome.com/html/999369.htm",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": true,
+      "order": 7,
+      "reason": "国内重要模型后续效率优化，保留媒体证据限制"
+    },
+    {
+      "id": "github-hydrafusion-report",
+      "title": "GitHub 公布 HydraFusion，用多模型协作选择编码工作流",
+      "eventDate": "2026-09-04",
+      "sourceUrl": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": true,
+      "order": 8,
+      "reason": "重要多模型编排技术公告及可用 CLI 预览"
+    },
+    {
+      "id": "microsoft-mai-image-26-preview",
+      "title": "微软扩展 MAI-Image-2.6，新增 Flash 并进入 Foundry 公共预览",
+      "eventDate": "2026-09-04",
+      "sourceUrl": "https://microsoft.ai/news/pushing-the-quality-cost-frontier-with-mai-image-2-6/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": true,
+      "order": 9,
+      "reason": "重要图像产品新增版本和开发者开放"
+    },
+    {
+      "id": "nvidia-pair",
+      "title": "NVIDIA 发布 PAIR，让局域网中的多台电脑分担本地 AI 推理",
+      "eventDate": "2026-09-03",
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": true,
+      "order": 10,
+      "reason": "本地多机 AI 推理基础设施"
+    },
+    {
+      "id": "microsoft-mai-transcribe-2",
+      "title": "微软发布 MAI-Transcribe-2，补齐说话人区分与词级时间戳",
+      "eventDate": "2026-09-03",
+      "sourceUrl": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": true,
+      "order": 11,
+      "reason": "语音转写重要能力与可用范围更新"
+    },
+    {
+      "id": "xai-bot-enterprise",
+      "title": "Grok Bot 扩展到企业，让团队部署持续工作的代理",
+      "eventDate": "2026-09-03",
+      "sourceUrl": "https://x.ai/news/grok-bot-for-enterprise",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": true,
+      "order": 12,
+      "reason": "企业 Agent 开放范围变化"
+    },
+    {
+      "id": "qwen-38-max-0902",
+      "title": "Qwen3.8-Max 更新 0902 快照，强化长任务与多工具协作",
+      "eventDate": "2026-09-02",
+      "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "已核验，但发布前复查发现更重要的 09-08 Navier–Stokes 研究公告，改为排除较早快照。"
+    },
+    {
+      "id": "hyperframes-daily-20260909",
+      "title": "HyperFrames 登上当日 Trending，HTML 视频工作流受到关注",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes",
+      "priority": "candidate",
+      "kind": "project",
+      "selected": true,
+      "order": 13,
+      "reason": "今日榜有明确增长，且有 Agent 视频使用场景",
+      "heat": {
+        "period": "daily",
+        "starsAdded": 2628,
+        "totalStarsApi": 47777,
+        "url": "https://github.com/trending?since=daily",
+        "observedAt": "2026-09-09T09:29:55+08:00"
+      }
+    },
+    {
+      "id": "markitdown-daily-20260909",
+      "title": "MarkItDown 当日新增超过两千 Star，文档转 Markdown 仍是热门入口",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/microsoft/markitdown",
+      "priority": "candidate",
+      "kind": "project",
+      "selected": true,
+      "order": 14,
+      "reason": "今日榜有明确增长，且为重要文档输入工具",
+      "heat": {
+        "period": "daily",
+        "starsAdded": 2045,
+        "totalStarsApi": 181699,
+        "url": "https://github.com/trending?since=daily",
+        "observedAt": "2026-09-09T09:29:55+08:00"
+      }
+    },
+    {
+      "id": "ecc-daily-20260909",
+      "title": "ECC 持续升温，Agent 的规则、记忆与执行框架成为关注点",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/affaan-m/ECC",
+      "priority": "candidate",
+      "kind": "project",
+      "selected": true,
+      "order": 15,
+      "reason": "今日榜有明确增长，且关注 Agent 执行配置",
+      "heat": {
+        "period": "daily",
+        "starsAdded": 1426,
+        "totalStarsApi": 254323,
+        "url": "https://github.com/trending?since=daily",
+        "observedAt": "2026-09-09T09:29:55+08:00"
+      }
+    },
+    {
+      "id": "kimi-work-326",
+      "title": "Kimi Work 3.2.6",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://www.kimi.com/help/kimi-work/release-notes",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "已核验的插件与 MCP 管理更新，重要程度低于本期入选产品发布，保留候选。"
+    },
+    {
+      "id": "zhipu-glm-53-flash-repost",
+      "title": "GLM-5.3-Flash 的 09-08 介绍文章",
+      "eventDate": "2026-08-26",
+      "sourceUrl": "https://autoclaw.z.ai/blog/model/glm-5.3-flash/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "官方研究页及 ZCode 显示原发布 08-26，不能当作 09-08 新模型。"
+    },
+    {
+      "id": "qwen-38-27b-old",
+      "title": "Qwen3.8-27B 近期转载",
+      "eventDate": "2026-08-14",
+      "sourceUrl": "https://github.com/QwenLM/Qwen3.8",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "原发布早于新闻时间窗；没有确认独立的 09-08 重大更新。"
+    },
+    {
+      "id": "minimax-h3-old",
+      "title": "MiniMax H3 开源",
+      "eventDate": "2026-08-03",
+      "sourceUrl": "https://www.minimax.io/news/minimax-h3-open-source",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "旧发布，不因页面被检索到而当成今日热点。"
+    },
+    {
+      "id": "deepseek-v4-pro-ga",
+      "title": "DeepSeek V4 Pro GA",
+      "eventDate": "2026-08-13",
+      "sourceUrl": "https://api-docs.deepseek.com/news/news260813/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "原始发布日期超过时间窗。"
+    },
+    {
+      "id": "seedance-25-old",
+      "title": "Seedance2.5",
+      "eventDate": "2026-07-31",
+      "sourceUrl": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "官方索引指向 7 月发布，缺少当日重大增量。"
+    },
+    {
+      "id": "google-agentic-video-old",
+      "title": "Gemini Agentic Video",
+      "eventDate": "2026-09-01",
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "超出本期近 7 天新闻窗口，不为视频类别凑数。"
+    },
+    {
+      "id": "baidu-ocr-commercial",
+      "title": "百度商用 OCR 更新线索",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "仅取得官方列表线索，增量与重要程度证据不足。"
+    },
+    {
+      "id": "openai-skills-trending",
+      "title": "OpenAI skills 当日榜",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/openai/skills",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "发现当日榜 +490，相关性高；在仅选 3 个项目时优先覆盖增长更明显的不同任务。"
+    },
+    {
+      "id": "browser-use-trending",
+      "title": "browser-use 当日榜",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/browser-use/browser-use",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "发现当日榜 +320，未找到此次独立重大更新；本期热点位置给其他 3 项。"
+    },
+    {
+      "id": "generic-research-tutorials",
+      "title": "初版 GRPO 与天气等普通教程",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://huggingface.co/blog",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "相对大厂新产品与重要能力更新优先级低，移出综合新闻。相关研究内容可在专题中另行评估。"
+    },
+    {
+      "id": "openai-navier-stokes",
+      "title": "OpenAI 公布 Navier–Stokes 问题证明与 Lean 形式化材料",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/index/navier-stokes-solution/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 2,
+      "reason": "重大研究公告，发布前逐标题复查发现后优先补入；准确限定官方主张与独立验证状态。"
+    },
+    {
+      "id": "openai-quantum-case",
+      "title": "GPT-5.6 Sol 辅助量子实验",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/index/codex-quantum-computing-experiments/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "官方应用案例，已读实验能力与弱噪声信号限制；本期位置优先给新产品和重大研究。"
+    },
+    {
+      "id": "openai-work-essay",
+      "title": "The Work Now Within Reach",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/index/the-work-now-within-reach/",
+      "priority": "candidate",
+      "kind": "company",
+      "selected": false,
+      "reason": "公司战略与既有研究进展综述，不把同一 Navier–Stokes 结果拆为第二条。"
+    }
+  ]
+}

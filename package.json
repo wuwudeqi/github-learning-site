@@ -4,7 +4,8 @@
   "description": "资料夹 · 个人阅读资料库",
   "scripts": {
     "dev": "node scripts/catalog.mjs && vite",
-    "build": "node scripts/catalog.mjs && vite build && node scripts/check-size.mjs",
+    "build": "node scripts/check-frontiers.mjs && node scripts/catalog.mjs && vite build && node scripts/check-size.mjs",
+    "check:frontiers": "node scripts/check-frontiers.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "catalog": "node scripts/catalog.mjs",
     "format": "prettier --write src scripts index.html vite.config.js README.md .github/workflows/deploy.yml"

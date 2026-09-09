@@ -1,0 +1,24 @@
+{"workflow": "cheap", "task_id": "task-01", "passed": true, "latency_ms": 1000, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-01", "passed": true, "latency_ms": 1000, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "strong", "task_id": "task-01", "passed": true, "latency_ms": 5000, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-02", "passed": true, "latency_ms": 1100, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-02", "passed": true, "latency_ms": 1100, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "strong", "task_id": "task-02", "passed": true, "latency_ms": 5100, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-03", "passed": true, "latency_ms": 1200, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-03", "passed": true, "latency_ms": 1200, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "strong", "task_id": "task-03", "passed": true, "latency_ms": 5200, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-04", "passed": true, "latency_ms": 1300, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-04", "passed": true, "latency_ms": 1300, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "strong", "task_id": "task-04", "passed": true, "latency_ms": 5300, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-05", "passed": true, "latency_ms": 1400, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-05", "passed": true, "latency_ms": 1400, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "strong", "task_id": "task-05", "passed": true, "latency_ms": 5400, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-06", "passed": false, "latency_ms": 1500, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-06", "passed": true, "latency_ms": 6500, "calls": [{"phase": "draft", "cost_usd": "0.010"}, {"phase": "escalate", "cost_usd": "0.050"}]}
+{"workflow": "strong", "task_id": "task-06", "passed": true, "latency_ms": 5500, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-07", "passed": false, "latency_ms": 1600, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-07", "passed": true, "latency_ms": 6600, "calls": [{"phase": "draft", "cost_usd": "0.010"}, {"phase": "escalate", "cost_usd": "0.050"}]}
+{"workflow": "strong", "task_id": "task-07", "passed": true, "latency_ms": 5600, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
+{"workflow": "cheap", "task_id": "task-08", "passed": false, "latency_ms": 1700, "calls": [{"phase": "draft", "cost_usd": "0.010"}]}
+{"workflow": "routed", "task_id": "task-08", "passed": false, "latency_ms": 6700, "calls": [{"phase": "draft", "cost_usd": "0.010"}, {"phase": "escalate", "cost_usd": "0.050"}]}
+{"workflow": "strong", "task_id": "task-08", "passed": false, "latency_ms": 5700, "calls": [{"phase": "solve", "cost_usd": "0.050"}]}
