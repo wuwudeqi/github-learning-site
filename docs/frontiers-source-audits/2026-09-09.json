@@ -469,5 +469,385 @@
     "scope": "仅重读并补充核验已入选前五条新闻；原15条选题及09:40选题截止、项目热度快照保持原记录。",
     "format": "5条重点详解，每条约500至800中文字；10条速读。",
     "limitations": "未运行图像模型、Muse、MDASH、AlphaGenome或Lean；场景示意与编辑解读不作为实测结果。"
+  },
+  "openSourceProjects": {
+    "policyVersion": 1,
+    "checkedThrough": "2026-09-09T10:18:55+08:00",
+    "documentFile": "04-开源项目.md",
+    "documentId": "frontiers-2026-09-09-github",
+    "scope": "本次仅重编开源项目栏目，并同步导读、链接和规则；AI新闻选题及既有热度快照不重新计时。",
+    "verification": "基于官方资料，未安装运行入选项目。",
+    "discovery": [
+      {
+        "kind": "repository",
+        "name": "GitHub官方仓库与Releases",
+        "url": "https://github.com/langflow-ai/langflow/releases",
+        "status": "read",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "note": "gh读取13个候选的元数据、README、版本与许可；另查smolagents和Pydantic AI。个别EOF用重试或raw正文恢复。"
+      },
+      {
+        "kind": "official-site",
+        "name": "作者官网与文档",
+        "url": "https://d2lang.com/blog/tala-is-open-source/",
+        "status": "read",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "note": "读取D2作者公告、Open Notebook官网、Langflow、DSPy、Promptfoo等项目文档。"
+      },
+      {
+        "kind": "community",
+        "name": "Hacker News",
+        "url": "https://news.ycombinator.com/front?day=2026-09-08",
+        "status": "read",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "note": "查看09-08 UTC榜，发现TALA开源线索后回查作者。未将榜单日期当作开源日期。"
+      },
+      {
+        "kind": "hub",
+        "name": "Hugging Face Cookbook",
+        "url": "https://huggingface.co/learn/cookbook/agents",
+        "status": "read",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "note": "阅读工具调用方法与smolagents候选；本期未选，避免通用Agent框架过度集中。"
+      },
+      {
+        "kind": "search",
+        "name": "Exa语义搜索",
+        "url": "https://github.com/lfnovo/open-notebook",
+        "status": "read",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "note": "搜索开源应用、研究笔记和工作流工具；回查原始来源，未依据第三方汇总断言最新版本。"
+      }
+    ],
+    "projects": [
+      {
+        "id": "open-notebook",
+        "order": 1,
+        "title": "Open Notebook：把散落资料组织成可追问的研究笔记",
+        "repositoryUrl": "https://github.com/lfnovo/open-notebook",
+        "category": "研究笔记",
+        "selectionBasis": "curated",
+        "reason": "研究资料整理与持续问答，补充可直接上手的完整应用。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/lfnovo/open-notebook/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/lfnovo/open-notebook",
+          "https://www.open-notebook.ai"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v1.14.0",
+            "published_at": "2026-07-21T02:09:26Z",
+            "html_url": "https://github.com/lfnovo/open-notebook/releases/tag/v1.14.0",
+            "prerelease": false
+          },
+          {
+            "tag_name": "v1.13.0",
+            "published_at": "2026-07-14T09:56:56Z",
+            "html_url": "https://github.com/lfnovo/open-notebook/releases/tag/v1.13.0",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "langflow",
+        "order": 2,
+        "title": "Langflow：用画布搭建可以继续交付的 AI 工作流",
+        "repositoryUrl": "https://github.com/langflow-ai/langflow",
+        "category": "应用工作流",
+        "selectionBasis": "release",
+        "reason": "可视化应用搭建；09-09北京时间维护版记录已核对。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/langflow-ai/langflow/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/langflow-ai/langflow",
+          "https://docs.langflow.org/get-started-installation"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v1.12.1",
+            "published_at": "2026-09-08T23:25:58Z",
+            "html_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.1",
+            "prerelease": false
+          },
+          {
+            "tag_name": "v1.12.0",
+            "published_at": "2026-09-01T21:16:20Z",
+            "html_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.0",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "d2-tala",
+        "order": 3,
+        "title": "D2 + TALA：让文字描述的架构图更容易排得清楚",
+        "repositoryUrl": "https://github.com/d2lang/d2",
+        "category": "图表创作",
+        "selectionBasis": "newly-open",
+        "reason": "从HN发现09-07开源公告，面向架构图且适合AI协作制图。",
+        "license": "MPL-2.0",
+        "licenseUrl": "https://github.com/d2lang/d2/blob/master/LICENSE.txt",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/d2lang/d2",
+          "https://d2lang.com/blog/tala-is-open-source/",
+          "https://play.d2lang.com"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v0.9.0",
+            "published_at": "2026-09-07T22:16:40Z",
+            "html_url": "https://github.com/d2lang/d2/releases/tag/v0.9.0",
+            "prerelease": false
+          },
+          {
+            "tag_name": "v0.8.2",
+            "published_at": "2026-08-28T04:07:56Z",
+            "html_url": "https://github.com/d2lang/d2/releases/tag/v0.8.2",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "hyperframes",
+        "order": 4,
+        "title": "HyperFrames：把网页技术变成可重复制作的视频流程",
+        "repositoryUrl": "https://github.com/heygen-com/hyperframes",
+        "category": "视频创作",
+        "selectionBasis": "release",
+        "reason": "保留上午选项并补渲染稳定性更新，覆盖视频生产用途。",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/heygen-com/hyperframes/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/heygen-com/hyperframes",
+          "https://hyperframes.heygen.com/quickstart"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v0.8.32",
+            "published_at": "2026-09-08T23:44:52Z",
+            "html_url": "https://github.com/heygen-com/hyperframes/releases/tag/v0.8.32",
+            "prerelease": false
+          },
+          {
+            "tag_name": "v0.8.31",
+            "published_at": "2026-09-07T16:17:07Z",
+            "html_url": "https://github.com/heygen-com/hyperframes/releases/tag/v0.8.31",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "markitdown",
+        "order": 5,
+        "title": "MarkItDown：为知识库准备结构清楚的文档输入",
+        "repositoryUrl": "https://github.com/microsoft/markitdown",
+        "category": "文档转换",
+        "selectionBasis": "curated",
+        "reason": "保留轻量文件转换入口，明确0.1.8b1为预发布。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/microsoft/markitdown/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/microsoft/markitdown"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v0.1.8b1",
+            "published_at": "2026-09-04T03:46:43Z",
+            "html_url": "https://github.com/microsoft/markitdown/releases/tag/v0.1.8b1",
+            "prerelease": true
+          },
+          {
+            "tag_name": "v0.1.7",
+            "published_at": "2026-07-29T18:19:15Z",
+            "html_url": "https://github.com/microsoft/markitdown/releases/tag/v0.1.7",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "browser-use",
+        "order": 6,
+        "title": "Browser Use：把网页任务交给能操作浏览器的 Agent",
+        "repositoryUrl": "https://github.com/browser-use/browser-use",
+        "category": "网页自动化",
+        "selectionBasis": "release",
+        "reason": "可执行浏览器任务，补充应用层自动化方向及错误处理变化。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/browser-use/browser-use/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/browser-use/browser-use",
+          "https://docs.browser-use.com/open-source/introduction"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "0.13.10",
+            "published_at": "2026-09-04T03:28:53Z",
+            "html_url": "https://github.com/browser-use/browser-use/releases/tag/0.13.10",
+            "prerelease": false
+          },
+          {
+            "tag_name": "0.13.9",
+            "published_at": "2026-09-04T01:29:32Z",
+            "html_url": "https://github.com/browser-use/browser-use/releases/tag/0.13.9",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "mem0",
+        "order": 7,
+        "title": "Mem0：让 AI 应用按需记住跨会话的信息",
+        "repositoryUrl": "https://github.com/mem0ai/mem0",
+        "category": "应用记忆",
+        "selectionBasis": "method",
+        "reason": "记忆管理方法有开源实现，明确托管平台成绩不能套用到SDK。",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/mem0ai/mem0/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/mem0ai/mem0",
+          "https://docs.mem0.ai/open-source/overview"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v2.0.20",
+            "published_at": "2026-09-02T13:18:18Z",
+            "html_url": "https://github.com/mem0ai/mem0/releases/tag/v2.0.20",
+            "prerelease": false
+          },
+          {
+            "tag_name": "ts-v3.1.8",
+            "published_at": "2026-09-02T13:19:10Z",
+            "html_url": "https://github.com/mem0ai/mem0/releases/tag/ts-v3.1.8",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "dspy",
+        "order": 8,
+        "title": "DSPy：把提示词优化变成有样本、有反馈的过程",
+        "repositoryUrl": "https://github.com/stanfordnlp/dspy",
+        "category": "提示词优化",
+        "selectionBasis": "method",
+        "reason": "面向任务样本和反馈的优化方法，可对应公开Python实现。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/stanfordnlp/dspy/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/stanfordnlp/dspy",
+          "https://dspy.ai/",
+          "https://dspy.ai/getting-started/gepa-optimization/"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "3.3.1",
+            "published_at": "2026-08-21T23:07:09Z",
+            "html_url": "https://github.com/stanfordnlp/dspy/releases/tag/3.3.1",
+            "prerelease": false
+          },
+          {
+            "tag_name": "3.3.0",
+            "published_at": "2026-08-03T20:06:03Z",
+            "html_url": "https://github.com/stanfordnlp/dspy/releases/tag/3.3.0",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "promptfoo",
+        "order": 9,
+        "title": "Promptfoo：每次换模型或改提示词，都跑同一组用例",
+        "repositoryUrl": "https://github.com/promptfoo/promptfoo",
+        "category": "应用评测",
+        "selectionBasis": "curated",
+        "reason": "用例评测与回归检查，帮助验证工具和方法实际效果。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/promptfoo/promptfoo/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/promptfoo/promptfoo",
+          "https://www.promptfoo.dev/docs/intro/"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "0.122.2",
+            "published_at": "2026-08-28T07:03:20Z",
+            "html_url": "https://github.com/promptfoo/promptfoo/releases/tag/0.122.2",
+            "prerelease": false
+          },
+          {
+            "tag_name": "code-scan-action-0.2.0",
+            "published_at": "2026-08-28T07:34:11Z",
+            "html_url": "https://github.com/promptfoo/promptfoo/releases/tag/code-scan-action-0.2.0",
+            "prerelease": false
+          }
+        ]
+      },
+      {
+        "id": "ecc",
+        "order": 10,
+        "title": "ECC：把编码 Agent 的工作规则整理成可复用组件",
+        "repositoryUrl": "https://github.com/affaan-m/ECC",
+        "category": "执行规则",
+        "selectionBasis": "release",
+        "reason": "保留规则组件并补安装与hooks维护记录，说明平台能力差异。",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/affaan-m/ECC/blob/main/LICENSE",
+        "checkedAt": "2026-09-09T10:18:55+08:00",
+        "sourceUrls": [
+          "https://github.com/affaan-m/ECC",
+          "https://github.com/affaan-m/ECC#platform-support"
+        ],
+        "observedReleases": [
+          {
+            "tag_name": "v2.2.1",
+            "published_at": "2026-09-08T17:52:08Z",
+            "html_url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.1",
+            "prerelease": false
+          },
+          {
+            "tag_name": "v2.2.0",
+            "published_at": "2026-08-28T19:55:05Z",
+            "html_url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.0",
+            "prerelease": false
+          }
+        ]
+      }
+    ],
+    "excludedCandidates": [
+      {
+        "id": "crawl4ai",
+        "repositoryUrl": "https://github.com/unclecode/crawl4ai",
+        "reason": "已核对仓库、许可与v0.9.3；本期已有资料输入和网页操作，位置留给制图等不同任务。"
+      },
+      {
+        "id": "docling",
+        "repositoryUrl": "https://github.com/docling-project/docling",
+        "reason": "已核对仓库、许可与v2.126.0；与MarkItDown同属文档处理，本期优先轻量入门，留待深度文档专题。"
+      },
+      {
+        "id": "langextract",
+        "repositoryUrl": "https://github.com/google/langextract",
+        "reason": "已核对仓库、许可和版本；结构化抽取方向有价值，本期方法名额优先优化与评测。"
+      },
+      {
+        "id": "smolagents",
+        "repositoryUrl": "https://github.com/huggingface/smolagents",
+        "reason": "从HF Cookbook回查官方库；与已有工作流、Agent工具有交叉，本期不继续增加通用Agent构建框架。"
+      },
+      {
+        "id": "pydantic-ai",
+        "repositoryUrl": "https://github.com/pydantic/pydantic-ai",
+        "reason": "查官方仓库确认Python Agent方向；本期用Langflow覆盖易上手的应用构建，留待类型化开发专题。"
+      }
+    ]
   }
 }

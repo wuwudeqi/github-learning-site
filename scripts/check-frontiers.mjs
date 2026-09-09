@@ -99,6 +99,39 @@ export function validateIssue(audit, news, date) {
   return errors;
 }
 
+export function validateProjects(collection, article) {
+  const errors = [];
+  const require = (condition, message) => {
+    if (!condition) errors.push(message);
+  };
+  require(Number.isFinite(Date.parse(collection?.checkedThrough)),
+    "missing open-source project check time");
+  const projects = collection?.projects ?? [];
+  const sections = [...article.matchAll(
+    /^## (\d{2}) · (.+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm,
+  )];
+  require(projects.length === 10 && sections.length === 10,
+    "expected 10 open-source projects in both evidence and article");
+  const canonical = (url) => (url ?? "").toLowerCase().replace(/\/+$/, "");
+  require(new Set(projects.map((item) => item.id)).size === projects.length &&
+    new Set(projects.map((item) => canonical(item.repositoryUrl))).size === projects.length,
+    "duplicate open-source project");
+  for (const [index, item] of projects.entries()) {
+    const section = sections[index];
+    require(item.order === index + 1 && Number(section?.[1]) === index + 1 &&
+      section?.[2] === item.title, `project headline/order mismatch: ${item.id}`);
+    require(/^https:\/\//.test(item.repositoryUrl ?? "") &&
+      section?.[3].includes(`(${item.repositoryUrl})`),
+      `missing project source in article: ${item.id}`);
+    require(!!item.license?.trim() && /^https:\/\//.test(item.licenseUrl ?? "") &&
+      section?.[3].includes(`[${item.license}](${item.licenseUrl})`),
+      `missing project license evidence: ${item.id}`);
+    require(!!item.reason?.trim() && Number.isFinite(Date.parse(item.checkedAt)),
+      `missing project selection/check record: ${item.id}`);
+  }
+  return errors;
+}
+
 async function findIssues(dir) {
   const issues = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -118,11 +151,13 @@ async function main() {
       await readFile(`docs/frontiers-source-audits/${date}.json`, "utf8"),
     );
     const errors = validateIssue(audit, await readFile(file, "utf8"), date);
+    errors.push(...validateProjects(audit.openSourceProjects,
+      await readFile(path.join(path.dirname(file), "04-开源项目.md"), "utf8")));
     if (errors.length) throw new Error(`${date}:\n${errors.join("\n")}`);
     count++;
   }
   console.log(
-    `前沿检查通过：${count} 期；每期 15 条、来源日期、厂商记录、重要候选与热点证据一致。`,
+    `前沿检查通过：${count} 期；15 条新闻、10 个开源项目及对应来源、日期、许可与去重记录一致。`,
   );
 }
 

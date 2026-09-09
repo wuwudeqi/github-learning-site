@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { validateIssue } from "../scripts/check-frontiers.mjs";
+import { validateIssue, validateProjects } from "../scripts/check-frontiers.mjs";
 
 const audit = JSON.parse(
   await readFile(
@@ -17,6 +17,9 @@ const news = await readFile(
   "utf8",
 );
 const check = (data, text = news) => validateIssue(data, text, "2026-09-09");
+const projects = await readFile(new URL(
+  "../content/frontiers/2026/09/2026-09-09/04-开源项目.md", import.meta.url,
+), "utf8");
 
 test("the regenerated issue has matching evidence and fifteen entries", () => {
   assert.deepEqual(check(audit), []);
@@ -51,4 +54,25 @@ test("missing article, wrong date, and duplicate events fail", () => {
   const errors = check(data);
   assert.ok(errors.some((error) => error.includes("seven-day window")));
   assert.ok(errors.some((error) => error.includes("duplicate event")));
+});
+
+test("the new application column contains ten projects with source and license links", () => {
+  assert.deepEqual(validateProjects(audit.openSourceProjects, projects), []);
+});
+
+test("a missing or repeated project cannot fill the daily ten", () => {
+  const data = structuredClone(audit.openSourceProjects);
+  data.projects.pop();
+  assert.ok(validateProjects(data, projects).some((error) => error.includes("expected 10")));
+  const duplicate = structuredClone(audit.openSourceProjects);
+  duplicate.projects[1].repositoryUrl = duplicate.projects[0].repositoryUrl.toUpperCase() + "/";
+  assert.ok(validateProjects(duplicate, projects).some((error) => error.includes("duplicate")));
+});
+
+test("project evidence must be accessible from the matching article", () => {
+  const data = structuredClone(audit.openSourceProjects);
+  data.projects[0].licenseUrl = "https://example.com/unverified-license";
+  assert.ok(validateProjects(data, projects).some((error) => error.includes("license evidence")));
+  const missingSource = projects.replaceAll(data.projects[0].repositoryUrl + ")", "https://example.com/)");
+  assert.ok(validateProjects(data, missingSource).some((error) => error.includes("project source")));
 });
