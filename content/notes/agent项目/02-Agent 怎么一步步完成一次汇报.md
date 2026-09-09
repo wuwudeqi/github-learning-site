@@ -1,6 +1,6 @@
 ---
 id: budget-agent-design
-title: Agent 项目｜Agent 怎么一步步完成一次汇报
+title: "Agent 怎么一步步完成一次汇报"
 category: 笔记
 author: 个人整理
 date: "2026-09-09"
@@ -136,7 +136,7 @@ Java 业务服务按规则计算，得到 D_A 预算 **52 万**、实际 **56 �
 | data_release | 这次采用的数据发布批次 | 分析做到一半，新增费用使前后数字对不上 |
 | scope_binding_id | 记录当时批准的数据范围 | 难以追查结果范围；但它不能替代当前鉴权 |
 
-规则包内部还要保留预算、实际各自的规则集合版本，例如 `budget_rule_version` 和 `actual_rule_version`。不是要求这两个版本字符串相同，而是要求比较方法经过业务确认。舍入算法在[分摊语义与 Java 实现](04-分摊语义与Java工程实现.md)中展开。
+规则包内部还要保留预算、实际各自的规则集合版本，例如 `budget_rule_version` 和 `actual_rule_version`。不是要求这两个版本字符串相同，而是要求比较方法经过业务确认。舍入算法在[分摊语义与 Java 实现](04-一笔费用怎样分摊，Java%20又该守住什么.md)中展开。
 
 **模型拿到计划 ID，不代表获得永久通行证。** 每次执行、读取和下载都重新检查当前授权。模型也不能用自己修改过的 `effective_plan` 对象覆盖后端记录。
 
@@ -427,4 +427,4 @@ State 适合保存当前进度和小摘要。完整数据可能很大，还要�
 
 checkpoint 说明执行恢复到哪里，不能证明外部系统有没有执行成功。Java 可能已经受理、响应却丢了，所以业务操作 ID 要在调用前可靠保存，后端用唯一约束和参数 hash 处理重试。
 
-继续阅读：[Skill、Function Calling 和 MCP 如何配合](03-Skills与MCP能力管理.md)，再进入[分摊语义与 Java 工程实现](04-分摊语义与Java工程实现.md)。
+继续阅读：[Skill、Function Calling 和 MCP 如何配合](03-Skill、Function%20Calling%20和%20MCP%20怎么配合.md)，再进入[分摊语义与 Java 工程实现](04-一笔费用怎样分摊，Java%20又该守住什么.md)。
