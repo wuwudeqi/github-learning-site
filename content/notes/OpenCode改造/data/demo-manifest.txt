@@ -1,0 +1,28 @@
+{
+  "id": "task-1",
+  "status": "completed",
+  "snapshot": {
+    "skill": "department-report@1.0.0",
+    "mcp": "fixture-file-tool@1.0.0",
+    "workflow": "department-summary@1",
+    "model": "fixture-plan@1"
+  },
+  "artifact": {
+    "report": {
+      "rowCount": 3,
+      "departments": [
+        {
+          "name": "研发",
+          "cents": "8000"
+        },
+        {
+          "name": "销售",
+          "cents": "15000"
+        }
+      ],
+      "totalCents": "23000"
+    },
+    "inputSha256": "14b8d9a737ef680fea0bebd0d6c0fe210da8c52afc5e9835f109402a5e6905bb",
+    "resultSha256": "a4cac4d5a6c7a685767866031c7e521c85b9ca5386f8b998b4717f53acac327f"
+  }
+}

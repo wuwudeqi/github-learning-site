@@ -1,0 +1,19 @@
+{
+  "format": "teaching-design-only; not an OpenCode configuration",
+  "id": "department-summary",
+  "version": "1",
+  "input": {
+    "columns": ["record_id", "department", "amount"],
+    "amount": "non-negative decimal with exactly two places; single currency",
+    "duplicate_id_policy": "reject whole input"
+  },
+  "steps": ["validate_input", "sum_by_department", "validate_report", "publish_artifact"],
+  "success_checks": ["all input rows accounted for", "department totals sum to overall total"],
+  "artifact": {"kind": "csv", "schema_version": "1"},
+  "capabilities": {
+    "skill": "department-report@1.0.0",
+    "mcp": "fixture-file-tool@1.0.0",
+    "workflow": "department-summary@1",
+    "model": "fixture-plan@1"
+  }
+}

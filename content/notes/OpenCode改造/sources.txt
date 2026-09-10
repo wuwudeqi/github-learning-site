@@ -1,0 +1,141 @@
+OpenCode 改造专题：源码取证索引
+取证日期：2026-09-11（Asia/Shanghai）
+访问方式：GitHub 官方仓库，通过 gh api 读取固定提交的文件；不使用分支浮动链接支持正文事实。
+范围：按问题定向读取，并未完整审计三个仓库、编译运行三个上游工程或验证其所有功能。
+本专题的源码解读和企业改造方案分别表述；独立 TypeScript 机制实验不代表已完成 OpenCode fork。
+公司模型端点、IM 平台、企业身份系统未提供，真实模型与企业端到端效果未测。
+
+重要边界：
+1. OpenCode 固定版本同时存在 packages/core 与 packages/opencode，会话正文追踪已核实的兼容 HTTP handler → SessionPrompt.Service 路径；未声称所有入口都只用这条路径。
+2. 上游已具备模型适配、会话、取消、Skill、MCP、组织远程配置和压缩能力；不能计为本项目从零新增。
+3. 企业任务 ID、能力版本快照、产物协议与业务恢复属于改造设计；lab 是单进程内存实验，无真实模型、无分布式持久化。
+4. Codex 内容仅针对开源固定提交，不推断桌面产品或未公开后端的实现。
+5. DeepSeek 架构文档中的规则已结合相应源码核对，但不代表本项目已经实现其事件日志、插件体系或压缩引擎。
+6. 本文件的 SHA-256 校验下载文本；它不是上游构建或运行验证结果。
+
+仓库：anomalyco/opencode
+固定提交：b3f1a96c6dd7adeb28b36dd11add1998fc84d67b
+https://github.com/anomalyco/opencode/tree/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b
+
+packages/opencode/src/server/routes/instance/httpapi/handlers/session.ts
+sessionHandlers: prompt / promptAsync / abort；已读取调用位置
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/server/routes/instance/httpapi/handlers/session.ts
+本地读取文本 SHA-256：3ce829f386267181da442d499d841463a9e532db827f75a6f41d501de6f71cf6
+
+packages/opencode/src/session/prompt.ts
+SessionPrompt.prompt / runLoop / loop；已读取创建消息、继续判定、工具和系统信息装配、结构化输出检查
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/prompt.ts
+本地读取文本 SHA-256：f0c5bc64c0f0e966693d4a57f7ede1e9d6e188b396152f04b55303dc75b9b768
+
+packages/opencode/src/session/processor.ts
+SessionProcessor.process / cleanup / halt；已读取事件消费、重试、异常与中断清理
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/processor.ts
+本地读取文本 SHA-256：0b31e207beda56bd9a4b9b88c9e42d89a0651dd011773748c8e2938dfc3dcb74
+
+packages/opencode/src/session/llm.ts
+LLM.run / stream；已读取 native 与 AI SDK 分支及统一事件接口、abortSignal/maxRetries 参数
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/llm.ts
+本地读取文本 SHA-256：5f1dcfb734853e39760e4dd05470f0c7d8752fc5dcc64e118c065149602e402d
+
+packages/opencode/src/session/llm/ai-sdk.ts
+LLMAISDK.toLLMEvents；已读取工具输入增量、调用与结果的事件转换
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/llm/ai-sdk.ts
+本地读取文本 SHA-256：3d2e653811abaf230b3fea9a54049499d1be2c09dabe017ed4eb99918ee7def5
+
+packages/opencode/src/session/retry.ts
+delay / retryable / policy；已读取重试分类、响应头、指数退避及次数限制
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/retry.ts
+本地读取文本 SHA-256：7e24b96622f7b46586eabb68d3c2464d1c68f5cc58262f2d305878d5e55b9aed
+
+packages/opencode/src/session/run-state.ts
+SessionRunState.cancel / ensureRunning / cancelBackgroundJobs；已读取会话 Runner 与关联任务取消
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/run-state.ts
+本地读取文本 SHA-256：75ed3e7f02474f4ff8ac88b5f24b75ffa7cdb9829770377e7c33d248df43936e
+
+packages/opencode/src/effect/runner.ts
+Runner.make / ensureRunning / finishRun / cancel；已读取状态与同步修改路径
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/effect/runner.ts
+本地读取文本 SHA-256：a5c3379591415574f3fb992ffd40659f07c08e5a4fb0f251068baecb0bd6107f
+
+packages/opencode/src/session/compaction.ts
+SessionCompaction.prune / processCompaction；已读取裁剪标记、保护工具、摘要与续接路径
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/session/compaction.ts
+本地读取文本 SHA-256：8d478570a7e4ad32b746030d4f86a1c673949b1e2259bd716b3885d99283289a
+
+packages/opencode/src/skill/index.ts
+Skill 目录扫描、extra paths/URLs、available 与 fmt；已读取相应片段
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/skill/index.ts
+本地读取文本 SHA-256：91dce57f590e1ad3103e0555b893500e098a95cde2739422b699233889b205e6
+
+packages/opencode/src/tool/skill.ts
+SkillTool；全文已读取，技能正文与关联文件位置返回
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/tool/skill.ts
+本地读取文本 SHA-256：629ada0c0a0135cb003429aec233aeb165f0b98a2bd5171986bc319c11af3c07
+
+packages/opencode/src/mcp/index.ts
+connectTransport / connectRemote / watch / tools；已读取传输、目录、变化与超时路径
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/mcp/index.ts
+本地读取文本 SHA-256：82c459309dfd005d25daecfabc1007d807d4bee23f6078434974277938a1c026
+
+packages/opencode/src/config/config.ts
+wellknown config loading / merge；已读取组织远程配置读取及后续覆盖来源
+https://github.com/anomalyco/opencode/blob/b3f1a96c6dd7adeb28b36dd11add1998fc84d67b/packages/opencode/src/config/config.ts
+本地读取文本 SHA-256：87a9071af1ddb04d65947dba49be3fb4c94ecf63e120f17ce46ee81ff25dd45a
+
+仓库：deepseek-ai/deepseek-harness
+固定提交：c291e7961a515f6d7af9304e7fd1d257929aef26
+https://github.com/deepseek-ai/deepseek-harness/tree/c291e7961a515f6d7af9304e7fd1d257929aef26
+
+docs/architecture.md
+已读取 Events / Turn flow / Session log / Capability seams；文档说明与代码观察分开
+https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/docs/architecture.md
+本地读取文本 SHA-256：5bccea88701324e87ddec0aaa1d09925e574dd6d9be4567d60bcdad2c65f018e
+
+packages/core/agent-loop/src/index.ts
+FactoryOwnership / turnBoundaryProjectionDefinition；已读取 Agent 生命周期与步骤投影片段
+https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/core/agent-loop/src/index.ts
+本地读取文本 SHA-256：9cbee4cdf159df1a6562edfaaf47a41aea055224fc6a67fbc7e07029a91aeca1
+
+packages/core/agent-loop/src/agent.ts
+ReactLoopAgent.preStep / turn / step / prepareRequest；已读取边界事件与请求冻结路径
+https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/core/agent-loop/src/agent.ts
+本地读取文本 SHA-256：bbc3c4f34076e81596af855eddb1bf66f6362278730f7c4db24ea96a990e3cb3
+
+packages/core/agent-loop/src/tool-calls.ts
+executeToolCalls / runGroup；已读取分类、有界并行与取消处理
+https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/core/agent-loop/src/tool-calls.ts
+本地读取文本 SHA-256：1f8984127d4245b6a08c1e4b0c8b9d8fa7ce30ffcf08184187f16dc1bf57ae6d
+
+packages/skill/skill/src/index.ts
+分层注册表；已读取 Scope 查找、来源类型、注册生命周期及目录版本相关结构
+https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/skill/skill/src/index.ts
+本地读取文本 SHA-256：af4fad67fb086c3f5c93aed4604830718b4535e7e59a60d680404b07ea08477c
+
+packages/compaction/compaction-basic/src/index.ts
+BasicCompactionEngine；已读取 TokenMeter、压力检查、摘要区域与溢出路径
+https://github.com/deepseek-ai/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/packages/compaction/compaction-basic/src/index.ts
+本地读取文本 SHA-256：f824fc6f586c6ec7ae26442656d789accd0b5124924886e91b480bc587b1491d
+
+仓库：openai/codex
+固定提交：d6489472f3c15e87d2d7763a5fde033545c530f8
+https://github.com/openai/codex/tree/d6489472f3c15e87d2d7763a5fde033545c530f8
+
+codex-rs/core/src/session/turn.rs
+run_turn / run_pre_sampling_compact / run_auto_compact；已读取 Turn 入口与关键采样循环片段
+https://github.com/openai/codex/blob/d6489472f3c15e87d2d7763a5fde033545c530f8/codex-rs/core/src/session/turn.rs
+本地读取文本 SHA-256：087cfbdc633cacb71541c6e8651dd1132c27416e16192c286e59ab27ee45598f
+
+codex-rs/core/src/tools/parallel.rs
+ToolCallRuntime；已读取并行共享/独占许可、等待计时、取消终态竞态与相应测试片段
+https://github.com/openai/codex/blob/d6489472f3c15e87d2d7763a5fde033545c530f8/codex-rs/core/src/tools/parallel.rs
+本地读取文本 SHA-256：e01b784d80793d2af6d1e00a377ea618d5022b3f6d241ce3423778e866b784b3
+
+codex-rs/core/src/tools/router.rs
+ToolRouter；下载后检索路由边界，正文仅引用 parallel 中已确认的调用关系
+https://github.com/openai/codex/blob/d6489472f3c15e87d2d7763a5fde033545c530f8/codex-rs/core/src/tools/router.rs
+本地读取文本 SHA-256：466ee7a51fd9e6b741653b50313a2567bb08ce55a32af815a619a07cc38bafef
+
+codex-rs/core/src/context_manager/history.rs
+ContextManager.remove_first_item / normalize_history；已读取调用结果配对、孤立输出与模态整理
+https://github.com/openai/codex/blob/d6489472f3c15e87d2d7763a5fde033545c530f8/codex-rs/core/src/context_manager/history.rs
+本地读取文本 SHA-256：25fe60c3dd785723c953ab134c3bbdeb529833a87dff2f2eed4f37a07a16645b

@@ -1,0 +1,30 @@
+Controlled mutation experiments: two hand-selected regressions
+Time: 2026-09-11T00:09:18.865201+08:00
+Original files remain unchanged. This is not a comprehensive mutation-score benchmark.
+
+CASE: overwrite_department_total
+FILE: report.ts
+OLD: totals.set(department, (totals.get(department) ?? 0n) + amountToCents(amount));
+NEW: totals.set(department, amountToCents(amount));
+MUTATED_FILE_SHA256: d6e4a3b06b054069b30336826d706ea28db60c20d539f8ebd82b067ecac71e13
+COMMAND: node --experimental-strip-types --test lab.test.ts
+EXIT: 1
+not ok 1 - 01 normal input agrees with independent department and total oracle
+not ok 6 - 06 input row order does not change report
+not ok 16 - 16 completed result wins over later cancel
+not ok 20 - 20 artifact view is detached and provenance hashes are stable
+# tests 20
+# pass 16
+# fail 4
+
+CASE: commit_after_cancellation
+FILE: runtime.ts
+OLD: if (this.view(id).status !== 'running') return;
+NEW: // Mutation: the terminal-state recheck was incorrectly removed.
+MUTATED_FILE_SHA256: f7b6a66348a9a3265a7df696d6ddd7cfaf3f4788011070caa2fda67949f808a6
+COMMAND: node --experimental-strip-types --test lab.test.ts
+EXIT: 1
+not ok 15 - 15 cancelling before result commit wins even if tool ignores abort
+# tests 20
+# pass 19
+# fail 1

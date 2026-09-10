@@ -45,7 +45,7 @@ async function openMarkdown({
   element.innerHTML = `<div class="markdown-layout"><div class="markdown-scroll" tabindex="0" aria-label="文章内容"><article class="markdown-article"><div class="article-kicker">${escapeHTML(doc.category)} <span> / </span> ${escapeHTML(doc.author)}</div><div class="markdown-content">${html}</div><div class="article-end"><span>✳</span><p>读到这里，停下来想一想。</p><small>把一个新想法，留给下一次阅读。</small></div></article></div><aside class="article-toc"><div class="toc-label">本页目录</div><nav></nav><div class="toc-foot">${icon("book")}<span>按自己的节奏，慢慢读。</span></div></aside></div>`;
   const content = element.querySelector(".markdown-content");
   enhanceCallouts(content);
-  const isLearningNote = /^(budget-agent-|rag-)/.test(doc.id);
+  const isLearningNote = /^(budget-agent-|rag-|opencode-)/.test(doc.id);
   content.classList.toggle("learning-notes", isLearningNote);
   content
     .querySelectorAll("pre code")

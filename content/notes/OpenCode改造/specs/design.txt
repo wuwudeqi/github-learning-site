@@ -1,0 +1,38 @@
+报表与任务机制 · 设计样例 v1
+
+边界
+这是可独立运行的 TypeScript 机制实验，未导入 OpenCode 源码。
+模型由 fixturePlanner 固定返回计划；金额由 summarize 确定性计算。
+report.ts 负责输入格式与计算；runtime.ts 负责状态；demo.ts 负责组合和写文件。
+
+状态
+TaskRuntime.create 同步检查幂等索引、复制请求及能力标签、创建 queued 任务。
+去重键使用固定四元组序列化；内容哈希使用 instruction/csv 二元组序列化。
+run 仅接受 queued；在调用工具前写 running。
+run 在 await 后重新读状态；仍为 running 才同步提交内存产物、completed 和事件。
+cancel 仅接受 queued/running；先写 cancelled 和事件，再发 AbortSignal。
+异常仅能把 running 变为 failed，不能覆盖 cancelled。
+以上同步区只在同一 JS 进程成立。
+
+数据
+金额内部使用 BigInt 分；公开 Report 中分值使用十进制字符串，避免 JSON.stringify(BigInt) 错误。CSV 展示时再格式化为固定两位小数；Report 没有单独的展示金额字段。
+TaskRuntime 中 Request 字段和 CapabilitySnapshot 字段均为字符串，浅复制可以分离这些字段。
+对外 view 用 structuredClone；事件读取返回复制的事件。
+以后若加入嵌套对象，须重新审查冻结与复制深度，不能套用当前结论。
+
+信任边界
+真实业务中的 actor 等身份字段由可信适配层填充。
+本实验 tool 是内部已知实现；其类型声明不是外部结果的运行时校验。
+工具接入模型生成代码或远程 API 后，应先校验 schema 和业务不变量，再提交产物。
+
+上游集成方向（未实现）
+沿固定 OpenCode 提交的 HTTP session handler -> SessionPrompt -> SessionProcessor -> LLM 读取。
+入口企业任务记录与 OpenCode session 建立明确映射；不把所有上游内部事件直接当业务完成信号。
+复用原有 provider、Skill、MCP 和取消机制，在外层补业务身份、能力解析、结果验证与发布。
+为实际 fork 增加适配层契约测试，再跑上游受影响测试；本实验通过不替代集成通过。
+
+部署变化后的设计问题
+多进程：幂等唯一约束、内容指纹比较、状态条件更新、Worker 租约。
+进程恢复：任务记录、事件记录、输入/产物持久保存、未知外部结果查询。
+文件发布：先写暂存产物并校验，再提交可见引用；补偿及垃圾清理另行定义。
+权限撤销：版本固定不延长授权，每次敏感调用仍检查有效权限。

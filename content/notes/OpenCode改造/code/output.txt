@@ -1,0 +1,191 @@
+OpenCode mechanism lab: actual local verification
+Time: 2026-09-11T00:05:21.345982+08:00
+Model: fixture-plan@1; no real model/OpenCode/MCP integration
+Node: v22.22.3
+typescript: 5.9.3
+@types/node: 22.20.2
+
+COMMAND: /tmp/opencode-mechanism-types/node_modules/.bin/tsc --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext --allowImportingTsExtensions --types node --typeRoots /tmp/opencode-mechanism-types/node_modules/@types report.ts runtime.ts demo.ts lab.test.ts
+EXIT: 0
+
+
+
+COMMAND: node --experimental-strip-types --test lab.test.ts
+EXIT: 0
+TAP version 13
+# Subtest: 01 normal input agrees with independent department and total oracle
+ok 1 - 01 normal input agrees with independent department and total oracle
+  ---
+  duration_ms: 2.825958
+  type: 'test'
+  ...
+# Subtest: 02 integer cents retain exact values beyond Number safe integer range
+ok 2 - 02 integer cents retain exact values beyond Number safe integer range
+  ---
+  duration_ms: 0.066084
+  type: 'test'
+  ...
+# Subtest: 03 bad amounts fail instead of silently dropping or changing rows
+ok 3 - 03 bad amounts fail instead of silently dropping or changing rows
+  ---
+  duration_ms: 0.389542
+  type: 'test'
+  ...
+# Subtest: 04 duplicate business IDs are rejected
+ok 4 - 04 duplicate business IDs are rejected
+  ---
+  duration_ms: 0.116917
+  type: 'test'
+  ...
+# Subtest: 05 CSV contract rejects quotes, unexpected header and unsafe department labels
+ok 5 - 05 CSV contract rejects quotes, unexpected header and unsafe department labels
+  ---
+  duration_ms: 0.450042
+  type: 'test'
+  ...
+# Subtest: 06 input row order does not change report
+ok 6 - 06 input row order does not change report
+  ---
+  duration_ms: 0.15525
+  type: 'test'
+  ...
+# Subtest: 07 identical IM redelivery returns the same task without extra event
+ok 7 - 07 identical IM redelivery returns the same task without extra event
+  ---
+  duration_ms: 0.436833
+  type: 'test'
+  ...
+# Subtest: 08 same identity key with changed input is an explicit conflict
+ok 8 - 08 same identity key with changed input is an explicit conflict
+  ---
+  duration_ms: 0.104625
+  type: 'test'
+  ...
+# Subtest: 09 actor, channel and conversation isolate idempotency scope
+ok 9 - 09 actor, channel and conversation isolate idempotency scope
+  ---
+  duration_ms: 0.436708
+  type: 'test'
+  ...
+# Subtest: 10 updating registry cannot alter an existing task capability snapshot
+ok 10 - 10 updating registry cannot alter an existing task capability snapshot
+  ---
+  duration_ms: 0.40425
+  type: 'test'
+  ...
+# Subtest: 11 returned view cannot mutate internal task snapshot
+ok 11 - 11 returned view cannot mutate internal task snapshot
+  ---
+  duration_ms: 0.117833
+  type: 'test'
+  ...
+# Subtest: 12 reconnect replays only events after the confirmed cursor
+ok 12 - 12 reconnect replays only events after the confirmed cursor
+  ---
+  duration_ms: 0.27725
+  type: 'test'
+  ...
+# Subtest: 13 invalid cursors are rejected instead of hiding event gaps
+ok 13 - 13 invalid cursors are rejected instead of hiding event gaps
+  ---
+  duration_ms: 0.085875
+  type: 'test'
+  ...
+# Subtest: 14 cancel before start prevents tool invocation
+ok 14 - 14 cancel before start prevents tool invocation
+  ---
+  duration_ms: 0.136166
+  type: 'test'
+  ...
+# Subtest: 15 cancelling before result commit wins even if tool ignores abort
+ok 15 - 15 cancelling before result commit wins even if tool ignores abort
+  ---
+  duration_ms: 0.119
+  type: 'test'
+  ...
+# Subtest: 16 completed result wins over later cancel
+ok 16 - 16 completed result wins over later cancel
+  ---
+  duration_ms: 0.110208
+  type: 'test'
+  ...
+# Subtest: 17 late tool failure cannot overwrite cancelled status
+ok 17 - 17 late tool failure cannot overwrite cancelled status
+  ---
+  duration_ms: 0.136292
+  type: 'test'
+  ...
+# Subtest: 18 normal tool failure produces failed terminal state without artifact
+ok 18 - 18 normal tool failure produces failed terminal state without artifact
+  ---
+  duration_ms: 0.173208
+  type: 'test'
+  ...
+# Subtest: 19 a running task cannot execute a second tool
+ok 19 - 19 a running task cannot execute a second tool
+  ---
+  duration_ms: 0.087792
+  type: 'test'
+  ...
+# Subtest: 20 artifact view is detached and provenance hashes are stable
+ok 20 - 20 artifact view is detached and provenance hashes are stable
+  ---
+  duration_ms: 0.101167
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 82.220792
+
+
+
+COMMAND: node --experimental-strip-types demo.ts /var/folders/yh/hktcxc7n6nx4_cww9bmbntnr0000gn/T/opencode-lab-verified-fxrpidyg
+EXIT: 0
+{
+  "mode": "fixture-model + real-local-tool",
+  "taskId": "task-1",
+  "status": "completed",
+  "rows": 3,
+  "total": "230.00",
+  "events": [
+    {
+      "seq": 1,
+      "type": "task.created",
+      "detail": "Capabilities fixed for this task."
+    },
+    {
+      "seq": 2,
+      "type": "task.started",
+      "detail": "Tool started."
+    },
+    {
+      "seq": 3,
+      "type": "task.completed",
+      "detail": "a4cac4d5a6c7a685767866031c7e521c85b9ca5386f8b998b4717f53acac327f"
+    }
+  ],
+  "outputDir": "/var/folders/yh/hktcxc7n6nx4_cww9bmbntnr0000gn/T/opencode-lab-verified-fxrpidyg"
+}
+
+
+DEMO ARTIFACT ORACLE: PASS (full report object + exact CSV bytes as UTF-8 text)
+
+SHA256 of tested implementation, fixtures and saved output:
+3f0821ee23b65e5b7197c5526cbc85af20ac470eaf8a3b106fd574efa7ffffcc  code/demo.ts
+69c606335dd99aad8daf0a8e2a840abb9290b5e510c05eefe97c914b847d9359  code/lab.test.ts
+effe22b3f978b672ecb8d7954b2c2ac9cb3206885ed77f37a8a84bcfa9a971d4  code/report.ts
+1ceb39d3f1701f09482a89f1a33af54b70e1e009ab8c539742ad0f71bba786a7  code/runtime.ts
+5b15aa0b0a7b27dea1defdcd79f97eaffd31a04885f6c331cf7b7188c3ab6064  data/DATASET.txt
+13ab6a081bb5c67baffb7e96a0dd0fafb2dca2b4fda220ff6389d22690ce1d06  data/bad-amount.csv
+a285e67f549a540d5ea53e6ab3a509b31c57a936315d43cddc727908951a7235  data/demo-manifest.txt
+af394c89e864afbb0d1d7d3b67271df4021a5d7657fb5708d132e327c1292172  data/demo-summary.csv
+b97a780ba4020d33e51eade9f248216949879834dc76c5225f7c1b4289fccb1d  data/duplicate-id.csv
+ef368b749a64d355eace15c3810e0ef724c4ba8ffcf0a74fd1adb834afe14cad  data/expected-report.txt
+14b8d9a737ef680fea0bebd0d6c0fe210da8c52afc5e9835f109402a5e6905bb  data/normal.csv
+c4f9c5ede6f3c03369b8c9a53c3749b4658fe62568a56b85d04621b597586c1b  data/workflow-v1.txt
