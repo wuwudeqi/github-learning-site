@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="950" viewBox="0 0 1200 950" role="img" aria-labelledby="title desc">
+<title id="title">版本与范围：相关资料还要适用</title><desc id="desc">扩展设计示意：真实身份和 ACL 接入后，按用户可见范围、产品和版本筛选资料。当前代码只支持状态、版本和系统过滤，未实现 ACL 或在线索引与缓存失效。跨系统问题需分别核对适用文档。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="950" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">版本与范围：相关资料还要适用</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">扩展设计：接入真实权限后，再按用户可见范围过滤资料。</text>
+<rect x="52" y="161" width="1096" height="105" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="202" font-size="27" font-weight="650" fill="#226C8B">问题：CodeHub v2 怎样接入 FlowCI 的自动构建？</text>
+<text x="74" y="244" font-size="24" font-weight="400" fill="#18383F">会话身份确定可见范围；产品与部署版本由受信配置或用户澄清。</text>
+<path d="M600 274V303" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="282" y="320" width="636" height="140" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="304" y="361" font-size="27" font-weight="650" fill="#226C8B">先确定资料适用范围</text>
+<text x="304" y="403" font-size="24" font-weight="400" fill="#18383F">产品＋版本＋生效状态＋文档可见范围</text>
+<text x="304" y="437" font-size="24" font-weight="400" fill="#18383F">跨系统问题分别检查 CodeHub 与 FlowCI。</text>
+<path d="M444 468V501H242V534" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M600 468V534" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M756 468V501H958V534" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="552" width="340" height="182" rx="18" fill="#F7E7D7" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="593" font-size="27" font-weight="650" fill="#B56B32">旧版指南</text>
+<text x="74" y="635" font-size="21" font-weight="400" fill="#18383F">CodeHub v1</text>
+<text x="74" y="669" font-size="21" font-weight="400" fill="#18383F">内容相近，版本不适用</text>
+<text x="74" y="703" font-size="21" font-weight="400" fill="#18383F">保留归档，不混入本次证据。</text>
+<rect x="430" y="552" width="340" height="182" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="452" y="593" font-size="27" font-weight="650" fill="#21766B">当前可见指南</text>
+<text x="452" y="635" font-size="21" font-weight="400" fill="#18383F">CodeHub v2 ＋ FlowCI v2</text>
+<text x="452" y="669" font-size="21" font-weight="400" fill="#18383F">检查双方配置与前提</text>
+<text x="452" y="703" font-size="21" font-weight="400" fill="#18383F">引用各自适用说明。</text>
+<rect x="808" y="552" width="340" height="182" rx="18" fill="#F7E7D7" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="830" y="593" font-size="27" font-weight="650" fill="#B56B32">受限运维资料</text>
+<text x="830" y="635" font-size="21" font-weight="400" fill="#18383F">当前身份无查看权限</text>
+<text x="830" y="669" font-size="21" font-weight="400" fill="#18383F">从可用证据中排除</text>
+<text x="830" y="703" font-size="21" font-weight="400" fill="#18383F">不能靠提示词放开访问。</text>
+<rect x="52" y="784" width="1096" height="92" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="76" y="822" font-size="24" font-weight="400" fill="#18383F">内容更新、删除和权限撤销，都要同步影响索引与缓存。</text>
+<text x="76" y="857" font-size="24" font-weight="400" fill="#18383F">版本不明且会改变结论时再追问；不能靠相似度推定用户所用版本。</text>
+<text x="52" y="920" font-size="18" font-weight="400" fill="#586D70">当前代码支持状态、版本和系统过滤；真实身份、ACL 与缓存失效属于扩展设计。</text>
+</g></svg>

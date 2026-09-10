@@ -1,0 +1,2954 @@
+{
+  "kind": "real_retrieval_on_synthetic_corpus",
+  "split": "dev",
+  "answerable_questions": 42,
+  "k": 5,
+  "chunks": 72,
+  "config": {
+    "chunk_tokens": 384,
+    "overlap_tokens": 48,
+    "candidate_pool": 20,
+    "rerank_pool": 12,
+    "k": 5,
+    "rrf_constant": 60,
+    "embedding": "BAAI/bge-small-zh-v1.5",
+    "reranker": "BAAI/bge-reranker-base",
+    "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70"
+  },
+  "python": "3.12.1",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "corpus_sha256": "b1f6efa98a981750b19e855ba626cbf6c5608fa1c2cea0d0b29c02a1c961b34f",
+  "indexed_chunks_sha256": "5fc56f5e1010dcd1f0544adf6d7dd57bd1f1d23fde40d0e4c26279a3bfdd142e",
+  "questions_sha256": "0b6fbc7549a476f35783957c63151a01b6b3a5326b9365d10c733c03c13028a3",
+  "index_build_seconds": 0.68,
+  "summary": {
+    "dense": {
+      "section_recall": 0.936508,
+      "doc_recall": 0.97619,
+      "mrr": 0.944444,
+      "all_evidence": 0.857143,
+      "latency_p50_ms": 9.71,
+      "latency_p95_ms": 10.25
+    },
+    "bm25": {
+      "section_recall": 0.93254,
+      "doc_recall": 0.97619,
+      "mrr": 0.882937,
+      "all_evidence": 0.880952,
+      "latency_p50_ms": 0.4,
+      "latency_p95_ms": 0.54
+    },
+    "hybrid": {
+      "section_recall": 0.948413,
+      "doc_recall": 0.97619,
+      "mrr": 0.948413,
+      "all_evidence": 0.880952,
+      "latency_p50_ms": 10.2,
+      "latency_p95_ms": 10.61
+    }
+  },
+  "generation_evaluated": false,
+  "judge_evaluated": false,
+  "latency_note": "Sequential local CPU retrieval; warm/cache effects exist. Not production P95 or concurrent load.",
+  "rows": [
+    {
+      "qid": "Q-001",
+      "mode": "dense",
+      "category": "operation",
+      "query": "新服务要在 CodeHub 2.0 建仓库，普通开发者可以直接创建吗？先准备哪些信息？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s01:p0",
+        "KH-001:s03:p0",
+        "KH-001:s02:p0",
+        "KH-003:s01:p0",
+        "KH-002:s01:p0"
+      ],
+      "elapsed_ms": 11.94,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-001",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "新服务要在 CodeHub 2.0 建仓库，普通开发者可以直接创建吗？先准备哪些信息？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s01:p0",
+        "KH-002:s01:p0",
+        "KH-001:s02:p0",
+        "KH-019:s01:p0",
+        "KH-006:s01:p0"
+      ],
+      "elapsed_ms": 0.55,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-001",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "新服务要在 CodeHub 2.0 建仓库，普通开发者可以直接创建吗？先准备哪些信息？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s01:p0",
+        "KH-001:s02:p0",
+        "KH-002:s01:p0",
+        "KH-001:s03:p0",
+        "KH-003:s01:p0"
+      ],
+      "elapsed_ms": 10.43,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-002",
+      "mode": "dense",
+      "category": "operation",
+      "query": "CodeHub 2.0 要导入一个已经有提交历史的仓库，新建时要不要勾选 README？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s02:p0",
+        "KH-002:s03:p0",
+        "KH-005:s01:p0",
+        "KH-001:s03:p0",
+        "KH-002:s01:p0"
+      ],
+      "elapsed_ms": 9.8,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-002",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "CodeHub 2.0 要导入一个已经有提交历史的仓库，新建时要不要勾选 README？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s02:p0",
+        "KH-001:s03:p0",
+        "KH-003:s01:p0",
+        "KH-009:s02:p0",
+        "KH-019:s02:p0"
+      ],
+      "elapsed_ms": 0.48,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-002",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "CodeHub 2.0 要导入一个已经有提交历史的仓库，新建时要不要勾选 README？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s02:p0",
+        "KH-001:s03:p0",
+        "KH-005:s02:p0",
+        "KH-005:s01:p0",
+        "KH-008:s01:p0"
+      ],
+      "elapsed_ms": 10.84,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-003",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "CodeHub 仓库已经建好了，是不是也有流水线和发布权限了？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-001:s03:p0",
+        "KH-009:s01:p0",
+        "KH-002:s01:p0",
+        "KH-002:s02:p0",
+        "KH-003:s03:p0"
+      ],
+      "elapsed_ms": 9.83,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-003",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "CodeHub 仓库已经建好了，是不是也有流水线和发布权限了？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s01:p0",
+        "KH-020:s02:p0",
+        "KH-014:s01:p0",
+        "KH-017:s01:p0",
+        "KH-015:s03:p0"
+      ],
+      "elapsed_ms": 0.39,
+      "section_recall": 0.0,
+      "doc_recall": 0.0,
+      "mrr": 0.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-003",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "CodeHub 仓库已经建好了，是不是也有流水线和发布权限了？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s01:p0",
+        "KH-001:s03:p0",
+        "KH-003:s03:p0",
+        "KH-002:s02:p0",
+        "KH-020:s02:p0"
+      ],
+      "elapsed_ms": 9.88,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-004",
+      "mode": "dense",
+      "category": "permission",
+      "query": "正式员工只需要拉取 CodeHub 私有仓库的代码，申请什么角色，怎么审批？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s01:p0",
+        "KH-002:s02:p0",
+        "KH-003:s01:p0",
+        "KH-003:s02:p0",
+        "KH-002:s03:p0"
+      ],
+      "elapsed_ms": 9.67,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-004",
+      "mode": "bm25",
+      "category": "permission",
+      "query": "正式员工只需要拉取 CodeHub 私有仓库的代码，申请什么角色，怎么审批？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s01:p0",
+        "KH-003:s01:p0",
+        "KH-002:s02:p0",
+        "KH-002:s03:p0",
+        "KH-003:s02:p0"
+      ],
+      "elapsed_ms": 0.45,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-004",
+      "mode": "hybrid",
+      "category": "permission",
+      "query": "正式员工只需要拉取 CodeHub 私有仓库的代码，申请什么角色，怎么审批？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s01:p0",
+        "KH-002:s02:p0",
+        "KH-003:s01:p0",
+        "KH-002:s03:p0",
+        "KH-003:s02:p0"
+      ],
+      "elapsed_ms": 10.79,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-005",
+      "mode": "dense",
+      "category": "permission",
+      "query": "CodeHub 维护者权限和开发者权限的申请审批有什么不同？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s01:p0",
+        "KH-002:s02:p0",
+        "KH-003:s02:p0",
+        "KH-006:s01:p0",
+        "KH-020:s03:p0"
+      ],
+      "elapsed_ms": 9.56,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-005",
+      "mode": "bm25",
+      "category": "permission",
+      "query": "CodeHub 维护者权限和开发者权限的申请审批有什么不同？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s02:p0",
+        "KH-002:s01:p0",
+        "KH-009:s01:p0",
+        "KH-001:s01:p0",
+        "KH-003:s01:p0"
+      ],
+      "elapsed_ms": 0.43,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-005",
+      "mode": "hybrid",
+      "category": "permission",
+      "query": "CodeHub 维护者权限和开发者权限的申请审批有什么不同？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s01:p0",
+        "KH-002:s02:p0",
+        "KH-006:s01:p0",
+        "KH-003:s01:p0",
+        "KH-003:s02:p0"
+      ],
+      "elapsed_ms": 10.37,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-006",
+      "mode": "dense",
+      "category": "permission",
+      "query": "仓库权限申请显示审批通过，但同步还在等待。我应该再申请一次吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-003:s02:p0",
+        "KH-002:s03:p0",
+        "KH-002:s02:p0",
+        "KH-014:s02:p0",
+        "KH-003:s03:p0"
+      ],
+      "elapsed_ms": 9.63,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-006",
+      "mode": "bm25",
+      "category": "permission",
+      "query": "仓库权限申请显示审批通过，但同步还在等待。我应该再申请一次吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s02:p0",
+        "KH-003:s02:p0",
+        "KH-002:s03:p0",
+        "KH-015:s02:p0",
+        "KH-002:s02:p0"
+      ],
+      "elapsed_ms": 0.54,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-006",
+      "mode": "hybrid",
+      "category": "permission",
+      "query": "仓库权限申请显示审批通过，但同步还在等待。我应该再申请一次吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-003:s02:p0",
+        "KH-014:s02:p0",
+        "KH-002:s03:p0",
+        "KH-002:s02:p0",
+        "KH-020:s03:p0"
+      ],
+      "elapsed_ms": 10.49,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-007",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "CodeHub 的 SSH 克隆报 Permission denied (publickey)，先检查哪些东西？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-004:s02:p0",
+        "KH-004:s03:p0",
+        "KH-018:s02:p0",
+        "KH-004:s01:p0",
+        "KH-018:s01:p0"
+      ],
+      "elapsed_ms": 9.91,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-007",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "CodeHub 的 SSH 克隆报 Permission denied (publickey)，先检查哪些东西？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-004:s02:p0",
+        "KH-018:s02:p0",
+        "KH-004:s03:p0",
+        "KH-004:s01:p0",
+        "KH-006:s03:p0"
+      ],
+      "elapsed_ms": 0.32,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-007",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "CodeHub 的 SSH 克隆报 Permission denied (publickey)，先检查哪些东西？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-004:s02:p0",
+        "KH-004:s03:p0",
+        "KH-018:s02:p0",
+        "KH-004:s01:p0",
+        "KH-016:s01:p0"
+      ],
+      "elapsed_ms": 9.76,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-008",
+      "mode": "dense",
+      "category": "operation",
+      "query": "怎么确认我登记的 SSH 公钥真的绑定到了正确 CodeHub 账号？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-004:s01:p0",
+        "KH-004:s02:p0",
+        "KH-004:s03:p0",
+        "KH-002:s03:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 9.59,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-008",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "怎么确认我登记的 SSH 公钥真的绑定到了正确 CodeHub 账号？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-004:s03:p0",
+        "KH-004:s01:p0",
+        "KH-004:s02:p0",
+        "KH-016:s01:p0",
+        "KH-001:s01:p0"
+      ],
+      "elapsed_ms": 0.38,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-008",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "怎么确认我登记的 SSH 公钥真的绑定到了正确 CodeHub 账号？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-004:s01:p0",
+        "KH-004:s03:p0",
+        "KH-004:s02:p0",
+        "KH-002:s03:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 10.29,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-009",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "我电脑上的 SSH 能正常克隆，FlowCI 检出还是失败，为什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-018:s01:p0",
+        "KH-018:s02:p0",
+        "KH-004:s03:p0",
+        "KH-018:s03:p0",
+        "KH-006:s03:p0"
+      ],
+      "elapsed_ms": 9.49,
+      "section_recall": 0.5,
+      "doc_recall": 0.5,
+      "mrr": 0.3333333333333333,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-009",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "我电脑上的 SSH 能正常克隆，FlowCI 检出还是失败，为什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-018:s01:p0",
+        "KH-004:s03:p0",
+        "KH-009:s01:p0",
+        "KH-018:s02:p0",
+        "KH-016:s03:p0"
+      ],
+      "elapsed_ms": 0.39,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-009",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "我电脑上的 SSH 能正常克隆，FlowCI 检出还是失败，为什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-018:s01:p0",
+        "KH-004:s03:p0",
+        "KH-018:s02:p0",
+        "KH-018:s03:p0",
+        "KH-006:s03:p0"
+      ],
+      "elapsed_ms": 10.4,
+      "section_recall": 0.5,
+      "doc_recall": 0.5,
+      "mrr": 0.5,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-010",
+      "mode": "dense",
+      "category": "operation",
+      "query": "CodeHub 2.0 的 HTTPS clone 应该填网页登录密码还是令牌？只读选什么范围？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s01:p0",
+        "KH-005:s02:p0",
+        "KH-005:s03:p0",
+        "KH-018:s01:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 9.8,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-010",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "CodeHub 2.0 的 HTTPS clone 应该填网页登录密码还是令牌？只读选什么范围？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s01:p0",
+        "KH-005:s02:p0",
+        "KH-005:s03:p0",
+        "KH-018:s01:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 0.45,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-010",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "CodeHub 2.0 的 HTTPS clone 应该填网页登录密码还是令牌？只读选什么范围？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s01:p0",
+        "KH-005:s02:p0",
+        "KH-005:s03:p0",
+        "KH-018:s01:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 10.04,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-011",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "CodeHub 令牌已经换了，浏览器也能登录，但本机 git 仍报 Authentication failed。",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s02:p0",
+        "KH-005:s01:p0",
+        "KH-005:s03:p0",
+        "KH-002:s03:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 9.77,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-011",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "CodeHub 令牌已经换了，浏览器也能登录，但本机 git 仍报 Authentication failed。",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s02:p0",
+        "KH-018:s02:p0",
+        "KH-005:s01:p0",
+        "KH-004:s02:p0",
+        "KH-018:s01:p0"
+      ],
+      "elapsed_ms": 0.37,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-011",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "CodeHub 令牌已经换了，浏览器也能登录，但本机 git 仍报 Authentication failed。",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s02:p0",
+        "KH-005:s01:p0",
+        "KH-018:s02:p0",
+        "KH-005:s03:p0",
+        "KH-002:s03:p0"
+      ],
+      "elapsed_ms": 10.1,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-012",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "FlowCI 用的 CodeHub HTTPS 令牌过期了，在我电脑上换一个就能恢复吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s03:p0",
+        "KH-005:s02:p0",
+        "KH-005:s01:p0",
+        "KH-016:s02:p0",
+        "KH-007:s02:p0"
+      ],
+      "elapsed_ms": 9.65,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-012",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "FlowCI 用的 CodeHub HTTPS 令牌过期了，在我电脑上换一个就能恢复吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s01:p0",
+        "KH-018:s01:p0",
+        "KH-005:s01:p0",
+        "KH-005:s03:p0",
+        "KH-005:s02:p0"
+      ],
+      "elapsed_ms": 0.39,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.25,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-012",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "FlowCI 用的 CodeHub HTTPS 令牌过期了，在我电脑上换一个就能恢复吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-005:s03:p0",
+        "KH-005:s01:p0",
+        "KH-005:s02:p0",
+        "KH-002:s03:p0",
+        "KH-016:s03:p0"
+      ],
+      "elapsed_ms": 10.33,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-013",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "我有 CodeHub 开发者权限，clone 和推送功能分支都正常，为什么 push main 提示 protected branch？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s03:p0",
+        "KH-006:s01:p0",
+        "KH-018:s03:p0",
+        "KH-006:s02:p0",
+        "KH-002:s01:p0"
+      ],
+      "elapsed_ms": 9.6,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-013",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "我有 CodeHub 开发者权限，clone 和推送功能分支都正常，为什么 push main 提示 protected branch？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s03:p0",
+        "KH-006:s01:p0",
+        "KH-004:s03:p0",
+        "KH-002:s01:p0",
+        "KH-018:s03:p0"
+      ],
+      "elapsed_ms": 0.45,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-013",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "我有 CodeHub 开发者权限，clone 和推送功能分支都正常，为什么 push main 提示 protected branch？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s03:p0",
+        "KH-006:s01:p0",
+        "KH-018:s03:p0",
+        "KH-002:s01:p0",
+        "KH-004:s03:p0"
+      ],
+      "elapsed_ms": 10.04,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-014",
+      "mode": "dense",
+      "category": "operation",
+      "query": "main 已经设置分支保护，release/2026 分支会自动受保护吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s02:p0",
+        "KH-006:s01:p0",
+        "KH-006:s03:p0",
+        "KH-017:s01:p0",
+        "KH-017:s03:p0"
+      ],
+      "elapsed_ms": 9.91,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-014",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "main 已经设置分支保护，release/2026 分支会自动受保护吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-002:s01:p0",
+        "KH-006:s02:p0",
+        "KH-011:s02:p0",
+        "KH-006:s01:p0",
+        "KH-004:s03:p0"
+      ],
+      "elapsed_ms": 0.34,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-014",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "main 已经设置分支保护，release/2026 分支会自动受保护吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s02:p0",
+        "KH-006:s01:p0",
+        "KH-006:s03:p0",
+        "KH-011:s02:p0",
+        "KH-002:s01:p0"
+      ],
+      "elapsed_ms": 9.72,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-015",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "上一次 build/test 是绿的，为什么 main 的合并检查还在等？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s02:p0",
+        "KH-007:s02:p0",
+        "KH-017:s03:p0",
+        "KH-017:s01:p0",
+        "KH-007:s03:p0"
+      ],
+      "elapsed_ms": 9.49,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-015",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "上一次 build/test 是绿的，为什么 main 的合并检查还在等？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s02:p0",
+        "KH-007:s01:p0",
+        "KH-007:s02:p0",
+        "KH-017:s01:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 0.34,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-015",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "上一次 build/test 是绿的，为什么 main 的合并检查还在等？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-006:s02:p0",
+        "KH-007:s02:p0",
+        "KH-017:s01:p0",
+        "KH-007:s01:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 9.72,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-016",
+      "mode": "dense",
+      "category": "operation",
+      "query": "CodeHub 2.0 普通合并请求要谁批准，改到 CODEOWNERS 匹配目录又怎么处理？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s01:p0",
+        "KH-007:s02:p0",
+        "KH-007:s03:p0",
+        "KH-006:s02:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 9.66,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-016",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "CodeHub 2.0 普通合并请求要谁批准，改到 CODEOWNERS 匹配目录又怎么处理？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s01:p0",
+        "KH-007:s02:p0",
+        "KH-010:s01:p0",
+        "KH-012:s01:p0",
+        "KH-006:s03:p0"
+      ],
+      "elapsed_ms": 0.49,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-016",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "CodeHub 2.0 普通合并请求要谁批准，改到 CODEOWNERS 匹配目录又怎么处理？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s01:p0",
+        "KH-007:s02:p0",
+        "KH-007:s03:p0",
+        "KH-006:s02:p0",
+        "KH-006:s01:p0"
+      ],
+      "elapsed_ms": 10.29,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-017",
+      "mode": "dense",
+      "category": "operation",
+      "query": "合并请求已经批准，后来我又 push 了一个修复提交，需要重新评审吗？改描述呢？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s03:p0",
+        "KH-007:s02:p0",
+        "KH-007:s01:p0",
+        "KH-017:s03:p0",
+        "KH-006:s02:p0"
+      ],
+      "elapsed_ms": 10.25,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-017",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "合并请求已经批准，后来我又 push 了一个修复提交，需要重新评审吗？改描述呢？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s02:p0",
+        "KH-007:s01:p0",
+        "KH-006:s03:p0",
+        "KH-007:s03:p0",
+        "KH-017:s01:p0"
+      ],
+      "elapsed_ms": 0.5,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-017",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "合并请求已经批准，后来我又 push 了一个修复提交，需要重新评审吗？改描述呢？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s02:p0",
+        "KH-007:s03:p0",
+        "KH-007:s01:p0",
+        "KH-017:s03:p0",
+        "KH-010:s03:p0"
+      ],
+      "elapsed_ms": 10.2,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-018",
+      "mode": "dense",
+      "category": "operation",
+      "query": "这次改动包含 CODEOWNERS，能在同一个 MR 里删掉负责人来免评审吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s02:p0",
+        "KH-007:s01:p0",
+        "KH-003:s03:p0",
+        "KH-007:s03:p0",
+        "KH-006:s02:p0"
+      ],
+      "elapsed_ms": 9.43,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-018",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "这次改动包含 CODEOWNERS，能在同一个 MR 里删掉负责人来免评审吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s01:p0",
+        "KH-007:s02:p0",
+        "KH-001:s01:p0",
+        "KH-018:s01:p0",
+        "KH-022:s01:p0"
+      ],
+      "elapsed_ms": 0.4,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-018",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "这次改动包含 CODEOWNERS，能在同一个 MR 里删掉负责人来免评审吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-007:s01:p0",
+        "KH-007:s02:p0",
+        "KH-003:s03:p0",
+        "KH-007:s03:p0",
+        "KH-006:s01:p0"
+      ],
+      "elapsed_ms": 10.5,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-019",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "CodeHub 接 FlowCI 的 Webhook 地址从哪里拿，保存后怎么验证？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s01:p0",
+        "KH-016:s03:p0",
+        "KH-016:s01:p0",
+        "KH-016:s02:p0",
+        "KH-008:s02:p0"
+      ],
+      "elapsed_ms": 9.76,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-019",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "CodeHub 接 FlowCI 的 Webhook 地址从哪里拿，保存后怎么验证？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s01:p0",
+        "KH-017:s02:p0",
+        "KH-011:s01:p0",
+        "KH-018:s02:p0",
+        "KH-008:s02:p0"
+      ],
+      "elapsed_ms": 0.38,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-019",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "CodeHub 接 FlowCI 的 Webhook 地址从哪里拿，保存后怎么验证？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s01:p0",
+        "KH-016:s03:p0",
+        "KH-017:s02:p0",
+        "KH-008:s02:p0",
+        "KH-008:s03:p0"
+      ],
+      "elapsed_ms": 10.1,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-020",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "Webhook 接收报 SIGNATURE_MISMATCH，文档建议怎么查？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s02:p0",
+        "KH-008:s01:p0",
+        "KH-016:s03:p0",
+        "KH-017:s02:p0",
+        "KH-008:s03:p0"
+      ],
+      "elapsed_ms": 9.36,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-020",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "Webhook 接收报 SIGNATURE_MISMATCH，文档建议怎么查？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s02:p0",
+        "KH-008:s01:p0",
+        "KH-017:s02:p0",
+        "KH-010:s02:p0",
+        "KH-008:s03:p0"
+      ],
+      "elapsed_ms": 0.23,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-020",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "Webhook 接收报 SIGNATURE_MISMATCH，文档建议怎么查？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s02:p0",
+        "KH-008:s01:p0",
+        "KH-017:s02:p0",
+        "KH-008:s03:p0",
+        "KH-010:s02:p0"
+      ],
+      "elapsed_ms": 9.81,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-021",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "CodeHub 重放 Webhook 会让 FlowCI 同一个事件跑两遍吗？手动重跑也一样吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s03:p0",
+        "KH-016:s03:p0",
+        "KH-023:s02:p0",
+        "KH-010:s02:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 9.73,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-021",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "CodeHub 重放 Webhook 会让 FlowCI 同一个事件跑两遍吗？手动重跑也一样吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s03:p0",
+        "KH-016:s03:p0",
+        "KH-008:s01:p0",
+        "KH-009:s03:p0",
+        "KH-010:s02:p0"
+      ],
+      "elapsed_ms": 0.46,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-021",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "CodeHub 重放 Webhook 会让 FlowCI 同一个事件跑两遍吗？手动重跑也一样吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-008:s03:p0",
+        "KH-016:s03:p0",
+        "KH-010:s02:p0",
+        "KH-008:s01:p0",
+        "KH-017:s02:p0"
+      ],
+      "elapsed_ms": 10.15,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-022",
+      "mode": "dense",
+      "category": "operation",
+      "query": "FlowCI 2.0 创建流水线前需要什么权限和连接？配置放哪？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s01:p0",
+        "KH-009:s02:p0",
+        "KH-009:s03:p0",
+        "KH-012:s03:p0",
+        "KH-020:s02:p0"
+      ],
+      "elapsed_ms": 9.46,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-022",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "FlowCI 2.0 创建流水线前需要什么权限和连接？配置放哪？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s01:p0",
+        "KH-009:s02:p0",
+        "KH-009:s03:p0",
+        "KH-023:s01:p0",
+        "KH-005:s03:p0"
+      ],
+      "elapsed_ms": 0.37,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-022",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "FlowCI 2.0 创建流水线前需要什么权限和连接？配置放哪？",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s01:p0",
+        "KH-009:s02:p0",
+        "KH-009:s03:p0",
+        "KH-020:s02:p0",
+        "KH-010:s03:p0"
+      ],
+      "elapsed_ms": 9.83,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-023",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "FlowCI 2.0 报 CONFIG_NOT_FOUND，但我在另一个分支能看到配置文件。",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s02:p0",
+        "KH-020:s02:p0",
+        "KH-011:s02:p0",
+        "KH-010:s01:p0",
+        "KH-012:s01:p0"
+      ],
+      "elapsed_ms": 10.02,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-023",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "FlowCI 2.0 报 CONFIG_NOT_FOUND，但我在另一个分支能看到配置文件。",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s02:p0",
+        "KH-020:s02:p0",
+        "KH-009:s03:p0",
+        "KH-011:s03:p0",
+        "KH-016:s03:p0"
+      ],
+      "elapsed_ms": 0.39,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-023",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "FlowCI 2.0 报 CONFIG_NOT_FOUND，但我在另一个分支能看到配置文件。",
+      "filters": {
+        "version": [
+          "2.0"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s02:p0",
+        "KH-020:s02:p0",
+        "KH-009:s03:p0",
+        "KH-010:s01:p0",
+        "KH-011:s03:p0"
+      ],
+      "elapsed_ms": 10.2,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-024",
+      "mode": "dense",
+      "category": "operation",
+      "query": "流水线手动运行已经成功，接下来怎么开放自动触发？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s03:p0",
+        "KH-009:s02:p0",
+        "KH-009:s01:p0",
+        "KH-023:s01:p0",
+        "KH-010:s03:p0"
+      ],
+      "elapsed_ms": 9.56,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-024",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "流水线手动运行已经成功，接下来怎么开放自动触发？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s03:p0",
+        "KH-009:s02:p0",
+        "KH-018:s03:p0",
+        "KH-010:s02:p0",
+        "KH-010:s01:p0"
+      ],
+      "elapsed_ms": 0.38,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-024",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "流水线手动运行已经成功，接下来怎么开放自动触发？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-009:s03:p0",
+        "KH-009:s02:p0",
+        "KH-009:s01:p0",
+        "KH-017:s03:p0",
+        "KH-023:s01:p0"
+      ],
+      "elapsed_ms": 10.06,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-025",
+      "mode": "dense",
+      "category": "operation",
+      "query": "FlowCI 的 merge_request 规则匹配源分支还是目标分支？合并进 main 以后靠什么触发？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s01:p0",
+        "KH-010:s02:p0",
+        "KH-017:s01:p0",
+        "KH-017:s02:p0",
+        "KH-010:s03:p0"
+      ],
+      "elapsed_ms": 9.79,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-025",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "FlowCI 的 merge_request 规则匹配源分支还是目标分支？合并进 main 以后靠什么触发？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s01:p0",
+        "KH-006:s02:p0",
+        "KH-007:s01:p0",
+        "KH-010:s03:p0",
+        "KH-017:s03:p0"
+      ],
+      "elapsed_ms": 0.51,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-025",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "FlowCI 的 merge_request 规则匹配源分支还是目标分支？合并进 main 以后靠什么触发？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s01:p0",
+        "KH-006:s02:p0",
+        "KH-017:s01:p0",
+        "KH-010:s03:p0",
+        "KH-010:s02:p0"
+      ],
+      "elapsed_ms": 10.39,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-026",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "我只改了 docs/，Webhook 显示接收成功，FlowCI 却没有任务，需要重放事件吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s02:p0",
+        "KH-017:s02:p0",
+        "KH-008:s03:p0",
+        "KH-016:s03:p0",
+        "KH-023:s02:p0"
+      ],
+      "elapsed_ms": 9.61,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-026",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "我只改了 docs/，Webhook 显示接收成功，FlowCI 却没有任务，需要重放事件吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s02:p0",
+        "KH-008:s03:p0",
+        "KH-017:s02:p0",
+        "KH-008:s01:p0",
+        "KH-008:s02:p0"
+      ],
+      "elapsed_ms": 0.46,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-026",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "我只改了 docs/，Webhook 显示接收成功，FlowCI 却没有任务，需要重放事件吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s02:p0",
+        "KH-008:s03:p0",
+        "KH-017:s02:p0",
+        "KH-016:s03:p0",
+        "KH-023:s01:p0"
+      ],
+      "elapsed_ms": 10.24,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-027",
+      "mode": "dense",
+      "category": "operation",
+      "query": "提交里加 [skip flow] 会同时跳过 MR 构建、标签构建和手动运行吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s02:p0",
+        "KH-010:s03:p0",
+        "KH-010:s01:p0",
+        "KH-009:s03:p0",
+        "KH-009:s02:p0"
+      ],
+      "elapsed_ms": 9.98,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-027",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "提交里加 [skip flow] 会同时跳过 MR 构建、标签构建和手动运行吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s02:p0",
+        "KH-010:s01:p0",
+        "KH-009:s03:p0",
+        "KH-012:s01:p0",
+        "KH-010:s03:p0"
+      ],
+      "elapsed_ms": 0.4,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-027",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "提交里加 [skip flow] 会同时跳过 MR 构建、标签构建和手动运行吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-010:s02:p0",
+        "KH-010:s01:p0",
+        "KH-010:s03:p0",
+        "KH-009:s03:p0",
+        "KH-009:s02:p0"
+      ],
+      "elapsed_ms": 10.39,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-028",
+      "mode": "dense",
+      "category": "operation",
+      "query": "FlowCI 项目变量和环境变量重名时用哪个？密钥能放配置文件吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s03:p0",
+        "KH-011:s02:p0",
+        "KH-011:s01:p0",
+        "KH-014:s03:p0",
+        "KH-014:s02:p0"
+      ],
+      "elapsed_ms": 9.67,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.3333333333333333,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-028",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "FlowCI 项目变量和环境变量重名时用哪个？密钥能放配置文件吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s01:p0",
+        "KH-011:s02:p0",
+        "KH-011:s03:p0",
+        "KH-001:s03:p0",
+        "KH-009:s02:p0"
+      ],
+      "elapsed_ms": 0.42,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-028",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "FlowCI 项目变量和环境变量重名时用哪个？密钥能放配置文件吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s01:p0",
+        "KH-011:s03:p0",
+        "KH-011:s02:p0",
+        "KH-020:s02:p0",
+        "KH-009:s02:p0"
+      ],
+      "elapsed_ms": 10.3,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-029",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "外部 fork 的 MR 测试里密钥变量是空的，在 yml 里重声明同名变量能解决吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s02:p0",
+        "KH-011:s03:p0",
+        "KH-023:s02:p0",
+        "KH-011:s01:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 9.92,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-029",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "外部 fork 的 MR 测试里密钥变量是空的，在 yml 里重声明同名变量能解决吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s02:p0",
+        "KH-011:s01:p0",
+        "KH-011:s03:p0",
+        "KH-001:s03:p0",
+        "KH-014:s01:p0"
+      ],
+      "elapsed_ms": 0.46,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-029",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "外部 fork 的 MR 测试里密钥变量是空的，在 yml 里重声明同名变量能解决吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s02:p0",
+        "KH-011:s03:p0",
+        "KH-011:s01:p0",
+        "KH-023:s02:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 10.24,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-030",
+      "mode": "dense",
+      "category": "operation",
+      "query": "FlowCI 密钥轮换以后，已经在跑的任务会立刻切换到新密钥吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s03:p0",
+        "KH-023:s02:p0",
+        "KH-011:s02:p0",
+        "KH-023:s01:p0",
+        "KH-011:s01:p0"
+      ],
+      "elapsed_ms": 9.66,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-030",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "FlowCI 密钥轮换以后，已经在跑的任务会立刻切换到新密钥吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s03:p0",
+        "KH-011:s02:p0",
+        "KH-023:s02:p0",
+        "KH-011:s01:p0",
+        "KH-013:s02:p0"
+      ],
+      "elapsed_ms": 0.39,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-030",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "FlowCI 密钥轮换以后，已经在跑的任务会立刻切换到新密钥吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-011:s03:p0",
+        "KH-011:s02:p0",
+        "KH-023:s02:p0",
+        "KH-011:s01:p0",
+        "KH-023:s01:p0"
+      ],
+      "elapsed_ms": 10.62,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-031",
+      "mode": "dense",
+      "category": "operation",
+      "query": "任务声明 linux 和 jdk21 两个标签，执行器满足其中一个就能接吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s01:p0",
+        "KH-012:s03:p0",
+        "KH-012:s02:p0",
+        "KH-007:s01:p0",
+        "KH-007:s03:p0"
+      ],
+      "elapsed_ms": 9.49,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-031",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "任务声明 linux 和 jdk21 两个标签，执行器满足其中一个就能接吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s01:p0",
+        "KH-012:s02:p0",
+        "KH-012:s03:p0",
+        "KH-016:s03:p0",
+        "KH-009:s01:p0"
+      ],
+      "elapsed_ms": 0.41,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-031",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "任务声明 linux 和 jdk21 两个标签，执行器满足其中一个就能接吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s01:p0",
+        "KH-012:s02:p0",
+        "KH-012:s03:p0",
+        "KH-007:s01:p0",
+        "KH-009:s01:p0"
+      ],
+      "elapsed_ms": 10.48,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-032",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "FlowCI Pending，原因 RUNNER_NO_MATCH 和 CAPACITY_WAIT 分别怎么处理？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s02:p0",
+        "KH-010:s02:p0",
+        "KH-020:s02:p0",
+        "KH-009:s02:p0",
+        "KH-017:s01:p0"
+      ],
+      "elapsed_ms": 9.74,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-032",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "FlowCI Pending，原因 RUNNER_NO_MATCH 和 CAPACITY_WAIT 分别怎么处理？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s02:p0",
+        "KH-017:s02:p0",
+        "KH-010:s02:p0",
+        "KH-012:s01:p0",
+        "KH-022:s02:p0"
+      ],
+      "elapsed_ms": 0.32,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-032",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "FlowCI Pending，原因 RUNNER_NO_MATCH 和 CAPACITY_WAIT 分别怎么处理？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s02:p0",
+        "KH-010:s02:p0",
+        "KH-017:s02:p0",
+        "KH-017:s01:p0",
+        "KH-012:s01:p0"
+      ],
+      "elapsed_ms": 10.01,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-033",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "本机构建通过，带 jdk21 标签的执行器却失败，是不是已经可以排除环境差异？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s03:p0",
+        "KH-012:s01:p0",
+        "KH-012:s02:p0",
+        "KH-013:s03:p0",
+        "KH-019:s02:p0"
+      ],
+      "elapsed_ms": 9.63,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-033",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "本机构建通过，带 jdk21 标签的执行器却失败，是不是已经可以排除环境差异？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s03:p0",
+        "KH-012:s01:p0",
+        "KH-012:s02:p0",
+        "KH-009:s01:p0",
+        "KH-023:s03:p0"
+      ],
+      "elapsed_ms": 0.55,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-033",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "本机构建通过，带 jdk21 标签的执行器却失败，是不是已经可以排除环境差异？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-012:s03:p0",
+        "KH-012:s01:p0",
+        "KH-012:s02:p0",
+        "KH-019:s02:p0",
+        "KH-010:s02:p0"
+      ],
+      "elapsed_ms": 10.2,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-034",
+      "mode": "dense",
+      "category": "operation",
+      "query": "FlowCI 发布时能直接拿依赖缓存里的包吗？制品和缓存有啥区别？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s01:p0",
+        "KH-013:s03:p0",
+        "KH-013:s02:p0",
+        "KH-014:s01:p0",
+        "KH-012:s03:p0"
+      ],
+      "elapsed_ms": 10.88,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-034",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "FlowCI 发布时能直接拿依赖缓存里的包吗？制品和缓存有啥区别？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s03:p0",
+        "KH-013:s01:p0",
+        "KH-015:s03:p0",
+        "KH-013:s02:p0",
+        "KH-018:s02:p0"
+      ],
+      "elapsed_ms": 0.41,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 0.5,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-034",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "FlowCI 发布时能直接拿依赖缓存里的包吗？制品和缓存有啥区别？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s01:p0",
+        "KH-013:s03:p0",
+        "KH-013:s02:p0",
+        "KH-014:s01:p0",
+        "KH-015:s03:p0"
+      ],
+      "elapsed_ms": 10.28,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-035",
+      "mode": "dense",
+      "category": "operation",
+      "query": "测试制品能保存多久？生产已经使用的制品呢？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s02:p0",
+        "KH-013:s01:p0",
+        "KH-020:s03:p0",
+        "KH-014:s03:p0",
+        "KH-014:s02:p0"
+      ],
+      "elapsed_ms": 9.71,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-035",
+      "mode": "bm25",
+      "category": "operation",
+      "query": "测试制品能保存多久？生产已经使用的制品呢？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s02:p0",
+        "KH-013:s01:p0",
+        "KH-015:s03:p0",
+        "KH-023:s03:p0",
+        "KH-014:s03:p0"
+      ],
+      "elapsed_ms": 0.35,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-035",
+      "mode": "hybrid",
+      "category": "operation",
+      "query": "测试制品能保存多久？生产已经使用的制品呢？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s02:p0",
+        "KH-013:s01:p0",
+        "KH-015:s03:p0",
+        "KH-014:s03:p0",
+        "KH-014:s02:p0"
+      ],
+      "elapsed_ms": 10.0,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-036",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "构建是成功的，下载却报 ARTIFACT_NOT_FOUND，应该查什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s03:p0",
+        "KH-018:s01:p0",
+        "KH-006:s02:p0",
+        "KH-010:s02:p0",
+        "KH-001:s03:p0"
+      ],
+      "elapsed_ms": 9.08,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-036",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "构建是成功的，下载却报 ARTIFACT_NOT_FOUND，应该查什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s03:p0",
+        "KH-013:s01:p0",
+        "KH-017:s03:p0",
+        "KH-013:s02:p0",
+        "KH-023:s01:p0"
+      ],
+      "elapsed_ms": 0.29,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-036",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "构建是成功的，下载却报 ARTIFACT_NOT_FOUND，应该查什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-013:s03:p0",
+        "KH-013:s01:p0",
+        "KH-017:s03:p0",
+        "KH-010:s02:p0",
+        "KH-023:s02:p0"
+      ],
+      "elapsed_ms": 10.07,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-037",
+      "mode": "dense",
+      "category": "permission",
+      "query": "我有 CodeHub 开发者权限，要发布 test 环境还用申请吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s01:p0",
+        "KH-020:s03:p0",
+        "KH-014:s02:p0",
+        "KH-014:s03:p0",
+        "KH-002:s01:p0"
+      ],
+      "elapsed_ms": 9.3,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-037",
+      "mode": "bm25",
+      "category": "permission",
+      "query": "我有 CodeHub 开发者权限，要发布 test 环境还用申请吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s01:p0",
+        "KH-002:s01:p0",
+        "KH-014:s02:p0",
+        "KH-002:s02:p0",
+        "KH-001:s01:p0"
+      ],
+      "elapsed_ms": 0.32,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-037",
+      "mode": "hybrid",
+      "category": "permission",
+      "query": "我有 CodeHub 开发者权限，要发布 test 环境还用申请吗？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s01:p0",
+        "KH-014:s02:p0",
+        "KH-002:s01:p0",
+        "KH-002:s02:p0",
+        "KH-019:s02:p0"
+      ],
+      "elapsed_ms": 9.72,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-038",
+      "mode": "dense",
+      "category": "permission",
+      "query": "FlowCI test 环境发布权限要哪些材料，能申请多久？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s02:p0",
+        "KH-014:s01:p0",
+        "KH-014:s03:p0",
+        "KH-015:s01:p0",
+        "KH-015:s02:p0"
+      ],
+      "elapsed_ms": 9.71,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-038",
+      "mode": "bm25",
+      "category": "permission",
+      "query": "FlowCI test 环境发布权限要哪些材料，能申请多久？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s02:p0",
+        "KH-014:s01:p0",
+        "KH-015:s01:p0",
+        "KH-015:s02:p0",
+        "KH-014:s03:p0"
+      ],
+      "elapsed_ms": 0.36,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-038",
+      "mode": "hybrid",
+      "category": "permission",
+      "query": "FlowCI test 环境发布权限要哪些材料，能申请多久？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s02:p0",
+        "KH-014:s01:p0",
+        "KH-015:s01:p0",
+        "KH-014:s03:p0",
+        "KH-015:s02:p0"
+      ],
+      "elapsed_ms": 10.08,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-039",
+      "mode": "dense",
+      "category": "troubleshooting",
+      "query": "个人能看到测试发布按钮，但服务账号执行仍然没权限，为什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s03:p0",
+        "KH-014:s01:p0",
+        "KH-019:s02:p0",
+        "KH-014:s02:p0",
+        "KH-022:s03:p0"
+      ],
+      "elapsed_ms": 10.12,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-039",
+      "mode": "bm25",
+      "category": "troubleshooting",
+      "query": "个人能看到测试发布按钮，但服务账号执行仍然没权限，为什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s03:p0",
+        "KH-019:s02:p0",
+        "KH-014:s01:p0",
+        "KH-014:s02:p0",
+        "KH-005:s01:p0"
+      ],
+      "elapsed_ms": 0.42,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-039",
+      "mode": "hybrid",
+      "category": "troubleshooting",
+      "query": "个人能看到测试发布按钮，但服务账号执行仍然没权限，为什么？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-014:s03:p0",
+        "KH-014:s01:p0",
+        "KH-019:s02:p0",
+        "KH-014:s02:p0",
+        "KH-020:s03:p0"
+      ],
+      "elapsed_ms": 10.24,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-040",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "CodeHub 合并进 main 后，FlowCI 没有开始构建，我该沿哪些记录查？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-017:s02:p0",
+        "KH-006:s02:p0",
+        "KH-017:s01:p0",
+        "KH-017:s03:p0",
+        "KH-016:s02:p0"
+      ],
+      "elapsed_ms": 9.78,
+      "section_recall": 0.6666666666666666,
+      "doc_recall": 0.5,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-040",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "CodeHub 合并进 main 后，FlowCI 没有开始构建，我该沿哪些记录查？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-017:s01:p0",
+        "KH-006:s02:p0",
+        "KH-017:s03:p0",
+        "KH-010:s01:p0",
+        "KH-002:s01:p0"
+      ],
+      "elapsed_ms": 0.4,
+      "section_recall": 0.6666666666666666,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-040",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "CodeHub 合并进 main 后，FlowCI 没有开始构建，我该沿哪些记录查？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-017:s01:p0",
+        "KH-006:s02:p0",
+        "KH-017:s03:p0",
+        "KH-017:s02:p0",
+        "KH-016:s01:p0"
+      ],
+      "elapsed_ms": 10.17,
+      "section_recall": 0.6666666666666666,
+      "doc_recall": 0.5,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-041",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "Webhook 收到了，触发详情是 EVENT_RULE_MISMATCH，配置只有 merge_request。main 合并后该怎么修？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-017:s02:p0",
+        "KH-017:s03:p0",
+        "KH-017:s01:p0",
+        "KH-008:s02:p0",
+        "KH-010:s02:p0"
+      ],
+      "elapsed_ms": 10.21,
+      "section_recall": 0.6666666666666666,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-041",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "Webhook 收到了，触发详情是 EVENT_RULE_MISMATCH，配置只有 merge_request。main 合并后该怎么修？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-017:s02:p0",
+        "KH-010:s02:p0",
+        "KH-017:s01:p0",
+        "KH-010:s01:p0",
+        "KH-017:s03:p0"
+      ],
+      "elapsed_ms": 0.38,
+      "section_recall": 1.0,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 1.0
+    },
+    {
+      "qid": "Q-041",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "Webhook 收到了，触发详情是 EVENT_RULE_MISMATCH，配置只有 merge_request。main 合并后该怎么修？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-017:s02:p0",
+        "KH-017:s01:p0",
+        "KH-010:s02:p0",
+        "KH-017:s03:p0",
+        "KH-008:s01:p0"
+      ],
+      "elapsed_ms": 10.46,
+      "section_recall": 0.6666666666666666,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-042",
+      "mode": "dense",
+      "category": "cross_system",
+      "query": "FlowCI 构建成功了，CodeHub 合并页仍等 build/test，连接也显示正常，查哪里？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-016:s02:p0",
+        "KH-007:s02:p0",
+        "KH-006:s02:p0",
+        "KH-007:s03:p0",
+        "KH-007:s01:p0"
+      ],
+      "elapsed_ms": 10.2,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-042",
+      "mode": "bm25",
+      "category": "cross_system",
+      "query": "FlowCI 构建成功了，CodeHub 合并页仍等 build/test，连接也显示正常，查哪里？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-016:s02:p0",
+        "KH-007:s03:p0",
+        "KH-006:s02:p0",
+        "KH-016:s03:p0",
+        "KH-007:s02:p0"
+      ],
+      "elapsed_ms": 0.42,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    },
+    {
+      "qid": "Q-042",
+      "mode": "hybrid",
+      "category": "cross_system",
+      "query": "FlowCI 构建成功了，CodeHub 合并页仍等 build/test，连接也显示正常，查哪里？",
+      "filters": {
+        "status": [
+          "active"
+        ]
+      },
+      "retrieved": [
+        "KH-016:s02:p0",
+        "KH-007:s03:p0",
+        "KH-006:s02:p0",
+        "KH-007:s02:p0",
+        "KH-016:s03:p0"
+      ],
+      "elapsed_ms": 10.18,
+      "section_recall": 0.5,
+      "doc_recall": 1.0,
+      "mrr": 1.0,
+      "all_evidence": 0.0
+    }
+  ]
+}

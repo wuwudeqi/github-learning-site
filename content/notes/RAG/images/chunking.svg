@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="950" viewBox="0 0 1200 950" role="img" aria-labelledby="title desc">
+<title id="title">切片：操作步骤要带着前提一起走</title><desc id="desc">切分设计示意：比较机械截断和保留语义前提。当前代码保留标题、章节与字符位置；检索后取回父片段或相邻内容属于扩展方案。CodeHub 与 FlowCI 均为模拟产品。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="950" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">切片：操作步骤要带着前提一起走</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">切分设计示意：检索命中步骤后，还要保留它的适用前提。</text>
+<rect x="52" y="170" width="388" height="567" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="211" font-size="27" font-weight="650" fill="#226C8B">原文：仓库归档</text>
+<text x="74" y="253" font-size="23" font-weight="400" fill="#18383F">CodeHub · v2</text>
+<text x="74" y="287" font-size="23" font-weight="400" fill="#18383F">适用：仓库管理员</text>
+<text x="74" y="321" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="74" y="355" font-size="23" font-weight="400" fill="#18383F">前提</text>
+<text x="74" y="389" font-size="23" font-weight="400" fill="#18383F">先关闭关联的 FlowCI</text>
+<text x="74" y="423" font-size="23" font-weight="400" fill="#18383F">自动触发器。</text>
+<text x="74" y="457" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="74" y="491" font-size="23" font-weight="400" fill="#18383F">步骤</text>
+<text x="74" y="525" font-size="23" font-weight="400" fill="#18383F">设置 → 归档 → 确认</text>
+<text x="74" y="559" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="74" y="593" font-size="23" font-weight="400" fill="#18383F">影响</text>
+<text x="74" y="627" font-size="23" font-weight="400" fill="#18383F">仓库只读，历史任务保留。</text>
+<rect x="550" y="170" width="598" height="242" rx="18" fill="#F7E7D7" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="572" y="211" font-size="27" font-weight="650" fill="#B56B32">机械截断：只找到了步骤</text>
+<text x="572" y="253" font-size="24" font-weight="400" fill="#18383F">片段 A：适用角色、关闭触发器……</text>
+<text x="572" y="287" font-size="24" font-weight="400" fill="#18383F">片段 B：设置 → 归档 → 确认</text>
+<text x="572" y="321" font-size="24" font-weight="400" fill="#18383F"></text>
+<text x="572" y="355" font-size="24" font-weight="400" fill="#18383F">回答可能漏掉前提，操作建议不完整。</text>
+<path d="M450 291H536" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="550" y="481" width="598" height="256" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="572" y="522" font-size="27" font-weight="650" fill="#21766B">按语义切分：保留一次操作</text>
+<text x="572" y="564" font-size="24" font-weight="400" fill="#18383F">父标题：CodeHub / 仓库管理 / 归档</text>
+<text x="572" y="598" font-size="24" font-weight="400" fill="#18383F">同一片段：角色＋前提＋步骤＋影响</text>
+<text x="572" y="632" font-size="24" font-weight="400" fill="#18383F"></text>
+<text x="572" y="666" font-size="24" font-weight="400" fill="#18383F">保留版本、来源、章节和原文位置。</text>
+<path d="M450 609H536" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="784" width="1096" height="92" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="76" y="822" font-size="23" font-weight="400" fill="#18383F">扩展方案：检索子片段后，按需补回同版本的前提或相邻内容。</text>
+<text x="76" y="856" font-size="23" font-weight="400" fill="#18383F">块大小与重叠量要用实际问题验证，不能只按固定字数决定。</text>
+<text x="52" y="920" font-size="18" font-weight="400" fill="#586D70">当前代码保留章节与字符位置；相邻补全是扩展方案。CodeHub / FlowCI 为模拟产品。</text>
+</g></svg>

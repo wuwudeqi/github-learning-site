@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">RAG：文档怎样变成有出处的回答</title><desc id="desc">离线阶段采集并解析文档，切分后建立关键词和向量索引。在线阶段依据问题与适用范围检索、组织证据并生成带来源的回答。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="900" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">RAG：文档怎样变成有出处的回答</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">同一套知识库可回答功能、操作、权限、故障、版本与跨系统问题。</text>
+<text x="52" y="170" font-size="24" font-weight="650" fill="#21766B">01  离线建库：先把资料整理好</text>
+<rect x="52" y="200" width="232" height="172" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="241" font-size="27" font-weight="650" fill="#226C8B">内部资料</text>
+<text x="74" y="283" font-size="23" font-weight="400" fill="#18383F">CodeHub / FlowCI</text>
+<text x="74" y="317" font-size="23" font-weight="400" fill="#18383F">指南、FAQ</text>
+<text x="74" y="351" font-size="23" font-weight="400" fill="#18383F">版本说明</text>
+<rect x="340" y="200" width="232" height="172" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="362" y="241" font-size="27" font-weight="650" fill="#226C8B">解析与清洗</text>
+<text x="362" y="283" font-size="23" font-weight="400" fill="#18383F">保留标题、表格</text>
+<text x="362" y="317" font-size="23" font-weight="400" fill="#18383F">代码、链接与来源</text>
+<rect x="628" y="200" width="232" height="172" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="650" y="241" font-size="27" font-weight="650" fill="#21766B">切片＋元数据</text>
+<text x="650" y="283" font-size="23" font-weight="400" fill="#18383F">完整操作与前提</text>
+<text x="650" y="317" font-size="23" font-weight="400" fill="#18383F">版本、状态、系统</text>
+<rect x="916" y="200" width="232" height="172" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="938" y="241" font-size="27" font-weight="650" fill="#226C8B">建立索引</text>
+<text x="938" y="283" font-size="23" font-weight="400" fill="#18383F">关键词索引</text>
+<text x="938" y="317" font-size="23" font-weight="400" fill="#18383F">向量索引</text>
+<path d="M292 286H330" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M580 286H618" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M868 286H906" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1032 380V438H456V534" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="528" y="426" font-size="21" font-weight="400" fill="#586D70">扩展设计：文档变更后同步更新索引</text>
+<text x="52" y="514" font-size="24" font-weight="650" fill="#21766B">02  在线问答：按当前问题查资料</text>
+<rect x="52" y="550" width="232" height="174" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="591" font-size="27" font-weight="650" fill="#226C8B">问题与范围</text>
+<text x="74" y="633" font-size="23" font-weight="400" fill="#18383F">用户问什么？</text>
+<text x="74" y="667" font-size="23" font-weight="400" fill="#18383F">产品与版本明确吗</text>
+<rect x="340" y="550" width="232" height="174" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="362" y="591" font-size="27" font-weight="650" fill="#226C8B">检索候选</text>
+<text x="362" y="633" font-size="23" font-weight="400" fill="#18383F">先筛版本与系统</text>
+<text x="362" y="667" font-size="23" font-weight="400" fill="#18383F">再查关键词与语义</text>
+<rect x="628" y="550" width="232" height="174" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="650" y="591" font-size="27" font-weight="650" fill="#21766B">组织证据</text>
+<text x="650" y="633" font-size="21" font-weight="400" fill="#18383F">排序并选择上下文</text>
+<text x="650" y="667" font-size="21" font-weight="400" fill="#18383F">检查前提与适用性</text>
+<rect x="916" y="550" width="232" height="174" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="938" y="591" font-size="27" font-weight="650" fill="#226C8B">回答＋来源</text>
+<text x="938" y="633" font-size="23" font-weight="400" fill="#18383F">按证据解释步骤</text>
+<text x="938" y="667" font-size="23" font-weight="400" fill="#18383F">不足时追问或说明</text>
+<path d="M292 636H330" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M580 636H618" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M868 636H906" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="762" width="1096" height="71" rx="18" fill="#F7E7D7" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="76" y="807" font-size="24" font-weight="400" fill="#B56B32">例如：如何创建仓库？谁能发布？v2 改了什么？CodeHub 如何接入 FlowCI？</text>
+<text x="52" y="870" font-size="18" font-weight="400" fill="#586D70">CodeHub / FlowCI 为模拟产品。ACL、增量更新与相邻补全属于扩展设计。</text>
+</g></svg>

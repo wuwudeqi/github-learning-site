@@ -1,0 +1,198 @@
+{
+  "verified_on": "2026-09-10",
+  "status": "completed",
+  "data": "24 synthetic HTML documents, 72 indexed chunks; 48 dev / 24 held-out questions; retrieval evaluated on 42 / 18 answerable questions",
+  "runtime": {
+    "python": "3.12.1",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "packages": {
+      "langgraph": "1.2.11",
+      "qdrant-client": "1.19.0",
+      "sentence-transformers": "6.0.1",
+      "torch": "2.14.0",
+      "pypdf": "6.18.0",
+      "rank-bm25": "0.2.2"
+    }
+  },
+  "checks": {
+    "mechanism_tests": "14 passed; mechanism-verification.txt",
+    "real_embedding": "model-verification.txt: 3 windows, vectors (3,512); 72 corpus chunks, maximum 267 tokens",
+    "pdf": "../data/pdf/verification.txt: 5 pages, 12 complete source sections matched",
+    "graph_demo": "demo.trace.txt: real retrieval, fixture judge and extract-only answerer",
+    "reranker_weights_sha256": "ced967c45fd1902eb92716c9ceeca7c95a936770ea9db611f5a841b926e33fbd"
+  },
+  "experiment_protocol": [
+    "The original dev experiment ran dense, bm25 and hybrid.",
+    "The second dev experiment added hybrid_rerank with the same corpus, queries and retrieval configuration.",
+    "The held-out split was run once with all four modes after configuration was fixed. No tuning used its scores.",
+    "These held-out scores are now visible: use new held-out questions for future tuning."
+  ],
+  "reports": {
+    "dev-retrieval.metrics.txt": {
+      "split": "dev",
+      "answerable_questions": 42,
+      "summary": {
+        "dense": {
+          "section_recall": 0.936508,
+          "doc_recall": 0.97619,
+          "mrr": 0.944444,
+          "all_evidence": 0.857143,
+          "latency_p50_ms": 9.71,
+          "latency_p95_ms": 10.25
+        },
+        "bm25": {
+          "section_recall": 0.93254,
+          "doc_recall": 0.97619,
+          "mrr": 0.882937,
+          "all_evidence": 0.880952,
+          "latency_p50_ms": 0.4,
+          "latency_p95_ms": 0.54
+        },
+        "hybrid": {
+          "section_recall": 0.948413,
+          "doc_recall": 0.97619,
+          "mrr": 0.948413,
+          "all_evidence": 0.880952,
+          "latency_p50_ms": 10.2,
+          "latency_p95_ms": 10.61
+        }
+      },
+      "config": {
+        "chunk_tokens": 384,
+        "overlap_tokens": 48,
+        "candidate_pool": 20,
+        "rerank_pool": 12,
+        "k": 5,
+        "rrf_constant": 60,
+        "embedding": "BAAI/bge-small-zh-v1.5",
+        "reranker": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70"
+      },
+      "indexed_chunks_sha256": "5fc56f5e1010dcd1f0544adf6d7dd57bd1f1d23fde40d0e4c26279a3bfdd142e",
+      "questions_sha256": "0b6fbc7549a476f35783957c63151a01b6b3a5326b9365d10c733c03c13028a3"
+    },
+    "dev-rerank.metrics.txt": {
+      "split": "dev",
+      "answerable_questions": 42,
+      "summary": {
+        "dense": {
+          "section_recall": 0.936508,
+          "doc_recall": 0.97619,
+          "mrr": 0.944444,
+          "all_evidence": 0.857143,
+          "latency_p50_ms": 10.27,
+          "latency_p95_ms": 20.41
+        },
+        "bm25": {
+          "section_recall": 0.93254,
+          "doc_recall": 0.97619,
+          "mrr": 0.882937,
+          "all_evidence": 0.880952,
+          "latency_p50_ms": 0.43,
+          "latency_p95_ms": 0.56
+        },
+        "hybrid": {
+          "section_recall": 0.948413,
+          "doc_recall": 0.97619,
+          "mrr": 0.948413,
+          "all_evidence": 0.880952,
+          "latency_p50_ms": 10.6,
+          "latency_p95_ms": 15.2
+        },
+        "hybrid_rerank": {
+          "section_recall": 0.944444,
+          "doc_recall": 0.988095,
+          "mrr": 0.952381,
+          "all_evidence": 0.880952,
+          "latency_p50_ms": 400.08,
+          "latency_p95_ms": 558.61
+        }
+      },
+      "config": {
+        "chunk_tokens": 384,
+        "overlap_tokens": 48,
+        "candidate_pool": 20,
+        "rerank_pool": 12,
+        "k": 5,
+        "rrf_constant": 60,
+        "embedding": "BAAI/bge-small-zh-v1.5",
+        "reranker": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70"
+      },
+      "indexed_chunks_sha256": "5fc56f5e1010dcd1f0544adf6d7dd57bd1f1d23fde40d0e4c26279a3bfdd142e",
+      "questions_sha256": "0b6fbc7549a476f35783957c63151a01b6b3a5326b9365d10c733c03c13028a3"
+    },
+    "test-retrieval.metrics.txt": {
+      "split": "test",
+      "answerable_questions": 18,
+      "summary": {
+        "dense": {
+          "section_recall": 0.842593,
+          "doc_recall": 0.944444,
+          "mrr": 0.837963,
+          "all_evidence": 0.722222,
+          "latency_p50_ms": 10.35,
+          "latency_p95_ms": 13.02
+        },
+        "bm25": {
+          "section_recall": 0.953704,
+          "doc_recall": 0.972222,
+          "mrr": 0.916667,
+          "all_evidence": 0.888889,
+          "latency_p50_ms": 0.45,
+          "latency_p95_ms": 0.69
+        },
+        "hybrid": {
+          "section_recall": 0.898148,
+          "doc_recall": 0.944444,
+          "mrr": 0.907407,
+          "all_evidence": 0.777778,
+          "latency_p50_ms": 10.5,
+          "latency_p95_ms": 13.57
+        },
+        "hybrid_rerank": {
+          "section_recall": 0.925926,
+          "doc_recall": 0.972222,
+          "mrr": 0.847222,
+          "all_evidence": 0.833333,
+          "latency_p50_ms": 372.37,
+          "latency_p95_ms": 468.76
+        }
+      },
+      "config": {
+        "chunk_tokens": 384,
+        "overlap_tokens": 48,
+        "candidate_pool": 20,
+        "rerank_pool": 12,
+        "k": 5,
+        "rrf_constant": 60,
+        "embedding": "BAAI/bge-small-zh-v1.5",
+        "reranker": "BAAI/bge-reranker-base",
+        "embedding_revision": "7999e1d3359715c523056ef9478215996d62a620",
+        "reranker_revision": "2cfc18c9415c912f9d8155881c133215df768a70"
+      },
+      "indexed_chunks_sha256": "5fc56f5e1010dcd1f0544adf6d7dd57bd1f1d23fde40d0e4c26279a3bfdd142e",
+      "questions_sha256": "0b6fbc7549a476f35783957c63151a01b6b3a5326b9365d10c733c03c13028a3"
+    }
+  },
+  "not_evaluated": [
+    "Generated-answer correctness or faithfulness",
+    "LLM judge accuracy, clarification or abstention quality",
+    "Production ANN recall, concurrent throughput or end-to-end latency",
+    "Real-company traffic or rules; all business documents are simulated"
+  ],
+  "source_sha256": {
+    "chunking.py": "69047b14265ba6de52e53576391436a5806888ee685a22a6dfefcba664dec2d0",
+    "demo.py": "3f6e4caaf3c72e5fa5c88e7cc25952118a16d338acbad9781a7b072557384d74",
+    "evaluate.py": "7cef9a392bafcc01b9b66b85c68b91d9d8e4108c96079e1390b08287f54715de",
+    "graph.py": "a699f7d337216e24c64d474e42afb0399b5992ffbd66e8c6c95215b31747b702",
+    "ingest.py": "7c525c5a7fa688430ee13eea46e2fa4b26c054b600a454f7832b4d7ec74987c5",
+    "model_api.py": "b5c8a7313ebcd1ff8b40488e0135f97907ab0b58f1916ef7569486010c06946c",
+    "retrieval.py": "d75970f28900948453facb170d414ee23a4e94b3fbeaff165a27849c01b2e2d1",
+    "test_core.py": "9597c5cf17dfd293c6ce236cfd557f11b5f0ae6a9533d76806e841a22c1b75c0",
+    "verify_model.py": "3a243ef3f0623b961eadcedce5141fad1d8e986c5c08cff80e7eff08798363fd"
+  },
+  "latency_note": "Sequential local CPU samples; model loading and generation excluded. Cache/order/background activity affect timings. Not a production benchmark."
+}

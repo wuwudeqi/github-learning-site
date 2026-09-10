@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1060" viewBox="0 0 1200 1060" role="img" aria-labelledby="title desc">
+<title id="title">分层评测：先找到答案在哪一步丢了</title><desc id="desc">分层验收清单：检查解析、召回、上下文和回答。当前报告仅评测检索，使用标注章节的 Recall；解析有机制测试，上下文与生成效果仍需另行评测。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="1060" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">分层评测：先找到答案在哪一步丢了</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">分层验收清单：固定问题、文档版本和预期证据，再一次只改一个环节。</text>
+<rect x="52" y="170" width="1096" height="159" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<rect x="74" y="194" width="56" height="56" rx="14" fill="#226C8B" stroke="#226C8B" stroke-width="1.5"/>
+<text x="102" y="233" font-size="29" font-weight="650" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="154" y="218" font-size="28" font-weight="650" fill="#226C8B">解析</text>
+<text x="154" y="260" font-size="25" font-weight="400" fill="#18383F">原文的表格、代码、前提是否保留下来？</text>
+<text x="154" y="298" font-size="22" font-weight="400" fill="#586D70">把解析文本与原文逐段对照。</text>
+<rect x="858" y="194" width="268" height="111" rx="18" fill="#F7F4ED" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="879" y="235" font-size="22" font-weight="400" fill="#18383F">若原文已经丢失，</text>
+<text x="879" y="270" font-size="22" font-weight="400" fill="#18383F">先修解析器。</text>
+<path d="M600 337V354" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="365" width="1096" height="159" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<rect x="74" y="389" width="56" height="56" rx="14" fill="#226C8B" stroke="#226C8B" stroke-width="1.5"/>
+<text x="102" y="428" font-size="29" font-weight="650" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="154" y="413" font-size="28" font-weight="650" fill="#226C8B">召回</text>
+<text x="154" y="455" font-size="25" font-weight="400" fill="#18383F">所需证据有没有进入 Top-k 候选？</text>
+<text x="154" y="493" font-size="22" font-weight="400" fill="#586D70">记录章节级 Recall@k；检查版本过滤。</text>
+<rect x="858" y="389" width="268" height="111" rx="18" fill="#F7F4ED" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="879" y="430" font-size="22" font-weight="400" fill="#18383F">候选里没有证据，</text>
+<text x="879" y="465" font-size="22" font-weight="400" fill="#18383F">先查检索。</text>
+<path d="M600 532V549" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="560" width="1096" height="159" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<rect x="74" y="584" width="56" height="56" rx="14" fill="#21766B" stroke="#21766B" stroke-width="1.5"/>
+<text x="102" y="623" font-size="29" font-weight="650" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="154" y="608" font-size="28" font-weight="650" fill="#21766B">上下文</text>
+<text x="154" y="650" font-size="25" font-weight="400" fill="#18383F">关键前提是否真正交给了模型？</text>
+<text x="154" y="688" font-size="22" font-weight="400" fill="#586D70">检查重排、去重、截断和相邻补全。</text>
+<rect x="858" y="584" width="268" height="111" rx="18" fill="#F7F4ED" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="879" y="625" font-size="22" font-weight="400" fill="#18383F">候选有，提示中没有，</text>
+<text x="879" y="660" font-size="22" font-weight="400" fill="#18383F">查上下文组装。</text>
+<path d="M600 727V744" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="755" width="1096" height="159" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<rect x="74" y="779" width="56" height="56" rx="14" fill="#21766B" stroke="#21766B" stroke-width="1.5"/>
+<text x="102" y="818" font-size="29" font-weight="650" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="154" y="803" font-size="28" font-weight="650" fill="#21766B">回答</text>
+<text x="154" y="845" font-size="25" font-weight="400" fill="#18383F">事实、步骤、引用和拒答是否符合证据？</text>
+<text x="154" y="883" font-size="22" font-weight="400" fill="#586D70">分别检查正确性、忠实性与引用支持。</text>
+<rect x="858" y="779" width="268" height="111" rx="18" fill="#F7F4ED" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="879" y="820" font-size="22" font-weight="400" fill="#18383F">证据完整仍答错，</text>
+<text x="879" y="855" font-size="22" font-weight="400" fill="#18383F">再查生成。</text>
+<text x="52" y="977" font-size="23" font-weight="400" fill="#586D70">题型要覆盖功能、操作、权限、故障、版本、跨系统，以及无答案和需追问的问题。</text>
+<text x="52" y="1030" font-size="18" font-weight="400" fill="#586D70">当前报告只评测检索；解析有机制测试，上下文与生成效果需另评。CodeHub / FlowCI 为模拟产品。</text>
+</g></svg>

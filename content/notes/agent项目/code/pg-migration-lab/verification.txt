@@ -1,0 +1,70 @@
+The files belonging to this database system will be owned by user "fujiasen".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C".
+The default text search configuration will be set to "english".
+
+Data page checksums are enabled.
+
+creating directory /tmp/pg-migration-lab-kj7m0aqv/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... Asia/Shanghai
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    '/opt/homebrew/Cellar/postgresql@18/18.6/bin/pg_ctl' -D /tmp/pg-migration-lab-kj7m0aqv/data -l logfile start
+
+waiting for server to start.... done
+server started
+                                                            version
+-------------------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 18.6 (Homebrew) on aarch64-apple-darwin25.6.0, compiled by Apple clang version 21.0.0 (clang-2100.1.1.101), 64-bit
+(1 row)
+
+SET
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:10: NOTICE:  PASS 1: PostgreSQL distinguishes empty text from NULL; explicit NULLIF normalizes it
+DO
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:22: NOTICE:  PASS 2: numeric scale rounds; rounding can then overflow declared precision
+DO
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:37: NOTICE:  PASS 3: date drops time; offset timestamps can identify the same instant
+DO
+CREATE TABLE
+INSERT 0 1
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:56: NOTICE:  PASS 4: explicit identity import did not advance sequence; isolated alignment restored next id
+DO
+CREATE TABLE
+INSERT 0 1
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:75: NOTICE:  PASS 5: ON CONFLICT preserved original operation; application must reject mismatched parameters
+DO
+CREATE TABLE
+CREATE TABLE
+INSERT 0 2
+INSERT 0 2
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:90: NOTICE:  PASS 6: equal row counts and grand totals concealed two project-level errors
+DO
+BEGIN
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:95: ERROR:  duplicate key value violates unique constraint "operation_sample_pkey"
+DETAIL:  Key (actor_id, operation_id)=(A, op-1) already exists.
+psql:/Users/fujiasen/Desktop/个人项目/github学习网站/github-learning-site/content/notes/agent项目/code/pg-migration-lab/checks.sql:97: ERROR:  current transaction is aborted, commands ignored until end of transaction block
+ROLLBACK
+ failed_transaction_check
+--------------------------
+                        1
+(1 row)
+
+PASS 7: duplicate SQLSTATE=23505 subsequent query SQLSTATE=25P02; rollback restored transaction usability
+ surviving_operations
+----------------------
+                    1
+(1 row)
+
+PASS: 7 PostgreSQL semantic cases; two preceding ERROR lines are intentional and SQLSTATE-checked.
+waiting for server to shut down.... done
+server stopped

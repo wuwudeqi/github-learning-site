@@ -1,0 +1,27 @@
+{
+  "kind": "text_pdf_ingestion_verification",
+  "parser": "code/ingest.py:parse_pdf",
+  "pages": 5,
+  "bytes": 210522,
+  "sha256": "9da44f21748785c4917aee3fd940bb90128cb339d0280fa5bbfbaff36e390693",
+  "full_sections_matched": [
+    "KH-001:s01",
+    "KH-001:s02",
+    "KH-001:s03",
+    "KH-011:s01",
+    "KH-011:s02",
+    "KH-011:s03",
+    "KH-015:s01",
+    "KH-015:s02",
+    "KH-015:s03",
+    "KH-020:s01",
+    "KH-020:s02",
+    "KH-020:s03"
+  ],
+  "comparison": "only whitespace normalized",
+  "notes": [
+    "Cover is page 1; four documents occupy pages 2–5.",
+    "PDF contains the same source knowledge as four HTML documents and is not double-indexed.",
+    "5 pages rendered and visually inspected; text extraction separately verified."
+  ]
+}

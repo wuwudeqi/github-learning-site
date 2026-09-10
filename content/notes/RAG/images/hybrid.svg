@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980" role="img" aria-labelledby="title desc">
+<title id="title">混合检索：精确词与相近说法一起查</title><desc id="desc">问题经过状态、系统、版本等过滤后，并行进行 BM25 关键词检索与向量语义检索，再用 RRF 根据排名融合并按片段 ID 去重。RRF 不直接相加两个检索器的原始分数。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="980" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">混合检索：精确词与相近说法一起查</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">内部文档里既有精确的字段名，也有用户口语化的问法。</text>
+<rect x="190" y="156" width="820" height="118" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="212" y="197" font-size="27" font-weight="650" fill="#226C8B">问题：配置 webhook，让合并后自动构建</text>
+<text x="212" y="239" font-size="23" font-weight="400" fill="#18383F">检索过滤条件：发布状态、适用版本、所属系统</text>
+<path d="M440 282V320H304V355" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M760 282V320H896V355" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="374" width="504" height="238" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="415" font-size="27" font-weight="650" fill="#226C8B">BM25：匹配关键词</text>
+<text x="74" y="457" font-size="23" font-weight="400" fill="#18383F">精确词：webhook、分支名、错误码</text>
+<text x="74" y="491" font-size="23" font-weight="400" fill="#18383F">示例候选：Webhook 配置说明</text>
+<text x="74" y="525" font-size="23" font-weight="400" fill="#18383F">需要正确分词；专有词可加别名。</text>
+<rect x="644" y="374" width="504" height="238" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="666" y="415" font-size="27" font-weight="650" fill="#21766B">向量检索：匹配相近语义</text>
+<text x="666" y="457" font-size="23" font-weight="400" fill="#18383F">相近说法：自动运行 ≈ 事件触发</text>
+<text x="666" y="491" font-size="23" font-weight="400" fill="#18383F">示例候选：合并请求触发构建</text>
+<text x="666" y="525" font-size="23" font-weight="400" fill="#18383F">表达相近不等于版本或业务条件适用。</text>
+<path d="M304 620V670H455V709" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M896 620V670H745V709" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="322" y="727" width="556" height="140" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="344" y="768" font-size="27" font-weight="650" fill="#226C8B">RRF：按排名融合</text>
+<text x="344" y="810" font-size="22" font-weight="400" fill="#18383F">按片段 ID 合并两路排名，得到候选</text>
+<text x="344" y="844" font-size="22" font-weight="400" fill="#18383F">原始 BM25 分数与向量分数不直接相加。</text>
+<text x="52" y="915" font-size="23" font-weight="400" fill="#586D70">召回是否变好，要检查所需文档有没有进入候选；不能只看结果数量。</text>
+<text x="52" y="950" font-size="18" font-weight="400" fill="#586D70">CodeHub / FlowCI 为教学用模拟产品；图中流程不代表任何真实公司系统。</text>
+</g></svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">重排与上下文：候选怎样变成可用证据</title><desc id="desc">候选集合先按问题相关性重排；扩展方案可在权限与版本范围内取回父片段或相邻内容，去重并按 token 预算组织上下文。重排只能排列已有候选，不能补回召回阶段未找到的内容。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="900" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">重排与上下文：候选怎样变成可用证据</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">问题：归档 CodeHub 仓库后，FlowCI 还能自动触发吗？</text>
+<rect x="52" y="192" width="232" height="324" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="233" font-size="27" font-weight="650" fill="#226C8B">召回候选</text>
+<text x="74" y="275" font-size="23" font-weight="400" fill="#18383F">A · 归档说明</text>
+<text x="74" y="309" font-size="23" font-weight="400" fill="#18383F">B · 克隆仓库</text>
+<text x="74" y="343" font-size="23" font-weight="400" fill="#18383F">C · 触发器前提</text>
+<text x="74" y="377" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="74" y="411" font-size="23" font-weight="400" fill="#18383F">候选可能重复，</text>
+<text x="74" y="445" font-size="23" font-weight="400" fill="#18383F">也可能缺关键段落。</text>
+<rect x="340" y="192" width="232" height="324" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="362" y="233" font-size="27" font-weight="650" fill="#226C8B">按问题重排</text>
+<text x="362" y="275" font-size="23" font-weight="400" fill="#18383F">C · 触发器前提</text>
+<text x="362" y="309" font-size="23" font-weight="400" fill="#18383F">A · 归档说明</text>
+<text x="362" y="343" font-size="23" font-weight="400" fill="#18383F">B · 克隆仓库</text>
+<text x="362" y="377" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="362" y="411" font-size="23" font-weight="400" fill="#18383F">让相关片段靠前，</text>
+<text x="362" y="445" font-size="23" font-weight="400" fill="#18383F">保留各自来源。</text>
+<rect x="628" y="192" width="232" height="324" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="650" y="233" font-size="27" font-weight="650" fill="#21766B">补全（扩展）</text>
+<text x="650" y="275" font-size="23" font-weight="400" fill="#18383F">取父标题或相邻段</text>
+<text x="650" y="309" font-size="23" font-weight="400" fill="#18383F">保留前提和例外</text>
+<text x="650" y="343" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="650" y="377" font-size="23" font-weight="400" fill="#18383F">补取仍要检查</text>
+<text x="650" y="411" font-size="23" font-weight="400" fill="#18383F">文档权限与版本。</text>
+<rect x="916" y="192" width="232" height="324" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="938" y="233" font-size="27" font-weight="650" fill="#226C8B">片段预算</text>
+<text x="938" y="275" font-size="23" font-weight="400" fill="#18383F">去重后选入证据</text>
+<text x="938" y="309" font-size="23" font-weight="400" fill="#18383F">按 BGE token 估算</text>
+<text x="938" y="343" font-size="23" font-weight="400" fill="#18383F"></text>
+<text x="938" y="377" font-size="23" font-weight="400" fill="#18383F">超过预算则跳过，</text>
+<text x="938" y="411" font-size="23" font-weight="400" fill="#18383F">总请求预算待补。</text>
+<path d="M292 353H330" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M580 353H618" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M868 353H906" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="570" width="1096" height="97" rx="18" fill="#F7E7D7" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="77" y="609" font-size="25" font-weight="650" fill="#B56B32">重排只处理已有候选。关键说明没被召回，就要回查检索或文档解析。</text>
+<text x="77" y="645" font-size="23" font-weight="400" fill="#B56B32">相邻补全是另一次内容取回，不能把它算成“重排找到了新文档”。</text>
+<rect x="52" y="710" width="1096" height="111" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="77" y="752" font-size="26" font-weight="650" fill="#21766B">交给模型的证据包</text>
+<text x="77" y="791" font-size="24" font-weight="400" fill="#18383F">问题＋适用范围＋带编号片段＋来源与版本；引用能追溯到实际使用的内容。</text>
+<text x="52" y="870" font-size="18" font-weight="400" fill="#586D70">当前代码按片段 ID 去重并选择证据；相邻取回、ACL 与完整模型 token 预算为扩展。</text>
+</g></svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1170" viewBox="0 0 1200 1170" role="img" aria-labelledby="title desc">
+<title id="title">证据与引用：每个结论都要有对应依据</title><desc id="desc">按问题条件映射证据与主张，区分仓库访问和生产发布权限。当前代码校验引用编号与正文标记一致性；原文是否支持结论仍需另行评测，不能仅凭引用 ID 存在判定答案正确。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#789095"/></marker></defs>
+<rect width="1200" height="1170" rx="24" fill="#F7F4ED"/>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="52" y="68" font-size="36" font-weight="650" fill="#18383F">证据与引用：每个结论都要有对应依据</text>
+<text x="52" y="111" font-size="22" font-weight="400" fill="#586D70">问题：仓库访问已经开通，我现在能直接发布到生产环境吗？</text>
+<rect x="52" y="160" width="1096" height="116" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="201" font-size="27" font-weight="650" fill="#226C8B">先拆开问题</text>
+<text x="74" y="243" font-size="24" font-weight="400" fill="#18383F">已知：仓库访问已开通。　待确认：生产发布角色、审批要求与当前授权。</text>
+<path d="M310 284V321" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M890 284V321" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="339" width="516" height="200" rx="18" fill="#E1EDF2" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="380" font-size="27" font-weight="650" fill="#226C8B">证据 1：CodeHub 仓库权限</text>
+<text x="74" y="422" font-size="24" font-weight="400" fill="#18383F">说明仓库的读取、提交等访问能力。</text>
+<text x="74" y="456" font-size="24" font-weight="400" fill="#18383F">适用产品与版本正确，来源可定位。</text>
+<rect x="632" y="339" width="516" height="200" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="654" y="380" font-size="27" font-weight="650" fill="#21766B">证据 2：FlowCI 生产发布指南</text>
+<text x="654" y="422" font-size="24" font-weight="400" fill="#18383F">说明生产发布所需的角色与审批。</text>
+<text x="654" y="456" font-size="24" font-weight="400" fill="#18383F">文档描述要求，不代表用户已获授权。</text>
+<path d="M310 547V584" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M890 547V584" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="52" y="602" width="516" height="169" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="74" y="643" font-size="27" font-weight="650" fill="#226C8B">它支持的主张</text>
+<text x="74" y="685" font-size="24" font-weight="400" fill="#18383F">仓库访问权限涉及代码访问能力。</text>
+<text x="74" y="719" font-size="24" font-weight="400" fill="#18383F">不能据此断言：生产发布权限已开。</text>
+<rect x="632" y="602" width="516" height="169" rx="18" fill="#FFFFFF" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="654" y="643" font-size="27" font-weight="650" fill="#21766B">它支持的主张</text>
+<text x="654" y="685" font-size="24" font-weight="400" fill="#18383F">发布前需要满足文档列出的条件。</text>
+<text x="654" y="719" font-size="24" font-weight="400" fill="#18383F">当前授权状态需到业务系统核对。</text>
+<path d="M310 779V811H458V837" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M890 779V811H742V837" fill="none" stroke="#789095" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="146" y="855" width="908" height="155" rx="18" fill="#E3F0E9" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="168" y="896" font-size="27" font-weight="650" fill="#21766B">回答时分别说明，并引用各自依据</text>
+<text x="168" y="938" font-size="23" font-weight="400" fill="#18383F">“CodeHub 指南说明的是仓库访问能力。[1]”</text>
+<text x="168" y="972" font-size="23" font-weight="400" fill="#18383F">“FlowCI 发布另需对应角色与审批。[2] 当前授权还需核对。”</text>
+<rect x="52" y="1044" width="1096" height="68" rx="18" fill="#F7E7D7" stroke="#CFDAD6" stroke-width="1.5"/>
+<text x="76" y="1086" font-size="23" font-weight="400" fill="#B56B32">引用核对：ID 存在＋原文支持结论＋版本适用。仅有引用编号，还不能证明答对了。</text>
+<text x="52" y="1140" font-size="18" font-weight="400" fill="#586D70">当前代码核对引用编号与正文标记；结论是否有依据需另行评测。CodeHub / FlowCI 为模拟产品。</text>
+</g></svg>

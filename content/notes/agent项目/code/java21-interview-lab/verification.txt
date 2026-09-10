@@ -1,0 +1,10 @@
+Runtime: 21.0.9+10-LTS
+Vendor: Microsoft
+PASS 1: unbounded queue: pool=1, queued=2 while first task is held
+PASS 2: bounded queue: pool=2, queued=1, fourth task rejected
+PASS 3: orTimeout: caller failed, underlying work later produced one side effect
+PASS 4: same pool: parent timed out waiting; child ran after parent returned
+PASS 5: ThreadLocal: stale actor reproduced; finally/remove cleared it
+PASS 6: read-modify-write: volatile=1, AtomicInteger=2 under forced interleaving
+PASS 7: virtual threads: three tasks, semaphore limited downstream peak to two
+PASS: 7 semantic cases; no performance claim.
