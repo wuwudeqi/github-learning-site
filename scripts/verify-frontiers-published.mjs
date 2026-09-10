@@ -57,15 +57,23 @@ async function main() {
       throw new Error(`${date} 尚未进入线上目录: ${name}`);
   }
   const files = await filesIn(dir);
+  const audit = JSON.parse(
+    await readFile(`docs/frontiers-source-audits/${date}.json`, "utf8"),
+  );
+  const selectedPaperPaths = new Set(
+    (audit.expandedSelections?.papers ?? []).map((paper) => paper.archivePath),
+  );
   for (const file of await filesIn("content/papers/frontiers")) {
     if (!file.endsWith(".md")) continue;
     const { data } = matter(await readFile(file, "utf8"));
-    if (String(data.date) !== date) continue;
+    if (String(data.date) !== date && !selectedPaperPaths.has(file)) continue;
     const relative = file.replace(/^content\//, "documents/");
     if (
       !catalog.documents?.some(
         (item) =>
-          item.file === relative && item.id === data.id && item.date === date,
+          item.file === relative &&
+          item.id === data.id &&
+          item.date === String(data.date),
       )
     ) {
       throw new Error(`当期论文阅读卡尚未进入线上目录: ${file}`);

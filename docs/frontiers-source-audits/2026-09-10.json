@@ -119,7 +119,10 @@
       "kind": "company",
       "selected": true,
       "order": 1,
-      "reason": "企业功能与权限新增；与9月3日模型首发区分，交叉链接9月8日期刊。"
+      "reason": "企业功能与权限新增；与9月3日模型首发区分，交叉链接9月8日期刊。",
+      "subjectKeys": [
+        "event:astra-enterprise-controls-2026-09-09"
+      ]
     },
     {
       "id": "adk-kotlin",
@@ -130,7 +133,10 @@
       "kind": "company",
       "selected": true,
       "order": 2,
-      "reason": "正式公告的核心与端侧能力；仓库v1.0.0于9月7日先发布，采用公告日。"
+      "reason": "正式公告的核心与端侧能力；仓库v1.0.0于9月7日先发布，采用公告日。",
+      "subjectKeys": [
+        "repo:google/adk-kotlin"
+      ]
     },
     {
       "id": "tencent-auk",
@@ -141,7 +147,12 @@
       "kind": "company",
       "selected": true,
       "order": 3,
-      "reason": "代码、基础及Flash权重开放；实时仓库和模型卡现均写9月9日，搜索索引旧快照9月7日不采用。"
+      "reason": "代码、基础及Flash权重开放；实时仓库和模型卡现均写9月9日，搜索索引旧快照9月7日不采用。",
+      "subjectKeys": [
+        "model:tencent/auk",
+        "repo:tencent-hunyuan/auk",
+        "paper:2609.08936"
+      ]
     },
     {
       "id": "granite-r2",
@@ -152,7 +163,11 @@
       "kind": "company",
       "selected": true,
       "order": 4,
-      "reason": "9月9日正式技术详解，非断言权重首次于当天开放；明确模型卡8月31日和博客9月8日榜单快照。"
+      "reason": "9月9日正式技术详解，非断言权重首次于当天开放；明确模型卡8月31日和博客9月8日榜单快照。",
+      "subjectKeys": [
+        "model:ibm-granite/granite-timeseries-patchtst-fm-r2",
+        "repo:ibm-granite/granite-tsfm"
+      ]
     },
     {
       "id": "discovery-clio",
@@ -163,7 +178,10 @@
       "kind": "company",
       "selected": true,
       "order": 5,
-      "reason": "独立科研执行框架更新，合并电池案例，不拆同一发布。"
+      "reason": "独立科研执行框架更新，合并电池案例，不拆同一发布。",
+      "subjectKeys": [
+        "event:discovery-clio"
+      ]
     },
     {
       "id": "nvidia-ibc",
@@ -174,7 +192,10 @@
       "kind": "company",
       "selected": true,
       "order": 6,
-      "reason": "IBC会前公告，覆盖图像视频与语音；会议实际9月11日至14日。"
+      "reason": "IBC会前公告，覆盖图像视频与语音；会议实际9月11日至14日。",
+      "subjectKeys": [
+        "event:nvidia-ibc"
+      ]
     },
     {
       "id": "mistral-series-d",
@@ -185,7 +206,10 @@
       "kind": "company",
       "selected": true,
       "order": 7,
-      "reason": "官方正文核实金额，投资方Bpifrance确认9月8日；近期补充，与三星合作不拆条。"
+      "reason": "官方正文核实金额，投资方Bpifrance确认9月8日；近期补充，与三星合作不拆条。",
+      "subjectKeys": [
+        "event:mistral-series-d"
+      ]
     },
     {
       "id": "copilot-policy",
@@ -196,7 +220,10 @@
       "kind": "company",
       "selected": true,
       "order": 8,
-      "reason": "重要企业可用范围和权限控制变化。"
+      "reason": "重要企业可用范围和权限控制变化。",
+      "subjectKeys": [
+        "event:copilot-policy"
+      ]
     },
     {
       "id": "copilot-autofix",
@@ -207,7 +234,10 @@
       "kind": "company",
       "selected": true,
       "order": 9,
-      "reason": "独立的批量修复产品流程，与企业权限不是同一发布。"
+      "reason": "独立的批量修复产品流程，与企业权限不是同一发布。",
+      "subjectKeys": [
+        "event:copilot-autofix"
+      ]
     },
     {
       "id": "school-standard",
@@ -218,7 +248,10 @@
       "kind": "company",
       "selected": true,
       "order": 10,
-      "reason": "采购与产品数据使用范围变化；不是全国生效的法律。"
+      "reason": "采购与产品数据使用范围变化；不是全国生效的法律。",
+      "subjectKeys": [
+        "event:school-standard"
+      ]
     },
     {
       "id": "gpn-star",
@@ -229,7 +262,10 @@
       "kind": "research",
       "selected": true,
       "order": 11,
-      "reason": "Nature研究与公开预测的新进展；与昨天AlphaGenome Atlas不同研究，非临床诊断。"
+      "reason": "Nature研究与公开预测的新进展；与昨天AlphaGenome Atlas不同研究，非临床诊断。",
+      "subjectKeys": [
+        "event:gpn-star"
+      ]
     },
     {
       "id": "ppocr-v6",
@@ -240,7 +276,10 @@
       "kind": "company",
       "selected": true,
       "order": 12,
-      "reason": "7日内未收录的重要OCR服务，近期补充，不当成模型初次开源。"
+      "reason": "7日内未收录的重要OCR服务，近期补充，不当成模型初次开源。",
+      "subjectKeys": [
+        "event:ppocr-v6"
+      ]
     },
     {
       "id": "teamai-heat",
@@ -258,7 +297,10 @@
         "url": "https://github.com/trending?since=daily",
         "observedAt": "2026-09-10T09:37:33+08:00",
         "timestampNote": "本次重新抓取完成的北京时间，数据为GitHub页面stars today的滚动快照。"
-      }
+      },
+      "subjectKeys": [
+        "repo:tencent/teamai-cli"
+      ]
     },
     {
       "id": "diagram-heat",
@@ -276,7 +318,10 @@
         "url": "https://github.com/trending?since=daily",
         "observedAt": "2026-09-10T09:37:33+08:00",
         "timestampNote": "本次重新抓取完成的北京时间，数据为GitHub页面stars today的滚动快照。"
-      }
+      },
+      "subjectKeys": [
+        "repo:cathrynlavery/diagram-design"
+      ]
     },
     {
       "id": "pi-heat",
@@ -294,7 +339,10 @@
         "url": "https://github.com/trending?since=daily",
         "observedAt": "2026-09-10T09:37:33+08:00",
         "timestampNote": "本次重新抓取完成的北京时间，数据为GitHub页面stars today的滚动快照。"
-      }
+      },
+      "subjectKeys": [
+        "repo:vastsa/pi-desktop"
+      ]
     },
     {
       "id": "images25",
@@ -448,61 +496,75 @@
     }
   ],
   "openSourceProjects": {
-    "checkedThrough": "2026-09-10T09:34:06+08:00",
+    "checkedThrough": "2026-09-10T03:28:10.233Z",
     "projects": [
       {
-        "id": "tencent-teamai-cli",
+        "id": "treeverse-dvc",
         "order": 1,
-        "title": "TeamAI：共享团队技能与规则",
-        "repositoryUrl": "https://github.com/Tencent/teamai-cli",
-        "license": "MIT",
-        "licenseUrl": "https://github.com/Tencent/teamai-cli/blob/main/LICENSE",
-        "reason": "团队技能与规则分发",
-        "checkedAt": "2026-09-10T09:34:06+08:00",
-        "pushedAt": "2026-09-09T14:12:35Z",
+        "title": "DVC：代码回到旧版本，数据也得跟得上",
+        "repositoryUrl": "https://github.com/treeverse/dvc",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/treeverse/dvc/blob/main/LICENSE",
+        "reason": "数据和流水线版本管理",
+        "checkedAt": "2026-09-10T03:28:06.762Z",
+        "pushedAt": "2026-09-07T18:54:56Z",
         "latestRelease": {
-          "tag_name": "v0.24.0-beta.3",
-          "published_at": "2026-09-09T14:13:10Z",
-          "prerelease": true,
-          "html_url": "https://github.com/Tencent/teamai-cli/releases/tag/v0.24.0-beta.3"
+          "tag_name": "3.67.1",
+          "published_at": "2026-03-31T05:06:44Z",
+          "prerelease": false,
+          "html_url": "https://github.com/treeverse/dvc/releases/tag/3.67.1"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已核对官方 README、许可原文与发行记录，成熟工具推荐，未安装运行。",
+        "subjectKeys": [
+          "repo:treeverse/dvc"
+        ]
       },
       {
-        "id": "cathrynlavery-diagram-design",
+        "id": "bentoml-bentoml",
         "order": 2,
-        "title": "Diagram Design：生成可编辑的解释图",
-        "repositoryUrl": "https://github.com/cathrynlavery/diagram-design",
-        "license": "MIT",
-        "licenseUrl": "https://github.com/cathrynlavery/diagram-design/blob/main/LICENSE",
-        "reason": "解释图的公开实现",
-        "checkedAt": "2026-09-10T09:34:06+08:00",
-        "pushedAt": "2026-09-10T00:32:25Z",
-        "latestRelease": null,
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "title": "BentoML：把推理脚本做成有边界的服务",
+        "repositoryUrl": "https://github.com/bentoml/BentoML",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/bentoml/BentoML/blob/main/LICENSE",
+        "reason": "将推理函数部署为服务",
+        "checkedAt": "2026-09-10T03:28:07.997Z",
+        "pushedAt": "2026-09-07T17:43:01Z",
+        "latestRelease": {
+          "tag_name": "v1.4.39",
+          "published_at": "2026-05-07T10:37:29Z",
+          "prerelease": false,
+          "html_url": "https://github.com/bentoml/BentoML/releases/tag/v1.4.39"
+        },
+        "verification": "已核对官方 README、许可原文与发行记录，成熟工具推荐，未安装运行。",
+        "subjectKeys": [
+          "repo:bentoml/bentoml"
+        ]
       },
       {
-        "id": "vastsa-pi-desktop",
+        "id": "vibrantlabsai-ragas",
         "order": 3,
-        "title": "PI-Desktop：本地项目的 Agent 工作台",
-        "repositoryUrl": "https://github.com/vastsa/PI-Desktop",
-        "license": "LGPL-3.0",
-        "licenseUrl": "https://github.com/vastsa/PI-Desktop/blob/main/LICENSE",
-        "reason": "可更换模型的桌面Agent工作区",
-        "checkedAt": "2026-09-10T09:34:06+08:00",
-        "pushedAt": "2026-09-10T00:40:39Z",
+        "title": "Ragas：把“感觉回答不错”变成可比较的实验",
+        "repositoryUrl": "https://github.com/vibrantlabsai/ragas",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/vibrantlabsai/ragas/blob/main/LICENSE",
+        "reason": "RAG 与模型应用评测",
+        "checkedAt": "2026-09-10T03:28:10.233Z",
+        "pushedAt": "2026-02-24T07:47:19Z",
         "latestRelease": {
-          "tag_name": "v0.14.6-rc.4",
-          "published_at": "2026-09-09T13:34:25Z",
-          "prerelease": true,
-          "html_url": "https://github.com/vastsa/PI-Desktop/releases/tag/v0.14.6-rc.4"
+          "tag_name": "v0.4.3",
+          "published_at": "2026-01-13T17:47:29Z",
+          "prerelease": false,
+          "html_url": "https://github.com/vibrantlabsai/ragas/releases/tag/v0.4.3"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已核对官方 README、许可原文与发行记录，成熟工具推荐，未安装运行。",
+        "subjectKeys": [
+          "repo:vibrantlabsai/ragas"
+        ]
       },
       {
         "id": "docling-project-docling",
         "order": 4,
-        "title": "Docling：把复杂文档转成结构化材料",
+        "title": "Docling：先把 PDF 的阅读顺序弄对",
         "repositoryUrl": "https://github.com/docling-project/docling",
         "license": "MIT",
         "licenseUrl": "https://github.com/docling-project/docling/blob/main/LICENSE",
@@ -515,12 +577,15 @@
           "prerelease": false,
           "html_url": "https://github.com/docling-project/docling/releases/tag/v2.126.0"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:docling-project/docling"
+        ]
       },
       {
         "id": "unclecode-crawl4ai",
         "order": 5,
-        "title": "Crawl4AI：把网页整理成可用文本",
+        "title": "Crawl4AI：网页抓到了，还要看看正文有没有丢",
         "repositoryUrl": "https://github.com/unclecode/crawl4ai",
         "license": "Apache-2.0",
         "licenseUrl": "https://github.com/unclecode/crawl4ai/blob/main/LICENSE",
@@ -533,12 +598,15 @@
           "prerelease": false,
           "html_url": "https://github.com/unclecode/crawl4ai/releases/tag/v0.9.3"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:unclecode/crawl4ai"
+        ]
       },
       {
         "id": "google-langextract",
         "order": 6,
-        "title": "LangExtract：抽取结果附带原文位置",
+        "title": "LangExtract：每个字段都能回到原句核对",
         "repositoryUrl": "https://github.com/google/langextract",
         "license": "Apache-2.0",
         "licenseUrl": "https://github.com/google/langextract/blob/main/LICENSE",
@@ -551,12 +619,15 @@
           "prerelease": false,
           "html_url": "https://github.com/google/langextract/releases/tag/v1.6.0"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:google/langextract"
+        ]
       },
       {
         "id": "pydantic-pydantic-ai",
         "order": 7,
-        "title": "Pydantic AI：为模型输出建立类型接口",
+        "title": "Pydantic AI：让模型结果先通过接口检查",
         "repositoryUrl": "https://github.com/pydantic/pydantic-ai",
         "license": "MIT",
         "licenseUrl": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE",
@@ -569,12 +640,15 @@
           "prerelease": false,
           "html_url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.42.0"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:pydantic/pydantic-ai"
+        ]
       },
       {
         "id": "getzep-graphiti",
         "order": 8,
-        "title": "Graphiti：保存随时间变化的关系",
+        "title": "Graphiti：关系变了，旧记录也要能解释",
         "repositoryUrl": "https://github.com/getzep/graphiti",
         "license": "Apache-2.0",
         "licenseUrl": "https://github.com/getzep/graphiti/blob/main/LICENSE",
@@ -587,12 +661,15 @@
           "prerelease": false,
           "html_url": "https://github.com/getzep/graphiti/releases/tag/v0.30.2"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:getzep/graphiti"
+        ]
       },
       {
         "id": "marimo-team-marimo",
         "order": 9,
-        "title": "marimo：让分析笔记按依赖自动更新",
+        "title": "marimo：改一个参数，相关计算跟着更新",
         "repositoryUrl": "https://github.com/marimo-team/marimo",
         "license": "Apache-2.0",
         "licenseUrl": "https://github.com/marimo-team/marimo/blob/main/LICENSE",
@@ -605,12 +682,15 @@
           "prerelease": false,
           "html_url": "https://github.com/marimo-team/marimo/releases/tag/0.24.0"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:marimo-team/marimo"
+        ]
       },
       {
         "id": "pascalorg-editor",
         "order": 10,
-        "title": "Pascal Editor：可连接 Agent 的三维建筑编辑器",
+        "title": "Pascal Editor：让 Agent 的空间修改看得见",
         "repositoryUrl": "https://github.com/pascalorg/editor",
         "license": "MIT",
         "licenseUrl": "https://github.com/pascalorg/editor/blob/main/LICENSE",
@@ -623,7 +703,10 @@
           "prerelease": true,
           "html_url": "https://github.com/pascalorg/editor/releases/tag/pascal-agent-skills--v0.1.7"
         },
-        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。",
+        "subjectKeys": [
+          "repo:pascalorg/editor"
+        ]
       }
     ],
     "discovery": [
@@ -650,6 +733,11 @@
         "url": "https://huggingface.co/api/daily_papers?date=2026-09-09",
         "status": "read",
         "note": "已读每日论文API，核验PG、OPRD、AuK原文；基础模型与纯论文分到独立板块。"
+      },
+      {
+        "source": "revision-official-repositories",
+        "url": "https://github.com/vibrantlabsai/ragas",
+        "note": "用户要求跨栏目去重，补查 DVC、BentoML、Ragas 官方仓库、README、许可及发行记录。"
       }
     ],
     "excludedCandidates": [
@@ -662,24 +750,28 @@
         "reason": "成熟框架，与本期Pydantic AI和其他Agent工具用途重叠。"
       },
       {
-        "repositoryUrl": "https://github.com/treeverse/dvc",
-        "reason": "已核验仓库迁移至treeverse/dvc；成熟数据版本工具留待后续合适主题。"
-      },
-      {
-        "repositoryUrl": "https://github.com/bentoml/BentoML",
-        "reason": "模型服务部署工具留待推理部署主题，本期优先应用层用途。"
-      },
-      {
         "repositoryUrl": "https://github.com/google/adk-kotlin",
         "reason": "在重点新闻深入介绍，不重复占项目十选名额。"
       },
       {
         "repositoryUrl": "https://github.com/ibm-granite/granite-tsfm",
-        "reason": "属于时序模型实现，已放到模型板块。"
+        "reason": "属于时序模型实现，已在重点新闻介绍。"
       },
       {
         "repositoryUrl": "https://github.com/Tencent-Hunyuan/AuK",
-        "reason": "基础语音模型在模型板块，不填入应用项目十选。"
+        "reason": "基础语音模型在重点新闻中，不填入应用项目十选。"
+      },
+      {
+        "repositoryUrl": "https://github.com/Tencent/teamai-cli",
+        "reason": "保留在新闻栏，修订后移出项目十选，避免跨栏重复。"
+      },
+      {
+        "repositoryUrl": "https://github.com/cathrynlavery/diagram-design",
+        "reason": "保留在新闻栏，修订后移出项目十选，避免跨栏重复。"
+      },
+      {
+        "repositoryUrl": "https://github.com/vastsa/PI-Desktop",
+        "reason": "保留在新闻栏，修订后移出项目十选，避免跨栏重复。"
       }
     ]
   },
@@ -715,6 +807,275 @@
     "practice": "Python标准库3个行为测试通过",
     "onlineVerifierRegression": "对9月9日已发布期刊核验31个文件通过，包含该日期论文卡；Markdown按构建规则去除frontmatter，排除本地Python缓存；本期未发布时的线上检查也正确失败，不能误用昨日上线状态。",
     "visual": "已在浏览器核验导读→论文精选→PG阅读卡的实际站内跳转；390px手机视口文章宽度348px且无横向溢出。六栏目配图加载和截图逐项检查。",
-    "deployment": "本审计与内容同批提交；对应GitHub Actions和线上哈希比对成功后，结果保存在本机.frontiers/current.json。"
-  }
+    "deployment": "本审计与内容同批提交；对应GitHub Actions和线上哈希比对成功后，结果保存在本机.frontiers/current.json。",
+    "revisionStatus": "local-checks-passed-awaiting-publication",
+    "revisionChecks": {
+      "targetDate": "2026-09-10",
+      "news": 15,
+      "models": 6,
+      "papers": 6,
+      "projects": 10,
+      "siteTests": 18,
+      "javaTests": 32,
+      "javaProcesses": 3,
+      "practiceTests": 3,
+      "localLinks": 111,
+      "historicalComparisons": 44,
+      "duplicateNewSelections": 0,
+      "build": "passed",
+      "desktopAndMobile": "passed",
+      "browserPaperNavigation": "passed",
+      "browserJavaZipDownload": "passed"
+    }
+  },
+  "expandedSelections": {
+    "effectiveFrom": "2026-09-10",
+    "expectedModels": 6,
+    "expectedPapers": 6,
+    "models": [
+      {
+        "id": "gander-omni/gander",
+        "order": 1,
+        "title": "Gander：让语音助手不用每次等一句话结束",
+        "sourceUrl": "https://huggingface.co/Gander-Omni/Gander",
+        "subjectKeys": [
+          "model:gander-omni/gander"
+        ],
+        "license": "apache-2.0",
+        "checkedAt": "2026-09-10T03:28:05.395Z",
+        "createdAt": "2026-09-07T07:03:13.000Z",
+        "lastModified": "2026-09-09T05:27:41.000Z",
+        "weightFileCount": 6,
+        "verification": "已读模型卡、API 元数据、权重目录；未下载大权重或运行推理。"
+      },
+      {
+        "id": "nex-agi/nex-n2.5-mini",
+        "order": 2,
+        "title": "Nex-N2.5-mini：电脑操作模型，先看实际完成了什么",
+        "sourceUrl": "https://huggingface.co/nex-agi/Nex-N2.5-mini",
+        "subjectKeys": [
+          "model:nex-agi/nex-n2.5-mini"
+        ],
+        "license": "apache-2.0",
+        "checkedAt": "2026-09-10T03:24:18.423Z",
+        "createdAt": "2026-09-08T05:08:43.000Z",
+        "lastModified": "2026-09-08T16:17:10.000Z",
+        "weightFileCount": 16,
+        "verification": "已读模型卡、API 元数据、权重目录；未下载大权重或运行推理。"
+      },
+      {
+        "id": "xhtoken/spark-x2.5-4b",
+        "order": 3,
+        "title": "Spark-X2.5-4B：适合研究小模型怎样调用工具",
+        "sourceUrl": "https://huggingface.co/XHToken/Spark-X2.5-4B",
+        "subjectKeys": [
+          "model:xhtoken/spark-x2.5-4b"
+        ],
+        "license": "apache-2.0",
+        "checkedAt": "2026-09-10T03:24:19.156Z",
+        "createdAt": "2026-08-24T06:34:34.000Z",
+        "lastModified": "2026-09-03T05:45:12.000Z",
+        "weightFileCount": 5,
+        "verification": "已读模型卡、API 元数据、权重目录；未下载大权重或运行推理。"
+      },
+      {
+        "id": "microsoft/vibevoice-asr-streaming-7b",
+        "order": 4,
+        "title": "VibeVoice-ASR-Streaming-7B：把一段连续录音变成可用的文字",
+        "sourceUrl": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B",
+        "subjectKeys": [
+          "model:microsoft/vibevoice-asr-streaming-7b"
+        ],
+        "license": "mit",
+        "checkedAt": "2026-09-10T03:24:18.426Z",
+        "createdAt": "2026-09-02T15:46:22.000Z",
+        "lastModified": "2026-09-03T05:35:33.000Z",
+        "weightFileCount": 8,
+        "verification": "已读模型卡、API 元数据、权重目录；未下载大权重或运行推理。"
+      },
+      {
+        "id": "deepseek-ai/deepseek-v4-flash-vision-exp",
+        "order": 5,
+        "title": "DeepSeek-V4-Flash-Vision-Exp：视觉扩展仍处在实验阶段",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+        "subjectKeys": [
+          "model:deepseek-ai/deepseek-v4-flash-vision-exp"
+        ],
+        "license": "mit",
+        "checkedAt": "2026-09-10T03:24:19.190Z",
+        "createdAt": "2026-08-31T06:16:18.000Z",
+        "lastModified": "2026-09-01T09:22:10.000Z",
+        "weightFileCount": 48,
+        "verification": "已读模型卡、API 元数据、权重目录；未下载大权重或运行推理。"
+      },
+      {
+        "id": "zai-org/glm-5.3-flash",
+        "order": 6,
+        "title": "GLM-5.3-Flash：活跃参数少，不代表只需存下这些参数",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+        "subjectKeys": [
+          "model:zai-org/glm-5.3-flash"
+        ],
+        "license": "mit",
+        "checkedAt": "2026-09-10T03:24:19.889Z",
+        "createdAt": "2026-08-25T06:43:14.000Z",
+        "lastModified": "2026-09-07T12:13:47.000Z",
+        "weightFileCount": 62,
+        "verification": "已读模型卡、API 元数据、权重目录；未下载大权重或运行推理。"
+      }
+    ],
+    "papers": [
+      {
+        "id": "2609.09153",
+        "order": 1,
+        "title": "Procedural Graphs：留下“为什么走这一步”",
+        "sourceUrl": "https://arxiv.org/abs/2609.09153v1",
+        "version": "v1",
+        "submittedDate": "2026-09-08",
+        "archivePath": "content/papers/frontiers/procedural-graphs/00-阅读卡.md",
+        "subjectKeys": [
+          "paper:2609.09153"
+        ],
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "verification": "已读原文方法与结果；未复现实验。"
+      },
+      {
+        "id": "2609.08798",
+        "order": 2,
+        "title": "OPRD：弱教师提供的是学习方向",
+        "sourceUrl": "https://arxiv.org/abs/2609.08798v1",
+        "version": "v1",
+        "submittedDate": "2026-09-08",
+        "archivePath": "content/papers/frontiers/on-policy-reverse-distillation/00-阅读卡.md",
+        "subjectKeys": [
+          "paper:2609.08798"
+        ],
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "verification": "已读原文方法与结果；未复现实验。"
+      },
+      {
+        "id": "2609.04971",
+        "order": 3,
+        "title": "BeaconKV：刚才没被注意到的内容，以后可能还用得上",
+        "sourceUrl": "https://arxiv.org/abs/2609.04971v1",
+        "version": "v1",
+        "submittedDate": "2026-09-04",
+        "archivePath": "content/papers/frontiers/beaconkv/00-阅读卡.md",
+        "subjectKeys": [
+          "paper:2609.04971"
+        ],
+        "checkedAt": "2026-09-10T03:24:21.498Z",
+        "verification": "已读 PDF 方法与结果，论文自身标注 ICML2026；未另核会议目录，未复现。"
+      },
+      {
+        "id": "2609.07816",
+        "order": 4,
+        "title": "Kalman Delta Networks：记忆不仅要存，还要知道哪里不确定",
+        "sourceUrl": "https://arxiv.org/abs/2609.07816v1",
+        "version": "v1",
+        "submittedDate": "2026-09-07",
+        "archivePath": "content/papers/frontiers/kalman-delta-networks/00-阅读卡.md",
+        "subjectKeys": [
+          "paper:2609.07816"
+        ],
+        "checkedAt": "2026-09-10T03:24:21.714Z",
+        "verification": "已读原文方法与结果；未复现实验。"
+      },
+      {
+        "id": "2609.08404",
+        "order": 5,
+        "title": "Environments as Scaffold：训练初期，环境能不能多给一点帮助",
+        "sourceUrl": "https://arxiv.org/abs/2609.08404v1",
+        "version": "v1",
+        "submittedDate": "2026-09-08",
+        "archivePath": "content/papers/frontiers/environments-as-scaffold/00-阅读卡.md",
+        "subjectKeys": [
+          "paper:2609.08404"
+        ],
+        "checkedAt": "2026-09-10T03:24:24.204Z",
+        "verification": "已读原文方法与结果；未复现实验。"
+      },
+      {
+        "id": "2609.04280",
+        "order": 6,
+        "title": "EVOHARNESSBENCH：工具越来越多，为什么旧任务反而做不好",
+        "sourceUrl": "https://arxiv.org/abs/2609.04280v1",
+        "version": "v1",
+        "submittedDate": "2026-09-03",
+        "archivePath": "content/papers/frontiers/evoharnessbench/00-阅读卡.md",
+        "subjectKeys": [
+          "paper:2609.04280"
+        ],
+        "checkedAt": "2026-09-10T03:24:26.451Z",
+        "verification": "已读原文方法与结果；未复现实验。"
+      }
+    ]
+  },
+  "revision": {
+    "revisedAt": "2026-09-10T03:52:22.521Z",
+    "request": "humanizer-zh 改写、增加模型与论文、跨栏目和历史去重",
+    "scope": "保留今晨十五条已核实新闻的事件选择，重写表达；补查六个模型、四篇新论文、三个替换项目。未宣称重新扫描全部十五家厂商。",
+    "previousCounts": {
+      "news": 15,
+      "models": 2,
+      "papers": 2,
+      "projects": 10
+    },
+    "currentCounts": {
+      "news": 15,
+      "models": 6,
+      "papers": 6,
+      "projects": 10
+    },
+    "previousProjectSelection": [
+      {
+        "id": "tencent-teamai-cli",
+        "title": "TeamAI：共享团队技能与规则"
+      },
+      {
+        "id": "cathrynlavery-diagram-design",
+        "title": "Diagram Design：生成可编辑的解释图"
+      },
+      {
+        "id": "vastsa-pi-desktop",
+        "title": "PI-Desktop：本地项目的 Agent 工作台"
+      }
+    ],
+    "historyChecked": [
+      "2026-09-08",
+      "2026-09-09"
+    ],
+    "historyResult": "按现有历史正文核对模型、arXiv编号和规范仓库地址。新增条目无重复；Astra仅报道9月9日企业能力新事实，正文链接9月8日首发。",
+    "excludedModels": [
+      {
+        "id": "BreezeBlue/Breeze-TTS-2",
+        "reason": "研究/非商业限制，不作为本期宽松许可模型推荐",
+        "sourceUrl": "https://huggingface.co/BreezeBlue/Breeze-TTS-2/raw/main/README.md",
+        "checkedAt": "2026-09-10T03:24:20.636Z"
+      },
+      {
+        "id": "google/timesfm-3.0-pytorch",
+        "reason": "模型许可含非商业限制，未混入本期选项",
+        "sourceUrl": "https://huggingface.co/google/timesfm-3.0-pytorch/raw/main/README.md",
+        "checkedAt": "2026-09-10T03:24:19.929Z"
+      },
+      {
+        "id": "Viggle/Viggle-Animate",
+        "reason": "自定义社区许可，当前选择优先可核对的 MIT/Apache 权重",
+        "sourceUrl": "https://huggingface.co/Viggle/Viggle-Animate/raw/main/README.md",
+        "checkedAt": "2026-09-10T03:24:20.714Z"
+      }
+    ],
+    "evidenceCheckedThrough": "2026-09-10T03:28:10.233Z",
+    "historicalIdentityCheck": {
+      "priorDates": [
+        "2026-09-08",
+        "2026-09-09"
+      ],
+      "comparisons": 44,
+      "duplicates": 0,
+      "note": "对本次六模型、六论文、十项目的规范主链接，与两期全部正文链接进行比对；新闻新增事件仍由编辑判断。"
+    }
+  },
+  "deduplicationRevision": "按现有历史正文核对模型、arXiv编号和规范仓库地址。新增条目无重复；Astra仅报道9月9日企业能力新事实，正文链接9月8日首发。 AuK/Granite仅新闻；TeamAI/Diagram/PI仅新闻；新增六模型与六论文按主身份跨栏检查。"
 }

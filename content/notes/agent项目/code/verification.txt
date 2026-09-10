@@ -1,16 +1,34 @@
-test_01_join_fanout_and_preaggregation (__main__.Invariants.test_01_join_fanout_and_preaggregation) ... ok
-test_02_ratio_of_sums_not_average_of_ratios (__main__.Invariants.test_02_ratio_of_sums_not_average_of_ratios) ... ok
-test_03_zero_budget_is_undefined (__main__.Invariants.test_03_zero_budget_is_undefined) ... ok
-test_04_pinned_release_survives_new_release (__main__.Invariants.test_04_pinned_release_survives_new_release) ... ok
-test_05_retry_after_lost_response_returns_same_task (__main__.Invariants.test_05_retry_after_lost_response_returns_same_task) ... ok
-test_06_same_operation_changed_payload_conflicts (__main__.Invariants.test_06_same_operation_changed_payload_conflicts) ... ok
-test_07_new_intent_same_parameters_is_allowed (__main__.Invariants.test_07_new_intent_same_parameters_is_allowed) ... ok
-test_08_concurrent_duplicates_create_one_logical_task (__main__.Invariants.test_08_concurrent_duplicates_create_one_logical_task) ... ok
-test_09_actor_namespace_does_not_merge_tasks (__main__.Invariants.test_09_actor_namespace_does_not_merge_tasks) ... ok
-test_10_stale_worker_cannot_publish (__main__.Invariants.test_10_stale_worker_cannot_publish) ... ok
-test_11_json_key_order_does_not_change_hash (__main__.Invariants.test_11_json_key_order_does_not_change_hash) ... ok
+Java 21 + LangGraph4j 1.8.27 verification
+Run date: 2026-09-10 (Asia/Shanghai)
+Environment: Microsoft JDK 21.0.9, Maven 3.9.16, macOS aarch64
+Command: mvn -B -ntp test
 
-----------------------------------------------------------------------
-Ran 11 tests in 0.052s
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.145 s -- in dev.learning.BudgetGraphTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.640 s -- in dev.learning.BusinessInvariantsTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 s -- in dev.learning.BudgetMathTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+[INFO] Finished at: 2026-09-10T11:40:02+08:00
 
-OK
+Three independent JVM processes; directory /tmp/budget-agent-java-final:
+
+Command: mvn -B -ntp exec:java '-Dexec.args=start /tmp/budget-agent-java-final'
+next=await_basis state={actor=alice, run_id=demo-run-001, evidence_archive={}, plan_revision=1, want_details=true, authorized=true, pending_question=预算用年初版还是调整后？, waiting_revision=1, active_result_ids=[], status=WAITING_INPUT}
+export_task_count=0
+[INFO] BUILD SUCCESS
+[INFO] Finished at: 2026-09-10T11:41:21+08:00
+
+Command: mvn -B -ntp exec:java '-Dexec.args=answer /tmp/budget-agent-java-final'
+已注入故障：导出任务已提交，图尚未收到返回。
+next=submit_export state={data_release=rel-001, run_id=demo-run-001, plan_revision=1, want_details=true, p02_variance_cents=-200000, variance_cents=4000000, actor=alice, evidence_archive={demo-run-001-plan-1-detail=c5121a8b52cd7ed0d70d618bbfeeca88aff9a67fd87a19ba64f165980771552e, demo-run-001-plan-1-summary=5ddf177e07800721cc35a472cf9dbe7b5a5a020550b92a8afba624f5d5163143}, authorized=true, next_action=export, p01_variance_cents=4200000, budget_cents=52000000, effective_plan_id=demo-run-001-plan-1, operation_id=demo-run-001-r1-export-1, detail_result_id=demo-run-001-plan-1-detail, actual_cents=56000000, pending_question=, budget_basis=ADJUSTED, waiting_revision=1, active_result_ids=[demo-run-001-plan-1-summary, demo-run-001-plan-1-detail], summary_result_id=demo-run-001-plan-1-summary, status=RUNNING}
+export_task_count=1
+[INFO] BUILD SUCCESS
+[INFO] Finished at: 2026-09-10T11:42:29+08:00
+
+Command: mvn -B -ntp exec:java '-Dexec.args=resume /tmp/budget-agent-java-final'
+next=__END__ state={data_release=rel-001, run_id=demo-run-001, plan_revision=1, want_details=true, p02_variance_cents=-200000, variance_cents=4000000, actor=alice, completion_scope=query_and_export_task_accepted, evidence_archive={demo-run-001-plan-1-detail=c5121a8b52cd7ed0d70d618bbfeeca88aff9a67fd87a19ba64f165980771552e, demo-run-001-plan-1-summary=5ddf177e07800721cc35a472cf9dbe7b5a5a020550b92a8afba624f5d5163143}, authorized=true, next_action=export, p01_variance_cents=4200000, budget_cents=52000000, effective_plan_id=demo-run-001-plan-1, operation_id=demo-run-001-r1-export-1, detail_result_id=demo-run-001-plan-1-detail, actual_cents=56000000, artifact_job_id=1, pending_question=, budget_basis=ADJUSTED, waiting_revision=1, active_result_ids=[demo-run-001-plan-1-summary, demo-run-001-plan-1-detail], summary_result_id=demo-run-001-plan-1-summary, status=SUCCEEDED}
+export_task_count=1
+[INFO] BUILD SUCCESS
+[INFO] Finished at: 2026-09-10T11:44:05+08:00
+
+Scope: deterministic policy, synthetic data, H2 file DB, single-writer FileSystemSaver. Query and export-task acceptance only. No real model, Spring Boot HTTP, MCP, production identity/RLS, Excel/SVG creation, distributed restore locks, or crash-during-checkpoint-write guarantee. The answer command intentionally catches SIMULATED_RESPONSE_LOST_AFTER_COMMIT.

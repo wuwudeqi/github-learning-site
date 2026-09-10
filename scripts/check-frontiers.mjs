@@ -141,6 +141,121 @@ export function validateProjects(collection, article) {
   return errors;
 }
 
+// Canonical identities supplement editorial review; navigational links are not selections.
+export function canonicalSubject(url) {
+  try {
+    const u = new URL(url);
+    const parts = u.pathname.replace(/\/+$/, "").split("/").filter(Boolean);
+    if (u.hostname.toLowerCase() === "github.com" && parts.length >= 2)
+      return (
+        "repo:" +
+        parts
+          .slice(0, 2)
+          .join("/")
+          .replace(/\.git$/i, "")
+          .toLowerCase()
+      );
+    if (
+      u.hostname.toLowerCase() === "huggingface.co" &&
+      parts.length === 2 &&
+      !["blog", "papers", "api"].includes(parts[0])
+    )
+      return "model:" + parts.join("/").toLowerCase();
+    if (
+      u.hostname.toLowerCase() === "arxiv.org" &&
+      /^(abs|html|pdf)$/.test(parts[0]) &&
+      /^\d{4}\.\d{4,5}/.test(parts[1] ?? "")
+    )
+      return (
+        "paper:" + parts[1].replace(/v\d+(?:\.pdf)?$/, "").replace(/\.pdf$/, "")
+      );
+    return (
+      "source:" +
+      u.origin.toLowerCase() +
+      u.pathname.replace(/\/+$/, "") +
+      u.search
+    );
+  } catch {
+    return "";
+  }
+}
+
+export function validateTopicDeduplication(entries) {
+  const errors = [],
+    seen = new Map();
+  for (const item of entries) {
+    const keys = new Set(
+      [
+        canonicalSubject(item.sourceUrl ?? item.repositoryUrl),
+        ...(item.subjectKeys ?? []).map((k) => k.toLowerCase()),
+      ].filter(Boolean),
+    );
+    for (const key of keys) {
+      if (seen.has(key))
+        errors.push(
+          `duplicate topic across selections: ${key} (${seen.get(key)} / ${item.id})`,
+        );
+      else seen.set(key, item.id);
+    }
+  }
+  return errors;
+}
+
+export function validateExpandedSelections(audit, articles) {
+  const errors = [],
+    collection = audit.expandedSelections;
+  if (!collection) return ["missing expanded model/paper selections"];
+  for (const [kind, expectedKey] of [
+    ["models", "expectedModels"],
+    ["papers", "expectedPapers"],
+  ]) {
+    const entries = collection[kind] ?? [];
+    const sections = [
+      ...(articles[kind] ?? "").matchAll(
+        /^## (\d{2}) · (.+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm,
+      ),
+    ];
+    if (
+      collection[expectedKey] !== 6 ||
+      entries.length !== 6 ||
+      sections.length !== 6
+    )
+      errors.push(`expected 6 ${kind} in evidence and article`);
+    for (const [i, item] of entries.entries()) {
+      const section = sections[i];
+      if (
+        item.order !== i + 1 ||
+        Number(section?.[1]) !== i + 1 ||
+        section?.[2] !== item.title
+      )
+        errors.push(`${kind} headline/order mismatch: ${item.id}`);
+      if (
+        !/^https:\/\//.test(item.sourceUrl ?? "") ||
+        !section?.[3].includes(`(${item.sourceUrl})`)
+      )
+        errors.push(`missing ${kind} source: ${item.id}`);
+      if (!Number.isFinite(Date.parse(item.checkedAt)))
+        errors.push(`missing ${kind} check time: ${item.id}`);
+      if (kind === "models" && (!item.license || !(item.weightFileCount > 0)))
+        errors.push(`missing model license/weights: ${item.id}`);
+      if (
+        kind === "papers" &&
+        (!item.archivePath || !item.version || !item.submittedDate)
+      )
+        errors.push(`missing paper archive/version: ${item.id}`);
+    }
+  }
+  errors.push(
+    ...validateTopicDeduplication([
+      ...(audit.candidates ?? []).filter((c) => c.selected),
+      ...(collection.models ?? []),
+      ...(collection.papers ?? []),
+      ...(audit.openSourceProjects?.projects ?? []),
+    ]),
+  );
+  return errors;
+}
+
 async function findIssues(dir) {
   const issues = [];
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -207,13 +322,31 @@ export async function checkFrontiers(requiredDate) {
         await readFile(path.join(path.dirname(file), "04-开源项目.md"), "utf8"),
       ),
     );
+    if (date >= "2026-09-10") {
+      errors.push(
+        ...validateExpandedSelections(audit, {
+          models: await readFile(
+            path.join(path.dirname(file), "02-开源模型.md"),
+            "utf8",
+          ),
+          papers: await readFile(
+            path.join(path.dirname(file), "03-论文精选.md"),
+            "utf8",
+          ),
+        }),
+      );
+      for (const paper of audit.expandedSelections?.papers ?? []) {
+        if (!(await stat(paper.archivePath).catch(() => null))?.isFile())
+          errors.push(`missing paper archive: ${paper.id}`);
+      }
+    }
     if (errors.length) throw new Error(`${date}:\n${errors.join("\n")}`);
     count++;
   }
   if (requiredDate && count !== 1)
     throw new Error(`${requiredDate} 未通过当日期刊检查`);
   console.log(
-    `前沿检查通过：${count} 期；15 条新闻、10 个开源项目及对应来源、日期、许可与去重记录一致。`,
+    `前沿检查通过：${count} 期；15 条新闻、10 个项目及来源一致；9 月 10 日起另查 6 个模型、6 篇论文和跨栏目去重。`,
   );
 }
 
