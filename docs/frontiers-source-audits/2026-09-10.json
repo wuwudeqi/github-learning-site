@@ -1,0 +1,720 @@
+{
+  "issueDate": "2026-09-10",
+  "informationCutoff": "2026-09-10T09:34:06+08:00",
+  "timestampNote": "checkedAt为本次补跑证据汇总的时间；检索发生于本次补跑此前各批次，不代表公告发布日期。官方仅列日期时保留原站日期，不伪造时区和分钟。末轮核验时间另行记录。",
+  "coverage": [
+    {
+      "provider": "OpenAI",
+      "url": "https://openai.com/news/",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读新闻索引、Astra工作公告及系统卡9月9日变更。Images 2.5和数学公告已在9月9日收录。"
+    },
+    {
+      "provider": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读官方索引；当前最新模型条目为9月1日Fable/Mythos 5.1，未在此索引发现窗口内新的重大模型公告。"
+    },
+    {
+      "provider": "Google",
+      "url": "https://deepmind.google/blog/",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读DeepMind索引及Google Developers的ADK Kotlin 1.0原文；AlphaGenome Atlas昨日已收录，9月1日视频文章超出窗口。"
+    },
+    {
+      "provider": "Meta",
+      "url": "https://about.fb.com/news/",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读官方新闻索引；9月8日Muse已在上期收录，本期不重复。"
+    },
+    {
+      "provider": "Microsoft",
+      "url": "https://news.microsoft.com/source/view-all/",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "初始博客抓取失败后改查Source索引，读取Discovery/CLIO和学校标准正文及技术详解。"
+    },
+    {
+      "provider": "xAI",
+      "url": "https://x.ai/news",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读官方新闻索引；Grok Bot已收录，采购案例的重要性不足以单列。未检查X热榜。"
+    },
+    {
+      "provider": "NVIDIA",
+      "url": "https://blogs.nvidia.com/",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读博客索引与9月9日IBC媒体技术公告，PAIR昨日已收录。"
+    },
+    {
+      "provider": "Alibaba",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "status": "partial",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读百炼模型更新页；qwen3.8-max-0902超出7日窗口、Qwen Work旧闻已收录。该索引不能代表阿里全部产品渠道。"
+    },
+    {
+      "provider": "DeepSeek",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读API更新索引，所见最近条目8月21日视觉实验版、8月13日Pro，未在此页发现窗口内新公告。"
+    },
+    {
+      "provider": "ByteDance",
+      "url": "https://seed.bytedance.com/en/blog",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "主页无有效正文，改用Seed官方博客经Jina读取；所见最新为8月5日SeedRealtime，另有7月Seedance/Seedream，均不作今日新闻。"
+    },
+    {
+      "provider": "Tencent",
+      "url": "https://github.com/Tencent-Hunyuan/AuK",
+      "status": "partial",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "旧企业新闻URL失效，当前newsroom抓取误返回SVG，广域新闻覆盖不完整；已直接核验AuK、TeamAI官方仓库、权重卡及许可证。"
+    },
+    {
+      "provider": "Baidu",
+      "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读AI官方新闻目录与PP-OCRv6 9月7日详情，确认云API范围。"
+    },
+    {
+      "provider": "Zhipu",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "status": "partial",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "研究页及z.ai/blog不可用，改读模型发布索引；GLM-5.3-Flash条目本页未清楚标日期，不据此包装为近日新发。"
+    },
+    {
+      "provider": "Kimi",
+      "url": "https://www.kimi.com/help/kimi-work/release-notes",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "已读Kimi Work 3.2.5（9月4日）和3.2.6（9月7日）；列候选后让位于AuK新开放，未占每日15条。"
+    },
+    {
+      "provider": "MiniMax",
+      "url": "https://www.minimax.io/news",
+      "status": "read",
+      "checkedAt": "2026-09-10T09:34:06+08:00",
+      "note": "网页初读仅导航，改用Jina读完整官方列表；所见8月26日业绩与8月3日H3，没有此索引内窗口新发。"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "astra-work",
+      "title": "Astra 补齐企业工作能力：权限、插件与执行边界",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://openai.com/index/gpt-6-astra-next-generation-work/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 1,
+      "reason": "企业功能与权限新增；与9月3日模型首发区分，交叉链接9月8日期刊。"
+    },
+    {
+      "id": "adk-kotlin",
+      "title": "Google ADK Kotlin 1.0：把 Agent 接入应用生命周期",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://developers.googleblog.com/en/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 2,
+      "reason": "正式公告的核心与端侧能力；仓库v1.0.0于9月7日先发布，采用公告日。"
+    },
+    {
+      "id": "tencent-auk",
+      "title": "腾讯 AuK 开源：用同一套指令生成和编辑语音",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/Tencent-Hunyuan/AuK",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 3,
+      "reason": "代码、基础及Flash权重开放；实时仓库和模型卡现均写9月9日，搜索索引旧快照9月7日不采用。"
+    },
+    {
+      "id": "granite-r2",
+      "title": "IBM 详解新版时序模型：预测区间与缺失值一起处理",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+      "priority": "high",
+      "kind": "company",
+      "selected": true,
+      "order": 4,
+      "reason": "9月9日正式技术详解，非断言权重首次于当天开放；明确模型卡8月31日和博客9月8日榜单快照。"
+    },
+    {
+      "id": "discovery-clio",
+      "title": "Microsoft Discovery 引入 CLIO，让科研推理随证据调整",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
+      "priority": "must",
+      "kind": "company",
+      "selected": true,
+      "order": 5,
+      "reason": "独立科研执行框架更新，合并电池案例，不拆同一发布。"
+    },
+    {
+      "id": "nvidia-ibc",
+      "title": "NVIDIA 更新媒体 AI 组件，覆盖视频处理与生成内容检测",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://blogs.nvidia.com/blog/ibc-news-2026/",
+      "priority": "high",
+      "kind": "company",
+      "selected": true,
+      "order": 6,
+      "reason": "IBC会前公告，覆盖图像视频与语音；会议实际9月11日至14日。"
+    },
+    {
+      "id": "mistral-series-d",
+      "title": "Mistral 融资 30 亿欧元，继续扩建开放权重与算力体系",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+      "priority": "high",
+      "kind": "company",
+      "selected": true,
+      "order": 7,
+      "reason": "官方正文核实金额，投资方Bpifrance确认9月8日；近期补充，与三星合作不拆条。"
+    },
+    {
+      "id": "copilot-policy",
+      "title": "Copilot 企业管理员可以集中规定 Agent 操作权限",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+      "priority": "high",
+      "kind": "company",
+      "selected": true,
+      "order": 8,
+      "reason": "重要企业可用范围和权限控制变化。"
+    },
+    {
+      "id": "copilot-autofix",
+      "title": "GitHub Code Quality 支持一次交给 Copilot 修复 25 项问题",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.blog/changelog/2026-09-09-remediate-code-quality-findings-with-agentic-autofix/",
+      "priority": "high",
+      "kind": "company",
+      "selected": true,
+      "order": 9,
+      "reason": "独立的批量修复产品流程，与企业权限不是同一发布。"
+    },
+    {
+      "id": "school-standard",
+      "title": "微软与教师组织提出学校 AI 数据保护合同标准",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://news.microsoft.com/source/2026/09/09/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-for-schools-to-protect-students-families-and-educators/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": true,
+      "order": 10,
+      "reason": "采购与产品数据使用范围变化；不是全国生效的法律。"
+    },
+    {
+      "id": "gpn-star",
+      "title": "GPN-Star 用进化对齐信息筛选值得研究的基因变异",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://news.berkeley.edu/2026/09/09/new-ai-model-for-dna-learns-from-evolution-to-unlock-secrets-of-the-human-genome/",
+      "priority": "high",
+      "kind": "research",
+      "selected": true,
+      "order": 11,
+      "reason": "Nature研究与公开预测的新进展；与昨天AlphaGenome Atlas不同研究，非临床诊断。"
+    },
+    {
+      "id": "ppocr-v6",
+      "title": "百度 PP-OCRv6 云服务扩展到 50 种语言与复杂版面",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://ai.baidu.com/support/news?action=detail&id=3283",
+      "priority": "high",
+      "kind": "company",
+      "selected": true,
+      "order": 12,
+      "reason": "7日内未收录的重要OCR服务，近期补充，不当成模型初次开源。"
+    },
+    {
+      "id": "teamai-heat",
+      "title": "TeamAI 进入热榜：把团队技能和规则同步到多种 Agent",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://github.com/Tencent/teamai-cli",
+      "priority": "normal",
+      "kind": "project",
+      "selected": true,
+      "order": 13,
+      "reason": "当日Trending日增556星，官方MIT；新闻简报与项目栏不同深度。",
+      "heat": {
+        "period": "daily",
+        "starsAdded": 556,
+        "url": "https://github.com/trending?since=daily",
+        "observedAt": "2026-09-10T09:37:33+08:00",
+        "timestampNote": "本次重新抓取完成的北京时间，数据为GitHub页面stars today的滚动快照。"
+      }
+    },
+    {
+      "id": "diagram-heat",
+      "title": "Diagram Design 获关注：把结构说明变成可编辑图解",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://github.com/cathrynlavery/diagram-design",
+      "priority": "normal",
+      "kind": "project",
+      "selected": true,
+      "order": 14,
+      "reason": "当日Trending日增2249星，有公开技能实现与MIT许可。",
+      "heat": {
+        "period": "daily",
+        "starsAdded": 2249,
+        "url": "https://github.com/trending?since=daily",
+        "observedAt": "2026-09-10T09:37:33+08:00",
+        "timestampNote": "本次重新抓取完成的北京时间，数据为GitHub页面stars today的滚动快照。"
+      }
+    },
+    {
+      "id": "pi-heat",
+      "title": "PI-Desktop 获关注：本地项目中的多模型桌面工作台",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://github.com/vastsa/PI-Desktop",
+      "priority": "normal",
+      "kind": "project",
+      "selected": true,
+      "order": 15,
+      "reason": "当日Trending日增417星，核对最新为候选版，避免宣称稳定发布。",
+      "heat": {
+        "period": "daily",
+        "starsAdded": 417,
+        "url": "https://github.com/trending?since=daily",
+        "observedAt": "2026-09-10T09:37:33+08:00",
+        "timestampNote": "本次重新抓取完成的北京时间，数据为GitHub页面stars today的滚动快照。"
+      }
+    },
+    {
+      "id": "images25",
+      "title": "Images 2.5",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/news/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录；没有核实到第二个独立更新。"
+    },
+    {
+      "id": "navier",
+      "title": "Navier–Stokes证明",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/news/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录，不重复。"
+    },
+    {
+      "id": "muse",
+      "title": "Meta Muse",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://about.fb.com/news/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录。"
+    },
+    {
+      "id": "atlas",
+      "title": "AlphaGenome Atlas",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://deepmind.google/blog/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录。"
+    },
+    {
+      "id": "mdash",
+      "title": "微软MDASH",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://news.microsoft.com/source/view-all/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录。"
+    },
+    {
+      "id": "qwenwork",
+      "title": "Qwen Work团队工作台",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录。"
+    },
+    {
+      "id": "hy4",
+      "title": "Hy4推理优化",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://www.tencent.com/zh-cn/newsroom/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日已收录；企业新闻完整列表本次未成功读取。"
+    },
+    {
+      "id": "grokbot",
+      "title": "Grok Bot企业场景",
+      "eventDate": "2026-09-03",
+      "sourceUrl": "https://x.ai/news",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "已收录，新增采购案例不单列。"
+    },
+    {
+      "id": "kimiwork",
+      "title": "Kimi Work手机遥控与插件能力",
+      "eventDate": "2026-09-04",
+      "sourceUrl": "https://www.kimi.com/help/kimi-work/release-notes",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "可靠近期候选；本期优先新开放AuK等较重要事件，后续有新进展再跟踪。"
+    },
+    {
+      "id": "adkvideo",
+      "title": "Google agentic视频教程",
+      "eventDate": "2026-09-01",
+      "sourceUrl": "https://developers.googleblog.com/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "超出7日窗口，且普通教程不作为重要发布。"
+    },
+    {
+      "id": "glmflash",
+      "title": "GLM-5.3-Flash",
+      "eventDate": "2026-08-26",
+      "sourceUrl": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "索引缺清楚日期，未验证为7日内新增，不采用搜索抓取时间替代发布日期。"
+    },
+    {
+      "id": "minimaxh3",
+      "title": "MiniMax H3",
+      "eventDate": "2026-08-03",
+      "sourceUrl": "https://www.minimax.io/news",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "旧模型发布，超出窗口。"
+    },
+    {
+      "id": "hyperframes",
+      "title": "HyperFrames热门",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/heygen-com/hyperframes",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "昨日项目已深入收录，不连续凑数。"
+    },
+    {
+      "id": "codeql227",
+      "title": "CodeQL 2.27.0 Linux ARM64",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.blog/changelog/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "普通兼容更新，相对批量Agent修复和企业权限优先级较低。"
+    },
+    {
+      "id": "desertant",
+      "title": "Desert Ant Labs本地模型",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://desertant.com/blog/introducing-desert-ant-labs/",
+      "priority": "normal",
+      "kind": "company",
+      "selected": false,
+      "reason": "HN发现候选，未核验到具体开放模型许可和完整发布范围，不充当已开源项目。"
+    }
+  ],
+  "openSourceProjects": {
+    "checkedThrough": "2026-09-10T09:34:06+08:00",
+    "projects": [
+      {
+        "id": "tencent-teamai-cli",
+        "order": 1,
+        "title": "TeamAI：共享团队技能与规则",
+        "repositoryUrl": "https://github.com/Tencent/teamai-cli",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/Tencent/teamai-cli/blob/main/LICENSE",
+        "reason": "团队技能与规则分发",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-09T14:12:35Z",
+        "latestRelease": {
+          "tag_name": "v0.24.0-beta.3",
+          "published_at": "2026-09-09T14:13:10Z",
+          "prerelease": true,
+          "html_url": "https://github.com/Tencent/teamai-cli/releases/tag/v0.24.0-beta.3"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "cathrynlavery-diagram-design",
+        "order": 2,
+        "title": "Diagram Design：生成可编辑的解释图",
+        "repositoryUrl": "https://github.com/cathrynlavery/diagram-design",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/cathrynlavery/diagram-design/blob/main/LICENSE",
+        "reason": "解释图的公开实现",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-10T00:32:25Z",
+        "latestRelease": null,
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "vastsa-pi-desktop",
+        "order": 3,
+        "title": "PI-Desktop：本地项目的 Agent 工作台",
+        "repositoryUrl": "https://github.com/vastsa/PI-Desktop",
+        "license": "LGPL-3.0",
+        "licenseUrl": "https://github.com/vastsa/PI-Desktop/blob/main/LICENSE",
+        "reason": "可更换模型的桌面Agent工作区",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-10T00:40:39Z",
+        "latestRelease": {
+          "tag_name": "v0.14.6-rc.4",
+          "published_at": "2026-09-09T13:34:25Z",
+          "prerelease": true,
+          "html_url": "https://github.com/vastsa/PI-Desktop/releases/tag/v0.14.6-rc.4"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "docling-project-docling",
+        "order": 4,
+        "title": "Docling：把复杂文档转成结构化材料",
+        "repositoryUrl": "https://github.com/docling-project/docling",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/docling-project/docling/blob/main/LICENSE",
+        "reason": "复杂文档解析",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-09T16:56:27Z",
+        "latestRelease": {
+          "tag_name": "v2.126.0",
+          "published_at": "2026-09-04T15:47:33Z",
+          "prerelease": false,
+          "html_url": "https://github.com/docling-project/docling/releases/tag/v2.126.0"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "unclecode-crawl4ai",
+        "order": 5,
+        "title": "Crawl4AI：把网页整理成可用文本",
+        "repositoryUrl": "https://github.com/unclecode/crawl4ai",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/unclecode/crawl4ai/blob/main/LICENSE",
+        "reason": "网页采集与转换",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-09T13:22:34Z",
+        "latestRelease": {
+          "tag_name": "v0.9.3",
+          "published_at": "2026-08-31T11:34:14Z",
+          "prerelease": false,
+          "html_url": "https://github.com/unclecode/crawl4ai/releases/tag/v0.9.3"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "google-langextract",
+        "order": 6,
+        "title": "LangExtract：抽取结果附带原文位置",
+        "repositoryUrl": "https://github.com/google/langextract",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/google/langextract/blob/main/LICENSE",
+        "reason": "可回溯的结构化抽取",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-07T05:38:38Z",
+        "latestRelease": {
+          "tag_name": "v1.6.0",
+          "published_at": "2026-07-02T06:23:27Z",
+          "prerelease": false,
+          "html_url": "https://github.com/google/langextract/releases/tag/v1.6.0"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "pydantic-pydantic-ai",
+        "order": 7,
+        "title": "Pydantic AI：为模型输出建立类型接口",
+        "repositoryUrl": "https://github.com/pydantic/pydantic-ai",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/pydantic/pydantic-ai/blob/main/LICENSE",
+        "reason": "Python类型与工具接口",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-10T00:58:53Z",
+        "latestRelease": {
+          "tag_name": "v2.42.0",
+          "published_at": "2026-09-09T03:33:32Z",
+          "prerelease": false,
+          "html_url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.42.0"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "getzep-graphiti",
+        "order": 8,
+        "title": "Graphiti：保存随时间变化的关系",
+        "repositoryUrl": "https://github.com/getzep/graphiti",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/getzep/graphiti/blob/main/LICENSE",
+        "reason": "时间知识图谱",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-09T21:25:39Z",
+        "latestRelease": {
+          "tag_name": "v0.30.2",
+          "published_at": "2026-09-08T20:38:41Z",
+          "prerelease": false,
+          "html_url": "https://github.com/getzep/graphiti/releases/tag/v0.30.2"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "marimo-team-marimo",
+        "order": 9,
+        "title": "marimo：让分析笔记按依赖自动更新",
+        "repositoryUrl": "https://github.com/marimo-team/marimo",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/marimo-team/marimo/blob/main/LICENSE",
+        "reason": "可复现分析与应用分享",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-09T21:11:14Z",
+        "latestRelease": {
+          "tag_name": "0.24.0",
+          "published_at": "2026-08-17T21:32:47Z",
+          "prerelease": false,
+          "html_url": "https://github.com/marimo-team/marimo/releases/tag/0.24.0"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      },
+      {
+        "id": "pascalorg-editor",
+        "order": 10,
+        "title": "Pascal Editor：可连接 Agent 的三维建筑编辑器",
+        "repositoryUrl": "https://github.com/pascalorg/editor",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/pascalorg/editor/blob/main/LICENSE",
+        "reason": "本地三维创作与MCP",
+        "checkedAt": "2026-09-10T09:34:06+08:00",
+        "pushedAt": "2026-09-10T00:54:24Z",
+        "latestRelease": {
+          "tag_name": "pascal-agent-skills--v0.1.7",
+          "published_at": "2026-09-09T22:22:26Z",
+          "prerelease": true,
+          "html_url": "https://github.com/pascalorg/editor/releases/tag/pascal-agent-skills--v0.1.7"
+        },
+        "verification": "已读README、许可证原文和可用发行记录；未安装运行。"
+      }
+    ],
+    "discovery": [
+      {
+        "kind": "official-websites",
+        "url": "https://pydantic.dev/docs/ai/",
+        "status": "read",
+        "note": "已读Pydantic官方文档；另读AuK模型卡和IBM时序技术文档，区分模型与应用。"
+      },
+      {
+        "kind": "repositories-and-releases",
+        "url": "https://github.com/trending?since=daily",
+        "status": "read",
+        "note": "实际读取日榜，再用GitHub API核验17个候选的仓库、README、许可证及可用发行记录。"
+      },
+      {
+        "kind": "community",
+        "url": "https://news.ycombinator.com/front?day=2026-09-09",
+        "status": "read",
+        "note": "已读HN当日历史首页，发现Desert Ant等候选；未核实为可用开源工具，未强行入选。"
+      },
+      {
+        "kind": "paper-and-model-directory",
+        "url": "https://huggingface.co/api/daily_papers?date=2026-09-09",
+        "status": "read",
+        "note": "已读每日论文API，核验PG、OPRD、AuK原文；基础模型与纯论文分到独立板块。"
+      }
+    ],
+    "excludedCandidates": [
+      {
+        "repositoryUrl": "https://github.com/ayghri/i-have-adhd",
+        "reason": "许可已核验；本期优先资料、开发与创作工具，避免仅凭热度入选。"
+      },
+      {
+        "repositoryUrl": "https://github.com/huggingface/smolagents",
+        "reason": "成熟框架，与本期Pydantic AI和其他Agent工具用途重叠。"
+      },
+      {
+        "repositoryUrl": "https://github.com/treeverse/dvc",
+        "reason": "已核验仓库迁移至treeverse/dvc；成熟数据版本工具留待后续合适主题。"
+      },
+      {
+        "repositoryUrl": "https://github.com/bentoml/BentoML",
+        "reason": "模型服务部署工具留待推理部署主题，本期优先应用层用途。"
+      },
+      {
+        "repositoryUrl": "https://github.com/google/adk-kotlin",
+        "reason": "在重点新闻深入介绍，不重复占项目十选名额。"
+      },
+      {
+        "repositoryUrl": "https://github.com/ibm-granite/granite-tsfm",
+        "reason": "属于时序模型实现，已放到模型板块。"
+      },
+      {
+        "repositoryUrl": "https://github.com/Tencent-Hunyuan/AuK",
+        "reason": "基础语音模型在模型板块，不填入应用项目十选。"
+      }
+    ]
+  },
+  "gaps": [
+    "X与Reddit没有已配置的读取后端，本期不声称覆盖其热榜；公众号未覆盖。",
+    "腾讯企业新闻列表抓取失败，智谱与阿里仅部分官方渠道可读；对应记录保留partial。"
+  ],
+  "deduplication": {
+    "checkedIssues": [
+      "2026-09-08",
+      "2026-09-09"
+    ],
+    "lookbackDays": [
+      7,
+      30
+    ],
+    "note": "当前站内只有此前两期，按事件及规范仓库URL检索。Astra仅写9月9日增量并链接前期；AuK base与Flash合为一项，CLIO与电池案例合并。"
+  },
+  "implementationNote": "本期为09月10日上午故障补跑；实际上线时间以部署与线上核验记录为准。",
+  "finalSweep": {
+    "checkedAt": "2026-09-10T09:46:59+08:00",
+    "sources": [
+      "https://openai.com/news/",
+      "https://www.anthropic.com/news",
+      "https://deepmind.google/blog/",
+      "https://news.microsoft.com/source/view-all/"
+    ],
+    "note": "复查四家官方列表。Microsoft列表在最终重试中经Jina成功读取；OpenAI董事人事变动不作为模型或产品重点新闻。上述列表中未发现需要替换当前重点条目的新公告。只表示列出的渠道，不代表再次完成全部15家检查。"
+  },
+  "validation": {
+    "content": "目标日期六文档、15条新闻、10个项目审计检查通过；前五条正文约516–594汉字，项目介绍约216–242汉字（不含末尾栏目导航）",
+    "unitTests": "14个日期、编辑、目录与站内跳转单元测试通过",
+    "practice": "Python标准库3个行为测试通过",
+    "onlineVerifierRegression": "对9月9日已发布期刊核验31个文件通过，包含该日期论文卡；Markdown按构建规则去除frontmatter，排除本地Python缓存；本期未发布时的线上检查也正确失败，不能误用昨日上线状态。",
+    "visual": "已在浏览器核验导读→论文精选→PG阅读卡的实际站内跳转；390px手机视口文章宽度348px且无横向溢出。六栏目配图加载和截图逐项检查。",
+    "deployment": "本审计与内容同批提交；对应GitHub Actions和线上哈希比对成功后，结果保存在本机.frontiers/current.json。"
+  }
+}

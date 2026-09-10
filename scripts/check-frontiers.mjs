@@ -1,4 +1,4 @@
-import { readdir, readFile } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
@@ -104,30 +104,39 @@ export function validateProjects(collection, article) {
   const require = (condition, message) => {
     if (!condition) errors.push(message);
   };
-  require(Number.isFinite(Date.parse(collection?.checkedThrough)),
-    "missing open-source project check time");
+  require(Number.isFinite(
+    Date.parse(collection?.checkedThrough),
+  ), "missing open-source project check time");
   const projects = collection?.projects ?? [];
-  const sections = [...article.matchAll(
-    /^## (\d{2}) · (.+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm,
-  )];
-  require(projects.length === 10 && sections.length === 10,
-    "expected 10 open-source projects in both evidence and article");
+  const sections = [
+    ...article.matchAll(/^## (\d{2}) · (.+)\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm),
+  ];
+  require(projects.length === 10 &&
+    sections.length ===
+      10, "expected 10 open-source projects in both evidence and article");
   const canonical = (url) => (url ?? "").toLowerCase().replace(/\/+$/, "");
   require(new Set(projects.map((item) => item.id)).size === projects.length &&
-    new Set(projects.map((item) => canonical(item.repositoryUrl))).size === projects.length,
-    "duplicate open-source project");
+    new Set(projects.map((item) => canonical(item.repositoryUrl))).size ===
+      projects.length, "duplicate open-source project");
   for (const [index, item] of projects.entries()) {
     const section = sections[index];
-    require(item.order === index + 1 && Number(section?.[1]) === index + 1 &&
-      section?.[2] === item.title, `project headline/order mismatch: ${item.id}`);
+    require(item.order === index + 1 &&
+      Number(section?.[1]) === index + 1 &&
+      section?.[2] ===
+        item.title, `project headline/order mismatch: ${item.id}`);
     require(/^https:\/\//.test(item.repositoryUrl ?? "") &&
-      section?.[3].includes(`(${item.repositoryUrl})`),
-      `missing project source in article: ${item.id}`);
-    require(!!item.license?.trim() && /^https:\/\//.test(item.licenseUrl ?? "") &&
-      section?.[3].includes(`[${item.license}](${item.licenseUrl})`),
-      `missing project license evidence: ${item.id}`);
-    require(!!item.reason?.trim() && Number.isFinite(Date.parse(item.checkedAt)),
-      `missing project selection/check record: ${item.id}`);
+      section?.[3].includes(
+        `(${item.repositoryUrl})`,
+      ), `missing project source in article: ${item.id}`);
+    require(!!item.license?.trim() &&
+      /^https:\/\//.test(item.licenseUrl ?? "") &&
+      section?.[3].includes(
+        `[${item.license}](${item.licenseUrl})`,
+      ), `missing project license evidence: ${item.id}`);
+    require(!!item.reason?.trim() &&
+      Number.isFinite(
+        Date.parse(item.checkedAt),
+      ), `missing project selection/check record: ${item.id}`);
   }
   return errors;
 }
@@ -142,20 +151,67 @@ async function findIssues(dir) {
   return issues;
 }
 
-async function main() {
+export const issueFiles = [
+  "00-今日导读.md",
+  "01-AI动态.md",
+  "02-开源模型.md",
+  "03-论文精选.md",
+  "04-开源项目.md",
+  "05-技术实践.md",
+];
+
+export function validateDate(date) {
+  if (
+    !/^\d{4}-\d{2}-\d{2}$/.test(date ?? "") ||
+    !Number.isFinite(Date.parse(date)) ||
+    new Date(date).toISOString().slice(0, 10) !== date
+  ) {
+    throw new Error(`无效日期 / invalid date: ${date}`);
+  }
+  return date;
+}
+
+export function issueDirectory(date) {
+  validateDate(date);
+  return path.join(
+    "content/frontiers",
+    date.slice(0, 4),
+    date.slice(5, 7),
+    date,
+  );
+}
+
+export async function checkFrontiers(requiredDate) {
+  if (requiredDate) {
+    const dir = issueDirectory(requiredDate);
+    for (const name of issueFiles) {
+      const file = path.join(dir, name);
+      const info = await stat(file).catch(() => null);
+      if (!info?.isFile() || info.size === 0) {
+        throw new Error(`${requiredDate} 日报未完成，缺少文件：${file}`);
+      }
+    }
+  }
   let count = 0;
   for (const file of await findIssues("content/frontiers")) {
     const date = path.basename(path.dirname(file));
+    if (requiredDate && date !== requiredDate) continue;
     if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || date < "2026-09-09") continue;
     const audit = JSON.parse(
       await readFile(`docs/frontiers-source-audits/${date}.json`, "utf8"),
     );
     const errors = validateIssue(audit, await readFile(file, "utf8"), date);
-    errors.push(...validateProjects(audit.openSourceProjects,
-      await readFile(path.join(path.dirname(file), "04-开源项目.md"), "utf8")));
+    errors.push(
+      ...validateProjects(
+        audit.openSourceProjects,
+        await readFile(path.join(path.dirname(file), "04-开源项目.md"), "utf8"),
+      ),
+    );
     if (errors.length) throw new Error(`${date}:\n${errors.join("\n")}`);
     count++;
   }
+  if (requiredDate && count !== 1)
+    throw new Error(`${requiredDate} 未通过当日期刊检查`);
   console.log(
     `前沿检查通过：${count} 期；15 条新闻、10 个开源项目及对应来源、日期、许可与去重记录一致。`,
   );
@@ -165,7 +221,16 @@ if (
   process.argv[1] &&
   import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href
 ) {
-  main().catch((error) => {
+  const args = process.argv.slice(2);
+  const run = async () => {
+    if (args.length && (args.length !== 2 || args[0] !== "--date")) {
+      throw new Error(
+        "用法: node scripts/check-frontiers.mjs [--date YYYY-MM-DD]",
+      );
+    }
+    await checkFrontiers(args.length ? validateDate(args[1]) : undefined);
+  };
+  run().catch((error) => {
     console.error(error.message);
     process.exitCode = 1;
   });

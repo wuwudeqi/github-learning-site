@@ -78,7 +78,10 @@ await rm(path.join(output, "documents"), { recursive: true, force: true });
 await cp(content, path.join(output, "documents"), {
   recursive: true,
   filter: (source) =>
-    !source.endsWith(".json") && !source.endsWith(".DS_Store"),
+    !source.endsWith(".json") &&
+    !source.endsWith(".DS_Store") &&
+    path.basename(source) !== "__pycache__" &&
+    !/\.py[co]$/.test(source),
 });
 // Strip frontmatter from published Markdown, keeping downloadable source clean.
 for (const doc of docs.filter((d) => d.type === "MD")) {
