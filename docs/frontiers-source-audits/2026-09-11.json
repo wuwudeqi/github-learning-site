@@ -1303,6 +1303,992 @@
     "runtime": "Python 3.14.3 / CPU / 标准库",
     "command": "python3 -m unittest discover -s content/frontiers/2026/09/2026-09-11/code -v",
     "tests": 3,
-    "note": "合成的6条配对记录；3条持续通过、2条改善、1条回退，没有运行外部模型或复现论文训练。"
+    "note": "合成的6条配对记录；3条持续通过、2条改善、1条回退，没有运行外部模型或复现论文训练。",
+    "visualRevisionRerun": {
+      "date": "2026-09-11T11:39:00.849250+08:00",
+      "tests": 3,
+      "status": "passed",
+      "command": "python3 content/frontiers/2026/09/2026-09-11/code/compare_runs.py; python3 -m unittest discover -s content/frontiers/2026/09/2026-09-11/code -v",
+      "results": {
+        "keptPass": 3,
+        "improved": 2,
+        "regressed": 1,
+        "keptFail": 0,
+        "beforeMeanMs": 1250,
+        "afterMeanMs": 1050
+      },
+      "note": "均为原合成数据计算；没有新增外部模型评测。"
+    }
+  },
+  "visualReview": {
+    "reason": "2026-09-11 用户明确要求按关键图要求重新生成今天日报，属于同日主动改版。",
+    "updatedAt": "2026-09-11T11:45:12.403938+08:00",
+    "status": "passed",
+    "counts": {
+      "overview": 1,
+      "news": 6,
+      "models": 4,
+      "papers": 6,
+      "projects": 4,
+      "practice": 2,
+      "uniqueAssets": 23,
+      "newKeyFigures": 21,
+      "retained": 2,
+      "removedGenericCards": 4,
+      "paperCardReuses": 6
+    },
+    "selectionPrinciple": "每图承担独立解释任务，正文指出读图重点；不设强制总数。精确关系用 SVG，基准数值用 Matplotlib，三维空间关系使用内置 imagegen。",
+    "modules": {
+      "overview": {
+        "reason": "保留导航图，帮助选入口。"
+      },
+      "news": {
+        "assessments": [
+          {
+            "position": 1,
+            "figure": "news-deepseek-routing",
+            "reason": "具有独立的时序、方法、对照或空间解释点，图已放在对应段落旁。"
+          },
+          {
+            "position": 2,
+            "figure": "news-agents-loop",
+            "reason": "具有独立的时序、方法、对照或空间解释点，图已放在对应段落旁。"
+          },
+          {
+            "position": 3,
+            "figure": "news-live-duplex",
+            "reason": "具有独立的时序、方法、对照或空间解释点，图已放在对应段落旁。"
+          },
+          {
+            "position": 4,
+            "figure": "news-swe2-benchmarks",
+            "reason": "具有独立的时序、方法、对照或空间解释点，图已放在对应段落旁。"
+          },
+          {
+            "position": 5,
+            "figure": "news-suno-edit",
+            "reason": "具有独立的时序、方法、对照或空间解释点，图已放在对应段落旁。"
+          },
+          {
+            "position": 6,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 7,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 8,
+            "figure": "news-spatial-viewpoints",
+            "reason": "具有独立的时序、方法、对照或空间解释点，图已放在对应段落旁。"
+          },
+          {
+            "position": 9,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 10,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 11,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 12,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 13,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 14,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          },
+          {
+            "position": 15,
+            "figure": null,
+            "reason": "本条为短讯，新增事实与开放条件能由现有段落清楚表达；没有为了补数量增加装饰或标题卡。"
+          }
+        ]
+      },
+      "models": {
+        "assessments": [
+          {
+            "item": "m-a-p/YuE2-3B",
+            "figure": "model-yue-score",
+            "reason": "乐谱中的可编辑中间层"
+          },
+          {
+            "item": "robbyant/lingbot-world-v2-1.3b-causal-fast",
+            "figure": "model-lingbot-assets",
+            "reason": "小权重包与共享依赖"
+          },
+          {
+            "item": "CohereLabs/North-Small-Translate-1.0",
+            "figure": "model-north-parameters",
+            "reason": "总参数与每步激活的存储区别"
+          },
+          {
+            "item": "inclusionAI/LLaDA-Image",
+            "figure": "model-llada-steps",
+            "reason": "Base/Turbo 采样轮数"
+          },
+          {
+            "item": "BreezeBlue/Breeze-TTS-2",
+            "figure": null,
+            "reason": "三种语音输入方式用三句话即可区分，未取得实际音频且不需要再画通用输入输出框。"
+          },
+          {
+            "item": "inclusionAI/Ling-3.0-flash-VL",
+            "figure": null,
+            "reason": "本条部署误区与 North 的总参数/激活参数图相同；正文说明视觉与任务验证区别，不重复画参数条。"
+          }
+        ]
+      },
+      "papers": {
+        "assessments": [
+          {
+            "item": "2609.08572",
+            "figure": "content/frontiers/2026/09/2026-09-11/images/paper-agentgrad.svg",
+            "reason": "区分寻找干预目标、形成局部监督和更新提示词三个阶段。"
+          },
+          {
+            "item": "2609.06702",
+            "figure": "content/frontiers/2026/09/2026-09-11/images/paper-parser.svg",
+            "reason": "让读者看清并行阅读发生在哪里，以及为何还需要多轮推理。"
+          },
+          {
+            "item": "2609.08149",
+            "figure": "content/frontiers/2026/09/2026-09-11/images/paper-swe-isolation.svg",
+            "reason": "说明防泄漏与修坏题是两项不同干预，避免将所有分差归给模型。"
+          },
+          {
+            "item": "2609.10226",
+            "figure": "content/frontiers/2026/09/2026-09-11/images/paper-phi-scope.svg",
+            "reason": "解释工程范围和候选筛选预算如何共同影响基准得分。"
+          },
+          {
+            "item": "2609.07103",
+            "figure": "content/frontiers/2026/09/2026-09-11/images/paper-traces-ablation.svg",
+            "reason": "把轨迹消融变量画清楚，防止将压缩监督材料误读为取消所有推理。"
+          },
+          {
+            "item": "2609.08650",
+            "figure": "content/frontiers/2026/09/2026-09-11/images/paper-datpo-tree.svg",
+            "reason": "解释难度分配、句子分叉和多样性训练信号如何配合。"
+          }
+        ]
+      },
+      "projects": {
+        "assessments": [
+          {
+            "item": "paperless-ngx/paperless-ngx",
+            "figure": "project-document-outputs",
+            "reason": "与 GROBID 同图比较输入输出"
+          },
+          {
+            "item": "grobidorg/grobid",
+            "figure": "project-document-outputs",
+            "reason": "与 Paperless 同图比较输入输出"
+          },
+          {
+            "item": "deepset-ai/haystack",
+            "figure": "project-rag-evidence",
+            "reason": "和 LightRAG 用同一组证据解释管线"
+          },
+          {
+            "item": "hkuds/lightrag",
+            "figure": "project-rag-evidence",
+            "reason": "与 Haystack 同图说明实体关系与原文对应"
+          },
+          {
+            "item": "berriai/litellm",
+            "figure": null,
+            "reason": "统一网关的用途与依赖已在短文说明；不再增加只含供应商名称的路由卡。"
+          },
+          {
+            "item": "chainlit/chainlit",
+            "figure": null,
+            "reason": "页面与应用逻辑的边界用文字清楚说明；未运行服务，不制作仿产品截图。"
+          },
+          {
+            "item": "comfy-org/comfyui",
+            "figure": "project-comfy-flow",
+            "reason": "节点传递的 CONDITIONING、LATENT、IMAGE 容易混淆，需要数据流图。"
+          },
+          {
+            "item": "cline/cline",
+            "figure": null,
+            "reason": "小范围修改、检查补丁和测试的流程在正文已清楚，不增加重复的开发流程框。"
+          },
+          {
+            "item": "crewaiinc/crewai",
+            "figure": null,
+            "reason": "Crews 与 Flows 的取舍已有具体文字场景；本期没有复杂并发拓扑需要另图解释。"
+          },
+          {
+            "item": "comet-ml/opik",
+            "figure": "project-opik-trace",
+            "reason": "追踪错答与形成固定回归样本之间需要流程说明。"
+          }
+        ]
+      },
+      "practice": {
+        "reason": "新增按 id 配对与拒绝错误输入的过程图，保留实际合成数据的四格结果；二者解释不同问题。"
+      }
+    },
+    "figures": [
+      {
+        "module": "news",
+        "item": "deepseek-v41",
+        "path": "content/frontiers/2026/09/2026-09-11/images/news-deepseek-routing.svg",
+        "purpose": "区分已发生与计划中的别名迁移，解释同名 API 复现风险。",
+        "alt": "Flash 旧别名已经转向 V4.1，Pro 旧别名将在 9 月 14 日中午转向",
+        "method": "original-svg",
+        "evidence": [
+          "https://api-docs.deepseek.com/news/news260910",
+          "https://api-docs.deepseek.com/quick_start/pricing"
+        ],
+        "caption": "图：先看上半部分的当前路由，再看下半部分的未来切换。本站依据 [DeepSeek 公告](https://api-docs.deepseek.com/news/news260910)绘制；时间为北京时间，`deepseek-v4-pro` 现在仍指向旧 Pro。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "6c684af46b572c3c3a8d6942fb381dfb35bde8b89331e431a4941b3c0a52f19a"
+      },
+      {
+        "module": "news",
+        "item": "agents-api",
+        "path": "content/frontiers/2026/09/2026-09-11/images/news-agents-loop.svg",
+        "purpose": "区分执行框架责任与工具实际运行环境，展示工具结果如何进入下一轮。",
+        "alt": "托管框架保留会话并循环调用工具，代码运行环境可以另选",
+        "method": "original-svg",
+        "evidence": [
+          "https://openai.com/index/introducing-the-agents-api/",
+          "https://developers.openai.com/api/docs/guides/agents-api/overview"
+        ],
+        "caption": "图：沿箭头看“模型决定操作 → 环境执行 → 结果进入会话 → 继续推理”。虚线区域是托管框架，下方是可选执行环境。本站依据[官方接口文档](https://developers.openai.com/api/docs/guides/agents-api/overview)绘制边界示意，省略认证等细节。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "fbf12a6e75203d09448209790198b9c6b374671aeb9ad18883b9da4a8f960747"
+      },
+      {
+        "module": "news",
+        "item": "gpt-live-api",
+        "path": "content/frontiers/2026/09/2026-09-11/images/news-live-duplex.svg",
+        "purpose": "用时序解释双向音频与后台推理解耦，避免只列功能名。",
+        "alt": "用户插话使前台停下发言，后台任务可以继续执行并返回结果",
+        "method": "original-svg",
+        "evidence": [
+          "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+          "https://developers.openai.com/api/docs/guides/live"
+        ],
+        "caption": "图：注意红色插话发生时，右侧后台仍在执行。本站依据 [GPT-Live-1 公告](https://openai.com/index/introducing-gpt-live-1-in-the-api/)绘制一次示例交互；纵向只有先后意义，不表示实测毫秒数，也不保证每次插话后工具都按同一策略继续。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "9ec5fd5b50d3bc13a594bb49a7dfca64cb48b47f41b06e0e59809237b3e7ce11"
+      },
+      {
+        "module": "news",
+        "item": "cognition-swe2",
+        "path": "content/frontiers/2026/09/2026-09-11/images/news-swe2-benchmarks.svg",
+        "purpose": "让读者看到模型优势随任务变化，不用单一榜单概括代码能力。",
+        "alt": "SWE-2 在 Terminal-Bench 2.1 领先表中对照，但在 Terminal-Bench 4 落后",
+        "method": "matplotlib-source-data",
+        "evidence": [
+          "https://cognition.com/blog/swe-2"
+        ],
+        "caption": "图：四组横轴均从 0 开始，但每组是不同基准，应在组内比较。数值取自 [Cognition 原公告](https://cognition.com/blog/swe-2)的同一张表，由本站用 Matplotlib 绘制；其中 FrontierCode 是评分项加权汇总，图中没有跨基准求平均，也未展示成本。原公告的框架、档位和任务条件仍适用，本站未独立复跑。[下载作图数据](code/swe2-benchmarks.csv)。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "data": {
+          "csv": "content/frontiers/2026/09/2026-09-11/code/swe2-benchmarks.csv",
+          "unit": "原公告得分 %",
+          "aggregation": "不跨基准求平均",
+          "independentReproduction": false
+        },
+        "sha256": "b00d42b83cb20654dbbaad07055c35b121d125822177ebc04ea6291df1e13558"
+      },
+      {
+        "module": "news",
+        "item": "suno-v6",
+        "path": "content/frontiers/2026/09/2026-09-11/images/news-suno-edit.svg",
+        "purpose": "解释局部编辑具体改变哪段、读者应该检查哪里。",
+        "alt": "只选择副歌重做，并检查它与保留主歌、尾段的衔接",
+        "method": "original-svg",
+        "evidence": [
+          "https://suno.com/blog/introducing-v6",
+          "https://help.suno.com/en/articles/13924801"
+        ],
+        "caption": "图：中间副歌是编辑范围，两边是希望保留的内容；生成后还要试听接缝。本站依据 [Suno v6 公告](https://suno.com/blog/introducing-v6)绘制抽象段落示意，色块不是音频波形，长度也不对应真实时长。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "98a40d8d4bc03b8a463d1c4f0ffa5998d89bc45faa469b3f8e1dcc27bba518c1"
+      },
+      {
+        "module": "news",
+        "item": "amap-abot-earth",
+        "path": "content/frontiers/2026/09/2026-09-11/images/news-spatial-viewpoints.png",
+        "purpose": "通过固定空间中的相反视角，解释可探索三维场景与固定视频的区别。",
+        "alt": "同一座广场从 A 看见钟楼，从 B 看见凉亭，喷泉与地标关系保持一致",
+        "method": "imagegen-built-in",
+        "evidence": [
+          "https://www.prnewswire.com/news-releases/amap-street-stars-marks-the-first-anniversary-with-spatial-intelligence-upgrade-302874994.html"
+        ],
+        "caption": "图：看 A、B 两个视角：中央喷泉保持为同一地标，远处建筑随观察方向改变。这张 AI 概念示意由本站调用内置 imagegen 生成，用于解释[高德公告](https://www.prnewswire.com/news-releases/amap-street-stars-marks-the-first-anniversary-with-spatial-intelligence-upgrade-302874994.html)中的空间探索；它不是 ABot-Earth 的输出、官方截图或效果验证。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "19749597eba29be2e74c9faa51775327bf81eb21ee8089dccb27d5e9bb8a7e52",
+        "imagegen": {
+          "mode": "built-in",
+          "useCase": "scientific-educational",
+          "generationPrompt": "Use case: scientific-educational.\nAsset type: explanatory illustration for a Chinese AI daily report, embedded beside a paragraph about explorable 3D urban scenes.\nPrimary request: explain that one persistent 3D place supports different chosen viewpoints. Show the SAME simple plaza twice, viewed from opposite ends. The defining landmarks must be spatially consistent.\nScene: a rectangular plaza. A circular fountain stands exactly in its center. At the north end is a tall terracotta clock tower; at the south end is a low teal arched pavilion. Simple pale trees and benches along the edges.\nComposition: landscape editorial triptych. Upper half: a single large clean axonometric overview of the entire plaza, with the terracotta tower at the far end and the teal pavilion at the near end. Two small camera-position dots, A at the south end pointing toward the tower and B at the north end pointing toward the pavilion. Lower half: two wide inset street-level views. Lower left labelled A: fountain foreground and terracotta tower behind it, with teal pavilion behind the camera and absent. Lower right labelled B: same fountain foreground and teal pavilion behind it, with tower behind the camera and absent. The inset scenes must depict the exact same landmarks and place, not different cities.\nStyle: clear architectural educational illustration, lightly textured, warm off-white background, generous negative space, restrained teal and terracotta accents, crisp silhouettes and readable spatial depth.\nText: only the labels \"A\" and \"B\" beside the two camera dots and their corresponding inset views. No title and no Chinese text.\nConstraints: this is an original conceptual drawing, not an actual model output or product screenshot. No logos, map branding, UI controls, invented metrics, photoreal advertising, decorative sci-fi elements, extraneous buildings, or labels other than A and B. Prioritize correct viewpoint and stable landmark positions over ornament.",
+          "targetedEditPrompt": "Edit the provided educational plaza illustration with one precise correction: In the TOP axonometric overview only, reposition camera marker B and its matching terracotta translucent viewing cone. Place dot B on the paving immediately in front of the clock tower, between the clock tower and the central fountain, clearly on the plaza centerline. Aim B's viewing cone directly toward the fountain and onward toward the teal pavilion, so B matches the lower-right ground-level view. Remove the old B dot, old B letter and old cone from behind/right of the clock tower, restoring the blank background there. Keep the new B letter beside the new dot, readable and not obscuring the fountain. Preserve all architecture, colors, page layout, camera A, and BOTH lower street-level views exactly. Change nothing else.",
+          "selectedOutput": "content/frontiers/2026/09/2026-09-11/images/news-spatial-viewpoints.png",
+          "review": "已逐图检查喷泉与地标在 A/B 视角中的关系；针对 B 机位作一次局部修正，采用修正版。标注为 AI 概念图。"
+        }
+      },
+      {
+        "module": "models",
+        "item": "m-a-p/YuE2-3B",
+        "path": "content/frontiers/2026/09/2026-09-11/images/model-yue-score.svg",
+        "purpose": "说明符号规划为什么让修改发生在合成之前。",
+        "alt": "歌词和风格先形成可编辑旋律和和弦，再进行歌曲合成",
+        "method": "original-svg",
+        "evidence": [
+          "https://huggingface.co/m-a-p/YuE2-3B"
+        ],
+        "caption": "图：编辑位置在中间乐谱层；红色音符和和弦只是虚构例子。本站按[官方模型卡](https://huggingface.co/m-a-p/YuE2-3B)绘制概念流程，未把示例音符当成模型实际输出，也未生成试听样本。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "c7fc276c20eeb02760d6ad801bcf4075ee93990b0fc49477d1d253a497560e7f"
+      },
+      {
+        "module": "models",
+        "item": "robbyant/lingbot-world-v2-1.3b-causal-fast",
+        "path": "content/frontiers/2026/09/2026-09-11/images/model-lingbot-assets.svg",
+        "purpose": "纠正只下载小模型包就认为具备完整运行依赖的误解。",
+        "alt": "1.3B 包的 DiT 需要与共享 T5、分词器及 VAE 一起组成推理流程",
+        "method": "original-svg",
+        "evidence": [
+          "https://github.com/robbyant/lingbot-world-v2"
+        ],
+        "caption": "图：先看虚线包边界，再沿实线看输入、逐块生成与解码。T5、VAE 和分词器来自共享资源，1.3B 包目前只有 DiT。本站依据[仓库的权重与推理说明](https://github.com/robbyant/lingbot-world-v2)绘制；箭头概括依赖和数据流，不是完整网络结构。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "299080da6bba5adcd5a97269aed595138da8bd9a2e835659d80c9f14ef465806"
+      },
+      {
+        "module": "models",
+        "item": "CohereLabs/North-Small-Translate-1.0",
+        "path": "content/frontiers/2026/09/2026-09-11/images/model-north-parameters.svg",
+        "purpose": "把计算量与加载容量分开，解释多卡部署门槛。",
+        "alt": "每步激活的 25B 只是完整 218B 参数的一部分，不能替代权重存储估算",
+        "method": "original-svg",
+        "evidence": [
+          "https://huggingface.co/CohereLabs/North-Small-Translate-1.0"
+        ],
+        "caption": "图：绿色宽度按 25/218 绘制，只表达单步激活规模占总规模的比例；每步可能使用不同专家。218B × 2 字节 ≈ 436 GB 是十进制 BF16 纯权重估算，并非实际显存测量，缓存、缓冲等还需另算。参数与配置来自[官方模型卡](https://huggingface.co/CohereLabs/North-Small-Translate-1.0)，图为本站原创。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "data": {
+          "totalParametersB": 218,
+          "activeParametersB": 25,
+          "bf16WeightOnlyGBEstimate": 436,
+          "formula": "218e9 * 2 bytes / 1e9",
+          "type": "编辑计算，不是实测显存"
+        },
+        "sha256": "dffc255a06ed5ff02de967a3b07bbd7d4c475dd472aea3f18ad0e3c345f98dd9"
+      },
+      {
+        "module": "models",
+        "item": "inclusionAI/LLaDA-Image",
+        "path": "content/frontiers/2026/09/2026-09-11/images/model-llada-steps.svg",
+        "purpose": "解释少步版本改变的变量，并提示速度和质量要另测。",
+        "alt": "Base 推荐 50 轮，蒸馏版 Turbo 推荐 4 轮，圆点表示轮数",
+        "method": "original-svg",
+        "evidence": [
+          "https://huggingface.co/inclusionAI/LLaDA-Image"
+        ],
+        "caption": "图：Base 的 50 个点与 Turbo 的 4 个点对应[模型卡推荐配置](https://huggingface.co/inclusionAI/LLaDA-Image)。本站原创计数图；92% 是轮数的减少比例，不能据此声称耗时也降低 92%，质量则需固定输入和其他设置检查。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "data": {
+          "baseSteps": 50,
+          "turboSteps": 4,
+          "stepReductionPercent": 92,
+          "wallTimeMeasured": false
+        },
+        "sha256": "2b2b803c5a677ef152bd3e5bf1be40b96a3b91999d1db035d4b0f5cdaa44e1af"
+      },
+      {
+        "module": "papers",
+        "item": "2609.08572v1",
+        "path": "content/frontiers/2026/09/2026-09-11/images/paper-agentgrad.svg",
+        "purpose": "区分寻找干预目标、形成局部监督和更新提示词三个阶段。",
+        "alt": "先逆序逐个注入训练提示，成功干预产生伪标签，再生成和归并修改建议",
+        "method": "original-svg",
+        "evidence": [
+          "https://arxiv.org/html/2609.08572v1#S4"
+        ],
+        "caption": "图：按“失败样本 → 一次干预一处 → 结果是否恢复 → 对比该步输出”阅读。本站依据[论文第 4 节](https://arxiv.org/html/2609.08572v1#S4)绘制方法简图；训练提示在部署时移除，干预成功也不等于找到了唯一因果解释。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "readingCard": "content/papers/frontiers/agentgrad/00-阅读卡.md",
+        "sha256": "5d4771173c3683ab850bf732e75dc48cb3120572b2cdc50d95e923730bc90320"
+      },
+      {
+        "module": "papers",
+        "item": "2609.06702v1",
+        "path": "content/frontiers/2026/09/2026-09-11/images/paper-parser.svg",
+        "purpose": "让读者看清并行阅读发生在哪里，以及为何还需要多轮推理。",
+        "alt": "主 Agent 并行询问冻结阅读器，收回各块证据，再发起下一轮问题",
+        "method": "original-svg",
+        "evidence": [
+          "https://arxiv.org/html/2609.06702v1"
+        ],
+        "caption": "图：绿色箭头把同一轮问题分发出去，蓝色回路把证据带回主 Agent；下一轮仍可访问原文块。本站依据[论文方法部分](https://arxiv.org/html/2609.06702v1)绘制；三个阅读器为示意，实际数量随切块配置变化。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "readingCard": "content/papers/frontiers/parser-long-context/00-阅读卡.md",
+        "sha256": "dec4d3a018bae899bc9aff51b82d20aeee9ef1a75681e816e27d08b8e7d37679"
+      },
+      {
+        "module": "papers",
+        "item": "2609.08149v1",
+        "path": "content/frontiers/2026/09/2026-09-11/images/paper-swe-isolation.svg",
+        "purpose": "说明防泄漏与修坏题是两项不同干预，避免将所有分差归给模型。",
+        "alt": "保留正常仓库与依赖，隔离答案和隐藏评测，再单独审查题目与测试的一致性",
+        "method": "original-svg",
+        "evidence": [
+          "https://arxiv.org/html/2609.08149v1"
+        ],
+        "caption": "图：红色叉表示限制泄漏通道，正常工作区仍可用于开发；下半部分是另一项题目修订。本站依据[论文方法与审计设置](https://arxiv.org/html/2609.08149v1)绘制。因原文汇总与配对计数口径存在待核问题，本图不合成准确率柱状图。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "readingCard": "content/papers/frontiers/swe-bench-pro-verified/00-阅读卡.md",
+        "sha256": "9611754b8b98fb8c754075333bfd83f867a4e564eae83e4e2118af2512aa775d"
+      },
+      {
+        "module": "papers",
+        "item": "2609.10226v1",
+        "path": "content/frontiers/2026/09/2026-09-11/images/paper-phi-scope.svg",
+        "purpose": "解释工程范围和候选筛选预算如何共同影响基准得分。",
+        "alt": "从单文件到跨文件再到整仓库，尝试预算从 1 个候选变成最多 16 个",
+        "method": "original-svg",
+        "evidence": [
+          "https://arxiv.org/html/2609.10226v1"
+        ],
+        "caption": "图：嵌套只表达工作范围扩大；KFC、LHI、E2EO 仍是三类独立任务。本站依据[论文实验设置](https://arxiv.org/html/2609.10226v1)绘制，图中“最多 16”是多次候选选择预算。不同 Agent 执行框架等条件还需结合正文。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "readingCard": "content/papers/frontiers/phi-bench/00-阅读卡.md",
+        "sha256": "6307b7a56437d3781051679c5343dcd941c8f58f48b6ac488628146e158017e7"
+      },
+      {
+        "module": "papers",
+        "item": "2609.07103v1",
+        "path": "content/frontiers/2026/09/2026-09-11/images/paper-traces-ablation.svg",
+        "purpose": "把轨迹消融变量画清楚，防止将压缩监督材料误读为取消所有推理。",
+        "alt": "比较完整、开头、结尾和两端四种保留方式，空白对应删除的训练内容",
+        "method": "original-svg",
+        "evidence": [
+          "https://arxiv.org/pdf/2609.07103v1"
+        ],
+        "caption": "图：沿四行比较保留的位置，色块长度仅作示意，不是原文的截断比例。本站依据[原始论文的片段消融](https://arxiv.org/pdf/2609.07103v1)绘制；下文分数来自特定主干和训练设置，不是本站新实验。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "readingCard": "content/papers/frontiers/revisiting-reasoning-traces/00-阅读卡.md",
+        "sha256": "e8934c35e0899c313383f92858403cc04a866ea8c8e83fe88dde674dabc14f92"
+      },
+      {
+        "module": "papers",
+        "item": "2609.08650v1",
+        "path": "content/frontiers/2026/09/2026-09-11/images/paper-datpo-tree.svg",
+        "purpose": "解释难度分配、句子分叉和多样性训练信号如何配合。",
+        "alt": "容易题较少展开，困难题更多分叉，前缀共享且比较同级分支的语义差异",
+        "method": "original-svg",
+        "evidence": [
+          "https://arxiv.org/html/2609.08650v1"
+        ],
+        "caption": "图：先看左右探索量，再看困难题从共享前缀长出多条后续。本站依据[论文第 2—3 节](https://arxiv.org/html/2609.08650v1)绘制；分叉选在高熵句子的起点，图中树宽为示意，不对应某组固定超参数或实测结果。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "readingCard": "content/papers/frontiers/datpo/00-阅读卡.md",
+        "sha256": "48c2f7668eb2d3aed95802e55f9e0c5ecaa812bcde8310bffc95ac8723a318dd"
+      },
+      {
+        "module": "projects",
+        "item": "paperless-ngx + grobid",
+        "path": "content/frontiers/2026/09/2026-09-11/images/project-document-outputs.svg",
+        "purpose": "用输入输出结构帮助区分两种文档工具，避免把 GROBID 当 OCR。",
+        "alt": "Paperless 的输出是可检索档案，GROBID 的输出是结构化论文 TEI XML",
+        "method": "original-svg",
+        "evidence": [
+          "https://docs.paperless-ngx.com/",
+          "https://github.com/grobidOrg/grobid"
+        ],
+        "caption": "图：左边解决归档和搜索，右边提取学术字段，两条路线可分别使用。本站依据 [Paperless 文档](https://docs.paperless-ngx.com/)和 [GROBID 仓库](https://github.com/grobidOrg/grobid)绘制输出对照；纸张与字段为示意，没有运行解析。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "be6b390fccff054f0d630b160a18937d091ba227d8bc9f27908ce6c47db72b87"
+      },
+      {
+        "module": "projects",
+        "item": "haystack + lightrag",
+        "path": "content/frontiers/2026/09/2026-09-11/images/project-rag-evidence.svg",
+        "purpose": "用一组虚构跨文档依赖展示检索中间证据，而不是只罗列工具名称。",
+        "alt": "同一依赖问题可以检查检索段落，也可以沿实体关系定位相关原文",
+        "method": "original-svg",
+        "evidence": [
+          "https://github.com/deepset-ai/haystack",
+          "https://github.com/HKUDS/LightRAG"
+        ],
+        "caption": "图：A→B→C 的材料为虚构示例，说明为什么关系边必须能回到原始文档。本站依据 [Haystack](https://github.com/deepset-ai/haystack)与 [LightRAG](https://github.com/HKUDS/LightRAG)文档绘制；Haystack 可扩展多跳或图检索，这不是两者能力的互斥划分，也未作效果比较。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "f484e65418efec7e4c118ecb0c114043bbf5cc93d446a53a4db0c22d02ae16d0"
+      },
+      {
+        "module": "projects",
+        "item": "comfyui",
+        "path": "content/frontiers/2026/09/2026-09-11/images/project-comfy-flow.svg",
+        "purpose": "帮助初学者沿数据类型找到节点连接和修改位置。",
+        "alt": "模型加载分出 MODEL、CLIP、VAE，提示编码后参与采样，潜表示经解码成为图片",
+        "method": "original-svg",
+        "evidence": [
+          "https://docs.comfy.org/tutorials/basic/text-to-image",
+          "https://docs.comfy.org/built-in-nodes/sampling/ksampler",
+          "https://docs.comfy.org/built-in-nodes/VAEDecode"
+        ],
+        "caption": "图：重点看 KSampler 前后的数据类型：输入有模型、提示条件和初始潜表示，输出仍是潜表示；VAE Decode 才把它变成像素。本站按[官方 SD 1.5 文生图教程](https://docs.comfy.org/tutorials/basic/text-to-image)和 [KSampler 说明](https://docs.comfy.org/built-in-nodes/sampling/ksampler)绘制简图，合并了正负提示编码节点的显示，连线不表示同一条条件输入。本文未运行 ComfyUI。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "5c637f412ed6a8b8c65deb92d74bf384f2ce3a3171054c503966f932a8465e59"
+      },
+      {
+        "module": "projects",
+        "item": "opik",
+        "path": "content/frontiers/2026/09/2026-09-11/images/project-opik-trace.svg",
+        "purpose": "说明调用追踪怎样转化为可重复的回归检查。",
+        "alt": "从错答追到生成和检索步骤，再把失败案例加入固定评测集",
+        "method": "original-svg",
+        "evidence": [
+          "https://www.comet.com/docs/opik/",
+          "https://github.com/comet-ml/opik"
+        ],
+        "caption": "图：缺少文档 2 是一个虚构的排查例子；应回看实际证据再确认原因。本站依据 [Opik 文档](https://www.comet.com/docs/opik/)绘制概念调用链，没有真实日志、产品截图或自动评分实测。最下方固定 id 的做法可继续接本期技术实践。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "eaf409de2c98798d597f0469a17c9bcb3f4434e9f17ee491cbde180bbc31cd6b"
+      },
+      {
+        "module": "practice",
+        "item": "paired-evaluation",
+        "path": "content/frontiers/2026/09/2026-09-11/images/practice-match-ids.svg",
+        "purpose": "解释按身份配对为什么能避免行序错配，以及错误输入如何被拒绝。",
+        "alt": "打乱行序后 old-tool 等样本仍按 id 相连，通过字段和样本集校验后才统计",
+        "method": "original-svg",
+        "evidence": [],
+        "caption": "图：三个 id 均取自本期合成样本，右侧特意换了顺序；颜色连线只负责匹配身份。本站依据[已运行脚本](code/compare_runs.py)绘制，流程底部区分正常统计与报错；六条完整样本的计算结果见本页四格图。",
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "data": {
+          "script": "content/frontiers/2026/09/2026-09-11/code/compare_runs.py",
+          "kind": "本期合成数据，三个 id 的重排示意"
+        },
+        "sha256": "4a6c5f1bad8573aa52a72363ce60552abe42f0941a39fc9769512767e0dab561"
+      },
+      {
+        "module": "overview",
+        "item": "overview-map",
+        "path": "content/frontiers/2026/09/2026-09-11/images/overview-map.svg",
+        "purpose": "保留五模块阅读入口，作为导读导航，不代替正文关键图。",
+        "method": "retained-original-svg",
+        "evidence": [],
+        "data": {
+          "kind": "本期内容导航"
+        },
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "11e6c1c029c1118b3f16243d0510e57a29c57ee90531a1193c5b06802404c0e8",
+        "alt": "今日五个板块的阅读地图",
+        "caption": "图：本站原创阅读地图。从发布事实进入模型条件、论文方法、应用工具和可运行实验，不表示模型排名。"
+      },
+      {
+        "module": "practice",
+        "item": "practice-paired",
+        "path": "content/frontiers/2026/09/2026-09-11/images/practice-paired.svg",
+        "purpose": "呈现已运行的六条合成数据如何落入四种结果，揭示总分提升时仍有退步。",
+        "method": "retained-original-svg",
+        "evidence": [],
+        "data": {
+          "kind": "六条合成样本脚本输出"
+        },
+        "review": {
+          "status": "passed",
+          "reviewedAt": "2026-09-11T11:45:12.403938+08:00",
+          "sourceAndSemantics": "依据原公告、原文及本地合成数据核对关键事实、方向、数字和边界。",
+          "desktop": "6张检查拼图已全部目视；SVG文字无越界，Matplotlib顶部和底部间距修正后复看通过；Suno保留段落标签改清楚并复看。",
+          "mobile": "390px视口检查12文档；正文344px宽，图片不溢出、全部加载、原尺寸链接有效。六个模块手机截图已目视。",
+          "fullSizeAccess": "通过实际打开新标签页检查。"
+        },
+        "sha256": "b1c5a0d3791383e3736e6bab726bbefb693536b1d4f5b798ff884670d1e5ec16",
+        "alt": "配对评测的四种结果",
+        "caption": "图：本站原创。把升级前后的结果按同一个样本对齐，才能看见被总平均分掩盖的退步。"
+      }
+    ],
+    "qualityChecks": {
+      "stableDocumentIds": "same-day IDs retained",
+      "paperArchives": "reuse existing six reading cards",
+      "sourceCaptions": "原文链接、必要条件、方法和未实测状态已写入图注",
+      "imagegen": "one selected conceptual image; one viewpoint correction",
+      "mobile": "passed",
+      "figureSheets": [
+        "output/playwright/2026-09-11-visual-sheet-1.png",
+        "output/playwright/2026-09-11-visual-sheet-2.png",
+        "output/playwright/2026-09-11-visual-sheet-3.png",
+        "output/playwright/2026-09-11-visual-sheet-4.png",
+        "output/playwright/2026-09-11-visual-sheet-5.png",
+        "output/playwright/2026-09-11-visual-sheet-6.png"
+      ],
+      "desktop": "passed",
+      "browserDocuments": 12,
+      "viewportChecks": 24,
+      "imageInstancesPerViewport": 29,
+      "articleWidths": {
+        "desktop": 720,
+        "mobile": 344
+      },
+      "fullSizePopup": "passed",
+      "svgTextClipping": "none",
+      "scientificChartLayout": "passed after spacing correction",
+      "imagegenSpatialConsistency": "passed after B viewpoint edit"
+    }
+  },
+  "visualRevision": {
+    "requestedDate": "2026-09-11",
+    "scope": "保留首版已核实选题，重做正文图文解释；重新访问15家官方入口，针对配图重读相关原公告、模型卡、论文方法，并补读ComfyUI官方节点教程。",
+    "originalInformationCutoff": "2026-09-11T08:12:56.835985+08:00",
+    "officialRecheckStartedAt": "2026-09-11T11:22:33.686424+08:00",
+    "officialRecheckCompletedAt": "2026-09-11T11:22:46.696403+08:00",
+    "officialEntryRecheck": [
+      {
+        "provider": "Alibaba",
+        "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "startedAt": "2026-09-11T11:22:34.318023+08:00",
+        "checkedAt": "2026-09-11T11:22:44.545771+08:00",
+        "accessOk": true,
+        "status": "partial",
+        "sha256": "46b4065d85c3b0b83bd006edad781f4a42b7ad646157c14405f9f7d1125a332a",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "Anthropic",
+        "url": "https://www.anthropic.com/news",
+        "startedAt": "2026-09-11T11:22:33.686840+08:00",
+        "checkedAt": "2026-09-11T11:22:34.316194+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "c678a2cefbfc43b9a75f75364aba5e90b25901fdfbc024f4326db4f6eddac229",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "Baidu",
+        "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+        "startedAt": "2026-09-11T11:22:34.978856+08:00",
+        "checkedAt": "2026-09-11T11:22:39.591692+08:00",
+        "accessOk": true,
+        "status": "partial",
+        "sha256": "0c634ff160a524c12a85d1d201199d7370b70f9f5f85a32f807a134d6cefe0bb",
+        "note": "导航、推荐卡和图片编号变化，仍不是完整厂商更新覆盖；无新候选可由本页确认。"
+      },
+      {
+        "provider": "ByteDance",
+        "url": "https://seed.bytedance.com/en/blog",
+        "startedAt": "2026-09-11T11:22:34.418933+08:00",
+        "checkedAt": "2026-09-11T11:22:36.129788+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "0dc160c1fc0fe6f2a2c7070cc55eaece136843e1328d80e26abdad84242eda7b",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "DeepSeek",
+        "url": "https://api-docs.deepseek.com/updates/",
+        "startedAt": "2026-09-11T11:22:34.369876+08:00",
+        "checkedAt": "2026-09-11T11:22:34.977793+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "b7ee13072a582fc79a6b3f1142875415b045c56259fc9f0a6352bcc61c45e4c3",
+        "note": "正文一致，仅页面Published Time元信息改变，未发现新的日志条目。"
+      },
+      {
+        "provider": "Google",
+        "url": "https://deepmind.google/blog/",
+        "startedAt": "2026-09-11T11:22:33.687134+08:00",
+        "checkedAt": "2026-09-11T11:22:34.369272+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "ec5c5b90f5869047bcadf5d7d962e366e6cb56edeeb81bc0804c4b0d365cc638",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "Kimi",
+        "url": "https://www.kimi.com/help/kimi-work/release-notes",
+        "startedAt": "2026-09-11T11:22:36.795677+08:00",
+        "checkedAt": "2026-09-11T11:22:46.696403+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "cf86977f1ac156494ad1c5774360711d503088284a308602729a27822fdac234",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "Meta",
+        "url": "https://about.fb.com/news/",
+        "startedAt": "2026-09-11T11:22:33.687394+08:00",
+        "checkedAt": "2026-09-11T11:22:34.418275+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "e178f3d23e7356a1dd9656e3013390e7940a1119ebcd1ea9c47a970429990e5c",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "Microsoft",
+        "url": "https://news.microsoft.com/source/view-all/",
+        "startedAt": "2026-09-11T11:22:33.687657+08:00",
+        "checkedAt": "2026-09-11T11:22:34.527912+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "781dd14a3544b80ad6df9ef4c8829bdb35893a8032aebd7584a3aef95f6e7c2e",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "MiniMax",
+        "url": "https://www.minimax.io/news",
+        "startedAt": "2026-09-11T11:22:37.793138+08:00",
+        "checkedAt": "2026-09-11T11:22:44.237644+08:00",
+        "accessOk": true,
+        "status": "partial",
+        "sha256": "5429912e812f07f97d4e22378e2f19a4b46aad8d1dc2ff91e7c3b5290001125d",
+        "note": "此轮正文未渲染完整，原有新闻卡缺失；不以缺失推断没有新发布。"
+      },
+      {
+        "provider": "NVIDIA",
+        "url": "https://blogs.nvidia.com/",
+        "startedAt": "2026-09-11T11:22:34.316998+08:00",
+        "checkedAt": "2026-09-11T11:22:37.792027+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "484f21791f84c7eeb5d1f8bb11b0fb04d8d1db45e0fc1e9487b6a8911abcc0df",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "OpenAI",
+        "url": "https://openai.com/news/",
+        "startedAt": "2026-09-11T11:22:33.686424+08:00",
+        "checkedAt": "2026-09-11T11:22:34.316724+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "d03bbc2a3deac6b17fc8dba825856de8fefa916db93221e8edc90183ac74f364",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      },
+      {
+        "provider": "Tencent",
+        "url": "https://hunyuan.tencent.com/",
+        "startedAt": "2026-09-11T11:22:34.528943+08:00",
+        "checkedAt": "2026-09-11T11:22:40.865011+08:00",
+        "accessOk": true,
+        "status": "partial",
+        "sha256": "f572f5e7ea85ad8698d84e04724268346a0d647f30213c0c2710f1c3947bf873",
+        "note": "此次只返回74字符页面标题，未获得正文；保留首版覆盖缺口，不能据此判断没有新公告。"
+      },
+      {
+        "provider": "xAI",
+        "url": "https://x.ai/news?category=all",
+        "startedAt": "2026-09-11T11:22:33.687936+08:00",
+        "checkedAt": "2026-09-11T11:22:38.819503+08:00",
+        "accessOk": true,
+        "status": "read",
+        "sha256": "228eeaaf71a53141b5cc6b394bc5580ad0915d9e39474647b14c745d925f4e7d",
+        "note": "新增cookie偏好面板和导航，不是新发布内容。"
+      },
+      {
+        "provider": "Zhipu",
+        "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+        "startedAt": "2026-09-11T11:22:36.131410+08:00",
+        "checkedAt": "2026-09-11T11:22:36.794864+08:00",
+        "accessOk": true,
+        "status": "partial",
+        "sha256": "677a50d515140e280524fd455b66b082edf4a12914bfeb9eb9d1101b850ad355",
+        "note": "与08:11保存内容一致；原先的局部覆盖限制继续保留。"
+      }
+    ],
+    "additionalFetches": [
+      {
+        "url": "https://docs.comfy.org/built-in-nodes/sampling/ksampler",
+        "startedAt": "2026-09-11T11:23:29.026766+08:00",
+        "checkedAt": "2026-09-11T11:23:33.437897+08:00",
+        "ok": true,
+        "chars": 3733
+      },
+      {
+        "url": "https://docs.comfy.org/tutorials/basic/text-to-image",
+        "startedAt": "2026-09-11T11:23:29.026367+08:00",
+        "checkedAt": "2026-09-11T11:23:32.401685+08:00",
+        "ok": true,
+        "chars": 12434
+      },
+      {
+        "url": "https://docs.comfy.org/built-in-nodes/VAEDecode",
+        "startedAt": "2026-09-11T11:23:29.027043+08:00",
+        "checkedAt": "2026-09-11T11:23:33.138976+08:00",
+        "ok": true,
+        "chars": 1826
+      }
+    ],
+    "methodCorrection": "AgentGrad明确训练时通过提示注入做干预，部署时不使用训练提示；同步日报及阅读卡。",
+    "coverageLimit": "此次重查仅覆盖列明的入口与绘图依据；没有重新扫描全部媒体、X、Reddit或公众号，保留首版信息截止和缺口。腾讯及MiniMax此轮正文渲染不足。",
+    "writtenAt": "2026-09-11T11:39:00.849250+08:00"
   }
 }
