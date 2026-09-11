@@ -1,0 +1,24 @@
+{
+  "cases": 6,
+  "before_pass_rate": 0.666667,
+  "after_pass_rate": 0.833333,
+  "delta_percentage_points": 16.667,
+  "before_mean_latency_ms": 1250,
+  "after_mean_latency_ms": 1050,
+  "transitions": {
+    "kept_pass": [
+      "arithmetic",
+      "citation",
+      "format"
+    ],
+    "regressed": [
+      "old-tool"
+    ],
+    "improved": [
+      "long-input",
+      "new-tool"
+    ],
+    "kept_fail": []
+  },
+  "needs_regression_review": true
+}

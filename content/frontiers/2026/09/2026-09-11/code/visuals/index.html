@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-09-11 精确图复现</title>
+<style>
+  body{margin:24px auto;padding:0 18px;max-width:850px;font:16px/1.7 system-ui,sans-serif;color:#20343b;background:#faf8f2}
+  figure{margin:32px 0;padding:16px;background:white;border:1px solid #d3dcd8;border-radius:12px}
+  svg{width:100%;height:auto;display:block}figcaption{margin-top:12px}a{color:#14796e}
+</style>
+<h1>2026-09-11 精确图复现</h1>
+<p>这些图处理精确日期、组件关系与本期合成实验结果。来源原图与 AI 概念图另见日报。</p>
+<main id="figures"></main>
+<script type="module">
+  import { renderDiagram } from './render.js';
+  const [scenes,result]=await Promise.all(['diagrams.json.txt','practice-result.json.txt'].map(async path=>(await fetch(path)).json()));
+  for(const scene of scenes){
+    const figure=document.createElement('figure');
+    const svg=renderDiagram(scene,result);
+    const parsed=new DOMParser().parseFromString(svg,'image/svg+xml');
+    figure.append(document.importNode(parsed.documentElement,true));
+    const caption=document.createElement('figcaption');
+    caption.textContent=scene.reason+' ';
+    const link=document.createElement('a');
+    link.href=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'}));
+    link.download=scene.name+'.svg';link.textContent='下载 SVG';
+    caption.append(link);figure.append(caption);document.querySelector('#figures').append(figure);
+  }
+</script>
+</html>
