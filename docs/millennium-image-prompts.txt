@@ -1,0 +1,64 @@
+千禧年七大数学难题：配图生成记录
+生成方式：内置 image_gen 工具。没有使用 CLI、API 密钥或其他图片生成服务。
+生成日期：2026-09-11
+所有最终配图为 1672 × 941。网站使用 cwebp -q 86 -m 6 压缩的 WebP，画面和尺寸未作改动。原始 PNG 副本保留于本地 output/imagegen/millennium-problems/（不提交）；内置生成目录中也保留原始输出。
+
+文件：content/notes/images/millennium-problems/hero.webp
+用途：七题主题封面。
+概念边界：七组对象都是概念意象；点列不表示实际素数分布，曲线不是精确坐标图，波纹与两条能级线不表示某个实际系统的计算结果。球面是普通二维球面 S2 的三维嵌入意象，不是 S3。
+初始完整提示词：
+Use case: scientific-educational
+Asset type: wide editorial cover illustration for a Chinese general-reader article about the seven Millennium Prize Problems
+Primary request: create an original sophisticated, approachable mathematics magazine illustration that suggests seven distinct mathematical questions through visual objects, without depicting a proof.
+Scene/backdrop: warm ivory paper with very subtle natural grain, ample breathing room.
+Subject: a balanced constellation of seven distinct motifs on one continuous page: a trail of prime-number dots with subtly varying gaps (abstract, no numerical claims); a branching search tree next to a single verified path; elegant blue fluid vortices; a small sphere beside a torus; an undulating algebraic surface with faint coordinate grid; a graceful elliptic-curve-inspired pair of branches with a few marked points; and a restrained field-wave motif with two separated energy-level marks. The sphere-and-torus pair is one motif. Keep all seven legible and visually distinct.
+Style/medium: refined hand-drawn graphite linework combined with softly painted gouache shapes, contemporary educational editorial illustration, thoughtful and tactile.
+Composition/framing: horizontal landscape roughly 16:9, cohesive asymmetric arrangement with no boxes or cards, quiet open space between motifs, good legibility at article width.
+Color palette: off-white, charcoal, muted slate blue, soft terracotta, a tiny touch of ochre.
+Lighting/mood: calm curiosity, subtle natural paper shadows.
+Text: no letters, no words, no equations, no title.
+Constraints: the motifs are conceptual and illustrative, not precise scientific diagrams or data. No money, trophy, podium, human portrait, logos, watermarks, neon, interface elements, or decorative fake formulas. Do not imply that any open problem has been solved. Avoid visually tangled clutter.
+
+复查发现初稿椭圆曲线意象有自交，使用以下完整编辑提示词修正后采用：
+Use case: precise-object-edit
+Asset type: mathematics editorial cover illustration
+Primary request: change only the small terracotta curve motif at the bottom center of this image. Keep all other motifs, background, composition, colors, and drawing style exactly unchanged.
+Correction: replace the self-intersecting curve with a smooth nonsingular elliptic curve schematic with TWO SEPARATE components: on the LEFT a smooth closed oval, and well to the RIGHT a smooth sideways U-shaped curve opening to the right, whose upper and lower arms continue towards the upper right and lower right. The left oval and right curve must be completely disconnected with a clear paper gap; no crossing, no cusp, no touching. This corresponds visually to the real locus of y² = x³ − x. Preserve the fine gray coordinate axes and a few slate blue marked points but NO written formula or labels.
+Constraints: only edit this bottom-center curve. Do not alter the algebraic surface to its left, the wave pattern to its right, or any other motif. Keep warm ivory paper, refined graphite and gouache editorial style. No new text.
+
+最终生成文件：exec-62b505dc-0a15-447e-b0de-75baa77eb209.png
+未采用初稿：exec-5cd749fc-035e-4fde-880f-ab10e8441cf4.png（保留在内置生成目录，未放入项目）
+
+文件：content/notes/images/millennium-problems/search-and-check.webp
+用途：寻找答案与核对答案的日常拼图类比。
+概念边界：固定大小的拼图仅帮助理解直觉，不是复杂度定义，也不是 P 与 NP 关系的数学证明。
+完整提示词：
+Use case: scientific-educational
+Asset type: horizontal in-article illustration for a general-reader explanation of finding an answer versus checking an answer
+Primary request: illustrate two everyday puzzle-solving situations side by side on a continuous tabletop. It should feel approachable and concrete, as an analogy for P versus NP; it is not a precise diagram or a proof.
+Scene/backdrop: overhead view of a warm ivory paper-covered desk with subtle natural paper grain.
+Subject: on the left, an unfinished small jigsaw puzzle with many loose pieces and a human hand thoughtfully hovering between two possible pieces; faint graphite exploratory marks on scrap paper suggest trying choices. On the right, a completed jigsaw puzzle of the same simple landscape, with another hand holding a pencil that calmly checks how two adjacent pieces fit. The finished puzzle clearly fits together. Few supporting objects, restrained composition. The two puzzles use a simple muted landscape of hills and a blue river, with matching visual identity.
+Style/medium: sophisticated educational magazine illustration, graphite linework with soft gouache colors, tactile hand-drawn edges, warm and unhurried.
+Composition/framing: wide landscape roughly 16:9, two related moments separated by generous blank paper, no dividing borders, no UI panels or cards; clear contrast between exploring loose pieces and checking an assembled arrangement.
+Color palette: off-white, charcoal, muted slate blue, soft terracotta, a touch of ochre.
+Text: no words, no numbers, no equations, no labels, no checkmark icon.
+Constraints: just a familiar everyday analogy, do not imply ordinary fixed-size jigsaw puzzles establish complexity results; no stopwatch, speed claims, computer code, fake formulas, logos, watermark, neon effects, or promotional graphics. Natural hands with correct anatomy.
+最终生成文件：exec-3310083b-be93-4d01-9a58-f9d8077079be.png
+
+文件：content/notes/images/millennium-problems/loops-and-holes.webp
+用途：可收缩绳圈、绕洞的不可收缩绳圈、环面局部可收缩绳圈三种情况。
+概念边界：展示普通二维球面与环面的表面，不是三维球面 S3，也不是庞加莱猜想的证明。环面有不可收缩的圈，也有可收缩的圈；右图明确保留后者。
+完整提示词：
+Use case: scientific-educational
+Asset type: wide topology concept illustration for a Chinese general-reader mathematics article
+Primary request: show an ordinary spherical SURFACE and a donut-shaped torus SURFACE with colored closed loops, helping a reader see why some loops can shrink along a surface while other loops go around a hole.
+Scene/backdrop: warm ivory paper, delicate graphite linework and soft gouache shading, matching a refined educational magazine, not a rigid infographic.
+Composition/framing: landscape roughly 16:9, three clearly separated vignettes arranged horizontally on a continuous page with ample empty paper and no panels or cards. LEFT vignette: a pale slate-blue sphere, with a terracotta closed latitude loop on its upper hemisphere and two successively smaller faint latitude loops above it toward a single point at the north pole; subtle tiny curved arrows show shrinking while remaining on the spherical surface. CENTER vignette: a pale terracotta donut torus seen from above at a slight angle, with one conspicuous dark blue circular longitude loop lying on its upper surface and going all the way around the central hole, enclosing the hole; this loop must visibly be closed and remain on the torus surface. RIGHT vignette: another matching torus with a SMALL dark blue contractible circular loop entirely inside one small patch of the outer front surface, well away from and NOT enclosing the torus central hole, followed locally by a smaller faint circle and a dot to show that this particular loop can shrink on the surface. The right small loop must be a local circle drawn on the tube surface, NOT a meridian around the tube and NOT a longitude around the hole.
+Subject constraints: smooth geometrically legible sphere and tori; loops drawn directly on the visible surfaces, no floating ropes in space, no rope passing through solid material. The center and right distinguish a non-contractible loop from a contractible loop on the same type of surface. Do not imply every loop on a torus is trapped. This is an analogy using ordinary 2D surfaces embedded in 3D, NOT an image of the mathematical 3-sphere S3 and NOT a proof of the Poincare conjecture.
+Color palette: warm off-white, charcoal, muted slate blue, soft terracotta.
+Text: absolutely no words, letters, digits, titles, formulas, symbols or labels; only the objects, closed loops, small movement arrows, and paper shadows.
+Avoid: checkerboards, neon, UI, exaggerated 3D plastic, logos, watermarks, money, trophies, clutter.
+最终生成文件：exec-17cfc1c7-6760-4069-845c-8998354abd99.png
+
+视觉检查：三张最终原图已用 view_image 检查；没有文字、乱码、水印或伪公式；封面曲线的自交已修正，拓扑图中环面上两类闭合圈有明显区别。
+
