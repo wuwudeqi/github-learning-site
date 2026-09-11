@@ -1,0 +1,1308 @@
+{
+  "issueDate": "2026-09-11",
+  "informationCutoff": "2026-09-11T08:12:56.835985+08:00",
+  "timezone": "Asia/Shanghai",
+  "coverage": [
+    {
+      "provider": "OpenAI",
+      "url": "https://openai.com/news/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:05.618873+08:00",
+      "note": "复查官方新闻列表；读 Agents API、GPT-Live-1、Data agent、金融服务公告及 Pro 帮助页；Astra 与 Images 2.5 对照往期去重。",
+      "initialCheck": "2026-09-11T07:33:51+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:22.394494+08:00"
+    },
+    {
+      "provider": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:05.779505+08:00",
+      "note": "核对新闻索引和9月滥用调查的概览与防御相关表述；只采用高层调查事实，不转述攻击或武器操作细节。",
+      "initialCheck": "2026-09-11T07:33:51+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:22.400239+08:00"
+    },
+    {
+      "provider": "Google",
+      "url": "https://deepmind.google/blog/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:07.689788+08:00",
+      "note": "逐项检查 DeepMind 博客日期，补读 Google AI 分类与9月9日订阅更新；Atlas 对照往期，订阅汇总在候选比较后未选。",
+      "initialCheck": "2026-09-11T07:33:51+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:22.462409+08:00"
+    },
+    {
+      "provider": "Meta",
+      "url": "https://about.fb.com/news/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:05.700139+08:00",
+      "note": "两次后续索引对照：新增所见 WhatsApp 印度账单支付为非AI应用支付新闻，未列入本期；Muse/Atlas 已与往期去重，其余主要为导航文本变化。",
+      "initialCheck": "2026-09-11T07:33:51+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:24.483571+08:00"
+    },
+    {
+      "provider": "Microsoft",
+      "url": "https://news.microsoft.com/source/view-all/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:11.809220+08:00",
+      "note": "核对 Source 更新索引，学校数据标准等与往期比较；没有将普通应用案例或语言教程视为新模型。",
+      "initialCheck": "2026-09-11T07:33:51+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:22.387914+08:00"
+    },
+    {
+      "provider": "xAI",
+      "url": "https://x.ai/news?category=all",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:05.652440+08:00",
+      "note": "首次请求失败后通过带分类参数的官方新闻页恢复；检查当前可见标题与日期，企业 Bot 旧发布不重复。",
+      "initialCheck": "2026-09-11T07:39:01.875393+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:22.344294+08:00"
+    },
+    {
+      "provider": "NVIDIA",
+      "url": "https://blogs.nvidia.com/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:10.414727+08:00",
+      "note": "核对官方博客日期，读 Skild 与 d-Matrix 原文；前者区分模型首次发布和合作文章，两项经末轮比较未进入15条。",
+      "initialCheck": "2026-09-11T07:33:52+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:22.971145+08:00"
+    },
+    {
+      "provider": "Alibaba",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "status": "partial",
+      "checkedAt": "2026-09-11T08:11:07.473457+08:00",
+      "note": "读 Model Studio 更新目录，Qwen Studio 动态入口正文不完整；补读高德署名公告收录 ABot-Earth。不能代表阿里所有产品渠道完整覆盖。",
+      "initialCheck": "2026-09-11T07:33:59+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:24.258358+08:00"
+    },
+    {
+      "provider": "DeepSeek",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:07.030237+08:00",
+      "note": "读更新日志、V4.1 Flash 公告及价格页；核对旧别名转向与9月14日计划迁移时间。",
+      "initialCheck": "2026-09-11T07:33:54+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:23.416568+08:00"
+    },
+    {
+      "provider": "ByteDance",
+      "url": "https://seed.bytedance.com/en/blog",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:06.881715+08:00",
+      "note": "核对 Seed 官方博客当前索引，所见最新条目为8月5日；这一入口不等于豆包等全部应用更新渠道。",
+      "initialCheck": "2026-09-11T07:33:53+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:23.513512+08:00"
+    },
+    {
+      "provider": "Tencent",
+      "url": "https://hunyuan.tencent.com/",
+      "status": "partial",
+      "checkedAt": "2026-09-11T08:11:07.717545+08:00",
+      "note": "原新闻入口返回短SVG内容，改读混元主页；可见模型说明但缺少逐项新发布日期，不能断言腾讯没有新发布。",
+      "initialCheck": "2026-09-11T07:39:13.484056+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:23.248813+08:00"
+    },
+    {
+      "provider": "Baidu",
+      "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "status": "partial",
+      "checkedAt": "2026-09-11T08:11:08.096000+08:00",
+      "note": "新闻列表与替换分类参数后仍主要显示OCR条目；核对 PP-OCRv6 已收录，未将这一栏目当完整厂商覆盖。",
+      "initialCheck": "2026-09-11T07:34:03+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:24.249045+08:00"
+    },
+    {
+      "provider": "Zhipu",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "status": "partial",
+      "checkedAt": "2026-09-11T08:11:10.863873+08:00",
+      "note": "模型更新目录可读但条目缺少足够日期；GLM-5.3-Flash 已在昨日模型栏，不能以本次访问证明今天首发。",
+      "initialCheck": "2026-09-11T07:33:56+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:23.944754+08:00"
+    },
+    {
+      "provider": "Kimi",
+      "url": "https://www.kimi.com/help/kimi-work/release-notes",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:08.312835+08:00",
+      "note": "读 Work 版本日志，当前可见3.2.6日期9月7日；后续复查未见更晚日志。SWE-2 使用Kimi底模属于Cognition独立事件。",
+      "initialCheck": "2026-09-11T07:33:56+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:24.340197+08:00"
+    },
+    {
+      "provider": "MiniMax",
+      "url": "https://www.minimax.io/news",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:11:08.477392+08:00",
+      "note": "读官方英文新闻入口与可见日期；当前最新条目8月26日，不代表所有中文社交渠道都没有新消息。",
+      "initialCheck": "2026-09-11T07:33:59+08:00",
+      "earlierRecheckAt": "2026-09-11T07:53:24.014635+08:00"
+    }
+  ],
+  "additionalSources": [
+    {
+      "name": "qbitai",
+      "url": "https://www.qbitai.com/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:56:37.785091+08:00",
+      "scope": "中文综合AI新闻索引与高德、京东线索"
+    },
+    {
+      "name": "jiqizhixin",
+      "url": "https://www.jiqizhixin.com/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:56:37.677905+08:00",
+      "scope": "中文AI索引，部分“今天”标签不能确定事件日期"
+    },
+    {
+      "name": "thedecoder",
+      "url": "https://the-decoder.com/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:56:37.758759+08:00",
+      "scope": "英文AI新闻索引与产品交叉发现"
+    },
+    {
+      "name": "techcrunch-ai",
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:56:37.624073+08:00",
+      "scope": "英文AI索引，发现Apple健康和Pro暂停线索"
+    },
+    {
+      "name": "hn",
+      "url": "https://news.ycombinator.com/front?day=2026-09-10",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:33:57+08:00",
+      "scope": "9月10日社区榜单，补发现SWE-2，不将评论当已验证事实"
+    },
+    {
+      "name": "trending",
+      "url": "https://github.com/trending?since=daily",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:33:57+08:00",
+      "scope": "GitHub当日发现入口，不据此宣称本期十工具都是热榜项目"
+    },
+    {
+      "name": "hf-papers",
+      "url": "https://huggingface.co/api/daily_papers?date=2026-09-10",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:33:57+08:00",
+      "scope": "9月10日HF论文候选API，结论回查六篇arXiv原文"
+    },
+    {
+      "name": "hf-new",
+      "url": "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=50&full=true",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:39:34.549486+08:00",
+      "scope": "HF模型候选API，核对模型卡与权重文件"
+    },
+    {
+      "name": "google-ai",
+      "url": "https://blog.google/innovation-and-ai/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:56:37.617149+08:00",
+      "scope": "Google AI分类入口"
+    },
+    {
+      "name": "apple-ai",
+      "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:59:02.428524+08:00",
+      "scope": "苹果健康公告与可用性脚注"
+    },
+    {
+      "name": "pro-help",
+      "url": "https://help.openai.com/en/articles/9793128-what-is-chatgpt-pro",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:58:57.974543+08:00",
+      "scope": "Pro 200美元购买范围官方说明"
+    },
+    {
+      "name": "swe2-primary",
+      "url": "https://cognition.com/blog/swe-2",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:04:09.959210+08:00",
+      "scope": "Cognition完整公告中的模型、训练、评测与产品范围"
+    },
+    {
+      "name": "amap-primary",
+      "url": "https://www.prnewswire.com/news-releases/amap-street-stars-marks-the-first-anniversary-with-spatial-intelligence-upgrade-302874994.html",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:04:14.833557+08:00",
+      "scope": "高德署名PRNewswire公司新闻稿，非独立实测"
+    },
+    {
+      "name": "jd-primary",
+      "url": "https://jdcorporateblog.com/from-ai-models-to-the-physical-world-highlights-from-jddiscovery-2026/",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:04:12.923750+08:00",
+      "scope": "京东官方企业博客，区分已发布App与未来产业计划"
+    },
+    {
+      "name": "paperless-docs",
+      "url": "https://docs.paperless-ngx.com/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:41:48.832757+08:00",
+      "scope": "项目官方部署与上手文档"
+    },
+    {
+      "name": "grobid-demo",
+      "url": "https://huggingface.co/spaces/grobidOrg/grobid",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:43:32.263154+08:00",
+      "scope": "项目官方解析演示与文档入口"
+    },
+    {
+      "name": "haystack-docs",
+      "url": "https://haystack.deepset.ai/blog/haystack-3-release",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:43:24.173774+08:00",
+      "scope": "官方框架文档"
+    },
+    {
+      "name": "opik-docs",
+      "url": "https://www.comet.com/docs/opik/",
+      "status": "read",
+      "checkedAt": "2026-09-11T07:41:46.820200+08:00",
+      "scope": "官方追踪与部署文档"
+    },
+    {
+      "name": "cohere-blog",
+      "url": "https://cohere.com/blog/north-small-translate",
+      "status": "read",
+      "checkedAt": "2026-09-11T08:12:56.835985+08:00",
+      "fetchedAt": "2026-09-11T07:43:21.731690+08:00",
+      "scope": "官方发布文章确认North Small Translate于9月10日23:10 UTC发布，即北京时间9月11日07:10；与提前建库时间分开。"
+    }
+  ],
+  "channelGaps": [
+    "X、Reddit专用后端未配置，未做当天全站热点扫描。",
+    "微信公众号持续采集未验证；本期使用可访问网页和官方原始材料。",
+    "阿里/Qwen、腾讯、百度、智谱入口存在正文或日期覆盖缺口，详见逐厂商记录。"
+  ],
+  "candidates": [
+    {
+      "id": "deepseek-v41",
+      "title": "DeepSeek V4.1 Flash：模型升级，也改变旧 API 的实际指向",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://api-docs.deepseek.com/news/news260910",
+      "kind": "release",
+      "subjectKeys": [
+        "model:deepseek-ai/deepseek-v4.1-flash",
+        "event:deepseek-v41"
+      ],
+      "priority": "must",
+      "selected": true,
+      "order": 1,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "agents-api",
+      "title": "Agents API 公测：把长任务的执行环境交给托管服务",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://openai.com/index/introducing-the-agents-api/",
+      "kind": "release",
+      "subjectKeys": [
+        "repo:openai/codex",
+        "event:agents-api"
+      ],
+      "priority": "must",
+      "selected": true,
+      "order": 2,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "gpt-live-api",
+      "title": "GPT-Live-1 进入 API：语音交互与后台推理解耦",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+      "kind": "release",
+      "subjectKeys": [
+        "model:openai/gpt-live-1"
+      ],
+      "priority": "must",
+      "selected": true,
+      "order": 3,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "cognition-swe2",
+      "title": "SWE-2：把代码任务的成功率与执行成本一起训练",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://cognition.com/blog/swe-2",
+      "subjectKeys": [
+        "model:cognition/swe-2"
+      ],
+      "kind": "release",
+      "priority": "must",
+      "selected": true,
+      "reason": "发布前补查发现并读原始公告；涉及重要新能力或当前可用范围，纳入正式选题。",
+      "order": 4,
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "final-review",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "suno-v6",
+      "title": "Suno v6 推出三种音乐模型，编辑可以落到局部段落",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://suno.com/blog/introducing-v6",
+      "kind": "release",
+      "subjectKeys": [
+        "model:suno/v6"
+      ],
+      "priority": "must",
+      "selected": true,
+      "order": 5,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "data-agent",
+      "title": "ChatGPT Work 新增 Data agent：沿着企业指标定义做分析",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://openai.com/index/put-data-to-work/",
+      "kind": "release",
+      "subjectKeys": [
+        "event:chatgpt-data-agent"
+      ],
+      "priority": "must",
+      "selected": true,
+      "order": 6,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "chatgpt-finance",
+      "title": "ChatGPT for Financial Services：把授权数据与交付模板接起来",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-financial-services/",
+      "kind": "release",
+      "subjectKeys": [
+        "event:chatgpt-financial-services"
+      ],
+      "priority": "must",
+      "selected": true,
+      "order": 7,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "amap-abot-earth",
+      "title": "高德 ABot-Earth 0.7 接入飞行街景 2.0",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://www.prnewswire.com/news-releases/amap-street-stars-marks-the-first-anniversary-with-spatial-intelligence-upgrade-302874994.html",
+      "subjectKeys": [
+        "model:amap/abot-earth-0.7"
+      ],
+      "kind": "release",
+      "priority": "must",
+      "selected": true,
+      "reason": "发布前补查发现并读原始公告；涉及重要新能力或当前可用范围，纳入正式选题。",
+      "order": 8,
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "final-review",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "jd-physical-ai",
+      "title": "京东发布物理 AI 新进展，JoyAI-Echo WM 与购物助手一同亮相",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://jdcorporateblog.com/from-ai-models-to-the-physical-world-highlights-from-jddiscovery-2026/",
+      "subjectKeys": [
+        "repo:jd-opensource/joyai-echo",
+        "event:jddiscovery-2026"
+      ],
+      "kind": "release",
+      "priority": "must",
+      "selected": true,
+      "reason": "发布前补查发现并读原始公告；涉及重要新能力或当前可用范围，纳入正式选题。",
+      "order": 9,
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "final-review",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "apple-health-ai",
+      "title": "Apple Intelligence 将进入新版健康 App，年内先支持美式英语",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/",
+      "subjectKeys": [
+        "event:apple-health-ai-2026"
+      ],
+      "kind": "release",
+      "priority": "must",
+      "selected": true,
+      "reason": "发布前补查发现并读原始公告；涉及重要新能力或当前可用范围，纳入正式选题。",
+      "order": 10,
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "final-review",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "openai-pro200-pause",
+      "title": "ChatGPT 暂停 Pro 200 美元档的新购与升级，现有订阅继续",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://help.openai.com/en/articles/9793128-what-is-chatgpt-pro",
+      "subjectKeys": [
+        "event:chatgpt-pro200-pause"
+      ],
+      "kind": "release",
+      "priority": "must",
+      "selected": true,
+      "reason": "发布前补查发现并读原始公告；涉及重要新能力或当前可用范围，纳入正式选题。",
+      "order": 11,
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "final-review",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "anthropic-threat-september",
+      "title": "Anthropic 公布新一期滥用调查：关注完整操作链",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "kind": "safety",
+      "subjectKeys": [
+        "event:anthropic-threat-september"
+      ],
+      "priority": "high",
+      "selected": true,
+      "order": 12,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "vllm-029",
+      "title": "vLLM 0.29 默认切换 Model Runner V2",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+      "kind": "ecosystem",
+      "subjectKeys": [
+        "repo:vllm-project/vllm"
+      ],
+      "priority": "high",
+      "selected": true,
+      "order": 13,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "trl-113",
+      "title": "TRL 1.13 给出百万 token 训练示例，并移除旧 PPO 实现",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://github.com/huggingface/trl/releases/tag/v1.13.0",
+      "kind": "ecosystem",
+      "subjectKeys": [
+        "repo:huggingface/trl"
+      ],
+      "priority": "high",
+      "selected": true,
+      "order": 14,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "perplexity-oauth",
+      "title": "Perplexity API 的 MCP 服务支持 OAuth 登录",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://community.perplexity.ai/t/the-perplexity-api-mcp-server-now-supports-oauth/6053",
+      "kind": "ecosystem",
+      "subjectKeys": [
+        "event:perplexity-oauth"
+      ],
+      "priority": "high",
+      "selected": true,
+      "order": 15,
+      "reason": "新增能力、可用范围或工程条件有明确变化；已阅读原始材料。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+      "selectionPhase": "initial-pool-retained",
+      "evidence": "已读取官方公告正文或维护者版本说明；正文区分厂商实验、推出范围与本站未运行部分。"
+    },
+    {
+      "id": "skild-nvidia",
+      "title": "Skild 与 NVIDIA 介绍单视频示教和机器人部署进展",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+      "kind": "industry",
+      "subjectKeys": [
+        "event:skild-nvidia-sep10"
+      ],
+      "priority": "high",
+      "selected": false,
+      "reason": "复核发现 S1 模型在前一周已发布；9月10日为合作文章。让位于当日新模型与更直接的产品变化。",
+      "selectionPhase": "initial-draft-replaced"
+    },
+    {
+      "id": "dmatrix-nvlink",
+      "title": "d-Matrix 计划用 NVLink Fusion 接入整机柜推理系统",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+      "kind": "industry",
+      "subjectKeys": [
+        "event:dmatrix-nvlink"
+      ],
+      "priority": "high",
+      "selected": false,
+      "reason": "已读 NVIDIA 原文，属于推理基础设施合作；本期优先新模型、产品能力和可用范围变化。",
+      "selectionPhase": "initial-draft-replaced"
+    },
+    {
+      "id": "google-ai-plans",
+      "title": "Google 更新 AI 订阅能力：语音、Sheets canvas 与应用连接",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/google-one/fall-2026-ai-plan-updates/",
+      "kind": "release",
+      "subjectKeys": [
+        "event:google-ai-plans"
+      ],
+      "priority": "high",
+      "selected": false,
+      "reason": "9月9日订阅更新包含既有产品的功能汇总；核实后与更直接的新模型及产品发布比较，本期不选。",
+      "selectionPhase": "initial-draft-replaced"
+    },
+    {
+      "id": "kimi-work-326",
+      "title": "Kimi Work 3.2.6 把插件发现放进任务对话",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://www.kimi.com/help/kimi-work/release-notes",
+      "kind": "release",
+      "subjectKeys": [
+        "event:kimi-work-326"
+      ],
+      "priority": "high",
+      "selected": false,
+      "reason": "9月7日工作台改进可核实，但比当日模型和能力变化更早，比较候选后未入选。",
+      "selectionPhase": "initial-draft-replaced"
+    },
+    {
+      "id": "hf-hub-131",
+      "title": "huggingface_hub 1.31 修复下载路径检查与缓存竞争",
+      "eventDate": "2026-09-10",
+      "sourceUrl": "https://github.com/huggingface/huggingface_hub/releases/tag/v1.31.0",
+      "kind": "ecosystem",
+      "subjectKeys": [
+        "repo:huggingface/huggingface_hub"
+      ],
+      "priority": "high",
+      "selected": false,
+      "reason": "下载安全与并发修复有价值，初稿纳入；末次发现 SWE-2 等重大模型发布后移出，避免小修复挤占新品。",
+      "selectionPhase": "initial-draft-replaced"
+    },
+    {
+      "id": "astra-work-duplicate",
+      "title": "Astra 企业工作能力",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://openai.com/news/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "官方新闻入口可见，9月10日期刊已展开；无新增独立事实，不重复。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "images25-duplicate",
+      "title": "OpenAI Images 2.5",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://openai.com/news/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "官方入口及图像别名复查；9月9日已收录，不把产品页重现算成新发布。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "meta-muse-duplicate",
+      "title": "Meta Muse",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://about.fb.com/news/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "9月9日已有正文，官方入口复查未得到独立新版事实。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "atlas-duplicate",
+      "title": "AlphaGenome Atlas",
+      "eventDate": "2026-09-08",
+      "sourceUrl": "https://deepmind.google/blog/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "9月9日已收录，本期不重复解释同一发布。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "baidu-ocr-duplicate",
+      "title": "PP-OCRv6 云服务更新",
+      "eventDate": "2026-09-07",
+      "sourceUrl": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "9月10日已收录；本次切换官方新闻入口参数仍主要得到OCR栏目，覆盖记为部分。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "qwen-max-0902",
+      "title": "Qwen Max 0902 API 型号",
+      "eventDate": "2026-09-02",
+      "sourceUrl": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "模型服务更新页可核实日期，超出本期新闻7天窗口；不能把采集日当首发。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "anthropic-fable-older",
+      "title": "Anthropic Fable 发布",
+      "eventDate": "2026-09-01",
+      "sourceUrl": "https://www.anthropic.com/news",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "官方入口所列事件早于窗口，不以本期读到为新发布。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "nvidia-hf-older",
+      "title": "NVIDIA 与 Hugging Face 相关公告",
+      "eventDate": "2026-09-03",
+      "sourceUrl": "https://blogs.nvidia.com/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "旧入口链接，日期超过新闻窗口。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "aws-confluence",
+      "title": "Bedrock Knowledge Bases 接入 Confluence",
+      "eventDate": "2026-09-09",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-confluence-data-center-native-data-source-connector/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "公告与所读文档对支持范围的表述有差异，暂不据此给出一致的上线范围。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "motus2-older",
+      "title": "Motus2 机器人基础模型",
+      "eventDate": "2026-08-31",
+      "sourceUrl": "https://arxiv.org/abs/2608.30237",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "媒体使用“今天”表达，但原始论文日期和演示早于本期窗口，不改写首发日期。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "openai-presence-older",
+      "title": "OpenAI Presence",
+      "eventDate": "2026-07-22",
+      "sourceUrl": "https://openai.com/news/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "新闻入口显示的是较早发布，排除。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "puffin-duplicate",
+      "title": "Puffin 世界模型",
+      "eventDate": null,
+      "sourceUrl": "https://www.qbitai.com/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "媒体线索与9月9日已收录模型相同，本期不重复推荐。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "fireredtts3-unverified",
+      "title": "FireRedTTS3 语音模型线索",
+      "eventDate": null,
+      "sourceUrl": "https://www.jiqizhixin.com/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "只从索引发现，未核实独立发布日期和完整许可，本期不采用性能结论。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "ling-fin-unverified",
+      "title": "Ling 3.0 Flash 金融方向线索",
+      "eventDate": null,
+      "sourceUrl": "https://www.qbitai.com/",
+      "selected": false,
+      "priority": "normal",
+      "kind": "release",
+      "reason": "索引线索尚未完成版本日期核验；本期模型栏已经选择可核验的视觉版本，未拆成新闻填数。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "stockfish19",
+      "title": "Stockfish 19",
+      "eventDate": null,
+      "sourceUrl": "https://news.ycombinator.com/front?day=2026-09-10",
+      "selected": false,
+      "priority": "normal",
+      "kind": "discovery",
+      "reason": "社区候选，棋类引擎与本期大模型读者的应用重点较远；未进一步核实，不写成新闻事实。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "magic-pretraining",
+      "title": "Magic 预训练方法分享",
+      "eventDate": null,
+      "sourceUrl": "https://news.ycombinator.com/front?day=2026-09-10",
+      "selected": false,
+      "priority": "normal",
+      "kind": "discovery",
+      "reason": "社区索引发现的方法分享，本期优先完成已核实新模型与产品报道；未读原文，不采用其性能结论。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    },
+    {
+      "id": "hn-training-settings",
+      "title": "HN 用户反映训练设置变化",
+      "eventDate": null,
+      "sourceUrl": "https://news.ycombinator.com/item?id=49643556",
+      "selected": false,
+      "priority": "normal",
+      "kind": "discovery",
+      "reason": "社区单方报告，未独立重现或获得平台原始确认，不作为已证实产品行为。",
+      "checkedAt": "2026-09-11T08:10:09.753353+08:00"
+    }
+  ],
+  "selectionReview": {
+    "initialProviderSweep": "约07:33—07:34，北京时间",
+    "providerRecheck": "07:53，北京时间，15家同一入口复查",
+    "lateSupplement": "07:55以后继续读中文媒体、英文媒体及HN线索，补回高德、京东、Apple、Pro暂停与SWE-2；原始初稿五项被替换，未将补查冒称初查即已覆盖。",
+    "completedAt": "2026-09-11T08:12:56.835985+08:00",
+    "selectedCount": 15,
+    "candidateCount": 37,
+    "lastProviderSweep": {
+      "startedAt": "2026-09-11T08:11:05.102078+08:00",
+      "completedAt": "2026-09-11T08:11:11.809220+08:00",
+      "result": "15家入口均返回；逐文对照，除Meta导航布局外与07:53复查未见新增文本，保持最终选题。"
+    }
+  },
+  "categoryReview": [
+    {
+      "category": "文本与推理",
+      "note": "DeepSeek V4.1 Flash、SWE-2；旧Astra去重"
+    },
+    {
+      "category": "图像与视频",
+      "note": "ABot-Earth、JoyAI-Echo WM；Images 2.5与Puffin去重，模型栏另选LingBot与LLaDA"
+    },
+    {
+      "category": "语音与音乐",
+      "note": "GPT-Live-1、Suno v6；模型栏YuE2与Breeze为独立实现"
+    },
+    {
+      "category": "多模态与应用",
+      "note": "Apple健康、京东购物助手、模型栏Ling视觉"
+    },
+    {
+      "category": "Agent与开发工具",
+      "note": "Agents API、Data agent、vLLM、TRL与Perplexity MCP"
+    },
+    {
+      "category": "产业与安全",
+      "note": "金融服务、Pro可用范围、Anthropic调查；算力合作参与候选比较"
+    }
+  ],
+  "expandedSelections": {
+    "expectedModels": 6,
+    "expectedPapers": 6,
+    "models": [
+      {
+        "id": "m-a-p/YuE2-3B",
+        "order": 1,
+        "title": "YuE2-3B：先写可编辑乐谱，再生成歌曲",
+        "sourceUrl": "https://huggingface.co/m-a-p/YuE2-3B",
+        "subjectKeys": [
+          "model:m-a-p/yue2-3b"
+        ],
+        "license": "cc-by-nc-4.0",
+        "weightFileCount": 1,
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "createdAt": "2026-09-09T18:30:33.000Z",
+        "lastModified": "2026-09-09T18:52:28.000Z",
+        "verification": "核对官方模型卡、文件清单与原始说明；没有下载或运行权重。 WildSongBench普通配置亦有两候选筛选，best-of-8配置还存在部分评分权重差异，正文明确。",
+        "openness": "核对实际权重文件；代码、许可、附加组件、申请限制与硬件详见模型正文。未下载或运行模型。"
+      },
+      {
+        "id": "robbyant/lingbot-world-v2-1.3b-causal-fast",
+        "order": 2,
+        "title": "LingBot-World 2.0：补齐小模型与预训练权重",
+        "sourceUrl": "https://huggingface.co/robbyant/lingbot-world-v2-1.3b-causal-fast",
+        "subjectKeys": [
+          "model:robbyant/lingbot-world-v2-1.3b-causal-fast"
+        ],
+        "license": "cc-by-nc-sa-4.0",
+        "weightFileCount": 6,
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "createdAt": "2026-09-04T07:40:14.000Z",
+        "lastModified": "2026-09-07T09:20:18.000Z",
+        "verification": "核对官方模型卡、文件清单与原始说明；没有下载或运行权重。",
+        "openness": "核对实际权重文件；代码、许可、附加组件、申请限制与硬件详见模型正文。未下载或运行模型。"
+      },
+      {
+        "id": "CohereLabs/North-Small-Translate-1.0",
+        "order": 3,
+        "title": "North Small Translate：面向 50 种语言的翻译模型",
+        "sourceUrl": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0",
+        "subjectKeys": [
+          "model:coherelabs/north-small-translate-1.0"
+        ],
+        "license": "cc-by-nc-4.0",
+        "weightFileCount": 77,
+        "checkedAt": "2026-09-11T08:12:56.835985+08:00",
+        "createdAt": "2026-08-14T18:35:27.000Z",
+        "lastModified": "2026-09-10T15:29:25.000Z",
+        "verification": "核对官方模型卡、文件清单与原始说明；没有下载或运行权重。",
+        "openness": "核对实际权重文件；代码、许可、附加组件、申请限制与硬件详见模型正文。未下载或运行模型。",
+        "announcementUrl": "https://cohere.com/blog/north-small-translate",
+        "publishedAt": "2026-09-10T23:10:00.000Z",
+        "publishedDateBeijing": "2026-09-11"
+      },
+      {
+        "id": "inclusionAI/LLaDA-Image",
+        "order": 4,
+        "title": "LLaDA-Image：生成与编辑共用一套图像模型",
+        "sourceUrl": "https://huggingface.co/inclusionAI/LLaDA-Image",
+        "subjectKeys": [
+          "model:inclusionai/llada-image"
+        ],
+        "license": "apache-2.0",
+        "weightFileCount": 17,
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "createdAt": "2026-08-28T02:18:25.000Z",
+        "lastModified": "2026-09-04T11:19:55.000Z",
+        "verification": "核对官方模型卡、文件清单与原始说明；没有下载或运行权重。",
+        "openness": "核对实际权重文件；代码、许可、附加组件、申请限制与硬件详见模型正文。未下载或运行模型。"
+      },
+      {
+        "id": "BreezeBlue/Breeze-TTS-2",
+        "order": 5,
+        "title": "Breeze TTS 2：自然语言控制语气与声音",
+        "sourceUrl": "https://huggingface.co/BreezeBlue/Breeze-TTS-2",
+        "subjectKeys": [
+          "model:breezeblue/breeze-tts-2"
+        ],
+        "license": "Breeze-TTS-2 专用非商业许可；推理代码 Apache-2.0",
+        "weightFileCount": 3,
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "createdAt": "2026-08-25T16:39:34.000Z",
+        "lastModified": "2026-09-09T18:59:45.000Z",
+        "verification": "核对官方模型卡、文件清单与原始说明；没有下载或运行权重。",
+        "openness": "核对实际权重文件；代码、许可、附加组件、申请限制与硬件详见模型正文。未下载或运行模型。"
+      },
+      {
+        "id": "inclusionAI/Ling-3.0-flash-VL",
+        "order": 6,
+        "title": "Ling-3.0-flash-VL：把视觉接进推理与操作",
+        "sourceUrl": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL",
+        "subjectKeys": [
+          "model:inclusionai/ling-3.0-flash-vl"
+        ],
+        "license": "mit",
+        "weightFileCount": 65,
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "createdAt": "2026-09-04T15:24:37.000Z",
+        "lastModified": "2026-09-10T10:07:53.000Z",
+        "verification": "核对官方模型卡、文件清单与原始说明；没有下载或运行权重。",
+        "openness": "核对实际权重文件；代码、许可、附加组件、申请限制与硬件详见模型正文。未下载或运行模型。"
+      }
+    ],
+    "papers": [
+      {
+        "id": "2609.08572",
+        "order": 1,
+        "title": "AgentGrad：先定位出错的 Agent，再改提示词",
+        "sourceUrl": "https://arxiv.org/abs/2609.08572v1",
+        "subjectKeys": [
+          "paper:2609.08572"
+        ],
+        "version": "v1",
+        "submittedDate": "2026-09-08",
+        "archivePath": "content/papers/frontiers/agentgrad/00-阅读卡.md",
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "verification": "阅读原始摘要页核对作者、日期和v1；阅读原始HTML的研究方法、实验与局限。 已保存原创阅读卡，不标为本站复现。"
+      },
+      {
+        "id": "2609.06702",
+        "order": 2,
+        "title": "PARSER：让阅读并行，让推理按问题推进",
+        "sourceUrl": "https://arxiv.org/abs/2609.06702v1",
+        "subjectKeys": [
+          "paper:2609.06702"
+        ],
+        "version": "v1",
+        "submittedDate": "2026-09-06",
+        "archivePath": "content/papers/frontiers/parser-long-context/00-阅读卡.md",
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "verification": "阅读原始摘要页核对作者、日期和v1；阅读原始HTML的研究方法、实验与局限。 已保存原创阅读卡，不标为本站复现。"
+      },
+      {
+        "id": "2609.08149",
+        "order": 3,
+        "title": "SWE-Bench Pro Verified：先检查评测环境有没有泄题",
+        "sourceUrl": "https://arxiv.org/abs/2609.08149v1",
+        "subjectKeys": [
+          "paper:2609.08149"
+        ],
+        "version": "v1",
+        "submittedDate": "2026-09-08",
+        "archivePath": "content/papers/frontiers/swe-bench-pro-verified/00-阅读卡.md",
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "verification": "阅读原始摘要页核对作者、日期和v1；阅读原始HTML的研究方法、实验与局限。 已保存原创阅读卡，不标为本站复现。"
+      },
+      {
+        "id": "2609.10226",
+        "order": 4,
+        "title": "Φ-Bench：从写内核扩展到维护推理基础设施",
+        "sourceUrl": "https://arxiv.org/abs/2609.10226v1",
+        "subjectKeys": [
+          "paper:2609.10226"
+        ],
+        "version": "v1",
+        "submittedDate": "2026-09-09",
+        "archivePath": "content/papers/frontiers/phi-bench/00-阅读卡.md",
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "verification": "阅读原始摘要页核对作者、日期和v1；阅读原始HTML的研究方法、实验与局限。 已保存原创阅读卡，不标为本站复现。"
+      },
+      {
+        "id": "2609.07103",
+        "order": 5,
+        "title": "完整推理轨迹一定更好吗？保留开头与结尾的对照",
+        "sourceUrl": "https://arxiv.org/abs/2609.07103v1",
+        "subjectKeys": [
+          "paper:2609.07103"
+        ],
+        "version": "v1",
+        "submittedDate": "2026-09-07",
+        "archivePath": "content/papers/frontiers/revisiting-reasoning-traces/00-阅读卡.md",
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "verification": "阅读原始摘要页核对作者、日期和v1；HTML不可用后下载PDF并提取正文。 已保存原创阅读卡，不标为本站复现。"
+      },
+      {
+        "id": "2609.08650",
+        "order": 6,
+        "title": "DATPO：按难度展开推理树，观察能解出的题是否变多",
+        "sourceUrl": "https://arxiv.org/abs/2609.08650v1",
+        "subjectKeys": [
+          "paper:2609.08650"
+        ],
+        "version": "v1",
+        "submittedDate": "2026-09-08",
+        "archivePath": "content/papers/frontiers/datpo/00-阅读卡.md",
+        "checkedAt": "2026-09-11T08:10:09.753353+08:00",
+        "verification": "阅读原始摘要页核对作者、日期和v1；阅读原始HTML的研究方法、实验与局限。 已保存原创阅读卡，不标为本站复现。"
+      }
+    ],
+    "checkedThrough": "2026-09-11T08:12:56.835985+08:00"
+  },
+  "openSourceProjects": {
+    "checkedThrough": "2026-09-11T08:10:09.753353+08:00",
+    "candidateCount": 15,
+    "discovery": [
+      {
+        "type": "代码托管与版本",
+        "url": "https://github.com/trending",
+        "note": "榜单用于发现；逐仓库读取README、LICENSE与Releases，不按热榜硬排。"
+      },
+      {
+        "type": "官方文档",
+        "url": "https://docs.paperless-ngx.com/",
+        "note": "另读GROBID、Haystack、Opik原始文档。"
+      },
+      {
+        "type": "社区",
+        "url": "https://news.ycombinator.com/front?day=2026-09-10",
+        "note": "已读9月10日HN列表，社区候选未入选十工具；没有虚构这些工具当天登榜。"
+      }
+    ],
+    "projects": [
+      {
+        "id": "paperless-ngx/paperless-ngx",
+        "order": 1,
+        "title": "Paperless-ngx：把零散扫描件变成可检索档案",
+        "repositoryUrl": "https://github.com/paperless-ngx/paperless-ngx",
+        "license": "GPL-3.0",
+        "licenseUrl": "https://github.com/paperless-ngx/paperless-ngx/blob/dev/LICENSE",
+        "checkedAt": "2026-09-11T07:40:27.190350+08:00",
+        "subjectKeys": [
+          "repo:paperless-ngx/paperless-ngx"
+        ],
+        "reason": "扫描件归档；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "v3.1.3",
+        "versionDate": "2026-09-04T03:12:42Z",
+        "releaseUrl": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.1.3",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "grobidorg/grobid",
+        "order": 2,
+        "title": "GROBID：从论文 PDF 提取结构与参考文献",
+        "repositoryUrl": "https://github.com/grobidOrg/grobid",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/grobidOrg/grobid/blob/master/LICENSE",
+        "checkedAt": "2026-09-11T07:40:27.191471+08:00",
+        "subjectKeys": [
+          "repo:grobidorg/grobid"
+        ],
+        "reason": "论文结构提取；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "0.9.1",
+        "versionDate": "2026-08-04T06:56:01Z",
+        "releaseUrl": "https://github.com/grobidOrg/grobid/releases/tag/0.9.1",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "deepset-ai/haystack",
+        "order": 3,
+        "title": "Haystack：把检索与生成写成明确的数据管线",
+        "repositoryUrl": "https://github.com/deepset-ai/haystack",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/deepset-ai/haystack/blob/main/LICENSE",
+        "checkedAt": "2026-09-11T07:40:30.165030+08:00",
+        "subjectKeys": [
+          "repo:deepset-ai/haystack"
+        ],
+        "reason": "可控 RAG 管线；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "v3.1.1",
+        "versionDate": "2026-09-03T09:27:52Z",
+        "releaseUrl": "https://github.com/deepset-ai/haystack/releases/tag/v3.1.1",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "hkuds/lightrag",
+        "order": 4,
+        "title": "LightRAG：同时保留实体关系与文本检索",
+        "repositoryUrl": "https://github.com/HKUDS/LightRAG",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/HKUDS/LightRAG/blob/main/LICENSE",
+        "checkedAt": "2026-09-11T07:40:31.121958+08:00",
+        "subjectKeys": [
+          "repo:hkuds/lightrag"
+        ],
+        "reason": "关系型知识问答；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "v1.5.7",
+        "versionDate": "2026-09-02T07:23:55Z",
+        "releaseUrl": "https://github.com/HKUDS/LightRAG/releases/tag/v1.5.7",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "berriai/litellm",
+        "order": 5,
+        "title": "LiteLLM：用统一网关管理不同模型接口",
+        "repositoryUrl": "https://github.com/BerriAI/litellm",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/BerriAI/litellm/blob/litellm_internal_staging/LICENSE",
+        "checkedAt": "2026-09-11T07:40:32.464959+08:00",
+        "subjectKeys": [
+          "repo:berriai/litellm"
+        ],
+        "reason": "多供应商模型调用；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "v1.100.1",
+        "versionDate": "2026-09-10T16:58:02Z",
+        "releaseUrl": "https://github.com/BerriAI/litellm/releases/tag/v1.100.1",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "chainlit/chainlit",
+        "order": 6,
+        "title": "Chainlit：给 Python 实验加一个可交互聊天页面",
+        "repositoryUrl": "https://github.com/Chainlit/chainlit",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/Chainlit/chainlit/blob/main/LICENSE",
+        "checkedAt": "2026-09-11T07:40:33.330341+08:00",
+        "subjectKeys": [
+          "repo:chainlit/chainlit"
+        ],
+        "reason": "研究原型界面；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "2.12.0",
+        "versionDate": "2026-08-25T16:47:32Z",
+        "releaseUrl": "https://github.com/Chainlit/chainlit/releases/tag/2.12.0",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "comfy-org/comfyui",
+        "order": 7,
+        "title": "ComfyUI：把图像创作步骤保存成可复用工作流",
+        "repositoryUrl": "https://github.com/Comfy-Org/ComfyUI",
+        "license": "GPL-3.0",
+        "licenseUrl": "https://github.com/Comfy-Org/ComfyUI/blob/master/LICENSE",
+        "checkedAt": "2026-09-11T07:40:33.600596+08:00",
+        "subjectKeys": [
+          "repo:comfy-org/comfyui"
+        ],
+        "reason": "可视化内容工作流；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "v0.35.0",
+        "versionDate": "2026-09-09T19:55:08Z",
+        "releaseUrl": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.35.0",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "cline/cline",
+        "order": 8,
+        "title": "Cline：在编辑器、终端与桌面使用代码 Agent",
+        "repositoryUrl": "https://github.com/cline/cline",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/cline/cline/blob/main/LICENSE",
+        "checkedAt": "2026-09-11T07:40:34.229430+08:00",
+        "subjectKeys": [
+          "repo:cline/cline"
+        ],
+        "reason": "代码修改与检查；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "desktop-v0.0.25",
+        "versionDate": "2026-09-10T04:57:15Z",
+        "releaseUrl": "https://github.com/cline/cline/releases/tag/desktop-v0.0.25",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "crewaiinc/crewai",
+        "order": 9,
+        "title": "CrewAI：把自主协作与固定流程放在一起",
+        "repositoryUrl": "https://github.com/crewAIInc/crewAI",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/crewAIInc/crewAI/blob/main/LICENSE",
+        "checkedAt": "2026-09-11T07:40:34.457540+08:00",
+        "subjectKeys": [
+          "repo:crewaiinc/crewai"
+        ],
+        "reason": "多步骤工作自动化；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "1.15.21",
+        "versionDate": "2026-09-09T22:54:19Z",
+        "releaseUrl": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.21",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      },
+      {
+        "id": "comet-ml/opik",
+        "order": 10,
+        "title": "Opik：把一次错误回答追到具体调用",
+        "repositoryUrl": "https://github.com/comet-ml/opik",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/comet-ml/opik/blob/main/LICENSE",
+        "checkedAt": "2026-09-11T07:40:37.579741+08:00",
+        "subjectKeys": [
+          "repo:comet-ml/opik"
+        ],
+        "reason": "调用追踪与评测；有公开代码、明确文档和维护记录，近7天未在本站展开。",
+        "version": "2.2.58",
+        "versionDate": "2026-09-10T12:34:47Z",
+        "releaseUrl": "https://github.com/comet-ml/opik/releases/tag/2.2.58",
+        "status": "成熟工具推荐；核验当前正式发布及主分支说明",
+        "evidence": [
+          "官方README",
+          "LICENSE正文",
+          "GitHub Releases"
+        ]
+      }
+    ],
+    "excludedCandidates": [
+      {
+        "repositoryUrl": "https://github.com/Arize-ai/phoenix",
+        "reason": "核对 Elastic License 2.0，未纳入本期开源工具的许可范围。",
+        "checkedAt": "2026-09-11T07:40:35.436675+08:00"
+      },
+      {
+        "repositoryUrl": "https://github.com/FlowiseAI/Flowise",
+        "reason": "与本期RAG和应用编排工具用途重合，优先保持任务分布；核心与enterprise目录需分开看许可。",
+        "checkedAt": "2026-09-11T07:40:37.206739+08:00"
+      },
+      {
+        "repositoryUrl": "https://github.com/microsoft/autogen",
+        "reason": "与本期CrewAI的协作编排主题重合，未重复挑选；根目录文档许可与代码许可需分开核对。",
+        "checkedAt": "2026-09-11T07:40:37.104455+08:00"
+      },
+      {
+        "repositoryUrl": "https://github.com/huggingface/smolagents",
+        "reason": "已核对实现与版本，但本期优先覆盖资料整理、界面、创作与评测，不增加另一套Agent框架。",
+        "checkedAt": "2026-09-11T07:40:36.343469+08:00"
+      },
+      {
+        "repositoryUrl": "https://github.com/run-llama/llama_index",
+        "reason": "已有Haystack与LightRAG分别覆盖组件管线和关系检索，本期不再增加相似框架。",
+        "checkedAt": "2026-09-11T07:40:38.683430+08:00"
+      }
+    ]
+  },
+  "practice": {
+    "status": "已运行验证",
+    "runtime": "Python 3.14.3 / CPU / 标准库",
+    "command": "python3 -m unittest discover -s content/frontiers/2026/09/2026-09-11/code -v",
+    "tests": 3,
+    "note": "合成的6条配对记录；3条持续通过、2条改善、1条回退，没有运行外部模型或复现论文训练。"
+  }
+}
