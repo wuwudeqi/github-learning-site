@@ -1,0 +1,10 @@
+{
+  "issueDate": "2026-09-12",
+  "tool": "image_gen.imagegen",
+  "purpose": "解释文字与参考图生成场景后，仍需开发者测试交互的区别。",
+  "sourceReviewed": "https://about.roblox.com/newsroom/2026/09/rdc-2026-the-world-needs-more-play",
+  "sourceDecision": "RDC 公告中的静态图片主要是支付卡及宣传材料，无法说明场景生成与交互测试的差别。使用明确标记的概念图；不仿造 Roblox UI。",
+  "prompt": "Use case: scientific-educational\nAsset type: Chinese AI research daily explanatory illustration, wide landscape, high legibility.\nPrimary request: Explain why generating a visually plausible game scene is only one step toward a playable game, accompanying Roblox's Sep 11 2026 announcement that Scene Generator is planned later this year. This is an original conceptual illustration, NOT a Roblox screenshot and NOT a demonstration of an actual product output.\nComposition: Three side-by-side coherent illustrated panels, same miniature forest scene with a stream, a wooden bridge, a hut, and a small generic player pawn. Panel 1: a person's simple pencil sketch and a written request, with an image reference of trees. Panel 2: a clear isometric 3D scene assembled from those elements, with the bridge connecting the two banks. Panel 3: a developer tests a visible dotted walking path over the bridge to the hut and checks a trigger zone by the door; the path and the trigger illustrate testing rather than automatic guaranteed success.\nStyle: precise editorial teaching illustration, cream background, muted teal and coral accents, spacious layout, moderate detail. Objects must be recognizable at phone width.\nText verbatim and only: top title \"从场景到可玩的游戏\"; panel titles \"描述与参考\" \"生成布局\" \"测试与迭代\"; bottom note \"AI 生成概念示意 · 非产品截图\". Use clean simplified Chinese typography. No logos, benchmark data, fabricated UI windows, dashboards, numeric results, or claims of availability. Do not show all steps as guaranteed to succeed.",
+  "adoptedPath": "../images/news-game-scene-concept.png",
+  "review": "已检查三阶段、森林与桥梁的连续场景、测试路线和中文标签；已明确 AI 生成概念示意，非产品截图。"
+}
