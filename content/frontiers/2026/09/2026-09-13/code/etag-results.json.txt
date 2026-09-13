@@ -1,0 +1,42 @@
+{
+  "runAt": "2026-09-13T00:16:59.834298+00:00",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "scope": "127.0.0.1 only; synthetic fixture",
+  "rows": [
+    {
+      "step": 1,
+      "label": "首次获取",
+      "status": 200,
+      "requestETag": null,
+      "responseETag": "\"8f6ed769a7f71cf0b79cf9340f74cb7bae49da696ff5079a7d01c042e5b3f685\"",
+      "responseBytes": 25,
+      "usedBytes": 25,
+      "sha256": "8f6ed769a7f71cf0b79cf9340f74cb7bae49da696ff5079a7d01c042e5b3f685",
+      "text": "标题：第一版日报\n"
+    },
+    {
+      "step": 2,
+      "label": "内容未变，条件请求",
+      "status": 304,
+      "requestETag": "\"8f6ed769a7f71cf0b79cf9340f74cb7bae49da696ff5079a7d01c042e5b3f685\"",
+      "responseETag": "\"8f6ed769a7f71cf0b79cf9340f74cb7bae49da696ff5079a7d01c042e5b3f685\"",
+      "responseBytes": 0,
+      "usedBytes": 25,
+      "sha256": "8f6ed769a7f71cf0b79cf9340f74cb7bae49da696ff5079a7d01c042e5b3f685",
+      "text": "标题：第一版日报\n"
+    },
+    {
+      "step": 3,
+      "label": "源站更新，条件请求",
+      "status": 200,
+      "requestETag": "\"8f6ed769a7f71cf0b79cf9340f74cb7bae49da696ff5079a7d01c042e5b3f685\"",
+      "responseETag": "\"939a197fb22e2a214221085f47d782602e33649661f2e0201406c567ba7c283c\"",
+      "responseBytes": 46,
+      "usedBytes": 46,
+      "sha256": "939a197fb22e2a214221085f47d782602e33649661f2e0201406c567ba7c283c",
+      "text": "标题：第二版日报，新增核验结果\n"
+    }
+  ],
+  "passed": true
+}

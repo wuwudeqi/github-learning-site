@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1030" viewBox="0 0 640 1030" role="img" aria-labelledby="title desc">
+<title id="title">ETag 本地实验：200、304、200</title><desc id="desc">三次实际请求分别收到25、0、46字节响应正文；第二次复用25字节缓存。数据来自已通过断言的本地实验。</desc>
+<defs><marker id="blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#2767ae"/></marker><marker id="green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#168074"/></marker></defs>
+<rect width="640" height="1030" fill="#f3f6fa"/>
+<g font-family="PingFang SC, Microsoft YaHei, sans-serif">
+<text x="28" y="44" font-size="29" fill="#102d48" font-weight="700" text-anchor="start">没有新正文，也可以是有效结果</text>
+<text x="28" y="79" font-size="21" fill="#5a6f83" font-weight="400" text-anchor="start">ETag · 2026-09-13 本机真实响应</text>
+<text x="115" y="119" font-size="23" fill="#122e48" font-weight="650" text-anchor="middle">客户端</text><text x="525" y="119" font-size="23" fill="#122e48" font-weight="650" text-anchor="middle">源站</text>
+<g>
+  <rect x="20" y="135" width="600" height="250" rx="18" fill="#ffffff" stroke="#d5dfe9"/>
+  <text x="42" y="172" font-size="25" fill="#122e48" font-weight="650" text-anchor="start">1. 首次获取</text>
+  <line x1="115" y1="207" x2="115" y2="314" stroke="#c3cfdc" stroke-dasharray="5 5"/>
+  <line x1="525" y1="207" x2="525" y2="314" stroke="#c3cfdc" stroke-dasharray="5 5"/>
+  <line x1="122" y1="227" x2="513" y2="227" stroke="#2767ae" stroke-width="3" marker-end="url(#blue)"/>
+  <text x="320" y="216" font-size="22" fill="#22598f" font-weight="500" text-anchor="middle">GET · 没有旧标签</text>
+  <line x1="515" y1="285" x2="128" y2="285" stroke="#168074" stroke-width="3" marker-end="url(#green)"/>
+  <text x="320" y="273" font-size="23" fill="#11645d" font-weight="650" text-anchor="middle">200 · 正文 25 B · ETag A</text>
+  <text x="42" y="340" font-size="24" fill="#122e48" font-weight="600" text-anchor="start">客户端保存 25 B 正文，内容变为 A</text>
+  <text x="42" y="367" font-size="19" fill="#54677a" font-weight="400" text-anchor="start">源站与客户端现在持有相同版本</text>
+  </g><g>
+  <rect x="20" y="405" width="600" height="250" rx="18" fill="#fff6dd" stroke="#dcb660"/>
+  <text x="42" y="442" font-size="25" fill="#122e48" font-weight="650" text-anchor="start">2. 内容未变，条件请求</text>
+  <line x1="115" y1="477" x2="115" y2="584" stroke="#c3cfdc" stroke-dasharray="5 5"/>
+  <line x1="525" y1="477" x2="525" y2="584" stroke="#c3cfdc" stroke-dasharray="5 5"/>
+  <line x1="122" y1="497" x2="513" y2="497" stroke="#2767ae" stroke-width="3" marker-end="url(#blue)"/>
+  <text x="320" y="486" font-size="22" fill="#22598f" font-weight="500" text-anchor="middle">GET · If-None-Match: A</text>
+  <line x1="515" y1="555" x2="128" y2="555" stroke="#168074" stroke-width="3" marker-end="url(#green)"/>
+  <text x="320" y="543" font-size="23" fill="#11645d" font-weight="650" text-anchor="middle">304 · 正文 0 B · ETag A</text>
+  <text x="42" y="610" font-size="24" fill="#122e48" font-weight="600" text-anchor="start">客户端复用 25 B 缓存，内容仍为 A</text>
+  <text x="42" y="637" font-size="19" fill="#54677a" font-weight="400" text-anchor="start">0 B 指响应正文，不是应用显示内容为空</text>
+  </g><g>
+  <rect x="20" y="675" width="600" height="250" rx="18" fill="#ffffff" stroke="#d5dfe9"/>
+  <text x="42" y="712" font-size="25" fill="#122e48" font-weight="650" text-anchor="start">3. 源站更新，条件请求</text>
+  <line x1="115" y1="747" x2="115" y2="854" stroke="#c3cfdc" stroke-dasharray="5 5"/>
+  <line x1="525" y1="747" x2="525" y2="854" stroke="#c3cfdc" stroke-dasharray="5 5"/>
+  <line x1="122" y1="767" x2="513" y2="767" stroke="#2767ae" stroke-width="3" marker-end="url(#blue)"/>
+  <text x="320" y="756" font-size="22" fill="#22598f" font-weight="500" text-anchor="middle">GET · If-None-Match: A</text>
+  <line x1="515" y1="825" x2="128" y2="825" stroke="#168074" stroke-width="3" marker-end="url(#green)"/>
+  <text x="320" y="813" font-size="23" fill="#11645d" font-weight="650" text-anchor="middle">200 · 正文 46 B · ETag B</text>
+  <text x="42" y="880" font-size="24" fill="#122e48" font-weight="600" text-anchor="start">客户端保存 46 B 正文，内容变为 B</text>
+  <text x="42" y="907" font-size="19" fill="#54677a" font-weight="400" text-anchor="start">旧标签 A 已不匹配，必须获取新正文</text>
+  </g>
+<text x="28" y="987" font-size="20" fill="#5a6f83" font-weight="400" text-anchor="start">A / B 是内容哈希简称 · 只验证本地测试数据</text>
+<text x="28" y="1014" font-size="18" fill="#5a6f83" font-weight="400" text-anchor="start">JS 依据 etag-results.json.txt 生成</text>
+</g></svg>
