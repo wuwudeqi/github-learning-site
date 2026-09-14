@@ -1,0 +1,107 @@
+{
+  "runAt": "2026-09-14T23:11:12.649787+08:00",
+  "python": "3.14.3",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "scope": "Synthetic four-document example; no model, corpus, or latency benchmark",
+  "k": 60,
+  "rawScores": {
+    "lexical": [
+      [
+        "A",
+        14.0
+      ],
+      [
+        "B",
+        11.0
+      ],
+      [
+        "D",
+        8.0
+      ]
+    ],
+    "dense": [
+      [
+        "C",
+        0.91
+      ],
+      [
+        "B",
+        0.86
+      ],
+      [
+        "D",
+        0.82
+      ]
+    ]
+  },
+  "rankings": {
+    "lexical": [
+      "A",
+      "B",
+      "D"
+    ],
+    "dense": [
+      "C",
+      "B",
+      "D"
+    ]
+  },
+  "rows": [
+    {
+      "doc": "B",
+      "score": 0.03225806451612903,
+      "contributions": {
+        "lexical": {
+          "rank": 2,
+          "value": 0.016129032258064516
+        },
+        "dense": {
+          "rank": 2,
+          "value": 0.016129032258064516
+        }
+      }
+    },
+    {
+      "doc": "D",
+      "score": 0.031746031746031744,
+      "contributions": {
+        "lexical": {
+          "rank": 3,
+          "value": 0.015873015873015872
+        },
+        "dense": {
+          "rank": 3,
+          "value": 0.015873015873015872
+        }
+      }
+    },
+    {
+      "doc": "A",
+      "score": 0.01639344262295082,
+      "contributions": {
+        "lexical": {
+          "rank": 1,
+          "value": 0.01639344262295082
+        }
+      }
+    },
+    {
+      "doc": "C",
+      "score": 0.01639344262295082,
+      "contributions": {
+        "dense": {
+          "rank": 1,
+          "value": 0.01639344262295082
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "checks": [
+    "hand-calculated consensus winner and B score",
+    "duplicate IDs do not get additional votes or shift unique ranks",
+    "empty source and all-empty input",
+    "monotone score rescaling preserves fusion"
+  ],
+  "tieRule": "ascending document ID for equal total scores"
+}

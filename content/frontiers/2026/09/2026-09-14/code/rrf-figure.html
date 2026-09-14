@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RRF：共识怎样改变排序</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#e9edf2;font-family:system-ui,-apple-system,"PingFang SC",sans-serif;color:#152636}#figure{width:660px;padding:28px;background:#f8fafc;border-top:8px solid #155e75}h1{font-size:30px;margin:0 0 12px}p{font-size:23px;line-height:1.5;margin:10px 0 25px;color:#496170}.inputs{display:flex;gap:28px}.card{flex:1;border:1px solid #d4e0e6;border-radius:10px;padding:24px;background:white}.card h2{font-size:21px;margin:0 0 18px}.rank{display:flex;justify-content:space-between;padding:9px 0;font-size:24px;border-top:1px solid #edf1f4}.rank span{font-size:21px;color:#48616e}.formula{font-size:24px;text-align:center;padding:23px;margin:24px 0;background:#e4f2f4;color:#174957}.legend{font-size:21px;display:flex;gap:26px;align-items:center}.key{display:inline-block;width:16px;height:16px;margin-right:7px}.lexical{background:#177c96}.dense{background:#c56d2d}.row{display:grid;grid-template-columns:38px 1fr 155px;align-items:center;gap:14px;margin:22px 0;font-size:26px}.bar{height:40px;display:flex;background:transparent}.segment{height:40px;display:block}.score{text-align:right;font-variant-numeric:tabular-nums;font-size:24px}.axis{margin-left:52px;margin-right:169px;display:flex;justify-content:space-between;font-size:18px;color:#5b7280;border-top:1px solid #ccd7dd;padding-top:8px}.note{font-size:22px;color:#455b69;margin:27px 0 0;line-height:1.5}.emphasis{font-weight:650;color:#16566c}</style>
+<main id="figure"><h1>RRF：两路都靠前，可以胜过单路第一</h1><p>合成的 4 份文档 · 本机 Python 实际计算 · k = 60</p><div class="inputs"><section class="card"><h2>① 关键词检索的排名</h2><div id="lex"></div></section><section class="card"><h2>② 向量检索的排名</h2><div id="den"></div></section></div><div class="formula">每路贡献 1 ÷ (60 + 排名)，再按文档相加</div><div class="legend"><span><i class="key lexical"></i>关键词贡献</span><span><i class="key dense"></i>向量贡献</span><span>③ 最终顺序</span></div><section id="bars"></section><div class="axis"><span>0</span><span>0.01</span><span>0.02</span><span>0.03</span><span>0.04</span></div><p class="note"><span class="emphasis">B = 1/62 + 1/62 = 0.032258</span>，两路各排第二。<br>A、C 只在一路出现；分数相同，本例按文档 ID 排序。<br>分值是排序依据，不是相关概率；本例没有验证真实检索质量。</p></main>
+<script type="application/json" id="data">{
+  "runAt": "2026-09-14T23:11:12.649787+08:00",
+  "python": "3.14.3",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "scope": "Synthetic four-document example; no model, corpus, or latency benchmark",
+  "k": 60,
+  "rawScores": {
+    "lexical": [
+      [
+        "A",
+        14.0
+      ],
+      [
+        "B",
+        11.0
+      ],
+      [
+        "D",
+        8.0
+      ]
+    ],
+    "dense": [
+      [
+        "C",
+        0.91
+      ],
+      [
+        "B",
+        0.86
+      ],
+      [
+        "D",
+        0.82
+      ]
+    ]
+  },
+  "rankings": {
+    "lexical": [
+      "A",
+      "B",
+      "D"
+    ],
+    "dense": [
+      "C",
+      "B",
+      "D"
+    ]
+  },
+  "rows": [
+    {
+      "doc": "B",
+      "score": 0.03225806451612903,
+      "contributions": {
+        "lexical": {
+          "rank": 2,
+          "value": 0.016129032258064516
+        },
+        "dense": {
+          "rank": 2,
+          "value": 0.016129032258064516
+        }
+      }
+    },
+    {
+      "doc": "D",
+      "score": 0.031746031746031744,
+      "contributions": {
+        "lexical": {
+          "rank": 3,
+          "value": 0.015873015873015872
+        },
+        "dense": {
+          "rank": 3,
+          "value": 0.015873015873015872
+        }
+      }
+    },
+    {
+      "doc": "A",
+      "score": 0.01639344262295082,
+      "contributions": {
+        "lexical": {
+          "rank": 1,
+          "value": 0.01639344262295082
+        }
+      }
+    },
+    {
+      "doc": "C",
+      "score": 0.01639344262295082,
+      "contributions": {
+        "dense": {
+          "rank": 1,
+          "value": 0.01639344262295082
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "checks": [
+    "hand-calculated consensus winner and B score",
+    "duplicate IDs do not get additional votes or shift unique ranks",
+    "empty source and all-empty input",
+    "monotone score rescaling preserves fusion"
+  ],
+  "tieRule": "ascending document ID for equal total scores"
+}
+</script><script>const d=JSON.parse(document.getElementById('data').textContent);for(const [key,id] of [['lexical','lex'],['dense','den']]){document.getElementById(id).innerHTML=d.rankings[key].map((x,i)=>`<div class="rank"><b>${x}</b><span>第 ${i+1} 名 → ${(1/(d.k+i+1)).toFixed(6)}</span></div>`).join('');}document.getElementById('bars').innerHTML=d.rows.map(r=>`<div class="row"><b>${r.doc}</b><div class="bar">${['lexical','dense'].map(s=>`<span class="segment ${s}" style="width:${(r.contributions[s]?.value||0)/0.04*100}%"></span>`).join('')}</div><div class="score">${r.score.toFixed(6)}</div></div>`).join('');document.body.dataset.ready='true';</script></html>
