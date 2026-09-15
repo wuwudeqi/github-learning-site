@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第 2～3 课：BPE 与 Embedding 实验</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f7f9fa,#142029);--panel:light-dark(#fff,#21313d);--ink:light-dark(#163748,#e7f0f5);--muted:light-dark(#526978,#b2c5cf);--line:light-dark(#d1e0e5,#49616f);--accent:light-dark(#126f87,#68c8dc);--chosen:light-dark(#e1eff4,#224653)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:32px 22px}h1{font-size:28px;line-height:1.4}h2{font-size:22px}p{max-width:80ch}.muted,small{color:var(--muted)}nav,.controls,.parts{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:18px 0}button,select{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:9px 13px;border-radius:8px;cursor:pointer}button[aria-pressed=true]{background:var(--accent);color:var(--bg)}button:disabled{opacity:.5;cursor:default}button:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}section{background:var(--panel);padding:22px;border-radius:12px}section[hidden]{display:none}table{border-collapse:collapse;width:100%;margin:16px 0}td,th{text-align:left;border-bottom:1px solid var(--line);padding:8px 10px}th{font-weight:600}code,pre{font:15px/1.7 ui-monospace,monospace}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--bg);padding:16px;border-radius:8px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.selected{background:var(--chosen)}.piece{padding:10px 14px;border:1px solid var(--line);border-radius:8px}.result{border-left:4px solid var(--accent);padding:8px 16px;background:var(--bg)}.table-wrap{overflow-x:auto}@media(max-width:660px){.grid{grid-template-columns:1fr}main{padding:20px 12px}section{padding:15px}h1{font-size:24px}td,th{padding:7px 6px}}@media print{nav,.controls{display:none}section[hidden]{display:block}section{margin:20px 0}}
+</style>
+<main><small>TRANSFORMER / LESSON 02—03</small><h1>从合并规则走到一行向量</h1><p class="muted">同一套小语料、词表和向量贯穿两课。合并过程实际计算；向量为手工指定。无需联网即可操作。</p>
+<nav aria-label="选择实验"><button type="button" data-panel="train" aria-pressed="true">① 训练 BPE 规则</button><button type="button" data-panel="lookup" aria-pressed="false">② 编码与查表</button></nav>
+<section id="train"><h2>观察每轮合并如何改变下一轮统计</h2><p>语料：low×5、lower×2、new×6。并列最高频时，按上述词序从左到右首次出现的片段对优先。本例不跨词边界。</p>
+<div class="controls"><button type="button" id="prev">上一步</button><strong id="round">0 / 4 次合并</strong><button type="button" id="next">合并下一对</button></div>
+<div class="grid"><div><h3>当前切分</h3><table><thead><tr><th>词 / 次数</th><th>片段</th></tr></thead><tbody id="corpus"></tbody></table><div id="total" class="result"></div></div><div><h3>当前相邻对的频数</h3><table><thead><tr><th>片段对</th><th>次数</th></tr></thead><tbody id="pairs"></tbody></table></div></div>
+<pre id="rules" aria-live="polite"></pre><p class="muted">高亮没有额外的语义含义。表中突出显示下一次会选中的片段对；第 4 次后按教学预算停止，真实训练可继续增加规则。</p>
+</section>
+<section id="lookup" hidden><h2>规则固定以后，处理新输入</h2><p>使用四轮合并后的十项词表；此处切换输入不会重新训练分词器。</p><label>输入单词 <select id="word"><option>lower</option><option>newer</option><option>low</option><option>new</option></select></label>
+<div class="parts" id="parts" aria-live="polite"></div><pre id="encode-trace"></pre>
+<div class="grid"><div><h3>完整嵌入表 E（10×3）</h3><table><thead><tr><th>ID / token</th><th>第 1 维</th><th>第 2 维</th><th>第 3 维</th></tr></thead><tbody id="embedding"></tbody></table></div><div><h3>输入取出的 X</h3><pre id="vectors"></pre><div class="result" id="shape"></div><details><summary>展开 one-hot 与矩阵写法</summary><pre id="onehot"></pre></details></div></div>
+<p class="muted">E 中数值可为负，不是概率。高亮表示这次查表取到了哪些行；输出顺序由输入 ID 顺序决定。</p></section>
+</main>
+<script>
+const $=id=>document.getElementById(id), words=['low','lower','new'], freq={low:5,lower:2,new:6};
+const base=['e','l','n','o','r','w'];const E=[[.1,.2,.3],[.2,0,.1],[0,.3,.2],[.1,-.1,0],[-.2,.4,.1],[.3,.2,-.1],[.4,.1,.2],[.8,.1,-.2],[.2,.6,.1],[-.1,.9,.3]];
+function merge(parts,pair){const out=[];for(let i=0;i<parts.length;){if(i+1<parts.length&&parts[i]===pair[0]&&parts[i+1]===pair[1]){out.push(pair.join(''));i+=2}else{out.push(parts[i]);i++}}return out}
+function count(parts){const counts=new Map();for(const w of words){for(let i=0;i<parts[w].length-1;i++){const key=JSON.stringify(parts[w].slice(i,i+2));counts.set(key,(counts.get(key)||0)+freq[w])}}return [...counts].map(([key,n],order)=>({pair:JSON.parse(key),n,order})).sort((a,b)=>b.n-a.n||a.order-b.order)}
+const states=[Object.fromEntries(words.map(w=>[w,[...w]]))],rules=[],vocab=[...base];
+for(let i=0;i<4;i++){const best=count(states[i])[0].pair;rules.push(best);vocab.push(best.join(''));states.push(Object.fromEntries(words.map(w=>[w,merge(states[i][w],best)])))}
+let round=0;
+function renderTrain(){const state=states[round],pairs=count(state);$('round').textContent=round+' / 4 次合并';$('prev').disabled=round===0;$('next').disabled=round===4;
+$('corpus').innerHTML=words.map(w=>`<tr><td>${w} × ${freq[w]}</td><td>${state[w].join(' | ')}</td></tr>`).join('');
+$('pairs').innerHTML=pairs.map((p,i)=>`<tr class="${i===0&&round<4?'selected':''}"><td>${p.pair.join(' + ')}</td><td>${p.n}</td></tr>`).join('');
+$('total').textContent='按词频加权的 token 总数：'+words.reduce((s,w)=>s+freq[w]*state[w].length,0);
+$('rules').textContent=round?rules.slice(0,round).map((r,i)=>`${i+1}. ${r.join(' + ')} → ${r.join('')}，新 ID ${6+i}`).join('\n'):'尚未合并。基础词表：'+base.map((x,i)=>x+':'+i).join('，');}
+function renderLookup(){const word=$('word').value;let parts=[...word];const trace=['初始：'+parts.join(' | ')];rules.forEach((r,i)=>{const after=merge(parts,r);trace.push(`规则 ${i+1}：${after.join(' | ')}${after.length===parts.length?'（无匹配）':''}`);parts=after});const ids=parts.map(p=>vocab.indexOf(p));
+$('parts').innerHTML=parts.map((p,i)=>`<div class="piece">${p} → ID ${ids[i]}</div>`).join('');$('encode-trace').textContent=trace.join('\n');
+$('embedding').innerHTML=E.map((row,i)=>`<tr class="${ids.includes(i)?'selected':''}"><td>${i} / ${vocab[i]}</td>${row.map(v=>'<td>'+v.toFixed(1)+'</td>').join('')}</tr>`).join('');
+$('vectors').textContent=ids.map((i,p)=>`位置 ${p+1}：E[${i}]=[${E[i].join(', ')}]`).join('\n');$('shape').textContent=`V=10，T=${ids.length}，d=3；X 的形状=${ids.length}×3。`;
+$('onehot').textContent=ids.map(i=>'['+vocab.map((_,j)=>i===j?1:0).join(',')+']').join('\n')+`\n\nX = S E\n(${ids.length}×10) × (10×3) = ${ids.length}×3`;
+}
+document.querySelectorAll('[data-panel]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-panel]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('section').forEach(s=>s.hidden=s.id!==b.dataset.panel)}));
+$('prev').addEventListener('click',()=>{if(round>0)round--;renderTrain()});$('next').addEventListener('click',()=>{if(round<4)round++;renderTrain()});$('word').addEventListener('change',renderLookup);renderTrain();renderLookup();
+</script></html>
