@@ -1,0 +1,261 @@
+{
+  "runAt": "2026-09-15T08:22:24.208350+08:00",
+  "python": "3.14.3",
+  "dataType": "hand-designed synthetic vectors; labels are illustrative, not model embeddings",
+  "query": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "documents": [
+    {
+      "id": "A",
+      "label": "检索概览",
+      "vector": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "B",
+      "label": "概览近似段落 1",
+      "vector": [
+        0.99,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "id": "C",
+      "label": "概览近似段落 2",
+      "vector": [
+        0.98,
+        0.15,
+        0.0
+      ]
+    },
+    {
+      "id": "D",
+      "label": "检索评测角度",
+      "vector": [
+        0.8,
+        0.6,
+        0.0
+      ]
+    },
+    {
+      "id": "E",
+      "label": "检索部署角度",
+      "vector": [
+        0.8,
+        0.0,
+        0.6
+      ]
+    },
+    {
+      "id": "F",
+      "label": "偏题材料",
+      "vector": [
+        0.1,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "k": 3,
+  "lambda": 0.35,
+  "threshold": 0.7,
+  "topK": {
+    "ids": [
+      "A",
+      "B",
+      "C"
+    ],
+    "meanRelevance": 0.9944750680942162,
+    "meanPairwiseSimilarity": 0.9940380213250067
+  },
+  "mmr": {
+    "ids": [
+      "A",
+      "D",
+      "E"
+    ],
+    "meanRelevance": 0.8666666666666667,
+    "meanPairwiseSimilarity": 0.7466666666666667
+  },
+  "withoutThreshold": {
+    "ids": [
+      "A",
+      "F",
+      "D"
+    ],
+    "meanRelevance": 0.62351152052862,
+    "meanPairwiseSimilarity": 0.4500565267899022
+  },
+  "trace": [
+    {
+      "step": 1,
+      "chosen": "A",
+      "candidates": [
+        {
+          "id": "A",
+          "label": "检索概览",
+          "vector": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "relevance": 1.0,
+          "redundancy": 0,
+          "mmr": 0.35
+        },
+        {
+          "id": "B",
+          "label": "概览近似段落 1",
+          "vector": [
+            0.99,
+            0.1,
+            0.0
+          ],
+          "relevance": 0.9949371890224981,
+          "redundancy": 0,
+          "mmr": 0.3482280161578743
+        },
+        {
+          "id": "C",
+          "label": "概览近似段落 2",
+          "vector": [
+            0.98,
+            0.15,
+            0.0
+          ],
+          "relevance": 0.9884880152601505,
+          "redundancy": 0,
+          "mmr": 0.3459708053410527
+        },
+        {
+          "id": "D",
+          "label": "检索评测角度",
+          "vector": [
+            0.8,
+            0.6,
+            0.0
+          ],
+          "relevance": 0.8,
+          "redundancy": 0,
+          "mmr": 0.27999999999999997
+        },
+        {
+          "id": "E",
+          "label": "检索部署角度",
+          "vector": [
+            0.8,
+            0.0,
+            0.6
+          ],
+          "relevance": 0.8,
+          "redundancy": 0,
+          "mmr": 0.27999999999999997
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "chosen": "D",
+      "candidates": [
+        {
+          "id": "B",
+          "label": "概览近似段落 1",
+          "vector": [
+            0.99,
+            0.1,
+            0.0
+          ],
+          "relevance": 0.9949371890224981,
+          "redundancy": 0.9949371890224981,
+          "mmr": -0.2984811567067494
+        },
+        {
+          "id": "C",
+          "label": "概览近似段落 2",
+          "vector": [
+            0.98,
+            0.15,
+            0.0
+          ],
+          "relevance": 0.9884880152601505,
+          "redundancy": 0.9884880152601505,
+          "mmr": -0.2965464045780452
+        },
+        {
+          "id": "D",
+          "label": "检索评测角度",
+          "vector": [
+            0.8,
+            0.6,
+            0.0
+          ],
+          "relevance": 0.8,
+          "redundancy": 0.8,
+          "mmr": -0.24000000000000005
+        },
+        {
+          "id": "E",
+          "label": "检索部署角度",
+          "vector": [
+            0.8,
+            0.0,
+            0.6
+          ],
+          "relevance": 0.8,
+          "redundancy": 0.8,
+          "mmr": -0.24000000000000005
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "chosen": "E",
+      "candidates": [
+        {
+          "id": "B",
+          "label": "概览近似段落 1",
+          "vector": [
+            0.99,
+            0.1,
+            0.0
+          ],
+          "relevance": 0.9949371890224981,
+          "redundancy": 0.9949371890224981,
+          "mmr": -0.2984811567067494
+        },
+        {
+          "id": "C",
+          "label": "概览近似段落 2",
+          "vector": [
+            0.98,
+            0.15,
+            0.0
+          ],
+          "relevance": 0.9884880152601505,
+          "redundancy": 0.9884880152601505,
+          "mmr": -0.2965464045780452
+        },
+        {
+          "id": "E",
+          "label": "检索部署角度",
+          "vector": [
+            0.8,
+            0.0,
+            0.6
+          ],
+          "relevance": 0.8,
+          "redundancy": 0.8,
+          "mmr": -0.24000000000000005
+        }
+      ]
+    }
+  ],
+  "checks": "9 assertions passed: known ranking, off-topic counterexample, empty/k bounds, cosine and invalid zero vector"
+}
