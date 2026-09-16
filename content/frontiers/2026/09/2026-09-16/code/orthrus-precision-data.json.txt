@@ -1,0 +1,25 @@
+{
+  "source": "https://arxiv.org/abs/2609.15504v1",
+  "tables": [
+    3,
+    8
+  ],
+  "denominator": 1190,
+  "decoding": "greedy, max_new_tokens=128, Qwen3-1.7B, 12 domains",
+  "metric": "entire generated sequence matches autoregressive reference",
+  "values": [
+    {
+      "model": "作者原检查点",
+      "bf16": 45,
+      "bf16CI95": 3,
+      "fp32": 100
+    },
+    {
+      "model": "独立重新训练",
+      "bf16": 43,
+      "bf16CI95": 3,
+      "fp32": 100
+    }
+  ],
+  "note": "论文实验；本站未复现。比例按论文四舍五入，不倒推精确成功数量。"
+}

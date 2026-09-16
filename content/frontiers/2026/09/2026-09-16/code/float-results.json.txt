@@ -1,0 +1,28 @@
+{
+  "executedAt": "2026-09-16T00:54:58.475704+00:00",
+  "python": "3.14.3",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "inputs": {
+    "a": 100000000.0,
+    "b": -100000000.0,
+    "c": 1.0
+  },
+  "float32": {
+    "left": {
+      "expression": "f32(f32(a + b) + c)",
+      "intermediate": 0.0,
+      "result": 1.0
+    },
+    "right": {
+      "expression": "f32(a + f32(b + c))",
+      "intermediate": -100000000.0,
+      "result": 0.0
+    }
+  },
+  "float64": {
+    "left": 1.0,
+    "right": 1.0
+  },
+  "verification": "expected results and binary64 assumption asserted",
+  "limits": "Synthetic scalar example with explicit per-addition binary32 rounding; no model, GPU, BF16, or speed benchmark."
+}
