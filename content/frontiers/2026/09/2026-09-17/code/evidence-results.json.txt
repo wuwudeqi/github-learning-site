@@ -1,0 +1,49 @@
+{
+  "executedAt": "2026-09-17T01:02:39.431294+00:00",
+  "python": "3.14.3",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "assertionsPassed": 5,
+  "cases": [
+    {
+      "case": "缺一项数据",
+      "rows": {
+        "A": 10,
+        "B": 20,
+        "C": null
+      },
+      "scores": [
+        {
+          "answer": "断言总计 60",
+          "styleScore": 100,
+          "evidenceScore": 0
+        },
+        {
+          "answer": "已知小计 30，总计待定",
+          "styleScore": 70,
+          "evidenceScore": 100
+        }
+      ]
+    },
+    {
+      "case": "数据齐全的对照",
+      "rows": {
+        "A": 10,
+        "B": 20,
+        "C": 30
+      },
+      "scores": [
+        {
+          "answer": "正确总计 60",
+          "styleScore": 100,
+          "evidenceScore": 100
+        },
+        {
+          "answer": "仍声称无法计算",
+          "styleScore": 70,
+          "evidenceScore": 0
+        }
+      ]
+    }
+  ],
+  "scope": "Handwritten structured answers and deterministic rules; no model call; no paper replication."
+}
