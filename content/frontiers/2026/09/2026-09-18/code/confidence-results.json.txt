@@ -1,0 +1,1176 @@
+{
+  "kind": "synthetic-illustration-not-paper-reproduction",
+  "executedAt": "2026-09-18T08:15:05.338781+08:00",
+  "python": "3.14.3",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "calibration": "Laplace-smoothed historical success by manually specified group",
+  "validation": "Disjoint example IDs; probabilities fitted only on bank; 10 fixed ECE bins; decision threshold 0.8",
+  "groups": [
+    {
+      "name": "字段抽取",
+      "bankSuccess": 18,
+      "bankCount": 20,
+      "probability": 0.8636363636363636,
+      "heldoutAccuracy": 0.85,
+      "driftAccuracy": 0.3
+    },
+    {
+      "name": "代码判断",
+      "bankSuccess": 12,
+      "bankCount": 20,
+      "probability": 0.5909090909090909,
+      "heldoutAccuracy": 0.65,
+      "driftAccuracy": 0.6
+    },
+    {
+      "name": "多步问题",
+      "bankSuccess": 6,
+      "bankCount": 20,
+      "probability": 0.3181818181818182,
+      "heldoutAccuracy": 0.35,
+      "driftAccuracy": 0.9
+    }
+  ],
+  "datasets": {
+    "bank": [
+      {
+        "id": "past-字段抽取-0",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-1",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-2",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-3",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-4",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-5",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-6",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-7",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-8",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-9",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-10",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-11",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-12",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-13",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-14",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-15",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-16",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-17",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-字段抽取-18",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-字段抽取-19",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-0",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-1",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-2",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-3",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-4",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-5",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-6",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-7",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-8",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-9",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-10",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-11",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-代码判断-12",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-13",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-14",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-15",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-16",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-17",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-18",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-代码判断-19",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-0",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-多步问题-1",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-多步问题-2",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-多步问题-3",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-多步问题-4",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-多步问题-5",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "past-多步问题-6",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-7",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-8",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-9",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-10",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-11",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-12",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-13",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-14",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-15",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-16",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-17",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-18",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "past-多步问题-19",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      }
+    ],
+    "heldout": [
+      {
+        "id": "future-字段抽取-0",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-1",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-2",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-3",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-4",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-5",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-6",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-7",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-8",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-9",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-10",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-11",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-12",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-13",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-14",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-15",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-16",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-字段抽取-17",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-字段抽取-18",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-字段抽取-19",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-0",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-1",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-2",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-3",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-4",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-5",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-6",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-7",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-8",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-9",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-10",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-11",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-12",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-代码判断-13",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-14",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-15",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-16",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-17",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-18",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-代码判断-19",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-0",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-1",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-2",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-3",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-4",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-5",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-6",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "future-多步问题-7",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-8",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-9",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-10",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-11",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-12",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-13",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-14",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-15",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-16",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-17",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-18",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "future-多步问题-19",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      }
+    ],
+    "drift": [
+      {
+        "id": "shifted-字段抽取-0",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-字段抽取-1",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-字段抽取-2",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-字段抽取-3",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-字段抽取-4",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-字段抽取-5",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-字段抽取-6",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-7",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-8",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-9",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-10",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-11",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-12",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-13",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-14",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-15",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-16",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-17",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-18",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-字段抽取-19",
+        "group": "字段抽取",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-0",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-1",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-2",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-3",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-4",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-5",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-6",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-7",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-8",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-9",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-10",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-11",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-代码判断-12",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-13",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-14",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-15",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-16",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-17",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-18",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-代码判断-19",
+        "group": "代码判断",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-多步问题-0",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-1",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-2",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-3",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-4",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-5",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-6",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-7",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-8",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-9",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-10",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-11",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-12",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-13",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-14",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-15",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-16",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-17",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 1
+      },
+      {
+        "id": "shifted-多步问题-18",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      },
+      {
+        "id": "shifted-多步问题-19",
+        "group": "多步问题",
+        "stated": 0.9,
+        "correct": 0
+      }
+    ]
+  },
+  "results": {
+    "heldout": {
+      "stated": {
+        "brier": 0.31666666666666665,
+        "ece10": 0.2833333333333333,
+        "coverage": 1.0,
+        "acceptedAccuracy": 0.6166666666666667,
+        "accepted": 60,
+        "count": 60
+      },
+      "globalPrior": {
+        "brier": 0.23678459937565038,
+        "ece10": 0.019892473118279574,
+        "coverage": 0.0,
+        "acceptedAccuracy": null,
+        "accepted": 0,
+        "count": 60
+      },
+      "groupCalibrated": {
+        "brier": 0.19573002754820937,
+        "ece10": 0.034848484848484844,
+        "coverage": 0.3333333333333333,
+        "acceptedAccuracy": 0.85,
+        "accepted": 20,
+        "count": 60
+      }
+    },
+    "drift": {
+      "stated": {
+        "brier": 0.33,
+        "ece10": 0.30000000000000004,
+        "coverage": 1.0,
+        "acceptedAccuracy": 0.6,
+        "accepted": 60,
+        "count": 60
+      },
+      "globalPrior": {
+        "brier": 0.24001040582726327,
+        "ece10": 0.003225806451612856,
+        "coverage": 0.0,
+        "acceptedAccuracy": null,
+        "accepted": 0,
+        "count": 60
+      },
+      "groupCalibrated": {
+        "brier": 0.3987603305785124,
+        "ece10": 0.38484848484848483,
+        "coverage": 0.3333333333333333,
+        "acceptedAccuracy": 0.3,
+        "accepted": 20,
+        "count": 60
+      }
+    }
+  }
+}

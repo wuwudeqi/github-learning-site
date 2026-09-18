@@ -1,0 +1,15 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>历史成败怎样改变置信度</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f3f1e9;color:#152d39;font-family:"PingFang SC",sans-serif}main{width:1200px;padding:38px 44px}h1{font-size:34px;margin:0 0 12px}p{font-size:20px;margin:8px 0 20px}.panels{display:grid;grid-template-columns:1fr 1fr;gap:22px}section{background:white;border:1px solid #cfd7d3;border-radius:16px;padding:22px}h2{font-size:25px;margin:0 0 8px}.sub{font-size:17px;color:#49636c}.legend{display:flex;gap:16px;font-size:17px;margin:18px 0}.dot{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:5px}.row{margin:19px 0}.label{font-size:19px;margin-bottom:7px}.track{height:25px;background:#edf1ef;position:relative;margin:5px 0}.bar{height:25px;min-width:1px}.value{position:absolute;right:7px;top:2px;font-size:17px;color:#112b38;background:#ffffffd9;padding:0 4px}.metrics{font-size:20px;border-top:1px solid #ddd;padding-top:15px;line-height:1.7}.foot{font-size:17px;margin-top:20px;line-height:1.6;color:#3d5962}.pill{display:inline-block;padding:4px 9px;background:#f6d6ae;font-size:16px;border-radius:5px;margin-bottom:12px}</style>
+<main><span class="pill">合成示例 · Python 实际计算 · 非论文复现</span><h1>同样说“90%有把握”，历史成败给出的依据不同</h1><p>先用过去 60 条记录估计，再用两组独立样本检验；每类各 20 条。</p><div class="legend"><span><i class="dot" style="background:#4567a4"></i>历史校准后的预测</span><span><i class="dot" style="background:#b8782e"></i>留出样本的真实成功比例</span></div><div class="panels" id="panels"></div><div class="foot">校准公式：(历史成功数 + 1) ÷ (历史样本数 + 2)。历史三类成功数为18、12、6。<br>全部初始置信度由示例手动设为90%；分组也由示例预设。误差降低是这组数据的计算结果，不证明真实模型获得同样收益。</div></main>
+<script>
+fetch('confidence-results.json.txt').then(r=>r.json()).then(data=>{
+ const pct=v=>(100*v).toFixed(1)+'%';
+ for(const [key,title,sub] of [['heldout','① 历史规律仍近似适用','相似分布：过去表现能帮助修正把握'],['drift','② 历史规律已经反转','分布变化：旧经验可能把人引向错误方向']]){
+  const m=data.results[key],a=key==='heldout'?'heldoutAccuracy':'driftAccuracy';
+  let html=`<section><h2>${title}</h2><div class="sub">${sub}</div>`;
+  for(const g of data.groups)html+=`<div class="row"><div class="label">${g.name}</div><div class="track"><div class="bar" style="width:${100*g.probability}%;background:#4567a4"></div><span class="value">${pct(g.probability)}</span></div><div class="track"><div class="bar" style="width:${100*g[a]}%;background:#b8782e"></div><span class="value">${pct(g[a])}</span></div></div>`;
+  html+=`<div class="metrics">Brier误差（越低越好）<br>原始 ${m.stated.brier.toFixed(3)} → 校准 ${m.groupCalibrated.brier.toFixed(3)}<br>阈值80%：保留 ${m.groupCalibrated.accepted}/${m.groupCalibrated.count} 条，正确比例 ${pct(m.groupCalibrated.acceptedAccuracy)}</div></section>`;
+  document.querySelector('#panels').insertAdjacentHTML('beforeend',html);
+ } document.body.dataset.ready='true';
+});
+</script></html>
