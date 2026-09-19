@@ -1,0 +1,60 @@
+{
+  "kind": "synthetic one-prefix probability calculation, not model training",
+  "runAt": "2026-09-19T02:40:42.388436+00:00",
+  "python": "3.14.3",
+  "logBase": "natural",
+  "sampleAssumption": "Condition on the student sampling eos_a; no sampling performed",
+  "results": [
+    {
+      "case": "same_stop_mass",
+      "student": {
+        "eos_a": 0.8,
+        "eos_b": 0.01,
+        "continue": 0.19
+      },
+      "teacher": {
+        "eos_a": 0.01,
+        "eos_b": 0.8,
+        "continue": 0.19
+      },
+      "student_stop_probability": 0.81,
+      "teacher_stop_probability": 0.81,
+      "token_log_ratio_if_eos_a_sampled": -4.382026634673882,
+      "semantic_stop_log_ratio": 0.0
+    },
+    {
+      "case": "teacher_more_likely_to_stop",
+      "student": {
+        "eos_a": 0.8,
+        "eos_b": 0.01,
+        "continue": 0.19
+      },
+      "teacher": {
+        "eos_a": 0.01,
+        "eos_b": 0.89,
+        "continue": 0.1
+      },
+      "student_stop_probability": 0.81,
+      "teacher_stop_probability": 0.9,
+      "token_log_ratio_if_eos_a_sampled": -4.382026634673882,
+      "semantic_stop_log_ratio": 0.10536051565782635
+    },
+    {
+      "case": "teacher_less_likely_to_stop",
+      "student": {
+        "eos_a": 0.8,
+        "eos_b": 0.01,
+        "continue": 0.19
+      },
+      "teacher": {
+        "eos_a": 0.01,
+        "eos_b": 0.49,
+        "continue": 0.5
+      },
+      "student_stop_probability": 0.81,
+      "teacher_stop_probability": 0.5,
+      "token_log_ratio_if_eos_a_sampled": -4.382026634673882,
+      "semantic_stop_log_ratio": -0.4824261492442928
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-19T10:30:50.128585+08:00",
+  "commit": "a9f1374479e91ecfcb837658285bfc7a2258dd0b",
+  "python": "Python 3.14.3",
+  "commands": [
+    {
+      "args": [
+        "version"
+      ],
+      "exitCode": 0,
+      "stdout": "toolreplay 0.6.0\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "replay",
+        "samples/session-dirty.jsonl"
+      ],
+      "exitCode": 1,
+      "stdout": "calls: 6\ndivergence: index 5\nfindings: 2\nindex 2: redundant-call: tool 'read_file' repeats the identical call at index 1 with no state change between them\nindex 5: non-determinism: tool 'search' returned a different response than the identical call at index 3\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "scope",
+        "samples/session-dirty.jsonl",
+        "samples/scope.json"
+      ],
+      "exitCode": 1,
+      "stdout": "calls: 6\nfindings: 1\nindex 4: permission-overreach: tool 'write_file' is not in the declared scope for agent 'docs-reader'\n",
+      "stderr": ""
+    }
+  ]
+}
