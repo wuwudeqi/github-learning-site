@@ -1,0 +1,16 @@
+初始提示词
+Use case: scientific-educational. Create one Chinese explanatory illustration for an AI technology daily article. Landscape 1536x1024, clean white background, professional textbook illustration, large readable Chinese labels, blue and amber coding, not an app screenshot, no logos.
+Explain the difference between multiple audio channels and speaker diarization in two stacked horizontal panels.
+Exact title: “音轨”和“说话人”是两回事
+Top panel heading: 多声道转写
+Draw two distinct people speaking into separate microphones; the blue microphone recording follows one separate blue horizontal waveform track, the amber microphone recording follows one separate amber waveform track. Show two tracks continuing to separate transcript cards. Labels: 独立音轨 ; 分别转写. Emphasize that the source recording already separates channels.
+Bottom panel heading: 说话人区分
+Draw two distinct people speaking alternately into ONE shared microphone. Show one single shared waveform, with blue then amber then blue temporal segments; on the right the corresponding transcript card has three blank text lines with labels 说话人 A / 说话人 B / 说话人 A using the same colors. Labels: 混合音轨 ; 标记谁在何时说话.
+All arrows flow left to right within each panel. Do not imply diarization separates overlapping speech perfectly or identifies actual persons. Only two people in each panel. No invented accuracy, prices, timestamps, model output, product branding or actual spoken text. Add small footer: AI 生成的概念示意 · 非真实转写结果.
+The drawing must show physical microphones and waveform/transcript transformation clearly to teach the concepts, avoid a decorative list in boxes.
+
+最终修订提示词
+Edit the existing Chinese educational diagram. Preserve all layout, colors, drawings, waveforms and other labels. In the lower panel under “混合音轨”, replace the small sentence “所有声音录在同一个音轨中，无法从录音本身区分开不同说话人。” with exactly “录音没有按说话人预先分轨，需要模型判断说话片段。” This avoids falsely implying that speakers cannot be distinguished from the recording. No other changes.
+
+采用输出
+/Users/fujiasen/.codex/generated_images/01a088de-fb45-7c00-bead-09bc5c14279e/exec-f3ac9741-de6b-45ca-83ff-900361c83c26.png

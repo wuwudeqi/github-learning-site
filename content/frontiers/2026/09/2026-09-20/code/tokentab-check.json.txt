@@ -1,0 +1,16 @@
+{
+  "kind": "synthetic parser fixture; not real account usage or billing",
+  "checkedAt": "2026-09-20T08:02:53.512499+08:00",
+  "python": "3.14.3",
+  "commit": "3a7aac5ba1c46aeb78b3cd34e4bf337fa78264c3",
+  "inputRows": 3,
+  "uniqueRecords": 2,
+  "totals": {
+    "input": 140,
+    "output": 25,
+    "cache_read": 50,
+    "cache_write": 10
+  },
+  "result": "passed",
+  "scope": "Claude parser only; no price or GUI check"
+}
