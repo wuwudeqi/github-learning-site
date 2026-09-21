@@ -1,0 +1,34 @@
+[
+  {
+    "project": "sepia",
+    "command": [
+      "python3",
+      "scripts/check_persona.py",
+      "skills/sepia/references/voices/personas/nyaneko.md"
+    ],
+    "commit": "1b223f1651149c97f1864242669f902356af6d21",
+    "exitCode": 0,
+    "stdout": "persona check: OK, 1 file(s), 0 error(s)\n",
+    "stderr": "",
+    "checkedAt": "2026-09-21T08:00:26.252442+08:00"
+  },
+  {
+    "project": "ai-infra-book",
+    "command": [
+      "python3",
+      "calculations/calc.py",
+      "forward",
+      "--model",
+      "qwen3-8b",
+      "--tokens",
+      "8192",
+      "--format",
+      "md"
+    ],
+    "commit": "725babd9f5b645936be3fca78314684a9387d5dd",
+    "exitCode": 0,
+    "outputPath": "content/frontiers/2026/09/2026-09-21/code/infra-calc-qwen3-8b.txt",
+    "stderr": "",
+    "checkedAt": "2026-09-21T08:00:26.777747+08:00"
+  }
+]
