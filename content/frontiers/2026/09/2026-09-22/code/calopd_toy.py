@@ -23,6 +23,6 @@ result = {
     'interventions': [-0.9, -1.1],
     'rows': rows,
 }
-destination = Path(__file__).with_name('calopd-result.json')
+destination = Path(__file__).with_name('calopd-result.json.txt')
 destination.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n')
 print(json.dumps(result, ensure_ascii=False, indent=2))

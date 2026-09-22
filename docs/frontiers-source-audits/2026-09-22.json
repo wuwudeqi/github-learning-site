@@ -2411,7 +2411,7 @@
           "browserMobile": true,
           "checkedAt": "2026-09-22T08:22:46.023666+08:00"
         },
-        "sourceData": "content/frontiers/2026/09/2026-09-22/code/parakeet-data.json"
+        "sourceData": "content/frontiers/2026/09/2026-09-22/code/parakeet-data.json.txt"
       },
       {
         "path": "content/frontiers/2026/09/2026-09-22/images/supra-jellyfish.png",
@@ -2682,17 +2682,17 @@
         "article": "content/frontiers/2026/09/2026-09-22/05-技术实践.md",
         "tier": "html-js",
         "purpose": "合成老师区间与三个学生分数的位置，及普通与校准蒸馏信号的真实计算结果",
-        "caption": "青色区间表示合成干预估计的范围，圆点是三个学生分数。范围外才有剩余信号；scale=5 时三个点落入或处在边界，结果均为0。数据由本机 Python 实际运算，HTML/JS 绘图；不是模型训练结果（[运行输出](code/calopd-result.json)；[查看大图](images/calopd-result.png)。）",
-        "sourceUrl": "code/calopd-result.json",
+        "caption": "青色区间表示合成干预估计的范围，圆点是三个学生分数。范围外才有剩余信号；scale=5 时三个点落入或处在边界，结果均为0。数据由本机 Python 实际运算，HTML/JS 绘图；不是模型训练结果（[运行输出](code/calopd-result.json.txt)；[查看大图](images/calopd-result.png)。）",
+        "sourceUrl": "code/calopd-result.json.txt",
         "originalCandidates": [
           {
-            "url": "code/calopd-result.json",
+            "url": "code/calopd-result.json.txt",
             "result": "原来源未提供该对照图；实践为本次实际输出，无来源结果图可用"
           }
         ],
         "selectionReason": "需精确保持每组数字/区间位置及本机结果；imagegen不适合精确数值，因此用HTML/JS",
         "rightsBasis": "本站原创可视化；模型卡数值/本机合成输出，来源与条件在图注及源码中",
-        "sha256": "7167fb8550ec7e71cc575025c0b4d8c39e21b4c7dcbdcfa2046d2cf9f6f5b94e",
+        "sha256": "1af51cccb9f684fbb3922f85369eb69bed8b26872fd9472fb31d878abb66fcbc",
         "sourceCode": "content/frontiers/2026/09/2026-09-22/code/explanations.html",
         "promptPaths": [],
         "checks": {
@@ -2702,7 +2702,7 @@
           "browserMobile": true,
           "checkedAt": "2026-09-22T08:22:46.023666+08:00"
         },
-        "sourceData": "content/frontiers/2026/09/2026-09-22/code/calopd-result.json"
+        "sourceData": "content/frontiers/2026/09/2026-09-22/code/calopd-result.json.txt"
       }
     ],
     "itemAssessments": [
@@ -3264,7 +3264,7 @@
   "practice": {
     "runtime": "3.14.3",
     "script": "content/frontiers/2026/09/2026-09-22/code/calopd_toy.py",
-    "output": "content/frontiers/2026/09/2026-09-22/code/calopd-result.json",
+    "output": "content/frontiers/2026/09/2026-09-22/code/calopd-result.json.txt",
     "ranAt": "2026-09-22T08:12:32.105574+08:00",
     "scope": "合成数值的公式运算；未训练、未调用模型"
   },
@@ -3291,7 +3291,8 @@
     "targetDateCheck": "passed",
     "build": "passed",
     "browserLayout": "passed",
-    "paperLinks": "passed: six reading cards and two PDF canvases"
+    "paperLinks": "passed: six reading cards and two PDF canvases",
+    "attachmentFix": "构建会过滤.json元数据扩展名，两个结构化数据附件改用.json.txt以保留原始JSON并实际发布；源码与链接同步修改，重新构建与校验"
   },
   "paperReaderValidation": {
     "checkedAt": "2026-09-22T00:21:46.073Z",
