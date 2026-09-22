@@ -1,0 +1,65 @@
+{
+  "kind": "synthetic arithmetic; not a trained model benchmark",
+  "runtime": "3.14.3",
+  "teacher": -1.0,
+  "interventions": [
+    -0.9,
+    -1.1
+  ],
+  "rows": [
+    {
+      "student": -1.5,
+      "teacher": -1.0,
+      "scale": 2,
+      "low": -1.2,
+      "high": -0.8,
+      "opd": 0.5,
+      "calopd": 0.3
+    },
+    {
+      "student": -1.0,
+      "teacher": -1.0,
+      "scale": 2,
+      "low": -1.2,
+      "high": -0.8,
+      "opd": 0.0,
+      "calopd": 0.0
+    },
+    {
+      "student": -0.5,
+      "teacher": -1.0,
+      "scale": 2,
+      "low": -1.2,
+      "high": -0.8,
+      "opd": -0.5,
+      "calopd": -0.3
+    },
+    {
+      "student": -1.5,
+      "teacher": -1.0,
+      "scale": 5,
+      "low": -1.5,
+      "high": -0.5,
+      "opd": 0.5,
+      "calopd": 0.0
+    },
+    {
+      "student": -1.0,
+      "teacher": -1.0,
+      "scale": 5,
+      "low": -1.5,
+      "high": -0.5,
+      "opd": 0.0,
+      "calopd": 0.0
+    },
+    {
+      "student": -0.5,
+      "teacher": -1.0,
+      "scale": 5,
+      "low": -1.5,
+      "high": -0.5,
+      "opd": -0.5,
+      "calopd": -0.0
+    }
+  ]
+}

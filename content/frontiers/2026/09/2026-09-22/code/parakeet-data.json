@@ -1,0 +1,22 @@
+{
+  "source": "https://huggingface.co/moondream/parakeet-redux",
+  "metric": "WER percent, lower is better",
+  "validation": "author benchmark, not locally rerun",
+  "groups": [
+    {
+      "name": "7 English sets mean",
+      "original": 6.26,
+      "redux": 6.55
+    },
+    {
+      "name": "25-language FLEURS",
+      "original": 11.62,
+      "redux": 10.56
+    },
+    {
+      "name": "noise set",
+      "original": 6.72,
+      "redux": 9.04
+    }
+  ]
+}

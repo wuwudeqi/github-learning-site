@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><title>2026-09-22 可复现解释图</title>
+<style>body{margin:0;background:#f6f5ef;color:#16373d;font-family:"PingFang SC",Arial,sans-serif}section{box-sizing:border-box;width:1200px;padding:44px 52px;background:#f6f5ef}h1{font-size:38px;margin:0 0 10px}p{font-size:21px;color:#52696b;margin:8px 0 20px}svg{width:1096px;display:block}text{font-family:"PingFang SC",Arial,sans-serif}footer{font-size:17px;color:#52696b;border-top:1px solid #cfdad7;padding-top:16px}</style>
+<section id="wer"><h1>体积变小，质量变化要分场景看</h1><p>词错误率 WER（%）越低越好 · 作者评测，非本站实测</p><svg viewBox="0 0 1096 430"></svg><footer>数据：moondream/parakeet-redux 模型卡；三组测试条件不同，只作组内前后对照。</footer></section>
+<section id="cal"><h1>学生落在老师区间之外，才保留剩余信号</h1><p>合成对数概率 · Python 实际运算 · 不代表模型训练结果</p><svg viewBox="0 0 1096 540"></svg><footer>依据 Cal-OPD 原文；区间由有限干预估计。完整数据：calopd-result.json</footer></section>
+<script>
+const ns='http://www.w3.org/2000/svg';
+function el(svg,tag,attrs,text){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);if(text!==undefined)e.textContent=text;svg.append(e);return e}
+const text=(s,x,y,t,size=22,fill='#16373d',anchor='start')=>el(s,'text',{x,y,'font-size':size,fill,'text-anchor':anchor},t);
+const line=(s,x1,y1,x2,y2,c='#b7c8c7',w=1)=>el(s,'line',{x1,y1,x2,y2,stroke:c,'stroke-width':w});
+const rect=(s,x,y,width,height,fill)=>el(s,'rect',{x,y,width,height,fill,rx:4});
+const werData=[['7个英语集平均',6.26,6.55],['25语种 FLEURS',11.62,10.56],['噪声条件',6.72,9.04]];
+const w=document.querySelector('#wer svg');
+rect(w,200,10,20,20,'#80969b');text(w,232,28,'原始 Parakeet',19);rect(w,480,10,20,20,'#087f8c');text(w,512,28,'Redux',19);
+for(let n=0;n<=12;n+=3){const x=230+n*60;line(w,x,58,x,362);text(w,x,397,String(n),19,'#52696b','middle')}
+werData.forEach(([name,a,b],i)=>{const y=83+i*100;text(w,12,y+32,name,22);rect(w,230,y,a*60,27,'#80969b');rect(w,230,y+35,b*60,27,'#087f8c');text(w,242+a*60,y+22,a.toFixed(2)+'%',20);text(w,242+b*60,y+57,b.toFixed(2)+'%',20)});
+fetch('./calopd-result.json').then(r=>r.json()).then(d=>{
+ const s=document.querySelector('#cal svg'),x=v=>260+(v+1.7)*500;
+ for(const [i,scale] of [2,5].entries()){
+  const y=86+i*245,rows=d.rows.filter(r=>r.scale===scale),r=rows[0];
+  text(s,10,y-18,'scale = '+scale,27);text(s,10,y+15,'['+r.low+', '+r.high+']',20,'#52696b');
+  rect(s,x(r.low),y-30,x(r.high)-x(r.low),60,'#c7e8df');line(s,x(-1.7),y,x(-.3),y,'#80969b',2);line(s,x(-1),y-46,x(-1),y+45,'#087f8c',2);text(s,x(-1),y-56,'老师 −1.0',19,'#087f8c','middle');
+  rows.forEach(r=>{el(s,'circle',{cx:x(r.student),cy:y,r:8,fill:'#df873c',stroke:'#f6f5ef','stroke-width':3});text(s,x(r.student),y+48,String(r.student),23,'#16373d','middle');text(s,x(r.student),y+96,'OPD '+r.opd,20,'#52696b','middle');text(s,x(r.student),y+130,'校准后 '+(r.calopd===0?'0':r.calopd),23,'#087f8c','middle')});
+ }
+ document.documentElement.dataset.ready='true';
+});
+</script>
