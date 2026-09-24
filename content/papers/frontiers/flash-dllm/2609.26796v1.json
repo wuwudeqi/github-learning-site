@@ -1,0 +1,17 @@
+{
+  "id": "paper-flash-dllm-pdf",
+  "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+  "category": "论文",
+  "author": "Nguyen-Tri, Quan、Ranjan, Mukul、Shen, Zhiqiang",
+  "date": "2026-09-22",
+  "description": "融合KV更新减少显存搬运，再用同一模型验证草稿。",
+  "tags": [
+    "AI",
+    "前沿",
+    "预印本"
+  ],
+  "source": "https://arxiv.org/abs/2609.26796v1",
+  "arxiv": "2609.26796",
+  "version": "v1",
+  "license": "http://creativecommons.org/licenses/by/4.0/"
+}

@@ -1,0 +1,146 @@
+{
+  "initial": [
+    {
+      "file": "tastebench-construction.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.25804v1",
+      "originalAsset": "figures/tastebench_construction.pdf",
+      "method": "source-original",
+      "transformation": "仅将作者原始矢量图转为PNG；无内容修改"
+    },
+    {
+      "file": "ruler-framework.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.25270v1",
+      "originalAsset": "figures/framework_final.pdf",
+      "method": "source-original",
+      "transformation": "仅将作者原始矢量图转为PNG；无内容修改"
+    },
+    {
+      "file": "stablevq-region.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.26774v1",
+      "originalAsset": "figs/pilot_regionvq_f1-2.pdf",
+      "method": "source-original",
+      "transformation": "仅将作者原始矢量图转为PNG；无内容修改"
+    },
+    {
+      "file": "flash-dllm.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.26796v1",
+      "originalAsset": "images/Flash-dLLM.pdf",
+      "method": "source-original",
+      "transformation": "仅将作者原始矢量图转为PNG；无内容修改"
+    },
+    {
+      "file": "jev-cascade.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.26550v1",
+      "originalAsset": "figures/figure1_jev_cascade_portrait_v6.pdf",
+      "method": "source-original",
+      "transformation": "仅将作者原始矢量图转为PNG；无内容修改"
+    },
+    {
+      "file": "dsec-architecture.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.22978v1",
+      "originalAsset": "figs/arch.pdf",
+      "method": "source-original",
+      "transformation": "仅将作者原始矢量图转为PNG；无内容修改"
+    },
+    {
+      "file": "robofollow-scenes.png",
+      "sourceUrl": "https://arxiv.org/abs/2609.25636v1",
+      "originalAsset": "pdf/main.png",
+      "method": "source-original",
+      "transformation": "原始PNG，未修改"
+    },
+    {
+      "file": "pixverse-r2.png",
+      "sourceUrl": "https://media.pixverse.ai/asset/blog/pixverse-introduces-r2-real-time-world-model-scaling-architecture-v2.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.473388+00:00",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "nemotron-diarization.png",
+      "sourceUrl": "https://cdn-uploads.huggingface.co/production/uploads/68127936de624fb6f57d9989/tRHMRHObCj_zNAGTee-QL.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.473998+00:00",
+      "ok": true,
+      "bytes": 208863
+    },
+    {
+      "file": "flux-action.jpg",
+      "sourceUrl": "https://cdn.sanity.io/images/2gpum2i6/production/703b406b7c433dc88560a4f79f0632f014c5a981-1920x1080.jpg",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.474325+00:00",
+      "ok": true,
+      "bytes": 271927
+    },
+    {
+      "file": "ovis-architecture.png",
+      "sourceUrl": "https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B/resolve/main/figures/ovis_embedding_model_architecture.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.474560+00:00",
+      "ok": true,
+      "bytes": 401470
+    },
+    {
+      "file": "gae-example.png",
+      "sourceUrl": "https://raw.githubusercontent.com/TencentARC/GAE-GeometricAutoEncoder/main/assets/gae_teaser.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.474788+00:00",
+      "ok": true,
+      "bytes": 1792494
+    },
+    {
+      "file": "foremerge-demo.png",
+      "sourceUrl": "https://raw.githubusercontent.com/naw103/foremerge/main/docs/assets/foremerge-terminal-demo.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.475026+00:00",
+      "ok": true,
+      "bytes": 191170
+    },
+    {
+      "file": "npunlock-intro.svg",
+      "sourceUrl": "https://raw.githubusercontent.com/hsfzxjy/npunlock/main/docs/npunlock-intro.svg",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:28.863931+00:00",
+      "ok": false,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "file": "relore-diagram.png",
+      "sourceUrl": "https://raw.githubusercontent.com/huggingface/relore/main/docs/relore-diag.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:29.024987+00:00",
+      "ok": true,
+      "bytes": 1088587
+    },
+    {
+      "file": "wechat-share.png",
+      "sourceUrl": "https://raw.githubusercontent.com/freestylefly/WeChatBridge/main/Resources/Screenshots/usage-wechat-share-menu.png",
+      "method": "source-original",
+      "checkedAt": "2026-09-23T23:49:29.055635+00:00",
+      "ok": true,
+      "bytes": 108029
+    }
+  ],
+  "retry": [
+    {
+      "file": "pixverse-r2.png",
+      "url": "https://media.pixverse.ai/asset/blog/pixverse-introduces-r2-real-time-world-model-scaling-architecture-v2.png?x-oss-process=style/cover-webp-large",
+      "checkedAt": "2026-09-24T07:58:46.371507+08:00",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "file": "npunlock-intro.svg",
+      "url": "https://raw.githubusercontent.com/hsfzxjy/npunlock/master/docs/npunlock-intro.svg",
+      "checkedAt": "2026-09-24T07:58:46.371799+08:00",
+      "ok": true,
+      "bytes": 109433
+    }
+  ],
+  "meta": {
+    "url": "https://about.fb.com/wp-content/uploads/2026/09/01_VRGlasses_Inline_CloseUp.jpg?w=1920",
+    "checkedAt": "2026-09-24T08:07:16.650165+08:00",
+    "bytes": 157906
+  }
+}

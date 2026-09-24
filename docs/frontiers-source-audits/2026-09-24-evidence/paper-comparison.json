@@ -1,0 +1,324 @@
+[
+  {
+    "id": "2609.25804",
+    "title": "The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25804",
+    "selected": true,
+    "reviewDepth": "原文核心方法、结果、基线、图注与局限",
+    "reason": "从长任务轨迹构造决策分叉，区分判断与执行能力。",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 111
+    }
+  },
+  {
+    "id": "2609.25270",
+    "title": "RULER: Instance-aware Rubric Rewards for SVG Generation",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25270",
+    "selected": true,
+    "reviewDepth": "原文核心方法、结果、基线、图注与局限",
+    "reason": "把每条绘图指令转成六项可判定标准，用于强化学习奖励。",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 59
+    }
+  },
+  {
+    "id": "2609.24981",
+    "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.24981",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "同一GAE方法已在模型栏深入，跨栏去重",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 38
+    }
+  },
+  {
+    "id": "2609.24058",
+    "title": "All-in-One Multilingual Scene Text Recognition with Script-aware Mixture-of-Experts",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.24058",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "多语言OCR MoE有应用价值，论文优先训练稳定性与Agent判断广度，保留后续",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 35
+    }
+  },
+  {
+    "id": "2609.24657",
+    "title": "Circuit Hypernetworks for Quantum-Augmented Diffusion Language Models",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.24657",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "量子残差有独特方法，但经典精确计算条件与公平预算需更深入核验，不仅据摘要称量子优势",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 24
+    }
+  },
+  {
+    "id": "2609.15987",
+    "title": "Bellman Policy Optimization",
+    "submittedAt": "2026-09-14T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.15987",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "9/14较早候选；优先近7天且完整读过实验的六篇",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 24
+    }
+  },
+  {
+    "id": "2609.26774",
+    "title": "StableVQ: Practical Guidelines for Stable Vector-Quantized Tokenizer Training",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.26774",
+    "selected": true,
+    "reviewDepth": "原文核心方法、结果、基线、图注与局限",
+    "reason": "通过梯度加权、区域码本监督和分开调度改善VQ训练稳定性。",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 20
+    }
+  },
+  {
+    "id": "2609.25165",
+    "title": "Ovis-Embedding: Pushing the Frontiers of Universal Omni-Modal Embeddings",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25165",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "Ovis已在模型栏深入，跨栏去重",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 20
+    }
+  },
+  {
+    "id": "2609.26550",
+    "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.26550",
+    "selected": true,
+    "reviewDepth": "原文核心方法、结果、基线、图注与局限",
+    "reason": "按工作负载校准置信度，检验低成本裁判与强模型的级联。",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 17
+    }
+  },
+  {
+    "id": "2609.25186",
+    "title": "From Pattern Recognizers to Personalized Companions: A Survey of Large Language Models in Mental Health",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25186",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "精神健康综述，今日已有相关评测新闻；研究栏目优先原创方法与实验",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 15
+    }
+  },
+  {
+    "id": "2609.26796",
+    "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.26796",
+    "selected": true,
+    "reviewDepth": "原文核心方法、结果、基线、图注与局限",
+    "reason": "融合KV更新减少显存搬运，再用同一模型验证草稿。",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 13
+    }
+  },
+  {
+    "id": "2609.25199",
+    "title": "Lean Pool: An AI-Maintained Archive of Formalized Mathematics",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25199",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "摘要仅简述数学库，无法据此核实优化质量与完整评测，不纳入六篇精读",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 11
+    }
+  },
+  {
+    "id": "2609.26781",
+    "title": "Agensh: Scaling Organizational Intelligence to 1,024 Agents",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.26781",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "1024 Agent扩展实验仅有限任务，已有Agent论文两篇；保留组织扩展为后续独立主题",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 8
+    }
+  },
+  {
+    "id": "2609.26457",
+    "title": "Recursive self-improvement of AI research agents",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.26457",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "自我改进8天、隐藏评估有价值，本期Agent主题已选判断与裁判，尚未完成全部原文条件核验",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 7
+    }
+  },
+  {
+    "id": "2609.24967",
+    "title": "Emergent Collusion in Long-Horizon LLM Agent Interaction",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.24967",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "串谋实验有价值但依赖特定奖惩设置；保留完整控制条件精读，不抢先泛化为所有协作",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 6
+    }
+  },
+  {
+    "id": "2609.25053",
+    "title": "LatentPort: Beyond KV Cache - Cross-Model Transfer of Recurrent Memory in Hybrid Language Models: A 4B-to-9B Hybrid-State Handoff Without Target Prefix Replay",
+    "submittedAt": "2026-09-07T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25053",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "9/7工作且仅单一4B到9B架构匹配状态转移，优先近7天推理系统Flash-dLLM",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 4
+    }
+  },
+  {
+    "id": "2609.25636",
+    "title": "RoboFollow: Unveiling the Instruction Following Mirage in Embodied Agents",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25636",
+    "selected": true,
+    "reviewDepth": "原文核心方法、结果、基线、图注与局限",
+    "reason": "用相同场景的多种可行动作，诊断语言到动作的泛化。",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 4
+    }
+  },
+  {
+    "id": "2609.26346",
+    "title": "Blaming Across the Aisle: Political Contrasting and Blame Attribution in the Danish Parliament",
+    "submittedAt": "2026-09-22T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.26346",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "丹麦议会语言应用，不在本期大模型方法重点范围",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 4
+    }
+  },
+  {
+    "id": "2609.25247",
+    "title": "Geometric and Semantic Coupling for Interaction Understanding in 3D Scenes",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25247",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "几何交互有价值，本期具身问题集中在RoboFollow语言消融",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 3
+    }
+  },
+  {
+    "id": "2609.06011",
+    "title": "Tri-PvP: Exposing Modality Bias in Omni-Modal Large Language Models through Perceptual-Propositional Evidence Conflicts",
+    "submittedAt": "2026-09-05T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.06011",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "9/5原日期，虽近期榜单出现但不改成新论文；本期优先新近方法",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 2
+    }
+  },
+  {
+    "id": "2609.25267",
+    "title": "ImIR: Image-Instruction Tuning for All-in-One Image Restoration",
+    "submittedAt": "2026-09-21T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.25267",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "图像修复有明确任务，主题与生成模型相近，优先已有原文精读的SVG奖励和VQ训练",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 2
+    }
+  },
+  {
+    "id": "2609.22319",
+    "title": "Embedding Physics Priors in Robot Learning: A Survey",
+    "submittedAt": "2026-09-15T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.22319",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "物理先验综述，优先可比较基线的原创研究",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 1
+    }
+  },
+  {
+    "id": "2609.22323",
+    "title": "ALPINE: Adaptive Localization for Parameter- and Sample-Efficient Few-Shot Learning",
+    "submittedAt": "2026-09-16T00:00:00.000Z",
+    "url": "https://arxiv.org/abs/2609.22323",
+    "selected": false,
+    "reviewDepth": "摘要、日期、任务与研究范围比较，未声称全文精读",
+    "reason": "少样本小模型定位方法，超出本期大模型主要主线，保留后续",
+    "heatSnapshot": {
+      "channel": "HF 2026-09-23 daily papers",
+      "observedAt": "2026-09-24T07:32:27.314925+08:00",
+      "upvotes": 1
+    }
+  }
+]
