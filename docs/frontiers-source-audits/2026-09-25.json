@@ -3765,8 +3765,8 @@
         "article": "content/frontiers/2026/09/2026-09-25/05-技术实践.md",
         "tier": "html-js",
         "purpose": "三个合成请求中固定阶段不变，解码耗时缩短到三分之一，整体分别加速1.15、1.50和2.14倍",
-        "caption": "HTML/JS按本机Python计算结果绘制。浅灰条保持不变，因此解码占比越小，优化整体的空间越小。所有毫秒数是合成设定，不是任何模型的实际延迟。[查看原尺寸](images/amdahl.png) · [数据](code/amdahl-results.json) · [原始输出](code/amdahl-output.txt) · [可复现HTML/JS](code/amdahl.html)。",
-        "sourceUrl": "content/frontiers/2026/09/2026-09-25/code/amdahl-results.json",
+        "caption": "HTML/JS按本机Python计算结果绘制。浅灰条保持不变，因此解码占比越小，优化整体的空间越小。所有毫秒数是合成设定，不是任何模型的实际延迟。[查看原尺寸](images/amdahl.png) · [数据](code/amdahl-results.txt) · [原始输出](code/amdahl-output.txt) · [可复现HTML/JS](code/amdahl.html)。",
+        "sourceUrl": "content/frontiers/2026/09/2026-09-25/code/amdahl-results.txt",
         "originalCandidates": [
           {
             "sourceUrl": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
@@ -3778,7 +3778,7 @@
         "sourceReceipt": "docs/frontiers-source-audits/2026-09-25-evidence/asset-receipts.json",
         "sha256": "965e3642959c4d1813ca8a53f6b4eb8a7ec3c23cbb79e97ae68a669e528f8b7c",
         "sourceCode": "content/frontiers/2026/09/2026-09-25/code/amdahl.html",
-        "dataPath": "content/frontiers/2026/09/2026-09-25/code/amdahl-results.json",
+        "dataPath": "content/frontiers/2026/09/2026-09-25/code/amdahl-results.txt",
         "promptPath": null,
         "adoptedGeneratorOutput": null,
         "checks": {
@@ -4017,7 +4017,8 @@
       "Parakeet清洗VoxPopuli的退步保留",
       "WhatWorked图舍入与差值解释",
       "Suncatcher先生成后修正热辐射与太阳能箭头",
-      "DrawCMS动画仅提取单帧并声明；未将概念图冒充实际结果"
+      "DrawCMS动画仅提取单帧并声明；未将概念图冒充实际结果",
+      "发布构建会过滤JSON，已把合成数据附件改为JSON格式.txt并同步Python、HTML和下载链接；实际复算数值不变"
     ],
     "navigationEvidence": "docs/frontiers-source-audits/2026-09-25-evidence/browser-navigation.json",
     "individualVisualReviewAt": "2026-09-25T08:23:11.866934+08:00",
@@ -4030,7 +4031,7 @@
       "kind": "synthetic-stage-duration-calculation",
       "measured_model_latency": false,
       "python": "3.14.3",
-      "ran_at": "2026-09-25T00:06:07.120818+00:00",
+      "ran_at": "2026-09-25T00:26:23.424835+00:00",
       "decode_speedup": 3,
       "rows": [
         {

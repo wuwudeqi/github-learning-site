@@ -23,6 +23,6 @@ result = {"kind": "synthetic-stage-duration-calculation", "measured_model_latenc
           "python": platform.python_version(), "ran_at": datetime.now(timezone.utc).isoformat(),
           "decode_speedup": DECODE_SPEEDUP, "rows": rows,
           "assumptions": ["serial stages", "fixed work unchanged", "no added draft overhead", "same input/output task"]}
-Path(__file__).with_name("amdahl-results.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
+Path(__file__).with_name("amdahl-results.txt").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
 for r in rows:
     print(f"decode {r['decode_share']:.0%}: 100ms -> {r['total_after_ms']:.3f}ms; overall {r['overall_speedup']:.3f}x; limit {r['infinite_decode_limit']:.2f}x")
