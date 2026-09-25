@@ -1,0 +1,227 @@
+[
+  {
+    "id": "2609.22682",
+    "title": "Self-Organizing Agent Teams Learn to Reason Together",
+    "date": "2026/09/19",
+    "url": "https://arxiv.org/abs/2609.22682",
+    "selected": false,
+    "reason": "多Agent自组织训练，优先有完整理论与基线精读的PACT/VHD；未把摘要当结论",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 4,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.22947",
+    "title": "RewardVerse: Rubric-Guided Policy Optimization for Video Reward Modeling",
+    "date": "2026/09/19",
+    "url": "https://arxiv.org/abs/2609.22947",
+    "selected": false,
+    "reason": "视频奖励建模，和近期奖励专题接近，本期优先信用理论与critic对齐",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 20,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.23038",
+    "title": "Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World",
+    "date": "2026/09/19",
+    "url": "https://arxiv.org/abs/2609.23038",
+    "selected": false,
+    "reason": "物理交互空间推理，当前六篇优先覆盖语言Agent记忆、训练、推理和实验理解；未全文精读",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 41,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.23784",
+    "title": "PackLab: A Comprehensive Framework for Developing, Training, and Evaluating MLLMs in Robotic Bin Packing",
+    "date": "2026/09/20",
+    "url": "https://arxiv.org/abs/2609.23784",
+    "selected": false,
+    "reason": "机器人装箱专用框架，本期项目/论文主题已较多系统，保留具身专题",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 10,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.24308",
+    "title": "HappyWorld-Bench",
+    "date": "2026/09/21",
+    "url": "https://arxiv.org/abs/2609.24308",
+    "selected": false,
+    "reason": "世界模型评测有价值，领域较集中，本期优先更通用的训练环境与实验判读；未全文精读",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 39,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.25963",
+    "title": "GeoPair: Geometry-Preserving Cross-Layer Factorization for Training-Free Transformer Compression",
+    "date": "2026/09/22",
+    "url": "https://arxiv.org/abs/2609.25963",
+    "selected": true,
+    "reason": "用层各自的校准几何选择共享关系，替代只配相邻层。",
+    "reviewDepth": "核心方法、实验结果、基线、图注和限制",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 11,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.26355",
+    "title": "PACT: From Credit Assignment to Critic Alignment",
+    "date": "2026/09/22",
+    "url": "https://arxiv.org/abs/2609.26355",
+    "selected": true,
+    "reason": "从token信用定义出发，用重要性修正缩小策略与评价器错位。",
+    "reviewDepth": "核心方法、实验结果、基线、图注和限制",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 14,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.26780",
+    "title": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+    "date": "2026/09/22",
+    "url": "https://arxiv.org/abs/2609.26780",
+    "selected": true,
+    "reason": "多人记忆保留逐字证据与人物/群体状态，并训练归因更稳的Writer。",
+    "reviewDepth": "核心方法、实验结果、基线、图注和限制",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 78,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.27321",
+    "title": "Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.27321",
+    "selected": true,
+    "reason": "环境动力学与评分来自同一个已解数学问题，减少事后对齐。",
+    "reviewDepth": "核心方法、实验结果、基线、图注和限制",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 6,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.27334",
+    "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.27334",
+    "selected": true,
+    "reason": "将记忆提炼移到读取时，当前任务成功就能给整理器训练信号。",
+    "reviewDepth": "核心方法、实验结果、基线、图注和限制",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 33,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.27490",
+    "title": "WhatWorkedBench: Benchmarking Experimental Understanding in AI Agents",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.27490",
+    "selected": true,
+    "reason": "以完整响应面衡量组件作用与交互，区分搜索成功和解释准确。",
+    "reviewDepth": "核心方法、实验结果、基线、图注和限制",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 8,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.27891",
+    "title": "Schr\\\"odinger's Code Repository: Have LLMs Learned SWE-bench or Memorized It?",
+    "date": "2026/08/21",
+    "url": "https://arxiv.org/abs/2609.27891",
+    "selected": false,
+    "reason": "SWE-bench记忆污染候选，来源日期字段存在差异，需进一步核版本历史；未将聚合日写成首发",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 14,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.27980",
+    "title": "Six Layers Less: Encoder Pruning for Whisper with Label-Free Recovery",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.27980",
+    "selected": false,
+    "reason": "Whisper层裁剪方法，适用范围较窄，本期模型已含转写；保留进一步实验核验",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 3,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.28256",
+    "title": "MemBodied: Recurrent Associative Memory for Vision-Language-Action Models",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.28256",
+    "selected": false,
+    "reason": "具身VLA循环记忆，与本期两篇语言记忆所需控制不同；未完成全实验精读，不抢先泛化",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 9,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  },
+  {
+    "id": "2609.28466",
+    "title": "The Past Frames the Future: Memory for Autoregressive Video Generation",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.28466",
+    "selected": false,
+    "reason": "自回归视频记忆路线，未与语言/具身记忆混成同题，保留视频专题精读",
+    "reviewDepth": "原始摘要、日期、任务范围比较；未声称全文精读",
+    "heatSnapshot": {
+      "channel": "HF daily papers 2026-09-24",
+      "observedAt": "2026-09-25T07:35:17.793297+08:00",
+      "upvotes": 36,
+      "limitation": "一次榜单快照，不能确认增长或独立使用"
+    }
+  }
+]

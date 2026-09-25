@@ -1,0 +1,448 @@
+{
+  "checkedAt": "2026-09-25T00:14:31.791Z",
+  "passed": true,
+  "results": [
+    {
+      "size": "desktop",
+      "key": "overview",
+      "title": "09-25｜前沿日报 · 2026年9月25日 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "desktop",
+      "key": "news",
+      "title": "09-25｜实时分身、决策接口与权限边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/suncatcher-heat.png",
+          "alt": "太阳能供电、芯片热量经热管传向独立散热板并辐射到太空的概念示意",
+          "complete": true,
+          "naturalWidth": 1536,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/claude-personal-connectors.png",
+          "alt": "Claude 在Slack请求使用个人连接器，并提供允许、允许且审阅和拒绝三个按钮",
+          "complete": true,
+          "naturalWidth": 1246,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "models",
+      "title": "09-25｜六模型：速度、判断与视觉控制 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/lfm-dspark.png",
+          "alt": "目标视觉语言模型把状态传给草稿模块，草稿提出连续token并决定保留前缀",
+          "complete": true,
+          "naturalWidth": 7006,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/lfm-speed.png",
+          "alt": "LFM作者测试中灰色预填充保持，紫色解码缩短，整体收益随任务变化",
+          "complete": true,
+          "naturalWidth": 1458,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/clm-playground.png",
+          "alt": "CLM真实演示界面把状态与可选动作分开列出并显示相容评分",
+          "complete": true,
+          "naturalWidth": 1597,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/qwen-scribble-input.png",
+          "alt": "Qwen ControlNet官方示例的涂鸦输入",
+          "complete": true,
+          "naturalWidth": 1280,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/qwen-scribble-output.png",
+          "alt": "Qwen ControlNet由同一涂鸦条件生成的官方示例输出",
+          "complete": true,
+          "naturalWidth": 1280,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "papers",
+      "title": "09-25｜六论文：记忆、归因与可验证实验 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/jitmem-method.png",
+          "alt": "JitMem：等问题来了，再决定旧经验怎么用",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 719.9765625,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/speakermem-method.png",
+          "alt": "SpeakerMem-R1：把“谁说的”和“说的是谁”分开",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/pact-method.png",
+          "alt": "PACT：更新策略以后，让评价器跟上新策略",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/geopair-method.png",
+          "alt": "GeoPair：按几何相似度配对权重，再共享字典",
+          "complete": true,
+          "naturalWidth": 1710,
+          "renderedWidth": 719.9765625,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/whatworked-effects.png",
+          "alt": "WhatWorkedBench：选到了最高分配置，还不算理解实验",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/vhd-play-method.png",
+          "alt": "VHD-Play：先解出机制，再把它变成可交互环境",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "projects",
+      "title": "09-25｜十个项目：从代码审查到可视工作流 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/whiteboard-demo.gif",
+          "alt": "Whiteboard：让代码审查有可追溯的设计画布",
+          "complete": true,
+          "naturalWidth": 1186,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/public-browser-benchmark.svg",
+          "alt": "Public Browser 3.0：把多步浏览操作合成一次计划",
+          "complete": true,
+          "naturalWidth": 880,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/drawcms-demo-frame.png",
+          "alt": "DrawCMS：把架构图做成可讲解的请求过程",
+          "complete": true,
+          "naturalWidth": 1866,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/rig-desktop.png",
+          "alt": "Rig：让编码Agent的分支有一套远程桌面",
+          "complete": true,
+          "naturalWidth": 1440,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/agentrun-support.svg",
+          "alt": "AgentRun：把可重复的Agent步骤保存成工作流",
+          "complete": true,
+          "naturalWidth": 960,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/rlark-architecture.png",
+          "alt": "RLark：统一管理云端训练与边缘任务",
+          "complete": true,
+          "naturalWidth": 1024,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/comfy-workflow.png",
+          "alt": "comfyui-openrouter：把云模型结果接入可视工作流",
+          "complete": true,
+          "naturalWidth": 804,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "practice",
+      "title": "09-25｜一个公式看懂局部加速与整体收益 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/amdahl.png",
+          "alt": "三个合成请求中固定阶段不变，解码耗时缩短到三分之一，整体分别加速1.15、1.50和2.14倍",
+          "complete": true,
+          "naturalWidth": 1100,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "overview",
+      "title": "09-25｜前沿日报 · 2026年9月25日 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "mobile",
+      "key": "news",
+      "title": "09-25｜实时分身、决策接口与权限边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/suncatcher-heat.png",
+          "alt": "太阳能供电、芯片热量经热管传向独立散热板并辐射到太空的概念示意",
+          "complete": true,
+          "naturalWidth": 1536,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/claude-personal-connectors.png",
+          "alt": "Claude 在Slack请求使用个人连接器，并提供允许、允许且审阅和拒绝三个按钮",
+          "complete": true,
+          "naturalWidth": 1246,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "models",
+      "title": "09-25｜六模型：速度、判断与视觉控制 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/lfm-dspark.png",
+          "alt": "目标视觉语言模型把状态传给草稿模块，草稿提出连续token并决定保留前缀",
+          "complete": true,
+          "naturalWidth": 7006,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/lfm-speed.png",
+          "alt": "LFM作者测试中灰色预填充保持，紫色解码缩短，整体收益随任务变化",
+          "complete": true,
+          "naturalWidth": 1458,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/clm-playground.png",
+          "alt": "CLM真实演示界面把状态与可选动作分开列出并显示相容评分",
+          "complete": true,
+          "naturalWidth": 1597,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/qwen-scribble-input.png",
+          "alt": "Qwen ControlNet官方示例的涂鸦输入",
+          "complete": true,
+          "naturalWidth": 1280,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/qwen-scribble-output.png",
+          "alt": "Qwen ControlNet由同一涂鸦条件生成的官方示例输出",
+          "complete": true,
+          "naturalWidth": 1280,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "papers",
+      "title": "09-25｜六论文：记忆、归因与可验证实验 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/jitmem-method.png",
+          "alt": "JitMem：等问题来了，再决定旧经验怎么用",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 343.9765625,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/speakermem-method.png",
+          "alt": "SpeakerMem-R1：把“谁说的”和“说的是谁”分开",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/pact-method.png",
+          "alt": "PACT：更新策略以后，让评价器跟上新策略",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/geopair-method.png",
+          "alt": "GeoPair：按几何相似度配对权重，再共享字典",
+          "complete": true,
+          "naturalWidth": 1710,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/whatworked-effects.png",
+          "alt": "WhatWorkedBench：选到了最高分配置，还不算理解实验",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/vhd-play-method.png",
+          "alt": "VHD-Play：先解出机制，再把它变成可交互环境",
+          "complete": true,
+          "naturalWidth": 2200,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "projects",
+      "title": "09-25｜十个项目：从代码审查到可视工作流 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/whiteboard-demo.gif",
+          "alt": "Whiteboard：让代码审查有可追溯的设计画布",
+          "complete": true,
+          "naturalWidth": 1186,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/public-browser-benchmark.svg",
+          "alt": "Public Browser 3.0：把多步浏览操作合成一次计划",
+          "complete": true,
+          "naturalWidth": 880,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/drawcms-demo-frame.png",
+          "alt": "DrawCMS：把架构图做成可讲解的请求过程",
+          "complete": true,
+          "naturalWidth": 1866,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/rig-desktop.png",
+          "alt": "Rig：让编码Agent的分支有一套远程桌面",
+          "complete": true,
+          "naturalWidth": 1440,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/agentrun-support.svg",
+          "alt": "AgentRun：把可重复的Agent步骤保存成工作流",
+          "complete": true,
+          "naturalWidth": 960,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/rlark-architecture.png",
+          "alt": "RLark：统一管理云端训练与边缘任务",
+          "complete": true,
+          "naturalWidth": 1024,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/comfy-workflow.png",
+          "alt": "comfyui-openrouter：把云模型结果接入可视工作流",
+          "complete": true,
+          "naturalWidth": 804,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "practice",
+      "title": "09-25｜一个公式看懂局部加速与整体收益 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-25/images/amdahl.png",
+          "alt": "三个合成请求中固定阶段不变，解码耗时缩短到三分之一，整体分别加速1.15、1.50和2.14倍",
+          "complete": true,
+          "naturalWidth": 1100,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    }
+  ]
+}

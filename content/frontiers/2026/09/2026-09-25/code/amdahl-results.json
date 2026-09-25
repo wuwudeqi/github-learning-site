@@ -1,0 +1,45 @@
+{
+  "kind": "synthetic-stage-duration-calculation",
+  "measured_model_latency": false,
+  "python": "3.14.3",
+  "ran_at": "2026-09-25T00:06:07.120818+00:00",
+  "decode_speedup": 3,
+  "rows": [
+    {
+      "decode_share": 0.2,
+      "fixed_ms": 80.0,
+      "decode_before_ms": 20.0,
+      "decode_after_ms": 6.666667,
+      "total_before_ms": 100,
+      "total_after_ms": 86.666667,
+      "overall_speedup": 1.153846,
+      "infinite_decode_limit": 1.25
+    },
+    {
+      "decode_share": 0.5,
+      "fixed_ms": 50.0,
+      "decode_before_ms": 50.0,
+      "decode_after_ms": 16.666667,
+      "total_before_ms": 100,
+      "total_after_ms": 66.666667,
+      "overall_speedup": 1.5,
+      "infinite_decode_limit": 2.0
+    },
+    {
+      "decode_share": 0.8,
+      "fixed_ms": 20.0,
+      "decode_before_ms": 80.0,
+      "decode_after_ms": 26.666667,
+      "total_before_ms": 100,
+      "total_after_ms": 46.666667,
+      "overall_speedup": 2.142857,
+      "infinite_decode_limit": 5.0
+    }
+  ],
+  "assumptions": [
+    "serial stages",
+    "fixed work unchanged",
+    "no added draft overhead",
+    "same input/output task"
+  ]
+}

@@ -1,0 +1,513 @@
+[
+  {
+    "id": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "modelId": "LiquidAI/LFM2.5-VL-3B-DSpark",
+    "createdAt": "2026-09-18T07:44:28.000Z",
+    "lastModified": "2026-09-24T14:18:16.000Z",
+    "gated": false,
+    "downloads": 37,
+    "likes": 10,
+    "cardData": {
+      "library_name": "sglang",
+      "base_model": "LiquidAI/LFM2.5-VL-3B",
+      "license": "other",
+      "license_name": "lfm1.0",
+      "license_link": "LICENSE",
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "speculative-decoding",
+        "dspark",
+        "lfm2",
+        "lfm2-vl",
+        "draft-model"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "model.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "fastino/GLiNER2.5-Decide",
+    "modelId": "fastino/GLiNER2.5-Decide",
+    "createdAt": "2026-09-23T14:56:12.000Z",
+    "lastModified": "2026-09-24T22:33:51.000Z",
+    "gated": false,
+    "downloads": 7,
+    "likes": 57,
+    "cardData": {
+      "library_name": "gliner2",
+      "license": "apache-2.0",
+      "language": [
+        "en"
+      ],
+      "pipeline_tag": "token-classification",
+      "tags": [
+        "gliner2",
+        "Text classification",
+        "Intent classification",
+        "Sentiment Analysis",
+        "Topic classification",
+        "Named Entity Recognition"
+      ],
+      "base_model": "fastino/gliner2-large-v1"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "GLiNER-2.5-Decision-HF-Banner.png"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "SKILL.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "encoder_config/config.json"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "special_tokens_map.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "Contrastive-LM/CLM-v0.1-8B",
+    "modelId": "Contrastive-LM/CLM-v0.1-8B",
+    "createdAt": "2026-09-21T20:09:04.000Z",
+    "lastModified": "2026-09-24T21:37:19.000Z",
+    "gated": false,
+    "downloads": 0,
+    "likes": 132,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3-8B",
+      "pipeline_tag": "text-ranking",
+      "language": [
+        "en"
+      ],
+      "tags": [
+        "contrastive-learning",
+        "verifier",
+        "reranker",
+        "agents",
+        "clm"
+      ],
+      "library_name": "contrastive-lm"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "CLM_v0.1-8B.pt"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/playground.png"
+      },
+      {
+        "rfilename": "config.json"
+      }
+    ]
+  },
+  {
+    "id": "moondream/parakeet-ultra",
+    "modelId": "moondream/parakeet-ultra",
+    "createdAt": "2026-09-22T00:23:15.000Z",
+    "lastModified": "2026-09-23T00:03:54.000Z",
+    "gated": false,
+    "downloads": 506,
+    "likes": 35,
+    "cardData": {
+      "license": "cc-by-4.0",
+      "language": [
+        "en",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt",
+        "ru",
+        "uk",
+        "hr",
+        "sl",
+        "lv",
+        "lt",
+        "et",
+        "fi",
+        "sv",
+        "da",
+        "nl",
+        "pl",
+        "cs",
+        "sk",
+        "hu",
+        "ro",
+        "bg",
+        "el",
+        "mt"
+      ],
+      "pipeline_tag": "automatic-speech-recognition",
+      "tags": [
+        "parakeet",
+        "tdt",
+        "speech-recognition"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".eval_results/open_asr_leaderboard.yaml"
+      },
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      }
+    ]
+  },
+  {
+    "id": "alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union",
+    "modelId": "alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union",
+    "createdAt": "2026-09-23T07:34:57.000Z",
+    "lastModified": "2026-09-24T06:02:12.000Z",
+    "gated": false,
+    "downloads": 0,
+    "likes": 24,
+    "cardData": {
+      "license": "other",
+      "license_link": "LICENSE",
+      "license_name": "qwen-research",
+      "library_name": "videox_fun",
+      "tags": [
+        "controlnet",
+        "controlnet-union",
+        "text-to-image",
+        "image-to-image",
+        "image-inpainting"
+      ],
+      "tasks": [
+        "text-to-image-synthesis"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "Qwen-Image-2.1-Fun-Controlnet-Union.safetensors"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "README_zh.md"
+      },
+      {
+        "rfilename": "asset/control_13_00000494.png"
+      },
+      {
+        "rfilename": "asset/control_1_00014291.png"
+      },
+      {
+        "rfilename": "asset/control_2_00001450.png"
+      },
+      {
+        "rfilename": "asset/control_2_00025069.png"
+      },
+      {
+        "rfilename": "asset/control_4_00000931.png"
+      },
+      {
+        "rfilename": "asset/control_4_00003435.png"
+      },
+      {
+        "rfilename": "asset/control_4_00027496.png"
+      },
+      {
+        "rfilename": "asset/control_5_00005389.png"
+      },
+      {
+        "rfilename": "asset/control_6_00009388.png"
+      },
+      {
+        "rfilename": "asset/control_7_00015359.png"
+      },
+      {
+        "rfilename": "asset/control_7_00018303.png"
+      },
+      {
+        "rfilename": "asset/control_7_00034515.png"
+      },
+      {
+        "rfilename": "asset/inpaint_control.jpg"
+      },
+      {
+        "rfilename": "asset/inpaint_mask.png"
+      },
+      {
+        "rfilename": "asset/inpaint_source.png"
+      },
+      {
+        "rfilename": "configuration.json"
+      },
+      {
+        "rfilename": "results/control_13_00000494.png"
+      },
+      {
+        "rfilename": "results/control_1_00014291.png"
+      },
+      {
+        "rfilename": "results/control_2_00001450.png"
+      },
+      {
+        "rfilename": "results/control_2_00025069.png"
+      },
+      {
+        "rfilename": "results/control_4_00000931.png"
+      },
+      {
+        "rfilename": "results/control_4_00003435.png"
+      },
+      {
+        "rfilename": "results/control_4_00027496.png"
+      },
+      {
+        "rfilename": "results/control_5_00005389.png"
+      },
+      {
+        "rfilename": "results/control_6_00009388.png"
+      },
+      {
+        "rfilename": "results/control_7_00015359.png"
+      },
+      {
+        "rfilename": "results/control_7_00018303.png"
+      },
+      {
+        "rfilename": "results/control_7_00034515.png"
+      },
+      {
+        "rfilename": "results/inpaint.png"
+      }
+    ]
+  },
+  {
+    "id": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "modelId": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "createdAt": "2026-09-23T15:56:49.000Z",
+    "lastModified": "2026-09-24T14:15:21.000Z",
+    "gated": "auto",
+    "downloads": 128,
+    "likes": 85,
+    "cardData": {
+      "base_model": "Qwen/Qwen3.8-27B",
+      "base_model_relation": "finetune",
+      "library_name": "transformers",
+      "tags": [
+        "qwen3_8",
+        "token-efficient",
+        "efficient-thinking"
+      ],
+      "license": "other",
+      "license_name": "polyform-small-business-1.0.0",
+      "license_link": "LICENSE",
+      "extra_gated_heading": "Request access to the BottleCap AI model",
+      "extra_gated_prompt": "Request access below. Add your company if you're evaluating this for work — we have enterprise versions that go further, and we'll make sure you hear about them first. We'll also send you new ThinkingCap releases and early access before they're public.\n\nTell us how you plan to use the model and we can help you get the most out of it — there's [a short form](https://docs.google.com/forms/d/e/1FAIpQLSdU8MyVP_mVx0_y55d6QCMXVyCKsQ6yg68KEqWm_EIptKB0Nw/viewform) for that too.\n",
+      "extra_gated_fields": {
+        "Name": "text",
+        "Company name (enter “N/A” if none)": "text",
+        "Work email (enter your personal email if none)": "text"
+      },
+      "extra_gated_button_content": "Agree and request access"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "LICENSE-Apache-2.0-Qwen.txt"
+      },
+      {
+        "rfilename": "LICENSE-PolyForm-Small-Business-1.0.0.txt"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "bottlecap-logo.png"
+      },
+      {
+        "rfilename": "budget_aggregate.png"
+      },
+      {
+        "rfilename": "cap_header.png"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "effort-frontier-per-benchmark-dark.png"
+      },
+      {
+        "rfilename": "effort-frontier-per-benchmark-dark.svg"
+      },
+      {
+        "rfilename": "effort-frontier-per-benchmark-light.png"
+      },
+      {
+        "rfilename": "effort-frontier-per-benchmark-light.svg"
+      },
+      {
+        "rfilename": "effort-frontier.svg"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model-00001-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00005-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00006-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00007-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00008-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00009-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00010-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00011-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00012-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00013-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00014-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00015-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00016-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00017-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model-00018-of-00018.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "preprocessor_config.json"
+      },
+      {
+        "rfilename": "social-instagram.png"
+      },
+      {
+        "rfilename": "social-linkedin.png"
+      },
+      {
+        "rfilename": "social-web.png"
+      },
+      {
+        "rfilename": "social-x.png"
+      },
+      {
+        "rfilename": "thinkingcap_demo.mp4"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "video_preprocessor_config.json"
+      },
+      {
+        "rfilename": "vocab.json"
+      }
+    ]
+  }
+]
