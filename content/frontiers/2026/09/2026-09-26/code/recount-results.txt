@@ -1,0 +1,22 @@
+{
+  "python": "3.14.3",
+  "source": "https://commandline.microsoft.com/run-assert-eval-responsible-ai-agent-risk-discovery-at-runtime/",
+  "rows": [
+    {
+      "label": "基线",
+      "violations": 12,
+      "applicable": 40,
+      "rate": 0.3
+    },
+    {
+      "label": "加入运行时策略",
+      "violations": 2,
+      "applicable": 34,
+      "rate": 0.058823529411764705
+    }
+  ],
+  "percentage_point_drop": 24.117647058823525,
+  "relative_rate_drop": 0.803921568627451,
+  "relative_count_drop": 0.8333333333333334,
+  "limitation": "Different applicable subsets; no causal estimate or paired test from aggregate counts."
+}

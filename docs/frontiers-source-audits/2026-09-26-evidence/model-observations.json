@@ -1,0 +1,1081 @@
+[
+  {
+    "id": "Logolabs/agate-preview-001",
+    "modelId": "Logolabs/agate-preview-001",
+    "createdAt": "2026-09-25T14:11:48.000Z",
+    "lastModified": "2026-09-25T22:15:25.000Z",
+    "gated": false,
+    "downloads": 0,
+    "likes": 11,
+    "cardData": {
+      "license": "mit",
+      "language": [
+        "en"
+      ],
+      "pipeline_tag": "text-to-image",
+      "datasets": [
+        "LucasFang/FLUX-Reason-6M"
+      ],
+      "tags": [
+        "text-to-image",
+        "flow-matching",
+        "rectified-flow",
+        "compact",
+        "from-scratch",
+        "256px",
+        "logolabs",
+        "eurohpc"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "agate/__init__.py"
+      },
+      {
+        "rfilename": "agate/fcdm_planner.py"
+      },
+      {
+        "rfilename": "agate/fcdm_t2i.py"
+      },
+      {
+        "rfilename": "agate/fcdm_thinker2.py"
+      },
+      {
+        "rfilename": "agate/pipeline.py"
+      },
+      {
+        "rfilename": "agate/text_encoder.py"
+      },
+      {
+        "rfilename": "assets/acknowledgment-banner.png"
+      },
+      {
+        "rfilename": "assets/battery_part1.png"
+      },
+      {
+        "rfilename": "assets/battery_part2.png"
+      },
+      {
+        "rfilename": "assets/colophon.png"
+      },
+      {
+        "rfilename": "assets/concept.png"
+      },
+      {
+        "rfilename": "assets/dashboard.png"
+      },
+      {
+        "rfilename": "assets/energy.png"
+      },
+      {
+        "rfilename": "assets/evolution.png"
+      },
+      {
+        "rfilename": "assets/geneval_categories.png"
+      },
+      {
+        "rfilename": "assets/geneval_lineage.png"
+      },
+      {
+        "rfilename": "assets/hero_samples.png"
+      },
+      {
+        "rfilename": "assets/judge_detail.png"
+      },
+      {
+        "rfilename": "assets/loss.png"
+      },
+      {
+        "rfilename": "assets/masthead.png"
+      },
+      {
+        "rfilename": "assets/numbers.png"
+      },
+      {
+        "rfilename": "assets/pareto.png"
+      },
+      {
+        "rfilename": "assets/qib.png"
+      },
+      {
+        "rfilename": "assets/side_by_side.png"
+      },
+      {
+        "rfilename": "comfyui/agate-guide-27600.safetensors"
+      },
+      {
+        "rfilename": "comfyui/agate-preview-001.safetensors"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generator.safetensors"
+      },
+      {
+        "rfilename": "guide/generator.safetensors"
+      },
+      {
+        "rfilename": "guide/text_encoder/config.json"
+      },
+      {
+        "rfilename": "guide/text_encoder/model.safetensors"
+      },
+      {
+        "rfilename": "guide/text_encoder/special_tokens_map.json"
+      },
+      {
+        "rfilename": "guide/text_encoder/tokenizer.json"
+      },
+      {
+        "rfilename": "guide/text_encoder/tokenizer_config.json"
+      },
+      {
+        "rfilename": "requirements.txt"
+      },
+      {
+        "rfilename": "text_encoder/config.json"
+      },
+      {
+        "rfilename": "text_encoder/model.safetensors"
+      },
+      {
+        "rfilename": "text_encoder/special_tokens_map.json"
+      },
+      {
+        "rfilename": "text_encoder/tokenizer.json"
+      },
+      {
+        "rfilename": "text_encoder/tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "orcarouter/OrcaSAQ-2-27B",
+    "modelId": "orcarouter/OrcaSAQ-2-27B",
+    "createdAt": "2026-09-24T03:44:51.000Z",
+    "lastModified": "2026-09-24T15:18:13.000Z",
+    "gated": false,
+    "downloads": 359,
+    "likes": 145,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.8-27B",
+      "base_model_relation": "quantized",
+      "pipeline_tag": "text-generation",
+      "library_name": "vllm",
+      "language": [
+        "en",
+        "zh"
+      ],
+      "tags": [
+        "qwen",
+        "qwen3.8",
+        "qwen3_5",
+        "orcasaq2",
+        "quantization",
+        "mixed-precision",
+        "3-bit",
+        "vllm",
+        "reasoning",
+        "function-calling",
+        "mtp",
+        "agentic",
+        "long-horizon",
+        "long-context"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/liberty.mp4"
+      },
+      {
+        "rfilename": "assets/pelican-bicycle.svg"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model-00001-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "preprocessor_config.json"
+      },
+      {
+        "rfilename": "quantization_config.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "video_preprocessor_config.json"
+      },
+      {
+        "rfilename": "vocab.json"
+      }
+    ]
+  },
+  {
+    "id": "KlangAI/pianissimo-sv",
+    "modelId": "KlangAI/pianissimo-sv",
+    "createdAt": "2026-09-23T05:06:46.000Z",
+    "lastModified": "2026-09-23T12:39:08.000Z",
+    "gated": false,
+    "downloads": 1298,
+    "likes": 21,
+    "cardData": {
+      "language": [
+        "sv"
+      ],
+      "license": "cc-by-4.0",
+      "pipeline_tag": "automatic-speech-recognition",
+      "library_name": "nemo",
+      "base_model": "nvidia/parakeet-tdt-0.6b-v3",
+      "base_model_relation": "finetune",
+      "tags": [
+        "speech",
+        "audio",
+        "fastconformer",
+        "tdt",
+        "swedish"
+      ],
+      "datasets": [
+        "google/fleurs",
+        "KlangAI/klang-dialects"
+      ],
+      "metrics": [
+        "wer"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "pianissimo-sv.nemo"
+      }
+    ]
+  },
+  {
+    "id": "harshatheg/GPC-1",
+    "modelId": "harshatheg/GPC-1",
+    "createdAt": "2026-09-21T17:14:04.000Z",
+    "lastModified": "2026-09-23T22:55:56.000Z",
+    "gated": false,
+    "downloads": 147,
+    "likes": 30,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.5-35B-A3B",
+      "library_name": "transformers",
+      "base_model_relation": "adapter",
+      "inference": false,
+      "tags": [
+        "classification",
+        "structured-prediction",
+        "multimodal",
+        "peft",
+        "lora"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".dockerignore"
+      },
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": ".gitignore"
+      },
+      {
+        "rfilename": "API.md"
+      },
+      {
+        "rfilename": "Dockerfile"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "MODEL_CARD.md"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "adapter/adapter_config.json"
+      },
+      {
+        "rfilename": "adapter/adapter_model.safetensors"
+      },
+      {
+        "rfilename": "assets/base_files.sha256.json"
+      },
+      {
+        "rfilename": "assets/codebook255.json"
+      },
+      {
+        "rfilename": "assets/examples/bounding-box.png"
+      },
+      {
+        "rfilename": "assets/examples/intent-classification.png"
+      },
+      {
+        "rfilename": "assets/examples/visual-coordinates.png"
+      },
+      {
+        "rfilename": "assets/runtime_manifest.json"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "demo/README.md"
+      },
+      {
+        "rfilename": "demo/app.py"
+      },
+      {
+        "rfilename": "demo/assets/person.jpg"
+      },
+      {
+        "rfilename": "demo/client.py"
+      },
+      {
+        "rfilename": "demo/presets.py"
+      },
+      {
+        "rfilename": "demo/requirements.txt"
+      },
+      {
+        "rfilename": "docs/ARCHITECTURE.md"
+      },
+      {
+        "rfilename": "docs/DATA_AND_LICENSES.md"
+      },
+      {
+        "rfilename": "docs/DOWNLOADS.md"
+      },
+      {
+        "rfilename": "docs/HUB_METRICS.md"
+      },
+      {
+        "rfilename": "download.py"
+      },
+      {
+        "rfilename": "examples/atomic_request.json"
+      },
+      {
+        "rfilename": "examples/numeric_request.json"
+      },
+      {
+        "rfilename": "gpc1_server/__init__.py"
+      },
+      {
+        "rfilename": "gpc1_server/api.py"
+      },
+      {
+        "rfilename": "gpc1_server/assets.py"
+      },
+      {
+        "rfilename": "gpc1_server/bootstrap.py"
+      },
+      {
+        "rfilename": "gpc1_server/compiler.py"
+      },
+      {
+        "rfilename": "gpc1_server/errors.py"
+      },
+      {
+        "rfilename": "gpc1_server/native_onepass.py"
+      },
+      {
+        "rfilename": "gpc1_server/runtime.py"
+      },
+      {
+        "rfilename": "gpc1_server/schemas.py"
+      },
+      {
+        "rfilename": "gpc1_server/vision_cache.py"
+      },
+      {
+        "rfilename": "model/LICENSE"
+      },
+      {
+        "rfilename": "model/chat_template.jinja"
+      },
+      {
+        "rfilename": "model/config.json"
+      },
+      {
+        "rfilename": "model/generation_config.json"
+      },
+      {
+        "rfilename": "model/merges.txt"
+      },
+      {
+        "rfilename": "model/model-00001-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00002-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00003-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00004-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00005-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00006-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00007-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00008-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00009-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00010-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00011-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00012-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00013-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00014-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00015-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model-00016-of-00016.safetensors"
+      },
+      {
+        "rfilename": "model/model.safetensors.index.json"
+      },
+      {
+        "rfilename": "model/preprocessor_config.json"
+      },
+      {
+        "rfilename": "model/tokenizer.json"
+      },
+      {
+        "rfilename": "model/tokenizer_config.json"
+      },
+      {
+        "rfilename": "model/video_preprocessor_config.json"
+      },
+      {
+        "rfilename": "model/vocab.json"
+      },
+      {
+        "rfilename": "requirements.txt"
+      }
+    ]
+  },
+  {
+    "id": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "modelId": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "createdAt": "2026-09-22T08:54:04.000Z",
+    "lastModified": "2026-09-24T16:22:00.000Z",
+    "gated": false,
+    "downloads": 57,
+    "likes": 33,
+    "cardData": {
+      "license": "other",
+      "license_name": "swift-open-license-1.0",
+      "license_link": "https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next/blob/main/LICENSE",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "gated": true,
+      "tags": [
+        "qwen3_8",
+        "moe",
+        "reasoning",
+        "efficient-thinking",
+        "token-efficient",
+        "post-training",
+        "agentic",
+        "terminal-bench"
+      ],
+      "datasets": [
+        "ukisai/Qwen3.8-27B-multi-turn-agent-sft"
+      ],
+      "base_model": "Qwen/Qwen3.8-Flash-Next",
+      "base_model_relation": "finetune"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "LICENSE-QWEN"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "benchmarks/gpqa-diamond-20260921.json"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model-00001-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00005-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00006-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00007-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00008-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00009-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00010-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00011-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00012-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00013-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00014-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00015-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00016-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00017-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00018-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00019-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00020-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00021-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00022-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00023-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00024-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00025-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00026-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00027-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00028-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00029-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00030-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00031-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00032-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00033-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00034-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00035-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00036-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00037-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00038-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00039-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00040-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00041-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00042-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00043-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00044-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00045-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00046-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00047-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00048-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00049-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00050-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00051-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00052-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00053-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00054-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00055-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00056-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00057-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00058-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00059-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00060-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00061-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00062-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00063-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00064-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00065-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00066-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00067-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00068-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00069-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00070-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00071-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00072-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00073-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00074-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00075-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00076-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00077-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00078-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00079-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00080-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00081-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00082-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00083-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00084-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00085-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00086-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00087-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00088-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00089-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00090-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00091-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00092-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00093-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00094-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00095-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00096-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00097-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00098-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00099-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00100-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00101-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00102-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00103-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00104-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00105-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00106-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00107-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00108-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00109-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00110-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00111-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00112-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00113-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00114-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00115-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00116-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00117-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00118-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00119-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00120-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00121-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00122-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00123-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00124-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00125-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00126-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00127-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00128-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00129-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00130-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model-00131-of-00131.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "preprocessor_config.json"
+      },
+      {
+        "rfilename": "swift-1.5-flash-next-demo.mp4"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "ukisai-banner.png"
+      },
+      {
+        "rfilename": "video_preprocessor_config.json"
+      },
+      {
+        "rfilename": "vocab.json"
+      }
+    ]
+  },
+  {
+    "id": "madebyollin/texture-fix-vae-for-qwen-image-2.1",
+    "modelId": "madebyollin/texture-fix-vae-for-qwen-image-2.1",
+    "createdAt": "2026-09-24T00:14:12.000Z",
+    "lastModified": "2026-09-24T18:38:15.000Z",
+    "gated": false,
+    "downloads": 29,
+    "likes": 19,
+    "cardData": {
+      "license": "other",
+      "license_name": "qwen-research",
+      "license_link": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE",
+      "base_model": "Qwen/Qwen-Image-2.1",
+      "library_name": "diffusers",
+      "tags": [
+        "vae",
+        "qwen-image"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "diffusion_pytorch_model.safetensors"
+      },
+      {
+        "rfilename": "images/decode-qwen-image-2.1-vae-full.png"
+      },
+      {
+        "rfilename": "images/decode-qwen-image-2.1-vae-zoomed-1.png"
+      },
+      {
+        "rfilename": "images/decode-qwen-image-2.1-vae-zoomed-2.png"
+      },
+      {
+        "rfilename": "images/decode-qwen-image-2.1-vae.png"
+      },
+      {
+        "rfilename": "images/decode-texture-fix-vae-full.png"
+      },
+      {
+        "rfilename": "images/decode-texture-fix-vae-zoomed-1.png"
+      },
+      {
+        "rfilename": "images/decode-texture-fix-vae-zoomed-2.png"
+      },
+      {
+        "rfilename": "images/decode-texture-fix-vae.png"
+      },
+      {
+        "rfilename": "texture_fix_vae_for_qwen_image_2.1_bf16.safetensors"
+      }
+    ]
+  }
+]

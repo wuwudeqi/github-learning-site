@@ -1,0 +1,50 @@
+# Third-party notices
+
+The following notices preserve applicable attribution. They do not grant additional rights to third-party material.
+
+## Code and base model
+
+- **GPC-1 inference code:** Apache-2.0.
+- **Qwen3.5-35B-A3B:** the pinned upstream revision `59d61f3ce65a6d9863b86d2e96597125219dc754` is published under Apache-2.0. Preserve its upstream license, copyright, patent, trademark, and attribution notices.
+
+The GPC-1 code license does not replace the terms of the base model, adapter artifacts, source material, or dependencies.
+
+## Material source notices
+
+- **CLINC OOS:** CC-BY-3.0; preserve the Larson et al. source attribution and license notice.
+- **UCI SMS Spam Collection:** CC-BY-4.0; Almeida, T. and Hidalgo, J. (2011), *SMS Spam Collection*, UCI Machine Learning Repository, DOI `10.24432/C5CC84`.
+- **HelpSteer2:** CC-BY-4.0 at revision `990b2711a36180dd19d9c94b8627844866f8982a`.
+- **Example photograph:** Liber4l, [Tim running](https://commons.wikimedia.org/wiki/File:Tim_running.jpg), public domain. The bounding-box illustration adds the model's predicted coordinates and presentation layout. No endorsement is implied.
+- **Pose illustration photograph:** [Misty / sub_lime79](https://www.flickr.com/photos/16932921@N08/4668205945/), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), with a point overlay. No endorsement is implied.
+- **Intent illustration text:** [Larson et al., CLINC OOS](https://github.com/clinc/oos-eval), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
+- **CMU motion capture:** retain CMU attribution and NSF EIA-0196217 funding acknowledgment. CMU's published permission does not permit direct resale of the data or converted data. No capture data are distributed here.
+- **GLiClass logic, Typed Decisions, OpenBookQA adaptation, and TruthfulQA MC1 adaptation:** preserve their recorded Apache-2.0 notices; retain the OpenBookQA transport repository's MIT notice.
+- **Google Civil Comments and public Open-Jev:** CC0-1.0. Open-Jev revision: `c67699e13d0ae25e35b77165a4b6b079bedc8aba`.
+- **CFPB Consumer Complaint Database:** official public-use source. This project does not recast that public-use statement as an SPDX license.
+- **U.S. Census Bureau:** 2024 American Community Survey 5-year Summary File, tract estimates. U.S. federal government public-domain material; source credit retained.
+- **Material UI:** MIT, copyright (c) 2014 Call-Em-All. The notice below applies to the upstream component declarations.
+- **PushT:** `lerobot/pusht`, revision `7628202a2180972f291ba1bc6723834921e72c19`, published under MIT. No source images or action records are distributed here.
+
+Source-specific rights and restrictions remain applicable independently of the GPC-1 code license.
+
+## Material UI license
+
+Copyright (c) 2014 Call-Em-All
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

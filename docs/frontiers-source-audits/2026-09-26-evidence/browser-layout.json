@@ -1,0 +1,400 @@
+{
+  "checkedAt": "2026-09-26T12:00:55.841Z",
+  "passed": true,
+  "results": [
+    {
+      "size": "desktop",
+      "key": "overview",
+      "title": "09-26｜前沿日报 · 2026年9月26日 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "desktop",
+      "key": "news",
+      "title": "09-26｜Copilot 改版、浏览器工作流与可验证代理 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/copilot-home.png",
+          "alt": "Copilot 改版：办公、写应用与持续代理进入同一工作入口",
+          "complete": true,
+          "naturalWidth": 1920,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/kimi-workflow.png",
+          "alt": "Kimi 浏览器插件：把网页操作记录变成可复用工作流",
+          "complete": true,
+          "naturalWidth": 1920,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/lerobot-sonic.png",
+          "alt": "LeRobot 展示人形机器人流程：慢速规划与快速身体控制分工",
+          "complete": true,
+          "naturalWidth": 1024,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/assert-loop.png",
+          "alt": "run-assert-eval：让发现风险、加拦截和回归测试连成闭环",
+          "complete": true,
+          "naturalWidth": 2048,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "models",
+      "title": "09-26｜六模型：小型生成、权重压缩与结构化判断 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/agate-concept.png",
+          "alt": "Agate中的Thinker把文本变成空间计划，Generator依据计划生成图像",
+          "complete": true,
+          "naturalWidth": 3000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/gpc-choices.png",
+          "alt": "GPC意图识别示例将同一文本映射到有限候选标签与分数",
+          "complete": true,
+          "naturalWidth": 1100,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/vae-base.png",
+          "alt": "原Qwen Image 2.1 VAE解码示例中的局部纹理",
+          "complete": true,
+          "naturalWidth": 512,
+          "renderedWidth": 512,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/vae-texture.png",
+          "alt": "同一示例改用texture fix解码器后的局部纹理",
+          "complete": true,
+          "naturalWidth": 512,
+          "renderedWidth": 512,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "papers",
+      "title": "09-26｜六论文：空间记忆、计算共享与探索 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/wrop-boxes.png",
+          "alt": "WROP：看不见的物体，还应当留在世界里",
+          "complete": true,
+          "naturalWidth": 2400,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/linear-training.png",
+          "alt": "线性叠加：一个Transformer能同时容纳两路文本吗",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/wanpe-pipeline.png",
+          "alt": "WanPE：先把拍摄意图写清，再让视频模型生成",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.953125,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/itersynth-method.png",
+          "alt": "IterSynth：搜索计划与中间总结，交给两个不同角色",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/rufus-pipeline.png",
+          "alt": "Rufus-Air：把多种后训练目标排成可检查的阶段",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/exploration-conditions.png",
+          "alt": "ExplorationBench：会做题，也要会发现规则",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "projects",
+      "title": "09-26｜十项目：追踪、剪辑、审查和本地推理 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/gitbug-web.png",
+          "alt": "git bug网页界面显示问题筛选表达式、搜索和新建入口",
+          "complete": true,
+          "naturalWidth": 1342,
+          "renderedWidth": 719.9375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/univer-workspace.png",
+          "alt": "Univer 1.0：给应用加上可操作的表格和文档",
+          "complete": true,
+          "naturalWidth": 3828,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/agentlens-compare.png",
+          "alt": "AgentLens：定位两次Agent运行的分叉点",
+          "complete": true,
+          "naturalWidth": 1440,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "practice",
+      "title": "09-26｜复算违规比例：先看分母再看降幅 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/recount.png",
+          "alt": "红色违规格从12个变2个，全部适用格也从40个变34个，旁边标出30%和5.9%",
+          "complete": true,
+          "naturalWidth": 1100,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "overview",
+      "title": "09-26｜前沿日报 · 2026年9月26日 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "mobile",
+      "key": "news",
+      "title": "09-26｜Copilot 改版、浏览器工作流与可验证代理 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/copilot-home.png",
+          "alt": "Copilot 改版：办公、写应用与持续代理进入同一工作入口",
+          "complete": true,
+          "naturalWidth": 1920,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/kimi-workflow.png",
+          "alt": "Kimi 浏览器插件：把网页操作记录变成可复用工作流",
+          "complete": true,
+          "naturalWidth": 1920,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/lerobot-sonic.png",
+          "alt": "LeRobot 展示人形机器人流程：慢速规划与快速身体控制分工",
+          "complete": true,
+          "naturalWidth": 1024,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/assert-loop.png",
+          "alt": "run-assert-eval：让发现风险、加拦截和回归测试连成闭环",
+          "complete": true,
+          "naturalWidth": 2048,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "models",
+      "title": "09-26｜六模型：小型生成、权重压缩与结构化判断 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/agate-concept.png",
+          "alt": "Agate中的Thinker把文本变成空间计划，Generator依据计划生成图像",
+          "complete": true,
+          "naturalWidth": 3000,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/gpc-choices.png",
+          "alt": "GPC意图识别示例将同一文本映射到有限候选标签与分数",
+          "complete": true,
+          "naturalWidth": 1100,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/vae-base.png",
+          "alt": "原Qwen Image 2.1 VAE解码示例中的局部纹理",
+          "complete": true,
+          "naturalWidth": 512,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/vae-texture.png",
+          "alt": "同一示例改用texture fix解码器后的局部纹理",
+          "complete": true,
+          "naturalWidth": 512,
+          "renderedWidth": 344,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "papers",
+      "title": "09-26｜六论文：空间记忆、计算共享与探索 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/wrop-boxes.png",
+          "alt": "WROP：看不见的物体，还应当留在世界里",
+          "complete": true,
+          "naturalWidth": 2400,
+          "renderedWidth": 343.9375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/linear-training.png",
+          "alt": "线性叠加：一个Transformer能同时容纳两路文本吗",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/wanpe-pipeline.png",
+          "alt": "WanPE：先把拍摄意图写清，再让视频模型生成",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.953125,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/itersynth-method.png",
+          "alt": "IterSynth：搜索计划与中间总结，交给两个不同角色",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/rufus-pipeline.png",
+          "alt": "Rufus-Air：把多种后训练目标排成可检查的阶段",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.953125,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/exploration-conditions.png",
+          "alt": "ExplorationBench：会做题，也要会发现规则",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.953125,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "projects",
+      "title": "09-26｜十项目：追踪、剪辑、审查和本地推理 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/gitbug-web.png",
+          "alt": "git bug网页界面显示问题筛选表达式、搜索和新建入口",
+          "complete": true,
+          "naturalWidth": 1342,
+          "renderedWidth": 343.9375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/univer-workspace.png",
+          "alt": "Univer 1.0：给应用加上可操作的表格和文档",
+          "complete": true,
+          "naturalWidth": 3828,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/agentlens-compare.png",
+          "alt": "AgentLens：定位两次Agent运行的分叉点",
+          "complete": true,
+          "naturalWidth": 1440,
+          "renderedWidth": 344,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "practice",
+      "title": "09-26｜复算违规比例：先看分母再看降幅 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:4189/github-learning-site/documents/frontiers/2026/09/2026-09-26/images/recount.png",
+          "alt": "红色违规格从12个变2个，全部适用格也从40个变34个，旁边标出30%和5.9%",
+          "complete": true,
+          "naturalWidth": 1100,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    }
+  ]
+}
