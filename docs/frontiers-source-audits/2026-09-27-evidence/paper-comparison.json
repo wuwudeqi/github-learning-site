@@ -1,0 +1,347 @@
+[
+  {
+    "id": "2609.23087",
+    "title": "Neural Spectral Capacity: Measuring and Designing Architectures from Network Specification Alone",
+    "date": "2026/09/19",
+    "url": "https://arxiv.org/abs/2609.23087",
+    "selected": false,
+    "reason": "神经谱理论方法，尚未完整核对论证条件，不只凭摘要纳入",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 7,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.23407",
+    "title": "OmniEcho: Audio-Visual Spatial Understanding for Omni-Modal Embodied Agents",
+    "date": "2026/09/20",
+    "url": "https://arxiv.org/abs/2609.23407",
+    "selected": true,
+    "reason": "用保留空间信息的音频支路补充多模态问答与导航。",
+    "reviewDepth": "核心方法、基线、结果、局限与原图精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 20,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.26368",
+    "title": "HySparse2: Hybrid Sparse Attention with Two-Level KV Sharing",
+    "date": "2026/09/22",
+    "url": "https://arxiv.org/abs/2609.26368",
+    "selected": false,
+    "reason": "HySparse2已在新闻深入展开，论文栏跨栏去重",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": null,
+      "observedAt": null,
+      "upvotes": null,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.28416",
+    "title": "Agent-Editing World Model: Rethinking World Modeling for LLM Agents",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.28416",
+    "selected": true,
+    "reason": "用动作判断与状态修订保留有效探索，减少错误假设继续积累。",
+    "reviewDepth": "核心方法、基线、结果、局限与原图精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 17,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.28603",
+    "title": "Learning to Discover Interesting Mathematics",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.28603",
+    "selected": true,
+    "reason": "把定理的条件证明难度与描述长度之比变成可训练目标。",
+    "reviewDepth": "核心方法、基线、结果、局限与原图精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 8,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.28654",
+    "title": "Training Object Permanence in World Models",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.28654",
+    "selected": false,
+    "reason": "WROP已在9/26精选，跨期重复",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 197,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.28811",
+    "title": "DeltaWAM: Delta World Action Models for Bimanual Manipulation",
+    "date": "2026/09/23",
+    "url": "https://arxiv.org/abs/2609.28811",
+    "selected": false,
+    "reason": "DeltaWAM与本期其他动作/世界模型方向相邻，保留后续完整实验核验",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 3,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.28923",
+    "title": "ViRDM: Taming Representation Distribution Matching for Few-Step Causal Video Generation",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.28923",
+    "selected": false,
+    "reason": "ViRDM候选，未完成方法对照精读，不能只按摘要收益入选",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 3,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29028",
+    "title": "RGBD20K: A Large-Scale Benchmark for RGB-D Semantic Segmentation",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29028",
+    "selected": false,
+    "reason": "RGB-D分割数据任务较专门，六篇优先语言/多模态/Agent的方法覆盖",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 7,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29362",
+    "title": "Parts-of-Speech as Emergent Categories in SAE Latent Space",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29362",
+    "selected": true,
+    "reason": "用词性分组、留出语料和模板控制，检查稀疏特征的可解释边界。",
+    "reviewDepth": "核心方法、基线、结果、局限与原图精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 10,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29421",
+    "title": "Rufus-Air: An Open LLM Post-Training Recipe",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29421",
+    "selected": false,
+    "reason": "Rufus AIR已在9/26精选",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 14,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29429",
+    "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29429",
+    "selected": false,
+    "reason": "有限候选决策与本期模型主题接近，优先其他研究问题",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 5,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29444",
+    "title": "IterSynth: Rethinking Deep Search Agents via Role-Decoupled Iterative Synthesis",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29444",
+    "selected": false,
+    "reason": "IterSynth已在9/26精选",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 9,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29647",
+    "title": "AgentKernel: The Trust-Native Agentic Operating System",
+    "date": "2026/08/29",
+    "url": "https://arxiv.org/abs/2609.29647",
+    "selected": false,
+    "reason": "首发8/29，列表日期不是首发，未核到近7天重大新增",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 6,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29816",
+    "title": "AV-GRPO: Modality-Anchored Decoupling Diffusion Reinforcement Learning for Joint Audio-Video Generation",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29816",
+    "selected": true,
+    "reason": "交替锚定音频或视频轨迹，让组内强化学习奖励更可比较。",
+    "reviewDepth": "核心方法、基线、结果、局限与原图精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 3,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29837",
+    "title": "PUBG Ally: A Conversational Embodied Agent as an AI Teammate",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29837",
+    "selected": false,
+    "reason": "游戏伙伴较专门，本期用空间声音和通用规划覆盖具身问题",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 5,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29845",
+    "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29845",
+    "selected": false,
+    "reason": "Linear Superposition已在9/26精选",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 64,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29892",
+    "title": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29892",
+    "selected": false,
+    "reason": "移动规划候选，未完成充分闭环方法与基线核验，保留后续而非断言质量差",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 10,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.29964",
+    "title": "World Action Agent: Harnessing VLMs for Robot Manipulation via World Action Rehearsal",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.29964",
+    "selected": false,
+    "reason": "视觉机器人规划与已选TAMP方向接近，优先有完整基线对照的精读条目",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 6,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.30077",
+    "title": "Rate-distortion optimization for full-reference image quality metrics via stochastic Hessian estimates",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.30077",
+    "selected": false,
+    "reason": "Rate-Distortion候选，尚需核对理论假设，保留不仓促外推",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 2,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.30199",
+    "title": "ExplorationBench: Measuring AI Systems' Exploration in Verifiable Alien Worlds",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.30199",
+    "selected": false,
+    "reason": "ExplorationBench已在9/26精选",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 9,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.30221",
+    "title": "WanPE: Towards Cinematic Prompt Enhancement for Modern Text-to-Video Generation",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.30221",
+    "selected": false,
+    "reason": "WanPE已在9/26精选",
+    "reviewDepth": "摘要、原始日期与任务范围比较，未声称全文精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 33,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  },
+  {
+    "id": "2609.30233",
+    "title": "Coding Agents for Generalized Task and Motion Planning Problems",
+    "date": "2026/09/24",
+    "url": "https://arxiv.org/abs/2609.30233",
+    "selected": true,
+    "reason": "让代理通过模拟器试验生成可复用程序，评估对未见实例的泛化。",
+    "reviewDepth": "核心方法、基线、结果、局限与原图精读",
+    "heatSnapshot": {
+      "channel": "hf-papers-friday.json",
+      "observedAt": "2026-09-27T09:48:20.160755+08:00",
+      "upvotes": 9,
+      "limitation": "单次榜单关注，不证明增长或独立复现"
+    }
+  }
+]

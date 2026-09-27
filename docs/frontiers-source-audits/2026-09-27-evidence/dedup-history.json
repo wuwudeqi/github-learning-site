@@ -1,0 +1,33 @@
+{
+  "windowDays": 30,
+  "previousItems": 654,
+  "matches": [
+    {
+      "id": "colibri-brio-mode",
+      "matches": [
+        {
+          "date": "2026-09-16",
+          "url": "repo:justvugg/colibri",
+          "title": "Colibri：把 MoE 专家分层放在磁盘、内存与 GPU",
+          "keys": [
+            "repo:justvugg/colibri"
+          ]
+        }
+      ],
+      "resolution": "9/16曾介绍Colibri；本次为Brio新增有限候选评分的重要版本，正文链接上期并区分补丁"
+    }
+  ],
+  "removed": [
+    {
+      "id": "clm-dual-encoder",
+      "prior": "2026-09-25 models",
+      "reason": "同一检查点没有新的实质能力，删除正文及配图"
+    }
+  ],
+  "semanticReview": [
+    "Muse不同新增访问步骤，非再次发布模型",
+    "Colibri明确新Brio版本，与9/16旧项目区分",
+    "UiPath原日期23日，25日只是日志补记",
+    "项目新建/实质更新与文档轻改分别核验"
+  ]
+}

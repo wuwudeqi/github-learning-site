@@ -1,0 +1,948 @@
+[
+  {
+    "id": "Cierpliwy/krea2-inpaint-edit",
+    "createdAt": "2026-09-24T13:02:52.000Z",
+    "lastModified": "2026-09-24T18:50:32.000Z",
+    "gated": false,
+    "downloads": 427,
+    "likes": 24,
+    "cardData": {
+      "tags": [
+        "image-to-image",
+        "inpainting",
+        "lora",
+        "diffusers",
+        "template:diffusion-lora"
+      ],
+      "widget": [
+        {
+          "output": {
+            "url": "https://huggingface.co/Cierpliwy/krea2-inpaint-edit/resolve/main/images/comparison.png"
+          },
+          "text": "masked image / this LoRA / yijunwang2-krea2-anypaint"
+        }
+      ],
+      "base_model": "krea/Krea-2-Raw",
+      "instance_prompt": null,
+      "license": "other",
+      "license_name": "krea-2-community-license",
+      "license_link": "https://www.krea.ai/krea-2-licensing"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "images/comparison.png"
+      },
+      {
+        "rfilename": "krea2_inpaint_edit.safetensors"
+      },
+      {
+        "rfilename": "krea2_inpaint_edit_mild.safetensors"
+      },
+      {
+        "rfilename": "krea2_inpaint_edit_strong.safetensors"
+      },
+      {
+        "rfilename": "workflows/background_replacement_example.json"
+      },
+      {
+        "rfilename": "workflows/moge_rotate_inpaint_example.json"
+      },
+      {
+        "rfilename": "workflows/outpaint_example.json"
+      },
+      {
+        "rfilename": "workflows/sam3_detect_example.json"
+      }
+    ],
+    "selected": true,
+    "reason": "新权重及作者任务/实验可核验，详见对应selectionEvidence",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "Contrastive-LM/CLM-v0.1-8B",
+    "createdAt": "2026-09-21T20:09:04.000Z",
+    "lastModified": "2026-09-24T21:37:19.000Z",
+    "gated": false,
+    "downloads": 434,
+    "likes": 285,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3-8B",
+      "pipeline_tag": "text-ranking",
+      "language": [
+        "en"
+      ],
+      "tags": [
+        "contrastive-learning",
+        "verifier",
+        "reranker",
+        "agents",
+        "clm"
+      ],
+      "library_name": "contrastive-lm"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "CLM_v0.1-8B.pt"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/playground.png"
+      },
+      {
+        "rfilename": "config.json"
+      }
+    ],
+    "selected": false,
+    "reason": "CLM已在9/25报道，本次删除重复",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "FINAL-Bench/ZTC-Judge-27B",
+    "createdAt": "2026-09-19T07:49:03.000Z",
+    "lastModified": "2026-09-21T23:56:26.000Z",
+    "gated": false,
+    "downloads": 395,
+    "likes": 41,
+    "cardData": {
+      "license": "apache-2.0",
+      "language": [
+        "en",
+        "ko"
+      ],
+      "tags": [
+        "ztc",
+        "answer-verification",
+        "hallucination-detection",
+        "zero-token",
+        "confidence-estimation"
+      ],
+      "library_name": "transformers",
+      "pipeline_tag": "text-classification"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "ZTC-Judge-27B.npz"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model.safetensors-00001-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00002-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00003-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00004-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00005-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00006-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00007-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00008-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00009-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00010-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors-00011-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "usage_curve.py"
+      },
+      {
+        "rfilename": "vocab.json"
+      },
+      {
+        "rfilename": "ztc_config.json"
+      },
+      {
+        "rfilename": "ztc_curve_probe.npz"
+      },
+      {
+        "rfilename": "ztc_curve_probe_v2.npz"
+      },
+      {
+        "rfilename": "ztc_judge.py"
+      }
+    ],
+    "selected": false,
+    "reason": "与有限选项或评判器候选相近，优先任务条件更完整且方向有差异的条目，未据此判为无价值",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "FrontiersMind/Lumma-fev-0.6b",
+    "createdAt": "2026-09-22T18:48:05.000Z",
+    "lastModified": "2026-09-26T17:56:24.000Z",
+    "gated": false,
+    "downloads": 1288,
+    "likes": 56,
+    "cardData": {
+      "license": "apache-2.0",
+      "language": [
+        "en"
+      ],
+      "base_model": [
+        "FrontiersMind/Lumma-0.6B-Base"
+      ],
+      "pipeline_tag": "text-classification",
+      "library_name": "transformers",
+      "tags": [
+        "lumma-fev",
+        "decision-model",
+        "typesafe-compatible",
+        "custom_code"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration_fev.py"
+      },
+      {
+        "rfilename": "configuration_lumma.py"
+      },
+      {
+        "rfilename": "fev_backbone.py"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "modeling_fev.py"
+      },
+      {
+        "rfilename": "modeling_lumma.py"
+      },
+      {
+        "rfilename": "tokenization_lumma.py"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ],
+    "selected": false,
+    "reason": "与有限选项或评判器候选相近，优先任务条件更完整且方向有差异的条目，未据此判为无价值",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "SupersonicLabs/Julia-1",
+    "createdAt": "2026-09-23T15:29:46.000Z",
+    "lastModified": "2026-09-26T22:03:07.000Z",
+    "gated": false,
+    "downloads": 0,
+    "likes": 75,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "jhu-clsp/mmBERT-small",
+      "library_name": "pytorch",
+      "tags": [
+        "decision-model",
+        "text-classification",
+        "multilingual",
+        "routing"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": ".gitignore"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/julia-banner.png"
+      },
+      {
+        "rfilename": "assets/supersonic-labs-dark.svg"
+      },
+      {
+        "rfilename": "assets/supersonic-labs-light.svg"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "encoder/config.json"
+      },
+      {
+        "rfilename": "inference-policy.json"
+      },
+      {
+        "rfilename": "julia/__init__.py"
+      },
+      {
+        "rfilename": "julia/cuda.py"
+      },
+      {
+        "rfilename": "julia/data.py"
+      },
+      {
+        "rfilename": "julia/inference.py"
+      },
+      {
+        "rfilename": "julia/model.py"
+      },
+      {
+        "rfilename": "julia/probabilities.py"
+      },
+      {
+        "rfilename": "julia/router/.gitignore"
+      },
+      {
+        "rfilename": "julia/router/README.md"
+      },
+      {
+        "rfilename": "julia/router/__init__.py"
+      },
+      {
+        "rfilename": "julia/router/build.py"
+      },
+      {
+        "rfilename": "julia/router/encoder.py"
+      },
+      {
+        "rfilename": "julia/router/engine.py"
+      },
+      {
+        "rfilename": "julia/router/native.py"
+      },
+      {
+        "rfilename": "julia/router/native/LAWS.bend"
+      },
+      {
+        "rfilename": "julia/router/native/PROOF.bend"
+      },
+      {
+        "rfilename": "julia/router/native/bridge.c"
+      },
+      {
+        "rfilename": "julia/router/native/router.bend"
+      },
+      {
+        "rfilename": "julia/router/router.py"
+      },
+      {
+        "rfilename": "julia/router/specialize.py"
+      },
+      {
+        "rfilename": "julia/router/tests/synthetic.py"
+      },
+      {
+        "rfilename": "julia/router/tests/test_engine.py"
+      },
+      {
+        "rfilename": "julia/router/tests/test_router.py"
+      },
+      {
+        "rfilename": "julia/router/transformer.py"
+      },
+      {
+        "rfilename": "julia/typed.py"
+      },
+      {
+        "rfilename": "julia_config.json"
+      },
+      {
+        "rfilename": "metrics/accuracy-20260924.json"
+      },
+      {
+        "rfilename": "metrics/context-8k-smoke.json"
+      },
+      {
+        "rfilename": "metrics/typed-cpu-20260926.json"
+      },
+      {
+        "rfilename": "metrics/validation.json"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "provenance.json"
+      },
+      {
+        "rfilename": "pyproject.toml"
+      },
+      {
+        "rfilename": "scripts/reproduce_typed.py"
+      },
+      {
+        "rfilename": "tests/test_context.py"
+      },
+      {
+        "rfilename": "tests/test_typed_api.py"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer_config.json"
+      }
+    ],
+    "selected": true,
+    "reason": "新权重及作者任务/实验可核验，详见对应selectionEvidence",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "Veda-Sparse/Minimax-H3-T2VA-Veda-8NFE-600Step-Preview",
+    "createdAt": "2026-09-25T10:56:07.000Z",
+    "lastModified": "2026-09-26T06:53:49.000Z",
+    "gated": false,
+    "downloads": 41,
+    "likes": 17,
+    "cardData": {
+      "license": "other",
+      "license_name": "minimax-h3-community",
+      "license_link": "LICENSE",
+      "base_model": "MiniMaxAI/MiniMax-H3",
+      "pipeline_tag": "text-to-video",
+      "tags": [
+        "text-to-video",
+        "video",
+        "audio",
+        "text-to-audio-video",
+        "sparse-attention",
+        "block-sparse",
+        "minimax-h3",
+        "veda",
+        "miowtion",
+        "fp8"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "AGENTS.md"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "minimax_h3_t2va_veda_8nfe_600step_preview_fp8.safetensors"
+      },
+      {
+        "rfilename": "miowtion-logo.svg"
+      }
+    ],
+    "selected": true,
+    "reason": "新权重及作者任务/实验可核验，详见对应selectionEvidence",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "Viggle/Qwen-Image-2.1-viggle-turbo",
+    "createdAt": "2026-09-22T04:14:56.000Z",
+    "lastModified": "2026-09-25T05:43:45.000Z",
+    "gated": false,
+    "downloads": 101512,
+    "likes": 293,
+    "cardData": {
+      "license": "other",
+      "license_name": "qwen-research",
+      "license_link": "LICENSE",
+      "base_model": "Qwen/Qwen-Image-2.1",
+      "base_model_relation": "adapter",
+      "library_name": "diffusers",
+      "pipeline_tag": "text-to-image",
+      "tags": [
+        "diffusers",
+        "lora",
+        "text-to-image",
+        "image-to-image",
+        "image-editing",
+        "distillation",
+        "dmd",
+        "turbo",
+        "few-step",
+        "qwen-image",
+        "comfyui"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "Qwen-Image-2.1-viggle-turbo-4step-lora-r64.safetensors"
+      },
+      {
+        "rfilename": "Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r128.safetensors"
+      },
+      {
+        "rfilename": "Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256.safetensors"
+      },
+      {
+        "rfilename": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors"
+      },
+      {
+        "rfilename": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r256.safetensors"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/viggle_turbo_promo.mp4"
+      },
+      {
+        "rfilename": "comfyui/Qwen-Image-2.1-viggle-turbo-edit.json"
+      },
+      {
+        "rfilename": "comfyui/Qwen-Image-2.1-viggle-turbo-t2i.json"
+      },
+      {
+        "rfilename": "comfyui/input/cat.webp"
+      },
+      {
+        "rfilename": "comfyui/input/woman2.webp"
+      },
+      {
+        "rfilename": "comfyui/viggle_turbo.py"
+      },
+      {
+        "rfilename": "peft/adapter_config.json"
+      },
+      {
+        "rfilename": "peft/adapter_model.safetensors"
+      },
+      {
+        "rfilename": "peft_v0.2.1/adapter_config.json"
+      },
+      {
+        "rfilename": "peft_v0.2.1/adapter_model.safetensors"
+      },
+      {
+        "rfilename": "peft_v0.2/adapter_config.json"
+      },
+      {
+        "rfilename": "peft_v0.2/adapter_model.safetensors"
+      },
+      {
+        "rfilename": "scheduler/scheduler_config.json"
+      },
+      {
+        "rfilename": "transformer/config.json"
+      },
+      {
+        "rfilename": "transformer/diffusion_pytorch_model.safetensors"
+      }
+    ],
+    "selected": true,
+    "reason": "新权重及作者任务/实验可核验，详见对应selectionEvidence",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "interfaze-ai/lev",
+    "createdAt": "2026-09-24T06:33:36.000Z",
+    "lastModified": "2026-09-25T17:24:25.000Z",
+    "gated": false,
+    "downloads": 41,
+    "likes": 73,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.5-4B",
+      "base_model_relation": "adapter",
+      "library_name": "peft",
+      "pipeline_tag": "zero-shot-classification",
+      "inference": false,
+      "language": [
+        "en"
+      ],
+      "tags": [
+        "lev",
+        "system-one",
+        "decision-model",
+        "calibrated-decisions",
+        "classification",
+        "routing",
+        "moderation",
+        "lora"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "adapter_config.json"
+      },
+      {
+        "rfilename": "adapter_model.safetensors"
+      },
+      {
+        "rfilename": "assets/accuracy-by-subset.png"
+      },
+      {
+        "rfilename": "assets/accuracy-per-parameter.png"
+      },
+      {
+        "rfilename": "assets/compute.png"
+      },
+      {
+        "rfilename": "assets/hero.png"
+      },
+      {
+        "rfilename": "assets/how-it-works.png"
+      },
+      {
+        "rfilename": "assets/leaderboard.png"
+      },
+      {
+        "rfilename": "calibration.json"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "lev_release.json"
+      },
+      {
+        "rfilename": "mode_b_head.pt"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ],
+    "selected": false,
+    "reason": "与有限选项或评判器候选相近，优先任务条件更完整且方向有差异的条目，未据此判为无价值",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "pixai-labs/pixai-tagger-v1.0",
+    "createdAt": "2026-09-15T10:11:13.000Z",
+    "lastModified": "2026-09-22T05:35:47.000Z",
+    "gated": false,
+    "downloads": 2234,
+    "likes": 46,
+    "cardData": {
+      "license": "apache-2.0",
+      "library_name": "transformers",
+      "pipeline_tag": "image-classification",
+      "tags": [
+        "multi-label",
+        "anime"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "banner.png"
+      },
+      {
+        "rfilename": "comparison_chart.png"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "figures/README.md"
+      },
+      {
+        "rfilename": "figures/benchmark.csv"
+      },
+      {
+        "rfilename": "figures/general_comparison.pdf"
+      },
+      {
+        "rfilename": "figures/general_comparison.png"
+      },
+      {
+        "rfilename": "figures/general_comparison.svg"
+      },
+      {
+        "rfilename": "figures/plot_benchmark.py"
+      },
+      {
+        "rfilename": "figures/quality_throughput.pdf"
+      },
+      {
+        "rfilename": "figures/quality_throughput.png"
+      },
+      {
+        "rfilename": "figures/quality_throughput.svg"
+      },
+      {
+        "rfilename": "figures/release_comparison.csv"
+      },
+      {
+        "rfilename": "figures/release_comparison.pdf"
+      },
+      {
+        "rfilename": "figures/release_comparison.png"
+      },
+      {
+        "rfilename": "figures/release_comparison.svg"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "pareto_chart.png"
+      },
+      {
+        "rfilename": "preprocessor_config.json"
+      },
+      {
+        "rfilename": "tagger_pipeline.py"
+      }
+    ],
+    "selected": true,
+    "reason": "新权重及作者任务/实验可核验，详见对应selectionEvidence",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "sky7350/Mica-v0.1-4B",
+    "createdAt": "2026-09-25T07:44:01.000Z",
+    "lastModified": "2026-09-26T07:44:12.000Z",
+    "gated": false,
+    "downloads": 1128,
+    "likes": 24,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.5-4B",
+      "language": [
+        "en",
+        "ko"
+      ],
+      "library_name": "transformers",
+      "tags": [
+        "decision-model",
+        "classification",
+        "judge",
+        "gguf",
+        "typesafe",
+        "jevbench"
+      ],
+      "pipeline_tag": "text-classification"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/accuracy.png"
+      },
+      {
+        "rfilename": "assets/latency.png"
+      },
+      {
+        "rfilename": "assets/mica_vs_kev.gif"
+      },
+      {
+        "rfilename": "calibration.json"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "mica-v0.1-4b-BF16.gguf"
+      },
+      {
+        "rfilename": "mica-v0.1-4b-Q4_0.gguf"
+      },
+      {
+        "rfilename": "mica-v0.1-4b-Q4_K_M.gguf"
+      },
+      {
+        "rfilename": "mica-v0.1-4b-Q5_K_M.gguf"
+      },
+      {
+        "rfilename": "mica-v0.1-4b-Q6_K.gguf"
+      },
+      {
+        "rfilename": "mica-v0.1-4b-Q8_0.gguf"
+      },
+      {
+        "rfilename": "model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ],
+    "selected": false,
+    "reason": "与有限选项或评判器候选相近，优先任务条件更完整且方向有差异的条目，未据此判为无价值",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  },
+  {
+    "id": "well9472/Nanosaur2-670M",
+    "createdAt": "2026-09-25T14:54:41.000Z",
+    "lastModified": "2026-09-26T11:26:25.000Z",
+    "gated": false,
+    "downloads": 0,
+    "likes": 64,
+    "cardData": {
+      "license": "mit",
+      "widget": [
+        {
+          "text": "newest, masterpiece, 1girl, solo, (fennec ears:1.3), long blonde wavy hair, blue eyes, big fluffy tail, smile, forest, sunlight",
+          "output": {
+            "url": "https://huggingface.co/well9472/Nanosaur2-670M/resolve/main/images/sample.png"
+          }
+        }
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "images/sample.png"
+      },
+      {
+        "rfilename": "nanosaur2_diffusion_model.safetensors"
+      },
+      {
+        "rfilename": "nanosaur2_support/__init__.py"
+      },
+      {
+        "rfilename": "nanosaur2_support/model.py"
+      },
+      {
+        "rfilename": "nanosaur2_support/nodes.py"
+      },
+      {
+        "rfilename": "nanosaur2_support/text_encoder.py"
+      },
+      {
+        "rfilename": "nanosaur2_support/train_lora.py"
+      },
+      {
+        "rfilename": "nanosaur2_support/vae.py"
+      },
+      {
+        "rfilename": "nanosaur2_text_encoder.safetensors"
+      },
+      {
+        "rfilename": "nanosaur2_vae.safetensors"
+      },
+      {
+        "rfilename": "nanosaur2_workflow.json"
+      }
+    ],
+    "selected": true,
+    "reason": "新权重及作者任务/实验可核验，详见对应selectionEvidence",
+    "snapshotLimitation": "downloads/likes为本次快照，不是近7天增长或独立用户"
+  }
+]

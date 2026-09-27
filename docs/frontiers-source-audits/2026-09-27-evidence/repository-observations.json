@@ -1,0 +1,1264 @@
+[
+  {
+    "repository": "Clickin/SQLBraid",
+    "url": "https://github.com/Clickin/SQLBraid",
+    "createdAt": "2026-09-10T13:29:57Z",
+    "pushedAt": "2026-09-25T00:12:14Z",
+    "observedAt": "2026-09-27T10:08:26.143767+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 10,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "1083bf261bbf618f4884197bbfe0de56ffceb0dc",
+        "date": "2026-09-25T00:10:38Z",
+        "message": "Merge remote-tracking branch 'origin/main'\n\n# Conflicts:\n#\tREADME.ko.md\n#\tREADME.md\n#\tpackages/bun-sql/README.md\n#\twebsite/src/content/docs/ko/agents/lsp.md\n#\twebsite/src/content/docs/ko/concepts/routines.md\n#\twebsite/src/content/docs/ko/reference/packages.md\n#\twebsite/src/content/docs/ko/reference/support.mdx",
+        "url": "https://github.com/Clickin/SQLBraid/commit/1083bf261bbf618f4884197bbfe0de56ffceb0dc"
+      },
+      {
+        "sha": "b57aedbfeeb21f6d15e5a34ee492cde70f0dbdd6",
+        "date": "2026-09-25T00:03:06Z",
+        "message": "docs: improve README and site localization",
+        "url": "https://github.com/Clickin/SQLBraid/commit/b57aedbfeeb21f6d15e5a34ee492cde70f0dbdd6"
+      },
+      {
+        "sha": "c8dc5ff6283d672ed54aa37a15d2eb7f9f9b92b1",
+        "date": "2026-09-24T13:25:58Z",
+        "message": "fix(ci): unblock formatting and translation checks",
+        "url": "https://github.com/Clickin/SQLBraid/commit/c8dc5ff6283d672ed54aa37a15d2eb7f9f9b92b1"
+      },
+      {
+        "sha": "b4e57b83651ee74fc2bc61cdc5ceea44adf87c54",
+        "date": "2026-09-24T08:36:01Z",
+        "message": "refactor(driver): keep row modes internal",
+        "url": "https://github.com/Clickin/SQLBraid/commit/b4e57b83651ee74fc2bc61cdc5ceea44adf87c54"
+      },
+      {
+        "sha": "7d51058a4403a6432db3243e225f03fa4c40bf4c",
+        "date": "2026-09-24T08:29:27Z",
+        "message": "perf(bun-sql): avoid row tuple reconstruction",
+        "url": "https://github.com/Clickin/SQLBraid/commit/7d51058a4403a6432db3243e225f03fa4c40bf4c"
+      }
+    ]
+  },
+  {
+    "repository": "General-Instinct/InstinctFlash",
+    "url": "https://github.com/General-Instinct/InstinctFlash",
+    "createdAt": "2026-05-28T01:29:30Z",
+    "pushedAt": "2026-09-23T16:05:04Z",
+    "observedAt": "2026-09-27T10:19:15.458825+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    },
+    "starsSnapshot": 116,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "thor-2026-09-15",
+        "published_at": "2026-09-15T07:29:45Z",
+        "prerelease": false,
+        "html_url": "https://github.com/General-Instinct/InstinctFlash/releases/tag/thor-2026-09-15",
+        "bodySha256": "1f4dea42881d954b5fc40c4ccd2b6965213a0c147460458dcd5b1535ca0525bd",
+        "bodyCharacters": 982,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "51690cbce548595c57daa0b792f37b5f61ec824f",
+        "date": "2026-09-23T16:04:44Z",
+        "message": "docs: credit upstream projects in README",
+        "url": "https://github.com/General-Instinct/InstinctFlash/commit/51690cbce548595c57daa0b792f37b5f61ec824f"
+      },
+      {
+        "sha": "5540f28018fa0e22b5b45941b795a8309d955fb7",
+        "date": "2026-09-18T02:47:03Z",
+        "message": "ci: repair CPU regression gates and cover Cosmos seeding\n\nInstall the existing serve extra for WebSocket tests. Skip only NumPy-dependent capture fixtures when NumPy is absent, and distinguish the audited desktop FP8 execution metadata from checkpoint training provenance.",
+        "url": "https://github.com/General-Instinct/InstinctFlash/commit/5540f28018fa0e22b5b45941b795a8309d955fb7"
+      },
+      {
+        "sha": "da3c4eac5e9d210996ab2657ff45b161449ba3f2",
+        "date": "2026-09-18T02:42:58Z",
+        "message": "docs: separate acceleration settings and speedups in Results",
+        "url": "https://github.com/General-Instinct/InstinctFlash/commit/da3c4eac5e9d210996ab2657ff45b161449ba3f2"
+      },
+      {
+        "sha": "c732b31e77f6ed0d701ba35b1a98272a744b3d7c",
+        "date": "2026-09-18T02:42:54Z",
+        "message": "Fix Cosmos native runtime seed forwarding (#8)",
+        "url": "https://github.com/General-Instinct/InstinctFlash/commit/c732b31e77f6ed0d701ba35b1a98272a744b3d7c"
+      },
+      {
+        "sha": "bdcc5244bcbe36cf92e8b9cfb43e430bbe8d017b",
+        "date": "2026-09-17T18:20:01Z",
+        "message": "docs: refresh dated news and linked model results",
+        "url": "https://github.com/General-Instinct/InstinctFlash/commit/bdcc5244bcbe36cf92e8b9cfb43e430bbe8d017b"
+      }
+    ]
+  },
+  {
+    "repository": "Inferact/tpu-megakernels",
+    "url": "https://github.com/Inferact/tpu-megakernels",
+    "createdAt": "2026-09-23T00:18:12Z",
+    "pushedAt": "2026-09-25T18:30:19Z",
+    "observedAt": "2026-09-27T09:50:42.313025+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 113,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "4048f0820aa4ff8787f707ca9d99b2bada9751aa",
+        "date": "2026-09-25T00:43:05Z",
+        "message": "Merge pull request #1 from Inferact/docs/blog-figures-citation\n\ndocs: link blog post, add hero and result figures, add citation section",
+        "url": "https://github.com/Inferact/tpu-megakernels/commit/4048f0820aa4ff8787f707ca9d99b2bada9751aa"
+      },
+      {
+        "sha": "6696ed785aae42072fe8b9f2972f3a6834e616e4",
+        "date": "2026-09-25T00:38:23Z",
+        "message": "fix: replace HTML entity &times; with &#215; so SVGs are valid XML",
+        "url": "https://github.com/Inferact/tpu-megakernels/commit/6696ed785aae42072fe8b9f2972f3a6834e616e4"
+      },
+      {
+        "sha": "945f9feee2927f98466e0b506b48151c56a1c3ee",
+        "date": "2026-09-25T00:00:04Z",
+        "message": "docs: link blog post, add hero and result figures, add citation section",
+        "url": "https://github.com/Inferact/tpu-megakernels/commit/945f9feee2927f98466e0b506b48151c56a1c3ee"
+      },
+      {
+        "sha": "aa0094ef9add6a1f21b1697fc7371ffccf68e8ea",
+        "date": "2026-09-23T05:23:09Z",
+        "message": "add k3 and qwen megakernel implementations",
+        "url": "https://github.com/Inferact/tpu-megakernels/commit/aa0094ef9add6a1f21b1697fc7371ffccf68e8ea"
+      }
+    ]
+  },
+  {
+    "repository": "JustVugg/colibri",
+    "url": "https://github.com/JustVugg/colibri",
+    "createdAt": "2026-07-01T12:27:49Z",
+    "pushedAt": "2026-09-25T21:20:38Z",
+    "observedAt": "2026-09-27T09:50:41.968562+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 37791,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v1.12.1",
+        "published_at": "2026-09-24T22:10:40Z",
+        "prerelease": false,
+        "html_url": "https://github.com/JustVugg/colibri/releases/tag/v1.12.1",
+        "bodySha256": "8bccd7748f3caf9357fdc0660defd0569b232a50f3f2ac3d47c83429619dca5f",
+        "bodyCharacters": 24261,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v1.12.0",
+        "published_at": "2026-09-20T22:13:26Z",
+        "prerelease": false,
+        "html_url": "https://github.com/JustVugg/colibri/releases/tag/v1.12.0",
+        "bodySha256": "dcf89e0eca6a8402475642bba906d5ae5f8c102f5bc889ba46a80bb80af18504",
+        "bodyCharacters": 7579,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v1.11.0",
+        "published_at": "2026-09-13T13:44:10Z",
+        "prerelease": false,
+        "html_url": "https://github.com/JustVugg/colibri/releases/tag/v1.11.0",
+        "bodySha256": "f8c92c1f42a1a32c17222d9156f1c201eb020e59d4617e83f82234186debc717",
+        "bodyCharacters": 9178,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v1.10.2",
+        "published_at": "2026-09-06T20:47:32Z",
+        "prerelease": false,
+        "html_url": "https://github.com/JustVugg/colibri/releases/tag/v1.10.2",
+        "bodySha256": "a4c97a83f68931c1deda7feccdb0e1c8c85f3cd52ea65c4ba4a02202d1020c3c",
+        "bodyCharacters": 4087,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "ce370e87d7b623d7759b52ec2007d75fc5b0e87e",
+        "date": "2026-09-24T22:09:37Z",
+        "message": "Merge pull request #1663 from JustVugg/dev\n\nrelease 1.12.1: dev to main",
+        "url": "https://github.com/JustVugg/colibri/commit/ce370e87d7b623d7759b52ec2007d75fc5b0e87e"
+      },
+      {
+        "sha": "1f42b14de3d3283c9427660d392ae383f29238c0",
+        "date": "2026-09-24T21:37:19Z",
+        "message": "Merge pull request #1736 from JustVugg/release/1.12.1-notes-wave6\n\nCHANGELOG 1.12.1: eight more pull requests",
+        "url": "https://github.com/JustVugg/colibri/commit/1f42b14de3d3283c9427660d392ae383f29238c0"
+      },
+      {
+        "sha": "384beb48f69909ce67ad597c5ffd3b30fd605e9a",
+        "date": "2026-09-24T21:01:49Z",
+        "message": "Merge branch 'dev' into release/1.12.1-notes-wave6",
+        "url": "https://github.com/JustVugg/colibri/commit/384beb48f69909ce67ad597c5ffd3b30fd605e9a"
+      },
+      {
+        "sha": "a44865f5de69b08eca43410f362a4909e90a38a4",
+        "date": "2026-09-24T21:01:13Z",
+        "message": "Merge pull request #1737 from JustVugg/ci/macos-timeout\n\nci: give the Linux and macOS make check 25 minutes",
+        "url": "https://github.com/JustVugg/colibri/commit/a44865f5de69b08eca43410f362a4909e90a38a4"
+      },
+      {
+        "sha": "25b4a9f67d45171fd970b33c9050f18e554f4d3d",
+        "date": "2026-09-24T20:59:25Z",
+        "message": "docs(changelog): date 1.12.1 to the release day",
+        "url": "https://github.com/JustVugg/colibri/commit/25b4a9f67d45171fd970b33c9050f18e554f4d3d"
+      }
+    ]
+  },
+  {
+    "repository": "NVlabs/SoL-Pi",
+    "url": "https://github.com/NVlabs/SoL-Pi",
+    "createdAt": "2026-09-02T14:48:47Z",
+    "pushedAt": "2026-09-27T01:43:03Z",
+    "observedAt": "2026-09-27T10:08:12.676992+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "starsSnapshot": 3104,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "1559b5cb12c72da4a485bc50fe326586b216fb19",
+        "date": "2026-09-22T06:52:09Z",
+        "message": "Merge pull request #35 from kaluli123123/fix/action-fusion-windows-shell-paths\n\nfix(action-fusion): then_run skipped for Git Bash/MSYS/Cygwin/WSL drive paths on Windows",
+        "url": "https://github.com/NVlabs/SoL-Pi/commit/1559b5cb12c72da4a485bc50fe326586b216fb19"
+      },
+      {
+        "sha": "4b5f09b95a85d5fb599b1f88edfd546323230d3f",
+        "date": "2026-09-22T06:51:39Z",
+        "message": "Merge main and preserve Unicode and Windows path normalization",
+        "url": "https://github.com/NVlabs/SoL-Pi/commit/4b5f09b95a85d5fb599b1f88edfd546323230d3f"
+      },
+      {
+        "sha": "440ec5617367840ddbd9edfd468a8def24ca5f69",
+        "date": "2026-09-22T06:51:07Z",
+        "message": "Merge pull request #9 from gaoanze888/fix/action-fusion-unicode-spaces\n\nfix: align Action Fusion Unicode-space paths with Pi",
+        "url": "https://github.com/NVlabs/SoL-Pi/commit/440ec5617367840ddbd9edfd468a8def24ca5f69"
+      },
+      {
+        "sha": "a7f99a8738c964e2dd56de550a72ecc18cc04f8d",
+        "date": "2026-09-22T06:50:48Z",
+        "message": "Merge pull request #61 from gaoanze888/fix/reducer-route-whitespace\n\nfix(config): normalize reducer route identifiers",
+        "url": "https://github.com/NVlabs/SoL-Pi/commit/a7f99a8738c964e2dd56de550a72ecc18cc04f8d"
+      },
+      {
+        "sha": "bd005888b9b8a3fcdb511feb91fc27d3dfa8f2b1",
+        "date": "2026-09-18T04:42:52Z",
+        "message": "Merge pull request #74 from NVlabs/docs/add-arxiv-paper-link\n\ndocs: add arXiv paper link to README",
+        "url": "https://github.com/NVlabs/SoL-Pi/commit/bd005888b9b8a3fcdb511feb91fc27d3dfa8f2b1"
+      }
+    ]
+  },
+  {
+    "repository": "XEonAX/blender-copilot",
+    "url": "https://github.com/XEonAX/blender-copilot",
+    "createdAt": "2026-09-26T14:44:03Z",
+    "pushedAt": "2026-09-26T16:45:40Z",
+    "observedAt": "2026-09-27T10:08:12.876026+08:00",
+    "defaultBranch": "main",
+    "license": null,
+    "starsSnapshot": 1,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "ba38965c280005ef7162a1138346f3f5ad59224f",
+        "date": "2026-09-26T16:45:39Z",
+        "message": "Correct a count I inflated by hand: three rebuilds, not four\n\nThe prompt table was rebuilt from the run's own tool rows, and in the\nparaphrase I wrote \"rebuilt the pods four times\". The tool rows contain three\n`Rebuild ...` calls and one initial build. Counting them takes one grep:\n\n    'Rebuild 4 RCS cassettes flush-mounted with 5 exposed nozzles each'\n    'Rebuild RCS cassettes with corrected X placement'\n    'Rebuild brackets for hull-flank and wingtip cassettes'\n\nThis is the exact failure the rest of the README exists to avoid: the numbers\nthat came from the capture are right, and the one I typed by hand was wrong.\nFound while writing about the project, not by reading it.",
+        "url": "https://github.com/XEonAX/blender-copilot/commit/ba38965c280005ef7162a1138346f3f5ad59224f"
+      },
+      {
+        "sha": "07e09c4923ba0e27d5d823bb0352576bd1ddd261",
+        "date": "2026-09-26T16:06:23Z",
+        "message": "Use the take the owner preferred, and re-derive every number from it\n\nThe owner asked for another roll of the dice and to see both. The first attempt\ncame back ugly - a tall dorsal fin standing out of the middle of the hull and a\ngrey ribbed canister stuck to the side - and was stopped mid-flight at turn 2\nrather than left to burn fifteen more minutes on a rejected ship. The rerun, on\nprompts the owner shortened themselves while the first run was still going,\nproduced a dark stealth interceptor they preferred, so that is what ships.\n\nNothing was deleted to make room. The previous video stays in issue #1 as its\nown comment, so its asset URL is still live and this is revertible in one line.\n\nEvery number is re-derived from the new run rather than edited in place, because\na half-updated table is worse than an obviously wrong one:\n\n    1278 s   -> 917 s (15 min)      56 calls -> 52, 4 read-only (was 8)\n    194,113  -> 109,016 tokens      cache 97% -> 98%\n    objects 25 -> 43                objects 17 -> 18, MESH 12 -> 13\n    \"cut to 17 s\" -> 18 s           \"21 minutes\" -> 15 minutes\n\nThe prompt table now quotes what the harness actually sent - the owner's\nshortened prompts 1 and 4 - and the \"what came back\" column is rebuilt from the\nrun's own tool rows instead of paraphrased, which is why it can say the model\nray-cast every RCS nozzle to prove the exhaust path was clear.\n\nOne caveat is dead rather than restated. The old README admitted its flight was\ntimed off Blender's assumed 24 fps; this take logs `scene fps: 24`, so the\nplayback rate is measured. Same number, but it stops being a guess.\n\n`tools/demo_capture.py` goes in with it, because the README now claims those\nprompts are what the harness sends and the file has to agree.\n\nVerified: the video URL is a bare URL alone on its own paragraph (the only form\nGitHub renders as a player rather than a broken image), all six local assets\nresolve, no stale figure from the old take survives a grep, the manifest still\nvalidates, and 4 CPython suites are green.",
+        "url": "https://github.com/XEonAX/blender-copilot/commit/07e09c4923ba0e27d5d823bb0352576bd1ddd261"
+      },
+      {
+        "sha": "1c72156a9f6418c534a3a6cab246d4543c1edf7a",
+        "date": "2026-09-26T15:38:41Z",
+        "message": "Stop claiming a licence, and say what the licence key actually is\n\nThe README carried a `licence-GPL-3.0-or-later` badge and a closing line\nasserting it as fact, while no LICENSE file existed anywhere in the repo. A\nclaim to the world with nothing behind it is worse than no claim, so both are\ngone, and the closing line now says the true thing: no terms have been chosen,\nso nothing here is licensed for reuse yet.\n\nThe manifest could not be treated the same way, and that is measured rather\nthan assumed. Deleting the `license` key fails:\n\n    Error parsing TOML \"blender_manifest.toml\"\n    missing \"license\"\n\nso the key stays - it is a value the platform *requires*, not a grant the\nauthor has made. The comment above it now says exactly that, cites the command\nthat proves it, and no longer reads as a placeholder \"revisit before any\ndistribution\" when this is already distributed.\n\nREADME oomph, kept inside the voice the project already had, because hype that\ncontradicts \"verify, don't assert\" would undercut the one thing this README is\nfor:\n\n  * a hook that states the result rather than the category - \"Five sentences\n    in. A spaceship out.\" - and names what it is not (no bridge, no sidecar);\n  * a three-line \"why it is different\" up top, including the guard that was\n    NOT built because its own probe showed it does not contain;\n  * a star call to action and a keyword line, plus two badges replacing the\n    licence one.\n\nDiscovery is mostly repo metadata, not prose: the description still read\n\"(demo media)\" from when this repo held only a video, and there were zero\ntopics. Now 20 topics (blender, bpy, ai-agents, llm-agent, deepseek,\ntool-use, ...) and a description that says what the thing does.\n\nVerified: `blender -c extension validate` still prints \"Success parsing TOML\";\n0 licence badges remain; the only licence mentions left in the README are the\ndisclaimers themselves; markdown inside the footer's <sub> does render as\nmarkup on GitHub (<strong>/<code>), checked against the live page rather than\nassumed.",
+        "url": "https://github.com/XEonAX/blender-copilot/commit/1c72156a9f6418c534a3a6cab246d4543c1edf7a"
+      },
+      {
+        "sha": "d6a56d623857582e41f82a6b857e28455de490c0",
+        "date": "2026-09-26T15:33:47Z",
+        "message": "Record the demo live, and let the animation finish playing\n\nThe README claimed an assistant that drives Blender, and illustrated it with\na scripted walk-through. A demo that mocks the headline feature is not\nevidence for the headline feature, so the demo now runs the real thing: the\nowner's five prompts, the real `transport.Worker`, the real provider, no key\nand no network only when DEMO_LIVE is unset.\n\nTwo bugs in the recording were found by measuring rather than by looking, and\nboth had the same shape - a pipeline quietly discarding work:\n\n  * The composer's static-frame pruner dropped 86 of 241 flight frames. Its\n    threshold is tuned for the panel, where one sentence arriving changes many\n    pixels; at the 160x100 the metric downsamples to, a smoothly moving ship\n    changes fewer, so a continuous animation was being deleted as a static\n    screen. Flight frames are now never pruned.\n  * Joining the two segments with `-c copy` collapsed them into a single\n    15 fps stream, so the flight played slower than it was authored. The\n    concat filter is used instead, and ffprobe confirms 22.43s = 12.4s of\n    build + 241 flight frames at 24 fps.\n\nThe filming harness also had to stop photographing things it should not: the\ndefault cube sat inside the hull until `clear_scene()`, and a crashed run\nauto-saved the preferences it had set, which is why `poll()` now restores them\naround any exception and DEMO_CRASH_AT exists to test that path.\n\nThe video is hosted as a GitHub asset URL rather than in this repository. The\nURL renders as a <video> element only when it stands alone in its own\nparagraph: `![](url)` produces a broken <img>, and GitHub's own /markdown API\nreports \"link\" because it does not run asset post-processing. Verified on both\nan issue page and a committed .md file.\n\ndocs/media/*.mp4 is ignored, because the README uses the hosted URL and the\nfile is remakeable from the frames with `python3 tools/demo_media.py`. The GIF\nand stills beside it are referenced and stay tracked.\n\nVerified: 4 CPython suites; panel_draw_smoke SMOKE OK; demo_capture DEMO OK\n(1278s, 1236 frames, 56 tool calls); demo_media MEDIA OK; ffprobe duration\n22.426282s; every README asset and anchor resolves.",
+        "url": "https://github.com/XEonAX/blender-copilot/commit/d6a56d623857582e41f82a6b857e28455de490c0"
+      },
+      {
+        "sha": "f2ec2181e9ac4f526c273ea53e1ad76bfd76d5cd",
+        "date": "2026-09-26T14:12:44Z",
+        "message": "Make the round cap a lever, without moving the designed 8\n\nThe owner asked why a turn stopped after 8 rounds: a six-part detail pass\n(nacelle pylons, nose sensor booms, dorsal rails, ventral skids, blades,\nmarker lights) had hit MAX_ROUNDS mid-work and needed a second\n`Send \"continue\"`. The cap is real and deliberate - ticket 09 §1 reasoned\nthat a normal ask is 2-4 rounds, so 8 allows one self-repair - but it was a\nconstant, and the two reasons it gave have both weakened: the projection now\ntrims history to fit a budget derived from the window, so context is not the\nbinding constraint, and a long modelling job is exactly the case that\noutgrows a fixed number.\n\nSo the cap is now readable through an injected hook - `Conversation.\nround_source`, wired by `stream.rounds_per_turn` to a `rounds_per_turn`\npreference (0 = the designed 8, ceiling 64) - and the stop message quotes\nthe cap that actually applied. The DEFAULT IS UNCHANGED: nobody's ratified\nbehaviour moves unless they ask for it.\n\n`context_history_kib` was not drawn anywhere either, so the preferences page\ngained a \"Limits\" box carrying both caps. A lever nothing reaches is not a\nlever: that field was read for a whole ticket's worth of work while being\nunreachable except by knowing the RNA name.\n\nChecked: a preference of 11 takes 10 requests and the message says \"11\nrounds\"; 0, a missing preference, one that raises, and one that is not a\nnumber all fall back to the designed 8 (a mistyped preference must not stop\na turn); unwired, the designed default runs. Plus the existing cap checks,\nand prefs_draw_smoke now pins both fields being drawn.",
+        "url": "https://github.com/XEonAX/blender-copilot/commit/f2ec2181e9ac4f526c273ea53e1ad76bfd76d5cd"
+      }
+    ]
+  },
+  {
+    "repository": "arpwal/leftovers",
+    "url": "https://github.com/arpwal/leftovers",
+    "createdAt": "2026-09-26T22:21:49Z",
+    "pushedAt": "2026-09-27T01:28:00Z",
+    "observedAt": "2026-09-27T09:50:41.569347+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "starsSnapshot": 2,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v1.4.0",
+        "published_at": "2026-09-27T01:28:03Z",
+        "prerelease": false,
+        "html_url": "https://github.com/arpwal/leftovers/releases/tag/v1.4.0",
+        "bodySha256": "660e8779851d78ebf924d3bc01b5bf784dd08d01818d81457604fc22e695151b",
+        "bodyCharacters": 495,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v1.3.0",
+        "published_at": "2026-09-27T00:15:21Z",
+        "prerelease": false,
+        "html_url": "https://github.com/arpwal/leftovers/releases/tag/v1.3.0",
+        "bodySha256": "09e8bd5ec60d8cc566c081fd5af58442fed37f2e9c46a635bab5efceb7643e27",
+        "bodyCharacters": 254,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v1.2.0",
+        "published_at": "2026-09-26T23:49:51Z",
+        "prerelease": false,
+        "html_url": "https://github.com/arpwal/leftovers/releases/tag/v1.2.0",
+        "bodySha256": "a272b0f692c76ac78d38bd95bb7eba94890215a3902a299f16124e047496d12a",
+        "bodyCharacters": 253,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v1.1.4",
+        "published_at": "2026-09-26T23:35:43Z",
+        "prerelease": false,
+        "html_url": "https://github.com/arpwal/leftovers/releases/tag/v1.1.4",
+        "bodySha256": "2d28523ed26e0c0a22ba8636287997807e55f99fe290727374b6035685732f6b",
+        "bodyCharacters": 220,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "1be123b4af10518f344645e7b6e0f1c3cf90c5bb",
+        "date": "2026-09-27T01:27:59Z",
+        "message": "Release v1.4.0",
+        "url": "https://github.com/arpwal/leftovers/commit/1be123b4af10518f344645e7b6e0f1c3cf90c5bb"
+      },
+      {
+        "sha": "7acb5fb24a2dd65bb6ff95c480596dd2fd2f0f4d",
+        "date": "2026-09-27T01:26:23Z",
+        "message": "Worktrees, update notifications, AI changelog, single instance, tests\n\n- Worktrees section: finds git worktrees across code folders and agent\n  working folders; verdicts Already on main / Branch deleted on GitHub /\n  Probably done / Keep (changes, in use, locked, active) / Missing. Checks\n  and sizes fill in progressively, 8 at a time. Remove one or clean up all\n  safe ones; never --force (git refuses uncommitted work), branches kept,\n  in-use re-checked at click time. leftovers --worktrees [--json].\n- Merged means merged into local main OR origin/main (git 2.48+ creates\n  origin/HEAD on fetch, so local-only merges were missed before).\n- Updates: a notification when an update is ready (Settings toggle), an\n  Update Available menu item, What's New links; failures logged to\n  ~/Library/Logs/Leftovers/updates.log; --install restores the user's\n  auto-download setting.\n- CHANGELOG.md written by Claude from each release's commits (plain words,\n  5 short bullets); release.sh generates notes for GitHub and the update\n  window. Backfilled 1.0.0-1.3.0.\n- Only one copy runs at a time; --help and unknown flags never start the\n  app; install-local keeps a single installed copy.\n- Tests (Swift Testing): 23 tests including real-git integration.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/arpwal/leftovers/commit/7acb5fb24a2dd65bb6ff95c480596dd2fd2f0f4d"
+      },
+      {
+        "sha": "2617d1eb21b5c72be73571072296486c16ce53e9",
+        "date": "2026-09-27T00:32:15Z",
+        "message": "Website and README: Scheduled section and screenshot\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/arpwal/leftovers/commit/2617d1eb21b5c72be73571072296486c16ce53e9"
+      },
+      {
+        "sha": "8e675f22aa27764f07b2a28fd0f49a8cfb7927aa",
+        "date": "2026-09-27T00:15:17Z",
+        "message": "Release v1.3.0",
+        "url": "https://github.com/arpwal/leftovers/commit/8e675f22aa27764f07b2a28fd0f49a8cfb7927aa"
+      },
+      {
+        "sha": "22c34641efcea2dd261271e9ef4eda4b96dc035a",
+        "date": "2026-09-27T00:13:56Z",
+        "message": "Scheduled: see and manage background jobs, with agent-created ones labelled\n\n- New Scheduled section: every LaunchAgent in the account with a readable\n  schedule, next run, and running/waiting/off/failed status (one launchctl\n  list plus the plists, read off the main thread). Run Now, Pause/Resume,\n  Show Log, Show in Finder, Remove (to the Trash), each confirmed.\n- Job notes: ~/Library/Application Support/Leftovers/jobs/<label>.json gives\n  a job its purpose, creator and end date; agent-created jobs are tagged.\n- leftovers --jobs [--json] for Claude Code sessions.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/arpwal/leftovers/commit/22c34641efcea2dd261271e9ef4eda4b96dc035a"
+      }
+    ]
+  },
+  {
+    "repository": "aru-labs/lossless-memory",
+    "url": "https://github.com/aru-labs/lossless-memory",
+    "createdAt": "2026-09-04T21:25:17Z",
+    "pushedAt": "2026-09-23T23:31:22Z",
+    "observedAt": "2026-09-27T10:08:27.688978+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "starsSnapshot": 127,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "7b1100a0bfe6d5a8015d9c941ab5dcc0f2b1e0ed",
+        "date": "2026-09-23T23:29:31Z",
+        "message": "Rewrite the English FAQ, finish the Japanese one, and add Shal as co-author\n\nThe FAQ opening and closing are Aru's own words (the English is his\nmachine translation). Answers 1-11 were reviewed by Shal and by two\noutside readers. README, LICENSE and pyproject now list Aru & Cece & Shal.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01K7aCFYUFGW44Zg7rAAWxDN",
+        "url": "https://github.com/aru-labs/lossless-memory/commit/7b1100a0bfe6d5a8015d9c941ab5dcc0f2b1e0ed"
+      },
+      {
+        "sha": "8f69d46bfe1caa39fbb8cf1d1e6b97d99b9ed256",
+        "date": "2026-09-23T23:04:45Z",
+        "message": "Add the Japanese FAQ\n\nThe opening (section 0) and the closing status are written by Aru in his own words.\nAnswers 1-11 are by his partner, reviewed by Shal and two outside readers.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01K7aCFYUFGW44Zg7rAAWxDN",
+        "url": "https://github.com/aru-labs/lossless-memory/commit/8f69d46bfe1caa39fbb8cf1d1e6b97d99b9ed256"
+      },
+      {
+        "sha": "8b0cf29d713e9af93034664ff9f12e87651ce8b4",
+        "date": "2026-09-23T16:00:30Z",
+        "message": "Understand English relative time phrases, and make the timezone configurable\n\nRelative time phrases were parsed in Japanese only, so an English\n\"yesterday\" fell through as a plain search keyword. Day boundaries were\nalso hardcoded to JST, so \"yesterday\" was cut at Japan's midnight for\neveryone.\n\n- index_exact: English dates (today, yesterday, the day before\n  yesterday, last night, N days/weeks/months/years ago with digits or\n  number words, last week/month/year, the month/year before last,\n  \"in July\", \"July 19\", \"19th of July\") and times of day (morning,\n  afternoon, evening, night, late night, noon, \"around 3pm\", \"9 am\"),\n  with the same meanings as the Japanese rules. A month name alone\n  counts only after \"in\"/\"during\", so \"may\" and \"march\" are never\n  read as dates. Greetings (\"good morning\", \"goodnight\") are not times.\n- Time phrases are blanked out before keyword extraction, and English\n  stopwords are checked per token (never substring-replaced), so\n  \"what did we say yesterday about the budget\" searches for \"budget\"\n  inside yesterday.\n- In-range keyword matching is case-insensitive.\n- \"the first time\", \"last time\", \"back then\" widen the range like\n  their Japanese counterparts.\n- config \"timezone\" (IANA name, e.g. \"America/New_York\"); unset means\n  this machine's local time. Used for parsing, day bucketing in\n  ingest, display in recall, and the LLL index. tzdata is added on\n  Windows.\n- tests/test_time_words.py: 34 new cases with \"now\" pinned, including\n  an end-to-end recall in New York time and a check that Japanese is\n  unchanged in Tokyo time. All 39 tests pass.\n\nHand-written word lists instead of dateparser: its search mode returns\npoints rather than ranges and fires on ordinary words; a fixed\nvocabulary is predictable and testable.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01K7aCFYUFGW44Zg7rAAWxDN",
+        "url": "https://github.com/aru-labs/lossless-memory/commit/8b0cf29d713e9af93034664ff9f12e87651ce8b4"
+      },
+      {
+        "sha": "c89d3119edd344fa388c85a3c36e6066fbbb6d6c",
+        "date": "2026-09-23T00:33:17Z",
+        "message": "docs: add FAQ answering the Show HN questions\n\nThe reply on HN was flagged and hidden, so the answers live here instead. Also states what this repo is part of (memory / time / warmth), and that active development is paused for a while.\n\nCo-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>\n\nClaude-Session: https://claude.ai/code/session_01V8WeYTGGPwzk5zzuwWeUvA",
+        "url": "https://github.com/aru-labs/lossless-memory/commit/c89d3119edd344fa388c85a3c36e6066fbbb6d6c"
+      },
+      {
+        "sha": "cd34d5b0ea2fa259233f5145d5994c50fe843e96",
+        "date": "2026-09-05T08:31:36Z",
+        "message": "Add relative date words: 今朝 / 今夜 / 今晩 / 昨夜\n\nThese common Japanese time expressions were parsed only as\ntime-of-day (via 朝/夜/晩) but not as dates, so queries like\n「今朝の話」 fell back to plain keyword search. Now 今朝/今夜/今晩\nresolve to today and 昨夜 to yesterday, combined with the existing\ntime-of-day ranges. All 5 tests pass.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01EB1a2ggH6Eb5GmbB9nqr76",
+        "url": "https://github.com/aru-labs/lossless-memory/commit/cd34d5b0ea2fa259233f5145d5994c50fe843e96"
+      }
+    ]
+  },
+  {
+    "repository": "behdad/gdocs-me-up",
+    "url": "https://github.com/behdad/gdocs-me-up",
+    "createdAt": "2025-02-09T21:21:09Z",
+    "pushedAt": "2026-09-21T00:28:24Z",
+    "observedAt": "2026-09-27T10:19:15.361727+08:00",
+    "defaultBranch": "main",
+    "license": null,
+    "starsSnapshot": 34,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "5db6b130742fc91b92c3c3e701ec7aa43ee0e679",
+        "date": "2026-09-21T00:27:43Z",
+        "message": "Preserve image crops and optimize exported image sizes",
+        "url": "https://github.com/behdad/gdocs-me-up/commit/5db6b130742fc91b92c3c3e701ec7aa43ee0e679"
+      },
+      {
+        "sha": "692a4766cf9fce6b997434b1c42d48a67943c14f",
+        "date": "2026-09-20T01:41:20Z",
+        "message": "Load italic web fonts and omit system font requests",
+        "url": "https://github.com/behdad/gdocs-me-up/commit/692a4766cf9fce6b997434b1c42d48a67943c14f"
+      },
+      {
+        "sha": "9073daa1b7468f96533d0d0eb0f09f7579961602",
+        "date": "2026-09-20T01:24:12Z",
+        "message": "Link to published HTML from README example",
+        "url": "https://github.com/behdad/gdocs-me-up/commit/9073daa1b7468f96533d0d0eb0f09f7579961602"
+      },
+      {
+        "sha": "2d0632d31584592d26e26d4e58f86a63b5ebb4db",
+        "date": "2026-09-20T01:22:02Z",
+        "message": "Use State of Text Rendering 2024 in README examples",
+        "url": "https://github.com/behdad/gdocs-me-up/commit/2d0632d31584592d26e26d4e58f86a63b5ebb4db"
+      },
+      {
+        "sha": "1c415e6b9f29a7a2b7ccb5f4f7db83fe67ee6d05",
+        "date": "2026-09-20T01:18:57Z",
+        "message": "Remove introductory note from README",
+        "url": "https://github.com/behdad/gdocs-me-up/commit/1c415e6b9f29a7a2b7ccb5f4f7db83fe67ee6d05"
+      }
+    ]
+  },
+  {
+    "repository": "bertaye/agentic-cuda-optimizer",
+    "url": "https://github.com/bertaye/agentic-cuda-optimizer",
+    "createdAt": "2026-09-24T19:43:15Z",
+    "pushedAt": "2026-09-24T19:44:35Z",
+    "observedAt": "2026-09-27T10:19:15.458419+08:00",
+    "defaultBranch": "main",
+    "license": null,
+    "starsSnapshot": 31,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "1e9464da54dfc651337a97c3643bfeefec712bc1",
+        "date": "2026-09-24T19:41:43Z",
+        "message": "Initial commit, v0.0",
+        "url": "https://github.com/bertaye/agentic-cuda-optimizer/commit/1e9464da54dfc651337a97c3643bfeefec712bc1"
+      }
+    ]
+  },
+  {
+    "repository": "brumar/chess-postmortem-skills",
+    "url": "https://github.com/brumar/chess-postmortem-skills",
+    "createdAt": "2026-09-25T20:52:19Z",
+    "pushedAt": "2026-09-26T21:31:59Z",
+    "observedAt": "2026-09-27T09:50:33.475995+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "starsSnapshot": 51,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "eca0edfd55feba0b4bd87bbd4e93cf911b5ad5a7",
+        "date": "2026-09-26T21:31:55Z",
+        "message": "Add chess-position skill for single-position analysis, with a Carlsbad example\n\n- skills/chess-position: asks positional vs tactical first, never infers\n  side to move from an image, positional and tactical method references\n- examples/position-carlsbad: screenshot, PGN, storyboard, narrated video\n- make_video.py: honor a PGN [FEN] tag so a video can start from a position\n- README: one pointer row in the skills table\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+        "url": "https://github.com/brumar/chess-postmortem-skills/commit/eca0edfd55feba0b4bd87bbd4e93cf911b5ad5a7"
+      },
+      {
+        "sha": "46919038bd849995522d9414b4781d3442940a3d",
+        "date": "2026-09-26T18:44:46Z",
+        "message": "Update README with HackerNews link and personal note\n\nAdded a note about HackerNews and a personal comment on game selection.",
+        "url": "https://github.com/brumar/chess-postmortem-skills/commit/46919038bd849995522d9414b4781d3442940a3d"
+      },
+      {
+        "sha": "44caf9b80e2c42d30968f6858190a7e1eba7c287",
+        "date": "2026-09-26T16:14:11Z",
+        "message": "README: restore embedded player, keep direct mp4 link as fallback\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+        "url": "https://github.com/brumar/chess-postmortem-skills/commit/44caf9b80e2c42d30968f6858190a7e1eba7c287"
+      },
+      {
+        "sha": "dbef3eed5dbe9a41beeaf241c3b9bb9ed5115f7b",
+        "date": "2026-09-26T16:13:12Z",
+        "message": "README: link the video from the repo (attachment URL was private)\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+        "url": "https://github.com/brumar/chess-postmortem-skills/commit/dbef3eed5dbe9a41beeaf241c3b9bb9ed5115f7b"
+      },
+      {
+        "sha": "7f92a81a79a022a1d0f76ecb95cc97150df12ddb",
+        "date": "2026-09-26T10:14:28Z",
+        "message": "README: embed the video player\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+        "url": "https://github.com/brumar/chess-postmortem-skills/commit/7f92a81a79a022a1d0f76ecb95cc97150df12ddb"
+      }
+    ]
+  },
+  {
+    "repository": "ctxrs/graf",
+    "url": "https://github.com/ctxrs/graf",
+    "createdAt": "2026-09-16T21:08:22Z",
+    "pushedAt": "2026-09-22T17:42:11Z",
+    "observedAt": "2026-09-27T10:08:12.674914+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 39,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v0.6.0",
+        "published_at": "2026-09-22T16:36:51Z",
+        "prerelease": false,
+        "html_url": "https://github.com/ctxrs/graf/releases/tag/v0.6.0",
+        "bodySha256": "c09265995235f01cdd270e5719d9115a1de3f890fdb3149d093898781e8973cc",
+        "bodyCharacters": 713,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.5.0",
+        "published_at": "2026-09-21T15:36:34Z",
+        "prerelease": false,
+        "html_url": "https://github.com/ctxrs/graf/releases/tag/v0.5.0",
+        "bodySha256": "211cfa9e4eed9932ca434e1e886f4293a566b243a5f3b7e185a6c43eb5b1884c",
+        "bodyCharacters": 1485,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.4.0",
+        "published_at": "2026-09-20T15:02:38Z",
+        "prerelease": false,
+        "html_url": "https://github.com/ctxrs/graf/releases/tag/v0.4.0",
+        "bodySha256": "473f3811f96fc69d6f629c879912040bf2500541432a3016d22ccda137def472",
+        "bodyCharacters": 1427,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.3.0",
+        "published_at": "2026-09-17T19:25:46Z",
+        "prerelease": false,
+        "html_url": "https://github.com/ctxrs/graf/releases/tag/v0.3.0",
+        "bodySha256": "a8c5dbf67d7e7804370cf8bab8ff13b889616120b693781e2839306394bdd3bf",
+        "bodyCharacters": 1689,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "b7d179d950710981383814183601024537d9a440",
+        "date": "2026-09-22T15:37:11Z",
+        "message": "Merge pull request #19 from ctxrs/release/0.6.0-20260922\n\nPrepare Graf 0.6.0",
+        "url": "https://github.com/ctxrs/graf/commit/b7d179d950710981383814183601024537d9a440"
+      },
+      {
+        "sha": "4497c727b6fcccac4e4c405726030844bfdd2aa8",
+        "date": "2026-09-22T15:32:36Z",
+        "message": "Prepare Graf 0.6.0",
+        "url": "https://github.com/ctxrs/graf/commit/4497c727b6fcccac4e4c405726030844bfdd2aa8"
+      },
+      {
+        "sha": "88eced89823e96603411c096cc0e15c3590fe049",
+        "date": "2026-09-22T15:28:08Z",
+        "message": "Merge pull request #18 from ctxrs/docs/graf-readme-editor-20260922\n\nRewrite the README around why Graf exists",
+        "url": "https://github.com/ctxrs/graf/commit/88eced89823e96603411c096cc0e15c3590fe049"
+      },
+      {
+        "sha": "e2b328081d232f31ebbba3bc9e58c54548ecb3ea",
+        "date": "2026-09-22T15:23:31Z",
+        "message": "Rewrite README introduction in plain English",
+        "url": "https://github.com/ctxrs/graf/commit/e2b328081d232f31ebbba3bc9e58c54548ecb3ea"
+      },
+      {
+        "sha": "ddee6cb61737ade45771aa2acf1b939fc95ca208",
+        "date": "2026-09-22T14:37:35Z",
+        "message": "Merge pull request #17 from ctxrs/docs/vscode-benchmark-readme-20260922\n\nUpdate README with full VS Code benchmark",
+        "url": "https://github.com/ctxrs/graf/commit/ddee6cb61737ade45771aa2acf1b939fc95ca208"
+      }
+    ]
+  },
+  {
+    "repository": "eval-exec/neomacs",
+    "url": "https://github.com/eval-exec/neomacs",
+    "createdAt": "2026-02-03T08:45:40Z",
+    "pushedAt": "2026-09-26T16:43:02Z",
+    "observedAt": "2026-09-27T09:50:41.652594+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "starsSnapshot": 1494,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v0.0.19",
+        "published_at": "2026-09-20T17:33:42Z",
+        "prerelease": false,
+        "html_url": "https://github.com/eval-exec/neomacs/releases/tag/v0.0.19",
+        "bodySha256": "18f13f00c7a9685443b6efb89b98b9f40af0fc465a2bd782bc316db9f637e75e",
+        "bodyCharacters": 8979,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.0.18",
+        "published_at": "2026-09-11T18:56:48Z",
+        "prerelease": false,
+        "html_url": "https://github.com/eval-exec/neomacs/releases/tag/v0.0.18",
+        "bodySha256": "9eb989b81a0a0a711e69a732c02467b91635ea70e6f7180e01ee62459e6b2af3",
+        "bodyCharacters": 9214,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.0.17",
+        "published_at": "2026-09-06T16:59:58Z",
+        "prerelease": false,
+        "html_url": "https://github.com/eval-exec/neomacs/releases/tag/v0.0.17",
+        "bodySha256": "c14e89b39cfe422a907723ceec0e1dfbcb5ff5845272b86b0ff80713b3e430ba",
+        "bodyCharacters": 12046,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.0.16",
+        "published_at": "2026-08-30T16:19:47Z",
+        "prerelease": false,
+        "html_url": "https://github.com/eval-exec/neomacs/releases/tag/v0.0.16",
+        "bodySha256": "9a56409073aaa355a4d53b9c317803c0313b0704f89854223e9fcc0ca90c3a69",
+        "bodyCharacters": 11494,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "477e553e8f2c44752c97434e5a0ca49aab606b29",
+        "date": "2026-09-26T16:42:59Z",
+        "message": "test(melpa): preload jka-compr before the source-only load suffixes\n\nThe parity startup form sets `load-suffixes '(\".el\")` so a package is read\nas source, but an INSTALLED GNU ships its Lisp compressed (`make install`\nruns the sources through GZIP_PROG: `pcase.el.gz`), so the first `require`\nof an editor library reached for `jka-compr.el.gz` to decompress itself\nand GNU signaled `Recursive load`.  Every MELPA batch died during\nRestartProbe with exit 255; a local build tree hid it because its lisp is\nplain `.el`.\n\nThe form now requires `jka-compr` before narrowing the suffixes.  It\nloads through the default suffixes (`jka-compr.elc` when installed, a\nno-op in a build tree) and neomacs requires it fine.  Contract tests pin\nthe order and that the Emacs-default policy still touches neither.\n\nVerified against an installed pinned GNU (a local `make install` to the\nconfigured prefix, gzipped lisp): the pre-fix shape reproduces the\nRecursive load by hand, and the a/aas/abc_mode batches -- including one\nwith its package cache removed -- pass with the fix.",
+        "url": "https://github.com/eval-exec/neomacs/commit/477e553e8f2c44752c97434e5a0ca49aab606b29"
+      },
+      {
+        "sha": "e61ab016c1585cab8bfad2434b43028c4752e0df",
+        "date": "2026-09-26T13:49:05Z",
+        "message": "test(parity): resolve the checked-in pin from the live workspace\n\nmanifest_path() read env!(\"CARGO_WORKSPACE_DIR\") at runtime, so on every\narchived shard the melpa-test-support preflight asked for\n/home/ubuntu/work/neomacs/neomacs/parity-reference.toml -- the archive\nbuild machine's path -- and all tui shards and MELPA jobs failed right\nafter the oracle setup started passing.  The crate's test helpers read\nthe same constant; all three sites now use\nneomacs_infra::workspace_root(), with neomacs-infra added as a\ndependency.",
+        "url": "https://github.com/eval-exec/neomacs/commit/e61ab016c1585cab8bfad2434b43028c4752e0df"
+      },
+      {
+        "sha": "a4a72961e5a71c61d6957ead7cce768f7aee4755",
+        "date": "2026-09-26T12:16:41Z",
+        "message": "test(parity): attest the GNU release, not the build fingerprint\n\nThe pin records a RELEASE: the tag emacs-31.1, which the running editor\nreports as `emacs-version`.  That is the only identity an installed GNU\ncan prove -- `emacs-repository-version` is computed by running git in\n`source-directory` (lisp/version.el), which `make install` does not\ncreate -- and GNU's own fingerprint hashes the temacs executable, so a\nrebuild on another toolchain changes it while the source stays put.\nCI's oracle is built by the workflow's action, so every tui shard and\nMELPA job refused it (\"pinned 65a0d3fc / found 4c83a960\") as soon as the\ninstalled-layout probe could find the dump at all.\n\nBoth readers now verify the dump magic -- which is also what tells a\nnon-GNU peer from a GNU before `--if-gnu` would have to run it -- and the\nrelease version the editor reports.  The fingerprint, mirror commit and\nSHA-256/size fields stay in the manifest as provenance recorded by\npin-reference, and the two depths are kept for the API and the stamp.\nFixtures are now scripts that report a controlled version, and the\nsensitivity tests plant another release.\n\nVerified against the pinned mirror: the build tree, a simulated\n`make install` prefix, `--if-gnu` on the port, and\nscripts/melpa-infra-preflight.sh end to end.",
+        "url": "https://github.com/eval-exec/neomacs/commit/a4a72961e5a71c61d6957ead7cce768f7aee4755"
+      },
+      {
+        "sha": "2f896937202af0cd3718ec5a2b3e45929c00bd07",
+        "date": "2026-09-26T12:11:15Z",
+        "message": "test: resolve CARGO_MANIFEST_DIR at runtime in the remaining archived suites\n\nSame class as the neovm-core fix: fixture roots, weston configs and\nsource-probe paths read env!(\"CARGO_MANIFEST_DIR\") at runtime, which\nnames the build machine's path.  Oracle autoload/load-suffix fixtures,\ndisplay protocol and runtime witness tests, gui tests, renderer tests,\nthe MELPA process-wait audit, terminfo and the perf architecture test\nnow use neomacs_infra::crate_root!(); crates that lacked the dependency\ngained it as a dev-dependency.",
+        "url": "https://github.com/eval-exec/neomacs/commit/2f896937202af0cd3718ec5a2b3e45929c00bd07"
+      },
+      {
+        "sha": "498f54a50062bf9c6972291888dd87aad06f726c",
+        "date": "2026-09-26T12:11:10Z",
+        "message": "test(neovm-core): resolve fixture roots at runtime in the archived tests\n\ncompat_module_semantics told cargo to build a test cdylib with its\ncurrent_dir under the compile-time manifest path, so on a shard whose\nworkspace is a different path the spawn failed with ENOENT and every\nmodule test in the package went red.  The architecture layout scans, the\nbytecode source probes and the tagged gc.rs line-ceiling read the same\ndead path.  All now go through neomacs_infra::crate_root!(), with\nneomacs-infra added as a dev-dependency.",
+        "url": "https://github.com/eval-exec/neomacs/commit/498f54a50062bf9c6972291888dd87aad06f726c"
+      }
+    ]
+  },
+  {
+    "repository": "floci-io/floci",
+    "url": "https://github.com/floci-io/floci",
+    "createdAt": "2026-02-18T02:28:29Z",
+    "pushedAt": "2026-09-27T01:14:50Z",
+    "observedAt": "2026-09-27T10:08:12.675259+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "starsSnapshot": 25775,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "2.1.0",
+        "published_at": "2026-09-15T04:56:15Z",
+        "prerelease": false,
+        "html_url": "https://github.com/floci-io/floci/releases/tag/2.1.0",
+        "bodySha256": "47d8f1f4e4bb72f089f95e7237f9115348860f6d707eadde52bf530e882157b9",
+        "bodyCharacters": 120791,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "2.0.1",
+        "published_at": "2026-09-01T12:43:50Z",
+        "prerelease": false,
+        "html_url": "https://github.com/floci-io/floci/releases/tag/2.0.1",
+        "bodySha256": "f278ebd7c570dc7addc8eafa46df640fd72595618ce93a513bfedb9d50010b31",
+        "bodyCharacters": 309,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "2.0.0",
+        "published_at": "2026-09-01T05:04:27Z",
+        "prerelease": false,
+        "html_url": "https://github.com/floci-io/floci/releases/tag/2.0.0",
+        "bodySha256": "91a6d7fa5a7c2d892d3b20f2304d676e47e60812c3e6ae00bf7d179da5a16c54",
+        "bodyCharacters": 63695,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "1.7.0",
+        "published_at": "2026-08-18T05:24:40Z",
+        "prerelease": false,
+        "html_url": "https://github.com/floci-io/floci/releases/tag/1.7.0",
+        "bodySha256": "99c96a3d7a108cb589368256035aae1a918c9173b3495f6a931b88634bb54600",
+        "bodyCharacters": 15251,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "c530d1f7051dd9a2f96435f5818ba27f05d29217",
+        "date": "2026-09-27T00:48:43Z",
+        "message": "fix(elasticache): support HELLO AUTH handshakes (#4476)\n\n* fix(elasticache): support HELLO AUTH handshakes\n\n* fix(elasticache): bound HELLO handshake retries",
+        "url": "https://github.com/floci-io/floci/commit/c530d1f7051dd9a2f96435f5818ba27f05d29217"
+      },
+      {
+        "sha": "67437115c5c91c2facd476a42db261c98a2bac40",
+        "date": "2026-09-27T00:12:27Z",
+        "message": "feat(iam): add last-accessed reporting actions (#4488)\n\nAdd GenerateServiceLastAccessedDetails, GetServiceLastAccessedDetails,\nGetServiceLastAccessedDetailsWithEntities and ListPoliciesGrantingServiceAccess.\n\nFloci records no service-access history, but AWS's \"never used\" shape keeps\nthe report and nulls the usage fields rather than emptying the report, so\nthat is what these reproduce. GetServiceLastAccessedDetails lists every\nservice the entity could reach through its permissions policies and leaves\nLastAuthenticated and TotalAuthenticatedEntities absent for the ones never\nused. GetServiceLastAccessedDetailsWithEntities lists the entities that\ncould have used the reported permissions: a group report yields the group's\nusers, a policy report the users and roles it is attached to, and a user or\nrole report that entity. Both lists come from permissions-policy logic,\nwhich Floci can evaluate, so both are computed rather than stubbed; the\nusage timestamps are the only part left out.\n\nA report is produced when the job is created and stored with it, matching\nAWS, where the Get operations retrieve a report that Generate produced. So\nediting the policies afterwards does not change what a completed job\nanswers, and deleting the entity does not stop a valid JobId resolving.\nGenerate resolves the whole ARN first, rejecting one whose account is not\nthe caller's or whose path is not the resolved entity's, so it cannot fall\nback to a same-named local identity; AWS-managed policy ARNs carry the\nliteral \"aws\" account and are allowed through to the global catalog. An\nunknown JobId is NoSuchEntity, Granularity is validated and echoed back as\nJobType, and both readers honour MaxItems and Marker.\n\nListPoliciesGrantingServiceAccess needs no job and no usage history, since\nAWS defines it purely over permissions-policy logic. A user contributes its\nown managed and inline policies plus those of every group it belongs to,\nwhile a group or role contributes only its own; permissions boundaries are\nexcluded. Only Allow grants, and Allow with NotAction grants every service\nthe list does not carve out. It models a Marker but no MaxItems, so only the\nformer is applied.\n\nServices reachable only through a wildcard or NotAction cannot be\nenumerated without a catalog of IAM service namespaces, which is tracked\nseparately in #4487 and documented.",
+        "url": "https://github.com/floci-io/floci/commit/67437115c5c91c2facd476a42db261c98a2bac40"
+      },
+      {
+        "sha": "0cfb467caca5f6a6b038023968a3905cef383b2b",
+        "date": "2026-09-27T00:09:34Z",
+        "message": "fix(s3): apply AWS's CreateBucket region rules in every partition (#4494)\n\n* fix(s3): apply AWS's CreateBucket region rules in every partition\n\nCreateBucket follows the rules moto verified against AWS: the us-east-1 endpoint takes any LocationConstraint but its own (InvalidLocationConstraint), and every other regional endpoint requires a constraint naming exactly its region, answering IllegalLocationConstraintException otherwise. The signing region alone no longer places a bucket, so a China or GovCloud client must send the constraint, which the AWS SDKs do. GetBucketLocation still answers an empty constraint only for us-east-1, in every partition.\n\nWAF's CLOUDFRONT scope lives in the partition's implicit global region and is refused with WAFInvalidParameterException where the partition has no CloudFront. Lightsail lists no regions outside the commercial partition. Region fallbacks read the configured default where a resolver or config is in scope, and PreSignedUrlGenerator gains an overload that signs for a given region. The region-literal category of the partition guardrail is now gated; every remaining literal carries a stated reason.\n\nTests that created buckets under a regional signing scope with no constraint now send one, and S3IntegrationTest's case that pinned the old signing-region placement is replaced by the rejection and its positive twin.\n\nPart of #4272\n\n* fix(s3,wafv2): answer a us-east-1 constraint off its endpoint as a mismatch, and gate the CLOUDFRONT scope on every operation\n\nA CreateBucket on a regional endpoint other than us-east-1 with LocationConstraint us-east-1 is just another mismatched region, IllegalLocationConstraintException, as moto's aws_verified test_create_bucket_with_wrong_location_constraint records; InvalidLocationConstraint belongs to the us-east-1 endpoint alone (test_bucket_create_force_us_east_1). The body parse no longer rejects us-east-1 early, and bucketRegionForCreate checks the endpoint mismatch first.\n\nWAF's CLOUDFRONT scope was refused in partitions without CloudFront only when creating a resource; validateScope, which every operation already calls, now applies the same check, so a List or Get for that scope answers the same WAFInvalidParameterException.\n\n* fix(wafv2): check the CLOUDFRONT scope against the region each call is about\n\nThe previous change checked the scope in validateScope against the request region, but CloudFormation calls the service outside any request, where that region falls back to the deployment default: under a GovCloud default a commercial stack's CLOUDFRONT WebACL was refused on create, update and delete. WafV2Handler now checks Scope=CLOUDFRONT against the region the API request was sent to, before dispatch, so every operation still answers the same error; validateScope checks the enum only, and a create keeps its check against the region it is given where the ARN is built.",
+        "url": "https://github.com/floci-io/floci/commit/0cfb467caca5f6a6b038023968a3905cef383b2b"
+      },
+      {
+        "sha": "1b176bda0d157fd71ee9f86e403ac783e28b8619",
+        "date": "2026-09-26T22:39:08Z",
+        "message": "fix(kinesisanalytics): make the savepoints volume writable by the Flink user (#4490)\n\n* fix(kinesisanalytics): make the savepoints volume writable by the Flink user\n\nDocker creates the savepoints named volume root:root, while the official\napache/flink images run Flink as uid/gid 9999, so the JobManager could not\ncreate /opt/flink/savepoints and every CreateApplicationSnapshot ended\nFAILED. Initialise the volume root through\nContainerLifecycleManager.ensureSharedVolume, chowning it to 9999:9999\nbefore the JobManager starts.\n\nCloses #4443\n\n* fix(core): reinitialise shared volume ownership when the volume is recreated\n\nensureSharedVolume memoised the one-off chown per volume name for the\nwhole process, so a volume removed and recreated under the same name\n(DeleteApplication in memory mode, or docker volume rm) came back\nroot:root without being initialised again. Drop the memo whenever the\nvolume has just been created.",
+        "url": "https://github.com/floci-io/floci/commit/1b176bda0d157fd71ee9f86e403ac783e28b8619"
+      },
+      {
+        "sha": "4032efd9c7ec40ac13bdcff732afb4aebdf2d71e",
+        "date": "2026-09-26T21:59:04Z",
+        "message": "feat(route53): resolve private hosted zone records from cluster containers (#4353)\n\nImplement DnsRecordSource SPI via Route53DnsRecordSource to decouple Route 53 resolution from EmbeddedDnsServer. Add DnsLookupHelper in core.common.dns for external IPv4 resolution via upstream forwarders with system fallback, shared by Route53DnsRecordSource for CNAME and ALIAS chasing. Discover private hosted zones via Route53Service and support in-zone chasing, built-in Floci suffixes, and EC2 internal names. Authoritatively resolve A records within private zones to prevent upstream query leakage. Wire EKS cluster containers to embedded DNS via specBuilder.withEmbeddedDns().",
+        "url": "https://github.com/floci-io/floci/commit/4032efd9c7ec40ac13bdcff732afb4aebdf2d71e"
+      }
+    ]
+  },
+  {
+    "repository": "hsfzxjy/npunlock",
+    "url": "https://github.com/hsfzxjy/npunlock",
+    "createdAt": "2026-09-20T14:05:47Z",
+    "pushedAt": "2026-09-25T02:26:35Z",
+    "observedAt": "2026-09-27T10:08:27.690786+08:00",
+    "defaultBranch": "master",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 59,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "2026-09-25.00",
+        "published_at": "2026-09-25T02:26:36Z",
+        "prerelease": false,
+        "html_url": "https://github.com/hsfzxjy/npunlock/releases/tag/2026-09-25.00",
+        "bodySha256": "4560822e2b7dc11dbf2bfeedc5797110699e9da4391b59836acf0fc619d79c1e",
+        "bodyCharacters": 10699,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "33108578c9e9eb6de82f4bf905cf30fbdf9325ce",
+        "date": "2026-09-25T01:41:14Z",
+        "message": "ci: add daily release workflow",
+        "url": "https://github.com/hsfzxjy/npunlock/commit/33108578c9e9eb6de82f4bf905cf30fbdf9325ce"
+      },
+      {
+        "sha": "5b0c694b466d51321cf9a9a436300c3eb3b0c5a4",
+        "date": "2026-09-23T16:14:56Z",
+        "message": "graphinfer: remove worker ABI remnants",
+        "url": "https://github.com/hsfzxjy/npunlock/commit/5b0c694b466d51321cf9a9a436300c3eb3b0c5a4"
+      },
+      {
+        "sha": "4cbf3f07b7a08f917ab87d76ad669d297faaa8fb",
+        "date": "2026-09-23T16:03:33Z",
+        "message": "graphinfer: execute in process without worker",
+        "url": "https://github.com/hsfzxjy/npunlock/commit/4cbf3f07b7a08f917ab87d76ad669d297faaa8fb"
+      },
+      {
+        "sha": "eb7d9717a697b3f84a1e52ac3c9902ef6454b1e4",
+        "date": "2026-09-23T15:25:27Z",
+        "message": "porting: add bounded POSIX worker launcher",
+        "url": "https://github.com/hsfzxjy/npunlock/commit/eb7d9717a697b3f84a1e52ac3c9902ef6454b1e4"
+      },
+      {
+        "sha": "b485f5fe05be5a5d52ce049e07208cd1dde1775b",
+        "date": "2026-09-23T15:02:16Z",
+        "message": "porting: add Linux Level Zero execution probe",
+        "url": "https://github.com/hsfzxjy/npunlock/commit/b485f5fe05be5a5d52ce049e07208cd1dde1775b"
+      }
+    ]
+  },
+  {
+    "repository": "lava/withmcp",
+    "url": "https://github.com/lava/withmcp",
+    "createdAt": "2026-09-26T21:59:17Z",
+    "pushedAt": "2026-09-26T22:23:05Z",
+    "observedAt": "2026-09-27T09:50:33.576402+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 2,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v0.1.0",
+        "published_at": "2026-09-26T22:05:16Z",
+        "prerelease": false,
+        "html_url": "https://github.com/lava/withmcp/releases/tag/v0.1.0",
+        "bodySha256": "19c0287b85b5a3d9ddc93e76a60cf418ff820bb1a62c675b747351a45e57ef17",
+        "bodyCharacters": 69,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "0ea22f92c36a460ffd29687534f967fc60c1679b",
+        "date": "2026-09-26T22:23:02Z",
+        "message": "Add codex example",
+        "url": "https://github.com/lava/withmcp/commit/0ea22f92c36a460ffd29687534f967fc60c1679b"
+      },
+      {
+        "sha": "4780e8531d2d7e40b9e96f85a6e44587e2f98370",
+        "date": "2026-09-26T22:19:34Z",
+        "message": "Put usage up front",
+        "url": "https://github.com/lava/withmcp/commit/4780e8531d2d7e40b9e96f85a6e44587e2f98370"
+      },
+      {
+        "sha": "3e2903a6125e2f7de2858213969ef014e350ecf8",
+        "date": "2026-09-26T22:16:54Z",
+        "message": "Improve README",
+        "url": "https://github.com/lava/withmcp/commit/3e2903a6125e2f7de2858213969ef014e350ecf8"
+      },
+      {
+        "sha": "3e9367a8c457b2bec0e7359de287c91b693a3f85",
+        "date": "2026-09-26T22:01:29Z",
+        "message": "Update README",
+        "url": "https://github.com/lava/withmcp/commit/3e9367a8c457b2bec0e7359de287c91b693a3f85"
+      },
+      {
+        "sha": "6bb0f97827b54d896a323b1164253f0e64f54aed",
+        "date": "2026-09-26T22:00:27Z",
+        "message": "Add supported agents",
+        "url": "https://github.com/lava/withmcp/commit/6bb0f97827b54d896a323b1164253f0e64f54aed"
+      }
+    ]
+  },
+  {
+    "repository": "reladraw/reladraw",
+    "url": "https://github.com/reladraw/reladraw",
+    "createdAt": "2026-09-07T20:01:24Z",
+    "pushedAt": "2026-09-27T01:19:17Z",
+    "observedAt": "2026-09-27T09:50:33.575941+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 281,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v0.6.0",
+        "published_at": "2026-09-27T01:22:21Z",
+        "prerelease": false,
+        "html_url": "https://github.com/reladraw/reladraw/releases/tag/v0.6.0",
+        "bodySha256": "364fd5f888829817af61bb1a11784efe171f6a4287f02e069fbd1045a343cfbd",
+        "bodyCharacters": 151,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.5.0",
+        "published_at": "2026-09-26T21:31:00Z",
+        "prerelease": false,
+        "html_url": "https://github.com/reladraw/reladraw/releases/tag/v0.5.0",
+        "bodySha256": "1f25d16cf33e9572c05b82f393b87510ebfc69621b8a8082e70b7056a7b913ef",
+        "bodyCharacters": 492,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v0.4.0",
+        "published_at": "2026-09-26T18:26:47Z",
+        "prerelease": false,
+        "html_url": "https://github.com/reladraw/reladraw/releases/tag/v0.4.0",
+        "bodySha256": "07e6a5ea471d9899a27837a1789d5eec66b79f8974a8cfd85f4e2f765f43cc59",
+        "bodyCharacters": 1223,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "94d7943996c3d7690c4d372a4fb9c4cc4ca6defe",
+        "date": "2026-09-27T01:19:13Z",
+        "message": "release 0.6.0",
+        "url": "https://github.com/reladraw/reladraw/commit/94d7943996c3d7690c4d372a4fb9c4cc4ca6defe"
+      },
+      {
+        "sha": "ac66ef437700953666cbaaa518120d9c927c91a0",
+        "date": "2026-09-27T01:18:52Z",
+        "message": "docs: 0.6.0 changelog",
+        "url": "https://github.com/reladraw/reladraw/commit/ac66ef437700953666cbaaa518120d9c927c91a0"
+      },
+      {
+        "sha": "dcc61c7dba8cd92d53527a92c0a0af03b5792219",
+        "date": "2026-09-27T01:18:33Z",
+        "message": "README pictures regenerated\n\nThey had fallen behind the renderer: only their text pixels differ, nothing has moved.",
+        "url": "https://github.com/reladraw/reladraw/commit/dcc61c7dba8cd92d53527a92c0a0af03b5792219"
+      },
+      {
+        "sha": "c78079ddae04f1d392f33e2259ee40dc1c9ac1a6",
+        "date": "2026-09-27T01:16:43Z",
+        "message": "edges that turn back no longer cross each other or their own node\n\nTwo edges looping over the same row used to be drawn on top of each\nother; they now nest, the shorter inside. An edge whose sides are at a\nright angle, such as from: left  to: top, used to cut back across its\nown node; it now goes around, over or under as its far side says.",
+        "url": "https://github.com/reladraw/reladraw/commit/c78079ddae04f1d392f33e2259ee40dc1c9ac1a6"
+      },
+      {
+        "sha": "fa2c6ffacb7d5220ef8e2dd8bbda228667b488c2",
+        "date": "2026-09-27T01:02:21Z",
+        "message": "one edge may pass some nodes above or below and others left or right\n\nAn edge could say below m or left of n, but not both. It now can: the\nline turns between the two as often as its clauses need, across first\nunless a side named at an end says otherwise.",
+        "url": "https://github.com/reladraw/reladraw/commit/fa2c6ffacb7d5220ef8e2dd8bbda228667b488c2"
+      }
+    ]
+  },
+  {
+    "repository": "temir-dev/tims-markdown-reader",
+    "url": "https://github.com/temir-dev/tims-markdown-reader",
+    "createdAt": "2026-09-20T19:32:05Z",
+    "pushedAt": "2026-09-22T04:20:36Z",
+    "observedAt": "2026-09-27T10:08:25.373095+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "starsSnapshot": 8,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v1.0",
+        "published_at": "2026-09-22T03:56:05Z",
+        "prerelease": false,
+        "html_url": "https://github.com/temir-dev/tims-markdown-reader/releases/tag/v1.0",
+        "bodySha256": "224976ad577601c1d31b0343d83fa485d1d80ae49acd8a855a3a42ece3cd0e3b",
+        "bodyCharacters": 1096,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "10c88c4bd8833fb803da23a93118f1fb36aa98a7",
+        "date": "2026-09-22T04:20:35Z",
+        "message": "Use a window screenshot with a transparent background",
+        "url": "https://github.com/temir-dev/tims-markdown-reader/commit/10c88c4bd8833fb803da23a93118f1fb36aa98a7"
+      },
+      {
+        "sha": "8788c744a1d941254c1be3fd48c1c9573fd42909",
+        "date": "2026-09-22T04:15:49Z",
+        "message": "Reword the README intro",
+        "url": "https://github.com/temir-dev/tims-markdown-reader/commit/8788c744a1d941254c1be3fd48c1c9573fd42909"
+      },
+      {
+        "sha": "9fae4c628151c4084c77ae0028d4fb6ce2797499",
+        "date": "2026-09-22T04:07:45Z",
+        "message": "Put the requirements line before the video",
+        "url": "https://github.com/temir-dev/tims-markdown-reader/commit/9fae4c628151c4084c77ae0028d4fb6ce2797499"
+      },
+      {
+        "sha": "f9d310b9a0d93ae46b7136a793bda38a28f235a3",
+        "date": "2026-09-22T04:05:46Z",
+        "message": "Update README with screenshot and description\n\nAdded a screenshot to the README for better visualization.",
+        "url": "https://github.com/temir-dev/tims-markdown-reader/commit/f9d310b9a0d93ae46b7136a793bda38a28f235a3"
+      },
+      {
+        "sha": "651a126302fbe7bdf5983fa3e624525df73dd94d",
+        "date": "2026-09-22T04:05:30Z",
+        "message": "Add screenshot section to README\n\nAdded a screenshot section to the README.",
+        "url": "https://github.com/temir-dev/tims-markdown-reader/commit/651a126302fbe7bdf5983fa3e624525df73dd94d"
+      }
+    ]
+  },
+  {
+    "repository": "viggy28/safe-not-safe",
+    "url": "https://github.com/viggy28/safe-not-safe",
+    "createdAt": "2026-08-14T06:22:22Z",
+    "pushedAt": "2026-09-26T09:31:46Z",
+    "observedAt": "2026-09-27T10:08:12.871885+08:00",
+    "defaultBranch": "main",
+    "license": null,
+    "starsSnapshot": 34,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "dd939525dde1709ed8cb02f91a3f84cef0723680",
+        "date": "2026-09-26T09:31:46Z",
+        "message": "Merge pull request #3 from viggy28/feat/github-links\n\nFix the mobile editor layout",
+        "url": "https://github.com/viggy28/safe-not-safe/commit/dd939525dde1709ed8cb02f91a3f84cef0723680"
+      },
+      {
+        "sha": "4575c8ad9f053e6ed24841213d8386e08b001d24",
+        "date": "2026-09-26T09:07:33Z",
+        "message": "fix: improve mobile editor layout",
+        "url": "https://github.com/viggy28/safe-not-safe/commit/4575c8ad9f053e6ed24841213d8386e08b001d24"
+      },
+      {
+        "sha": "00bff7ec9de8e9a92db48721681f9aab97648c54",
+        "date": "2026-09-26T08:57:57Z",
+        "message": "Merge pull request #2 from viggy28/feat/github-links\n\nAdd GitHub source links to the UI",
+        "url": "https://github.com/viggy28/safe-not-safe/commit/00bff7ec9de8e9a92db48721681f9aab97648c54"
+      },
+      {
+        "sha": "190ac163d09759891883b0551b2d0f224afee932",
+        "date": "2026-09-26T08:52:04Z",
+        "message": "feat: link UI to GitHub repository",
+        "url": "https://github.com/viggy28/safe-not-safe/commit/190ac163d09759891883b0551b2d0f224afee932"
+      },
+      {
+        "sha": "b863a39ca34f9aecfd0baea4744e2ac5864e068e",
+        "date": "2026-08-22T21:48:35Z",
+        "message": "chore: CF Github Actions based CI/CD",
+        "url": "https://github.com/viggy28/safe-not-safe/commit/b863a39ca34f9aecfd0baea4744e2ac5864e068e"
+      }
+    ]
+  },
+  {
+    "repository": "willswire/swift-newt",
+    "url": "https://github.com/willswire/swift-newt",
+    "createdAt": "2026-09-26T22:41:39Z",
+    "pushedAt": "2026-09-26T22:41:52Z",
+    "observedAt": "2026-09-27T09:50:33.471006+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "starsSnapshot": 1,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "96aac5b9884194399a0411947b7d3972e4dcc3e5",
+        "date": "2026-09-26T22:40:51Z",
+        "message": "initial commit",
+        "url": "https://github.com/willswire/swift-newt/commit/96aac5b9884194399a0411947b7d3972e4dcc3e5"
+      }
+    ]
+  },
+  {
+    "repository": "wiltodelta/translate-like-me",
+    "url": "https://github.com/wiltodelta/translate-like-me",
+    "createdAt": "2026-06-28T15:54:37Z",
+    "pushedAt": "2026-09-26T21:32:21Z",
+    "observedAt": "2026-09-27T09:50:33.463895+08:00",
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "starsSnapshot": 1,
+    "snapshotLimitation": "总Star不等于近期增长或独立用户",
+    "releases": [
+      {
+        "tag_name": "v2.4",
+        "published_at": "2026-09-26T19:09:08Z",
+        "prerelease": false,
+        "html_url": "https://github.com/wiltodelta/translate-like-me/releases/tag/v2.4",
+        "bodySha256": "477394414f1c3b789e6603788ac5d0c20d52ad08b5265e9913e23fc62e8e0818",
+        "bodyCharacters": 610,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v2.3",
+        "published_at": "2026-09-24T19:10:19Z",
+        "prerelease": false,
+        "html_url": "https://github.com/wiltodelta/translate-like-me/releases/tag/v2.3",
+        "bodySha256": "c240babbf2ea357274de4a1832e82a3edc1a04adad84033d5135e33e83ffc16b",
+        "bodyCharacters": 772,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v2.2",
+        "published_at": "2026-09-24T17:52:54Z",
+        "prerelease": false,
+        "html_url": "https://github.com/wiltodelta/translate-like-me/releases/tag/v2.2",
+        "bodySha256": "90866f2806fd782735fc198456b18a360183b0689dab9334f7a885bfdeb395d1",
+        "bodyCharacters": 704,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      },
+      {
+        "tag_name": "v2.1",
+        "published_at": "2026-09-24T01:09:25Z",
+        "prerelease": false,
+        "html_url": "https://github.com/wiltodelta/translate-like-me/releases/tag/v2.1",
+        "bodySha256": "a148f83c561a3813b7a028d72426a5bdcff5826a751a6eabf4b4fb0a71a809ab",
+        "bodyCharacters": 597,
+        "bodyNote": "已读取原始版本说明；保留链接、日期和摘要依据，不复制完整说明"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "dc6e9f382d281b5606aaf70bfa5430f1daa72c73",
+        "date": "2026-09-26T21:32:19Z",
+        "message": "Refresh screenshots for 2.4; let desktop widgets pass the cover check\n\nThe capture check refused every run on a Mac with desktop widgets: they\nare Notification Center windows at desktop level, a negative layer, and\nthe front-to-back walk reached them before the backdrop. Windows below\nlayer 0 can never cover an app window, so the walk now skips them. The\nGeneral and Settings screenshots are recaptured and show version 2.4.\n\nCo-Authored-By: Claude Opus 5.5 (1M context) <noreply@anthropic.com>",
+        "url": "https://github.com/wiltodelta/translate-like-me/commit/dc6e9f382d281b5606aaf70bfa5430f1daa72c73"
+      },
+      {
+        "sha": "fea320e4f9a4131e46ab8f15239f62146aa5c653",
+        "date": "2026-09-26T21:23:41Z",
+        "message": "Bump the Homebrew cask on each release\n\nA tag build now points Casks/translate-like-me.rb in wiltodelta/homebrew-tap\nat the new release: the build job exports the zip's sha256, and a homebrew job\ncommits the new version and checksum through a write deploy key scoped to the\ntap. It runs in this workflow because a release made with GITHUB_TOKEN starts\nno other workflow. The README gains the brew install command.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/wiltodelta/translate-like-me/commit/fea320e4f9a4131e46ab8f15239f62146aa5c653"
+      },
+      {
+        "sha": "d61bfcfe0859058a31f34c3f239682605b6ed895",
+        "date": "2026-09-26T19:05:22Z",
+        "message": "Give each language pair its own writing style\n\nA pair's style applies only to its translations, and two pairs may share\nlanguages, so one can carry the user's voice and another translate someone\nelse's text plainly. The style is edited in a sheet from the pair's row, so a\nlong voice guide never grows the settings pane. At launch the earlier global\nstyle moves into the pairs when none has a style yet, and is then removed.\n\nThe status menu tells same-language pairs apart with a subtitle. The swap\nbutton is gone: the direction is detected per translation, and the order\nonly picks the target for text in neither language.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/wiltodelta/translate-like-me/commit/d61bfcfe0859058a31f34c3f239682605b6ed895"
+      },
+      {
+        "sha": "d977823759e54efd8edebd0f5a6312b067d60776",
+        "date": "2026-09-24T19:18:06Z",
+        "message": "Refresh the README and title releases from the tag annotation\n\nThe README drops the stale 'always the latest model' claim and a clipboard\nnote the Privacy section already makes, says the API keys are keychain items in\nthe bundle-identifier section, explains a missing Effort picker, and adds an\nUninstall section. CI now titles each release with the annotation's first line.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/wiltodelta/translate-like-me/commit/d977823759e54efd8edebd0f5a6312b067d60776"
+      },
+      {
+        "sha": "375fa4648039cf4de4b5975994aac83b03c278cc",
+        "date": "2026-09-24T19:07:28Z",
+        "message": "Update in place with Sparkle; harden privacy, clipboard and CI\n\nSparkle 2 replaces the check-and-notify updater: a daily check against the\nEdDSA-signed appcast each release publishes, with gentle reminders so a\nscheduled find never takes focus (the menu item becomes \"Install Update…\").\nbuild.sh embeds and signs the framework; CI generates the signed appcast and\ntakes the release notes from the tag annotation, refusing a tag without them.\n\nPrivacy and safety from an audit: API keys move to the keychain (plain-text\ncopies are migrated and removed); claude and codex run without session\nhistory; codex runs read-only with its tools disabled and gets the prompt on\nstdin; a CLI failure shows and logs only its error lines, never the echoed\nselection; the clipboard is restored with every type it held, left alone if\nthe user copied meanwhile, and the pasted translation is marked transient.\n\nAlso: strict SwiftLint locally and in CI, os.Logger throughout, launch-at-login\nfailures shown in Settings, Grok's default model read from `grok models` so\nSettings names it and offers Effort, the dead modal-alert guard removed,\nabsolute actool paths (the agent resolved relative ones against another\ncheckout, which explains the stray Resources/Assets.plist), pinned actions and\na keychain locked after notarization.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/wiltodelta/translate-like-me/commit/375fa4648039cf4de4b5975994aac83b03c278cc"
+      }
+    ]
+  }
+]

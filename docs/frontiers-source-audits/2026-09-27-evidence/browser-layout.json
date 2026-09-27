@@ -1,0 +1,384 @@
+{
+  "checkedAt": "2026-09-27T03:01:04.011Z",
+  "passed": true,
+  "results": [
+    {
+      "size": "desktop",
+      "key": "overview",
+      "title": "09-27｜前沿日报：计算、判断与行动的证据 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "desktop",
+      "key": "news",
+      "title": "09-27｜DNS边界、TPU预取与快速决策 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/dns-boundary.png",
+          "alt": "OpenAI 披露 DNS 绕过事件：工具入口受限，不代表环境完全隔离",
+          "complete": true,
+          "naturalWidth": 1536,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/tpu-prefetch.png",
+          "alt": "TPU megakernel：把下一层的权重，提前搬到片上内存",
+          "complete": true,
+          "naturalWidth": 852,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/hysparse-architecture.png",
+          "alt": "HySparse2：先减少长上下文的存储，再少做一部分预填充",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/fab-wrong.jpg",
+          "alt": "Epoch 把家具安装做成测试：识别步骤，也要发现装反了",
+          "complete": true,
+          "naturalWidth": 1642,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "models",
+      "title": "09-27｜六模型的任务、证据与部署门槛 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/pixai-tradeoff.png",
+          "alt": "PixAI各标注模型的通用标签F1与H100吞吐比较",
+          "complete": true,
+          "naturalWidth": 2161,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/krea-comparison.png",
+          "alt": "Krea局部编辑三列对照及像素差异图",
+          "complete": true,
+          "naturalWidth": 3072,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/nanosaur-sample.png",
+          "alt": "Nanosaur2作者插画样例，用于观察小模型输出与工作流入口",
+          "complete": true,
+          "naturalWidth": 832,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "papers",
+      "title": "09-27｜六论文的方法、对照与可复现边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/omniecho-method.png",
+          "alt": "OmniEcho：声音不只告诉你“是什么”，还告诉你“在哪里”",
+          "complete": true,
+          "naturalWidth": 1070,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/aewm-method.png",
+          "alt": "AEWM：在执行之前，修订会把任务带偏的下一步",
+          "complete": true,
+          "naturalWidth": 1920,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/sae-coactivation.png",
+          "alt": "词性与SAE：能预测一个概念，不代表找到专属神经元",
+          "complete": true,
+          "naturalWidth": 945,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/avgrpo-method.png",
+          "alt": "AV-GRPO：音画一起训练时，先把比较的一侧固定",
+          "complete": true,
+          "naturalWidth": 1070,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/math-interest.png",
+          "alt": "发现有意思的数学：奖励“短命题、长证明”，会学到什么",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/tamp-method.png",
+          "alt": "编码Agent做任务与运动规划：先写策略，再冻结测试",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "projects",
+      "title": "09-27｜十个近期工具与明确的新用途 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/reladraw-example.png",
+          "alt": "reladraw：用相对约束描述图的布局",
+          "complete": true,
+          "naturalWidth": 1520,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/translate-pairs.png",
+          "alt": "Translate Like Me：为每个语言对保留自己的写作风格",
+          "complete": true,
+          "naturalWidth": 1080,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/leftovers-sessions.png",
+          "alt": "Leftovers：先按会话查占用，再判断哪些后台工作该结束",
+          "complete": true,
+          "naturalWidth": 1400,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "practice",
+      "title": "09-27｜同样答对八成，99%的分数可靠吗 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/calibration.png",
+          "alt": "同样16次正确4次错误，99%和80%分数的Brier及覆盖率不同",
+          "complete": true,
+          "naturalWidth": 1200,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "overview",
+      "title": "09-27｜前沿日报：计算、判断与行动的证据 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "mobile",
+      "key": "news",
+      "title": "09-27｜DNS边界、TPU预取与快速决策 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/dns-boundary.png",
+          "alt": "OpenAI 披露 DNS 绕过事件：工具入口受限，不代表环境完全隔离",
+          "complete": true,
+          "naturalWidth": 1536,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/tpu-prefetch.png",
+          "alt": "TPU megakernel：把下一层的权重，提前搬到片上内存",
+          "complete": true,
+          "naturalWidth": 852,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/hysparse-architecture.png",
+          "alt": "HySparse2：先减少长上下文的存储，再少做一部分预填充",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/fab-wrong.jpg",
+          "alt": "Epoch 把家具安装做成测试：识别步骤，也要发现装反了",
+          "complete": true,
+          "naturalWidth": 1642,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "models",
+      "title": "09-27｜六模型的任务、证据与部署门槛 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/pixai-tradeoff.png",
+          "alt": "PixAI各标注模型的通用标签F1与H100吞吐比较",
+          "complete": true,
+          "naturalWidth": 2161,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/krea-comparison.png",
+          "alt": "Krea局部编辑三列对照及像素差异图",
+          "complete": true,
+          "naturalWidth": 3072,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/nanosaur-sample.png",
+          "alt": "Nanosaur2作者插画样例，用于观察小模型输出与工作流入口",
+          "complete": true,
+          "naturalWidth": 832,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "papers",
+      "title": "09-27｜六论文的方法、对照与可复现边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/omniecho-method.png",
+          "alt": "OmniEcho：声音不只告诉你“是什么”，还告诉你“在哪里”",
+          "complete": true,
+          "naturalWidth": 1070,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/aewm-method.png",
+          "alt": "AEWM：在执行之前，修订会把任务带偏的下一步",
+          "complete": true,
+          "naturalWidth": 1920,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/sae-coactivation.png",
+          "alt": "词性与SAE：能预测一个概念，不代表找到专属神经元",
+          "complete": true,
+          "naturalWidth": 945,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/avgrpo-method.png",
+          "alt": "AV-GRPO：音画一起训练时，先把比较的一侧固定",
+          "complete": true,
+          "naturalWidth": 1070,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/math-interest.png",
+          "alt": "发现有意思的数学：奖励“短命题、长证明”，会学到什么",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.953125,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/tamp-method.png",
+          "alt": "编码Agent做任务与运动规划：先写策略，再冻结测试",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "projects",
+      "title": "09-27｜十个近期工具与明确的新用途 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/reladraw-example.png",
+          "alt": "reladraw：用相对约束描述图的布局",
+          "complete": true,
+          "naturalWidth": 1520,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/translate-pairs.png",
+          "alt": "Translate Like Me：为每个语言对保留自己的写作风格",
+          "complete": true,
+          "naturalWidth": 1080,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/leftovers-sessions.png",
+          "alt": "Leftovers：先按会话查占用，再判断哪些后台工作该结束",
+          "complete": true,
+          "naturalWidth": 1400,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "practice",
+      "title": "09-27｜同样答对八成，99%的分数可靠吗 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50449/github-learning-site/documents/frontiers/2026/09/2026-09-27/images/calibration.png",
+          "alt": "同样16次正确4次错误，99%和80%分数的Brier及覆盖率不同",
+          "complete": true,
+          "naturalWidth": 1200,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    }
+  ]
+}

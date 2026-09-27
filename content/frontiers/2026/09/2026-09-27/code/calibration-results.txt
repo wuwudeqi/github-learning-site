@@ -1,0 +1,156 @@
+{
+  "synthetic": true,
+  "python": "3.14.3",
+  "rows": [
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 1
+    },
+    {
+      "predicted": 1,
+      "actual": 0
+    },
+    {
+      "predicted": 1,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 0
+    },
+    {
+      "predicted": 0,
+      "actual": 1
+    },
+    {
+      "predicted": 0,
+      "actual": 1
+    }
+  ],
+  "results": [
+    {
+      "name": "A",
+      "count": 20,
+      "correct": 16,
+      "accuracy": 0.8,
+      "confidence": 0.99,
+      "confidence_accuracy_gap": 0.18999999999999995,
+      "brier": 0.1961,
+      "accepted_at_0_9": 20,
+      "coverage_at_0_9": 1.0,
+      "accuracy_at_0_9": 0.8,
+      "positive_probabilities": [
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.99,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009,
+        0.010000000000000009
+      ]
+    },
+    {
+      "name": "B",
+      "count": 20,
+      "correct": 16,
+      "accuracy": 0.8,
+      "confidence": 0.8,
+      "confidence_accuracy_gap": 0.0,
+      "brier": 0.16,
+      "accepted_at_0_9": 0,
+      "coverage_at_0_9": 0.0,
+      "accuracy_at_0_9": null,
+      "positive_probabilities": [
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996
+      ]
+    }
+  ]
+}
