@@ -1,0 +1,25 @@
+{
+  "targetDateCheck": {
+    "command": [
+      "npm",
+      "run",
+      "check:frontiers",
+      "--",
+      "--date",
+      "2026-09-28"
+    ],
+    "exitCode": 0,
+    "checkedAt": "2026-09-28T08:23:50.463111+08:00",
+    "output": "\n> github-learning-site@1.0.0 check:frontiers\n> node scripts/check-frontiers.mjs --date 2026-09-28\n\n前沿检查通过：1 期；15 条新闻、10 个项目及来源一致；9 月 10 日起另查 6 个模型、6 篇论文和跨栏目去重。\n"
+  },
+  "build": {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "checkedAt": "2026-09-28T08:23:53.332958+08:00",
+    "output": "\n> github-learning-site@1.0.0 build\n> node scripts/check-frontiers.mjs && node scripts/catalog.mjs && vite build && node scripts/check-size.mjs\n\n前沿检查通过：20 期；15 条新闻、10 个项目及来源一致；9 月 10 日起另查 6 个模型、6 篇论文和跨栏目去重。\n已生成 362 份资料的目录及 Markdown 搜索索引。\nvite v8.2.2 building client environment for production...\ntransforming...\n✓ 1968 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                                          1.21 kB │ gzip:   0.68 kB\ndist/assets/cursor-editorTextHighlight-kG3uUOwL.svg      5.40 kB │ gzip:   2.20 kB\ndist/assets/pdf.worker.min-Dswkl-cV.mjs              1,265.41 kB\ndist/assets/reader-DdKuH37F.css                          1.06 kB │ gzip:   0.44 kB\ndist/assets/index-D4y49IIM.css                          29.07 kB │ gzip:   7.11 kB\ndist/assets/pdf_viewer-BjH7Sj7-.css                    230.12 kB │ gzip:  41.81 kB\ndist/assets/pdf.worker.min-D4i6Tejk.js                   0.08 kB │ gzip:   0.10 kB\ndist/assets/rolldown-runtime-Dd_uD5pT.js                 1.10 kB │ gzip:   0.62 kB\ndist/assets/preload-helper-DgC9rKHe.js                   1.21 kB │ gzip:   0.69 kB\ndist/assets/index-CprdEXNa.js                           23.99 kB │ gzip:   9.54 kB\ndist/assets/pdf_viewer-BShBZE7v.js                     169.62 kB │ gzip:  51.60 kB\ndist/assets/reader-D56QKuK1.js                         233.93 kB │ gzip:  79.52 kB\ndist/assets/epub-reader-vFOZ06FX.js                    377.03 kB │ gzip: 114.33 kB\ndist/assets/pdf-CX-4eN87.js                            430.94 kB │ gzip: 129.04 kB\n\n✓ built in 1.08s\n发布体积：526.2 MB / 1000 MB\n"
+  }
+}

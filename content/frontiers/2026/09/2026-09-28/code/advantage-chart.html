@@ -1,0 +1,14 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>奖励系数为什么会被归一化抵消</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f4f2eb;font-family:Arial,"PingFang SC",sans-serif;color:#223539}main{width:1200px;height:720px;padding:44px 56px}h1{font-size:32px;margin:0 0 10px}p{font-size:19px;margin:0 0 22px;line-height:1.55}.badge{font-size:14px;letter-spacing:1px;color:#506a6d;margin-bottom:14px}.foot{font-size:17px;color:#526366;margin-top:10px}svg{display:block;width:1088px;height:414px}</style>
+<main><div class="badge">前沿 · 2026-09-28 · 本机运行的合成数值实验</div><h1>奖励权重缩小 100 倍，优势幅度不一定跟着缩小</h1><p>四条轨迹全部成功，只在执行成本上不同。比较两种归一化之后的组内标准差。</p><svg viewBox="0 0 1088 414" role="img" aria-label="普通归一化的优势标准差始终约一，加入分母下限后随权重降低"></svg><p class="foot">合成成本：[0.1, 0.2, 0.4, 0.8]；成功均为 1；分母下限 √(0.8 × 0.2) = 0.4。<br>只复现归一化代数，不是模型训练结果，也没有测任务成功率。</p></main>
+<script type="module">
+const data=await (await fetch('./advantage-results.json')).json();
+const s=document.querySelector('svg'),NS='http://www.w3.org/2000/svg';
+const el=(tag,attrs,text)=>{let n=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));if(text!==undefined)n.textContent=text;s.append(n);return n};
+el('rect',{x:660,y:8,width:18,height:18,fill:'#829296'});el('text',{x:688,y:23,'font-size':18,fill:'#223539'},'普通组内归一化');
+el('rect',{x:660,y:37,width:18,height:18,fill:'#e17646'});el('text',{x:688,y:52,'font-size':18,fill:'#223539'},'效率阶段加分母下限');
+for(let t=0;t<=1.001;t+=.25){let y=330-t*232;el('line',{x1:90,x2:1035,y1:y,y2:y,stroke:'#ccd5d1'});el('text',{x:65,y:y+6,'text-anchor':'end','font-size':17,fill:'#526366'},t.toFixed(2));}
+el('text',{x:90,y:61,'font-size':18,fill:'#526366'},'优势的组内标准差（不是准确率）');
+data.rows.forEach((r,i)=>{const x=145+i*231;[['ordinaryStd',0,'#829296'],['calibratedStd',74,'#e17646']].forEach(([k,dx,color])=>{let h=r[k]*232;el('rect',{x:x+dx,y:330-h,width:60,height:h,rx:3,fill:color});el('text',{x:x+dx+30,y:320-h,'font-size':17,'text-anchor':'middle',fill:'#223539'},r[k].toFixed(3));});el('text',{x:x+65,y:364,'font-size':19,'text-anchor':'middle',fill:'#223539'},'λ = '+r.weight);el('text',{x:x+65,y:390,'font-size':16,'text-anchor':'middle',fill:'#526366'},r.floorActive?'下限生效':'下限未生效');});
+document.body.dataset.ready='true';
+</script></html>

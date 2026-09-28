@@ -1,0 +1,730 @@
+{
+  "browser": {
+    "checkedAt": "2026-09-28T00:19:33.751Z",
+    "passed": true,
+    "results": [
+      {
+        "size": "desktop",
+        "key": "overview",
+        "title": "09-28｜前沿日报：少算、少重复，先看证据 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": []
+      },
+      {
+        "size": "desktop",
+        "key": "news",
+        "title": "09-28｜AI动态：推理效率与代理行为的具体变化 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/naive-architecture.webp",
+            "alt": "Naive模型中局部滑窗与稀疏全局注意力交替，索引器从完整历史挑选位置",
+            "complete": true,
+            "naturalWidth": 3300,
+            "renderedWidth": 719.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/mimo-repetition.png",
+            "alt": "MiMo Flash在不同Agent框架与输入长度中的重复工具调用率前后对照",
+            "complete": true,
+            "naturalWidth": 2882,
+            "renderedWidth": 719.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ember-tokens.png",
+            "alt": "Ember在官方专项智能基准中的分数与估算任务成本位置",
+            "complete": true,
+            "naturalWidth": 5000,
+            "renderedWidth": 719.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/swap-welfare.png",
+            "alt": "换书任务中用户偏好表示误差与代理谈判误差的瀑布图",
+            "complete": true,
+            "naturalWidth": 1920,
+            "renderedWidth": 720,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/homebody-architecture.webp",
+            "alt": "HomeBody从空间记忆和当前观察选择技能，再执行抓取并返回结果",
+            "complete": true,
+            "naturalWidth": 2400,
+            "renderedWidth": 720,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/rlark-architecture.png",
+            "alt": "RLark控制平面连接云GPU与边缘机器人资源",
+            "complete": true,
+            "naturalWidth": 1024,
+            "renderedWidth": 720,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "desktop",
+        "key": "models",
+        "title": "09-28｜六模型的输入输出、对照与许可 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ovis-architecture.png",
+            "alt": "Ovis两个嵌入家族的输入与编码结构，本期采用右侧VL-2B",
+            "complete": true,
+            "naturalWidth": 2240,
+            "renderedWidth": 719.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/pruna-time.png",
+            "alt": "Pruna五步、八步与基座四十步的1024图像生成耗时",
+            "complete": true,
+            "naturalWidth": 2400,
+            "renderedWidth": 719.984375,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "desktop",
+        "key": "papers",
+        "title": "09-28｜六论文：推理、视频、记忆与评测的取舍 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/planner-lifecycle.png",
+            "alt": "Qwen-Planner-Agent：先学会完成任务，再限制多余推理",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 719.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/virdm-method.png",
+            "alt": "ViRDM：视频后训练可以移除在线教师和评论器，但仍需要好的起点",
+            "complete": true,
+            "naturalWidth": 1320,
+            "renderedWidth": 720,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/memory-efficiency.png",
+            "alt": "Memory Attention：参数增加，也可能减少每个token的计算",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 719.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/delta-memory.png",
+            "alt": "DeltaWAM：用稀疏变化接续观察，避免每次重算完整世界",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 719.9609375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/jev-calibration.png",
+            "alt": "Just Ask Jev：能把失败排在前面，不代表概率已经校准",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 719.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/nsc-pareto.png",
+            "alt": "Neural Spectral Capacity：先用数学代理筛架构，再验证真实能力",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 719.9921875,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "desktop",
+        "key": "projects",
+        "title": "09-28｜十个开源项目的任务与使用条件 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/aldine-editor.png",
+            "alt": "Aldine：协作LaTeX编辑也可以保留文件与Git工作流",
+            "complete": true,
+            "naturalWidth": 1440,
+            "renderedWidth": 720,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/shotcandy-example.webp",
+            "alt": "Shotcandy：用真实截图做展示图和短视频",
+            "complete": true,
+            "naturalWidth": 1760,
+            "renderedWidth": 720,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/rot-guard.png",
+            "alt": "Rot Guard：按自己的目标过滤信息流，同时保留查看入口",
+            "complete": true,
+            "naturalWidth": 1586,
+            "renderedWidth": 719.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ufo-architecture.png",
+            "alt": "UFO core：把代理回合、后台任务与工具执行分开管理",
+            "complete": true,
+            "naturalWidth": 2960,
+            "renderedWidth": 719.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/astrabox-console.png",
+            "alt": "AstraBox：把Agent、运行环境和凭据做成可管理资源",
+            "complete": true,
+            "naturalWidth": 1337,
+            "renderedWidth": 719.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/swe-mux.webp",
+            "alt": "swe-mux：在手机上检查多个编码Agent的工作",
+            "complete": true,
+            "naturalWidth": 1440,
+            "renderedWidth": 720,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "desktop",
+        "key": "practice",
+        "title": "09-28｜一个合成实验看懂奖励权重与归一化 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/advantage-scale.png",
+            "alt": "合成全成功轨迹中，普通优势标准差接近一，分母下限让小权重产生较小幅度",
+            "complete": true,
+            "naturalWidth": 1200,
+            "renderedWidth": 720,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "mobile",
+        "key": "overview",
+        "title": "09-28｜前沿日报：少算、少重复，先看证据 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": []
+      },
+      {
+        "size": "mobile",
+        "key": "news",
+        "title": "09-28｜AI动态：推理效率与代理行为的具体变化 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/naive-architecture.webp",
+            "alt": "Naive模型中局部滑窗与稀疏全局注意力交替，索引器从完整历史挑选位置",
+            "complete": true,
+            "naturalWidth": 3300,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/mimo-repetition.png",
+            "alt": "MiMo Flash在不同Agent框架与输入长度中的重复工具调用率前后对照",
+            "complete": true,
+            "naturalWidth": 2882,
+            "renderedWidth": 343.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ember-tokens.png",
+            "alt": "Ember在官方专项智能基准中的分数与估算任务成本位置",
+            "complete": true,
+            "naturalWidth": 5000,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/swap-welfare.png",
+            "alt": "换书任务中用户偏好表示误差与代理谈判误差的瀑布图",
+            "complete": true,
+            "naturalWidth": 1920,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/homebody-architecture.webp",
+            "alt": "HomeBody从空间记忆和当前观察选择技能，再执行抓取并返回结果",
+            "complete": true,
+            "naturalWidth": 2400,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/rlark-architecture.png",
+            "alt": "RLark控制平面连接云GPU与边缘机器人资源",
+            "complete": true,
+            "naturalWidth": 1024,
+            "renderedWidth": 344,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "mobile",
+        "key": "models",
+        "title": "09-28｜六模型的输入输出、对照与许可 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ovis-architecture.png",
+            "alt": "Ovis两个嵌入家族的输入与编码结构，本期采用右侧VL-2B",
+            "complete": true,
+            "naturalWidth": 2240,
+            "renderedWidth": 343.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/pruna-time.png",
+            "alt": "Pruna五步、八步与基座四十步的1024图像生成耗时",
+            "complete": true,
+            "naturalWidth": 2400,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "mobile",
+        "key": "papers",
+        "title": "09-28｜六论文：推理、视频、记忆与评测的取舍 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/planner-lifecycle.png",
+            "alt": "Qwen-Planner-Agent：先学会完成任务，再限制多余推理",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 343.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/virdm-method.png",
+            "alt": "ViRDM：视频后训练可以移除在线教师和评论器，但仍需要好的起点",
+            "complete": true,
+            "naturalWidth": 1320,
+            "renderedWidth": 344,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/memory-efficiency.png",
+            "alt": "Memory Attention：参数增加，也可能减少每个token的计算",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 343.9765625,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/delta-memory.png",
+            "alt": "DeltaWAM：用稀疏变化接续观察，避免每次重算完整世界",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 343.953125,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/jev-calibration.png",
+            "alt": "Just Ask Jev：能把失败排在前面，不代表概率已经校准",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 343.9765625,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/nsc-pareto.png",
+            "alt": "Neural Spectral Capacity：先用数学代理筛架构，再验证真实能力",
+            "complete": true,
+            "naturalWidth": 2100,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "mobile",
+        "key": "projects",
+        "title": "09-28｜十个开源项目的任务与使用条件 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/aldine-editor.png",
+            "alt": "Aldine：协作LaTeX编辑也可以保留文件与Git工作流",
+            "complete": true,
+            "naturalWidth": 1440,
+            "renderedWidth": 344,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/shotcandy-example.webp",
+            "alt": "Shotcandy：用真实截图做展示图和短视频",
+            "complete": true,
+            "naturalWidth": 1760,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/rot-guard.png",
+            "alt": "Rot Guard：按自己的目标过滤信息流，同时保留查看入口",
+            "complete": true,
+            "naturalWidth": 1586,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ufo-architecture.png",
+            "alt": "UFO core：把代理回合、后台任务与工具执行分开管理",
+            "complete": true,
+            "naturalWidth": 2960,
+            "renderedWidth": 343.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/astrabox-console.png",
+            "alt": "AstraBox：把Agent、运行环境和凭据做成可管理资源",
+            "complete": true,
+            "naturalWidth": 1337,
+            "renderedWidth": 343.984375,
+            "insideReader": true
+          },
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/swe-mux.webp",
+            "alt": "swe-mux：在手机上检查多个编码Agent的工作",
+            "complete": true,
+            "naturalWidth": 1440,
+            "renderedWidth": 344,
+            "insideReader": true
+          }
+        ]
+      },
+      {
+        "size": "mobile",
+        "key": "practice",
+        "title": "09-28｜一个合成实验看懂奖励权重与归一化 · 资料夹",
+        "documentOverflow": false,
+        "readerOverflow": false,
+        "images": [
+          {
+            "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/advantage-scale.png",
+            "alt": "合成全成功轨迹中，普通优势标准差接近一，分母下限让小权重产生较小幅度",
+            "complete": true,
+            "naturalWidth": 1200,
+            "renderedWidth": 343.9921875,
+            "insideReader": true
+          }
+        ]
+      }
+    ]
+  },
+  "links": {
+    "checkedAt": "2026-09-28T00:20:50.182Z",
+    "passed": true,
+    "checks": [
+      {
+        "id": "paper-qwen-planner-agent",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-qwen-planner-agent",
+        "title": "Qwen-Planner-Agent：先学会完成任务，再限制多余推理",
+        "image": {
+          "ok": true,
+          "alt": "Qwen-Planner-Agent：先学会完成任务，再限制多余推理"
+        }
+      },
+      {
+        "id": "paper-virdm",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-virdm",
+        "title": "ViRDM：视频后训练可以移除在线教师和评论器，但仍需要好的起点",
+        "image": {
+          "ok": true,
+          "alt": "ViRDM：视频后训练可以移除在线教师和评论器，但仍需要好的起点"
+        }
+      },
+      {
+        "id": "paper-memory-attention",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-memory-attention",
+        "title": "Memory Attention：参数增加，也可能减少每个token的计算",
+        "image": {
+          "ok": true,
+          "alt": "Memory Attention：参数增加，也可能减少每个token的计算"
+        }
+      },
+      {
+        "id": "paper-deltawam",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-deltawam",
+        "title": "DeltaWAM：用稀疏变化接续观察，避免每次重算完整世界",
+        "image": {
+          "ok": true,
+          "alt": "DeltaWAM：用稀疏变化接续观察，避免每次重算完整世界"
+        }
+      },
+      {
+        "id": "paper-just-ask-jev",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-just-ask-jev",
+        "title": "Just Ask Jev：能把失败排在前面，不代表概率已经校准",
+        "image": {
+          "ok": true,
+          "alt": "Just Ask Jev：能把失败排在前面，不代表概率已经校准"
+        }
+      },
+      {
+        "id": "paper-neural-spectral-capacity",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-neural-spectral-capacity",
+        "title": "Neural Spectral Capacity：先用数学代理筛架构，再验证真实能力",
+        "image": {
+          "ok": true,
+          "alt": "Neural Spectral Capacity：先用数学代理筛架构，再验证真实能力"
+        }
+      },
+      {
+        "link": "AI动态",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-28-news",
+        "title": "AI 动态：速度、重复调用与代理真正理解了什么"
+      },
+      {
+        "link": "开源模型",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-28-models",
+        "title": "六个模型：决策、检索、图像、声音和三维表示"
+      },
+      {
+        "link": "论文精选",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-28-papers",
+        "title": "六篇论文：少算一点之前，先弄清究竟省掉什么"
+      },
+      {
+        "link": "开源项目",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-28-projects",
+        "title": "十个项目：把新工具放到具体任务里判断"
+      },
+      {
+        "link": "技术实践",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-28-practice",
+        "title": "奖励权重变小，训练信号一定会变小吗"
+      }
+    ]
+  },
+  "attachments": {
+    "checkedAt": "2026-09-28T00:20:55.006Z",
+    "passed": true,
+    "checks": [
+      {
+        "type": "original-size-image",
+        "module": "news",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/naive-architecture.webp",
+        "width": 3300,
+        "height": 2236,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "news",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/mimo-repetition.png",
+        "width": 2882,
+        "height": 1051,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "news",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ember-tokens.png",
+        "width": 5000,
+        "height": 2813,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "news",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/swap-welfare.png",
+        "width": 1920,
+        "height": 1091,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "news",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/homebody-architecture.webp",
+        "width": 2400,
+        "height": 2015,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "news",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/rlark-architecture.png",
+        "width": 1024,
+        "height": 678,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "models",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ovis-architecture.png",
+        "width": 2240,
+        "height": 1336,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "models",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/pruna-time.png",
+        "width": 2400,
+        "height": 1244,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "papers",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/planner-lifecycle.png",
+        "width": 2100,
+        "height": 1084,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "papers",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/virdm-method.png",
+        "width": 1320,
+        "height": 660,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "papers",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/memory-efficiency.png",
+        "width": 2100,
+        "height": 417,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "papers",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/delta-memory.png",
+        "width": 2100,
+        "height": 344,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "papers",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/jev-calibration.png",
+        "width": 2100,
+        "height": 626,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "papers",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/nsc-pareto.png",
+        "width": 2100,
+        "height": 828,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "projects",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/aldine-editor.png",
+        "width": 1440,
+        "height": 900,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "projects",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/shotcandy-example.webp",
+        "width": 1760,
+        "height": 902,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "projects",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/rot-guard.png",
+        "width": 1586,
+        "height": 1200,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "projects",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/ufo-architecture.png",
+        "width": 2960,
+        "height": 1120,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "projects",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/astrabox-console.png",
+        "width": 1337,
+        "height": 636,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "projects",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/swe-mux.webp",
+        "width": 1440,
+        "height": 810,
+        "complete": true
+      },
+      {
+        "type": "original-size-image",
+        "module": "practice",
+        "url": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-28/images/advantage-scale.png",
+        "width": 1200,
+        "height": 720,
+        "complete": true
+      },
+      {
+        "type": "archived-pdf",
+        "id": "paper-qwen-planner-agent",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-qwen-planner-agent-pdf",
+        "pages": "48",
+        "rendered": true
+      },
+      {
+        "type": "archived-pdf",
+        "id": "paper-just-ask-jev",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-just-ask-jev-pdf",
+        "pages": "50",
+        "rendered": true
+      },
+      {
+        "type": "archived-pdf",
+        "id": "paper-neural-spectral-capacity",
+        "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-neural-spectral-capacity-pdf",
+        "pages": "37",
+        "rendered": true
+      }
+    ]
+  }
+}

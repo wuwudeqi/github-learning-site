@@ -1,0 +1,660 @@
+[
+  {
+    "id": "ATH-MaaS/Ovis-VL-Embedding",
+    "repositoryUrl": "https://github.com/ATH-MaaS/Ovis-VL-Embedding",
+    "selected": false,
+    "reason": "模型栏已展开，跨栏去重",
+    "originalDate": "2026-08-20T03:11:21Z",
+    "recentEvidence": [
+      {
+        "sha": "48019b2d9342de28af715488e66f0c31ceb8aceb",
+        "date": "2026-09-24T03:03:23Z",
+        "message": "Update README.md",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding/commit/48019b2d9342de28af715488e66f0c31ceb8aceb"
+      },
+      {
+        "sha": "99adb000deff30021fc41523ae894931a4aac4d9",
+        "date": "2026-09-24T02:15:26Z",
+        "message": "Update README.md",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding/commit/99adb000deff30021fc41523ae894931a4aac4d9"
+      },
+      {
+        "sha": "ba7262b683b5eea98abc4f68146dfab15223c56a",
+        "date": "2026-09-23T12:14:31Z",
+        "message": "Merge Model Weights column into Model Page",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding/commit/ba7262b683b5eea98abc4f68146dfab15223c56a"
+      },
+      {
+        "sha": "72fad157b1f1538466d67981ddf608997e4315be",
+        "date": "2026-09-23T12:09:41Z",
+        "message": "Update README.md",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding/commit/72fad157b1f1538466d67981ddf608997e4315be"
+      },
+      {
+        "sha": "8616c097d683d1874c7dc19e15085c38837b0579",
+        "date": "2026-09-23T09:47:42Z",
+        "message": "Add GitHub badge to header",
+        "url": "https://github.com/ATH-MaaS/Ovis-VL-Embedding/commit/8616c097d683d1874c7dc19e15085c38837b0579"
+      }
+    ]
+  },
+  {
+    "id": "Avinash-jetwani/jevmem",
+    "repositoryUrl": "https://github.com/Avinash-jetwani/jevmem",
+    "selected": true,
+    "reason": "22日新公开",
+    "originalDate": "2026-09-22T11:47:24Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.5.7",
+        "published_at": "2026-09-26T13:29:51Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Avinash-jetwani/jevmem/releases/tag/v0.5.7",
+        "body": "A privacy page for the directory listing. No change to the CLI's or the plugin's behaviour.\n\n### Added\n- **`PRIVACY.md`.** Who makes jevmem (no server, nothing sent to the author, no telemetry), what leaves the machine and where (TypeSafe AI's `https://api.typesafe.ai/v1/systemone`; OpenAI or Anthropic only when `writer` in `jevmem.config.json` chooses them), the best-effort secret scrubbing, links to TypeSafe's, OpenAI's and Anthropic's privacy policies and terms, what is stored where, how to delete it, and how to get in touch. The directory portal warned \"No privacy policy URL found\".\n- `plugin/README.md` has a \"Privacy\" link to it; the main README and SECURITY.md link to it too. The link check and check-claims now cover `PRIVACY.md`, and the npm package includes it.\n- `test/network.test.ts` checks the source for any network call other than the TypeSafe client and the OpenAI or Anthropic writer: no HTTP, socket or fetch library, `node:net` only for the daemon's local socket, the global `fetch` only in the writer, the MCP server on stdio only, and a TypeSafe SDK that names only `https://api.typesafe.ai`.\n\n### Not added\n- **`privacyPolicyUrl` in `plugin.json`.** `claude plugin validate --strict plugin` with Claude Code 2.1.274 rejects it (\"Unknown field 'privacyPolicyUrl'\"). Claude Code 2.1.281 accepts it, and also `supportUrl`, `documentationUrl` and `termsOfServiceUrl`, which the manifest reference doesn't list yet. The README link is the portal's other accepted form.\n\n"
+      },
+      {
+        "tag_name": "v0.5.6",
+        "published_at": "2026-09-26T13:06:14Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Avinash-jetwani/jevmem/releases/tag/v0.5.6",
+        "body": "The plugin finds the jevmem CLI in the usual places again, and in an enabled project it tells you when it can't. No change to the CLI's behaviour.\n\n### Fixed\n- **The CLI is found in the usual places again.** v0.5.5 found the CLI only with `command -v jevmem` or its cached path, so a desktop-app session whose PATH lacked `jevmem` did nothing and said nothing. The launcher now looks, in order: `command -v jevmem`, the cached path, `/opt/homebrew/bin`, `/usr/local/bin`, `~/.local/bin`, `~/.volta/bin`, then the newest Node version under `~/.nvm/versions/node` that has `jevmem`. It caches what it finds and still runs no package manager. `~/.bun/bin` is left out: its name reads as a package manager to `scripts/check-plugin.mjs`. Choosing the newest nvm version now compares version numbers (v22 above v9); the old text sort, also used to find Node, did not.\n- **A message instead of silence.** In an enabled project with no CLI, the `UserPromptSubmit` hook shows \"jevmem: CLI not found, so memory is off in this project. See the jevmem README to set it up\" (a `systemMessage`, with a link), once per session. The `Stop` hook stays silent. A CLI with no Node 20+ to run it gets the same, with \"Node.js 20 or newer not found\". A project that isn't enabled still gets no output at all (tested).\n\n### Changed\n- As a process, the plugin's Stop launcher took 14 ms p50 against 12 ms for the `init` launcher in the same run, and 15 ms on a bare PATH with the CLI found in `~/.local/bin` and then cached ([results/ops-2026-09-26-v056.json](results/ops-2026-09-26-v056.json)).\n- `plugin.json` sets `displayName` to `jevmem`, so the directory shows the lowercase name. The manifest has no field for support, issues or privacy links; `homepage` (the manifest's documentation URL) already points at the README.\n- The READMEs and docs/hooks.md no longer say to start Claude Code once from a terminal, and say what happens when the CLI is missing.\n\n"
+      },
+      {
+        "tag_name": "v0.5.5",
+        "published_at": "2026-09-26T12:29:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Avinash-jetwani/jevmem/releases/tag/v0.5.5",
+        "body": "\nThe plugin folder no longer contains an install command or any package-manager wording, and jevmem has its icon and brand files. No change to the CLI's behaviour.\n\n### Changed\n- **No install text in `plugin/`.** The directory's validation read an `npm install` in the plugin (most likely the `npm install -g jevmem` line in `plugin/README.md`) and held the repository's `package.json` and pnpm files as a possible custom registry. `plugin/README.md` now links to the install command in the main README and names the npm registry page (https://www.npmjs.com/package/jevmem, published with provenance). `scripts/check-plugin.mjs` fails CI on install or launcher text anywhere in `plugin/`.\n- **The plugin launcher finds the CLI with `command -v jevmem`, or the path it cached the last time it found one.** It no longer searches Homebrew, `/usr/local`, `~/.npm-global`, Volta, nvm, fnm, asdf, mise or n, and it names no package manager. If Claude Code gives hooks a PATH without `jevmem` (the desktop app can), start Claude Code once from a terminal so the launcher caches the path. As a process, the Stop launcher took 17 ms p50, against 14 ms for the `init` launcher in the same run ([results/ops-2026-09-26-v055.json](results/ops-2026-09-26-v055.json)).\n\n### Added\n- **Icon and brand files.** `plugin/.claude-plugin/icon.svg` is the plugin's icon in the directory. `brand/` holds the brand kit's SVGs (icon, lockup, mark, wordmark) and its README, and the README header is the horizontal lockup, with a dark-mode version.\n- The link check also follows HTML `src`/`srcset` and absolute links into this repository, and covers `plugin/README.md` and `brand/README.md`.\n\n"
+      },
+      {
+        "tag_name": "v0.5.4",
+        "published_at": "2026-09-26T11:03:33Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Avinash-jetwani/jevmem/releases/tag/v0.5.4",
+        "body": "\njevmem uses only the keys and services you chose: the LLM writer is opt-in per project, and shell profiles are no longer read.\n\n### Changed\n- **LLM writer is now opt-in: set writer in jevmem.config.json.** Until now, an `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` found anywhere jevmem looked sent the text of each saved turn to that provider. Now the LLM writer runs only when the project's `jevmem.config.json` sets `\"writer\": \"openai\"` or `\"anthropic\"` (or `\"writer\": { \"provider\": \"openai\" }`) and that provider's key is set. By default jevmem writes the line itself. A key alone, or `JEVMEM_WRITER=openai`, doesn't turn it on (tested with a fake OpenAI and Anthropic server: zero requests); `JEVMEM_WRITER=none` still turns it off. The pre-0.5.4 value `\"provider\": \"auto\"` now means no LLM writer. If you relied on the old behaviour, jevmem prints one line saying so, once per project, and you can add `\"writer\": \"openai\"` or `\"anthropic\"` to keep it.\n- **What the default costs in line quality.** The local writer's code is unchanged. On the 37 save-labelled turns of `eval/transcript.jsonl`, it passes the 5 existing `expectLine` checks and keeps every line within 200 characters. On 16 of the 37 turns, though, its line leaves out a later sentence, such as the reason for a decision ([results/writer-2026-09-26-none.json](results/writer-2026-09-26-none.json)). The LLM writer was not measured in this release (no OpenAI or Anthropic key was available); `node scripts/eval-writer.mjs --writer openai` runs the same comparison with one.\n- **Shell profiles are no longer read.** Keys come from the plugin setting, `TYPESAFE_API_KEY` in the environment, `<project>/.jevmem/.env`, then `~/.jevmem/env`. A key only in `~/.zshrc` (or `~/.zshenv`, `~/.zprofile`, `~/.bash_profile`, `~/.bashrc`, `~/.profile`) is not used (tested). If your hooks found the key there, move it to `~/.jevmem/env` or the plugin setting.\n- **When no key is found**, `jevmem init`, `jevmem enable` and the new `jevmem doctor` say where to put one (the plugin setting via `/plugin configure jevmem@jevmem`, or `~/.jevmem/env`) and never print a key.\n- **Plugin install docs.** `claude plugin install` doesn't ask for the key, so the READMEs now say to enter it with `/plugin configure jevmem@jevmem`. `plugin/README.md` also tells people who added jevmem from the Claude directory to skip the marketplace commands.\n- Hook commands use the quoted `\"${CLAUDE_PLUGIN_ROOT}/hooks/jevmem-hook.sh\"` form that the Claude plugin directory's checklist asks for in a plugin that lives in a subfolder. The launcher's messages no longer spell out an install command.\n- `plugin/README.md` is the directory listing. It covers where the plugin works (Claude Code only), what it runs, each host it sends to and what it sends, what it writes, and where the key is read from. `plugin/LICENSE` was added, and `.gitignore` plus `scripts/check-plugin.mjs` keep operating-system files out of `plugin/`.\n\n### Added\n- **`jevmem doctor`:** whether the project is enabled, where the TypeSafe key comes from (by name only), which writer is active and why, and which hooks are registered. `jevmem stats` also shows the writer.\n- **The `directory` branch,** which the Claude plugin directory follows. After `npm publish` succeeds, the release workflow fast-forwards it to the tagged commit. It never force-pushes, and a ruleset blocks force pushes and deletion. The release steps are in CONTRIBUTING.md.\n- `scripts/eval-writer.mjs` scores the one-line writer on the eval set.\n\n### Verified\n- `scripts/e2e.sh --runs 3 --scenario full`: 18 of 18 runs passed ([results/e2e-2026-09-26-v054.txt](results/e2e-2026-09-26-v054.txt)). The Claude Code sessions had no shell variables and a temporary HOME whose `~/.jevmem/env` held the key. An earlier full run, before the final build, passed 17 of 18: one `handwrite` turn's queue did not drain within 60 s, and it did not recur in three reruns ([results/e2e-2026-09-26-v054-first-run.txt](results/e2e-2026-09-26-v054-first-run.txt)).\n\n"
+      }
+    ]
+  },
+  {
+    "id": "Colton-z/AstraBox",
+    "repositoryUrl": "https://github.com/Colton-z/AstraBox",
+    "selected": true,
+    "reason": "22日建库；23日v0.1.0，27日v0.1.1补充访问边界修正",
+    "originalDate": "2026-09-22T17:30:47Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.1.1",
+        "published_at": "2026-09-27T02:38:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Colton-z/AstraBox/releases/tag/v0.1.1",
+        "body": "Upgrading is strongly recommended for every 0.1.0 installation: it fixes\nsandbox isolation and access-control vulnerabilities, and engines that could\nnot complete a first turn on the one-command install. Re-run the installer to\nupgrade; settings, secrets and data are kept.\n\nSandboxes that 0.1.0 started keep their old port bindings until they are\nreplaced. To close that exposure right away, remove them on the AstraBox host\nafter upgrading:\n\n```bash\ndocker ps -aq --filter label=opensandbox.io/id | xargs -r docker rm -f\ndocker ps -aq --filter label=opensandbox.io/egress-sidecar-for | xargs -r docker rm -f\n```\n\nEach conversation continues on a new sandbox with its history. Files in a\nremoved sandbox's workspace are kept only with the optional persistent\nworkspace volume.\n\n### Security\n\n- **Sandbox services were reachable from the network.** Each sandbox's command\n  and file services were published on every host interface without\n  authentication. They are now bound to the Docker bridge gateway only.\n- **A sandbox could reach the management API.** With Unrestricted networking,\n  code in a sandbox could call the platform API, which in no-login mode acts as\n  an administrator. The server no longer publishes its API on the Docker\n  bridge; the scoped sandbox edges reach it over a private network.\n- **A sandbox could reach another sandbox.** Every sandbox now denies the\n  Docker bridge subnet, apart from the scoped edges, in every networking mode.\n- **Cloud metadata and raw sockets.** `169.254.0.0/16` is denied in every\n  networking mode, and sandbox containers no longer have `NET_RAW` (Docker).\n- **Agent fields could widen a sandbox's access.** Plugin, Skill and MCP hosts\n  written by an Agent author are now checked against the Environment's policy.\n  Private, loopback, link-local and Docker bridge hosts are refused unless an\n  administrator has explicitly admitted them in that Environment.\n  `deploy_key_secret_name` resolves only names listed in\n  `ASTRABOX_DEPLOY_KEY_SECRET_NAMES`, an author's MCP definition cannot select\n  the platform's gateway credential, and the Git HTTPS token is sent only to\n  `ASTRABOX_GIT_HTTPS_TOKEN_HOST`. Refusals are `403` with registered codes.\n- **Team login: members could become administrators.** A member could request\n  `astrabox:admin` in their own token. API scopes now count only on tokens\n  issued to the configured API client; a user's token carries the user's role.\n- **Team login: bundled Casdoor defaults.** The built-in Casdoor administrator's\n  default password is replaced with a generated secret at first start, and\n  AstraBox accepts only accounts of the configured organization\n  (`ASTRABOX_CASDOOR_ORGANIZATION`, default `astrabox`).\n- **The name-only egress mode is refused.** `ASTRABOX_SANDBOX_EGRESS_MODE=dns`\n  enforces no address rule, so the cloud metadata deny, the Docker bridge deny\n  and address entries in Limited allow lists would not apply. The server now\n  refuses to start with it instead of warning.\n- **IPv6 stays off in every sandbox.** AstraBox now sets OpenSandbox's\n  `egress.disable_ipv6` itself instead of relying on its default, so sandboxes\n  have no IPv6 route even where the Docker daemon enables IPv6.\n- **The server never offers sandboxes its own address.** With\n  `ASTRABOX_MCP_PROXY_BASE_URL` unset, the server used its own container\n  address as the sandbox callback base, and the protected embedded gateway used\n  it as the private gateway address; either let a sandbox reach every port the\n  server listens on. Neither is derived any more: an unset callback base fails\n  the first sandbox, and the embedded gateway refuses to start without a\n  gateway address. The maintained Compose stack sets both to the sandbox edge.\n- **Kubernetes sandboxes lose `NET_RAW`.** Sandbox containers on Kubernetes\n  could open raw sockets, which Docker sandboxes lost in 0.1.1. The bundled\n  lifecycle server now creates every sandbox with `NET_RAW` dropped, through\n  the OpenSandbox BatchSandbox template. With\n  `ASTRABOX_SANDBOX_SERVER_KUBE_WORKLOAD_PROVIDER=agent-sandbox` the server\n  logs a warning instead, because that provider reads a template AstraBox does\n  not write.\n- **Hermes' session token no longer reaches proxy logs.** AstraBox sent the\n  token that opens an Assistant's Hermes backend in the connection URL, and the\n  OpenSandbox ingress gateway and the sandbox's command service log every\n  request URL. It now travels in a request header, and the Hermes image moves\n  it to where Hermes reads it inside the sandbox. Rebuild or pull the\n  `sandbox-hermes` image together with the server.\n- **The Hermes backend credential is no longer computable from a box's\n  identity.** The token that opens an Assistant's Hermes backend was a hash of\n  the box's account and home directory, with no deployment secret, so anyone\n  who could reach the backend port and knew those identifiers could present it.\n  On Kubernetes the sandbox Pod has no ingress firewall, so that port is\n  reachable from elsewhere in the cluster. The token is now derived from the\n  deployment's own secret and cannot be reproduced from the identity alone.\n  Rebuild or pull the `sandbox-hermes` image together with the server.\n- **Claude Code and Codex sandboxes admit only the platform on their engine\n  ports.** A Claude Code sandbox's runner handed its live conversation to any\n  connection that named the conversation's id, which the API shows and which\n  the runner's own refusal revealed to a peer that named a wrong one. A Codex\n  sandbox's app-server port relayed every connection to the server. On\n  Kubernetes a sandbox Pod has no ingress firewall of OpenSandbox's making, so\n  any pod in the cluster could reach both, and in an Agent-shared sandbox every\n  other conversation could. Both now require a credential derived from the\n  deployment's own secret and the sandbox's identity, and refuse a connection\n  without it before naming or relaying anything. A new Claude Code sandbox's\n  runner also refuses to be prepared until AstraBox has written that\n  credential into the sandbox, so the first connection to reach it cannot\n  claim it. Rebuild or pull the\n  `sandbox-claude-code` and `sandbox-codex` images together with the server;\n  sandboxes started before the upgrade keep the old behaviour until they are\n  replaced.\n- **The sandbox's :8080 services were open to any caller that reached the\n  port.** The agent-infra base image serves a file and shell API, a terminal,\n  JupyterLab, a VNC desktop, code-server and an MCP hub on :8080 and left them\n  unauthenticated, so an unauthenticated request ran arbitrary commands in the\n  box. On Kubernetes every Pod in the cluster can reach that port, and on Docker\n  every container on the default bridge can, including through the address the\n  egress sidecar publishes on the bridge gateway — cross-tenant code execution.\n  AstraBox now sets the base image's own `SANDBOX_API_KEY` per box, derived from\n  the deployment secret and the box's identity, so the port refuses a caller\n  without it. Exposed-port links never carry that credential: port 8080 cannot\n  be exposed, and previews use the agent's own web server port. The\n  services AstraBox does not use — JupyterLab, code-server, the VNC desktop, the\n  browser and the Node REPLs — no longer run at all. Rebuild or pull the\n  `sandbox-*` images together with the server.\n\n### Added\n\n- **Team login from the installer.** `ASTRABOX_INSTALL_TEAM_LOGIN=casdoor` turns\n  on the bundled Casdoor login; set `ASTRABOX_CONSOLE_ORIGIN` and\n  `ASTRABOX_OIDC_ISSUER` for a deployment behind a reverse proxy. The release\n  bundle now contains the login overlay.\n- **Langfuse tracing through OpenTelemetry.** The bundled gateway sends traces\n  with LiteLLM's OTel integration when `LANGFUSE_PUBLIC_KEY` and\n  `LANGFUSE_SECRET_KEY` are set, and sends nothing otherwise.\n- **Single-container deployment.** `ghcr.io/colton-z/astrabox:0.1.1` runs the\n  platform with `docker run`; it keeps its data in a Docker volume and creates\n  separate sandbox containers from the matching `sandbox-*` images. See the\n  [all-in-one guide](docs/all-in-one.md).\n\n### Fixed\n\n- Assistant workspaces on persistent volumes prepare their private directory\n  ownership before startup checks. Replacement sandboxes reuse the same numeric\n  account so the existing workspace and Hermes profile remain writable.\n\n- A conversation replacing a lost sandbox could fail its next message because\n  background cleanup deleted the replacement during startup. Cleanup now\n  preserves the replacement while the conversation's accepted turn is active.\n- Prepared-runtime status keeps the existing pool identity while an Agent\n  configuration change prepares a replacement.\n- The first model request of the bundled gateway failed with\n  `400 Invalid request format` for Pi, Hermes, DeepSeek Harness and Codex.\n- DeepSeek Harness and Hermes could not start on the one-command install; the\n  server now connects to sandboxes directly instead of through the lifecycle\n  server's relay.\n- Sandboxes could not be created on hosts with fewer than four CPUs.\n- The server restarted once during a fresh install while the model gateway\n  finished its first boot.\n- `docker stop` now stops AstraBox before the services it depends on.\n- Claude Code ran without its own system prompt when an Agent had no\n  instructions (including the seeded Agent) and its sandbox started cold. It\n  now always runs on Claude Code's preset, with Agent instructions appended.\n- DeepSeek Harness failed every turn on models other than DeepSeek's (it asked\n  for a 256,000-token output). Other models now use the harness's generic\n  gateway route with its standard limits.\n- Conversation titles and process summaries were never generated on the\n  one-command install. Every turn logged `session title generation failed`\n  and the conversation kept the Agent's name, because the server sent these\n  requests to the sandbox-only gateway name `gateway.astrabox.test`. The\n  server now uses the gateway's server-side address and its own gateway\n  credential, as model discovery does. The `ASTRABOX_TITLE_MODEL_*` settings\n  still override both.\n- A lost sandbox now produces the registered, non-retryable `SANDBOX_GONE`\n  result; input that was never delivered produces the registered,\n  non-retryable `INPUT_NOT_DELIVERED` result instead of looking like a failed\n  agent turn.\n- Codex child command cards recover an empty command result from the same\n  call's recorded native output after the child finishes.\n- **Conversations stopped answering after a restart.** On the one-host Docker\n  stack, the two sandbox edges can come back at different Docker bridge\n  addresses after `docker compose stop` and `start`, or after an edge restarts.\n  A conversation whose sandbox was created before then could not reach the\n  model: each message retried for about six minutes and failed. Sandboxes now\n  record the addresses they were created with; the server removes those\n  created with other addresses, and the next message takes a new sandbox, as\n  after any other sandbox loss. A server that sees an edge move while it runs\n  exits so that Docker restarts it. Sandboxes started by 0.1.0 carry no such\n  record; after upgrading, remove them with the commands at the start of these\n  notes if a conversation stops answering after an edge restart.\n- **`docker stop` reported a failure.** A stop that completes now exits with\n  status 0 instead of 241. A process killed by a signal reports 128 plus the\n  signal number.\n- **Hermes Assistants could not start behind the OpenSandbox ingress\n  gateway.** The gateway that Secure Access requires on Kubernetes replaces the\n  `Host` header, and Hermes refuses a `Host` other than its loopback address,\n  so the workspace never became ready. The Hermes image now presents the\n  address Hermes expects, and the server connects to the sandbox address it\n  was given, which wildcard gateway routes also need. Rebuild or pull the\n  `sandbox-hermes` image together with the server.\n- **The Kubernetes Compose stack ignored the ingress settings.**\n  `ASTRABOX_SANDBOX_SECURE_ACCESS`, `ASTRABOX_SANDBOX_ENDPOINT_SCHEME` and the\n  `ASTRABOX_SANDBOX_SERVER_INGRESS_*` settings never reached the server, so\n  sandboxes were served without Secure Access even when it was set. They are\n  now passed through, and on Docker the server refuses to start with Secure\n  Access set instead of ignoring it.\n\n### Changed\n\n- A user's own OAuth token no longer needs `astrabox:*` scopes; it can call\n  every route the user can reach in the console. Tokens issued to OAuth clients\n  other than the console and the API client are refused.\n- Existing Agents that reference a deploy key name not listed in\n  `ASTRABOX_DEPLOY_KEY_SECRET_NAMES` are refused when a Session starts.\n- `ASTRABOX_SERVER_SANDBOX_PORT`, `ASTRABOX_MODEL_GATEWAY_HOST_PORT` and\n  `ASTRABOX_GATEWAY_DNS_HOST_PORT` are no longer used; remove them from\n  `containers/.env`.\n- Docker deployments now require Docker Engine 26.0 or later and the Compose\n  plugin 2.17.0 or later. The installer checks both before starting.\n- **New Agents keep a sandbox ready.** An Agent created without a prewarm\n  choice, from the API, the console, the CLI or the seed of a fresh\n  installation, now has prewarming on wherever the deployment can prewarm\n  (`ASTRABOX_AGENT_PREWARM_REDIS_URL` is set, as in every bundled Compose\n  deployment), so its first conversation claims a prepared sandbox instead of\n  starting one. Each such Agent holds one idle sandbox. Existing Agents keep\n  their setting. The cost per deployment and how to turn it off are in\n  [Plan capacity for prepared sandboxes](docs/deploy.md#plan-capacity-for-prepared-sandboxes).\n\n### Documentation\n\n- A reverse-proxy guide for team login: public URLs, and keeping Casdoor's\n  administration pages private.\n- A sandbox network boundary section in the deployment guide.\n- The AstraBox CLI and the plugin interfaces are introduced on the site and in\n  the README.\n"
+      },
+      {
+        "tag_name": "v0.1.0",
+        "published_at": "2026-09-23T01:22:54Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Colton-z/AstraBox/releases/tag/v0.1.0",
+        "body": "**Full Changelog**: https://github.com/Colton-z/AstraBox/commits/v0.1.0"
+      }
+    ]
+  },
+  {
+    "id": "MichaelKinsy/PiG",
+    "repositoryUrl": "https://github.com/MichaelKinsy/PiG",
+    "selected": true,
+    "reason": "17日建库，v0.2.0于26日北京时间发布",
+    "originalDate": "2026-09-17T15:52:38Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.2.0",
+        "published_at": "2026-09-25T21:51:00Z",
+        "prerelease": false,
+        "html_url": "https://github.com/MichaelKinsy/PiG/releases/tag/v0.2.0",
+        "body": "First public release of PiG: [Pi](https://github.com/earendil-works/pi), the coding agent harness, rebuilt in Go as one native binary. PiG 0.2.0 tracks Pi 0.87.1 (`pig --version` prints `0.2.0+0.87.1`). Read the story: [Meet PiG (Pi in Go)](https://developer.hpe.com/blog/meet-pig-pi-in-go-a-port-that-plans-on-keeping-up/).\r\n\r\n```bash\r\ncurl -fsSL https://pi-in-go.dev/install.sh | sh        # macOS and Linux\r\nirm https://pi-in-go.dev/install.ps1 | iex             # Windows PowerShell (preview)\r\nnpm install -g @pi-in-go/pig                           # npm\r\ngo install github.com/MichaelKinsy/PiG/cmd/pig@v0.2.0  # Go\r\n```\r\n\r\nSee [Install](https://pi-in-go.dev/docs/latest/quickstart) for every method, including update and uninstall.\r\n\r\n### New Features\r\n\r\n- **One native binary** — No Node.js needed unless you run TypeScript extensions. In our measurements PiG starts in about 21 ms versus about 300 ms for Pi, with about a quarter of the peak memory. See [Quickstart](https://pi-in-go.dev/docs/latest/quickstart).\r\n- **Pi's extensions run unchanged** — TypeScript and JavaScript extensions work as they do in Pi, together in one Node process. See [Extensions](https://pi-in-go.dev/docs/latest/extensions).\r\n- **Extensions in Go, Rust and Python** — Write new extensions with SDKs modeled on Pi's API; each language shares one process, and `isolation: strict` gives an extension its own. See [Extensions](https://pi-in-go.dev/docs/latest/extensions).\r\n- **Live `/reload`** — Edit an extension while PiG runs and reload it. A crashed extension is reported and restarted; your session and other extensions keep running. See [Slash commands](https://pi-in-go.dev/docs/latest/slash-commands).\r\n- **Piglets** — Bundle extensions, skills and prompts into one named agent, and build it into a native binary for your OS and CPU, optionally signed. See [Piglets](https://pi-in-go.dev/docs/latest/piglets) and [Piglet Binaries](https://pi-in-go.dev/docs/latest/piglet-binaries).\r\n- **Windows (preview)** — Native Windows builds for x86-64 and Arm64, tested natively. See [Windows](https://pi-in-go.dev/docs/latest/windows).\r\n\r\n### Added\r\n\r\n- Added `pig piglet add npm:<package>` and `git:<repo>` to install Piglet sources.\r\n- Added `pig piglet publish --to github` to publish signed Piglet Binaries to GitHub Releases, and `pig piglet pull` to install one against its signed release index.\r\n- Added Piglet Binary signing (`pig piglet build --sign-key`) with `pig piglet keygen`, `verify` and `trust`; PiG checks the signature against your trust policy at startup.\r\n- Added the plan-mode example extension and PowerShell tool event variants in every SDK.\r\n- Added Pi's model input-limit metadata types to generated and runtime models.\r\n- Added `/angry-pigs` to PiG Standard: a full-screen slingshot game built as an ordinary Go extension.\r\n- Added the model catalogs from the published Pi 0.87.1 package.\r\n\r\n### Changed\r\n\r\n- Changed terminal capability detection to match Pi (hyperlinks, inline images, true color, 256-color themes, Shift+Enter in Apple Terminal), with settings overrides.\r\n- Changed the model picker, selector layouts and thinking settings submenu to Pi 0.87.1's.\r\n- Changed each provider's default model to match Pi's, including Grok 4.7 for xAI.\r\n- Changed parallel tool batches to run every tool at once, as Pi does, instead of capping concurrency at the CPU count.\r\n- Changed install telemetry to report to PiG's own endpoint; `PI_OFFLINE=1` or `enableInstallTelemetry: false` turns it off.\r\n\r\n### Fixed\r\n\r\n- Fixed duplicated tool rows and choppy rendering while tools run.\r\n- Fixed full-transcript repaints on SIGWINCH without a size change, such as tmux window switches.\r\n- Fixed Node extensions losing model stream events after a host call returned, and Go SDK extensions hanging on the same race.\r\n- Fixed image-only user messages being rejected by OpenAI-compatible providers because of an empty text part.\r\n- Fixed invalid `--mode`, missing `--mode` or `--name` values, and unknown short options to exit with status 1 and Pi's wording.\r\n- Fixed Codex manual code entry when port 1455 is busy.\r\n- Fixed text files that start with \"GIF\" being detected as images.\r\n\r\n### Known Limitations\r\n\r\n- Windows is a preview: tested natively, with less real-world use than macOS and Linux.\r\n- The package catalog listing is not in this release; install packages from a known npm or git source.\r\n\r\n### Downloads and verification\r\n\r\nArchives for macOS and Linux (x86-64, Arm64) and Windows (x86-64, Arm64), each built on GitHub Actions from this tag and smoke-tested natively. Verify with `shasum -a 256 -c --ignore-missing SHA256SUMS` or `gh attestation verify <archive> --repo MichaelKinsy/PiG`. Each archive also has SPDX and CycloneDX SBOMs, a license inventory and a vulnerability report, covered by `EVIDENCE-SHA256SUMS`.\r\n\r\nThank you to Mario Zechner and Earendil for Pi. PiG is an independent port; upstream Pi remains the reference implementation. Please [open an issue](https://github.com/MichaelKinsy/PiG/issues) wherever PiG behaves differently from Pi.\r\n"
+      }
+    ]
+  },
+  {
+    "id": "RLinf/RLark",
+    "repositoryUrl": "https://github.com/RLinf/RLark",
+    "selected": false,
+    "reason": "本期新闻已展开，跨栏目去重",
+    "originalDate": "2026-07-28T12:16:35Z",
+    "recentEvidence": [
+      {
+        "sha": "e2345f4acfec8f0f3aabdffe48283db39fb17014",
+        "date": "2026-09-24T10:36:55Z",
+        "message": "feat: improve networking, deployment, and roadmap (#11)\n\nAdd managed SSH connection pools and integrate them with agent networking. Improve KCP initialization and repair incomplete UI authentication secrets. Add bilingual roadmap and update architecture and configuration documentation.\n\nSigned-off-by: chenxu <chenxu@infini-ai.com>\nCo-authored-by: chenxu <chenxu@infini-ai.com>",
+        "url": "https://github.com/RLinf/RLark/commit/e2345f4acfec8f0f3aabdffe48283db39fb17014"
+      },
+      {
+        "sha": "93b96b462990e5662dbdedbbf96ba705d24c6141",
+        "date": "2026-09-24T09:41:59Z",
+        "message": "docs: improve Chinese RTD asset paths (#10)\n\nAdjust raw HTML image references for Chinese locale-only builds while preserving nested-page paths.\n\nAdd a CI build that validates the generated homepage and architecture assets.\n\nSigned-off-by: Likang Yu <likangyu@likangyudebijibendiannao.local>\nCo-authored-by: Likang Yu <likangyu@likangyudebijibendiannao.local>",
+        "url": "https://github.com/RLinf/RLark/commit/93b96b462990e5662dbdedbbf96ba705d24c6141"
+      },
+      {
+        "sha": "f671f20d81e55be736b84b2151545335e063b74b",
+        "date": "2026-09-24T05:29:25Z",
+        "message": "feat: sync internal updates for 0924 (#9)\n\nThis update spans the API definitions, control plane, data plane agents, networking, Web UI, deployment tooling, tests, and documentation.",
+        "url": "https://github.com/RLinf/RLark/commit/f671f20d81e55be736b84b2151545335e063b74b"
+      },
+      {
+        "sha": "6bd58ae8eda1bddb29322fa61bd97134a5d3b3d1",
+        "date": "2026-09-14T08:20:08Z",
+        "message": "Merge pull request #8 from RLinf/sync/release-0910\n\nfeat: sync internal release-0910 improvements",
+        "url": "https://github.com/RLinf/RLark/commit/6bd58ae8eda1bddb29322fa61bd97134a5d3b3d1"
+      },
+      {
+        "sha": "17603906de368bf27d25d3978479df0faa2fc80c",
+        "date": "2026-09-14T08:13:07Z",
+        "message": "feat: sync internal release-0910\n\nApply the source changes from internal tag release-0910 on top of the public release-0901 baseline.\n\nSource commit: 6c18604b826bb8f0114c84be1c5b0b008943634c\n\nSigned-off-by: Likang Yu <likangyu@likangyudebijibendiannao.local>",
+        "url": "https://github.com/RLinf/RLark/commit/17603906de368bf27d25d3978479df0faa2fc80c"
+      }
+    ]
+  },
+  {
+    "id": "Stanford-TML/homebody",
+    "repositoryUrl": "https://github.com/Stanford-TML/homebody",
+    "selected": false,
+    "reason": "展示网站仓库且未找到明确开源许可；新闻介绍研究，不计开源工具",
+    "originalDate": "2026-09-26T02:17:09Z",
+    "recentEvidence": [
+      {
+        "sha": "77d2c333fe0adc12ed35172fe086b382bcd5772b",
+        "date": "2026-09-26T10:57:20Z",
+        "message": "Prefer 1080p laptop starts without the 720p fallback",
+        "url": "https://github.com/Stanford-TML/homebody/commit/77d2c333fe0adc12ed35172fe086b382bcd5772b"
+      },
+      {
+        "sha": "2b6023d0df3f28a0b6fe90f6127355502a102a13",
+        "date": "2026-09-26T10:55:15Z",
+        "message": "Prefer sharper Mux video starts on larger screens",
+        "url": "https://github.com/Stanford-TML/homebody/commit/2b6023d0df3f28a0b6fe90f6127355502a102a13"
+      },
+      {
+        "sha": "98768ba2330ac60506da79d021be71f38e1f09af",
+        "date": "2026-09-26T10:44:53Z",
+        "message": "Optimize mobile media loading and stream main videos through Mux",
+        "url": "https://github.com/Stanford-TML/homebody/commit/98768ba2330ac60506da79d021be71f38e1f09af"
+      },
+      {
+        "sha": "6095c083f648c6bd156d6b479bd7fc1213a0ab22",
+        "date": "2026-09-26T09:25:30Z",
+        "message": "Prioritize video buffering and defer interactive scene downloads",
+        "url": "https://github.com/Stanford-TML/homebody/commit/6095c083f648c6bd156d6b479bd7fc1213a0ab22"
+      },
+      {
+        "sha": "18f59133e63391a35b4f3f8c367e69cc6dc2b6a2",
+        "date": "2026-09-26T08:52:13Z",
+        "message": "Compress website videos while preserving blurred demonstrations",
+        "url": "https://github.com/Stanford-TML/homebody/commit/18f59133e63391a35b4f3f8c367e69cc6dc2b6a2"
+      }
+    ]
+  },
+  {
+    "id": "bonguynvan/tradecanvas",
+    "repositoryUrl": "https://github.com/bonguynvan/tradecanvas",
+    "selected": false,
+    "reason": "4月老项目，最近主要变化8/28，社区转载不算新发布",
+    "originalDate": "2026-04-08T17:26:04Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v1.1.0",
+        "published_at": "2026-08-28T08:06:00Z",
+        "prerelease": false,
+        "html_url": "https://github.com/bonguynvan/tradecanvas/releases/tag/v1.1.0",
+        "body": "TradeCanvas 1.1.0 — split-session shading, plus the 1.0.x interaction fixes.\n\n**npm:** `@tradecanvas/core` `@tradecanvas/chart` `@tradecanvas/commons` `@tradecanvas/analytics` → `1.1.0` · `@tradecanvas/react` `@tradecanvas/vue` `@tradecanvas/svelte` → `1.0.3`\n\n## New in 1.1.0\n\n### Split-session shading\n`SessionHoursConfig` gains an optional `windows: SessionWindow[]`. When set, a bar counts as in-session only if it falls inside one of the windows — so a market with a midday recess (e.g. SET's 10:00–12:30 and 14:30–16:30) dims its lunch break the same way pre-/post-market is dimmed. Without `windows`, the single `startMinute`/`endMinute` window behaves exactly as before (fully backward compatible). Each window handles an overnight wrap independently.\n\n```ts\nchart.setSessionShadingConfig({\n  tzOffsetMinutes: 7 * 60, // ICT\n  windows: [\n    { startMinute: 10 * 60,      endMinute: 12 * 60 + 30 },\n    { startMinute: 14 * 60 + 30, endMinute: 16 * 60 + 30 },\n  ],\n});\nchart.setSessionShadingVisible(true);\n```\n\nNew exports: `SessionWindow`, `isInWindow`. `@tradecanvas/chart` now re-exports `SessionShading`, `DEFAULT_SESSION_HOURS`, `SessionHoursConfig`, `SessionWindow`.\n\n## Since 1.0.0 (1.0.1 – 1.0.3)\n\n- **1.0.3** — Daily/weekly/monthly/yearly bars now show the year on the time axis and in the crosshair pill, instead of a bare `month/day` (axis) or `month/day 00:00` (pill). Intraday bars unaffected. `commons` `timeParts()` gains `year`; new `isDateOnly()` helper.\n- **1.0.2** — Vertical drag-to-pan the price scale. Dragging the chart body up/down slides the price range (grab-and-drag); engages after ~6px of vertical travel and freezes auto-scale (double-click the price axis to restore). Fixes candles pushed off-pane after a Y-axis scale, common on sparse series. New `Viewport.panPriceRange()`; `PanHandler` is now 2D.\n- **1.0.1** — Two fixes: (a) `visibleRangeChange` / `priceRangeChange` / `zoomChange` events now actually fire (they were typed and documented but never emitted); (b) a sparse series (few candles on a wide timeframe) can now be panned instead of being locked to a single offset.\n"
+      },
+      {
+        "tag_name": "v0.9.0",
+        "published_at": "2026-06-02T04:56:56Z",
+        "prerelease": false,
+        "html_url": "https://github.com/bonguynvan/tradecanvas/releases/tag/v0.9.0",
+        "body": "# v0.9.0 — TradingView-grade interaction + analytics depth\n\nThe biggest UX leap since the project started. Every gesture you'd expect from a desktop trading chart is now in the box, the analytics package learned new tricks, and the widget gained the workflow features that separate hobby projects from tools you actually leave open all day.\n\n**[Live demo](https://bonguynvan.github.io/tradecanvas/)** · **[Docs](https://bonguynvan.github.io/tradecanvas/docs/api)** · **[npm](https://www.npmjs.com/package/@tradecanvas/chart)**\n\n## ✨ Chart interaction\n\nIf you've used TradingView, your hands will know what to do.\n\n| Gesture | Result |\n|---|---|\n| Drag price axis ↕ | Compress / expand vertical scale (freezes auto-scale) |\n| Drag time axis ↔ | Zoom time axis |\n| Double-click axis | Reset (auto-scale / fit content) |\n| `Shift` + drag | Measure ruler — bars × time × price Δ × % |\n| `Alt` + click | Pin OHLC tooltip; live crosshair shows delta to the pinned bar |\n| Hover | Price + time pill labels follow the cursor on both axes |\n| `?` | Show the keyboard-shortcut sheet (widget) |\n\nSubtle but immediate: the hovered bar now shows a soft column highlight behind the crosshair, and the price/time axes render with thin tick notches and refined typography instead of heavy per-label rectangles.\n\n## 🪟 Widget upgrades\n\n```ts\nconst widget = new ChartWidget(host, {\n  symbol: 'BTCUSDT',\n  symbols: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT'],\n  adapter: new BinanceAdapter(),\n\n  // New in 0.9\n  watchlist: true,           // right-side sparkline panel\n  persistLayouts: true,      // per-symbol indicators / drawings / alerts\n  // dragDropImport: true (default) — drop CSV / JSON onto the chart\n})\n```\n\n- **Symbol search** — toolbar symbol-click (or `Ctrl/⌘+P`) opens a fuzzy picker; the cycle-through behavior is gone.\n- **Replay scrubber** — toolbar play button toggles a floating bottom bar with play/pause, step, draggable seek, and a 0.5×–100× speed select.\n- **Hotkey sheet** — press `?` to see every shortcut categorized.\n- **Watchlist sidebar** — last price, % change, mini sparkline per symbol; click a row to switch.\n- **Saved layouts** — opt-in `localStorage` persistence: switch symbol, indicators/drawings auto-save; switch back, your setup is restored.\n- **CSV / JSON drag-and-drop** — drop an OHLCV file on the chart and it loads. Auto-detects delimiter, headers, ISO 8601 / unix s / unix ms timestamps, and array-vs-object JSON shape.\n- **Premium CSS refresh** — Inter + JetBrains Mono stacks, smoother cubic-bezier transitions, focus rings, gradient surfaces, animated `connected` status pulse, refined scrollbars, reduced-motion support.\n\n## 📊 Chart visuals\n\n- **Volume Profile** (off by default) — horizontal histogram of traded volume bucketed by price over the visible range, with point-of-control highlighting. `chart.setVolumeProfileVisible(true)`.\n- **Day / week / month dividers** on intraday data, with inline date labels (`Mar 4`, `Apr '26`, `2027`). Auto-suppressed on daily-or-coarser timeframes.\n\n## 📈 Analytics depth\n\n```ts\nimport {\n  Backtester,\n  smaCrossStrategy,\n  donchianBreakoutStrategy,\n  runMonteCarlo,\n} from '@tradecanvas/analytics'\n\nconst bt = new Backtester({ initialCash: 10_000 })\nconst result = bt.run(bars, smaCrossStrategy({ fastPeriod: 10, slowPeriod: 30 }))\n\n// Path-dependence analysis — shuffle trade order 1000 times\nconst mc = runMonteCarlo(10_000, result.trades, { simulations: 1000, seed: 42 })\nconsole.log(mc.equityBands)              // [{ step, p5, p25, p50, p75, p95 }, …]\nconsole.log(mc.probabilityProfitable)    // 0..1\nconsole.log(mc.worstMaxDrawdownPct)\n```\n\n- **Strategy library** — four drop-in `StrategyFn` implementations: SMA cross, RSI mean-reversion, Donchian breakout, Bollinger reversion.\n- **Monte Carlo simulation** — shuffles realised trade order N times to expose path-dependence. Tight P5/P95 band = robust edge; wide band = lucky sequencing.\n\n## 🔧 New exports\n\n`AxisDragHandler`, `MeasureOverlay`, `PinnedTooltip`, `VolumeProfileRenderer`, `parseOHLCV`, `DragDropImporter`, plus `Viewport.scalePriceRange(factor)` for custom axis controls.\n\n## ⚠️ Behavioural notes\n\n- **Toolbar symbol click** opens the search modal now (was: cycle through symbols). Same prop, upgraded behavior.\n- **`dragDropImport` is on by default** in the widget. Pass `dragDropImport: false` if a parent surface already handles drops.\n- **`SessionBreaks`** auto-suppresses its lines on daily-or-coarser timeframes — weekly charts no longer paint a wall of separators.\n\nNo API breaks; minor version bump.\n\n## 📦 Packages\n\n- `@tradecanvas/chart` — 0.8.2 → **0.9.0**\n- `@tradecanvas/core` — 0.8.2 → **0.9.0**\n- `@tradecanvas/commons` — 0.8.2 → **0.9.0**\n- `@tradecanvas/analytics` — 0.8.2 → **0.9.0**\n\n330 tests across the four packages. See the [full changelog](https://github.com/bonguynvan/tradecanvas/blob/main/CHANGELOG.md#090-2026-06-02) for the per-export detail.\n\n---\n\n**Full Changelog**: https://github.com/bonguynvan/tradecanvas/compare/v0.8.1...v0.9.0\n"
+      }
+    ]
+  },
+  {
+    "id": "borisreitman/browser-session-ctl",
+    "repositoryUrl": "https://github.com/borisreitman/browser-session-ctl",
+    "selected": false,
+    "reason": "近期候选，但未核到足够重要新功能；不能用单次社区帖子证明重新热门",
+    "originalDate": "2026-09-07T01:35:43Z",
+    "recentEvidence": [
+      {
+        "sha": "3cdb887c78492b06250cabc7d99583a13687ba62",
+        "date": "2026-09-27T17:10:01Z",
+        "message": "Move debug-* commands into their own section\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+        "url": "https://github.com/borisreitman/browser-session-ctl/commit/3cdb887c78492b06250cabc7d99583a13687ba62"
+      },
+      {
+        "sha": "525c40254738a41b6735b0509b9ed48c237cf164",
+        "date": "2026-09-27T16:30:50Z",
+        "message": "Add rationale for using this with AI coding agents like Claude Code and Cursor\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+        "url": "https://github.com/borisreitman/browser-session-ctl/commit/525c40254738a41b6735b0509b9ed48c237cf164"
+      },
+      {
+        "sha": "2376de0196a8235d1fb310e42ab337be0bd95ff8",
+        "date": "2026-09-27T16:26:57Z",
+        "message": "Fix Limits section: file:// tabs are supported, not just http(s)\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+        "url": "https://github.com/borisreitman/browser-session-ctl/commit/2376de0196a8235d1fb310e42ab337be0bd95ff8"
+      },
+      {
+        "sha": "906be757776086c7c6fdabdf78bcf5e982f22c8f",
+        "date": "2026-09-27T16:17:06Z",
+        "message": "Document bare 'config' command in README\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+        "url": "https://github.com/borisreitman/browser-session-ctl/commit/906be757776086c7c6fdabdf78bcf5e982f22c8f"
+      },
+      {
+        "sha": "2f03c77df8d0f831270300b951eadaafd37049b0",
+        "date": "2026-09-27T16:14:32Z",
+        "message": "Make bare 'config' print all global settings instead of erroring\n\nCo-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>",
+        "url": "https://github.com/borisreitman/browser-session-ctl/commit/2f03c77df8d0f831270300b951eadaafd37049b0"
+      }
+    ]
+  },
+  {
+    "id": "btahir/shotcandy",
+    "repositoryUrl": "https://github.com/btahir/shotcandy",
+    "selected": true,
+    "reason": "26日UTC建库，27日北京时间公开",
+    "originalDate": "2026-09-26T21:54:58Z",
+    "recentEvidence": [
+      {
+        "sha": "84ff717d0653d3ded4c232756c4f6934b314101e",
+        "date": "2026-09-27T18:21:59Z",
+        "message": "Site lives at shotcandy.vercel.app\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/btahir/shotcandy/commit/84ff717d0653d3ded4c232756c4f6934b314101e"
+      },
+      {
+        "sha": "ba5ffbe3247c60394c073c7ae73820bb2033d378",
+        "date": "2026-09-27T18:17:00Z",
+        "message": "Add Stripe support links",
+        "url": "https://github.com/btahir/shotcandy/commit/ba5ffbe3247c60394c073c7ae73820bb2033d378"
+      },
+      {
+        "sha": "71e33b623481391c535604fc78795dbd885599dd",
+        "date": "2026-09-27T18:13:40Z",
+        "message": "Add our own /support page; every support link points to it\n\nSupport buttons and FUNDING.yml go to /support/, which reads its payment\nlinks from DONATION_LINKS in src/config/site.ts (buttons show as coming\nsoon until the links are filled in).\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/btahir/shotcandy/commit/71e33b623481391c535604fc78795dbd885599dd"
+      },
+      {
+        "sha": "ee34e36a9fd6caceb535f54d1b693dc9945851b5",
+        "date": "2026-09-27T17:51:17Z",
+        "message": "Point the site URL at shotcandy-dev.vercel.app\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/btahir/shotcandy/commit/ee34e36a9fd6caceb535f54d1b693dc9945851b5"
+      },
+      {
+        "sha": "378983f113c63e76f8128cc2c68fe4af9948b3c4",
+        "date": "2026-09-27T08:50:27Z",
+        "message": "README: one hero video; move the launch MP4s out of the repo\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/btahir/shotcandy/commit/378983f113c63e76f8128cc2c68fe4af9948b3c4"
+      }
+    ]
+  },
+  {
+    "id": "chaitbuilds/EthosLM",
+    "repositoryUrl": "https://github.com/chaitbuilds/EthosLM",
+    "selected": false,
+    "reason": "Minecraft专门任务，与本期通用工作流相比读者覆盖较窄，保留后续",
+    "originalDate": "2026-09-15T12:50:26Z",
+    "recentEvidence": [
+      {
+        "sha": "7b8679281f0e0981ccbc0381dfcd2af3c1aac627",
+        "date": "2026-09-27T20:52:20Z",
+        "message": "Support individual and mixed settlement composition",
+        "url": "https://github.com/chaitbuilds/EthosLM/commit/7b8679281f0e0981ccbc0381dfcd2af3c1aac627"
+      },
+      {
+        "sha": "cd1a9bae821810302ad0b2a7d983303b330b47c2",
+        "date": "2026-09-27T16:49:19Z",
+        "message": "Comments: drop dev-history narration, keep the reasoning (pass 2)\n\nSecond sweep with a block-level finder, catching round labels, spec tags and dev-run\nanecdotes that wrapped across lines or used names the first pass did not list.\nComments and docstrings only: the parsed code of every file is unchanged.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/chaitbuilds/EthosLM/commit/cd1a9bae821810302ad0b2a7d983303b330b47c2"
+      },
+      {
+        "sha": "fcdc20b80d8ab03cf0a951260619f7c931607c03",
+        "date": "2026-09-27T16:29:25Z",
+        "message": "registry: stop pointing at a script that does not ship\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/chaitbuilds/EthosLM/commit/fcdc20b80d8ab03cf0a951260619f7c931607c03"
+      },
+      {
+        "sha": "d27ba0b1f325b96c268392f7c57c8b4969c2a977",
+        "date": "2026-09-27T16:28:26Z",
+        "message": "Comments: drop dev-history narration, keep the reasoning (pass 1)\n\nRewrites comments and docstrings that cited internal rounds, reviews, open threads,\nspec tags and dev-run paths, and fixes references to scripts that moved or no longer\nship. Comments and docstrings only: the parsed code of every file is unchanged.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/chaitbuilds/EthosLM/commit/d27ba0b1f325b96c268392f7c57c8b4969c2a977"
+      },
+      {
+        "sha": "430b37d416a2ef4b678bae9ee21f5a7b07d0a4e2",
+        "date": "2026-09-27T16:07:53Z",
+        "message": "square: no corner lamp on the cell the way in clears\n\nThe way in is cut to head height after the lamps are placed; a lamp on that\ncorner lost its foot and first fence and left a fence and lantern floating\n(E010 in the offline example).\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "url": "https://github.com/chaitbuilds/EthosLM/commit/430b37d416a2ef4b678bae9ee21f5a7b07d0a4e2"
+      }
+    ]
+  },
+  {
+    "id": "deepfates/imp",
+    "repositoryUrl": "https://github.com/deepfates/imp",
+    "selected": true,
+    "reason": "7月10日建库；首个Hex发布v0.5.0于28日02:02北京时间上线",
+    "originalDate": "2026-07-10T19:53:58Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.5.0",
+        "published_at": "2026-09-27T18:02:06Z",
+        "prerelease": false,
+        "html_url": "https://github.com/deepfates/imp/releases/tag/v0.5.0",
+        "body": "# Imp v0.5.0\n\nImp is a framework for typed, optimizable language-model programs on the BEAM.\nDeclare a task as named inputs and outputs, call it like any other Elixir\nprogram, measure it on examples, compile it with an optimizer, and run the\nselected program under OTP.\n\nThis release puts Imp on Hex. It is `0.5.0` rather than a patch because the\ninstall line changes, an OTP release that uses the protocol adapters lists one\nmore application, and ReActV2 and `Imp.MCP.OAuth` change shapes a program may\ndepend on.\n\n## Install\n\n```elixir\n{:imp, \"~> 0.5\"}\n```\n\nEvery dependency comes from Hex. Use a path dependency only while developing\nagainst a local checkout.\n\nExMCP and erlexec are declared `runtime: false`, so an OTP release that uses\n`Imp.ACP` or `Imp.MCP` must list `applications: [ex_mcp: :load, erlexec: :load]`\nin its release definition; see [releases that use MCP or\nACP](docs/production.md#releases-that-use-mcp-or-acp).\nOrdinary Imp startup starts no protocol endpoint.\n\n`mix deps.get` and `mix hex.audit` report two cowlib advisories\n(CVE-2026-43966, CVE-2026-43969). cowlib arrives only through ExMCP's\nCowboy server, and Imp's HTTP goes through Req, Finch and Mint. The first is\nfixed one layer up: Cowboy 2.16.0 and later refuse a response header\ncontaining CR or LF, and a fresh `mix deps.get` resolves Cowboy 2.19.0. The second is in the encoder\nfor an outgoing `Cookie` request header, which nothing in Imp's dependency\ntree calls, and no cowlib release fixes it yet.\n\n## Headline changes\n\n- GEPA works on agents. Optimizing an `Imp.react` agent, the reflection model\n  reads the whole run (tool calls, tool results, the final answer) and the\n  agent's tools, and GEPA rewrites the agent's instruction. By default\n  `Imp.Optimizer.GEPA` behaves as DSPy's GEPA does; Imp's own search is\n  `execution_profile: :beam_native`.\n- An `Imp.Deadline` reaches the work Imp starts for you: `Imp.parallel/3`,\n  evaluation rows, optimizer workers and runs inherit the caller's deadline,\n  and `Imp.start_run/3` takes `deadline:`.\n- Imp depends on ExMCP 1.5 from Hex, unpatched. What Imp needed from the\n  `deepfates/ex_mcp` fork now lives in Imp: stdio MCP servers that end with\n  their connection, children included; a clean `PATH` for them inside a\n  release; trust for authorized remote servers; the connection options public\n  servers need; and the browser OAuth flow.\n- `ReActV2` offers `submit` only to a signature that needs one. A task with\n  exactly one text output ends its turn on a step that answers in text, and an\n  interrupted turn makes one last request whose text is the answer instead of\n  failing.\n- `ReActV2` gains `finish_on` for tools whose call is the answer.\n- `:model_request` events record the whole request, and tool definitions are\n  emitted once per run as `:tools_sent`.\n- An MCP tool call that got no answer says whether it was refused, had its\n  credential refused, was never sent, or may have run (`Imp.MCP.CallFailure`,\n  `Imp.Tool.outcome/1`), an error result that declares its outcome is read as\n  declared, and a failed tool call reaches the model as plain text.\n- A ReAct prediction's fields are its outputs; how the turn ended is metadata,\n  in one vocabulary, with `Imp.Prediction.complete?/1`.\n- `Imp.Run` and `Imp.ACP` refuse options they do not know, and\n  `Imp.Run.Event.kinds/0` lists every event kind.\n- A host names its own run pool and limit (`Imp.Run.start/3`'s `:admission`),\n  and a failing run event sink is reported to the run's owner.\n- `Imp.MCP.connect/2` takes `pool_size:`, so several calls to one HTTP server\n  run at once, and an HTTP call can take as long as its `:timeout` allows.\n- A run no longer outlives its control process, and a cancellation that never\n  returns no longer holds a run.\n\n## Breaking changes from v0.4.0\n\n- Replace `{:imp, github: \"deepfates/imp\", tag: \"v0.4.0\"}` with\n  `{:imp, \"~> 0.5\"}`. `EX_MCP_PATH` is no longer read.\n- A release that uses `Imp.MCP` or `Imp.ACP` adds `erlexec: :load` beside\n  `ex_mcp: :load`.\n- Trust for an authorized remote MCP server is VM-wide. While a connection to\n  it is open, its exact origin (`scheme://host:port`) is in ExMCP's\n  `trusted_origins`, so any ExMCP client in the same VM may send credential\n  headers to that origin without consent. In 0.4.0 the trust belonged to the\n  one connection. No other origin is trusted, the origin is removed when the\n  last connection to it closes, and origins the host configured are left\n  alone. A host that runs other ExMCP clients it does not trust with those\n  origins should know this.\n- `Imp.Optimizer.GEPA` defaults to DSPy's GEPA, `execution_profile:\n  :gepa_v0_1_4_merge`: merge on, no evaluation cache, perfect minibatches\n  skipped, the pinned RNG, and `:generations` turned into a metric budget when\n  `:max_metric_calls` is not given. Options the DSPy profiles fix (ComBee,\n  `:feedback_fn`, `:module_selector`, `:candidate_selection_strategy`,\n  `:proposal_concurrency`, `:reflection_strategy`, the frontier, sampling,\n  selection, evaluation and acceptance policies, `:max_reflection_calls`, and\n  `reflection_record_mode: :beam_native`) raise unless `execution_profile:\n  :beam_native` is given, which is the 0.4.0 behaviour. Resuming a checkpoint\n  written by a 0.4.0-default run raises under the new default; resume it with\n  `execution_profile: :beam_native`.\n- `Imp.MCP.OAuth.begin/3` no longer takes `:flow`; a pre-registered client is\n  `client_registration: {:pre_registered, client_id, client_secret}` with\n  `client_issuer:` naming the authorization server it belongs to. A server\n  with no OAuth metadata at all is refused instead of given guessed endpoints.\n- An `Imp.Tool` named with a string keeps the string, and tools imported from\n  an MCP server are named by the server's string. Code that compared an\n  imported tool's `name` to an atom compares it to the string.\n- An MCP tool call that got no answer returns\n  `{:error, %Imp.MCP.CallFailure{}}` instead of\n  `{:mcp_tool_call_failed, server, reason}` or\n  `{:mcp_connection_unavailable, server, reason}`. A call that reaches its\n  `:timeout` is `%Imp.MCP.CallFailure{outcome: :unknown, reason: :timeout}`,\n  answered at the timeout while the request runs on; a call to an HTTP server\n  whose connections all stay busy until the timeout is `:not_sent` with\n  `reason: :no_idle_connection`.\n- `\"type\" => \"sse\"` is MCP's deprecated HTTP+SSE transport, and its `\"url\"`\n  is the event stream's. In 0.4.0 it was Streamable HTTP with a standing GET\n  stream; a Streamable HTTP server is now `\"type\" => \"http\"`. An `sse`\n  descriptor with `\"headers\"` or `\"auth\"`, or with a query string in its URL,\n  is refused before anything is dialed (`:mcp_sse_credentials_refused`,\n  `:mcp_sse_url_refused`): the whole import under the default\n  `on_failure: :refuse`, only that server under `on_failure: :drop`.\n- When a run's control process ends while the run is still going, the task is\n  killed after its registered cancellations are called; its monitor reports\n  `:killed`.\n- A run's owner can receive `{:imp_run_event_sink_failed, run_id, details}`\n  and `{:imp_run_event_undelivered, run_id, event}`; an owner with a strict\n  `handle_info/2` needs clauses for them.\n- `Imp.Run.start/3`, `Imp.ACP.start_link/1`, `Imp.ACP.run/1` and\n  `Imp.ACP.Local.start_link/1` raise `ArgumentError` for an option they do\n  not know. A transport's own options for `Imp.ACP` go in\n  `:transport_options`, and `:capabilities` is spelled `:agent_capabilities`.\n- `Imp.predict/2`, `Imp.chain_of_thought/2` and `Imp.configure/1` raise\n  `ArgumentError` for an option or setting they do not know. Request options\n  such as `:temperature` go under `config:`; a setting of your own goes\n  through `Imp.context/2`.\n- `:max_errors` and `:retriever` are no longer settings, and\n  `Imp.configure/1` and `Imp.context/2` refuse them. Pass `:max_errors` to\n  BootstrapFewShot, RandomSearch or COPRO (10 when not given) and a retriever\n  to the program.\n- ReActV2 emits no `:final` event; `:run_finished` carries the prediction.\n  `Imp.Trajectory.to_atif/2`'s `extra.outcome` is `extra.terminal_event`, and\n  a tool result's `extra.outcome` is the recorded `Imp.Tool.outcome/1`\n  instead of `\"returned\"` or `\"error\"`.\n- A ReActV2 or ReAct prediction's fields are its outputs only: `history`,\n  `termination_reason`, `termination_cause`, `termination_error`,\n  `finished_by_tool`, `unexecuted_tool_calls` and `context_projection` are in\n  `prediction.metadata`. `termination_reason` says how the turn ended, and a\n  turn without an answer is `:incomplete` with `termination_cause` saying why;\n  typed extraction is `:extracted` (no `completion_mode`), and\n  `Imp.Predict.ReAct` spells `:parse_failure` as `:parse_error` and `:direct`\n  as `:answered`. Use `Imp.Prediction.complete?/1` to ask whether a turn\n  answered.\n- For a signature with one `:string` output, `ReActV2` offers no `submit`\n  tool, and a step answered in text with no tool call ends the turn.\n- Errors have one shape per tag, with the reason as a term. A failed\n  `Imp.Clients.ReqLLM` request is `%Imp.LMError{}` (with `status`,\n  `retryable` and `context_window_exceeded`; `Imp.ContextWindowExceededError`\n  is gone), and a completion that cannot be parsed is\n  `%Imp.AdapterParseError{kind: ...}`, which `Imp.Predict` returns\n  directly instead of `%{reason: {:error, _}, trace: _}`. A raise inside a\n  client, program, tool, tool policy, retriever, optimizer or ACP callback\n  keeps the exception struct where 0.4.0 kept its message.\n  `{:tool_denied, tool}` is `{:tool_denied, tool, :tool_policy}`, and a run's\n  `:authorize` refusal is `{:tool_denied, tool, reason}`; `Refine` and\n  `Assertions` return `{:error, reason}`;\n  `Imp.optimize!` raises `Imp.Error` for a failed optimization. The CHANGELOG\n  lists every tag that changed.\n- `Imp.Example` and `Imp.Prediction` keep string keys as strings. Code that\n  read a field of data loaded from JSON with `map.field` or `map[:field]`\n  reads it with `Imp.Example.get/2` or by its string key.\n- `Imp.MCP.Client`, `Imp.MCP.HTTPClient`, `Imp.MCP.StreamableHTTPClient`,\n  `Imp.MCP.StdioClient`, `Imp.MCP.Catalog`, `Imp.MCP.import_tools`,\n  `Imp.ACP.MCP` and `Imp.Core.ToolCall`/`ToolResult` are gone.\n  `Imp.MCP.connect/2` imports tools; `Imp.ACP.ToolKind.derive_all/1` gives an\n  import's ACP tool kinds.\n- A saved program holds no HTTP header, credential or not. An LM with custom\n  headers (a routing header such as `x-tenant` included) sends requests\n  without them after loading until it is rebound with `Imp.with_lm/2` or a\n  scoped `Imp.context/2`.\n- `Imp.save!` refuses an LM whose `base_url` has a query, fragment or user\n  info.\n- Prompts name types in plain words instead of Python annotations\n  (`one of: atlas, harbor` where 0.4.0 wrote `Literal['atlas', 'harbor']`),\n  values take their JSON spelling (`null`, `true`, `false`), and the\n  structured-output schema is named `outputs`. A non-string answer for a\n  string field is kept as its JSON text (`\"true\"`, not `\"True\"`), and a\n  `null` answer is no value rather than the string `\"None\"`. Fields, order\n  and parsing are unchanged, but a saved optimized program now sends\n  different prompt text.\n- An `Imp.Telemetry` span's `[:exception]` event carries `:kind`, `:reason`\n  and `:stacktrace`, as `:telemetry.span/3` does, instead of `:error` as\n  text.\n- An optimizer's `compile/N` is no longer documented where `Imp.optimize` or\n  `Imp.train` runs the optimizer; call those.\n- `Imp.load!/1` reading a file is `Imp.read!/1`; `Imp.load/1` returns\n  `{:ok, program}` and `Imp.load!/1` takes the dumped map.\n- `Imp.react/3` builds ReActV2 and `Imp.react_v2` is gone.\n  `Imp.Predict.ReAct`'s `mode: :dspy_3_2_1` is `mode: :dspy`.\n- `Imp.Predict.Predict` is `Imp.Predict`.\n- `Imp.Retrievers.KNN` is deleted; `Imp.Retrieve.Memory` retrieves by token\n  overlap.\n- An LM is a struct or module whose `generate/3` takes it first. The\n  `%{module:, opts:}` map and a bare function are refused; so is a module\n  that defines only `generate/2`. A retriever module's `retrieve/3` takes\n  itself first.\n- `Imp.MCP.CallFailure` has `server_name`, `tool_name` and `index`; an\n  `unavailable` entry has `server_name`; `:authorize` returns `:allow` or\n  `{:deny, reason}` and its context names the `descriptor`;\n  `:credentials` is `:credential_store`.\n- A `:tool_policy` function returns `:allow` or `{:deny, reason}`, and a\n  refused call is `{:tool_denied, name, reason}`.\n- `max_concurrency` is `num_threads` on evaluation, parallel, search, batch and\n  optimizer options. `Refine`'s `max_attempts` is `n`; `RLM` takes\n  `max_iterations` only. `Imp.Optimizer.RandomSearch` and `BootstrapRS` are\n  `Imp.Optimizer.BootstrapFewShotWithRandomSearch`.\n\n## Upgrade path\n\n1. Change the dependency line, run `mix deps.get`, and commit `mix.lock`.\n2. Add `erlexec: :load` to any release that lists `ex_mcp: :load`.\n3. Replace `OAuth.begin/3`'s `:flow` with `:client_registration` if you used it.\n4. Match MCP call failures on `%Imp.MCP.CallFailure{outcome: ...}` (a 401 is\n   `:auth_refused`), compare imported tool names as strings, and give run\n   owners clauses for `:imp_run_event_sink_failed` and\n   `:imp_run_event_undelivered`.\n5. Read a ReAct or ReActV2 prediction's `history` and `termination_*` from\n   `prediction.metadata`, and match `termination_reason` against the new\n   values.\n6. Change `\"type\" => \"sse\"` descriptors for Streamable HTTP servers to\n   `\"http\"`. A server that needs credentials is reached over Streamable HTTP;\n   an `sse` descriptor takes none.\n7. Match LM failures on `%Imp.LMError{}` (or ask `Imp.Errors.retryable?/1`\n   and `Imp.Errors.context_window_exceeded?/1`), parse failures on\n   `%Imp.AdapterParseError{kind: ...}`, and exception reasons on the struct\n   rather than its text.\n8. Rename `Imp.react_v2` to `Imp.react`, `Imp.Predict.Predict` to\n   `Imp.Predict`, and `Imp.load!(path)` to `Imp.read!(path)`; give custom LMs\n   and retriever modules the `generate/3` and `retrieve/3` that take the\n   client first, and wrap an LM function in a struct that implements\n   `Imp.LM`.\n9. Rename `max_concurrency:` to `num_threads:` where you configure\n   evaluation, optimizers or parallel calls; answer `:authorize` and\n   `:tool_policy` with `:allow` or `{:deny, reason}`; match a refused tool\n   call as `{:tool_denied, name, reason}`; read `server_name` and `tool_name`\n   from MCP failures and absences. Call `Imp.Signature.load!/1`,\n   `Imp.History.load!/1`, `Imp.Optimizer.Report.load!/1` and\n   `Imp.Clients.TrainingJob.load!/2` where you called `load`, and\n   `Imp.Clients.TrainingJob.read!/2` where you read a checkpoint file, and\n   the datasets' `read!` where you called their `load(path)`.\n10. Rebind the LM of any loaded program that relies on custom headers, and\n    move a `base_url` query, fragment or user info into configuration the\n    host supplies at load time.\n11. Update telemetry handlers for `[:exception]` to read `:kind`, `:reason`\n    and `:stacktrace`.\n12. Re-evaluate saved optimized programs on held-out data, since their\n    prompt text changed, and run your application smoke test against the new\n    release; a one-text-output ReActV2 program now ends turns differently.\n\nThe [CHANGELOG](CHANGELOG.md) records every user-visible change in this\nrelease. Generated module documentation is the complete API reference. Start\nwith `Imp`, `Imp.Signature`, `Imp.Module`, `Imp.Evaluate`, `Imp.Optimizer`,\n`Imp.ACP`, `Imp.MCP`, and `Imp.Telemetry`.\n"
+      },
+      {
+        "tag_name": "v0.4.0",
+        "published_at": "2026-09-17T21:07:03Z",
+        "prerelease": false,
+        "html_url": "https://github.com/deepfates/imp/releases/tag/v0.4.0",
+        "body": "# Imp v0.4.0\n\nImp is a framework for typed, optimizable language-model programs on the BEAM.\nDeclare a task as named inputs and outputs, call it like any other Elixir\nprogram, measure it on examples, compile it with an optimizer, and run the\nselected program under OTP.\n\nThis release absorbs the protocol adapters that previously lived on `main`\nonly, and changes three published shapes. It is `0.4.0` rather than a patch\nbecause a program written against `v0.3.2` can need edits.\n\n## Install\n\n`v0.4.0` is a Git source release from a public repository; no credentials are\nrequired.\n\n```elixir\n{:imp, github: \"deepfates/imp\", tag: \"v0.4.0\"}\n```\n\nImp is not published to Hex. Use a path dependency only while developing\nagainst a local checkout.\n\nExMCP is declared `runtime: false`, so an OTP release that uses `Imp.ACP` or\n`Imp.MCP` must list `applications: [ex_mcp: :load]` in its release\ndefinition; see [protocol runtime in\nreleases](docs/PRODUCTION_OPERATIONS.md#protocol-runtime-in-releases).\nOrdinary Imp startup starts no protocol endpoint.\n\n## Headline changes\n\n- `Imp.ACP` and `Imp.MCP.connect/2` are in the tag. The separate `imp_acp`\n  package is retired with no compatibility shim: a consumer that depended on\n  it now depends on `imp` alone. `Imp.MCP.connect/2` also gains OAuth\n  credentials for remote HTTP servers (`Imp.MCP.OAuth`), `bearer_env`\n  descriptor auth, `on_failure: :drop` with an `unavailable` list, and a\n  per-dial timeout.\n- `:reasoning_effort` is the one reasoning option on `Imp.Clients.ReqLLM`.\n  `:openrouter_reasoning` is gone; the wire encoding is the separate\n  `:openrouter_reasoning_wire`.\n- ReActV2 sends the tool roster natively and no longer declares a `tools`\n  input field or writes its instructions into `signature.instructions`. Loop\n  guidance travels to the adapter through `:adapter_opts`.\n- The `:model_response` event's `metadata.cost` is a plain USD float or `nil`,\n  with any provider breakdown under `metadata.billing`.\n- Structured values in a prompt render complete, the way DSPy renders a dict,\n  instead of a truncated `inspect/1`.\n\n## Breaking changes from v0.3.2\n\n- Replace `openrouter_reasoning: ...` with `reasoning_effort: ...`. Saved\n  programs allowlist `:reasoning_effort` and `:openrouter_reasoning_wire` in\n  its place, so rebuild artifacts that carried the old key.\n- A caller that passed or read ReActV2's `tools` input field no longer has\n  one; the roster is sent natively.\n- A host that read `metadata.cost` as a provider billing map reads a number\n  now, and finds the map under `metadata.billing` when the provider sent one.\n\n## Upgrade path\n\n1. Rename the reasoning option and rebuild saved artifacts with `0.4.0`.\n2. Drop any `tools` handling around ReActV2.\n3. Sum spend from `metadata.cost` as a number.\n4. If you depended on `{:imp, github: \"deepfates/imp\", branch: \"main\"}` for the\n   adapters, move to the tag.\n5. Run your held-out evaluation and application smoke test against the tagged\n   dependency.\n\nNew in this release: [Benchmarks](https://github.com/deepfates/imp/blob/main/docs/BENCHMARKS.md)\nand its [results table](https://github.com/deepfates/imp/blob/main/benchmarks/RESULTS.md)\ncarry every number this repository publishes with the command that produces it,\nand the ticket-routing rows were re-measured live for this release, a month\nafter the first run, with both runs recorded.\n\nThe [CHANGELOG](CHANGELOG.md) records every user-visible change in this\nrelease. Generated module documentation is the complete API reference. Start\nwith `Imp`, `Imp.Signature`, `Imp.Module`, `Imp.Evaluate`, `Imp.Optimizer`,\n`Imp.ACP`, `Imp.MCP`, and `Imp.Telemetry`.\n"
+      },
+      {
+        "tag_name": "v0.3.1",
+        "published_at": "2026-08-23T16:29:58Z",
+        "prerelease": false,
+        "html_url": "https://github.com/deepfates/imp/releases/tag/v0.3.1",
+        "body": "Private source patch release. Clarifies the supported center versus pre-1.0 advanced workflows, documents the exact input/output typing contract and structured field schema, corrects the restricted-interpreter security boundary, and fixes cold-reader prerequisites and cross-references.\\n\\nPackage SHA-256: d3de6bfb6a4bc04993ba3ec415fa1937ed6a546c260e88c6d619fadf731458fa"
+      },
+      {
+        "tag_name": "v0.3.0",
+        "published_at": "2026-08-23T14:29:27Z",
+        "prerelease": false,
+        "html_url": "https://github.com/deepfates/imp/releases/tag/v0.3.0",
+        "body": "# Imp v0.3.0 — private source release\n\nImp is DSPy for the BEAM: declare a language-model task as a typed Elixir\nprogram, then test, measure, improve, and operate it like any other code.\nInstead of maintaining prompt strings, you declare signatures — named, typed\ninputs and outputs — and programs are ordinary Elixir values you can call,\nevaluate against metrics, compile with optimizers, persist as checksummed\nartifacts, and run under OTP supervision.\n\n## Install\n\nImp is not published to Hex. Install the private source release from its\nimmutable tag (GitHub credentials with repository access are required):\n\n```elixir\n{:imp, github: \"deepfates/imp\", tag: \"v0.3.0\"}\n```\n\nUse a path dependency only for local development.\n\nThree focused product guides, five Livebooks, a provider-free tutorial, and a\ndeployment example are bundled for HexDocs. Generated module documentation is\nthe exhaustive API reference. Research evidence and maintainer procedures\nremain in the source repository.\n\nThis is a private Git source release tagged `v0.3.0`, not a Hex release.\nRepository visibility remains private.\n\n## Breaking changes from 0.2.1\n\n- `Imp.optimize/3`, `/4`, and `/5` return `{:ok, program}` or\n  `{:error, reason}`. Use the corresponding `Imp.optimize!` arity to retain the\n  previous raising behavior.\n- `Imp.Adapters.Types` and its nested structs moved to `Imp.Adapter.Types`.\n  Replace the `Imp.Adapters.` prefix with `Imp.Adapter.`.\n- The disconnected `Imp.Agent`/`Imp.Agent.Runtime` model was removed. Use the\n  ordinary ReActV2 or RLM program path; hosts needing ordered events,\n  cancellation, or explicit per-effect approval can use experimental\n  `Imp.start_run/3` without adopting a second agent abstraction.\n\n## What you are getting\n\nBe precise about what kind of thing this release is, in three layers:\n\n**Proven here, with receipts you can run.** A broad substantive DSPy 3.2.1\nsurface, realized natively: the signature DSL, program shapes from `predict`\nthrough ReAct, CodeAct, and a sandboxed recursive controller, evaluation,\noptimizers, retrieval, MCP, streaming, and persistence. Fidelity is a checked\nper-surface claim, not a blanket promise that everything matches upstream. The\noptimizer and adapter families carry executable differential tests that run\npinned DSPy 3.2.1 and compare their declared observations, backed by committed,\ncontent-addressed evidence artifacts. The conformance report records a\ndifferential, an Elixir-native equivalent, or an honest gap for each tracked\nsurface. The source repository's\n[evidence guide](https://github.com/deepfates/imp/blob/main/docs/EVIDENCE.md)\nand [conformance report](https://github.com/deepfates/imp/blob/main/docs/CONFORMANCE.md)\nretain those research records separately from the packaged manual.\n`Imp.Experiment.check/5` can repeat noisy selection independently from final\ntest estimation (`repetitions: [selection: n, test: m]`), selects on the\nselection mean, preserves strict baseline ties, and persists the per-stage runs\nand paired deltas. The original integer repetition form remains the uniform\nshorthand.\n\nSeveral scoped effectiveness results remain reviewable with source-repository\nartifacts: the latest ticket-routing study\nrun improves from 30–35% to 95–100% on held-out data across three live repeats,\nfor about 1.3 cents per repeat. The older retained run recorded 25–30% to 85%;\nit remains historical evidence rather than the current tutorial result. On a\nseparately frozen matched TREC contract, Imp GEPA\nimproved\nits baseline by `+0.4000` and cleared the preregistered noninferiority margin\nagainst pinned DSPy GEPA; MIPROv2 improved its own baseline by `+0.1458`.\nThe committed compact scored-row inputs let a third party rerun the frozen\nscoring and aggregation without publishing the 181 MB private provider traces.\nThe source repository's TREC case study gives the exact\nsource-checkout command, input hashes, and limitations. The rows and research\nprogram remain source-repository evidence rather than Hex runtime contents.\nNeither result is a general optimizer-effectiveness claim.\n\n**Borrowed honestly — with the gap named.** The optimization *algorithms'*\neffectiveness evidence comes from their published literature (DSPy, MIPROv2,\nSIMBA, GEPA) — which verified *those implementations on those tasks*. Imp's\ndifferentials verify their named mechanics; they do not establish whole-loop\nparity. The matched TREC result answers one outcome question, while most\noptimizers still lack matched live outcomes.\nThat transfer question is tracked as open targets in the ledger, not assumed\naway. What we can say from our own committed evidence: demonstration-based\ncompilation produces real held-out lift (the tutorial's result), and whether\nany optimizer improves *your* task is a question Imp lets you answer in an\nafternoon — signature, metric, held-out split, receipt.\n\n**Promised, explicitly.** Our own matched-control effectiveness science —\nmulti-seed optimizer studies, paper-scale reproductions, matched-model\nImp-vs-DSPy comparisons — is the open research program, tracked as unasserted\ntarget claims in the same public ledger. We do not assert what we have not\nmeasured, and the ledger is the boundary between the two.\n\n## What the BEAM adds\n\nA model call is one more slow, fallible, concurrent effect: bounded supervised\nevaluation fan-out, tools in isolated tasks under their own timeouts, scripted\ndeterministic testing with `Imp.LM.Static` through the same seams production\nuses, compiled programs as checksummed artifacts with no secrets inside,\ncredentials bound at runtime, and redacted telemetry on every call, retry, and\ntool step. The [deployment example](examples/deployment/README.md) is a complete OTP\napplication.\n\nThe packaged\n[provider-free ticket router](examples/provider_free_ticket_router/README.md)\nis the cold-start product proof: a separate consumer compiles a typed router,\nmeasures a deterministic 25% baseline, attaches four reviewable demonstrations,\nand measures 100% after compilation. Its scripted LM proves the package and\nprogram/evaluation/optimizer lifecycle, not real-model effectiveness.\n\nThe packaged [OTP deployment example](examples/deployment/README.md) is the\nrelease front door: an unpacked consumer runs a two-stage typed program through\ndisjoint selection and test splits, optimizer selection, checksummed result and\nartifact persistence, fresh-process loading, concurrent serving, hot reload,\nand contained failure using a provider-free support workflow. The source\nrepository separately retains real-model Banking77 research, including an\nhonest negative GEPA selection and successful fresh-service lifecycle; those\nresearch data, runners, results, and artifacts are deliberately excluded from\nthe packaged example.\n\nPersistent playbooks use the same application-owned deployment posture. Their\noptimizer grounds proposals in training failures, requires lift on separate\npromotion and audit rows, returns a challenger review with authoritative usage\nand exact rollback, and restores a private checksummed checkpoint into freshly\nconstructed runtime code. It returns immutable state; installing the selected\nplaybook into a serving process remains an explicit application decision.\n\n## Since v0.1.0\n\n- Packaged for Hex with the product guides, five Livebooks, provider-free\n  tutorial, and deployment example; research and internal audit material stay\n  in the repository. Publication to hex.pm is still pending — until\n  it happens, install from a source checkout.\n- Documentation rebuilt reader-first: the README, one Learning Path, a DSPy\n  migration guide, and one operations guide form the reader path; generated\n  module docs own exhaustive reference. The evidence ladder remains a\n  repository audit surface rather than part of the packaged manual.\n- Evidence campaign: nine new differential artifact families landed; every\n  semantic-conformance claim in the ledger is now asserted (was 1 of 4).\n  \"Asserted\" is a maintainer attestation, not a fresh-checkout replay — see\n  the source repository's\n  [evidence reconciliation](https://github.com/deepfates/imp/blob/main/docs/EVIDENCE.md)\n  for what a clean clone can verify from committed evidence alone.\n- Streaming promoted to the facade (`Imp.stream/3`, `Imp.collect/3`) with\n  provider token streaming and an explicit local fallback. Provider mode runs\n  the real composed program, can select intermediate fields by named predictor,\n  and ends with its typed prediction. It is demand-driven and cleans up on an\n  early halt or dead consumer. Programs with no named predictors return a\n  terminal unsupported-program error instead of replaying a completed response\n  as if it were provider output.\n- Known optimizer identities in `Imp.Optimizer.Report` retain their atom type\n  after a checksummed Artifact write/read/apply cycle; unknown extension\n  identifiers remain portable strings.\n- Two silent-failure bugs found and fixed the same day they were exposed by\n  the claims census (batch message mangling; swallowed telemetry), plus\n  loud-by-default evaluation timeouts and a threadable teacher timeout for\n  `BootstrapFewShot` — that last one found live by our own dogfooding.\n- `LabeledFewShot` selection semantics pinned deterministic;\n  `Imp.Datasets.split/2` shuffle now seeded.\n- CI rebuilt: four parallel gates, deterministic dependency cache.\n\n## Expectations for 0.x\n\nAPIs may change before 1.0. Known flaky tests are ticketed and public in the\nrepository. The evidence ladder is the contract: if a page claims more than\nits receipts support, that is a bug — file it.\n\nThe `Imp` facade and modules marked `stable` in `priv/public_api.json` are the\ncompatibility center. Optimizer and advanced modules are explicitly\nexperimental before 1.0: they are real implementations with public tests, but\ntheir APIs may still converge with upstream semantics. A callable optimizer is\nnot thereby proven effective; the task-scoped results above are the evidence\nboundary.\n\nThis release has package version `0.3.0` and private source tag `v0.3.0`.\nHex publication remains a separate owner action.\n"
+      }
+    ]
+  },
+  {
+    "id": "getgat-dev/gat",
+    "repositoryUrl": "https://github.com/getgat-dev/gat",
+    "selected": true,
+    "reason": "9月7日首次公开（近期补充）；26日v0.0.14改进批量缓存与并行处理",
+    "originalDate": "2026-09-07T13:19:32Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.0.14",
+        "published_at": "2026-09-26T17:40:02Z",
+        "prerelease": false,
+        "html_url": "https://github.com/getgat-dev/gat/releases/tag/v0.0.14",
+        "body": "## Changes\r\n\r\n- :zap: batch repository mutations and parallelize cache cleanup (#30)\r\n- :zap: preserve cache proofs and enable Dependabot CodeQL scans (#27)\r\n\r\n## 🚀 Features\r\n\r\n- :sparkles: improve installers and prepare v0.0.14 (#31)\r\n\r\n## ⬆️ Dependencies\r\n\r\n- :sparkles: improve installers and prepare v0.0.14 (#31)\r\n- :arrow_up: Bump taiki-e/install-action from 2.87.11 to 2.87.12 (#29)\r\n- :arrow_up: Bump mint from 4.2.887 to 4.2.891 in /docs (#28)\r\n- :arrow_up: Bump syn from 3.0.4 to 3.0.5 (#26)\r\n"
+      },
+      {
+        "tag_name": "v0.0.13",
+        "published_at": "2026-09-18T03:49:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/getgat-dev/gat/releases/tag/v0.0.13",
+        "body": "## Changes\n\n## ⬆️ Dependencies\n\n- :zap: improve file operations and release automation for v0.0.13 (#25)\n"
+      },
+      {
+        "tag_name": "v0.0.12",
+        "published_at": "2026-09-16T20:42:08Z",
+        "prerelease": false,
+        "html_url": "https://github.com/getgat-dev/gat/releases/tag/v0.0.12",
+        "body": null
+      },
+      {
+        "tag_name": "v0.0.11",
+        "published_at": "2026-09-13T19:59:36Z",
+        "prerelease": false,
+        "html_url": "https://github.com/getgat-dev/gat/releases/tag/v0.0.11",
+        "body": "## Changes\r\n\r\n## 🧰 Maintenance\r\n\r\n- :recycle: simplify execution and strengthen domain boundaries for v0.0.11 (#14)"
+      }
+    ]
+  },
+  {
+    "id": "InternLM/Intern-Decision",
+    "repositoryUrl": "https://github.com/InternLM/Intern-Decision",
+    "selected": false,
+    "reason": "模型栏已展开，跨栏去重",
+    "originalDate": "2026-09-24T23:37:44Z",
+    "recentEvidence": [
+      {
+        "sha": "2f815802058b2464144218859ea9221c1bc0d2a8",
+        "date": "2026-09-26T08:58:43Z",
+        "message": "Swap Mario and browser demonstration positions",
+        "url": "https://github.com/InternLM/Intern-Decision/commit/2f815802058b2464144218859ea9221c1bc0d2a8"
+      },
+      {
+        "sha": "d5d229d81ac44f96525812df460eda0d21d81413",
+        "date": "2026-09-26T08:55:20Z",
+        "message": "Add demonstration videos and centered README links",
+        "url": "https://github.com/InternLM/Intern-Decision/commit/d5d229d81ac44f96525812df460eda0d21d81413"
+      },
+      {
+        "sha": "63292c8b5e0f5d410a7159e0f1c14475b828839a",
+        "date": "2026-09-26T08:03:14Z",
+        "message": "Release Intern-Decision training, inference, demo and evaluation code",
+        "url": "https://github.com/InternLM/Intern-Decision/commit/63292c8b5e0f5d410a7159e0f1c14475b828839a"
+      }
+    ]
+  },
+  {
+    "id": "jatoran/swe-mux",
+    "repositoryUrl": "https://github.com/jatoran/swe-mux",
+    "selected": true,
+    "reason": "8月16日建库；26日v0.2.9扩展移动端标签与实时预览",
+    "originalDate": "2026-08-16T21:33:26Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.2.9",
+        "published_at": "2026-09-26T00:47:17Z",
+        "prerelease": false,
+        "html_url": "https://github.com/jatoran/swe-mux/releases/tag/v0.2.9",
+        "body": "### Added\n\n- **Phones can have their own session top bar layout.**\n  Settings → Session top bars has a Desktop/Mobile switch; a phone uses the desktop layout until you edit its own, and **Use desktop layout** goes back to following it.\n- **Server previews can follow edits.**\n  A preview of a development server gets a `live` toggle that reloads the page when it, or anything it loaded, changes on the server.\n  It is on by default for plain file servers (`python -m http.server`, `http-server`, `serve`, `php -S`) and off for dev servers that reload themselves, which a second reload would reset.\n- **The terminal's font family is a setting.**\n  Settings → Appearance → Terminal font takes a family list such as `JetBrainsMono Nerd Font`, which is what makes prompt-theme and agent-CLI icons render as glyphs rather than boxes.\n  Whatever you enter is placed ahead of the default stack rather than replacing it, so a typo or a font the viewing device lacks falls back to the terminal you had.\n  The field says whether each name is installed on the device you are typing on, since the setting is shared by every device and fonts are not.\n  Saving re-fits every open terminal in place; nothing is restarted.\n\n### Changed\n\n- **The Project menu opens the Run menu.**\n  Right-clicking a Project in the sidebar (or tapping its `⋮`, or the Project name in the mobile top bar) now starts with a `Run` row that expands into the same Run menu the `▶` buttons open: harnesses and launch profiles, worktree sessions, plugin panes and the Project's tasks.\n  With a mouse it opens on hover, beside the row, with the Project menu still open underneath; on touch, tapping it opens the Run menu.\n- **Name your Claude and Codex accounts.**\n  Settings → Accounts gives each saved account a name field; whatever you type there is what the account switcher, Settings, the usage views and the session rows show instead of its email.\n  Clear the field to go back to the email, and an account without a name follows its login if you sign it in again with a different address.\n  Session rows' \"Provider account\" field now names the Claude or Codex account a session was started under, and only calls attention to it when one provider has more than one account in use.\n- **Settings search finds settings, not every keyboard shortcut.**\n  The shortcut table and the note editor's chord list no longer fill the results; when a search matches shortcuts, one row at the end says how many and opens the Keyboard shortcuts page with its own filter already holding the search.\n  Searches also understand common other names: \"dark mode\" finds Theme, \"hotkeys\" finds Keyboard shortcuts, \"zoom\" finds the interface scale, \"tailscale\" finds the tailnet listener, among 193 aliases for 65 settings.\n- **The sidebar footer's Settings cog is gone.**\n  Settings opens from `menu → Settings`, the `settings.open` command, or any setting link; the cog duplicated the menu row beside it.\n\n- The note editor's font controls under Settings → Notes are now titled \"Note editor typography\" and say they apply to notes only.\n  They were the only \"Font family\" field in Settings, and a terminal font typed there did nothing, before and after a restart.\n\n### Fixed\n\n- On a phone, Settings search results span the panel instead of the narrow search box, so labels and where they live are readable.\n- **A preview opens at the page the agent printed, not the server's directory listing.**\n  A preview was known only by host and port, so once swe-mux had noticed a server, clicking a link to `http://127.0.0.1:8766/page.html` dropped the path and opened `/`; clicked before that, the path became the preview's base and broke its absolute asset paths.\n  The page is now kept separately and followed by the pane, and refresh, copy, external open and capture use the page on screen instead of returning to the root.\n  A preview saved with a path in its base is converted on the first start.\n- **The desktop app no longer freezes on a preview of swe-mux's own address.**\n  Registering swe-mux itself as a preview made the preview's link rewriting loop forever inside the app's own renderer.\n  swe-mux's ports are now refused as preview destinations (a copied `/preview/…` link still opens its preview), the rewriting is bounded, sandboxed previews render in their own process, and a hung or crashed window is reloaded with every preview paused until you ask for it (tray: \"Reload window (previews paused)\").\n- **A long-running daemon on a busy fleet no longer slows down with uptime.**\n  Process evidence is written only when it changes, off the event loop, and the plugin event dispatcher no longer rebuilds its duplicate filter on every event.\n- **Branching a Claude conversation \"after\" its last reply resumes at that reply.**\n  The branch copied Claude's own resume checkpoint, which is written lazily and named a point mid-turn, so the new pane opened inside a tool call without the reply it was cut after.\n- **Codex conversations are tracked through replacement, branching and resume.**\n  Starting a new thread in a Codex pane rebinds the pane to it only when the running CLI is proven to be that pane's own; Branch uses `codex fork` and binds the fork's own conversation rather than the parent's; Resume reopens the original rollout under its visible name; and forked or rolled-back Codex histories read correctly in the Transcript tab and search.\n  Copying the last reply always fetches it fresh and refuses an answer from a conversation the pane has since left.\n- **A refused land no longer stands over work that landed by hand.**\n  The Git map kept showing a refusal whose branch had been rewritten and landed outside the queue, because the commit it named was later pruned; it now clears once the branch's current tip is on the trunk, or once the commit and the branch are both gone.\n- **A large fleet no longer makes the daemon read as hung when several agents start at once.**\n  Every session waiting for its CLI's first transcript record used to walk that project's transcript directory on the event loop twice a second, and every switch-watch tick resolved every live session's working directory the same way; seven fresh Claude sessions in an 836-file directory pushed request latency past the desktop app's health probe for 45 seconds, and the app terminated a daemon that was serving traffic.\n  The walk now runs in a worker thread and one listing serves every session in that directory for a second; path resolution is cached.\n  `/api/diagnostics/background` reports the scan cache (`transcript_scans`), and a walk slower than a second is a WARNING in `daemon.log` naming the directory.\n- **A daemon whose local listener died is repaired instead of abandoned.**\n  On Windows, one connection reset during a blocked event loop made asyncio close the loopback listening socket for good: the daemon stayed alive and answered on its Tailscale address while nothing on the machine could reach it, for as long as the desktop app's restart budget was spent.\n  A guard now checks every listener every two seconds and rebinds one whose socket closed, with an ERROR in `daemon.log`, a line in `lifecycle.log`, and counters under `listener_guard` on `/api/diagnostics/background`.\n- **A restart no longer opens the database against the daemon it is replacing.**\n  The successor's store phase used to run on the event loop and, on a restart started from the tray, without waiting for the previous daemon to finish writing; measured at 62 seconds of a blocked loop behind a 54-session predecessor, during which health could not answer and the listener above was lost.\n  Every start now has a `predecessor-drain` phase that waits, off the loop and reported like every other phase, for the previous daemon to exit (up to 60 seconds), and the stores open in a worker thread with each slow open named in `daemon.log`.\n- **The desktop app no longer kills a slow daemon as if it were hung.**\n  Its recovery monitor now reads the daemon's heartbeat: a daemon whose event loop is still turning gets three minutes of missed probes before it is replaced, the probe itself waits five seconds rather than one, a replacement that stays healthy for two minutes restores the restart budget, and a daemon that starts while another live one still holds the recovery record no longer takes it over (which is what turned one slow start into three failed replacements and an exhausted budget).\n\n**Full changelog**: https://github.com/jatoran/swe-mux/blob/v0.2.9/CHANGELOG.md\n"
+      },
+      {
+        "tag_name": "v0.2.8",
+        "published_at": "2026-09-09T05:41:10Z",
+        "prerelease": false,
+        "html_url": "https://github.com/jatoran/swe-mux/releases/tag/v0.2.8",
+        "body": "### Added\n\n- **Each session row and top bar can show what the agent's own status line shows.**\n  The reasoning effort in force, the permission mode, and the provider's 5-hour and weekly limits are new row fields, alongside the CLI's own context window size and cost figure where it reports one.\n  Codex reports these through the rollout it already writes.\n  Claude reports them only through its status line, so swe-mux tees it: when you already have a `statusLine` configured, the per-session settings run your command unchanged and forward the same snapshot to the daemon afterwards.\n  Where you have none, nothing is configured, because any custom status line changes Claude's footer and that choice stays yours.\n  A field a harness never reports draws nothing, and the sidebar's cost no longer reads `$0.00` for a session whose harness reported no cost.\n  Codex context pressure now uses the CLI's own formula, so the row reads what the footer reads.\n- **The working directory has three spellings.**\n  Settings → Appearance → Session rows → Token style chooses the folder name (the default), the path inside the Project root, or the full path; a placed top-bar `cwd` item may choose its own.\n  A placed top-bar `context` item likewise carries its own rendering - percentage, gauge, or both - instead of inheriting the sidebar's indicator arc and drawing nothing.\n- **The Queue tab is badged with the focused session's pending count**: draft, armed, blocked and delivering messages, on the drawer's tab strips and the collapsed desktop launcher, capped at 99+ and carried into the button's accessible name.\n  It is an accent tint rather than an amber pill, because a message you staged yourself is not an alert.\n- **The empty workspace stage has a Run button** that opens the Run menu, on desktop and on the phone alike, so the four ways to begin it names are reachable without a right-click.\n- **Device mode.**\n  Settings → Appearance → Device mode chooses Auto, Mobile or Desktop for this browser only, and applies at once.\n  Auto now keeps a touch-first device on mobile controls and the mobile layout when its screen is wide: an unfolded phone or a tablet in landscape no longer flips to desktop splits, hover-only chrome and a docked sidebar because its width crossed a breakpoint.\n  A laptop with a touchscreen stays on desktop.\n- **The desktop app recovers a daemon that has died or hung.**\n  The tray process watches the daemon it started and relaunches a confirmed crash after four seconds of failed probes.\n  A daemon that was ready and has answered nothing for 45 seconds is replaced only after the desktop has verified that every live session is held by the PTY supervisor and none was spawned in the daemon's own process, so terminals pause during the swap and resume afterwards rather than being lost.\n  A daemon that is still starting is never counted as failed, an intentional quit or a redeploy suppresses recovery, and after three replacements in ten minutes it stops trying and leaves the tray's \"Restart daemon (keep sessions)\" as the manual control.\n  Every transition is written to the lifecycle log.\n- **The desktop command rail can be hover-only.**\n  Settings → Actions → Action rail → \"Only show the desktop rail on hover\" (`rail_hover_desktop`, off by default) takes the rail out of the pane: the terminal keeps the rows the rail used to occupy, and the rail slides up over the bottom of the terminal while the mouse is there.\n  Revealing it never resizes the terminal.\n  It stays up while one of its panels is open - the complete-row popover, a drop-up, a pad's dial, arranging - and while a chip has keyboard focus, and it does not appear under a drag or over the jump-to-latest chip.\n  Desktop only: a phone's rail is its keyboard, and a touch tablet has nothing to hover with.\n- **Right-clicking the desktop rail opens its own menu**: open this row's complete list of actions, configure the rail in Settings, or toggle hover-only without opening Settings.\n\n### Changed\n\n- **Stall diagnostics no longer risk crashing the daemon they are diagnosing.**\n  The previous sampler let `faulthandler` walk every thread's frames from a C thread while they changed, and on 2026-09-07 that took the daemon down mid-stall.\n  A Python sampler now reads owned frame references every 250 ms, writes bounded stacks to a rotating `loop-stalls.log` after three seconds without progress, and states its own limit: a native call holding the GIL can prevent sampling, and the diagnostics endpoint reports `capture_mode` so an absent stack is never read as an absent cause.\n- **The \"daemon is not responding\" banner says what to do.**\n  It now reads \"Reconnecting. If this persists, use the desktop tray to restart the daemon\", because a missed probe cannot tell a stall from a crash and the page cannot promise that sessions survive one.\n- **The account switcher's stranded-session notice is one line, not a paragraph.**\n  Each Codex login that a switch left live sessions on is a collapsed \"N live sessions still on X\" that expands on a click; it can be dismissed for now, or silenced with \"never show this again\", which persists per device profile and is undone under Settings → Accounts.\n- **Agent Context's memory rows scroll in their own box.**\n  Sixty learned memory files used to make the Memories disclosure the whole Instructions tab and push the preview a screen below the row just picked; each provider's rows are now capped and scroll inside their own box, with the heading and \"showing N of M\" line kept outside it.\n- **The source tarball no longer carries operator-private drafts.**\n  Every sdist from 0.1.0 to 0.2.7 packed the whole checkout, including launch drafts and an outreach tracker under `.docs/marketing/`, because every artifact check read only the wheel.\n  Those files have moved out of the public tree, the sdist declares them excluded, and the release gate reads the built tarball against that declaration before publishing.\n  The wheel and the desktop bundle were never affected.\n\n### Fixed\n\n- **Console windows no longer flash on Windows while Claude refreshes its status line.**\n  The status-line tee runs your own status command from the frozen app's hook helper, which has no console of its own, so every refresh - including the ones during a tool call - opened a visible window for the shell it started.\n- **The top-bar settings preview draws a placed context metric.**\n  The preview session used a made-up backend that no harness capability matched, so the bar previewed empty while the real one drew fine.\n- **The session title can be removed from the pane top bar.**\n  Settings → Appearance → Session top bars refused to remove it and put it back on every load; every item is now removable, the title is offered again under the row's add controls, and the pane's fault marker stays visible at the head of the bar when the title is gone.\n- **Switching the command rail off or on in Settings reaches an open pane immediately**, rather than on the next unrelated change to that session.\n\n**Full changelog**: https://github.com/jatoran/swe-mux/blob/v0.2.8/CHANGELOG.md\n"
+      },
+      {
+        "tag_name": "v0.2.7",
+        "published_at": "2026-09-06T20:01:14Z",
+        "prerelease": false,
+        "html_url": "https://github.com/jatoran/swe-mux/releases/tag/v0.2.7",
+        "body": "### Changed\n\n- **Usage and Fleet activity are one dialog, Usage & activity, and Resources is now System.**\n  What an agent consumed and what it did were split across two dialogs that were opened for the same question, so Overview, Agent usage, Quota, Activity and Automation now sit together, and Processes, Network and Storage stay behind System, which is host inspection rather than agent behaviour.\n  Every existing command id still resolves, so saved keybindings and voice navigation are unaffected: `usage.open` opens Overview, `usage.quota` opens Quota, `fleetActivity.open` opens Activity, and `resources.open` opens System.\n  The three kinds of spend are still never summed - a transcript estimate is not a subscription bill, metered automation cost is not a token estimate, and a quota percentage is not money - and the observed-agent subset stays labelled and collapsed inside Automation rather than presented as a second agent total.\n- **Both dialogs work at phone width.**\n  Mobile gets a full-screen layout with a section selector and visible secondary tabs instead of a desktop dialog squeezed sideways; the date range stays on screen and the remaining filters move into a disclosure that says how many are active.\n  Large counts read as compact `K`/`M`/`B` with one decimal, and the exact number is one tap, hover or keypress away.\n  A section you are not looking at is unmounted and issues no background reads, so opening the dialog no longer fetches every endpoint to show one of them.\n- **A run in Activity carries the name you gave it.**\n  Historical runs were listed by identifier while the session they came from had a title, and the join is by exact run id rather than a session fallback, so a rolled-over session can no longer lend its name to an earlier run.\n- **Trends, models and quota history are readable rather than dense.**\n  Trends have a fixed height and place points by date, with a period selector as the keyboard and touch alternative to hitting a chart point; models are ranked across the selected period with the selected model's own history beside the breakdown; quota Attribution states that it is showing a bounded sample of the latest 500 movements rather than everything.\n- **swemux.dev's feature videos are yours to control.**\n  Every capture on the site plays, pauses and seeks, and the site now serves partial content, so dragging the scrubber fetches the part you asked for instead of the whole file.\n  The captures were retaken without the tutorial cards, pointer effects and callouts that had crept into them, and the audio samples are gone.\n  Nothing about the update check changed: it remains a once-a-day request for `version.json` with no identifier attached.\n- **The public roadmap distinguishes what shipped from what is planned.**\n  Native Linux and macOS desktop apps and their installers, and broader plugin capabilities, are listed as planned rather than implied to exist.\n\n**Full changelog**: https://github.com/jatoran/swe-mux/blob/v0.2.7/CHANGELOG.md\n"
+      },
+      {
+        "tag_name": "v0.2.6",
+        "published_at": "2026-09-06T17:57:00Z",
+        "prerelease": false,
+        "html_url": "https://github.com/jatoran/swe-mux/releases/tag/v0.2.6",
+        "body": "### Added\n\n- **A factory reset, in Settings → Maintenance.**\n  It returns the install to its first-run state: configuration, Projects, history, the database, notes, prompts, plugins, stored credentials and logs stop describing this machine, and the next start comes up on onboarding with nothing carried over.\n  Nothing is deleted - every entry is moved into `.trash/factory-reset-<timestamp>/` inside the data directory, so the old install stays recoverable until you remove it yourself.\n  Your repositories are never touched: a Project's committed `.swe-mux/` folder and any worktree checkout are reported rather than removed, because a worktree may hold the only copy of uncommitted work.\n  Running it ends every live session and restarts the daemon, which is the only moment the data directory has no open handles into it, so it asks for consent first and says so.\n\n### Changed\n\n- **Settings' Diagnostics tab is now Maintenance**, because it holds both halves of the same errand: understanding an install, and stopping having it.\n  Everything that was on the tab is still on it, and a link or a saved deep link to the old id still resolves.\n- **First run is four short pages: Experience → Agents → Projects → Keymap.**\n  Recent project folders are discovered in the background while you choose agents, and are added only when you ask for them; **Start working** then opens the shell or agent you picked.\n  Permissions, model access, voice, desktop integration, phone access and the UI tour are optional follow-ups rather than steps to get through, and **Getting started** in the sidebar resumes whatever is unfinished.\n  Back and Continue later preserve your non-secret choices.\n- **Create project asks for a name, a folder and - if you have Groups - a group, and nothing else.**\n  It states that global defaults are selected, and leaves automations, agent authority, backend and launch profiles to Project settings and Automation Policy after the Project exists.\n  The practical difference is that a new Project now *follows* your install-wide defaults as you change your mind about them, instead of copying whatever was in effect the minute it was created.\n  Globally enabled setup commands still run after registration, in their configured order, and the form names them; a failure is reported and never undoes the Project.\n  Existing Projects and restored Project records keep the explicit decisions they already carry.\n- **Verification sits directly under the key fields in Settings → Model provider**, where the thing being verified is.\n- **The mobile Draft composer gives its height back to the draft.**\n  The title bar that repeated the session name is gone, the footer is about two thirds of its old height, and Insert is joined by **Copy** - a draft written on a phone is often written to be taken somewhere else, and there was no way to get it out except through the terminal.\n  Typing past the composer's height no longer jumps the view to the top on every keystroke, the text no longer reflows sideways as it grows, and flinging a long draft no longer scrolls the session behind it.\n- **The install instructions name the commands a current install actually ships.**\n  The published pages and the Windows installer still told new users to run `mux` and `muxd`, which have not existed since 0.1.x - the commands are `swemux` and `swemuxd`.\n  The same sweep corrects three claims that had gone stale: an ordinary install has needed no `[desktop]` extra since 0.1.5, there is no one-time shortcut prompt, and the two chords worth learning are `Ctrl+Shift+Enter` and `Ctrl+Shift+P`, not the `Ctrl+Alt` pair the README named, which no shipped preset can bind.\n- **swemux.dev now counts requests for the update manifest, and the privacy page says so.**\n  Nothing your install sends has changed: it is the same once-a-day `GET` of `version.json`, with no query string, no header, no cookie and no identifier, and `update_check_enabled` still turns it off entirely - which also removes you from the count, because the request is then never made.\n  What is new is at the other end. The site adds 1 to a daily total when that file is asked for, and the counter stores two values and no others: the constant text `version-check`, and the HTTP status of the response.\n  No address, no user agent, no country, no referer, and nothing derived from any of them - not \"kept briefly\", but never written, so there is no record of you to lose or to be asked for later.\n  It is the only path on the site that is counted; pages you read are not.\n  The reason it exists is that a project with no telemetry otherwise has no way to tell whether anyone still runs it a month after installing, and the reason it is this small is that guessing is a better trade than identifying anybody.\n  The whole thing is nine lines in `worker/index.js`, the [privacy page](https://swemux.dev/privacy/) describes it in the same terms, and a test fails the build if that data point ever grows a field taken from the request.\n\n### Fixed\n\n- **Pressing Continue during setup before agent detection had finished disabled every CLI it then found.**\n  An unresolved detection was recorded as a deliberate choice to enable nothing, so a fast first run could leave you with every installed harness switched off while `claude` was still being suggested as the default.\n  An unfinished detection now records nothing and erases nothing, and a deliberate \"none of these\" survives leaving setup and coming back to it.\n\n**Full changelog**: https://github.com/jatoran/swe-mux/blob/v0.2.6/CHANGELOG.md\n"
+      }
+    ]
+  },
+  {
+    "id": "patriciobcs/macup",
+    "repositoryUrl": "https://github.com/patriciobcs/macup",
+    "selected": false,
+    "reason": "首发9/8、近期主要9/18版本，本期更接近7天窗口的新工具优先",
+    "originalDate": "2026-09-08T18:08:11Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v1.0.2",
+        "published_at": "2026-09-18T12:41:58Z",
+        "prerelease": false,
+        "html_url": "https://github.com/patriciobcs/macup/releases/tag/v1.0.2",
+        "body": "## What’s new\n\n- Schedule automatic updates with a configurable interval and settling delay.\n- Configure package-manager commands in Settings and see which commands MacUp runs.\n- Follow updates and command output in the History pane as work happens.\n- Update rustup itself with its dedicated self-update command.\n\n## Fixes\n\n- Prevent automatic updates from starting inside a manual batch and updating packages twice.\n- Open the correct Homebrew failure details, including formulae and casks with the same name.\n- Show scan failures and offline notices even when the update list is empty.\n- Remove the unused “Update everything” command setting; Update All uses the package update command for eligible packages.\n\nRequires macOS 14 Sonoma or later. The app supports Apple silicon and Intel Macs.\n\nDownload **MacUp.dmg**, use MacUp’s built-in updater, or upgrade the Homebrew cask.\n\n[Full changelog](https://github.com/patriciobcs/macup/compare/v1.0.1...v1.0.2)\n"
+      },
+      {
+        "tag_name": "v1.0.1",
+        "published_at": "2026-09-12T11:44:19Z",
+        "prerelease": false,
+        "html_url": "https://github.com/patriciobcs/macup/releases/tag/v1.0.1",
+        "body": "**Full Changelog**: https://github.com/patriciobcs/macup/compare/v1.0.0...v1.0.1"
+      },
+      {
+        "tag_name": "v1.0.0",
+        "published_at": "2026-09-11T15:00:14Z",
+        "prerelease": false,
+        "html_url": "https://github.com/patriciobcs/macup/releases/tag/v1.0.0",
+        "body": "## What's Changed\n* chore(deps): bump actions/configure-pages from 5 to 6 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/1\n* chore(deps): bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/2\n* chore(deps): bump actions/upload-artifact from 4 to 7 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/3\n* chore(deps): bump actions/setup-node from 4 to 7 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/4\n* chore(deps): bump actions/upload-pages-artifact from 3 to 5 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/6\n* chore(deps): bump actions/cache from 4 to 6 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/7\n* chore(deps): bump dorny/paths-filter from 3 to 4 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/8\n* chore(deps): bump actions/deploy-pages from 4 to 5 by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/9\n* chore(deps-dev): bump @types/node from 20.19.43 to 26.5.0 in /site in the site group by @dependabot[bot] in https://github.com/patriciobcs/macup/pull/11\n\n## New Contributors\n* @dependabot[bot] made their first contribution in https://github.com/patriciobcs/macup/pull/1\n\n**Full Changelog**: https://github.com/patriciobcs/macup/commits/v1.0.0"
+      }
+    ]
+  },
+  {
+    "id": "plusminushalf/rot-guard",
+    "repositoryUrl": "https://github.com/plusminushalf/rot-guard",
+    "selected": true,
+    "reason": "27日新公开",
+    "originalDate": "2026-09-27T15:53:12Z",
+    "recentEvidence": [
+      {
+        "sha": "347dc00afcf941c7ad54cdfb2722f98e879f1bd5",
+        "date": "2026-09-27T16:08:55Z",
+        "message": "Add screenshots, tighten README, fix block page stat overflow\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WxeefdW66o7vvG3j3LExk4",
+        "url": "https://github.com/plusminushalf/rot-guard/commit/347dc00afcf941c7ad54cdfb2722f98e879f1bd5"
+      },
+      {
+        "sha": "1b595cabcf0a2e5ee8cb362cf8a97b5c60990046",
+        "date": "2026-09-27T16:00:51Z",
+        "message": "Add MIT license\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WxeefdW66o7vvG3j3LExk4",
+        "url": "https://github.com/plusminushalf/rot-guard/commit/1b595cabcf0a2e5ee8cb362cf8a97b5c60990046"
+      },
+      {
+        "sha": "ff2733924a8c7a8df02ad16bf154f674fff453c9",
+        "date": "2026-09-27T15:59:01Z",
+        "message": "Rot Guard: a Chrome extension that blocks brain rot using TypeSafe Jev\n\nJudges each page, X post and YouTube video against your own goals, with\ntime-based rules, budgets, creator reputation and appeals. Personal\npreferences live in extension/profile.local.json (gitignored), with\nprofile.example.json as the committed starting point.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01WxeefdW66o7vvG3j3LExk4",
+        "url": "https://github.com/plusminushalf/rot-guard/commit/ff2733924a8c7a8df02ad16bf154f674fff453c9"
+      }
+    ]
+  },
+  {
+    "id": "t-head/pytorch-for-sail",
+    "repositoryUrl": "https://github.com/t-head/pytorch-for-sail",
+    "selected": false,
+    "reason": "公开实现较早，未核到7天重大新增",
+    "originalDate": "2026-09-02T08:15:40Z",
+    "recentEvidence": [
+      {
+        "sha": "c76e539216949187843d1ac4ad9908f9a1923a63",
+        "date": "2026-09-03T15:09:08Z",
+        "message": "submodule: update gloo url",
+        "url": "https://github.com/t-head/pytorch-for-sail/commit/c76e539216949187843d1ac4ad9908f9a1923a63"
+      },
+      {
+        "sha": "1526b65e2ac15e5451857404a5e1a9992d6f7f07",
+        "date": "2026-08-28T06:44:11Z",
+        "message": "Initial release of PyTorch-for-SAIL v2.10.0\n\n- Add T-Head SAIL support for Zhenwu PPU\n- Integrate Sailify conversion and hgcc build flow\n- Configure native PPU targets with PYTORCH_SAIL_ARCH\n- Add adapted attention, distributed, packaging, and documentation support",
+        "url": "https://github.com/t-head/pytorch-for-sail/commit/1526b65e2ac15e5451857404a5e1a9992d6f7f07"
+      },
+      {
+        "sha": "449b1768410104d3ed79d3bcfe4ba1d65c7f22c0",
+        "date": "2026-01-16T00:29:35Z",
+        "message": "Add Joe Spisak to Core maintainers list (#172585)\n\nAdd Joe Spisak to Core maintainers list (#172355)\n\nAnd Ivan for Docs per @svekars request\nPull Request resolved: https://github.com/pytorch/pytorch/pull/172355\nApproved by: https://github.com/atalman\n\n(cherry picked from commit a22552f98d8d84a30034809570e99e461fd896e7)\n\nCo-authored-by: albanD <desmaison.alban@gmail.com>",
+        "url": "https://github.com/t-head/pytorch-for-sail/commit/449b1768410104d3ed79d3bcfe4ba1d65c7f22c0"
+      },
+      {
+        "sha": "f6e6c0aeccd2fc6cc1a5551760285c716144f54b",
+        "date": "2026-01-15T21:38:31Z",
+        "message": "[Graph Partition] Improve support for mutation ops (#172577)\n\n[Graph Partition] Improve support for mutation ops (#172483)\n\nWhen collecting inputs/outputs of a graph partition, we skip NoneLayout buffers since they are not allocated. One special case is mutation ops (e.g., `buf1 = mutation(buf0)`), whose output `buf1` has NoneLayout and we will access `buf0` in the future. In this case, we should still include `buf0` as an input of the graph partition. So we have this check:\nhttps://github.com/pytorch/pytorch/blob/9bbc5b2905c260adf41bc866a732f9c121a2828a/torch/_inductor/scheduler.py#L6025-L6031\n\nIt turns out there are other IR nodes that also have mutation output with NoneLayout. One example is IndexPutFallback, leading to #172442. So we should check for all ir nodes instead of just the ir nodes with `ir.MutationOutput`.\n\nClose: #172442\nClose: #163129\n\nPull Request resolved: https://github.com/pytorch/pytorch/pull/172483\nApproved by: https://github.com/eellison\n\n(cherry picked from commit 080120c82d24a7f36b46c1463be8f9153aaafc20)\n\nCo-authored-by: Boyuan Feng <boyuan@meta.com>",
+        "url": "https://github.com/t-head/pytorch-for-sail/commit/f6e6c0aeccd2fc6cc1a5551760285c716144f54b"
+      },
+      {
+        "sha": "99cb42467a3109be40378c0b3814ccc4c2815790",
+        "date": "2026-01-12T19:35:24Z",
+        "message": "Revert \"[CI] Add IoU-based accuracy checking for inductor tests segmentation models\" (#172261)\n\nRevert \"[CI] Add IoU-based accuracy checking for inductor tests segmentation …\"\n\nThis reverts commit 1f74c10529e1fab25a092ed58a00bf1689ace60b.",
+        "url": "https://github.com/t-head/pytorch-for-sail/commit/99cb42467a3109be40378c0b3814ccc4c2815790"
+      }
+    ]
+  },
+  {
+    "id": "t-head/triton-for-sail",
+    "repositoryUrl": "https://github.com/t-head/triton-for-sail",
+    "selected": false,
+    "reason": "公开实现较早，未核到7天重大新增",
+    "originalDate": "2026-07-15T08:14:23Z",
+    "recentEvidence": [
+      {
+        "sha": "aca781eca54ed9a990005230207a3b3ba0fc309d",
+        "date": "2026-09-20T09:25:15Z",
+        "message": "[PPU] Make FP32 AIU matrix-load selection deterministic\n\nDeriving the element width from the shared-memory base only succeeds\nwhen that value is defined by a GEP, leaving transposed FP32 instruction\nselection undefined otherwise. Pass the descriptor element width\nexplicitly to the load helper, then remove dead broadcast remnants and\nclean the touched formatting.",
+        "url": "https://github.com/t-head/triton-for-sail/commit/aca781eca54ed9a990005230207a3b3ba0fc309d"
+      },
+      {
+        "sha": "705277308725787366df71fe9d520798ef08c5d4",
+        "date": "2026-09-20T09:17:53Z",
+        "message": "[PPU] Pass PPU architecture names to the backend compiler\n\nGeneric GPU architecture names produce an option and value pair that\ndoes not describe PPU targets. Translate supported compute\ncapabilities to PPU architecture identifiers, reject unknown values,\nand invoke the backend compiler with --ppu-arch.",
+        "url": "https://github.com/t-head/triton-for-sail/commit/705277308725787366df71fe9d520798ef08c5d4"
+      },
+      {
+        "sha": "bdbbfb78698174aa004d27eb03fcdc654b5fe67f",
+        "date": "2026-09-20T09:17:17Z",
+        "message": "[PPU] Reject non-16-bit AIU loads on v1 targets\n\nThe v1 AIU copy lowering only implements two-byte element transfers, so\naccepting other widths would continue through an unsupported path.\nAssert the 16-bit element size at conversion entry so invalid IR fails\nimmediately.",
+        "url": "https://github.com/t-head/triton-for-sail/commit/bdbbfb78698174aa004d27eb03fcdc654b5fe67f"
+      },
+      {
+        "sha": "468ae6bbcebf52db4433f61f65bb531612bb36a4",
+        "date": "2026-09-20T09:16:53Z",
+        "message": "[PPU] Preserve broadcasted registers in ldmatrix lowering\n\nThe PPU ldmatrix path no longer needs the generic remove-and-restore\nbroadcast sequence around its register mapping. Keep broadcast\ndimensions during conversion and pack loaded values without\nrebroadcasting or applying the inverse register permutation.",
+        "url": "https://github.com/t-head/triton-for-sail/commit/468ae6bbcebf52db4433f61f65bb531612bb36a4"
+      },
+      {
+        "sha": "a35dffbb3ce358dc2b47e0f1641cfcb5ec8bc323",
+        "date": "2026-09-20T09:16:27Z",
+        "message": "[PPU] Rebuild FP8 conversion maps for each target\n\nThe FP8 conversion table is initialized using the current compute\ncapability, so a function-static table freezes choices from the first\ncompilation. Rebuild the table for each lookup so conversion\ndescriptors track the active target across sequential multi-target\ncompilations.",
+        "url": "https://github.com/t-head/triton-for-sail/commit/a35dffbb3ce358dc2b47e0f1641cfcb5ec8bc323"
+      }
+    ]
+  },
+  {
+    "id": "trahloff/Aldine",
+    "repositoryUrl": "https://github.com/trahloff/Aldine",
+    "selected": true,
+    "reason": "7月7日建库；v0.11于24日加入自有OIDC与Agent API进展",
+    "originalDate": "2026-07-07T20:56:41Z",
+    "recentEvidence": [
+      {
+        "tag_name": "v0.11.0",
+        "published_at": "2026-09-24T06:53:23Z",
+        "prerelease": false,
+        "html_url": "https://github.com/trahloff/Aldine/releases/tag/v0.11.0",
+        "body": "## What's Changed\n* deploy/aws: agent_api flag serves the Agent API on prod by @trahloff in https://github.com/trahloff/Aldine/pull/65\n* docs: PR bodies reference issues, never close them by @trahloff in https://github.com/trahloff/Aldine/pull/66\n* Sign in with your own OpenID Connect provider by @trahloff in https://github.com/trahloff/Aldine/pull/68\n* changelog: cut 0.11.0 by @trahloff in https://github.com/trahloff/Aldine/pull/69\n\n\n**Full Changelog**: https://github.com/trahloff/Aldine/compare/v0.10.0...v0.11.0"
+      },
+      {
+        "tag_name": "v0.10.0",
+        "published_at": "2026-09-19T12:02:42Z",
+        "prerelease": false,
+        "html_url": "https://github.com/trahloff/Aldine/releases/tag/v0.10.0",
+        "body": "## What's Changed\n* Sidebar tabs wrap instead of clipping the last ones by @trahloff in https://github.com/trahloff/Aldine/pull/61\n* Download a project as ZIP by @trahloff in https://github.com/trahloff/Aldine/pull/62\n* Gitea and Forgejo as a third remote provider by @trahloff in https://github.com/trahloff/Aldine/pull/63\n* Agent API: Claude as a collaborator by @trahloff in https://github.com/trahloff/Aldine/pull/13\n* changelog: cut 0.10.0 by @trahloff in https://github.com/trahloff/Aldine/pull/64\n\n\n**Full Changelog**: https://github.com/trahloff/Aldine/compare/v0.9.0...v0.10.0"
+      },
+      {
+        "tag_name": "v0.9.0",
+        "published_at": "2026-09-10T19:48:20Z",
+        "prerelease": false,
+        "html_url": "https://github.com/trahloff/Aldine/releases/tag/v0.9.0",
+        "body": "## What's Changed\n* feat: GitLab as a remote provider (#51, Stage A) by @trahloff in https://github.com/trahloff/Aldine/pull/52\n* feat: templates from a git repository (#50) by @trahloff in https://github.com/trahloff/Aldine/pull/53\n* feat: auto-provision new projects into a GitLab group (#51, Stage B) by @trahloff in https://github.com/trahloff/Aldine/pull/56\n* changelog: cut 0.9.0 by @trahloff in https://github.com/trahloff/Aldine/pull/57\n\n\n**Full Changelog**: https://github.com/trahloff/Aldine/compare/v0.8.0...v0.9.0"
+      },
+      {
+        "tag_name": "v0.8.0",
+        "published_at": "2026-09-10T17:21:16Z",
+        "prerelease": false,
+        "html_url": "https://github.com/trahloff/Aldine/releases/tag/v0.8.0",
+        "body": "## What's Changed\n* aws: a shell into the running task, off by default by @trahloff in https://github.com/trahloff/Aldine/pull/48\n* release smoke: every fetch races a referenced timer by @trahloff in https://github.com/trahloff/Aldine/pull/49\n* Server admin: ALDINE_ADMIN_EMAILS, /admin, active-user counts by @trahloff in https://github.com/trahloff/Aldine/pull/54\n* changelog: cut 0.8.0 by @trahloff in https://github.com/trahloff/Aldine/pull/55\n\n\n**Full Changelog**: https://github.com/trahloff/Aldine/compare/v0.7.0...v0.8.0"
+      }
+    ]
+  },
+  {
+    "id": "ufo-ai/ufo-core",
+    "repositoryUrl": "https://github.com/ufo-ai/ufo-core",
+    "selected": true,
+    "reason": "27日新公开",
+    "originalDate": "2026-09-27T07:25:44Z",
+    "recentEvidence": [
+      {
+        "sha": "63ba388ed449ff46c9d70744119dffc85df0fbf8",
+        "date": "2026-09-27T07:25:53Z",
+        "message": "Big bang",
+        "url": "https://github.com/ufo-ai/ufo-core/commit/63ba388ed449ff46c9d70744119dffc85df0fbf8"
+      }
+    ]
+  }
+]
