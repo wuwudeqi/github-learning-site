@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-09-29T00:27:39.995Z",
+  "passed": true,
+  "checks": [
+    {
+      "id": "paper-fusereg",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-fusereg",
+      "title": "FuseReg：重建看浅层，生成看深层，训练时让解码器少依赖固定组合",
+      "image": {
+        "ok": true,
+        "alt": "FuseReg：重建看浅层，生成看深层，训练时让解码器少依赖固定组合"
+      }
+    },
+    {
+      "id": "paper-disaggregated-quantization",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-disaggregated-quantization",
+      "title": "Disaggregated Quantization：预填充和解码不必共用一套量化格式",
+      "image": {
+        "ok": true,
+        "alt": "Disaggregated Quantization：预填充和解码不必共用一套量化格式"
+      }
+    },
+    {
+      "id": "paper-pisa-attention",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-pisa-attention",
+      "title": "PISA：先在粗层选区域，再逐层缩小注意力候选",
+      "image": {
+        "ok": true,
+        "alt": "PISA：先在粗层选区域，再逐层缩小注意力候选"
+      }
+    },
+    {
+      "id": "paper-agentworld",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-agentworld",
+      "title": "AgentWorld：多 Agent 完成任务，需要测协作链而不只是聊天",
+      "image": {
+        "ok": true,
+        "alt": "AgentWorld：多 Agent 完成任务，需要测协作链而不只是聊天"
+      }
+    },
+    {
+      "id": "paper-slca-grpo",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-slca-grpo",
+      "title": "SLCA-GRPO：工具过程与最终总结，应该得到不同的训练信号",
+      "image": {
+        "ok": true,
+        "alt": "SLCA-GRPO：工具过程与最终总结，应该得到不同的训练信号"
+      }
+    },
+    {
+      "id": "paper-softmax-reparameterization",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/paper-softmax-reparameterization",
+      "title": "Softmax Reparameterization：概率完全相同的权重，量化后不再等价",
+      "image": {
+        "ok": true,
+        "alt": "Softmax Reparameterization：概率完全相同的权重，量化后不再等价"
+      }
+    },
+    {
+      "link": "AI动态：5条详解+10条速读",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-29-news",
+      "title": "AI 动态：模型变快之后，团队协作和执行边界怎么接上"
+    },
+    {
+      "link": "六模型：选择、动作与视角",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-29-models",
+      "title": "六模型：有限选择、桌面动作、机械臂和新视角"
+    },
+    {
+      "link": "六篇论文与站内阅读卡",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-29-papers",
+      "title": "六篇论文：省计算、分信用，也要看比较条件"
+    },
+    {
+      "link": "十个开源项目",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-29-projects",
+      "title": "十个项目：从具体任务判断实用，而不按总 Star 排名"
+    },
+    {
+      "link": "Softmax平移与量化小实验",
+      "url": "http://127.0.0.1:50452/github-learning-site/#/read/frontiers-2026-09-29-practice",
+      "title": "小实验：减去同一个方向，为什么概率不变而量化误差会变"
+    }
+  ]
+}

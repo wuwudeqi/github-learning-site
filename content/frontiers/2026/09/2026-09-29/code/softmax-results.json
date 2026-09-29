@@ -1,0 +1,50 @@
+{
+  "kind": "synthetic_cpu_demo_not_model_replication",
+  "seed": 20260929,
+  "environment": {
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O"
+  },
+  "executedAt": "2026-09-29T00:13:46.431497+00:00",
+  "shape": [
+    32,
+    8
+  ],
+  "validationCount": 64,
+  "testCount": 64,
+  "quantization": "rowwise symmetric integer [-7,7], float dequantization, no grouping",
+  "tChosenOnValidation": 1,
+  "fullPrecisionMaxProbabilityDifference": 3.3306690738754696e-16,
+  "records": [
+    {
+      "t": 0,
+      "validationKL": 0.018124101034364473,
+      "testKL": 0.023809214297036002
+    },
+    {
+      "t": 0.5,
+      "validationKL": 0.006116972386494429,
+      "testKL": 0.00721482835504493
+    },
+    {
+      "t": 1,
+      "validationKL": 0.0009956764187628048,
+      "testKL": 0.0010599961793918912
+    },
+    {
+      "t": 1.5,
+      "validationKL": 0.006556991677071941,
+      "testKL": 0.00780810713964112
+    },
+    {
+      "t": 2,
+      "validationKL": 0.021145559796478614,
+      "testKL": 0.025414081882334568
+    },
+    {
+      "t": 4,
+      "validationKL": 0.1602962117528859,
+      "testKL": 0.18563419367599518
+    }
+  ]
+}

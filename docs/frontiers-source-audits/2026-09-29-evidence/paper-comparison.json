@@ -1,0 +1,546 @@
+[
+  {
+    "arxiv": "2609.18703",
+    "title": "RayOrch: Programming and Executing Lineage-Controlled Multi-Grain Dataflows for Foundation-Model Data Preparation",
+    "submittedDate": "2026/09/16",
+    "authors": [
+      "Ma, Xiaochen",
+      "Meng, Zimo",
+      "Liang, Junzhu",
+      "Jiang, Youhe",
+      "Cheng, Yue",
+      "Liang, Hao",
+      "Zeng, Bohan",
+      "Li, Dengchun",
+      "Ma, Lu",
+      "Zhao, Zhengyang",
+      "Wong, Zhen Hao",
+      "He, Runming",
+      "Qiang, Meiyi",
+      "Guan, Jiangtao",
+      "Yuan, Binhang",
+      "Zhang, Wentao"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.18703v1",
+    "selected": false,
+    "reviewDepth": "摘要、日期与候选比较；未声称全部精读",
+    "reason": "RayOrch原提交较早，作为备选，优先本周新方法与直接对照。",
+    "receipt": {
+      "id": "2609.18703",
+      "attemptedAt": "2026-09-29T07:36:28.769703+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.18703v1",
+          "bytes": 353889
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.18703v1",
+          "bytes": 831185
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.18703v1",
+          "bytes": 45242
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:32.876439+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.25716",
+    "title": "FoMo: Forking Moment in Generative Trajectory as a Perceptual Distance",
+    "submittedDate": "2026/09/22",
+    "authors": [
+      "Lew, Jaihyun",
+      "Jung, Mingi",
+      "Park, Minjun",
+      "Song, Wooseok",
+      "Yoon, Sungroh"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.25716v1",
+    "selected": false,
+    "reviewDepth": "摘要、日期与候选比较；未声称全部精读",
+    "reason": "FoMo候选已获取原文，未完成足够核心结果核验，不以摘要填入。",
+    "receipt": {
+      "id": "2609.25716",
+      "attemptedAt": "2026-09-29T07:36:28.893470+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.25716v1",
+          "bytes": 25398623
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.25716v1",
+          "bytes": 35172327
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.25716v1",
+          "bytes": 43196
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:37.349061+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.26333",
+    "title": "Disaggregated Quantization: Specializing LLM Prefill and Decode",
+    "submittedDate": "2026/09/22",
+    "authors": [
+      "Panferov, Andrei",
+      "Kleinegger, Maximilian",
+      "Priyadarshi, Sweta",
+      "Blankevoort, Tijmen",
+      "Alistarh, Dan"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.26333v1",
+    "selected": true,
+    "reviewDepth": "核心方法、实验和局限已读",
+    "reason": "分别优化计算密集的预填充与带宽密集的解码，并训练两阶段衔接。",
+    "receipt": {
+      "id": "2609.26333",
+      "attemptedAt": "2026-09-29T07:36:23.028216+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.26333v1",
+          "bytes": 764291
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.26333v1",
+          "bytes": 1381960
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.26333v1",
+          "bytes": 42621
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:27.659266+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.29050",
+    "title": "SLCA-GRPO: Resolving Cross-Segment Credit Misattribution in Tool-Calling RL",
+    "submittedDate": "2026/09/24",
+    "authors": [
+      "Zhan, Yan",
+      "Liu, Shaobo",
+      "Liu, Qiunan",
+      "Shi, Yuanjun",
+      "Xu, Siqi",
+      "Hou, WeiYi",
+      "Xu, Xiang",
+      "Li, Zekang",
+      "Pan, Weizhou",
+      "Yan, Jiahong"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.29050v1",
+    "selected": true,
+    "reviewDepth": "核心方法、实验和局限已读",
+    "reason": "把工具段和总结段的优势分别归一化，避免整条轨迹共享一份信用。",
+    "receipt": {
+      "id": "2609.29050",
+      "attemptedAt": "2026-09-29T07:36:23.028748+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.29050v1",
+          "bytes": 8232995
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.29050v1",
+          "bytes": 8997017
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.29050v1",
+          "bytes": 43890
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:28.893185+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.30222",
+    "title": "TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations",
+    "submittedDate": "2026/09/24",
+    "authors": [
+      "Jain, Ayush",
+      "Paruchuri, Sreeharsha",
+      "Gupta, Ishita",
+      "Zhang, Fan",
+      "Schmidt, Tanner",
+      "Engel, Jakob",
+      "Fragkiadaki, Katerina",
+      "Harley, Adam W."
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.30222v1",
+    "selected": false,
+    "reviewDepth": "摘要、日期与候选比较；未声称全部精读",
+    "reason": "TrackEverything是视觉跟踪方向；本期新闻已涉及视觉结构输出，优先模型训练与推理。",
+    "receipt": {
+      "id": "2609.30222",
+      "attemptedAt": "2026-09-29T07:36:31.392082+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.30222v1",
+          "bytes": 29760932
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.30222v1",
+          "bytes": 31427053
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.30222v1",
+          "bytes": 43575
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:40.312462+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.30670",
+    "title": "TRACE: Temporal Audit and Condition-aware Evaluation of Streaming Video Understanding",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Ma, Yibo",
+      "Zhang, Qianqian",
+      "Liu, Peng",
+      "Zhao, Tiancheng"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.30670v1",
+    "selected": false,
+    "reviewDepth": "摘要、日期与候选比较；未声称全部精读",
+    "reason": "TRACE候选已下载比较，核心实验精读尚不足，保留未选。",
+    "receipt": {
+      "id": "2609.30670",
+      "attemptedAt": "2026-09-29T07:36:32.876690+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.30670v1",
+          "bytes": 5894882
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.30670v1",
+          "bytes": 424199
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.30670v1",
+          "bytes": 43138
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:39.072724+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.30837",
+    "title": "MOPD-Router: Rethinking Teacher Routing in Multi-Teacher On-Policy Distillation",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Xu, Tianze",
+      "Zheng, Yanzhao",
+      "Zhang, Zhentao",
+      "Yu, Yuanqiang",
+      "Ma, Chao",
+      "Zhu, Jihuai",
+      "Wu, Lelun",
+      "Ye, Lyumanshan",
+      "Liu, Pengfei",
+      "Dong, Baohua",
+      "Zhu, Hangcheng",
+      "Huang, Ruohui",
+      "Yu, Gang"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.30837v1",
+    "selected": false,
+    "reviewDepth": "摘要、日期与候选比较；未声称全部精读",
+    "reason": "MOPD-Router与本期已覆盖的路由/效率主题接近，优先有明确预填充与解码分工的原文。",
+    "receipt": {
+      "id": "2609.30837",
+      "attemptedAt": "2026-09-29T07:36:27.659579+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.30837v1",
+          "bytes": 1314722
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.30837v1",
+          "bytes": 2825000
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.30837v1",
+          "bytes": 44971
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:32.915454+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.31093",
+    "title": "Block Sparse Attention with Log-Linear Complexity",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Tang, Bohao",
+      "Qin, Zhen",
+      "Pan, Yuqi",
+      "Li, Zheng",
+      "Liu, Pengfei"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.31093v1",
+    "selected": true,
+    "reviewDepth": "核心方法、实验和局限已读",
+    "reason": "用金字塔层级路由缩小稀疏注意力的候选范围。",
+    "receipt": {
+      "id": "2609.31093",
+      "attemptedAt": "2026-09-29T07:36:23.028013+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.31093v1",
+          "bytes": 417700
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.31093v1",
+          "bytes": 594277
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.31093v1",
+          "bytes": 42120
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:27.536681+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.31291",
+    "title": "Softmax Reparameterization for Output-Head Quantization",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Kadav, Asim",
+      "Flores, Christian",
+      "Arora, Chirag",
+      "Kotte, Varun",
+      "Zheng, Hongbo",
+      "Yan, Lan",
+      "Shanmugasundaram, Priya",
+      "King, Tracy Holloway"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.31291v1",
+    "selected": true,
+    "reviewDepth": "核心方法、实验和局限已读",
+    "reason": "利用Softmax平移不变性搜索更适合低比特舍入的输出头表示。",
+    "receipt": {
+      "id": "2609.31291",
+      "attemptedAt": "2026-09-29T07:36:27.536961+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.31291v1",
+          "bytes": 78018
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.31291v1",
+          "bytes": 455321
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.31291v1",
+          "bytes": 44413
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:31.391832+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.31394",
+    "title": "InternW0-$\\Delta$: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Miao, Xingyu",
+      "Li, Zizun",
+      "Fang, Baole",
+      "Song, Kaiwen",
+      "Wang, Tenghui",
+      "Zhang, Hanxue",
+      "Wang, Yating",
+      "Li, Xudong",
+      "He, Yuping",
+      "Wei, Xueyuan",
+      "Gao, Chao",
+      "Yang, Xijie",
+      "Xu, Yingxiang",
+      "Ren, Kerui",
+      "Guo, Wenqi",
+      "Zhou, Jianjun",
+      "Wang, Xinzhe",
+      "Zhao, Weiguang",
+      "Yang, Ni",
+      "Cai, Zetao",
+      "Xue, Yufei",
+      "Li, Hengjie",
+      "He, Zeyu",
+      "Zhou, Yuanzhen",
+      "Fu, Rong",
+      "Zhang, Jianyang",
+      "Cui, Siwei",
+      "Huang, Fuxian",
+      "Zhou, Yunsong",
+      "Gao, Xing",
+      "Yao, Yifei",
+      "Yu, Qiaojun",
+      "Li, Kailin",
+      "Zhou, Ming",
+      "Huang, Mu",
+      "Li, Xinyue",
+      "Cui, Wenze",
+      "Jiang, Bingqi",
+      "Zhu, Xueyue",
+      "Dong, Junting",
+      "Guo, Haoyu",
+      "Lu, Tao",
+      "Yu, Mulin",
+      "Zhou, Bowen",
+      "Zhao, Bin",
+      "Xue, Tianfan",
+      "Zhang, Weinan",
+      "Shen, Chunhua"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.31394v1",
+    "selected": false,
+    "reviewDepth": "摘要、日期与候选比较；未声称全部精读",
+    "reason": "InternW0Delta涉及世界模型，主题与近期已刊DeltaWAM相近，优先不同问题。",
+    "receipt": {
+      "id": "2609.31394",
+      "attemptedAt": "2026-09-29T07:36:28.645101+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.31394v1",
+          "bytes": 15681412
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.31394v1",
+          "bytes": 16452590
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.31394v1",
+          "bytes": 50531
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:35.634317+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.31590",
+    "title": "AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Shu, Raphael",
+      "Zhang, Yusen",
+      "Cho, Young Min",
+      "Yang, Jin Mo",
+      "Yuan, Yuan",
+      "Zheng, Wenliang",
+      "Guntuku, Sharath Chandra",
+      "Ungar, Lyle",
+      "Yu, Zhou",
+      "Zhang, Rui"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.31590v1",
+    "selected": true,
+    "reviewDepth": "核心方法、实验和局限已读",
+    "reason": "用角色不对称、工具和因果依赖任务检查协作与泛化。",
+    "receipt": {
+      "id": "2609.31590",
+      "attemptedAt": "2026-09-29T07:36:23.028525+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.31590v1",
+          "bytes": 3218125
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.31590v1",
+          "bytes": 4581461
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.31590v1",
+          "bytes": 42871
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:28.644826+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.31620",
+    "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Du, Hongyang",
+      "Xie, Yunfei",
+      "Ye, Junjie",
+      "Yang, Jiawei",
+      "Cong, Xiaoyan",
+      "Zhang, Haodong",
+      "Huang, Yongchao",
+      "Wu, Haiyu",
+      "Li, Zongxia",
+      "Gui, Shihang",
+      "Liu, Dawei",
+      "Li, Runhao",
+      "Ni, Jingcheng",
+      "Wei, Chen",
+      "Balestriero, Randall",
+      "Wang, Yue"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.31620v1",
+    "selected": true,
+    "reviewDepth": "核心方法、实验和局限已读",
+    "reason": "对层融合做随机子集训练，缓解重建与生成对表征层的不同要求。",
+    "receipt": {
+      "id": "2609.31620",
+      "attemptedAt": "2026-09-29T07:36:23.027740+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.31620v1",
+          "bytes": 5285379
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.31620v1",
+          "bytes": 5627240
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.31620v1",
+          "bytes": 44328
+        }
+      },
+      "checkedAt": "2026-09-29T07:36:28.769332+08:00"
+    }
+  }
+]

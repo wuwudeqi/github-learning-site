@@ -1,0 +1,368 @@
+{
+  "checkedAt": "2026-09-29T00:26:59.032Z",
+  "passed": true,
+  "results": [
+    {
+      "size": "desktop",
+      "key": "overview",
+      "title": "09-29｜前沿日报：模型速度与执行边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "desktop",
+      "key": "news",
+      "title": "09-29｜15条AI动态：更快的模型与可控的执行 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/nvidia-boundaries.png",
+          "alt": "OpenShell包围Agent运行时，独立Sentry硬件观察事件并触发隔离",
+          "complete": true,
+          "naturalWidth": 1536,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/eleven-latency.webp",
+          "alt": "ElevenLabs对比不同语音系统从请求到首次可听语音的时间",
+          "complete": true,
+          "naturalWidth": 2480,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "models",
+      "title": "09-29｜六模型：决策、动作与视角控制 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/lev-accuracy.png",
+          "alt": "Lev和Jev在不同判别任务上的作者对照图",
+          "complete": true,
+          "naturalWidth": 1640,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/anyangle-example.png",
+          "alt": "AnyAngle的原图、粗糙目标视角与修整后图像对照",
+          "complete": true,
+          "naturalWidth": 1650,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/orbit-comparison.webp",
+          "alt": "同一环绕任务下首帧条件、首尾帧条件与LoRA的动态对照",
+          "complete": true,
+          "naturalWidth": 1152,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "papers",
+      "title": "09-29｜六论文：让效率结论经得起条件核对 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/fusereg-reconstruction.png",
+          "alt": "FuseReg：重建看浅层，生成看深层，训练时让解码器少依赖固定组合",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/dq-training.png",
+          "alt": "Disaggregated Quantization：预填充和解码不必共用一套量化格式",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.9765625,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/pisa-routing.png",
+          "alt": "PISA：先在粗层选区域，再逐层缩小注意力候选",
+          "complete": true,
+          "naturalWidth": 1780,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/agentworld-task.png",
+          "alt": "AgentWorld：多 Agent 完成任务，需要测协作链而不只是聊天",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/slca-method.png",
+          "alt": "SLCA-GRPO：工具过程与最终总结，应该得到不同的训练信号",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/softmax-shift.png",
+          "alt": "Softmax Reparameterization：概率完全相同的权重，量化后不再等价",
+          "complete": true,
+          "naturalWidth": 1088,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "projects",
+      "title": "09-29｜十项目：检索、部署、团队记忆与资料工作流 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/jev-workflow.png",
+          "alt": "Jevgrep：先取带行号的相关代码，再把实现交给编码 Agent",
+          "complete": true,
+          "naturalWidth": 1586,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/anyjev-rotation.gif",
+          "alt": "AnyJev：普通模型也能做有限选择，但要付出旋转与校准预算",
+          "complete": true,
+          "naturalWidth": 1200,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/agent-console-demo.png",
+          "alt": "Agent Console：本地看编码 Agent 用量，先区分估算和账单",
+          "complete": true,
+          "naturalWidth": 1440,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/meeting-recorder.webp",
+          "alt": "Meeting Recorder：麦克风和电脑声音分开录，再生成可回听转录",
+          "complete": true,
+          "naturalWidth": 1600,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "practice",
+      "title": "09-29｜本机小实验：Softmax不变，量化误差会变 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/softmax-local-result.png",
+          "alt": "合成矩阵在六个平移倍数下的验证和测试量化KL曲线",
+          "complete": true,
+          "naturalWidth": 1196,
+          "renderedWidth": 719.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "overview",
+      "title": "09-29｜前沿日报：模型速度与执行边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "mobile",
+      "key": "news",
+      "title": "09-29｜15条AI动态：更快的模型与可控的执行 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/nvidia-boundaries.png",
+          "alt": "OpenShell包围Agent运行时，独立Sentry硬件观察事件并触发隔离",
+          "complete": true,
+          "naturalWidth": 1536,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/eleven-latency.webp",
+          "alt": "ElevenLabs对比不同语音系统从请求到首次可听语音的时间",
+          "complete": true,
+          "naturalWidth": 2480,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "models",
+      "title": "09-29｜六模型：决策、动作与视角控制 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/lev-accuracy.png",
+          "alt": "Lev和Jev在不同判别任务上的作者对照图",
+          "complete": true,
+          "naturalWidth": 1640,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/anyangle-example.png",
+          "alt": "AnyAngle的原图、粗糙目标视角与修整后图像对照",
+          "complete": true,
+          "naturalWidth": 1650,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/orbit-comparison.webp",
+          "alt": "同一环绕任务下首帧条件、首尾帧条件与LoRA的动态对照",
+          "complete": true,
+          "naturalWidth": 1152,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "papers",
+      "title": "09-29｜六论文：让效率结论经得起条件核对 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/fusereg-reconstruction.png",
+          "alt": "FuseReg：重建看浅层，生成看深层，训练时让解码器少依赖固定组合",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.9609375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/dq-training.png",
+          "alt": "Disaggregated Quantization：预填充和解码不必共用一套量化格式",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.9765625,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/pisa-routing.png",
+          "alt": "PISA：先在粗层选区域，再逐层缩小注意力候选",
+          "complete": true,
+          "naturalWidth": 1780,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/agentworld-task.png",
+          "alt": "AgentWorld：多 Agent 完成任务，需要测协作链而不只是聊天",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/slca-method.png",
+          "alt": "SLCA-GRPO：工具过程与最终总结，应该得到不同的训练信号",
+          "complete": true,
+          "naturalWidth": 2100,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/softmax-shift.png",
+          "alt": "Softmax Reparameterization：概率完全相同的权重，量化后不再等价",
+          "complete": true,
+          "naturalWidth": 1088,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "projects",
+      "title": "09-29｜十项目：检索、部署、团队记忆与资料工作流 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/jev-workflow.png",
+          "alt": "Jevgrep：先取带行号的相关代码，再把实现交给编码 Agent",
+          "complete": true,
+          "naturalWidth": 1586,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/anyjev-rotation.gif",
+          "alt": "AnyJev：普通模型也能做有限选择，但要付出旋转与校准预算",
+          "complete": true,
+          "naturalWidth": 1200,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/agent-console-demo.png",
+          "alt": "Agent Console：本地看编码 Agent 用量，先区分估算和账单",
+          "complete": true,
+          "naturalWidth": 1440,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/meeting-recorder.webp",
+          "alt": "Meeting Recorder：麦克风和电脑声音分开录，再生成可回听转录",
+          "complete": true,
+          "naturalWidth": 1600,
+          "renderedWidth": 344,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "practice",
+      "title": "09-29｜本机小实验：Softmax不变，量化误差会变 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50452/github-learning-site/documents/frontiers/2026/09/2026-09-29/images/softmax-local-result.png",
+          "alt": "合成矩阵在六个平移倍数下的验证和测试量化KL曲线",
+          "complete": true,
+          "naturalWidth": 1196,
+          "renderedWidth": 343.9921875,
+          "insideReader": true
+        }
+      ]
+    }
+  ]
+}
