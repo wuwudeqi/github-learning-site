@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>GAGAR合成数组实验</title>
+<style>body{margin:0;background:#f4f6f4;color:#19332b;font-family:system-ui,'PingFang SC',sans-serif}main{width:1080px;padding:48px;box-sizing:border-box}h1{font-size:32px;margin:0 0 10px}p{font-size:20px;line-height:1.6;margin:6px 0 20px}svg{display:block;background:#fff;border-radius:18px}footer{font-size:18px;line-height:1.7;margin-top:18px}.tag{color:#2a6859;font-weight:650}</style>
+<main><h1>都通过测试，也可以分配不同的学习信用</h1><p>本机合成数组 · 蓝色为原优势，橙色为质量重分配后</p><svg width="984" height="450" viewBox="0 0 984 450" id="chart" role="img" aria-label="两条通过轨迹的优势从各0.5变为0.8与0.2，两条失败轨迹保持负0.5"></svg><footer id="note"></footer></main>
+<script>
+fetch('./gagar-results.json').then(r=>r.json()).then(data=>{
+ const c=data.cases.find(x=>x.case==='two-pass');const svg=document.querySelector('#chart');
+ function el(name,attrs,text){let n=document.createElementNS('http://www.w3.org/2000/svg',name);for(let [k,v]of Object.entries(attrs))n.setAttribute(k,v);if(text!==undefined)n.textContent=text;svg.append(n);return n}
+ const zero=250,scale=220;el('line',{x1:54,x2:944,y1:zero,y2:zero,stroke:'#9cabaa','stroke-width':2});
+ for(let v of [-.5,0,.5,1]){let y=zero-v*scale;el('text',{x:36,y:y+6,'text-anchor':'end','font-size':17,fill:'#566b63'},String(v));if(v!==0)el('line',{x1:54,x2:944,y1:y,y2:y,stroke:'#e8eeeb'})}
+ c.before.forEach((v,i)=>{const x=160+i*218;for(let [j,a] of [[0,v],[1,c.after[i]]]){const y=zero-a*scale;el('rect',{x:x+j*62-60,y:Math.min(zero,y),width:48,height:Math.abs(a*scale),rx:4,fill:j?'#d67838':'#357a99'});el('text',{x:x+j*62-36,y:a>=0?y-10:y-12,'text-anchor':'middle','font-size':23,fill:a>=0?'#19332b':'#ffffff'},a.toFixed(2))}el('text',{x:x-5,y:400,'text-anchor':'middle','font-size':23},i<2?'通过 '+(i+1):'失败 '+(i-1));el('text',{x:x-5,y:430,'text-anchor':'middle','font-size':17,fill:'#566b63'},i<2?'质量因子 '+c.factors[i]:'优势保持不变')});
+ document.querySelector('#note').innerHTML='<span class="tag">正优势总量：'+c.positiveMassBefore.toFixed(2)+' → '+c.positiveMassAfter.toFixed(2)+'</span><br>只是将通过者的信用重新分配；没有新增成功样本，也没有证明模型质量提高。<br>数据：同目录 gagar-results.json · Python '+data.python+' 本机执行';window.chartReady=true;
+});
+</script></html>

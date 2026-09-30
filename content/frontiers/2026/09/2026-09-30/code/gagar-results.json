@@ -1,0 +1,204 @@
+{
+  "kind": "synthetic-local-cpu-algebra-check",
+  "python": "3.14.3",
+  "checkedAt": "2026-09-30T00:11:13.835690+00:00",
+  "cases": [
+    {
+      "case": "two-pass",
+      "rewards": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "factors": [
+        1.0,
+        0.25,
+        null,
+        null
+      ],
+      "before": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "after": [
+        0.8,
+        0.2,
+        -0.5,
+        -0.5
+      ],
+      "mode": "redistributed",
+      "positiveMassBefore": 1.0,
+      "positiveMassAfter": 1.0
+    },
+    {
+      "case": "three-pass",
+      "rewards": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "factors": [
+        1.0,
+        0.5,
+        0.25,
+        null
+      ],
+      "before": [
+        0.25,
+        0.25,
+        0.25,
+        -0.75
+      ],
+      "after": [
+        0.42857142857142855,
+        0.21428571428571427,
+        0.10714285714285714,
+        -0.75
+      ],
+      "mode": "redistributed",
+      "positiveMassBefore": 0.75,
+      "positiveMassAfter": 0.75
+    },
+    {
+      "case": "equal-quality",
+      "rewards": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "factors": [
+        0.6,
+        0.6,
+        null,
+        null
+      ],
+      "before": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "after": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "mode": "redistributed",
+      "positiveMassBefore": 1.0,
+      "positiveMassAfter": 1.0
+    },
+    {
+      "case": "one-pass",
+      "rewards": [
+        1,
+        0,
+        0
+      ],
+      "factors": [
+        0.2,
+        null,
+        null
+      ],
+      "before": [
+        0.6666666666666667,
+        -0.3333333333333333,
+        -0.3333333333333333
+      ],
+      "after": [
+        0.6666666666666667,
+        -0.3333333333333333,
+        -0.3333333333333333
+      ],
+      "mode": "redistributed",
+      "positiveMassBefore": 0.6666666666666667,
+      "positiveMassAfter": 0.6666666666666667
+    },
+    {
+      "case": "all-pass",
+      "rewards": [
+        1,
+        1,
+        1
+      ],
+      "factors": [
+        1.0,
+        0.5,
+        0.25
+      ],
+      "before": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mode": "homogeneous group: no positive mass",
+      "positiveMassBefore": 0,
+      "positiveMassAfter": 0
+    },
+    {
+      "case": "all-fail",
+      "rewards": [
+        0,
+        0,
+        0
+      ],
+      "factors": [
+        null,
+        null,
+        null
+      ],
+      "before": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mode": "homogeneous group: no positive mass",
+      "positiveMassBefore": 0,
+      "positiveMassAfter": 0
+    },
+    {
+      "case": "invalid-quality",
+      "rewards": [
+        1,
+        1,
+        0
+      ],
+      "factors": [
+        1.0,
+        "NaN",
+        null
+      ],
+      "before": [
+        0.33333333333333337,
+        0.33333333333333337,
+        -0.6666666666666666
+      ],
+      "after": [
+        0.33333333333333337,
+        0.33333333333333337,
+        -0.6666666666666666
+      ],
+      "mode": "invalid grading: fallback",
+      "positiveMassBefore": 0.6666666666666667,
+      "positiveMassAfter": 0.6666666666666667
+    }
+  ],
+  "checksPassed": 10,
+  "trainingReproduced": false,
+  "limitation": "No LLM grading, rollout, policy gradient, hacking detection, or model training."
+}

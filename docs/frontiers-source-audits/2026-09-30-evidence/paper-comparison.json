@@ -1,0 +1,507 @@
+[
+  {
+    "arxiv": "2609.29233",
+    "title": "Post-Training Leaves Behavioral Shadows on Unrelated Decisions",
+    "submittedDate": "2026/09/24",
+    "authors": [
+      "Zhang, Ziyang",
+      "Jing, Yubin",
+      "Zeng, Yuanhao",
+      "Li, Yuyao",
+      "Wang, Haofan",
+      "Gong, Yichen"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.29233v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "利用共同祖先模型的近五五开提示，比较教师偏好与严格匹配打乱对照。",
+    "receipt": {
+      "id": "2609.29233",
+      "attemptedAt": "2026-09-30T07:35:43.902396+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.29233v1",
+          "bytes": 2373779
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.29233v1",
+          "bytes": 2794425
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.29233v1",
+          "bytes": 42262
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:49.579002+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.31948",
+    "title": "Duplex-MPE: Benchmarking Multi-Party Interaction in Full-Duplex Dialogue",
+    "submittedDate": "2026/09/25",
+    "authors": [
+      "Ma, Chengqian",
+      "Feng, Wenhao",
+      "Jin, Weixuan",
+      "Dai, Gaole",
+      "Xie, Tianyu",
+      "Ma, Yuexiao",
+      "Kang, Zhaolu",
+      "Zhao, Xiangyu",
+      "Zheng, Xiawu",
+      "Chao, Fei"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.31948v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "用显式与隐式称呼配对情境，把及时回应、答对、保持安静和停止讲话分开测。",
+    "receipt": {
+      "id": "2609.31948",
+      "attemptedAt": "2026-09-30T07:35:43.902930+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.31948v1",
+          "bytes": 3922622
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.31948v1",
+          "bytes": 4344665
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.31948v1",
+          "bytes": 42848
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:49.484533+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.32534",
+    "title": "DepthBench: Measuring How Residual Connections Enable More Computational Depth",
+    "submittedDate": "2026/09/26",
+    "authors": [
+      "Wang, Keyu",
+      "Huang, Yangyi",
+      "Kang, Jiale",
+      "González-Martínez, David",
+      "Liu, Weiyang",
+      "Liu, Shiwei"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.32534v1",
+    "selected": false,
+    "reviewDepth": "原文候选比较，核对方法与主要实验条件；精读深度不等于入选六篇",
+    "reason": "DepthBench比较残差深度等10种结构，本期选择带明确停止监督的TaH2作为深度主题。",
+    "receipt": {
+      "id": "2609.32534",
+      "attemptedAt": "2026-09-30T07:35:52.786956+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.32534v1",
+          "bytes": 13122529
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.32534v1",
+          "bytes": 3335828
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.32534v1",
+          "bytes": 43847
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:58.882326+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.32577",
+    "title": "Groupwise Agentic Grading and Advantage Redistribution for Code Agent RL",
+    "submittedDate": "2026/09/26",
+    "authors": [
+      "Dong, Jinhao",
+      "Zhao, Liang",
+      "Yue, Zihao",
+      "Ma, Wenhan",
+      "Zhang, Linghao",
+      "Li, Lei",
+      "Li, Shicheng",
+      "Song, Yifan",
+      "Ye, Bowen",
+      "Luo, Fuli"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.32577v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "在保持组内正优势总量的前提下，按通过轨迹的代码质量重新分配信用。",
+    "receipt": {
+      "id": "2609.32577",
+      "attemptedAt": "2026-09-30T07:35:43.903191+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.32577v1",
+          "bytes": 406582
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.32577v1",
+          "bytes": 507510
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.32577v1",
+          "bytes": 43578
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:48.366682+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.32704",
+    "title": "CoWindow Attention: Full Causal Coverage Is a Collective Property",
+    "submittedDate": "2026/09/26",
+    "authors": [
+      "Shi, Jingze",
+      "Peng, Zhangyang",
+      "Li, Xianduo",
+      "Qi, Yanlin",
+      "Lin, Xiaotian",
+      "Chen, Haoxian",
+      "Wang, Liangdong",
+      "Liu, Guang",
+      "Luo, Yuyu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.32704v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "让KV头共享近邻区域、分担互补远程窗口，减少注意力计算。",
+    "receipt": {
+      "id": "2609.32704",
+      "attemptedAt": "2026-09-30T07:35:48.232335+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.32704v1",
+          "bytes": 515475
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.32704v1",
+          "bytes": 953362
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.32704v1",
+          "bytes": 44330
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:52.785623+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.32712",
+    "title": "MassAlloc Attention: Let Attention Allocate Its Own Compute",
+    "submittedDate": "2026/09/26",
+    "authors": [
+      "Shi, Jingze",
+      "Peng, Zhangyang",
+      "Li, Xianduo",
+      "Qi, Yanlin",
+      "Lin, Xiaotian",
+      "Chen, Haoxian",
+      "Wang, Liangdong",
+      "Liu, Guang",
+      "Luo, Yuyu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.32712v1",
+    "selected": false,
+    "reviewDepth": "原文候选比较，核对方法与主要实验条件；精读深度不等于入选六篇",
+    "reason": "MassAlloc也研究注意力预算分配，本期选择固定互补窗口、条件更便于比较的CoWA。",
+    "receipt": {
+      "id": "2609.32712",
+      "attemptedAt": "2026-09-30T07:35:43.903420+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.32712v1",
+          "bytes": 267627
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.32712v1",
+          "bytes": 619915
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.32712v1",
+          "bytes": 44415
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:48.230836+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.33295",
+    "title": "TraceDance: An Automated System for Building Agent Behavior Benchmarks from Real-World Agent Deployment Traces",
+    "submittedDate": "2026/09/27",
+    "authors": [
+      "Min, Dehai",
+      "Zhang, Daoan",
+      "Zeng, Yiming",
+      "Zhang, Huayi",
+      "Chen, Ziyi",
+      "Zhang, Yan",
+      "Bai, Qinbo",
+      "Chao, Mengyuan",
+      "Ning, Jing",
+      "Hua, Qiyue",
+      "Chen, Huiyi",
+      "Zhang, Hanrong",
+      "Zou, Henry Peng",
+      "Yang, Jie",
+      "Xu, Wei",
+      "Yu, Philip S."
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.33295v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "程序检索与模型确认结合，在坏行为发生前截断轨迹并评分下一次回应。",
+    "receipt": {
+      "id": "2609.33295",
+      "attemptedAt": "2026-09-30T07:35:48.367972+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.33295v1",
+          "bytes": 740413
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.33295v1",
+          "bytes": 1403118
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.33295v1",
+          "bytes": 44815
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:53.197375+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.33382",
+    "title": "WideSWE: Can Coding Agents Coordinate Changes Across Repositories?",
+    "submittedDate": "2026/09/27",
+    "authors": [
+      "Wang, Baoyi",
+      "Wang, Xingliang",
+      "Wu, Jinyang",
+      "Wu, Keming",
+      "Zhi, Chen",
+      "Yin, Jianwei"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.33382v1",
+    "selected": false,
+    "reviewDepth": "原文候选比较，核对方法与主要实验条件；精读深度不等于入选六篇",
+    "reason": "WideSWE覆盖120仓库/103生态，均已看候选核心设置；本期以TraceDance扩展行为而非再加SWE代码成功率榜。",
+    "receipt": {
+      "id": "2609.33382",
+      "attemptedAt": "2026-09-30T07:35:53.198411+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.33382v1",
+          "bytes": 1099705
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.33382v1",
+          "bytes": 1314988
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.33382v1",
+          "bytes": 42563
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:58.234428+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.33665",
+    "title": "CompoWorld: Compositional Environment Scaling for General Agents",
+    "submittedDate": "2026/09/27",
+    "authors": [
+      "Yang, Xiao-Wen",
+      "Xu, Weiyi",
+      "Da, Wen",
+      "Xu, Hang",
+      "Li, Canwei",
+      "You, Hong-Jie",
+      "Dong, Pusen",
+      "Zeng, Yucheng",
+      "Luo, Zhaokai",
+      "Li, Yu-Feng",
+      "Hu, Yao",
+      "Chuan, Mu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.33665v1",
+    "selected": false,
+    "reviewDepth": "原文候选比较，核对方法与主要实验条件；精读深度不等于入选六篇",
+    "reason": "CompoWorld用448服务/10130工具构造组合任务，近期Agent评测内容已多，优先多人交互与真实失败切点。",
+    "receipt": {
+      "id": "2609.33665",
+      "attemptedAt": "2026-09-30T07:35:49.579824+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.33665v1",
+          "bytes": 855187
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.33665v1",
+          "bytes": 515780
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.33665v1",
+          "bytes": 42968
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:54.354237+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.35347",
+    "title": "Beyond Teacher Assignment: Domain-Normalized Multi-Teacher On-Policy Distillation",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "Li, Xin",
+      "Jiang, Hao",
+      "Gao, Xin",
+      "Wang, Annan",
+      "Xie, Yuchen",
+      "Guo, Jinghao",
+      "Qu, Xingwei",
+      "Zhang, Yichi",
+      "Yuen, Chau"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.35347v1",
+    "selected": false,
+    "reviewDepth": "原文候选比较，核对方法与主要实验条件；精读深度不等于入选六篇",
+    "reason": "DN-MOPD涉及MiMo相关蒸馏，与近期厂商/训练主题接近，选择有不同配平对照的ATD。",
+    "receipt": {
+      "id": "2609.35347",
+      "attemptedAt": "2026-09-30T07:35:43.902703+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.35347v1",
+          "bytes": 653809
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.35347v1",
+          "bytes": 870776
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.35347v1",
+          "bytes": 44328
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:48.883908+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.35457",
+    "title": "How Far Are We from Removing the Visual Encoder? Scaling Laws for Encoder-Free Multimodal Pretraining",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "Chen, Lin",
+      "Ni, Bolin",
+      "Yang, Qi",
+      "Jiang, Lan",
+      "Ding, Kun",
+      "Fan, Xiaoran",
+      "Yang, Hower",
+      "Wang, Ying",
+      "Xiang, Shiming"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.35457v1",
+    "selected": false,
+    "reviewDepth": "原文候选比较，核对方法与主要实验条件；精读深度不等于入选六篇",
+    "reason": "Encoder-Free有规模外推假设，10^22量级是外推而非全部实测；本期优先训练和推理条件更直接的候选。",
+    "receipt": {
+      "id": "2609.35457",
+      "attemptedAt": "2026-09-30T07:35:48.884174+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.35457v1",
+          "bytes": 1374568
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.35457v1",
+          "bytes": 1727958
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.35457v1",
+          "bytes": 43039
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:54.061276+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.35748",
+    "title": "Improving Test-Time Scaling with Adaptive Looped Transformers",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "You, Yichen",
+      "Fu, Tianyu",
+      "Feng, Aosong",
+      "Lv, Xingtai",
+      "Ning, Xuefei",
+      "Ding, Ning",
+      "Wang, Yu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.35748v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "用在线预测损失改善监督继续计算的决策，在训练和推理保持同一停止规则。",
+    "receipt": {
+      "id": "2609.35748",
+      "attemptedAt": "2026-09-30T07:35:49.485233+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.35748v1",
+          "bytes": 867351
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.35748v1",
+          "bytes": 1336040
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.35748v1",
+          "bytes": 43396
+        }
+      },
+      "checkedAt": "2026-09-30T07:35:54.255912+08:00"
+    }
+  }
+]
