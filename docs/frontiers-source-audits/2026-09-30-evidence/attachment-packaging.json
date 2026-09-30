@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-09-30T08:38:20.218612+08:00",
+  "result": "passed",
+  "codeJsonFiles": [
+    {
+      "source": "content/notes/OpenCode改造/code/package.json",
+      "published": "dist/documents/notes/OpenCode改造/code/package.json",
+      "sha256": "58966d9513495e21d6a202094d8666e8b0475ca39eadc2afcf8b24e1da16f0bf"
+    },
+    {
+      "source": "content/frontiers/2026/09/2026-09-28/code/advantage-results.json",
+      "published": "dist/documents/frontiers/2026/09/2026-09-28/code/advantage-results.json",
+      "sha256": "ca0ee5d3887f1d2862c6869bba06f7bed3160532d85a895271ed93e20706d8ce"
+    },
+    {
+      "source": "content/frontiers/2026/09/2026-09-29/code/softmax-results.json",
+      "published": "dist/documents/frontiers/2026/09/2026-09-29/code/softmax-results.json",
+      "sha256": "586ea880678b04af9e25d03e6f6b8a30de50b1ef6ddb429fec4fb22623b5a385"
+    },
+    {
+      "source": "content/frontiers/2026/09/2026-09-30/code/gagar-results.json",
+      "published": "dist/documents/frontiers/2026/09/2026-09-30/code/gagar-results.json",
+      "sha256": "ef7575ca423c55085d152d6d947ea3e12ec595307c97c47194730d78b11255ad"
+    },
+    {
+      "source": "content/frontiers/2026/09/2026-09-23/code/rotation-results.json",
+      "published": "dist/documents/frontiers/2026/09/2026-09-23/code/rotation-results.json",
+      "sha256": "a2a16b214d96a1ea21429ba346f1875efddce1ce322bd8154a566c643c8b2583"
+    },
+    {
+      "source": "content/frontiers/2026/09/2026-09-24/code/order-results.json",
+      "published": "dist/documents/frontiers/2026/09/2026-09-24/code/order-results.json",
+      "sha256": "e4bc66fd8e3e70b34f9d0ae91dfae10479105f72574a8d38d8393a612e884db2"
+    }
+  ],
+  "pdfMetadataExcluded": true,
+  "browserResult": {
+    "checkedAt": "2026-09-30T00:38:52.263Z",
+    "passed": true,
+    "url": "http://127.0.0.1:50453/github-learning-site/documents/frontiers/2026/09/2026-09-30/code/gagar-plot.html",
+    "bars": 8,
+    "note": "正优势总量：1.00 → 1.00\n只是将通过者的信用重新分配；没有新增成功样本，也没有证明模型质量提高。\n数据：同目录 gagar-results.json · Python 3.14.3 本机执行"
+  }
+}

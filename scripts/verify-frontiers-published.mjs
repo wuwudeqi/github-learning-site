@@ -20,7 +20,10 @@ async function filesIn(dir) {
       continue;
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) result.push(...(await filesIn(full)));
-    else if (!entry.name.startsWith(".") && !entry.name.endsWith(".json"))
+    else if (
+      !entry.name.startsWith(".") &&
+      (!entry.name.endsWith(".json") || full.split(path.sep).includes("code"))
+    )
       result.push(full);
   }
   return result;

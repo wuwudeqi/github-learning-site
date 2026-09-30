@@ -78,7 +78,9 @@ await rm(path.join(output, "documents"), { recursive: true, force: true });
 await cp(content, path.join(output, "documents"), {
   recursive: true,
   filter: (source) =>
-    !source.endsWith(".json") &&
+    // Keep experiment data in code/ downloadable; omit document metadata.
+    (!source.endsWith(".json") ||
+      path.relative(content, source).split(path.sep).includes("code")) &&
     !source.endsWith(".DS_Store") &&
     path.basename(source) !== "__pycache__" &&
     !/\.py[co]$/.test(source),
