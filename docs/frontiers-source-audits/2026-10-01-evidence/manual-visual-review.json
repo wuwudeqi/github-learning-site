@@ -1,0 +1,44 @@
+{
+  "checkedAt": "2026-10-01T08:16:10.556251+08:00",
+  "passed": true,
+  "inspection": "最终17幅图：18幅草稿图已逐张看，Naive在跨日去重后撤下；桌面手机重新生成布局检查。",
+  "notes": [
+    "Argon官方条形图77.9与正文一致；不把1M输出写成输入上下文。",
+    "SynthID原图三靶标亲和力轴与有无水印图例保留，中文提示不外推全部蛋白。",
+    "Naive结构图区分局部窗口、稀疏索引与完整KV；没有把Top2048写成只缓存2048。",
+    "UniMate显示不同骨架生成例，不证明任意骨架无需预处理。",
+    "六论文原图核对方法连接、实验条件与数据；密集细节需点大图，手机中文读图说明完整。",
+    "OpenAPPA为维护者拒绝外发示例，不标成本站安全测试。Coucou图为会话状态，不把角色视为价值。",
+    "Ledge GIF、Sarala界面与ReelMimic工作流为作者材料；不声称本站安装。",
+    "imagegen概念图中文及工程师复核关系正确，邻文明确不是实际产品或芯片结果。",
+    "Phonon七行与模型卡逐项相等；耦合图来自实际JSON计数，长条与标签无重叠。",
+    "schift模型卡只有表格与文字输出，不造扫描件；无新增图片。"
+  ],
+  "mobileScreenshots": [
+    "output/playwright/oct01-mobile-models-figure-1.png",
+    "output/playwright/oct01-mobile-models-figure-2.png",
+    "output/playwright/oct01-mobile-models-figure-3.png",
+    "output/playwright/oct01-mobile-news-figure-1.png",
+    "output/playwright/oct01-mobile-news-figure-2.png",
+    "output/playwright/oct01-mobile-news-figure-3.png",
+    "output/playwright/oct01-mobile-papers-figure-1.png",
+    "output/playwright/oct01-mobile-papers-figure-2.png",
+    "output/playwright/oct01-mobile-papers-figure-3.png",
+    "output/playwright/oct01-mobile-papers-figure-4.png",
+    "output/playwright/oct01-mobile-papers-figure-5.png",
+    "output/playwright/oct01-mobile-papers-figure-6.png",
+    "output/playwright/oct01-mobile-practice-figure-1.png",
+    "output/playwright/oct01-mobile-projects-figure-1.png",
+    "output/playwright/oct01-mobile-projects-figure-2.png",
+    "output/playwright/oct01-mobile-projects-figure-3.png",
+    "output/playwright/oct01-mobile-projects-figure-4.png",
+    "output/playwright/oct01-mobile-projects-figure-5.png"
+  ],
+  "desktopInspected": [
+    "output/playwright/oct01-desktop-news-figure-1.png",
+    "output/playwright/oct01-desktop-news-figure-3.png",
+    "output/playwright/oct01-desktop-models-figure-2.png",
+    "output/playwright/oct01-desktop-projects-figure-1.png"
+  ],
+  "sourceImagesDirectory": "content/frontiers/2026/10/2026-10-01/images"
+}

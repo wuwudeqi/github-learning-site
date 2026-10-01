@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#f7f5ee;font-family:Arial,"PingFang SC",sans-serif;color:#163b37}#chart{width:1100px;padding:38px;box-sizing:border-box}h1{font-size:30px;margin:0 0 12px}p{font-size:19px;line-height:1.5;margin:8px 0}.legend{display:flex;gap:24px}.row{display:flex;align-items:center;margin:16px 0}.name{width:155px;font-size:20px}.bars{flex:1}.bar{height:25px;min-width:3px;margin:6px 0;position:relative}.val{position:absolute;left:calc(100% + 8px);font-size:20px;white-space:nowrap}footer{font-size:17px;margin-top:25px;color:#496864}</style><div id="chart"><h1 id="title"></h1><p id="sub"></p><p class="legend" id="legend"></p><div id="rows"></div><footer id="foot"></footer></div><script>
+const data={"title": "保留草稿后，最终输出仍接近目标分布", "sub": "四 token 合成实验 · 50,000 次抽样 · 固定种子 20261001 · 本机 CPU 运行", "labels": ["A", "B", "C", "D"], "series": [{"name": "学生 p", "values": [40.0, 30.0, 20.0, 10.0]}, {"name": "目标 q", "values": [10.0, 20.0, 30.0, 40.0]}, {"name": "耦合输出频率", "values": [9.912, 19.576, 30.554, 39.958]}], "max": 47, "unit": "%", "foot": "补抽比例：实测 39.890%，理论 40%。数据：coupling-results.json；非语言模型训练结果。"};
+const colors=['#9bb4ba','#c77835','#197568'];
+document.querySelector('#title').textContent=data.title;
+document.querySelector('#sub').textContent=data.sub;
+document.querySelector('#foot').textContent=data.foot;
+data.series.forEach((s,i)=>document.querySelector('#legend').innerHTML+=`<span style="color:${colors[i]}">■ ${s.name}</span>`);
+data.labels.forEach((l,j)=>{let row=document.createElement('div');row.className='row';row.innerHTML=`<div class="name">${l}</div><div class="bars">${data.series.map((s,i)=>`<div class="bar" style="background:${colors[i]};width:${s.values[j]/data.max*88}%"><span class="val">${s.values[j].toFixed(2)}${data.unit}</span></div>`).join('')}</div>`;document.querySelector('#rows').append(row)});
+</script>

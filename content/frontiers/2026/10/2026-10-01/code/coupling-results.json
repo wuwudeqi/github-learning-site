@@ -1,0 +1,42 @@
+{
+  "kind": "synthetic four-token example, not LLM training",
+  "seed": 20261001,
+  "n": 50000,
+  "p": [
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "q": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "counts": [
+    4956,
+    9788,
+    15277,
+    19979
+  ],
+  "observed": [
+    0.09912,
+    0.19576,
+    0.30554,
+    0.39958
+  ],
+  "corrections": 19945,
+  "correctionRate": 0.3989,
+  "theoreticalCorrectionRate": 0.4,
+  "exactMarginal": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "checks": "equal/disjoint/invalid distributions passed",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "runAt": "2026-10-01T00:08:36.445412+00:00"
+}

@@ -1,0 +1,511 @@
+[
+  {
+    "arxiv": "2609.35427",
+    "title": "LLMs are General Asynchronous Agents",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "Yakushev, George",
+      "Mazur, Denis",
+      "Bartenev, Vladimir",
+      "Zhdanovskiy, Vyacheslav",
+      "Byzov, Timofey",
+      "Kaurkin, Vladimir",
+      "Pastushenko, Vadim"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.35427v1",
+    "selected": false,
+    "reviewDepth": "原文摘要与核心方法/主要实验条件候选比较，不冒充与入选相同深度",
+    "reason": "异步Agent以协程重叠记忆/执行，读到流式视频和游戏案例；本期选择更明确的训练对照和专业工程评测，主题平衡。",
+    "receipt": {
+      "id": "2609.35427",
+      "attemptedAt": "2026-10-01T07:38:55.768893+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.35427v1",
+          "bytes": 2475197
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.35427v1",
+          "bytes": 2741369
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.35427v1",
+          "bytes": 41762
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:00.057593+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.35954",
+    "title": "ROSS: Relearning from Self-Generated Rollouts through Selective Supervision",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "Zhang, Zhiwei",
+      "Deng, Huayu",
+      "Zhao, Fei",
+      "Fu, Jiayan",
+      "Liang, Bin",
+      "Wong, Kam-Fai",
+      "Chuan, Mu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.35954v1",
+    "selected": false,
+    "reviewDepth": "原文摘要与核心方法/主要实验条件候选比较，不冒充与入选相同深度",
+    "reason": "ROSS选择性监督历史轨迹，读MOPD/SWE对照；与今日蒸馏主题接近，保留候选。",
+    "receipt": {
+      "id": "2609.35954",
+      "attemptedAt": "2026-10-01T07:38:59.970836+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.35954v1",
+          "bytes": 2792023
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.35954v1",
+          "bytes": 579074
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.35954v1",
+          "bytes": 43049
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:04.214728+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.36322",
+    "title": "Periodic Weak Spots: Phase Sensitivity from Chunked KV-Cache Compression",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "Zhu, Xingyu",
+      "Pu",
+      "Yi",
+      "Cheng, Ziheng",
+      "Lv, Ang",
+      "Liu, Jing",
+      "Ying, Lexing",
+      "Ma, Yiyuan",
+      "Dong, Xin"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.36322v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "分块压缩引入周期性位置弱点，建议把评测按相位拆开。",
+    "receipt": {
+      "id": "2609.36322",
+      "attemptedAt": "2026-10-01T07:38:55.769206+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.36322v1",
+          "bytes": 1371940
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.36322v1",
+          "bytes": 2449493
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.36322v1",
+          "bytes": 43562
+        }
+      },
+      "checkedAt": "2026-10-01T07:38:59.969963+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.36601",
+    "title": "SAKI: Maximal-Coupling-Routed Teacher Supervision for On-Policy Distillation",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Wei, Miteto",
+      "Wang, Xiaohan",
+      "Chen, Zehao",
+      "Chai, Jiajun",
+      "Liu, Sichao",
+      "Wang, Li",
+      "Xu, Haoyuan",
+      "Hu, Zhaoyu",
+      "Lin, Wei",
+      "Yin, Guojun"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.36601v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "用最大耦合的接受与修正事件分配蒸馏监督，兼顾轨迹和局部更新。",
+    "receipt": {
+      "id": "2609.36601",
+      "attemptedAt": "2026-10-01T07:38:55.767924+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.36601v1",
+          "bytes": 456934
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.36601v1",
+          "bytes": 742161
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.36601v1",
+          "bytes": 42490
+        }
+      },
+      "checkedAt": "2026-10-01T07:38:59.444020+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.36651",
+    "title": "FocusVTC: Efficient and High-Performance Visual Text Compression with Adaptive Resolution",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Zhong, FangZhi",
+      "Qiu, Xuerui",
+      "Pan, Yuqi",
+      "Liu, Ya",
+      "Gu, Shaowei",
+      "Xu, Bo",
+      "Li, Guoqi"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.36651v1",
+    "selected": false,
+    "reviewDepth": "原文摘要与核心方法/主要实验条件候选比较，不冒充与入选相同深度",
+    "reason": "FocusVTC用低分辨率全局加局部裁图与RL压缩视觉文本，核对RULER和压缩率；长上下文方向已有KV周期与CLM，本期未再堆同主题。",
+    "receipt": {
+      "id": "2609.36651",
+      "attemptedAt": "2026-10-01T07:39:04.215580+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.36651v1",
+          "bytes": 23574527
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.36651v1",
+          "bytes": 16636001
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.36651v1",
+          "bytes": 43511
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:10.935235+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.36802",
+    "title": "EasyPPO: Stabilizing the Critic Is Key",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Zhou, Xuanyi",
+      "Mang, Qiuyang",
+      "Mao, Huanzhi",
+      "Li, Dacheng",
+      "Chai, Wenhao",
+      "Mishra, Mayank",
+      "Wang, Yichuan",
+      "Narasimhan, Karthik",
+      "Cheung, Alvin",
+      "Gonzalez, Joseph E."
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.36802v1",
+    "selected": false,
+    "reviewDepth": "原文摘要与核心方法/主要实验条件候选比较，不冒充与入选相同深度",
+    "reason": "EasyPPO简化actor/critic与过滤组件，有代码数学搜索实验；本期选择采样纠偏这一不同机制，未以标题判定优劣。",
+    "receipt": {
+      "id": "2609.36802",
+      "attemptedAt": "2026-10-01T07:39:00.058390+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.36802v1",
+          "bytes": 804065
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.36802v1",
+          "bytes": 1105992
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.36802v1",
+          "bytes": 43414
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:04.234017+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.37226",
+    "title": "Follow the Entities: A Corpus Map for Agentic Search",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Jeong, Soyeong",
+      "Jauhar, Sujay Kumar",
+      "Hwang, Sung Ju",
+      "Nam, Andrew Joohun"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.37226v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "建立实体—文档导航图，减少Agent每次重新发现跨文档关系的成本。",
+    "receipt": {
+      "id": "2609.37226",
+      "attemptedAt": "2026-10-01T07:38:55.768648+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.37226v1",
+          "bytes": 209522
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.37226v1",
+          "bytes": 523503
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.37226v1",
+          "bytes": 43023
+        }
+      },
+      "checkedAt": "2026-10-01T07:38:59.376130+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.37686",
+    "title": "EngiWorld: What Can Frontier Agents Deliver in Professional Engineering Environments?",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Gao, Hongcheng",
+      "Qu, Hailong",
+      "Lei, Yu",
+      "Sun, Henghui",
+      "Li, Haoyang",
+      "Wei, Yipeng",
+      "Xue, Naihao",
+      "Yu, Xiaohan",
+      "Tao, Zhuo",
+      "Zang, Yihe",
+      "Wang, Yajiao",
+      "Tang, Jingyi",
+      "Li, Yi",
+      "Zhou, Jingjing",
+      "Luo, Jie",
+      "Zeng, Bohan",
+      "Shen, Chengyu",
+      "Jiang, Hao",
+      "Chen, Chong",
+      "Qu, Bowen",
+      "Huang, Olive",
+      "Wang, Zeqiang"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.37686v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "在多种工程软件中按几何、物理和设计规则验收中间及最终文件。",
+    "receipt": {
+      "id": "2609.37686",
+      "attemptedAt": "2026-10-01T07:38:55.769592+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.37686v1",
+          "bytes": 8265209
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.37686v1",
+          "bytes": 9332130
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.37686v1",
+          "bytes": 44779
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:00.753274+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.37725",
+    "title": "Context Language Models",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Shao, Rulin",
+      "Shen, Shannon Zejiang",
+      "Yin, Junjie Oscar",
+      "Li, Yuetai",
+      "Wang, Minheng",
+      "Ivison, Hamish",
+      "Poovendran, Radha",
+      "Lambert, Nathan",
+      "Xiao, Teng",
+      "Lewis, Mike",
+      "Yih, Wen-tau",
+      "Zettlemoyer, Luke",
+      "Koh, Pang Wei"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.37725v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "把上下文管理从固定压缩策略改为可编辑文件，并计入重新预填充成本。",
+    "receipt": {
+      "id": "2609.37725",
+      "attemptedAt": "2026-10-01T07:39:00.755670+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.37725v1",
+          "bytes": 3141328
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.37725v1",
+          "bytes": 2814205
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.37725v1",
+          "bytes": 43300
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:05.327057+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.37868",
+    "title": "Learning Beyond What You Sample: Off-Policy-Aware Cross-Model Trajectory Exchange for RLVR",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Jang, Doohyuk",
+      "Park, Yoonsik",
+      "Chu, Gyouk",
+      "Park, Sihwan",
+      "Yang, Eunho"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.37868v1",
+    "selected": false,
+    "reviewDepth": "原文摘要与核心方法/主要实验条件候选比较，不冒充与入选相同深度",
+    "reason": "GRAFT用跨模型正确轨迹与兼容权重改善RLVR，读三模型对与五数学集结果；训练指导主题选择SAKI。",
+    "receipt": {
+      "id": "2609.37868",
+      "attemptedAt": "2026-10-01T07:38:59.445228+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.37868v1",
+          "bytes": 627038
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.37868v1",
+          "bytes": 1024252
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.37868v1",
+          "bytes": 43445
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:03.451957+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.38008",
+    "title": "HybridCUA: Learning to Orchestrate GUI and CLI for Computer-Use Agents",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Chen, Tongbo",
+      "Niu, Junbo",
+      "Lu, Zhengxi",
+      "Lian, Niu",
+      "Tang, Fei",
+      "Yan, Yuchen",
+      "Hong, Yike",
+      "Du, Yong",
+      "Liu, Yizhou",
+      "Chen, Bofan",
+      "Shen, Yongliang"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.38008v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线和局限精读",
+    "reason": "用混合轨迹和CLI相关奖励训练界面选择与可靠执行。",
+    "receipt": {
+      "id": "2609.38008",
+      "attemptedAt": "2026-10-01T07:38:59.377608+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38008v1",
+          "bytes": 18912681
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38008v1",
+          "bytes": 19097589
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38008v1",
+          "bytes": 43457
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:06.072257+08:00"
+    }
+  },
+  {
+    "arxiv": "2609.38155",
+    "title": "Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Ren, Hui",
+      "Fan, Lei",
+      "Pao, Henry",
+      "Guo, Han",
+      "Zia, Zeeshan",
+      "Chen, Ying",
+      "Schwing, Alexander",
+      "Hua, Gang"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.38155v1",
+    "selected": false,
+    "reviewDepth": "原文摘要与核心方法/主要实验条件候选比较，不冒充与入选相同深度",
+    "reason": "GEB用实体经历组织长视频记忆，读EgoLife结果；本期实体组织主题优先文档检索CorpusMap。",
+    "receipt": {
+      "id": "2609.38155",
+      "attemptedAt": "2026-10-01T07:39:03.453823+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38155v1",
+          "bytes": 1549642
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38155v1",
+          "bytes": 1864569
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38155v1",
+          "bytes": 43076
+        }
+      },
+      "checkedAt": "2026-10-01T07:39:07.808368+08:00"
+    }
+  }
+]

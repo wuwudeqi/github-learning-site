@@ -1,0 +1,42 @@
+{
+  "title": "Phonon-2：压缩后的识别误差如何变化",
+  "sub": "作者在七个英语测试集报告的 WER（词错误率）；越低越好。不是本站实测。",
+  "labels": [
+    "LS clean",
+    "LS other",
+    "AMI",
+    "Earnings22",
+    "GigaSpeech",
+    "SPGISpeech",
+    "VoxPopuli"
+  ],
+  "series": [
+    {
+      "name": "Parakeet 教师",
+      "values": [
+        1.52,
+        3.13,
+        9.42,
+        5.85,
+        7.99,
+        3.63,
+        3.19
+      ]
+    },
+    {
+      "name": "Phonon-2",
+      "values": [
+        1.72,
+        3.92,
+        9.37,
+        6.96,
+        8.35,
+        3.7,
+        2.46
+      ]
+    }
+  ],
+  "max": 11,
+  "unit": "%",
+  "foot": "来源：FermionResearch/Phonon-2 模型卡（2026-10-01核对）。平均 WER 4.96% → 5.21%。"
+}
