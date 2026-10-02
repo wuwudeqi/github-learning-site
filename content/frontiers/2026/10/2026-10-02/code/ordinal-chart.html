@@ -1,0 +1,26 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>等级分布与逐题准确率</title>
+<style>body{margin:0;background:#faf9f5;font-family:system-ui,-apple-system,"PingFang SC",sans-serif}#chart{width:1080px;background:#faf9f5}svg{display:block}text{font-family:inherit}</style><main id="chart"></main>
+<script type="module">
+const data=await (await fetch('./ordinal-results.json')).json();
+const colors=['#1c746c','#bb742e','#aa4352'];
+const text=(x,y,s,size=20,fill='#23312e',weight=400)=>`<text x="${x}" y="${y}" font-size="${size}" fill="${fill}" font-weight="${weight}">${s}</text>`;
+let s=`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="690" viewBox="0 0 1080 690"><rect width="1080" height="690" fill="#faf9f5"/>`;
+s+=text(36,53,'输出分布相同，每题仍然可能全错',32,'#153c38',700)+text(36,88,'本机合成示例 · 100 道题 · 真值 1—5 级各 20 道 · 未调用任何模型',19);
+data.scenarios.forEach((v,i)=>{
+const x=36+i*344,c=colors[i];s+=`<rect x="${x}" y="122" width="320" height="500" rx="12" fill="white" stroke="#dddcd5"/>`;
+s+=text(x+18,163,v.name,25,c,700);
+s+=text(x+18,202,'预测条数（每级）',18,'#596560');
+for(const [k,count] of v.counts.entries()){
+ const bx=x+27+k*55,by=396-count*3.4;
+ s+=`<rect x="${bx}" y="${by}" width="32" height="${count*3.4}" fill="${c}" rx="3"/>`;
+ s+=text(bx+4,by-9,count,17,c,600)+text(bx+9,422,k+1,18);
+}
+s+=`<line x1="${x+20}" x2="${x+297}" y1="328" y2="328" stroke="#929d97" stroke-dasharray="5 4"/>`;
+s+=text(x+20,238,'虚线：真值每级 20 道',16,'#64716b');
+s+=text(x+20,478,'逐题准确率',19)+text(x+202,478,(100*v.accuracy).toFixed(0)+'%',24,c,700);
+s+=text(x+20,521,'有效类别比 R',19)+text(x+202,521,(100*v.R).toFixed(1)+'%',24,c,700);
+s+=text(x+20,564,'分布距离 TVD',19)+text(x+202,564,(100*v.TVD).toFixed(0)+'%',24,c,700);
+});
+s+=text(36,660,'左与右的频数完全相同。R 和 TVD 看总体分布，准确率保留逐题配对关系。',22);
+s+='</svg>';document.querySelector('#chart').innerHTML=s;window.chartReady=true;
+</script></html>

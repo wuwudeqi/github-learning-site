@@ -1,0 +1,231 @@
+{
+  "passed": true,
+  "recordedAt": "2026-10-02T09:36:20.855412+08:00",
+  "method": "逐张查看本次source图片及Playwright桌面/手机截图；不是仅靠DOM断言。",
+  "viewports": {
+    "desktop": [
+      1440,
+      1050
+    ],
+    "mobile": [
+      390,
+      844
+    ]
+  },
+  "observations": [
+    "20幅最终图逐张看过原图，并看过40张桌面/手机图位截图；布局无横向溢出，图片不缺失。",
+    "论文图保留完整关键关系；窄屏小标签需原尺寸入口，正文中文说明解释主要结论。",
+    "Ideogram只保留改色前后两幅，第三张背景替换图重复同一解释点，删除；未改变原图像素。",
+    "Shopify GIF在不同帧中检查多页面平移示例，保持原始动画；它是作者演示，不是本站测试。",
+    "Tavus采用网页机制部分忠实截图；仅MAI为AI概念图。技术实践图来自实际合成输出。",
+    "导航测试先前等待不足会读到旧标题，已修正等待条件后重跑；本次保留成功新标题记录，不以仅URL跳转代替内容加载。"
+  ],
+  "screenshots": [
+    {
+      "path": "output/playwright/oct02-desktop-models-figure-1.png",
+      "bytes": 249061,
+      "sha256": "540ee277a585058d60b5de5b91614e2f9e151614647eac5526657cf83668f5e5"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-models-figure-2.png",
+      "bytes": 313053,
+      "sha256": "3c5a53ab7d176ba4e264679ffd6fb94363ac3886aba830da3c56ee92f17a7766"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-news-figure-1.png",
+      "bytes": 605090,
+      "sha256": "df0fea6070eea08a91347b65d6552885dbd820765577f768cd92f4575763d7ee"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-news-figure-2.png",
+      "bytes": 476290,
+      "sha256": "fe34658cd6bc2e528708bc565fd35cc76b53f81b4ed92256488cc47a2c1a5043"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-news-figure-3.png",
+      "bytes": 564578,
+      "sha256": "f09f84637038265982754515951a81228e52756777bccff755f2acade0900565"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-news-figure-4.png",
+      "bytes": 359940,
+      "sha256": "cedab48d38ba0e757d6bbbc64bd55d91917c0a7265732c06b6e1ebd740e1eaf4"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-news-figure-5.png",
+      "bytes": 350690,
+      "sha256": "f0a429fd7d34d3d8d30b9672ecc4b0cfffc136d54b13406f9b98a68d564139e3"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-news-figure-6.png",
+      "bytes": 546104,
+      "sha256": "8242181cf1c916d605258dc67f16fcc26640a0e0d710f009dd3df1111c023d6d"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-papers-figure-1.png",
+      "bytes": 361735,
+      "sha256": "fd8d537055dcc0f655210664aeaf65ed5fdeb8948b5c2726fb6c06647d228794"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-papers-figure-2.png",
+      "bytes": 321235,
+      "sha256": "9d820c7ddf89bd9452ea16774541891f684ced9c246f9aa08ce030400156f260"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-papers-figure-3.png",
+      "bytes": 274317,
+      "sha256": "3ac3e52dcd65a0c82cba86d8c488ede388a9bdafb3a6322b6f777213de9c2988"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-papers-figure-4.png",
+      "bytes": 412941,
+      "sha256": "9f559ae45d3e9d9d97c324d546af1993f9f2d0db9e3f7b510c61c87140604eac"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-papers-figure-5.png",
+      "bytes": 342725,
+      "sha256": "a7a74e5724cef3b4a3eb9c14ee132f0c7e9134ad2979f6d883a01651e2e58f28"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-papers-figure-6.png",
+      "bytes": 315991,
+      "sha256": "251c492085cf8cee91e08a9ee8da856fcf844428263118570b6624984528c8e2"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-practice-figure-1.png",
+      "bytes": 236579,
+      "sha256": "a5cbd15a23d1e15445f253c98d40483f876e0c6b8b7433cfc2f26d822454400f"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-projects-figure-1.png",
+      "bytes": 439137,
+      "sha256": "2508db01c1fc9bd10234b1081e0572eeca222db71382555d5a4442af1ff2f2a1"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-projects-figure-2.png",
+      "bytes": 339474,
+      "sha256": "722c94759a02033b8c015581fcd041887cc8aeb6d8a4295e037dd4e8ed025caf"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-projects-figure-3.png",
+      "bytes": 259216,
+      "sha256": "8753106c4e0595b1fa938202d2238112772f98321f945007529622d7ebb828c6"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-projects-figure-4.png",
+      "bytes": 445917,
+      "sha256": "fe080da4fc0a6362b69031769fa6a882f77143faaacd7671375f5d759892d378"
+    },
+    {
+      "path": "output/playwright/oct02-desktop-projects-figure-5.png",
+      "bytes": 405707,
+      "sha256": "2fb7152fbb35aafc116390583bcc953b8b92edac478ffc7eead1dbfe84153898"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-models-figure-1.png",
+      "bytes": 114613,
+      "sha256": "305925c8b28a5ed3990b1e8ae1112adfdbb4c995f9447427801bfd998bbcfcf3"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-models-figure-2.png",
+      "bytes": 127632,
+      "sha256": "5e20ba07be3dbd74b093a05f67b0e2f91424f65795e617e2fa2ff17f4c330b78"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-news-figure-1.png",
+      "bytes": 201507,
+      "sha256": "170508854f042f4b9fe61a9f73cda2f4ecc23244efe8d1970b0b2717c3ca8660"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-news-figure-2.png",
+      "bytes": 197668,
+      "sha256": "d249abba9dc8bce0ad673dab67475342d175fc154d33976a9f4176c2ae835a06"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-news-figure-3.png",
+      "bytes": 204888,
+      "sha256": "aeffc1dc6dfc92ee49cb8d8e2f46b5554c8eb11cbdee6ec24e88f1f634b6a62b"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-news-figure-4.png",
+      "bytes": 134238,
+      "sha256": "1ac3ba0c9fa2f803cd9d9d49809f2daad056080ad6000ee27b01de0ea3dfaab6"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-news-figure-5.png",
+      "bytes": 133366,
+      "sha256": "f4e261703de6e9856150a3ca596592361d8486001a3ae0a34c8af9e0e72c47fc"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-news-figure-6.png",
+      "bytes": 171840,
+      "sha256": "d796247ae3b6fe701317c9a2ef844d438d22ebafe2bc0f994e67515de9e5db55"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-papers-figure-1.png",
+      "bytes": 139465,
+      "sha256": "90fd192c70852ad2ee777cf29393e9b97fa40eb96d7e1a1167c5f4db43ea3665"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-papers-figure-2.png",
+      "bytes": 139877,
+      "sha256": "c6de988919e292ad029d369bf4d29e1609e269e933629d576baed2776d0e25a6"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-papers-figure-3.png",
+      "bytes": 123449,
+      "sha256": "762ae742d6a27c07b8044eb1ad5127b70692b5c371b4bee3b2f7bffa172f5ceb"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-papers-figure-4.png",
+      "bytes": 172696,
+      "sha256": "2fab6260d1628d7f3112ef4e753ef9e6148b536c959de8d442d8333c5a102f80"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-papers-figure-5.png",
+      "bytes": 134558,
+      "sha256": "677388a49c487579f02a8d33b9ff1d54d16d6468dd04d67008cccf5b79837c1a"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-papers-figure-6.png",
+      "bytes": 132812,
+      "sha256": "f42b4a602182337575057c2a629acc356b2b917914a957a35e748760543bc186"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-practice-figure-1.png",
+      "bytes": 112532,
+      "sha256": "0a97e1051aa5a59032e04c0bb3fd1b57995521f0f322b99b720a5505ff91b70e"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-projects-figure-1.png",
+      "bytes": 168051,
+      "sha256": "993afcbb90f70340cde5eb48c7bf06844d46c049e5b0cb3c17c01ac694ad4d92"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-projects-figure-2.png",
+      "bytes": 144818,
+      "sha256": "88034eee76a9daba91e652f4bbfe6b04e33bc11736f0749e5b5b3952b20578e8"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-projects-figure-3.png",
+      "bytes": 114381,
+      "sha256": "df1097416d826367fe1a15d351c3a0c35a032929d7cd28297caa605110bf1171"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-projects-figure-4.png",
+      "bytes": 160191,
+      "sha256": "cfe258ab2689c68ef18e15dadd651a0958b7d34dee4713d684611ac047160aec"
+    },
+    {
+      "path": "output/playwright/oct02-mobile-projects-figure-5.png",
+      "bytes": 149371,
+      "sha256": "5b0e3f08c3ebf992a7ee051dd85feb59b1c613116916cb0ac95493f7705b51c7"
+    }
+  ],
+  "archivedExamples": [
+    "docs/frontiers-source-audits/2026-10-02-evidence/screenshots/oct02-desktop-news-figure-5.png",
+    "docs/frontiers-source-audits/2026-10-02-evidence/screenshots/oct02-mobile-papers-figure-2.png",
+    "docs/frontiers-source-audits/2026-10-02-evidence/screenshots/oct02-mobile-pdf.png",
+    "docs/frontiers-source-audits/2026-10-02-evidence/screenshots/oct02-mobile-practice-figure-1.png"
+  ]
+}

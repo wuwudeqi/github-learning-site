@@ -1,0 +1,3714 @@
+[
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/albertsons-reader-receipt.json",
+    "record": {
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "startedAt": "2026-10-02T08:42:50.412502+08:00",
+      "checkedAt": "2026-10-02T08:42:51.136758+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/albertsons.html-receipt.json",
+    "record": {
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "startedAt": "2026-10-02T08:35:05.895582+08:00",
+      "checkedAt": "2026-10-02T08:35:06.604545+08:00",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/alibaba-news.html-receipt.json",
+    "record": {
+      "url": "https://www.alibabagroup.com/en-US/news",
+      "startedAt": "2026-10-02T08:33:10.357148+08:00",
+      "checkedAt": "2026-10-02T08:33:11.746709+08:00",
+      "ok": true,
+      "chars": 58230
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/alibaba-news.html",
+        "bytes": 58268,
+        "sha256": "7279a512916a28199d1056c2aefc71b3bd19439293e0f7c4ba66356bf220f0af"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/alibaba.html-receipt.json",
+    "record": {
+      "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+      "startedAt": "2026-10-02T08:33:07.740828+08:00",
+      "checkedAt": "2026-10-02T08:33:12.124655+08:00",
+      "ok": true,
+      "chars": 204735
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/alibaba.html",
+        "bytes": 353193,
+        "sha256": "dfadceb1760f426949cbeba4285762eeac5b69ef6829eba1f2ae205db3f07bcf"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/anthropic-research.html-receipt.json",
+    "record": {
+      "url": "https://www.anthropic.com/research",
+      "startedAt": "2026-10-02T08:33:10.977767+08:00",
+      "checkedAt": "2026-10-02T08:33:12.453084+08:00",
+      "ok": true,
+      "chars": 317670
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/anthropic-research.html",
+        "bytes": 317846,
+        "sha256": "6da67ee46a516a29bd1aa39e76b989f60f56cde78e611167d120a8e0ec5c2de8"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/anthropic.html-receipt.json",
+    "record": {
+      "url": "https://www.anthropic.com/news",
+      "startedAt": "2026-10-02T08:33:05.704420+08:00",
+      "checkedAt": "2026-10-02T08:33:08.013069+08:00",
+      "ok": true,
+      "chars": 461228
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/anthropic.html",
+        "bytes": 461402,
+        "sha256": "54689601ad081aa35ead0bb422671f27ecec19cabef0436b846664d6d54b1407"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/arxiv-cl.html-receipt.json",
+    "record": {
+      "url": "https://arxiv.org/list/cs.CL/recent",
+      "startedAt": "2026-10-02T08:33:14.925412+08:00",
+      "checkedAt": "2026-10-02T08:33:15.978845+08:00",
+      "ok": true,
+      "chars": 96311
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/arxiv-cl.html",
+        "bytes": 96326,
+        "sha256": "80b532ea318676cea7fbb8e517914b00a17e89b0472b0d2dafe0fd173b93671c"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/arxiv-lg.html-receipt.json",
+    "record": {
+      "url": "https://arxiv.org/list/cs.LG/recent",
+      "startedAt": "2026-10-02T08:33:15.314971+08:00",
+      "checkedAt": "2026-10-02T08:33:16.323165+08:00",
+      "ok": true,
+      "chars": 85647
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/arxiv-lg.html",
+        "bytes": 85648,
+        "sha256": "d1d86437de5441c122340eeb8f1d9bf037358fcd4341ddff7f726bd7958e81b9"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/baidu.html-receipt.json",
+    "record": {
+      "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "startedAt": "2026-10-02T08:33:08.359173+08:00",
+      "checkedAt": "2026-10-02T08:33:09.140782+08:00",
+      "ok": true,
+      "chars": 792896
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/baidu.html",
+        "bytes": 809625,
+        "sha256": "148ccb2bb7c5aa5507ce46aca42a8cf29634d4358f397460bf94bde9d69fa8ec"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/barclays.html-receipt.json",
+    "record": {
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "startedAt": "2026-10-02T08:35:03.597570+08:00",
+      "checkedAt": "2026-10-02T08:35:04.918285+08:00",
+      "ok": true,
+      "chars": 147916
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/barclays.html",
+        "bytes": 148011,
+        "sha256": "d5abca4713603d7d101c20b8d10b40c13d8b1a53dbb4e8487609c7afb0c6b980"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/batch.html-receipt.json",
+    "record": {
+      "url": "https://www.deeplearning.ai/the-batch/",
+      "startedAt": "2026-10-02T08:33:14.619895+08:00",
+      "checkedAt": "2026-10-02T08:33:17.055368+08:00",
+      "ok": true,
+      "chars": 187756
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/batch.html",
+        "bytes": 187939,
+        "sha256": "944495b04c17b853394926b75635dcb5e29acbe177a11a704192878f4a8f7573"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/byte-home-reader-receipt.json",
+    "record": {
+      "url": "https://seed.bytedance.com/en/",
+      "startedAt": "2026-10-02T08:42:50.413113+08:00",
+      "checkedAt": "2026-10-02T08:42:51.500848+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/bytedance.html-receipt.json",
+    "record": {
+      "url": "https://seed.bytedance.com/en/blog",
+      "startedAt": "2026-10-02T08:33:08.013225+08:00",
+      "checkedAt": "2026-10-02T08:33:08.359379+08:00",
+      "ok": true,
+      "chars": 10999
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/bytedance.html",
+        "bytes": 11037,
+        "sha256": "6fcbde8a5b46d0536626b4f1f5bc2b37a2f5ef361d0668bc52052c36a292b744"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/clef.html-receipt.json",
+    "record": {
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "startedAt": "2026-10-02T08:35:03.596947+08:00",
+      "checkedAt": "2026-10-02T08:35:05.055559+08:00",
+      "ok": true,
+      "chars": 314903
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/clef.html",
+        "bytes": 315151,
+        "sha256": "08f6710ea180890565aa78f0d328fc942c9ae938785ede7dda3f825f76167129"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/connected.html-receipt.json",
+    "record": {
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+      "startedAt": "2026-10-02T08:35:05.055717+08:00",
+      "checkedAt": "2026-10-02T08:35:06.572835+08:00",
+      "ok": true,
+      "chars": 387399
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/connected.html",
+        "bytes": 387865,
+        "sha256": "ad63f8b92d0d49435a230c43173802d6e9f055227bbb5321e704f1982cf5025d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/cuobject.html-receipt.json",
+    "record": {
+      "url": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk/",
+      "startedAt": "2026-10-02T08:41:18.671204+08:00",
+      "checkedAt": "2026-10-02T08:41:21.076899+08:00",
+      "ok": true,
+      "chars": 264699
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/cuobject.html",
+        "bytes": 264726,
+        "sha256": "1a862daabd09617ed5f167e5c46cfff0ff00c602f634f275b9b7904a3e22c71b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/decoder.html-receipt.json",
+    "record": {
+      "url": "https://the-decoder.com/",
+      "startedAt": "2026-10-02T08:33:13.723972+08:00",
+      "checkedAt": "2026-10-02T08:33:15.983747+08:00",
+      "ok": true,
+      "chars": 159674
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/decoder.html",
+        "bytes": 159719,
+        "sha256": "955256d965bed0319c20d784c209b43111c0ddbaf877f7546b1bffde81e7ee40"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/deepseek-news.html-receipt.json",
+    "record": {
+      "url": "https://www.deepseek.com/news",
+      "startedAt": "2026-10-02T08:33:10.356878+08:00",
+      "checkedAt": "2026-10-02T08:33:10.977562+08:00",
+      "ok": true,
+      "chars": 102358
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/deepseek-news.html",
+        "bytes": 113863,
+        "sha256": "e1de21a14f477cd006a73898646f375ef892c541d05d224d8631d803fb15652f"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/deepseek.html-receipt.json",
+    "record": {
+      "url": "https://api-docs.deepseek.com/updates/",
+      "startedAt": "2026-10-02T08:33:07.944215+08:00",
+      "checkedAt": "2026-10-02T08:33:08.358779+08:00",
+      "ok": true,
+      "chars": 47922
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/deepseek.html",
+        "bytes": 48079,
+        "sha256": "2922113bc4e0e970fa6d3c4065c3cff3ec661a4db03d671cc2310545c5b5bb71"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/den-reader-receipt.json",
+    "record": {
+      "url": "https://openai.com/index/the-den-family-social",
+      "startedAt": "2026-10-02T08:42:50.412807+08:00",
+      "checkedAt": "2026-10-02T08:42:51.119290+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/den.html-receipt.json",
+    "record": {
+      "url": "https://openai.com/index/the-den-family-social",
+      "startedAt": "2026-10-02T08:35:06.430499+08:00",
+      "checkedAt": "2026-10-02T08:35:07.134369+08:00",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/dots-pyproject.py-receipt.json",
+    "record": {
+      "url": "https://raw.githubusercontent.com/feder-cr/dots/main/pyproject.toml",
+      "startedAt": "2026-10-02T09:10:45.236204+08:00",
+      "checkedAt": "2026-10-02T09:10:45.997816+08:00",
+      "ok": true,
+      "chars": 2377
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/dots-pyproject.py",
+        "bytes": 2379,
+        "sha256": "b98cd255252a264647ded72c4825d3002769835c62af4c1b51da92e005073251"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/dots-source-receipt.json",
+    "record": {
+      "url": "https://api.github.com/repos/feder-cr/dots/contents/pyproject.toml",
+      "startedAt": "2026-10-02T08:53:02.497736+08:00",
+      "checkedAt": "2026-10-02T08:53:03.261299+08:00",
+      "ok": false,
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/eternal.html-receipt.json",
+    "record": {
+      "url": "https://openai.com/index/the-eternal-complement",
+      "startedAt": "2026-10-02T08:35:06.573046+08:00",
+      "checkedAt": "2026-10-02T08:35:07.314957+08:00",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/github-daily.html-receipt.json",
+    "record": {
+      "url": "https://github.com/trending?since=daily",
+      "startedAt": "2026-10-02T08:33:12.453364+08:00",
+      "checkedAt": "2026-10-02T08:33:15.314807+08:00",
+      "ok": true,
+      "chars": 624188
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/github-daily.html",
+        "bytes": 624193,
+        "sha256": "1749dc9b39bff7d93a21cf380633d675af9b1ff7e391dd84d13eb430f6cc419a"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/github-weekly.html-receipt.json",
+    "record": {
+      "url": "https://github.com/trending?since=weekly",
+      "startedAt": "2026-10-02T08:33:13.402019+08:00",
+      "checkedAt": "2026-10-02T08:33:16.199902+08:00",
+      "ok": true,
+      "chars": 661822
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/github-weekly.html",
+        "bytes": 661835,
+        "sha256": "5844fe08f07014d95fe73c559a476bca03b7698da58f1c60576f5fde54b82929"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/glide.html-receipt.json",
+    "record": {
+      "url": "https://www.prnewswire.com/news-releases/fastino-labs-releases-glide-the-first-thinking-decision-model-leading-the-decision-indexs-top-model-by-6-9-points-302896638.html",
+      "startedAt": "2026-10-02T08:35:05.709989+08:00",
+      "checkedAt": "2026-10-02T08:35:08.014859+08:00",
+      "ok": true,
+      "chars": 232170
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/glide.html",
+        "bytes": 232263,
+        "sha256": "80c3ca1289189d60e331c49d76bd36ebdda42a0c7e1614849b0dc9cd50e49a1f"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/glow.html-receipt.json",
+    "record": {
+      "url": "https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leading-tech-companies",
+      "startedAt": "2026-10-02T08:35:05.541069+08:00",
+      "checkedAt": "2026-10-02T08:35:07.121411+08:00",
+      "ok": true,
+      "chars": 87971
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/glow.html",
+        "bytes": 88120,
+        "sha256": "12e75c06c11b5e8015f2f92a8195973fb10b8302ed70bb93e8ecdf471df8ff6d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/google-ai.html-receipt.json",
+    "record": {
+      "url": "https://blog.google/technology/ai/",
+      "startedAt": "2026-10-02T08:33:09.141018+08:00",
+      "checkedAt": "2026-10-02T08:33:11.409814+08:00",
+      "ok": true,
+      "chars": 404358
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/google-ai.html",
+        "bytes": 404831,
+        "sha256": "a4d5e968099d081772ff697b9a7b15d659a0c0036c77b7701418bd814a19880d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/google-research.html-receipt.json",
+    "record": {
+      "url": "https://research.google/blog/",
+      "startedAt": "2026-10-02T08:33:08.981231+08:00",
+      "checkedAt": "2026-10-02T08:33:10.356690+08:00",
+      "ok": true,
+      "chars": 177916
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/google-research.html",
+        "bytes": 177916,
+        "sha256": "913862806645d056c43d2efed2606a97c217d17ca6b899ba3eabcc8153651068"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/google.html-receipt.json",
+    "record": {
+      "url": "https://deepmind.google/discover/blog/",
+      "startedAt": "2026-10-02T08:33:05.704759+08:00",
+      "checkedAt": "2026-10-02T08:33:07.740574+08:00",
+      "ok": true,
+      "chars": 196980
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/google.html",
+        "bytes": 197006,
+        "sha256": "ef79629818a75ff5445439c9c496c5e5e5029b4e28b7ea1c745e49bb17ffb822"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/gov.html-receipt.json",
+    "record": {
+      "url": "https://claude.com/blog/claude-for-government-is-now-generally-available",
+      "startedAt": "2026-10-02T08:35:04.840264+08:00",
+      "checkedAt": "2026-10-02T08:35:06.999979+08:00",
+      "ok": true,
+      "chars": 531271
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/gov.html",
+        "bytes": 531312,
+        "sha256": "3ce2e64305b30bbfe018e9d7db66644021139b07b6efb4964157179c050e11b5"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/guided.html-receipt.json",
+    "record": {
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/",
+      "startedAt": "2026-10-02T08:35:04.918475+08:00",
+      "checkedAt": "2026-10-02T08:35:06.430282+08:00",
+      "ok": true,
+      "chars": 370812
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/guided.html",
+        "bytes": 371288,
+        "sha256": "7f5f8002eeb8c77166d0e769b6be498c96ed637b50640fc3461e4092f8054478"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/hf-models-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models?sort=trendingScore&direction=-1&limit=500&full=true",
+      "startedAt": "2026-10-02T08:33:12.125054+08:00",
+      "checkedAt": "2026-10-02T08:33:14.234575+08:00",
+      "ok": true,
+      "chars": 1516675
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/hf-models.json",
+        "bytes": 1516689,
+        "sha256": "4576e16165f8f73bfdb85e10b427b352a462bff54bd0c61fa1b1a2573527e981"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/hf-new-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models?sort=createdAt&direction=-1&limit=500&full=true",
+      "startedAt": "2026-10-02T08:33:12.354528+08:00",
+      "checkedAt": "2026-10-02T08:33:14.333755+08:00",
+      "ok": true,
+      "chars": 960749
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/hf-new.json",
+        "bytes": 960801,
+        "sha256": "2f3bfd1783e790b4b9d51f291431ac00469e01e3712c1f2d2a6bc84f5141ac4f"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/hf-papers-30-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/daily_papers?date=2026-09-30",
+      "startedAt": "2026-10-02T08:33:14.775701+08:00",
+      "checkedAt": "2026-10-02T08:33:16.311164+08:00",
+      "ok": true,
+      "chars": 282295
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/hf-papers-30.json",
+        "bytes": 282308,
+        "sha256": "e56c28a1bf776df5a1ade2ea4300e1b0e9db3f31108c50166b3b2b9900363a65"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/hf-papers-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/daily_papers?date=2026-10-01",
+      "startedAt": "2026-10-02T08:33:12.124884+08:00",
+      "checkedAt": "2026-10-02T08:33:13.723801+08:00",
+      "ok": true,
+      "chars": 281387
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/hf-papers.json",
+        "bytes": 281416,
+        "sha256": "20730107dae8ba7baf658ff87f4123a7f9574341adb93ea68f9fa8d06ea7d9ef"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/hf-papers-30.json",
+        "bytes": 282308,
+        "sha256": "e56c28a1bf776df5a1ade2ea4300e1b0e9db3f31108c50166b3b2b9900363a65"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/hn-receipt.json",
+    "record": {
+      "url": "https://hn.algolia.com/api/v1/search?tags=story&numericFilters=created_at_i%3E1790726400&hitsPerPage=100",
+      "startedAt": "2026-10-02T08:33:11.410235+08:00",
+      "checkedAt": "2026-10-02T08:33:13.401454+08:00",
+      "ok": true,
+      "chars": 122559
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/hn.json",
+        "bytes": 122559,
+        "sha256": "1d35c94f56b4ce8fd397cf58405a462f23d677512b792d7f36361868e3d12cb0"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/ideogram-docs.html-receipt.json",
+    "record": {
+      "url": "https://developer.ideogram.ai/ideogram-api/api-overview",
+      "startedAt": "2026-10-02T08:41:18.671545+08:00",
+      "checkedAt": "2026-10-02T08:41:21.134908+08:00",
+      "ok": true,
+      "chars": 209448
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/ideogram-docs.html",
+        "bytes": 209488,
+        "sha256": "58884c4a9d25c18ce5ccdb24fc0899fac44b225f3ccb94dd4cc8d1a109d10d8b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/ideogram.html-receipt.json",
+    "record": {
+      "url": "https://ideogram.ai/models/4.5/",
+      "startedAt": "2026-10-02T08:35:03.596401+08:00",
+      "checkedAt": "2026-10-02T08:35:05.895307+08:00",
+      "ok": true,
+      "chars": 545852
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/ideogram.html",
+        "bytes": 546107,
+        "sha256": "e1f3112f8b164755aeb6a79b4188cd7063b3a129ed32010c4447b5d190f9d1b2"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/jina-probe-receipt.json",
+    "record": {
+      "url": "https://www.anthropic.com/news",
+      "startedAt": "2026-10-02T08:33:11.145866+08:00",
+      "checkedAt": "2026-10-02T08:33:12.354125+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/jiqizhixin.html-receipt.json",
+    "record": {
+      "url": "https://www.jiqizhixin.com/",
+      "startedAt": "2026-10-02T08:33:14.333953+08:00",
+      "checkedAt": "2026-10-02T08:33:14.775467+08:00",
+      "ok": true,
+      "chars": 12574
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/jiqizhixin.html",
+        "bytes": 13290,
+        "sha256": "3644c4957d95ff7a101a7b7ac7f72d16b7015ad6ff0a6284776a201d06eaad96"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/kimi.html-receipt.json",
+    "record": {
+      "url": "https://www.kimi.com/help/kimi-work/release-notes",
+      "startedAt": "2026-10-02T08:33:08.513089+08:00",
+      "checkedAt": "2026-10-02T08:33:09.384212+08:00",
+      "ok": true,
+      "chars": 542568
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/kimi.html",
+        "bytes": 593903,
+        "sha256": "cbdd1b08288be96d52ff5c9008c3fca5c5cf546465efed4b366ef70ee45c0838"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/magnitude-source-receipt.json",
+    "record": {
+      "url": "https://api.github.com/repos/magnitudedev/magnitude/contents/package.json",
+      "startedAt": "2026-10-02T08:53:02.497279+08:00",
+      "checkedAt": "2026-10-02T08:53:03.370019+08:00",
+      "ok": true,
+      "chars": 7519
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/magnitude-source.json",
+        "bytes": 7519,
+        "sha256": "431f29a0bcd6f37de042357aeaf5250f9ff37de411be4945c432690cc4d91a36"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/mai.html-receipt.json",
+    "record": {
+      "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+      "startedAt": "2026-10-02T08:35:03.595891+08:00",
+      "checkedAt": "2026-10-02T08:35:05.707937+08:00",
+      "ok": true,
+      "chars": 530730
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/mai.html",
+        "bytes": 530776,
+        "sha256": "e3d273a9f415f3956c905a145fb817d54f0b75f94f30aa50e6ca99784830e81b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/meta-india.html-receipt.json",
+    "record": {
+      "url": "https://about.fb.com/news/2026/10/announcing-ranveer-singh-as-brand-ambassador-for-ray-ban-and-ray-ban-meta-in-india-along-with-exciting-new-updates-to-our-ai-glasses/",
+      "startedAt": "2026-10-02T09:20:54.252667+08:00",
+      "checkedAt": "2026-10-02T09:20:59.983239+08:00",
+      "ok": true,
+      "chars": 601277
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/meta-india.html",
+        "bytes": 601599,
+        "sha256": "9ff02001a3dab06512fca6e41cb911a893a5f9c6aa3e9fcd86b1556873275d59"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/meta.html-receipt.json",
+    "record": {
+      "url": "https://about.fb.com/news/",
+      "startedAt": "2026-10-02T08:33:05.705022+08:00",
+      "checkedAt": "2026-10-02T08:33:10.029298+08:00",
+      "ok": true,
+      "chars": 307880
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/meta.html",
+        "bytes": 308097,
+        "sha256": "61e7483eb2cab676b1a2b59d1c8861c95f2d3ab30aabf2810e28dbc1057acf9d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/microsoft.html-receipt.json",
+    "record": {
+      "url": "https://news.microsoft.com/source/view-all/",
+      "startedAt": "2026-10-02T08:33:05.705285+08:00",
+      "checkedAt": "2026-10-02T08:33:07.254070+08:00",
+      "ok": true,
+      "chars": 151597
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/microsoft.html",
+        "bytes": 151649,
+        "sha256": "73099b349725b86ba52a6708ac9de481e3b6fe4493790a07699fc03136f83ad8"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/minimax-ir-reader-receipt.json",
+    "record": {
+      "url": "https://ir.minimax.io/news-events/new-releases",
+      "startedAt": "2026-10-02T08:42:50.413370+08:00",
+      "checkedAt": "2026-10-02T08:42:51.192339+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/minimax.html-receipt.json",
+    "record": {
+      "url": "https://www.minimax.io/news",
+      "startedAt": "2026-10-02T08:33:08.841712+08:00",
+      "checkedAt": "2026-10-02T08:33:10.356758+08:00",
+      "ok": true,
+      "chars": 54231
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/minimax.html",
+        "bytes": 54333,
+        "sha256": "c664f32c1f347ea793ee6cca56cd6607aa91887c7bb234d802def2ab681c2729"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-ATH-MaaS--Ovis-VL-Embedding-9B-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/ATH-MaaS/Ovis-VL-Embedding-9B",
+      "startedAt": "2026-10-02T08:35:07.798594+08:00",
+      "checkedAt": "2026-10-02T08:35:08.574231+08:00",
+      "ok": true,
+      "chars": 2081
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-ATH-MaaS--Ovis-VL-Embedding-9B.md",
+        "bytes": 7765,
+        "sha256": "80eb2166343aca2a71b9da4812a17f9de94dbf7c6b29942ce2d2936068cc0996"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-ATH-MaaS--Ovis-VL-Embedding-9B.json",
+        "bytes": 2081,
+        "sha256": "69f1f45fa48db6c0c992d276a05b019c62152db7e64a93d8532a6db4c9d3b145"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-ATH-MaaS--Ovis-VL-Embedding-9B.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-9B/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:08.078605+08:00",
+      "checkedAt": "2026-10-02T08:35:09.039248+08:00",
+      "ok": true,
+      "chars": 7759
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-ATH-MaaS--Ovis-VL-Embedding-9B.md",
+        "bytes": 7765,
+        "sha256": "80eb2166343aca2a71b9da4812a17f9de94dbf7c6b29942ce2d2936068cc0996"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-FINAL-Bench--Darwin-180B-RSI-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/FINAL-Bench/Darwin-180B-RSI",
+      "startedAt": "2026-10-02T08:35:06.749711+08:00",
+      "checkedAt": "2026-10-02T08:35:07.798385+08:00",
+      "ok": true,
+      "chars": 32950
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-FINAL-Bench--Darwin-180B-RSI.md",
+        "bytes": 22036,
+        "sha256": "b11dbb2110db2f3e6a03559b04c570143f22c9e623606f3e7d8430b309ddea10"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-FINAL-Bench--Darwin-180B-RSI.json",
+        "bytes": 32950,
+        "sha256": "e02d94f701145f80d9c9ac2dfac3cbc1d33f34041aadd0ec8dfdc94f99da4be3"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-FINAL-Bench--Darwin-180B-RSI.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/FINAL-Bench/Darwin-180B-RSI/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:06.750598+08:00",
+      "checkedAt": "2026-10-02T08:35:07.616016+08:00",
+      "ok": true,
+      "chars": 21721
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-FINAL-Bench--Darwin-180B-RSI.md",
+        "bytes": 22036,
+        "sha256": "b11dbb2110db2f3e6a03559b04c570143f22c9e623606f3e7d8430b309ddea10"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-Hcompany--Holo4-27B-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/Hcompany/Holo4-27B",
+      "startedAt": "2026-10-02T08:35:04.725964+08:00",
+      "checkedAt": "2026-10-02T08:35:05.711883+08:00",
+      "ok": true,
+      "chars": 21350
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-Hcompany--Holo4-27B.json",
+        "bytes": 21350,
+        "sha256": "af29efed275e04c992bcbca60921911d5ebdf7b7d97b563dcc13441f82307297"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-Hcompany--Holo4-27B.md",
+        "bytes": 6720,
+        "sha256": "2254c1065a1d88bc491a93e060c5c55e25edc90a34c935a457b5dc1466a1c123"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-Hcompany--Holo4-27B.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/Hcompany/Holo4-27B/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:04.726211+08:00",
+      "checkedAt": "2026-10-02T08:35:05.446568+08:00",
+      "ok": true,
+      "chars": 6720
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-Hcompany--Holo4-27B.md",
+        "bytes": 6720,
+        "sha256": "2254c1065a1d88bc491a93e060c5c55e25edc90a34c935a457b5dc1466a1c123"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-SeerRay-Lab--Xiaomi-OCR-0-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/SeerRay-Lab/Xiaomi-OCR-0",
+      "startedAt": "2026-10-02T08:35:07.273757+08:00",
+      "checkedAt": "2026-10-02T08:35:08.078428+08:00",
+      "ok": true,
+      "chars": 10976
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SeerRay-Lab--Xiaomi-OCR-0.json",
+        "bytes": 10976,
+        "sha256": "e9cd639a015c0f17fb547d674f19bb6fd8ae7346be63310119e0de06f8de8f9d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SeerRay-Lab--Xiaomi-OCR-0.md",
+        "bytes": 20819,
+        "sha256": "7f7634ffca8cebe9ac6a388f16e37d819bb05ea6aeec9f0a5ab416930a1fabf2"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-SeerRay-Lab--Xiaomi-OCR-0.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:07.273942+08:00",
+      "checkedAt": "2026-10-02T08:35:08.126131+08:00",
+      "ok": true,
+      "chars": 20655
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SeerRay-Lab--Xiaomi-OCR-0.md",
+        "bytes": 20819,
+        "sha256": "7f7634ffca8cebe9ac6a388f16e37d819bb05ea6aeec9f0a5ab416930a1fabf2"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-SupersonicLabs--Julia-1-ONNX-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/SupersonicLabs/Julia-1-ONNX",
+      "startedAt": "2026-10-02T08:35:05.446725+08:00",
+      "checkedAt": "2026-10-02T08:35:06.427627+08:00",
+      "ok": true,
+      "chars": 2114
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SupersonicLabs--Julia-1-ONNX.md",
+        "bytes": 6123,
+        "sha256": "c1d8a0add2cf5ab63f124f36cdfb22f4a5ab3df261e7412cf3c147e00fd47241"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SupersonicLabs--Julia-1-ONNX.json",
+        "bytes": 2114,
+        "sha256": "a2c53152808ae7932aaa9942d6aadeea3ac9703fa58ec3d649e42d9d7d8528aa"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-SupersonicLabs--Julia-1-ONNX.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/SupersonicLabs/Julia-1-ONNX/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:05.478101+08:00",
+      "checkedAt": "2026-10-02T08:35:06.429293+08:00",
+      "ok": true,
+      "chars": 6117
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SupersonicLabs--Julia-1-ONNX.md",
+        "bytes": 6123,
+        "sha256": "c1d8a0add2cf5ab63f124f36cdfb22f4a5ab3df261e7412cf3c147e00fd47241"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-SupraLabs--SupraTTS-0.1-Beta-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/SupraLabs/SupraTTS-0.1-Beta",
+      "startedAt": "2026-10-02T08:35:06.427791+08:00",
+      "checkedAt": "2026-10-02T08:35:07.273588+08:00",
+      "ok": true,
+      "chars": 1201
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SupraLabs--SupraTTS-0.1-Beta.json",
+        "bytes": 1201,
+        "sha256": "00ecea33259bb2e8d215e98defcf3ace4955ba9505558fdada42c4dfccb3e3d9"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SupraLabs--SupraTTS-0.1-Beta.md",
+        "bytes": 5625,
+        "sha256": "9d1e2f3fa65da206d301b0dca7bc2ad84fa40b53fd4af4a4ea39b9ab492e611b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-SupraLabs--SupraTTS-0.1-Beta.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:06.429670+08:00",
+      "checkedAt": "2026-10-02T08:35:07.273642+08:00",
+      "ok": true,
+      "chars": 5622
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-SupraLabs--SupraTTS-0.1-Beta.md",
+        "bytes": 5625,
+        "sha256": "9d1e2f3fa65da206d301b0dca7bc2ad84fa40b53fd4af4a4ea39b9ab492e611b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-UniParser--MolParser-Mobile-V2-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/UniParser/MolParser-Mobile-V2",
+      "startedAt": "2026-10-02T08:35:05.712951+08:00",
+      "checkedAt": "2026-10-02T08:35:06.743343+08:00",
+      "ok": true,
+      "chars": 2105
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-UniParser--MolParser-Mobile-V2.md",
+        "bytes": 6284,
+        "sha256": "f12d8323289a4c78a25f83a892d2ddf20aca7ee59728988bcb37a40e3408489d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-UniParser--MolParser-Mobile-V2.json",
+        "bytes": 2105,
+        "sha256": "9fe3f0fc1d20881e7488f470a735244f0927c4484bd4f68d0e2be6c84d96d232"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-UniParser--MolParser-Mobile-V2.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:05.713352+08:00",
+      "checkedAt": "2026-10-02T08:35:06.743821+08:00",
+      "ok": true,
+      "chars": 6253
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-UniParser--MolParser-Mobile-V2.md",
+        "bytes": 6284,
+        "sha256": "f12d8323289a4c78a25f83a892d2ddf20aca7ee59728988bcb37a40e3408489d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-alibaba-pai--Qwen-Image-2.1-Fun-Acc-LoRAs-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/alibaba-pai/Qwen-Image-2.1-Fun-Acc-LoRAs",
+      "startedAt": "2026-10-02T08:35:06.746689+08:00",
+      "checkedAt": "2026-10-02T08:35:08.320418+08:00",
+      "ok": true,
+      "chars": 3133
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-alibaba-pai--Qwen-Image-2.1-Fun-Acc-LoRAs.json",
+        "bytes": 3133,
+        "sha256": "541865837f3618749f91e151f78937f9a836019ba4c8ca80cb7ce9520e1054ef"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-alibaba-pai--Qwen-Image-2.1-Fun-Acc-LoRAs.md",
+        "bytes": 6598,
+        "sha256": "ea38346bd985f1e6e1a7891772133ebf18a0a785f5402e222a45ca4ffeee7826"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-alibaba-pai--Qwen-Image-2.1-Fun-Acc-LoRAs.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Acc-LoRAs/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:06.747478+08:00",
+      "checkedAt": "2026-10-02T08:35:07.542790+08:00",
+      "ok": true,
+      "chars": 6592
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-alibaba-pai--Qwen-Image-2.1-Fun-Acc-LoRAs.md",
+        "bytes": 6598,
+        "sha256": "ea38346bd985f1e6e1a7891772133ebf18a0a785f5402e222a45ca4ffeee7826"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-eulogik--nirnay-450m-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/eulogik/nirnay-450m",
+      "startedAt": "2026-10-02T08:35:04.725404+08:00",
+      "checkedAt": "2026-10-02T08:35:05.712670+08:00",
+      "ok": true,
+      "chars": 2652
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-eulogik--nirnay-450m.md",
+        "bytes": 11197,
+        "sha256": "b4064c543a22d3a5a27eca5240cdb577d990b30663e304e9f4ccc96ea892f099"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-eulogik--nirnay-450m.json",
+        "bytes": 2652,
+        "sha256": "1ded8272a7814d6a39eb55485c34dbf9a96829bdf948c6b5b7386ed442a33251"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-eulogik--nirnay-450m.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/eulogik/nirnay-450m/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:04.725650+08:00",
+      "checkedAt": "2026-10-02T08:35:05.711401+08:00",
+      "ok": true,
+      "chars": 11182
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-eulogik--nirnay-450m.md",
+        "bytes": 11197,
+        "sha256": "b4064c543a22d3a5a27eca5240cdb577d990b30663e304e9f4ccc96ea892f099"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-internlm--Intern-Decision-2B-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/internlm/Intern-Decision-2B",
+      "startedAt": "2026-10-02T08:35:07.543196+08:00",
+      "checkedAt": "2026-10-02T08:35:08.507206+08:00",
+      "ok": true,
+      "chars": 10367
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-internlm--Intern-Decision-2B.md",
+        "bytes": 8688,
+        "sha256": "3058ca3e6db59f8cca642822fa684e0cfaf416f7b71b8dfac88b194f76956e01"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-internlm--Intern-Decision-2B.json",
+        "bytes": 10367,
+        "sha256": "1b84f0ad49e3eee3c3aef7a642d133a9ab8432c49a63c25ce603c1bcccefcf09"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-internlm--Intern-Decision-2B.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/internlm/Intern-Decision-2B/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:07.616196+08:00",
+      "checkedAt": "2026-10-02T08:35:08.555953+08:00",
+      "ok": true,
+      "chars": 8674
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-internlm--Intern-Decision-2B.md",
+        "bytes": 8688,
+        "sha256": "3058ca3e6db59f8cca642822fa684e0cfaf416f7b71b8dfac88b194f76956e01"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-nlpai-lab--RenderRank-2B-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/nlpai-lab/RenderRank-2B",
+      "startedAt": "2026-10-02T08:35:05.712004+08:00",
+      "checkedAt": "2026-10-02T08:35:06.750230+08:00",
+      "ok": true,
+      "chars": 10436
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-nlpai-lab--RenderRank-2B.json",
+        "bytes": 10436,
+        "sha256": "583a9562f3d71af1622b0915967af4813375185cbb5f6bbe8c739f7d09892e29"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-nlpai-lab--RenderRank-2B.md",
+        "bytes": 11668,
+        "sha256": "247f7325a8cc3d8df7a3f9a1805f159f4aa08c6723a5547411acef3ffd4c5c44"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-nlpai-lab--RenderRank-2B.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/nlpai-lab/RenderRank-2B/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:05.712304+08:00",
+      "checkedAt": "2026-10-02T08:35:06.749424+08:00",
+      "ok": true,
+      "chars": 11660
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-nlpai-lab--RenderRank-2B.md",
+        "bytes": 11668,
+        "sha256": "247f7325a8cc3d8df7a3f9a1805f159f4aa08c6723a5547411acef3ffd4c5c44"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-perplexity-ai--pplx-decider-v1-27b-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/perplexity-ai/pplx-decider-v1-27b",
+      "startedAt": "2026-10-02T08:35:04.724561+08:00",
+      "checkedAt": "2026-10-02T08:35:05.712475+08:00",
+      "ok": true,
+      "chars": 12476
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-perplexity-ai--pplx-decider-v1-27b.md",
+        "bytes": 2336,
+        "sha256": "098eda1e279b8ba6e3ece4a51143217c3d1af1a7ccbca27dea3e8d3c591c1578"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/model-perplexity-ai--pplx-decider-v1-27b.json",
+        "bytes": 12476,
+        "sha256": "b900fc67a356d20d8e1ebb87652acd0dc98c5a614ec0d147b3e5230f023c8de2"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/model-perplexity-ai--pplx-decider-v1-27b.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b/raw/main/README.md",
+      "startedAt": "2026-10-02T08:35:04.725092+08:00",
+      "checkedAt": "2026-10-02T08:35:05.477924+08:00",
+      "ok": true,
+      "chars": 2336
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/model-perplexity-ai--pplx-decider-v1-27b.md",
+        "bytes": 2336,
+        "sha256": "098eda1e279b8ba6e3ece4a51143217c3d1af1a7ccbca27dea3e8d3c591c1578"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/mol-commits-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/UniParser/MolParser-Mobile-V2/commits/main",
+      "startedAt": "2026-10-02T08:53:02.497008+08:00",
+      "checkedAt": "2026-10-02T08:53:03.384626+08:00",
+      "ok": true,
+      "chars": 1131
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/mol-commits.json",
+        "bytes": 1131,
+        "sha256": "5ef7a912e3887f1961dd7e33c66e9bb26af3cf56aa2b3c3aebcf93e5559cc25a"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/ng-native-architecture.md-receipt.json",
+    "record": {
+      "url": "https://raw.githubusercontent.com/ng-native/ng-native/main/docs/ARCHITECTURE.md",
+      "startedAt": "2026-10-02T08:53:03.263314+08:00",
+      "checkedAt": "2026-10-02T08:53:04.144558+08:00",
+      "ok": true,
+      "chars": 4994
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/ng-native-architecture.md",
+        "bytes": 5000,
+        "sha256": "e4dc358df3782e51ba6c2446471a13dc271bbd0d09d29dbf9cde82d3c9f36018"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/ng-native-limits.html-receipt.json",
+    "record": {
+      "url": "https://ng-native.com/guide/limitations",
+      "startedAt": "2026-10-02T08:53:03.361755+08:00",
+      "checkedAt": "2026-10-02T08:53:04.976637+08:00",
+      "ok": true,
+      "chars": 32431
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/ng-native-limits.html",
+        "bytes": 32433,
+        "sha256": "23216e6b9962e304a2c2faa33f4a0d2e355dfa80d08abc76b3dcc75caec8fa2b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/nvidia-blog.html-receipt.json",
+    "record": {
+      "url": "https://blogs.nvidia.com/",
+      "startedAt": "2026-10-02T08:33:09.384424+08:00",
+      "checkedAt": "2026-10-02T08:33:11.145694+08:00",
+      "ok": true,
+      "chars": 147447
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/nvidia-blog.html",
+        "bytes": 147522,
+        "sha256": "fa9208242b80a9a0b02b389f7c4a349ffb3c3add1b2a883e0f275a3258edeaff"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/nvidia-speed.html-receipt.json",
+    "record": {
+      "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+      "startedAt": "2026-10-02T08:35:06.604977+08:00",
+      "checkedAt": "2026-10-02T08:35:07.695324+08:00",
+      "ok": true,
+      "chars": 108532
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/nvidia-speed.html",
+        "bytes": 108600,
+        "sha256": "57e080d6a552dfd14c46e9aaacf7acd64ae7f601b5fb5e3697d4e20140bf2de1"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/nvidia.html-receipt.json",
+    "record": {
+      "url": "https://nvidianews.nvidia.com/news",
+      "startedAt": "2026-10-02T08:33:07.254306+08:00",
+      "checkedAt": "2026-10-02T08:33:08.978276+08:00",
+      "ok": true,
+      "chars": 68771
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/nvidia.html",
+        "bytes": 68798,
+        "sha256": "7389b9869f1bdf23b9a55fc9989cddac4f48892391b0962d2d290828e0de5230"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/openai.xml-receipt.json",
+    "record": {
+      "url": "https://openai.com/news/rss.xml",
+      "startedAt": "2026-10-02T08:33:05.703936+08:00",
+      "checkedAt": "2026-10-02T08:33:08.127405+08:00",
+      "ok": true,
+      "chars": 756710
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/openai.xml",
+        "bytes": 758460,
+        "sha256": "cde03e38ae0ef65798d957905d4b9d9bd79637f17da040d1ef46a303d30f3548"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/pi-discussion-receipt.json",
+    "record": {
+      "url": "https://hn.algolia.com/api/v1/items/49926069",
+      "startedAt": "2026-10-02T08:53:02.495979+08:00",
+      "checkedAt": "2026-10-02T08:53:04.140984+08:00",
+      "ok": true,
+      "chars": 125478
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/pi-discussion.json",
+        "bytes": 125478,
+        "sha256": "a2e4ca7d60ad51877c2113f800f9e9ac8fd76622818e29488fc7b771227c07c9"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/pi-durable.html-receipt.json",
+    "record": {
+      "url": "https://earendil.com/posts/pi-durable/",
+      "startedAt": "2026-10-02T08:35:07.122071+08:00",
+      "checkedAt": "2026-10-02T08:35:08.384285+08:00",
+      "ok": true,
+      "chars": 57347
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/pi-durable.html",
+        "bytes": 57351,
+        "sha256": "7a52fab6433ef07326020d27b0c5f0dad05158b1cadb23133aa54948b6c1434a"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/pi.html-receipt.json",
+    "record": {
+      "url": "https://earendil.com/posts/pi-1-0/",
+      "startedAt": "2026-10-02T08:35:07.000177+08:00",
+      "checkedAt": "2026-10-02T08:35:08.193105+08:00",
+      "ok": true,
+      "chars": 16806
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/pi.html",
+        "bytes": 16810,
+        "sha256": "cfac0d9078bf5a710da2f02e24ed72b7af06902952c2eb0ed52029de7cb9bf4d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/qbit.html-receipt.json",
+    "record": {
+      "url": "https://www.qbitai.com/",
+      "startedAt": "2026-10-02T08:33:14.234907+08:00",
+      "checkedAt": "2026-10-02T08:33:14.619705+08:00",
+      "ok": true,
+      "chars": 63558
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/qbit.html",
+        "bytes": 66118,
+        "sha256": "1a6c4fa638a9c83975f3de80c0225b500ab66525aa530de1b1ca5a378f22f584"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/qwen.html-receipt.json",
+    "record": {
+      "url": "https://qwen.ai/blog",
+      "startedAt": "2026-10-02T08:33:10.030011+08:00",
+      "checkedAt": "2026-10-02T08:33:12.124496+08:00",
+      "ok": true,
+      "chars": 92469
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/qwen.html",
+        "bytes": 94344,
+        "sha256": "bbd60056b202c1e0a3b0b4973da7e994f247d76ce16b659049efec384fae2639"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/recraft.html-receipt.json",
+    "record": {
+      "url": "https://www.recraft.ai/blog/ideogram-4-5-is-coming-to-recraft-studio",
+      "startedAt": "2026-10-02T09:10:45.237688+08:00",
+      "checkedAt": "2026-10-02T09:10:46.783278+08:00",
+      "ok": true,
+      "chars": 92649
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/recraft.html",
+        "bytes": 92818,
+        "sha256": "bbe921043ae81ae98777a15083d3f307b65e4694a39fc155f409bebb55aa120a"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/refresh-anthropic.html-receipt.json",
+    "record": {
+      "url": "https://www.anthropic.com/news",
+      "startedAt": "2026-10-02T09:10:45.237023+08:00",
+      "checkedAt": "2026-10-02T09:10:46.693138+08:00",
+      "ok": true,
+      "chars": 461228
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/refresh-anthropic.html",
+        "bytes": 461402,
+        "sha256": "54689601ad081aa35ead0bb422671f27ecec19cabef0436b846664d6d54b1407"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/refresh-deepmind.html-receipt.json",
+    "record": {
+      "url": "https://deepmind.google/blog/",
+      "startedAt": "2026-10-02T09:10:45.237269+08:00",
+      "checkedAt": "2026-10-02T09:10:46.139246+08:00",
+      "ok": true,
+      "chars": 196980
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/refresh-deepmind.html",
+        "bytes": 197006,
+        "sha256": "ef79629818a75ff5445439c9c496c5e5e5029b4e28b7ea1c745e49bb17ffb822"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/refresh-openai.xml-receipt.json",
+    "record": {
+      "url": "https://openai.com/news/rss.xml",
+      "startedAt": "2026-10-02T09:10:45.236709+08:00",
+      "checkedAt": "2026-10-02T09:10:46.728049+08:00",
+      "ok": true,
+      "chars": 756710
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/refresh-openai.xml",
+        "bytes": 758460,
+        "sha256": "ebc74c3f9aafb8ce8e3732525ecadb1b808c4da5775d9ec4c842a5b779bf61c0"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-receipt.json",
+    "record": {
+      "repo": "AgentSystemLabs/agent-office",
+      "startedAt": "2026-10-02T08:41:32.108417+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:33.208007+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:34.374353+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:35.280422+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:36.355702+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:37.347954+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:38.432026+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:39.617383+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-contents.json",
+        "bytes": 17677,
+        "sha256": "097501916e6b56b9a5757ada379bef6db396bfbc40f04f71edb09ae8a0f4fef1"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-releases.json",
+        "bytes": 19094,
+        "sha256": "351fcf3e85d43704efb9e6bedd12df2e2985ce452f787d88eeeea77b558b8996"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-commits.json",
+        "bytes": 93126,
+        "sha256": "c3825eb7fa16d115efb1bff0a25c2041589f716eb204831195807d351183ac53"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-license.json",
+        "bytes": 2545,
+        "sha256": "7a730db71a7368f5948cd2de368d1cb3dfba81d3d076e93c92693a11e87267d0"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-license.txt",
+        "bytes": 1072,
+        "sha256": "c1988ce50d031cf99c20a6322a34062ed3062a28191d0f1b6b5e88f49acddcb9"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-meta.json",
+        "bytes": 7610,
+        "sha256": "d0b9d038685116475a92ff558a6e8cedac6970dbb87926ec79ec8ede62fa3960"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-readme.txt",
+        "bytes": 27241,
+        "sha256": "cbe9843a200833a3a6c83a47990c5dfb9d695e3acd4e2800b0a60797e44beca7"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-issues.json",
+        "bytes": 50849,
+        "sha256": "e7bdcb049181a01aa90463268754111a114d54381305107631510322019d3e06"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-AgentSystemLabs--agent-office-readme.json",
+        "bytes": 38445,
+        "sha256": "8a09e91f28e6985c669840c44bd695579203f376dd8a13d05a78008606ec3551"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-receipt.json",
+    "record": {
+      "repo": "Edwardxlai/easyread",
+      "startedAt": "2026-10-02T08:41:26.180005+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:27.365393+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:28.800927+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:29.783815+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:30.724559+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:31.939386+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:33.322304+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:34.546075+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-readme.txt",
+        "bytes": 12147,
+        "sha256": "df1aaccdb75d66fb076be5b21ae5e853b2e4fa89a5d5e5366ce6e12c856a2bfe"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-commits.json",
+        "bytes": 20789,
+        "sha256": "c8bd416e182dca85f8355cb7ea36ac9ce4bb05ebe6debe6857746f76f190c35b"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-issues.json",
+        "bytes": 55562,
+        "sha256": "aaa3e466ce598c7b1bacffb5ff15f49150083721cbad23ec5c525fdca2ca4551"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-readme.json",
+        "bytes": 17582,
+        "sha256": "5805e458b19d39a0aed9b65040d83195073230fcafa7a658f511f0b97090139d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-license.txt",
+        "bytes": 1067,
+        "sha256": "ea05ce3d3af14367583f0935427d30887e72c5860e5add4ca07c05aff41e1bbd"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-releases.json",
+        "bytes": 37091,
+        "sha256": "019b20ebc46d84084a23f4cee4fc0d2391cee025e321f618af859afb5afa6ffc"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-contents.json",
+        "bytes": 14657,
+        "sha256": "8071a58527149d3ee1451188613a99cd1c3781dcc0a2cb810d61bf176a6dddba"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-meta.json",
+        "bytes": 5818,
+        "sha256": "8715bcec304299fc1d58c90a2c9e60a44ff444262ee70e947bee26f944345a5c"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Edwardxlai--easyread-license.json",
+        "bytes": 2474,
+        "sha256": "b9129d4632870aa0f6a3822c42697ba571363ca059999be73aca7f4783347d6c"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-receipt.json",
+    "record": {
+      "repo": "TantrixAuto/yantra",
+      "startedAt": "2026-10-02T08:41:17.530720+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:18.641636+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:19.754156+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:20.796348+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:21.907478+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:23.029156+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:24.217883+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:25.288091+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-license.json",
+        "bytes": 2467,
+        "sha256": "c1d9e8960bc567cbb8cf6216c526163cddea2a90caea2bc86aef6483be5b464b"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-meta.json",
+        "bytes": 6980,
+        "sha256": "a41cec2bb0ff64a5ca0456eb18b8ac29b4c239f29866d5bf6bdce4a767b18d16"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-releases.json",
+        "bytes": 35783,
+        "sha256": "4320602169c66a0ff8b466593f87462b41531aca95d9eb92a24d9e1dbbc04a9c"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-contents.json",
+        "bytes": 11198,
+        "sha256": "482217b3e82c93e4858b1b9d0e2fa74d2e3d2b749dc9f6759d165b8433fde2df"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-license.txt",
+        "bytes": 1068,
+        "sha256": "ccc286d12bed1351af11ee6e782b764bf07db7a520f74eea729d471a891a8e57"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-readme.txt",
+        "bytes": 7803,
+        "sha256": "625ea7cc914df783215cfa465f005ac108b9606b6eb707527a002e93f01c25ef"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-commits.json",
+        "bytes": 21252,
+        "sha256": "3456ef531d285779ea1d0b4f98d732de2f540b17518a1c68a6e28b8412aa7892"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-readme.json",
+        "bytes": 11590,
+        "sha256": "c65977b686d3e99b59629160cc1cc5662bf3e22375bd0dd92932c9b3a3b0d032"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-TantrixAuto--yantra-issues.json",
+        "bytes": 40635,
+        "sha256": "5743b3243b7b2915b1fe45848b536eed005972a6eba396dc1f56fe863e68cc16"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-receipt.json",
+    "record": {
+      "repo": "Vibra-Ingenn/Janus",
+      "startedAt": "2026-10-02T08:41:17.530448+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:18.643728+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:19.721899+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:21.265111+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:22.381602+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:23.564936+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:24.558347+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:25.458435+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-meta.json",
+        "bytes": 5857,
+        "sha256": "12f56a03b013e2a54af0b3fd078c77ba2ef47e73788e5b89eb7f8af54acfa5ec"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-commits.json",
+        "bytes": 3725,
+        "sha256": "43f5f5c4002d7f415d54b36fdf12243aa640897b2bf11ea6d7f18fd1a81632c6"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-readme.txt",
+        "bytes": 5671,
+        "sha256": "2ad7534504285550d38a3aa153157f03599facf859eb03bf78375e78d902d0ec"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-license.txt",
+        "bytes": 1071,
+        "sha256": "187dd64cceda9c37595f44f908d6a3cafae048ae6bac474ca24740b1e18ef7eb"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-readme.json",
+        "bytes": 8656,
+        "sha256": "5e22cb6398f8e21c3a825eb55531f513610c4b40f1a07140a32692bdf480b111"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-issues.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-contents.json",
+        "bytes": 14594,
+        "sha256": "ef526dc78cccf3cfa85e8fe8f95b733616c5c9e64d2e655f78e62f535c1a9f9e"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-license.json",
+        "bytes": 2471,
+        "sha256": "2d02688dad5ef14d4393e95b2ec3751b0b0d32a64387b3d0f962eff95ef3ce34"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-Vibra-Ingenn--Janus-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-receipt.json",
+    "record": {
+      "repo": "bjarneo/flux",
+      "startedAt": "2026-10-02T08:41:32.801271+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:33.759133+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:34.749733+08:00"
+        },
+        "license": {
+          "ok": false,
+          "checkedAt": "2026-10-02T08:41:35.757121+08:00",
+          "error": "gh: Not Found (HTTP 404)\n"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:36.800855+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:37.713989+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:38.900713+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:40.138031+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-meta.json",
+        "bytes": 5427,
+        "sha256": "3699b7eb8e530858a625ceca925d477ffd792d4e199200b83c7faa7b20bba9df"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-releases.json",
+        "bytes": 76604,
+        "sha256": "380156a20c59c2ddddf94cb824d752d5d90f59c775dfb5f831d265710b0a0417"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-contents.json",
+        "bytes": 13308,
+        "sha256": "93e756df46669f027090e62cb295b2868ff14410c6c0f82c2f2c3753f32323fb"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-commits.json",
+        "bytes": 54760,
+        "sha256": "0bcfb57bcc5445faff5c668ee42d3fc1552cbb4768cb8931e684c57b1c4a0a2c"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-readme.txt",
+        "bytes": 6582,
+        "sha256": "08db96cb2488b6942b3615ec18dff00209f286c54b3af4e544b434c44f83f9d5"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-readme.json",
+        "bytes": 9876,
+        "sha256": "367fa278f15505582c2aee4103a3affa11aa5355525c19500ae7871c063bfd54"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-bjarneo--flux-issues.json",
+        "bytes": 125857,
+        "sha256": "023bbaebd11f4d902d0db7bded51a6d87dea4694d8c05bb950076e73ac188fbf"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-receipt.json",
+    "record": {
+      "repo": "dptech-corp/MolParser",
+      "startedAt": "2026-10-02T08:41:39.618881+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:40.549942+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:41.593805+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:42.658895+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:43.682557+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:44.855589+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:45.903503+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:46.970031+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-contents.json",
+        "bytes": 6822,
+        "sha256": "379d0e12c8ac9a9d5e68327b3150acc46324b476d3e2b6d68582288697cd9d96"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-license.json",
+        "bytes": 16687,
+        "sha256": "a0bd8f10a5347603efee9b7356c23e4e0ff951ac8a5396e59f048595c816f934"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-license.txt",
+        "bytes": 11351,
+        "sha256": "9dfb301ff2c9e48d962544ee6dd92902e48f9e6c6bb02379668777219e2d1d95"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-readme.txt",
+        "bytes": 14059,
+        "sha256": "66e96d53ef44191e040aca803380c69667621e65baf8ffca726252d312e6c946"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-meta.json",
+        "bytes": 7230,
+        "sha256": "92adad459078bba8a49f48c11d71b6daada876ffc4b7907ee389557cf9fe287b"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-readme.json",
+        "bytes": 20234,
+        "sha256": "0f5c3dfde9efce419869832c9b81c13bbba1b50da400a1782850fbb9ca9e4967"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-issues.json",
+        "bytes": 40500,
+        "sha256": "3238218c38f692dee43c1a5b3a9a03b9e4f1016804b52cce9f00ca71eb5c0932"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-dptech-corp--MolParser-commits.json",
+        "bytes": 22589,
+        "sha256": "c277fca0bb7dd13d9f5772c6ea59ce9b3ec8002996b9249de00e12dd413d9cb0"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-receipt.json",
+    "record": {
+      "repo": "earendil-works/pi",
+      "startedAt": "2026-10-02T08:41:17.527331+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:18.554243+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:19.596085+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:20.576529+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:21.844877+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:22.876152+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:23.957254+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:25.168991+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-license.json",
+        "bytes": 2464,
+        "sha256": "16903ee749b216eada5dc355bf3531fcea985d0606034a0ba0d49e884a2b7d26"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-releases.json",
+        "bytes": 122899,
+        "sha256": "b9b4586d877c7835e6135fdeb757113d793fff543fb222e07b838045c8acba54"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-readme.txt",
+        "bytes": 6895,
+        "sha256": "fe13915e217f905739b64124cbb03b72758fa2081b7198cabeefaee4914a6f14"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-contents.json",
+        "bytes": 19658,
+        "sha256": "6126f1bcb3c125044fe9bb117fdeb9067fccee79f4af10d5a1b6b8a0a817675f"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-issues.json",
+        "bytes": 68928,
+        "sha256": "2156dfe0d9d1045c866ab94abdd960589836e6514005c41edfab6c72ea5b91ad"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-readme.json",
+        "bytes": 10335,
+        "sha256": "f5454177134229b1f5b9a6ce424d42c73cc5c2ccff7fea8ece4a6c28bb0e8a23"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-meta.json",
+        "bytes": 7041,
+        "sha256": "9cf4ff271469da949f1f5ec0fd547559f4361ce9d5d2e1ab3570ead07a203e5d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-license.txt",
+        "bytes": 1069,
+        "sha256": "0457f5bcec3b3b211605dfb5d1a49042fd638f3686a410fe099c24a25af13c48"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-earendil-works--pi-commits.json",
+        "bytes": 20063,
+        "sha256": "a7c9da08414dcfa6a011e58887eda8c1e7a80f4d5dbcaf9299d7b35d11c328bc"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-receipt.json",
+    "record": {
+      "repo": "feder-cr/dots",
+      "startedAt": "2026-10-02T08:41:25.116489+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:26.159061+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:27.174081+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:28.094899+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:29.265404+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:30.187104+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:31.125021+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:32.107460+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-readme.json",
+        "bytes": 4131,
+        "sha256": "8eefe593e503b32cc44235f36b71690c0427dba11184377bd6f9fbe9dba9263c"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-meta.json",
+        "bytes": 6009,
+        "sha256": "ada698a2cbce0da22d6c1dff215814a9c79d9efaeb513c3d2c0bef3857db816a"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-issues.json",
+        "bytes": 4195,
+        "sha256": "e0645b08b0574eda40c2c614a8875dbee2ecdb722189c4a5519a04aedb17dd1d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-commits.json",
+        "bytes": 15643,
+        "sha256": "b7e4a82e2fbb1dd2554fa2d5e1aa0d72c1ec08c9f2607f0aa7f22439351da4fc"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-license.txt",
+        "bytes": 1065,
+        "sha256": "f8e26bc469ae827b30a93daa0a6ce8f12a65036334e700600280bf70f0fbbd9e"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-readme.txt",
+        "bytes": 2413,
+        "sha256": "f1fec3a64fa65cb5d2c87c7a276fbb6a35084d7fc96f4467c05370b4099eba4a"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-contents.json",
+        "bytes": 6898,
+        "sha256": "2744a631dc74d6b876d1158d820c834d2ce174657ab9ee43bc79fc388046f4c5"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feder-cr--dots-license.json",
+        "bytes": 2428,
+        "sha256": "216f14e510468b38d7e2c5fdcb486f9789a02e90230696896d3d24cfad440294"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-receipt.json",
+    "record": {
+      "repo": "feitangyuan/onetake",
+      "startedAt": "2026-10-02T08:41:25.459108+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:26.511820+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:27.566561+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:28.604281+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:29.650834+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:30.529435+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:31.452567+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:32.610217+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-contents.json",
+        "bytes": 9364,
+        "sha256": "e98ea173e0ac34d38aa80228089d00c18a6f593f91e6c54dd3740d3523031d4b"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-license.txt",
+        "bytes": 4653,
+        "sha256": "1f7a4f2449fb543769568a4f0e6e2c622bf28e841fde09a4b6819dcaa4567412"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-meta.json",
+        "bytes": 6134,
+        "sha256": "9d46e89e4b7e7018a3ee6c0a0b909952b21335b1a8b0c9360f4207f5c856a684"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-readme.json",
+        "bytes": 20894,
+        "sha256": "6e545001630eadfdd6063dcf5f9f5dc18ad67df63487002ef07c90a7b9090e27"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-license.json",
+        "bytes": 7385,
+        "sha256": "a6d726b128471a30a063a73e52eb14c6996323e6a40d75b8cca70851faa2820d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-issues.json",
+        "bytes": 11610,
+        "sha256": "7d69e9df1ddda945c452191c6b6eaaaef176e53e9691311cd81d4e732bb127ce"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-commits.json",
+        "bytes": 9455,
+        "sha256": "b7d1ece7a7d938ebf8f71b2344ac48c02c274060f7a47410dfa43311cd827572"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-feitangyuan--onetake-readme.txt",
+        "bytes": 14548,
+        "sha256": "ebb71b6d1fdc89837cdb78d112d782b618e865dd7cdf9b18b7575858db8f1cd0"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-receipt.json",
+    "record": {
+      "repo": "kaankiziltug/logo-design-skill",
+      "startedAt": "2026-10-02T08:41:25.289418+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:26.318787+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:27.364866+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:28.456345+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:29.497328+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:30.569688+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:31.580332+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:32.799961+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-releases.json",
+        "bytes": 27869,
+        "sha256": "f8f6db9dbac93d3eb44d8498eff84b1cceb73fa5fd63ba6a060fb3ad09f1bb35"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-contents.json",
+        "bytes": 8608,
+        "sha256": "2f8ea1d264ab887d3afa1270a113ec7b2ee1d775eede4cc6a9ab6e6a6e147c52"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-commits.json",
+        "bytes": 22188,
+        "sha256": "ac8d217e7de65f92a2505fbd8560e0d19e6d4aca9f34882eb5e0734a4c7b718d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-meta.json",
+        "bytes": 6620,
+        "sha256": "2108b5004b8464c1b2f377c85533f418dbc834d225394de9d6a9fd33bbc6c3c8"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-readme.json",
+        "bytes": 45791,
+        "sha256": "8eb855ff04adbeaf04899ce20044dd0b01db426c32e11dddffd416edd166a802"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-issues.json",
+        "bytes": 22402,
+        "sha256": "7ce8568bd2d816795c649f1a9732294e145ca24ef117150216993a7dce73217e"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-license.json",
+        "bytes": 2555,
+        "sha256": "5bea4e209797aacc07568e9ec1ff44c278e04eb0996e21580cf6486e86d6aca6"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-readme.txt",
+        "bytes": 32565,
+        "sha256": "e513d849125861c99e28096e6f48e0487a8de8d4dea7acfd7867ea6b122fdf93"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-kaankiziltug--logo-design-skill-license.txt",
+        "bytes": 1069,
+        "sha256": "f68cc121d7f856ec3f48993c5082960f267bd752acea4e2f694408ef55d6cfdd"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-receipt.json",
+    "record": {
+      "repo": "maanHimself/OpenDLSS-NR",
+      "startedAt": "2026-10-02T08:41:17.532302+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:18.477116+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:21.101079+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:22.126815+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:23.181637+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:24.089834+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:25.126080+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:26.179124+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-license.txt",
+        "bytes": 1061,
+        "sha256": "09303fc170f47fa787b91a622d155577b0b85ebca7bc25fcc66e12d8542ca10c"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-readme.json",
+        "bytes": 15946,
+        "sha256": "6599410c88f3d39c398b141deeb58c74928ceb0f5f39704d85c6d219b64b9ea8"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-issues.json",
+        "bytes": 4052,
+        "sha256": "2dc0bbbfa9e5bd69017793d2efc230b6e671dd0facdfa9ce4d6436b40f854691"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-readme.txt",
+        "bytes": 10937,
+        "sha256": "bff3098312cdc0988a78a9f18c7e874f4dfcf32a507b243b25a4d42f0e29ad73"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-commits.json",
+        "bytes": 15929,
+        "sha256": "806a58c45cd094b3a8f68534ff335d13f974db67419e65a0582a32a0eff93b91"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-license.json",
+        "bytes": 2494,
+        "sha256": "52d3a5c70af15a9bc92664956d1137dac2a24ba40c369b902e79d8941a6c127f"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-contents.json",
+        "bytes": 9750,
+        "sha256": "02e4a64552e0524cc05ee874c5bf6d78bce9d34013cbf2ff4ca43136dd706408"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-maanHimself--OpenDLSS-NR-meta.json",
+        "bytes": 6112,
+        "sha256": "4738d6e4abe8e264d4f4cbdbadf6e17a361f96b9d37a0cdf4d82bf3be7f778e2"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-receipt.json",
+    "record": {
+      "repo": "magnitudedev/magnitude",
+      "startedAt": "2026-10-02T08:41:17.528851+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:18.534344+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:19.536182+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:20.592584+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:21.849150+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:22.901579+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:23.970421+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:25.114392+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-license.txt",
+        "bytes": 10762,
+        "sha256": "ff06b65b2540c6700ee2b4731f50b565fba00b7c4207ddb8e25bd5948e75ac86"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-readme.txt",
+        "bytes": 4886,
+        "sha256": "53391fa9c17ccf53000fc833a55831df73a145760d60ee85b04d569283c0c689"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-readme.json",
+        "bytes": 7600,
+        "sha256": "d81592fd09dfbac2c3f6b615f6ecaa18e50b0d156427943029679f5431111cf0"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-issues.json",
+        "bytes": 52124,
+        "sha256": "30c4ebd6b67ccaab5113cf6b37b9b6bd080ca95fabcd66355a6bc7caa3e311d9"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-license.json",
+        "bytes": 15884,
+        "sha256": "3bd13d89ca0c8f3692e94fbd6829b0348782990be2c55478fc64fab573c54903"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-commits.json",
+        "bytes": 22615,
+        "sha256": "184de8c10f314a9fe887f7deb3398becbc38328da90271aa0fa261a268dbccb1"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-releases.json",
+        "bytes": 226150,
+        "sha256": "9463c71b0cd1e4f3f69675d5fb0593f81cc29efb0d75f055cc4f19ff7cf61378"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-meta.json",
+        "bytes": 7412,
+        "sha256": "79e70c1687bf42a828d5f6efdda4fec5bbdba2f6f88da7ebe2d01ae4e0100122"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-magnitudedev--magnitude-contents.json",
+        "bytes": 26938,
+        "sha256": "61fdb5913a73f6973b42e52c2dd617e566991e4597f4c289d55e49fdc178897d"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-receipt.json",
+    "record": {
+      "repo": "ng-native/ng-native",
+      "startedAt": "2026-10-02T08:41:33.966463+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:34.962439+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:35.948342+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:36.845178+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:37.848479+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:38.897948+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:39.852296+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:40.995433+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-license.txt",
+        "bytes": 1070,
+        "sha256": "c05b6b23a37fde5f3f6a444e637c2a55524756247cedc33a70aeaa735a9d35b0"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-readme.txt",
+        "bytes": 8770,
+        "sha256": "421553a085d8ac2401bcd3aea134853eb9e79e6f78ab17e40e0393f0167a1aa2"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-license.json",
+        "bytes": 2478,
+        "sha256": "21352280e53046711ff3832fd5c752d06f91a0905f5d172ea9ed9aee8b8e83e6"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-readme.json",
+        "bytes": 12931,
+        "sha256": "81140f6c7a1ae28340d81e7f51428efb378cb529ab492107d24bc78b87a070d4"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-issues.json",
+        "bytes": 68661,
+        "sha256": "748d467248794dd3ff86a4305895601f342785ed2656afa36b158805b2af6659"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-meta.json",
+        "bytes": 7190,
+        "sha256": "1abcf37c17e210055f538c0153245718828da822b72d2a99de31b75051dabbdb"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-contents.json",
+        "bytes": 26802,
+        "sha256": "4e99cf9774e6c1e9c946521e001acb78be2b795e990b5d51ac68dc08ab1902ab"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-releases.json",
+        "bytes": 39639,
+        "sha256": "dc96aa6c7bed0aac719165667ec34fd7fc644428fb81d6acc655b9fe233b5254"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-ng-native--ng-native-commits.json",
+        "bytes": 65043,
+        "sha256": "1b1545201ef84e7240e7467657493b36da22ce2dc3377710e0e9dc6e0b9325e6"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-receipt.json",
+    "record": {
+      "repo": "rehan-remade/universal-modder",
+      "startedAt": "2026-10-02T08:41:25.170211+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:26.188997+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:28.497590+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:29.461323+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:30.744157+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:31.829400+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:32.868812+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:33.965667+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-license.json",
+        "bytes": 2586,
+        "sha256": "113ca86ee8c3bbd071612728b9b0c07005501823da0b328f3abf53a70548edc2"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-readme.json",
+        "bytes": 15698,
+        "sha256": "0287b1a0652594c33334aa1ed704f8edf9b2b3bfb78140a584a6bcbf2010c945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-issues.json",
+        "bytes": 11566,
+        "sha256": "3c3faa972138cada1f9e3fb25889738103836bd0184991e5a801dea60740c769"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-meta.json",
+        "bytes": 6670,
+        "sha256": "13adcc6ddd5334ff21ffcecfb2aa3bd2567127e00f2010b1aed7080f98f213af"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-readme.txt",
+        "bytes": 10726,
+        "sha256": "5bda45c2389db01f2e7013e4ea53de0455a2fbd4586c7b3c3791561cf4264f49"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-license.txt",
+        "bytes": 1096,
+        "sha256": "db6cfa2ad2c44f73080440c866c4a3a078749d84ba40b4dfa27d50f18a525543"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-contents.json",
+        "bytes": 25768,
+        "sha256": "d427d847e0f420b117608fe48c5b4d21ca3d08db2f975b79887122de11bb5f07"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-commits.json",
+        "bytes": 24076,
+        "sha256": "29a8274a869d175f8d7442bcdb282c569800756e1c1cb644f5599cd2a8b4fb8b"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-rehan-remade--universal-modder-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-receipt.json",
+    "record": {
+      "repo": "sshah03/perspica",
+      "startedAt": "2026-10-02T09:13:37.082176+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:37.986542+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:38.894153+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:39.794260+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:40.766253+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:41.648089+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:42.554412+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T09:13:43.593930+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-meta.json",
+        "bytes": 5893,
+        "sha256": "e5efd77547ccbe8d4eef75903fe3a043544f8d62c4e3bf91cc7c12221ad077e8"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-license.json",
+        "bytes": 2469,
+        "sha256": "58c4695365cc17656849284fd383d5631f9f3ba74455b89c237c948617fe597f"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-releases.json",
+        "bytes": 46421,
+        "sha256": "031836107e6b5bfd340e249094ba26eed4463d07e2bad14ca8721c993e93f5df"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-contents.json",
+        "bytes": 7009,
+        "sha256": "789cb8e2ddfa33112de9c284c0a97e70eeebd3930d71292b5d3cc1ac9dcbe24b"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-commits.json",
+        "bytes": 19902,
+        "sha256": "73cd54d3c5d71c0ac431ccb01d70df10092f4a60700904df8ee971815ba5f844"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-issues.json",
+        "bytes": 10345,
+        "sha256": "538169683f353f8d66e3f470b0cc49e2a35e95dbbc2a157d4852943fbef5f489"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-readme.txt",
+        "bytes": 13123,
+        "sha256": "294da725b577c6e99230541abba17f9aba77cc1423f97888e9d857f24d6e4019"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-readme.json",
+        "bytes": 18909,
+        "sha256": "1dbc22909791430624d7e8251fc64a36e83d4341552faefd7192b1c8e42b18d5"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-sshah03--perspica-license.txt",
+        "bytes": 1078,
+        "sha256": "8670fbdc380aed98c6546b1389fa80178ba9a258c2de91e969df6ebd1ab994ef"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-receipt.json",
+    "record": {
+      "repo": "strands-labs/strands-decider",
+      "startedAt": "2026-10-02T08:41:34.547477+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:35.754740+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:36.798755+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:37.848063+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:38.769951+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:39.816426+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:40.898331+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:42.084214+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-issues.json",
+        "bytes": 46232,
+        "sha256": "fac709e1618144dc4e63b99c898cf627cca8f3e58ca06c77489c0d03b35dfce2"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-commits.json",
+        "bytes": 14027,
+        "sha256": "218e5785a9139caa3f3e6df0e9c4466b53c45f8591229aff06f6d5d1d52e7142"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-readme.json",
+        "bytes": 18787,
+        "sha256": "d692f2ea105f6bef5f8228acbd72142af90f774e2ee0963998d35973d59fdfe8"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-contents.json",
+        "bytes": 19197,
+        "sha256": "02aa4174200bb8e4b34dc375d883f07d142ae162fe8f391b85e435cf6efef965"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-license.txt",
+        "bytes": 11358,
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-meta.json",
+        "bytes": 8018,
+        "sha256": "c0cdf96f35883303d7b4e8a9a4839dadcf8d00f118c29bddd2dd278396b75585"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-readme.txt",
+        "bytes": 12975,
+        "sha256": "0a2d02eb9585dd5a4c90220b1f9470dafbef90de9e92334c4f79a0cb2cee0f88"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-strands-labs--strands-decider-license.json",
+        "bytes": 16744,
+        "sha256": "7665c84d71321a8511547fc47768c2683a6e6e01f72a13f1bdbb9c516d1b1a4c"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-receipt.json",
+    "record": {
+      "repo": "xikhar/spiderbench",
+      "startedAt": "2026-10-02T08:41:32.611169+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:33.519796+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:34.575076+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:35.601580+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:36.621523+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:37.516368+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:38.564378+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-02T08:41:39.616714+08:00"
+        }
+      }
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-license.txt",
+        "bytes": 1939,
+        "sha256": "065dd3e36f793d200314f258fd0b41931746d397a0cdf953fdff49b5984c2539"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-meta.json",
+        "bytes": 5703,
+        "sha256": "60e4e4bb9b40fa28a9f6cd2e51aef4eabf9a24189248640697fed26a877725ee"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-commits.json",
+        "bytes": 13257,
+        "sha256": "83478b6554cae6439cbf4f2816842447c15353b7a89052b9c853d02dffb075c0"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-issues.json",
+        "bytes": 25248,
+        "sha256": "04fbb2052c730d284d7c1db82e9a974dcef3e9aa2ef3a23fefba96f53d575703"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-readme.json",
+        "bytes": 3906,
+        "sha256": "a5552fb8b3cac0bec0b58ea164d960b60389a938bf90fb1c324e71a35676da6d"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-releases.json",
+        "bytes": 2,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-contents.json",
+        "bytes": 7398,
+        "sha256": "f90449e1ffcfea169569f2eff55a2fa9c907eb7d45594a573ff8158798065939"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-readme.txt",
+        "bytes": 2225,
+        "sha256": "377152f686bc54a9d33595271fecf937f8e3369162fede209c7632f6288448c9"
+      },
+      {
+        "path": ".frontiers/sources/2026-10-02/repo-xikhar--spiderbench-license.json",
+        "bytes": 3642,
+        "sha256": "0a308ea550b7f287732d53f3c212e8aef61de1e8bef72d7f66adeecd1c73d1ce"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/shopify-log.html-receipt.json",
+    "record": {
+      "url": "https://changelog.shopify.com/posts/design-a-fully-bespoke-store-with-canvas",
+      "startedAt": "2026-10-02T08:41:18.670868+08:00",
+      "checkedAt": "2026-10-02T08:41:20.407603+08:00",
+      "ok": true,
+      "chars": 36555
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/shopify-log.html",
+        "bytes": 36557,
+        "sha256": "73124ece431223950a20abbf8b83c125d50b7a2367c2103c21e0666db12af34f"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/shopify.html-receipt.json",
+    "record": {
+      "url": "https://www.shopify.com/news/introducing-canvas",
+      "startedAt": "2026-10-02T08:41:18.670207+08:00",
+      "checkedAt": "2026-10-02T08:41:21.266995+08:00",
+      "ok": true,
+      "chars": 266915
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/shopify.html",
+        "bytes": 267216,
+        "sha256": "86be06b66df4d7d7742351c4315e8f098d03805ccf7cf516303ba898b36ae571"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/shopping-reader-receipt.json",
+    "record": {
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "startedAt": "2026-10-02T08:42:50.411986+08:00",
+      "checkedAt": "2026-10-02T08:42:51.118250+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/shopping.html-receipt.json",
+    "record": {
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "startedAt": "2026-10-02T08:35:03.597284+08:00",
+      "checkedAt": "2026-10-02T08:35:04.839447+08:00",
+      "ok": false,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/show-hn-receipt.json",
+    "record": {
+      "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E1790294400&hitsPerPage=100",
+      "startedAt": "2026-10-02T08:33:11.746900+08:00",
+      "checkedAt": "2026-10-02T08:33:13.516428+08:00",
+      "ok": true,
+      "chars": 220917
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/show-hn.json",
+        "bytes": 220917,
+        "sha256": "9f4fa1b2685a70e3161f9f45273f243a36ffc537afab9c149280aab9bbe2ea25"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/strands-blog-receipt.json",
+    "record": {
+      "url": "https://strandsagents.com/blog/introducing-strands-decider-2b/",
+      "startedAt": "2026-10-02T08:41:18.671834+08:00",
+      "checkedAt": "2026-10-02T08:41:19.400422+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/strands-card.md-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19/raw/main/README.md",
+      "startedAt": "2026-10-02T08:53:02.496468+08:00",
+      "checkedAt": "2026-10-02T08:53:03.361478+08:00",
+      "ok": true,
+      "chars": 9841
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/strands-card.md",
+        "bytes": 9841,
+        "sha256": "e9bd6ec77988cf45a0b13ebf3193743bcf1c9a0bd34f43bed84a211c76025ecb"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/strands-meta-receipt.json",
+    "record": {
+      "url": "https://huggingface.co/api/models/StrandsAgents/strands-decider-2B-hobson-v19",
+      "startedAt": "2026-10-02T08:53:02.496755+08:00",
+      "checkedAt": "2026-10-02T08:53:03.395433+08:00",
+      "ok": true,
+      "chars": 17582
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/strands-meta.json",
+        "bytes": 17582,
+        "sha256": "7de92ab82af78befae1bba3de09ce73c5e33617a2b587e333d23c9ec1de14171"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/tavus.html-receipt.json",
+    "record": {
+      "url": "https://www.tavus.io/griffin",
+      "startedAt": "2026-10-02T08:35:03.596692+08:00",
+      "checkedAt": "2026-10-02T08:35:05.536196+08:00",
+      "ok": true,
+      "chars": 301117
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/tavus.html",
+        "bytes": 301422,
+        "sha256": "9d8d5953f27ea804bff79fd834f169f58a0337cb07a5efa55f011b5a011ce06b"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/techcrunch.html-receipt.json",
+    "record": {
+      "url": "https://techcrunch.com/category/artificial-intelligence/",
+      "startedAt": "2026-10-02T08:33:13.516621+08:00",
+      "checkedAt": "2026-10-02T08:33:14.925188+08:00",
+      "ok": true,
+      "chars": 301736
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/techcrunch.html",
+        "bytes": 301757,
+        "sha256": "c953a9c0dcffe753a1859fce60eabb91297e6b9bc476c3e4b8a88b31c328e8c6"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/tencent-retire-reader-receipt.json",
+    "record": {
+      "url": "https://cloud.tencent.cn/announce/detail/2405",
+      "startedAt": "2026-10-02T08:42:50.413688+08:00",
+      "checkedAt": "2026-10-02T08:42:51.352731+08:00",
+      "ok": false,
+      "error": "HTTP Error 401: Unauthorized"
+    },
+    "responseFiles": []
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/tencent.html-receipt.json",
+    "record": {
+      "url": "https://hunyuan.tencent.com/",
+      "startedAt": "2026-10-02T08:33:08.127647+08:00",
+      "checkedAt": "2026-10-02T08:33:08.511525+08:00",
+      "ok": true,
+      "chars": 6885
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/tencent.html",
+        "bytes": 6893,
+        "sha256": "da81976b12c1877c1780f896fe382ca12f11d91fc3dbc335ea40821efa656a3e"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/turbopuffer.html-receipt.json",
+    "record": {
+      "url": "https://turbopuffer.com/blog/rip-vector-database",
+      "startedAt": "2026-10-02T08:35:07.139176+08:00",
+      "checkedAt": "2026-10-02T08:35:08.914835+08:00",
+      "ok": true,
+      "chars": 178836
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/turbopuffer.html",
+        "bytes": 180939,
+        "sha256": "683c55d98d45554f6fbf945174ad9c50286925694f70c37cc9a2350fb74e67ee"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/v2ex-receipt.json",
+    "record": {
+      "url": "https://www.v2ex.com/api/topics/hot.json",
+      "startedAt": "2026-10-02T08:33:15.979016+08:00",
+      "checkedAt": "2026-10-02T08:33:17.001608+08:00",
+      "ok": true,
+      "chars": 64629
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/v2ex.json",
+        "bytes": 64629,
+        "sha256": "6f2e5df8c4e24447037d8b9d37e30535f552c2741f975b670e4e5f021da13149"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/xai.html-receipt.json",
+    "record": {
+      "url": "https://x.ai/news?category=all",
+      "startedAt": "2026-10-02T08:33:05.705566+08:00",
+      "checkedAt": "2026-10-02T08:33:07.943944+08:00",
+      "ok": true,
+      "chars": 274818
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/xai.html",
+        "bytes": 274909,
+        "sha256": "066c42400922986595c41f8e86b46cc92502010a48f4500b4503d22f4b7ef7a0"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/sources/2026-10-02/zhipu.html-receipt.json",
+    "record": {
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "startedAt": "2026-10-02T08:33:08.359757+08:00",
+      "checkedAt": "2026-10-02T08:33:08.841491+08:00",
+      "ok": true,
+      "chars": 825373
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/sources/2026-10-02/zhipu.html",
+        "bytes": 857881,
+        "sha256": "ae203eaf3c1f2a5cfa9f3433c5a97ade58d70ebd1031e43abf2e315501433672"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.34563/fetch-receipt.json",
+    "record": {
+      "id": "2609.34563",
+      "attemptedAt": "2026-10-02T08:39:32.881734+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.34563v1",
+          "bytes": 12767997
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.34563v1",
+          "bytes": 14686948
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.34563v1",
+          "bytes": 44557
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:40.430127+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.34563/paper.pdf",
+        "bytes": 14686948,
+        "sha256": "b2a0047da3dc72a54301e4706af075c392ce0a641bec3c6f4fa2cb25b1d564fb"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.34563/abstract.html",
+        "bytes": 44557,
+        "sha256": "34da7a89669fdb30995385cbb6714581dce20ba0a8d72e7ffb7fa40951819e56"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.34563/source.tar",
+        "bytes": 12767997,
+        "sha256": "57219feb28decbd3a2b9241ad7afa53ad8e2bad4785dc57ddb9c3a88af3fc705"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.36484/fetch-receipt.json",
+    "record": {
+      "id": "2609.36484",
+      "attemptedAt": "2026-10-02T08:39:32.882227+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.36484v1",
+          "bytes": 655897
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.36484v1",
+          "bytes": 1000408
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.36484v1",
+          "bytes": 45224
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:37.540335+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.36484/paper.pdf",
+        "bytes": 1000408,
+        "sha256": "efa18f8cfcced9b62fdfe27af68253bdb9f2f7ae11677883070287751cb05b9b"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.36484/abstract.html",
+        "bytes": 45224,
+        "sha256": "088b1801e4a84fbc9fd45cbfa7ec59ed862136bb4cfa71ab07bdf84953d2c3ca"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.36484/source.tar",
+        "bytes": 655897,
+        "sha256": "7b3408b5118613e16a5c86a9d7d240fd6e2fb16af65a336f197d12e15e1608af"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.38143/fetch-receipt.json",
+    "record": {
+      "id": "2609.38143",
+      "attemptedAt": "2026-10-02T08:39:37.670171+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38143v1",
+          "bytes": 1266845
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38143v1",
+          "bytes": 1444411
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38143v1",
+          "bytes": 41072
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:42.523873+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38143/paper.pdf",
+        "bytes": 1444411,
+        "sha256": "d65734122be476dfc6715c8b827847da8fbadc778c291276fffe1fc6656758bc"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38143/abstract.html",
+        "bytes": 41072,
+        "sha256": "2e570b7ed474d093ce575b417a07a7acd7f4432edf6de29d77192392b85226ea"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38143/source.tar",
+        "bytes": 1266845,
+        "sha256": "ee54c2398cdefc5127912c9e269e74106a36681c439b5f41daab4e6bb67e5fea"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.38721/fetch-receipt.json",
+    "record": {
+      "id": "2609.38721",
+      "attemptedAt": "2026-10-02T08:39:32.882480+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38721v1",
+          "bytes": 43286056
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38721v1",
+          "bytes": 43648691
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38721v1",
+          "bytes": 45391
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:43.076983+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38721/paper.pdf",
+        "bytes": 43648691,
+        "sha256": "fc817eb0b324f8c5e0691e73b8b43fef7b9358154e1e877aab332e648aac6063"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38721/abstract.html",
+        "bytes": 45391,
+        "sha256": "d1f1169f29874c43d56888da94915d8317b6484f4d2de485c910e6c5d1822821"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38721/source.tar",
+        "bytes": 43286056,
+        "sha256": "47e348d47c22d0e4f7376894a30537e320ee5a85245436a42d345fa0ba9e8fea"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.38827/fetch-receipt.json",
+    "record": {
+      "id": "2609.38827",
+      "attemptedAt": "2026-10-02T08:39:42.524281+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38827v1",
+          "bytes": 334871
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38827v1",
+          "bytes": 679890
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38827v1",
+          "bytes": 42316
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:47.444708+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38827/paper.pdf",
+        "bytes": 679890,
+        "sha256": "4b400dc8f13d906cf4381885b6752c76fe144f55b753af4d6f0d1febeef2bfb6"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38827/abstract.html",
+        "bytes": 42316,
+        "sha256": "8799a1b693cfdb18a12ffdff11cc4d43a816e0386637c1fcd93b128d17dc7d3e"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.38827/source.tar",
+        "bytes": 334871,
+        "sha256": "0a7ccd4905babcf099857cc1d911530266236c9db70225fe0079c5d6ac135b9e"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.39102/fetch-receipt.json",
+    "record": {
+      "id": "2609.39102",
+      "attemptedAt": "2026-10-02T08:39:32.882710+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39102v1",
+          "bytes": 1361521
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39102v1",
+          "bytes": 1273525
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39102v1",
+          "bytes": 45722
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:37.669876+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39102/paper.pdf",
+        "bytes": 1273525,
+        "sha256": "ca24774e06ccb40d84858e0dcb326bd545f4ee6abd0fd4bc833a659043a557dc"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39102/abstract.html",
+        "bytes": 45722,
+        "sha256": "e4aa99105bf2490b5bded90ad705d714f5af58d54a8405eeee44e61d5ddeca2d"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39102/source.tar",
+        "bytes": 1361521,
+        "sha256": "c81ec1533c0e9313a2c3a8e96e4b338d52f3cf46963b597752b8210c3da24e1f"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.39578/fetch-receipt.json",
+    "record": {
+      "id": "2609.39578",
+      "attemptedAt": "2026-10-02T08:39:40.430769+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39578v1",
+          "bytes": 16388928
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39578v1",
+          "bytes": 18087180
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39578v1",
+          "bytes": 41708
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:47.759767+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39578/paper.pdf",
+        "bytes": 18087180,
+        "sha256": "413b4e7893ffd3d1330f4869b8eef6936793e099f18b13bac65f5c1e76a8739f"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39578/abstract.html",
+        "bytes": 41708,
+        "sha256": "9e808953a450368f2398fb43424ec84ab9bff18f5ff96f968e80808d86ace681"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39578/source.tar",
+        "bytes": 16388928,
+        "sha256": "e6f6dd92f7ce0bec07042da47eae4f669deebefeec7aecf77b3a4e86fa33f8d1"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.39903/fetch-receipt.json",
+    "record": {
+      "id": "2609.39903",
+      "attemptedAt": "2026-10-02T08:39:44.121013+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39903v1",
+          "bytes": 26850992
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39903v1",
+          "bytes": 26003440
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39903v1",
+          "bytes": 48046
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:52.471468+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39903/paper.pdf",
+        "bytes": 26003440,
+        "sha256": "be0e50297587fd5f3e68dfa68fcc7891de7ea399245be8edc0dd29e31fa8acea"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39903/abstract.html",
+        "bytes": 48046,
+        "sha256": "139a5ab28dac81eaac1e8930e0ac134edce3546a930e1f373026ed1211253e3a"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39903/source.tar",
+        "bytes": 26850992,
+        "sha256": "f4d6a606afb1f8106133855b34737ff4d6bd2f47fc32abbfe93e78c977a0e235"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.39982/fetch-receipt.json",
+    "record": {
+      "id": "2609.39982",
+      "attemptedAt": "2026-10-02T08:39:32.882923+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39982v1",
+          "bytes": 513245
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39982v1",
+          "bytes": 1122603
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39982v1",
+          "bytes": 44306
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:37.651763+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39982/paper.pdf",
+        "bytes": 1122603,
+        "sha256": "c174dd6f59e47bb30d75df994c0b298466a9054c52fde3ca825a8f5eee255f1f"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39982/abstract.html",
+        "bytes": 44306,
+        "sha256": "25d9c93e2ca6c21bdeee508d677c799be00e8811a24ed634b76130e1c22e264c"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.39982/source.tar",
+        "bytes": 513245,
+        "sha256": "e80c64349fc2eeb0e9cef8ffb09ad4fb411bcbb81ff1657a5ca61bd2adbd8e19"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.40111/fetch-receipt.json",
+    "record": {
+      "id": "2609.40111",
+      "attemptedAt": "2026-10-02T08:39:43.077251+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.40111v1",
+          "bytes": 1457341
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.40111v1",
+          "bytes": 2115039
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.40111v1",
+          "bytes": 43602
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:49.324272+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40111/paper.pdf",
+        "bytes": 2115039,
+        "sha256": "318b7624e3b7f96791b645ef77a609f81823fa3a35ac3b769fc305667e53ce84"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40111/abstract.html",
+        "bytes": 43602,
+        "sha256": "c48f16f3e43ce0873c145393d8e6f9c2604cfb3e3f58446d03244b82a7471a44"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40111/source.tar",
+        "bytes": 1457341,
+        "sha256": "7471141a4bb2eaa3f5c97357bd8eadd8dfa41a99304783fe5ae148232fc27740"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.40325/fetch-receipt.json",
+    "record": {
+      "id": "2609.40325",
+      "attemptedAt": "2026-10-02T08:39:37.652242+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.40325v1",
+          "bytes": 48406142
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.40325v1",
+          "bytes": 49668700
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.40325v1",
+          "bytes": 43754
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:48.327639+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40325/paper.pdf",
+        "bytes": 49668700,
+        "sha256": "d9fdc657534201a7e1df44080ae52fb1c168b791b56581ebf2ddf35d0b087901"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40325/abstract.html",
+        "bytes": 43754,
+        "sha256": "e6270b0d6908b9ed7e64a256fbc978c2f4b1e31fc4ae08d09e99fb3652a07753"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40325/source.tar",
+        "bytes": 48406142,
+        "sha256": "b7a3ccaa4b98248446e0281f0aefd4a1638e6449d0314ae51852bfe757558c13"
+      }
+    ]
+  },
+  {
+    "cacheFile": ".frontiers/papers/2026-10-02/2609.40340/fetch-receipt.json",
+    "record": {
+      "id": "2609.40340",
+      "attemptedAt": "2026-10-02T08:39:37.541072+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.40340v1",
+          "bytes": 3758522
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.40340v1",
+          "bytes": 5357232
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.40340v1",
+          "bytes": 42543
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:44.120658+08:00"
+    },
+    "responseFiles": [
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40340/paper.pdf",
+        "bytes": 5357232,
+        "sha256": "4048c019f1f31e308076762e8c5cd598563839f154c163ef49216d3d9a118249"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40340/abstract.html",
+        "bytes": 42543,
+        "sha256": "fe22f2f841cb8b1fab537102cc2a23acd3924fa4bf5a8266d5ffbc2f84c4b8e0"
+      },
+      {
+        "path": ".frontiers/papers/2026-10-02/2609.40340/source.tar",
+        "bytes": 3758522,
+        "sha256": "435e970a64c582566b9682289da7332177ab0f86614ceea308fdd5b959e4d965"
+      }
+    ]
+  }
+]

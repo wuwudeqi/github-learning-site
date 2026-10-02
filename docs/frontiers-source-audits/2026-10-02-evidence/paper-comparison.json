@@ -1,0 +1,543 @@
+[
+  {
+    "arxiv": "2609.34563",
+    "title": "Rethinking Latent Visual Reasoning: Grounding Latent Reasoning in Visual Evidence",
+    "submittedDate": "2026/09/28",
+    "authors": [
+      "Xiao, Xi",
+      "Zhao, Tianchen",
+      "Kim, Youngeun",
+      "Li, Zhuowei",
+      "Xu, Linghan",
+      "Wu, Jiaye",
+      "Zhang, Zheng",
+      "Xu, Xiang",
+      "Chen, Xuanbai",
+      "Tejani, Farhan",
+      "Zablocki, Jakub",
+      "Xu, Julia",
+      "Xing, Yifan"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.34563v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线条件、图注和局限精读",
+    "reason": "在模型自己的潜在轨迹上分配监督，区分该看哪里与该保留什么。",
+    "receipt": {
+      "id": "2609.34563",
+      "attemptedAt": "2026-10-02T08:39:32.881734+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.34563v1",
+          "bytes": 12767997
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.34563v1",
+          "bytes": 14686948
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.34563v1",
+          "bytes": 44557
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:40.430127+08:00"
+    },
+    "pdfSha256": "b2a0047da3dc72a54301e4706af075c392ce0a641bec3c6f4fa2cb25b1d564fb"
+  },
+  {
+    "arxiv": "2609.36484",
+    "title": "The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Li, Hao",
+      "Chen, MeiJia",
+      "Ren, Weijie",
+      "Li, Donghan",
+      "Tian, Zijun",
+      "Huang, Jingchun",
+      "Wang, Naibo"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.36484v1",
+    "selected": false,
+    "reviewDepth": "摘要与原文方法/主要实验片段用于候选比较，不冒充与入选相同深度",
+    "reason": "RIDE利用RL教师的残差表示指导学生，比较四组base/RL模型、三种种子、Avg@16及OPD/top16/OPRD等；有机制证据。与训练主题比较后优先False Frontiers的反馈来源隔离，未以未选判断方法无效。",
+    "receipt": {
+      "id": "2609.36484",
+      "attemptedAt": "2026-10-02T08:39:32.882227+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.36484v1",
+          "bytes": 655897
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.36484v1",
+          "bytes": 1000408
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.36484v1",
+          "bytes": 45224
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:37.540335+08:00"
+    },
+    "pdfSha256": "efa18f8cfcced9b62fdfe27af68253bdb9f2f7ae11677883070287751cb05b9b"
+  },
+  {
+    "arxiv": "2609.38143",
+    "title": "Learning Meta-Skills for Agent Harness Design in Test-Time AI4AI",
+    "submittedDate": "2026/09/29",
+    "authors": [
+      "Qian, Cheng",
+      "Zhu, Kunlun",
+      "Li, Beibin",
+      "Wang, Zhenhailong",
+      "Ji, Heng"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.38143v1",
+    "selected": false,
+    "reviewDepth": "摘要与原文方法/主要实验片段用于候选比较，不冒充与入选相同深度",
+    "reason": "Meta-Skills固定Builder/Target权重，以开发任务迭代技能库后冻结；检查了HarnessBench的11/95与Newton32/292开发/测试分隔和跨模型结果。主题平衡优先每一步执行前筛选的Mid-Harness。",
+    "receipt": {
+      "id": "2609.38143",
+      "attemptedAt": "2026-10-02T08:39:37.670171+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38143v1",
+          "bytes": 1266845
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38143v1",
+          "bytes": 1444411
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38143v1",
+          "bytes": 41072
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:42.523873+08:00"
+    },
+    "pdfSha256": "d65734122be476dfc6715c8b827847da8fbadc778c291276fffe1fc6656758bc"
+  },
+  {
+    "arxiv": "2609.38721",
+    "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Wu, Fang",
+      "Xing, Da",
+      "Huang, Yanjie",
+      "Wang, Junxi",
+      "Wang, Ji",
+      "Geng, Hejia",
+      "Wan, Guancheng",
+      "Zuo, Bowen",
+      "Li, Xiaomin",
+      "Tang, Shixiang",
+      "Xiang, Xinyu",
+      "Wang, Zehong",
+      "Du, Shiyi",
+      "Xia, Peng",
+      "Zheng, Shuangjia",
+      "Hong, Yining",
+      "Li, Li Erran",
+      "Leskovec, Jure",
+      "Choi, Yejin"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.38721v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线条件、图注和局限精读",
+    "reason": "用修订提示作为教师条件，在学生自身轨迹上蒸馏纠错能力。",
+    "receipt": {
+      "id": "2609.38721",
+      "attemptedAt": "2026-10-02T08:39:32.882480+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38721v1",
+          "bytes": 43286056
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38721v1",
+          "bytes": 43648691
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38721v1",
+          "bytes": 45391
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:43.076983+08:00"
+    },
+    "pdfSha256": "fc817eb0b324f8c5e0691e73b8b43fef7b9358154e1e877aab332e648aac6063"
+  },
+  {
+    "arxiv": "2609.38827",
+    "title": "More Choices, Fewer Decisions: Ordinal-Scale Bias in JEV-like Direct-Decision Models",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Gao, Tianxiang",
+      "Li, Jinzhe",
+      "Li, Zhiyuan",
+      "Chang, Yi",
+      "Wu, Yuan"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.38827v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线条件、图注和局限精读",
+    "reason": "用候选空间利用率、分布差异和准确率联合审计直接决策模型。",
+    "receipt": {
+      "id": "2609.38827",
+      "attemptedAt": "2026-10-02T08:39:42.524281+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.38827v1",
+          "bytes": 334871
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.38827v1",
+          "bytes": 679890
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.38827v1",
+          "bytes": 42316
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:47.444708+08:00"
+    },
+    "pdfSha256": "4b400dc8f13d906cf4381885b6752c76fe144f55b753af4d6f0d1febeef2bfb6"
+  },
+  {
+    "arxiv": "2609.39102",
+    "title": "False Frontiers: Diagnosing and Mitigating Co-Cheating in Self-Evolving Search Agents",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Chen, Meijia",
+      "Li, Hao",
+      "Lu, Zheng",
+      "Lin, Hongshan",
+      "Tian, Junbai",
+      "Liu, Yichen",
+      "Tian, Zijun",
+      "Zou, Yufan",
+      "Sun, Shuhan",
+      "Chen, Hanxin",
+      "Zhang, Zeyu",
+      "Du, Weizhi",
+      "Li, Yueting",
+      "Shi, Tianyu",
+      "Khamis, Alaa"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.39102v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线条件、图注和局限精读",
+    "reason": "按来源交叉评分切断伪标签在自训练反馈中的直接回流。",
+    "receipt": {
+      "id": "2609.39102",
+      "attemptedAt": "2026-10-02T08:39:32.882710+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39102v1",
+          "bytes": 1361521
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39102v1",
+          "bytes": 1273525
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39102v1",
+          "bytes": 45722
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:37.669876+08:00"
+    },
+    "pdfSha256": "ca24774e06ccb40d84858e0dcb326bd545f4ee6abd0fd4bc833a659043a557dc"
+  },
+  {
+    "arxiv": "2609.39578",
+    "title": "Thinking Outside the Box: Can Language Models Rely on External Guidance Selectively?",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Wang, Minghan",
+      "Wang, Boyuan",
+      "Zuo, Jinhang",
+      "Tao, Yuxin",
+      "kong, Fang"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.39578v1",
+    "selected": false,
+    "reviewDepth": "摘要与原文方法/主要实验片段用于候选比较，不冒充与入选相同深度",
+    "reason": "Box²Bench对照好坏Agent框架并以反事实训练改善可迁移性；读到SFT/RL及记忆rollout条件。今日已有反馈、动作筛选主题，未再堆叠第三个相近框架选题。",
+    "receipt": {
+      "id": "2609.39578",
+      "attemptedAt": "2026-10-02T08:39:40.430769+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39578v1",
+          "bytes": 16388928
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39578v1",
+          "bytes": 18087180
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39578v1",
+          "bytes": 41708
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:47.759767+08:00"
+    },
+    "pdfSha256": "413b4e7893ffd3d1330f4869b8eef6936793e099f18b13bac65f5c1e76a8739f"
+  },
+  {
+    "arxiv": "2609.39903",
+    "title": "OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Dai, Dingyuan",
+      "Qi, Heli",
+      "Liu, Lei",
+      "Li, Yinxi",
+      "Chen, Baiding",
+      "Dou, Zijun",
+      "Zeng, Qingcheng",
+      "Kang, Qi",
+      "Sun, Oliver",
+      "Wang, Eric",
+      "Zhou, Bo",
+      "Wang, Haixin",
+      "Du, Yufan",
+      "Bo, Shi",
+      "Lin, Ruihan",
+      "Yuan, Mengqi",
+      "Lu, Dunjie",
+      "Dillmann, Steven",
+      "Shi, Yiming",
+      "Su, Tina",
+      "Xin, Amy",
+      "Liu, Minghao",
+      "Wang, Xi",
+      "Huang, Xu",
+      "Zhang, Ge",
+      "Nie, Pengyu",
+      "Yang, Zhen",
+      "Tang, Jie",
+      "Li, Juanzi",
+      "Xuan, Weihao",
+      "Liu, Tianyu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.39903v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线条件、图注和局限精读",
+    "reason": "以真实科学软件任务与输出产物评估计算机使用 Agent。",
+    "receipt": {
+      "id": "2609.39903",
+      "attemptedAt": "2026-10-02T08:39:44.121013+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39903v1",
+          "bytes": 26850992
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39903v1",
+          "bytes": 26003440
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39903v1",
+          "bytes": 48046
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:52.471468+08:00"
+    },
+    "pdfSha256": "be0e50297587fd5f3e68dfa68fcc7891de7ea399245be8edc0dd29e31fa8acea"
+  },
+  {
+    "arxiv": "2609.39982",
+    "title": "Mid-Harness: Scaling Actions Between Model and Harness for Terminal Agents",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Kang, Minki",
+      "Hachiuma, Ryo",
+      "Zhang, Shaokun",
+      "Radhakrishnan, Subhashree",
+      "Fu, Yonggan",
+      "Jiang, Jindong",
+      "Liu, Mingjie",
+      "Hosseini-Asl, Ehsan",
+      "Dong, Yi",
+      "Wang, Yu-Chiang Frank",
+      "Lee, Byung-Kwan"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.39982v1",
+    "selected": true,
+    "reviewDepth": "核心方法、结果、基线条件、图注和局限精读",
+    "reason": "在模型与执行器之间增加动作采样和验证，比较收益及额外成本。",
+    "receipt": {
+      "id": "2609.39982",
+      "attemptedAt": "2026-10-02T08:39:32.882923+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.39982v1",
+          "bytes": 513245
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.39982v1",
+          "bytes": 1122603
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.39982v1",
+          "bytes": 44306
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:37.651763+08:00"
+    },
+    "pdfSha256": "c174dd6f59e47bb30d75df994c0b298466a9054c52fde3ca825a8f5eee255f1f"
+  },
+  {
+    "arxiv": "2609.40111",
+    "title": "Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Zhu, Kunlun",
+      "Ye, Xuyan",
+      "Li, Yibo",
+      "Qian, Cheng",
+      "Li, Beibin",
+      "Ji, Heng"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.40111v1",
+    "selected": false,
+    "reviewDepth": "摘要与原文方法/主要实验片段用于候选比较，不冒充与入选相同深度",
+    "reason": "Agent Error Dataset覆盖50,228轨迹—反馈对、9,961任务、33环境；诊断用3,062可回放样本，修正是有条件干预，不是唯一真因。摘要与附录对已发布/将发布材料范围不同，未单独验证全部配套产物，保留候选。",
+    "receipt": {
+      "id": "2609.40111",
+      "attemptedAt": "2026-10-02T08:39:43.077251+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.40111v1",
+          "bytes": 1457341
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.40111v1",
+          "bytes": 2115039
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.40111v1",
+          "bytes": 43602
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:49.324272+08:00"
+    },
+    "pdfSha256": "318b7624e3b7f96791b645ef77a609f81823fa3a35ac3b769fc305667e53ce84"
+  },
+  {
+    "arxiv": "2609.40325",
+    "title": "WorldAuditBench: Interactive 3D World Auditing with Multimodal Agents",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Jiang, Ziyan",
+      "Yang, Jingbo",
+      "Ji, Jiabao",
+      "Liu, Yujian",
+      "Wu, Qiucheng",
+      "Jaakkola, Tommi",
+      "Zhang, Yang",
+      "Chang, Shiyu"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.40325v1",
+    "selected": false,
+    "reviewDepth": "摘要与原文方法/主要实验片段用于候选比较，不冒充与入选相同深度",
+    "reason": "WorldAuditBench有213任务、13世界和5异常族，固定预算对照下模型6.6—42.3与人类83.4；探索与指出异常对机器人有价值。本期选择科学软件实际产物评价以匹配读者任务。",
+    "receipt": {
+      "id": "2609.40325",
+      "attemptedAt": "2026-10-02T08:39:37.652242+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.40325v1",
+          "bytes": 48406142
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.40325v1",
+          "bytes": 49668700
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.40325v1",
+          "bytes": 43754
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:48.327639+08:00"
+    },
+    "pdfSha256": "d9fdc657534201a7e1df44080ae52fb1c168b791b56581ebf2ddf35d0b087901"
+  },
+  {
+    "arxiv": "2609.40340",
+    "title": "EvoDuet: Bilevel Co-Evolution of Web Searching and Task Solving for Scientific Discovery",
+    "submittedDate": "2026/09/30",
+    "authors": [
+      "Lee, Young-Jun",
+      "Baek, Jinheon",
+      "Jeong, Soyeong",
+      "Kang, Minki",
+      "Jwa, Seungyeon",
+      "Choi, Jonghyun",
+      "Han, Seungho",
+      "Kang, Dongyeop"
+    ],
+    "sourceUrl": "https://arxiv.org/abs/2609.40340v1",
+    "selected": false,
+    "reviewDepth": "摘要与原文方法/主要实验片段用于候选比较，不冒充与入选相同深度",
+    "reason": "EvoDuet两级策略学习何时、如何检索外部科研证据；检查31项优化任务及各模型增益不一致。与近期科学Agent主题比较，本期优先可逐步骤审计的OSWorld-Science，未把摘要的平均增益泛化到全部模型。",
+    "receipt": {
+      "id": "2609.40340",
+      "attemptedAt": "2026-10-02T08:39:37.541072+08:00",
+      "results": {
+        "source.tar": {
+          "ok": true,
+          "url": "https://arxiv.org/src/2609.40340v1",
+          "bytes": 3758522
+        },
+        "paper.pdf": {
+          "ok": true,
+          "url": "https://arxiv.org/pdf/2609.40340v1",
+          "bytes": 5357232
+        },
+        "abstract.html": {
+          "ok": true,
+          "url": "https://arxiv.org/abs/2609.40340v1",
+          "bytes": 42543
+        }
+      },
+      "checkedAt": "2026-10-02T08:39:44.120658+08:00"
+    },
+    "pdfSha256": "4048c019f1f31e308076762e8c5cd598563839f154c163ef49216d3d9a118249"
+  }
+]
