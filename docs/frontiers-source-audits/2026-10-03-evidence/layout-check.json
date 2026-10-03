@@ -1,0 +1,400 @@
+{
+  "checkedAt": "2026-10-03T02:03:39.103Z",
+  "passed": true,
+  "results": [
+    {
+      "size": "desktop",
+      "key": "overview",
+      "title": "10-03｜前沿日报 · 2026年10月3日 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "desktop",
+      "key": "news",
+      "title": "10-03｜15条动态：插件、可控图像与训练基础设施 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-flux-before.webp",
+          "alt": "官方 FLUX 3 输入图：雪林中橙色老虎面对发光蝴蝶",
+          "complete": true,
+          "naturalWidth": 1360,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-flux-after.webp",
+          "alt": "官方 FLUX 3 输出图：老虎与蝴蝶变为粉色，森林与木头布局保留",
+          "complete": true,
+          "naturalWidth": 1360,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-olmo.png",
+          "alt": "Olmo-core 原图展示固定四个活跃专家、扩大专家池时的吞吐，条件为八张 B300、BF16 与随机路由",
+          "complete": true,
+          "naturalWidth": 1134,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-elyza.png",
+          "alt": "ELYZA 阶段图比较人工、人在循环中、人在监督位置和闭环自动化，各研究方向处在不同阶段",
+          "complete": true,
+          "naturalWidth": 898,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "models",
+      "title": "10-03｜六项开放权重与部署边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/model-pixelumm.png",
+          "alt": "PixelUMM 左侧理解文字、右侧从噪声生成像素并共享注意力的结构图",
+          "complete": true,
+          "naturalWidth": 3032,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/model-tae.jpg",
+          "alt": "三行图像每行依次比较原图、TAE 预览和 LinearLatent2RGB 预览",
+          "complete": true,
+          "naturalWidth": 1152,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "papers",
+      "title": "10-03｜六篇论文：状态、搜索与证据 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-onestreamer.png",
+          "alt": "OneStreamer 将旧帧压缩成分层字幕记忆，同时保留最近帧并决定等待或回答",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-pos.png",
+          "alt": "PoS 用信念、目标缺口与 Sentinel 检查形成行动循环，并对停滞状态施加约束",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-hcdlm.png",
+          "alt": "HC-DLM 的连续隐状态反复更新，上方离散 token 为后续去噪提供条件",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-ptgs.png",
+          "alt": "PTGS 从成功失败记录估计难度，调整采样温度，再用强化学习结果更新统计",
+          "complete": true,
+          "naturalWidth": 4120,
+          "renderedWidth": 719.90625,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-agspec.png",
+          "alt": "AgSpec 从会话、工作区、全局日志检索草稿，由目标模型验证后输出",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-scholar.png",
+          "alt": "ScholarCatalyst 比较普通候选与注入正确候选后的重排序 Recall@5",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 719.96875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "projects",
+      "title": "10-03｜十个近期工具：从音轨到代理工作台 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-engrams.png",
+          "alt": "engrams 作者会话界面左侧产物、右侧执行环境终端",
+          "complete": true,
+          "naturalWidth": 2624,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-rawmakase.png",
+          "alt": "RAWmakase 显影界面中央照片、右侧曲线与颜色调整、底部缩略图",
+          "complete": true,
+          "naturalWidth": 1600,
+          "renderedWidth": 720,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-omnidiff.png",
+          "alt": "OmniDiff 两栏显示 Python 统计函数重构，突出表达式变化",
+          "complete": true,
+          "naturalWidth": 2094,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-papermono.jpg",
+          "alt": "作者 PaperMono 实物屏幕显示按货架分类的购物清单",
+          "complete": true,
+          "naturalWidth": 1000,
+          "renderedWidth": 719.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-rhun.png",
+          "alt": "rhun 编辑器上半部代码、下半部终端显示 Git 结果",
+          "complete": true,
+          "naturalWidth": 2560,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "desktop",
+      "key": "practice",
+      "title": "10-03｜CPU小实验：单次正确率与多次覆盖率 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/practice-passk.png",
+          "alt": "合成实验曲线：集中配置在一次尝试时略高，二次至六十四次均低于均衡配置",
+          "complete": true,
+          "naturalWidth": 1200,
+          "renderedWidth": 720,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "overview",
+      "title": "10-03｜前沿日报 · 2026年10月3日 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": []
+    },
+    {
+      "size": "mobile",
+      "key": "news",
+      "title": "10-03｜15条动态：插件、可控图像与训练基础设施 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-flux-before.webp",
+          "alt": "官方 FLUX 3 输入图：雪林中橙色老虎面对发光蝴蝶",
+          "complete": true,
+          "naturalWidth": 1360,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-flux-after.webp",
+          "alt": "官方 FLUX 3 输出图：老虎与蝴蝶变为粉色，森林与木头布局保留",
+          "complete": true,
+          "naturalWidth": 1360,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-olmo.png",
+          "alt": "Olmo-core 原图展示固定四个活跃专家、扩大专家池时的吞吐，条件为八张 B300、BF16 与随机路由",
+          "complete": true,
+          "naturalWidth": 1134,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/news-elyza.png",
+          "alt": "ELYZA 阶段图比较人工、人在循环中、人在监督位置和闭环自动化，各研究方向处在不同阶段",
+          "complete": true,
+          "naturalWidth": 898,
+          "renderedWidth": 343.953125,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "models",
+      "title": "10-03｜六项开放权重与部署边界 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/model-pixelumm.png",
+          "alt": "PixelUMM 左侧理解文字、右侧从噪声生成像素并共享注意力的结构图",
+          "complete": true,
+          "naturalWidth": 3032,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/model-tae.jpg",
+          "alt": "三行图像每行依次比较原图、TAE 预览和 LinearLatent2RGB 预览",
+          "complete": true,
+          "naturalWidth": 1152,
+          "renderedWidth": 344,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "papers",
+      "title": "10-03｜六篇论文：状态、搜索与证据 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-onestreamer.png",
+          "alt": "OneStreamer 将旧帧压缩成分层字幕记忆，同时保留最近帧并决定等待或回答",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-pos.png",
+          "alt": "PoS 用信念、目标缺口与 Sentinel 检查形成行动循环，并对停滞状态施加约束",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-hcdlm.png",
+          "alt": "HC-DLM 的连续隐状态反复更新，上方离散 token 为后续去噪提供条件",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.9375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-ptgs.png",
+          "alt": "PTGS 从成功失败记录估计难度，调整采样温度，再用强化学习结果更新统计",
+          "complete": true,
+          "naturalWidth": 4120,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-agspec.png",
+          "alt": "AgSpec 从会话、工作区、全局日志检索草稿，由目标模型验证后输出",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/paper-scholar.png",
+          "alt": "ScholarCatalyst 比较普通候选与注入正确候选后的重排序 Recall@5",
+          "complete": true,
+          "naturalWidth": 2000,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "projects",
+      "title": "10-03｜十个近期工具：从音轨到代理工作台 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-engrams.png",
+          "alt": "engrams 作者会话界面左侧产物、右侧执行环境终端",
+          "complete": true,
+          "naturalWidth": 2624,
+          "renderedWidth": 343.96875,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-rawmakase.png",
+          "alt": "RAWmakase 显影界面中央照片、右侧曲线与颜色调整、底部缩略图",
+          "complete": true,
+          "naturalWidth": 1600,
+          "renderedWidth": 344,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-omnidiff.png",
+          "alt": "OmniDiff 两栏显示 Python 统计函数重构，突出表达式变化",
+          "complete": true,
+          "naturalWidth": 2094,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-papermono.jpg",
+          "alt": "作者 PaperMono 实物屏幕显示按货架分类的购物清单",
+          "complete": true,
+          "naturalWidth": 1000,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        },
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/project-rhun.png",
+          "alt": "rhun 编辑器上半部代码、下半部终端显示 Git 结果",
+          "complete": true,
+          "naturalWidth": 2560,
+          "renderedWidth": 344,
+          "insideReader": true
+        }
+      ]
+    },
+    {
+      "size": "mobile",
+      "key": "practice",
+      "title": "10-03｜CPU小实验：单次正确率与多次覆盖率 · 资料夹",
+      "documentOverflow": false,
+      "readerOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:50454/github-learning-site/documents/frontiers/2026/10/2026-10-03/images/practice-passk.png",
+          "alt": "合成实验曲线：集中配置在一次尝试时略高，二次至六十四次均低于均衡配置",
+          "complete": true,
+          "naturalWidth": 1200,
+          "renderedWidth": 343.984375,
+          "insideReader": true
+        }
+      ]
+    }
+  ]
+}

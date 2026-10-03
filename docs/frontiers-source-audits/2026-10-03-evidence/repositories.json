@@ -1,0 +1,1248 @@
+[
+  {
+    "repositoryUrl": "https://github.com/EverMind-AI/Raven",
+    "canonicalName": "EverMind-AI/Raven",
+    "createdAtUTC": "2026-05-21T08:45:07Z",
+    "createdAtBeijing": "2026-05-21T16:45:07+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 5076,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.2.3",
+        "publishedAtUTC": "2026-09-27T04:05:17Z",
+        "publishedAtBeijing": "2026-09-27T12:05:17+08:00",
+        "url": "https://github.com/EverMind-AI/Raven/releases/tag/v0.2.3"
+      },
+      {
+        "tag": "tech-report-v1",
+        "publishedAtUTC": "2026-09-27T10:47:06Z",
+        "publishedAtBeijing": "2026-09-27T18:47:06+08:00",
+        "url": "https://github.com/EverMind-AI/Raven/releases/tag/tech-report-v1"
+      },
+      {
+        "tag": "v0.2.2",
+        "publishedAtUTC": "2026-09-25T12:02:59Z",
+        "publishedAtBeijing": "2026-09-25T20:02:59+08:00",
+        "url": "https://github.com/EverMind-AI/Raven/releases/tag/v0.2.2"
+      },
+      {
+        "tag": "v0.2.1",
+        "publishedAtUTC": "2026-09-24T14:25:14Z",
+        "publishedAtBeijing": "2026-09-24T22:25:14+08:00",
+        "url": "https://github.com/EverMind-AI/Raven/releases/tag/v0.2.1"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "23d9bbafc2d4378c125210b4dc059a7573400429",
+        "date": "2026-10-02T15:24:13Z",
+        "subject": "fix(rpc): stop browsers caching deliverable downloads (#838)"
+      },
+      {
+        "sha": "99248d99886b1e5008ff043a77418c06c48ab6a3",
+        "date": "2026-10-02T15:23:35Z",
+        "subject": "fix: warn when permission mode is full or the sandbox is off (#837)"
+      },
+      {
+        "sha": "e84152c52fe4a5a1b87f2e605f4d85afee2ff452",
+        "date": "2026-10-01T03:37:18Z",
+        "subject": "docs: link the technical report on arxiv and hugging face (#836)"
+      },
+      {
+        "sha": "342c52b76a33dac59e518b2fc77c1475cf59720f",
+        "date": "2026-09-30T12:59:35Z",
+        "subject": "feat(ui-web): move channels out of settings and beside agents under one rail row (#830)"
+      },
+      {
+        "sha": "22f161c98be2b3d14e78d4a0bf31c5061e98f44d",
+        "date": "2026-09-30T09:44:00Z",
+        "subject": "fix(*): let exec measure the files its command wrote (#829)"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:37.576543+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:34.815798+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/GitHubSecurityLab/gh-secure",
+    "canonicalName": "GitHubSecurityLab/gh-secure",
+    "createdAtUTC": "2026-06-30T19:16:57Z",
+    "createdAtBeijing": "2026-07-01T03:16:57+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 386,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.1.0",
+        "publishedAtUTC": "2026-09-16T21:02:39Z",
+        "publishedAtBeijing": "2026-09-17T05:02:39+08:00",
+        "url": "https://github.com/GitHubSecurityLab/gh-secure/releases/tag/v0.1.0"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "a04d1c144f5d1b63a8aa5cd7946e8ceafa709a2a",
+        "date": "2026-10-02T16:00:41Z",
+        "subject": "Merge pull request #18 from thedavidweng/fix-owner-equals-repo-name"
+      },
+      {
+        "sha": "e425c4e11bd9d20ef0cc246daf7514228fbf12b0",
+        "date": "2026-10-02T15:29:03Z",
+        "subject": "Apply suggestion from @xcorail"
+      },
+      {
+        "sha": "107248a394cf424bbf11576727af5e16e758c5e5",
+        "date": "2026-10-02T11:56:46Z",
+        "subject": "Update repository format validation condition"
+      },
+      {
+        "sha": "22de674fe10e37e16761631aa5533b94752239b6",
+        "date": "2026-10-01T22:27:45Z",
+        "subject": "fix: allow repositories where owner matches repo name (e.g. profile repos)"
+      },
+      {
+        "sha": "42c928f94b61caae03774d2436b897a1d04fff20",
+        "date": "2026-09-14T06:14:13Z",
+        "subject": "Merge pull request #14 from GitHubSecurityLab/header-agent"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:40:10.727312+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:40:07.978891+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/aliceisjustplaying/claude-paint",
+    "canonicalName": "aliceisjustplaying/claude-paint",
+    "createdAtUTC": "2026-09-22T23:43:33Z",
+    "createdAtBeijing": "2026-09-23T07:43:33+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 46,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "latestReleases": [],
+    "recentCommits": [
+      {
+        "sha": "1856f035d92a49eb985faf21405ffd94a5ad52b2",
+        "date": "2026-10-02T23:00:14Z",
+        "subject": "notes: a plan for edition 2 of the easel (the pipeline fix and a three-minute loop before a one-go rewrite; then tools, panel, watercolor on paper; the bench as the part that freezes), draft 1 for critique, with the read-only engine map it rests on (where the time goes, the three seams, the replay gate)"
+      },
+      {
+        "sha": "c4a558c9c8d1db968c59fe932a46b051e0353bb1",
+        "date": "2026-10-02T20:49:43Z",
+        "subject": "studio: fewer words, second pass. Under the painting, just the time of that look (it said 'The painting, as it looked at ...'); the journal pane has no 'thoughts & actions' heading; a paint chip says 'paints' for every painter (older painters' chips carried their chunk number as 'strokes #N', which was not a stroke count)"
+      },
+      {
+        "sha": "0bdafddc43fbcdb8154193fa6c36ea27c57c985b",
+        "date": "2026-10-02T20:45:56Z",
+        "subject": "studio: fewer words. The second picture is labeled with its name only (Close-up, Mirrored), plus two or three words where the picture could be misread (a squint is 'blurred on purpose', a value check 'in grays', a reference 'a painting by ...'); the sentence that explained it is the tooltip. The header says what the painter is doing ('thinking') without 'about the next step', 'after: <its last action>' and a running 'for 0:02'"
+      },
+      {
+        "sha": "d5a3cfe93d915d7ac66ce68bd2433383c1ea77e5",
+        "date": "2026-10-02T20:34:28Z",
+        "subject": "studio: the painting's own clock shows one figure, the time passed (\"9 days 7 h\"), as the real clock beside it does. The easel's reading (\"day 10, 16:41\") next to it said the same thing twice and looked off by one (day 10 is nine days in); it is in the tooltip now"
+      },
+      {
+        "sha": "d9f5c89ff2f1070706b4526f65add8e52af784f2",
+        "date": "2026-10-02T20:26:28Z",
+        "subject": "studio: the painting's own clock in the header, beside the real time spent painting: the easel's time of day as the painter last read it (\"day 7, 11:18\", from the chunks that print it; wait() returns it) and how far in that is, in minutes up to years (a painter lets days or months pass for paint to dry). Scrubbed back, it is the clock at that point. On a phone, just the day and time under the real clock; nothing shows for a painter that never printed it"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:40:10.092437+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:40:07.782289+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/anteloc/ldraw-nova",
+    "canonicalName": "anteloc/ldraw-nova",
+    "createdAtUTC": "2026-09-23T18:08:25Z",
+    "createdAtBeijing": "2026-09-24T02:08:25+08:00",
+    "archived": false,
+    "defaultBranch": "master",
+    "observedTotalStars": 62,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    },
+    "latestReleases": [],
+    "recentCommits": [
+      {
+        "sha": "c4ba6c4913e0975ee7e34e647c26129137657d5e",
+        "date": "2026-10-02T18:12:44Z",
+        "subject": "README slight improvements"
+      },
+      {
+        "sha": "eae03e02fdaf88eb4dd9c23458e66ba49eb97210",
+        "date": "2026-10-02T17:10:21Z",
+        "subject": "README ready for first release"
+      },
+      {
+        "sha": "9c7449d3290d0183c85efac964f44b8d730fe3d7",
+        "date": "2026-10-02T15:49:13Z",
+        "subject": "WIP README added Why section"
+      },
+      {
+        "sha": "8179bb4e04427addc8ba3cf4892278cef0e76517",
+        "date": "2026-10-02T15:05:47Z",
+        "subject": "WIP README final structure"
+      },
+      {
+        "sha": "5e0447f893e20f1b41c0c366e51d89a662c0415b",
+        "date": "2026-10-02T13:47:15Z",
+        "subject": "Started README rework"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:26.664030+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:24.191768+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/bertaye/agentic-cuda-optimizer",
+    "canonicalName": "bertaye/agentic-cuda-optimizer",
+    "createdAtUTC": "2026-09-24T19:43:15Z",
+    "createdAtBeijing": "2026-09-25T03:43:15+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 35,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": null,
+    "latestReleases": [],
+    "recentCommits": [
+      {
+        "sha": "1e9464da54dfc651337a97c3643bfeefec712bc1",
+        "date": "2026-09-24T19:41:43Z",
+        "subject": "Initial commit, v0.0"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:40.074770+08:00",
+    "licenseResponse": {
+      "ok": false,
+      "checkedAt": "2026-10-03T08:38:38.025714+08:00",
+      "error": "gh: Not Found (HTTP 404)\n"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/ciromattia/kcc",
+    "canonicalName": "ciromattia/kcc",
+    "createdAtUTC": "2012-11-30T11:50:29Z",
+    "createdAtBeijing": "2012-11-30T19:50:29+08:00",
+    "archived": false,
+    "defaultBranch": "master",
+    "observedTotalStars": 5764,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "isc",
+      "name": "ISC License",
+      "spdx_id": "ISC",
+      "url": "https://api.github.com/licenses/isc",
+      "node_id": "MDc6TGljZW5zZTEw"
+    },
+    "latestReleases": [
+      {
+        "tag": "v12.0.0",
+        "publishedAtUTC": "2026-09-26T00:32:32Z",
+        "publishedAtBeijing": "2026-09-26T08:32:32+08:00",
+        "url": "https://github.com/ciromattia/kcc/releases/tag/v12.0.0"
+      },
+      {
+        "tag": "v11.3.2",
+        "publishedAtUTC": "2026-09-17T01:16:42Z",
+        "publishedAtBeijing": "2026-09-17T09:16:42+08:00",
+        "url": "https://github.com/ciromattia/kcc/releases/tag/v11.3.2"
+      },
+      {
+        "tag": "v11.3.1",
+        "publishedAtUTC": "2026-09-16T01:59:56Z",
+        "publishedAtBeijing": "2026-09-16T09:59:56+08:00",
+        "url": "https://github.com/ciromattia/kcc/releases/tag/v11.3.1"
+      },
+      {
+        "tag": "v11.3.0",
+        "publishedAtUTC": "2026-09-16T01:37:56Z",
+        "publishedAtBeijing": "2026-09-16T09:37:56+08:00",
+        "url": "https://github.com/ciromattia/kcc/releases/tag/v11.3.0"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "55342bd4f90dfdeb065fa8d5a6f4935ffd2da69f",
+        "date": "2026-09-30T00:50:10Z",
+        "subject": "update ignore"
+      },
+      {
+        "sha": "b4b53c4a43a541044ff20aabcd0ddf978b38a699",
+        "date": "2026-09-28T15:35:44Z",
+        "subject": "Update README.md"
+      },
+      {
+        "sha": "bc936b89913eb08488d5c8566556647a555fd706",
+        "date": "2026-09-28T15:30:02Z",
+        "subject": "Update README.md"
+      },
+      {
+        "sha": "b17633bd0e8c4deabbd0e338eb464e72a7aa8333",
+        "date": "2026-09-28T05:17:28Z",
+        "subject": "update macOS compatibility"
+      },
+      {
+        "sha": "f127adbca992456e173d88ada18643eae66802fb",
+        "date": "2026-09-26T00:17:25Z",
+        "subject": "bump to 12.0.0"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:36.998696+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:34.117264+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/cortexapps/engrams",
+    "canonicalName": "cortexapps/engrams",
+    "createdAtUTC": "2026-04-27T23:32:01Z",
+    "createdAtBeijing": "2026-04-28T07:32:01+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 39,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.10.0",
+        "publishedAtUTC": "2026-10-01T16:33:16Z",
+        "publishedAtBeijing": "2026-10-02T00:33:16+08:00",
+        "url": "https://github.com/cortexapps/engrams/releases/tag/v0.10.0"
+      },
+      {
+        "tag": "fc-kernel-6.1.102-2",
+        "publishedAtUTC": "2026-07-17T21:38:59Z",
+        "publishedAtBeijing": "2026-07-18T05:38:59+08:00",
+        "url": "https://github.com/cortexapps/engrams/releases/tag/fc-kernel-6.1.102-2"
+      },
+      {
+        "tag": "fc-kernel-6.1.102-1",
+        "publishedAtUTC": "2026-06-01T15:06:29Z",
+        "publishedAtBeijing": "2026-06-01T23:06:29+08:00",
+        "url": "https://github.com/cortexapps/engrams/releases/tag/fc-kernel-6.1.102-1"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "89e04eca259b52dcc200702fb27f960f02748437",
+        "date": "2026-10-01T18:38:31Z",
+        "subject": "feat(site): the Google Tag Manager container on every page (#1567)"
+      },
+      {
+        "sha": "4c311e70457fe7ee2573bf7b72b9eaaeb0217cc8",
+        "date": "2026-10-01T16:05:03Z",
+        "subject": "feat(release): a release workflow, version 0.10.0, and an upgrade guide (#1565)"
+      },
+      {
+        "sha": "84be64c04777ff3fbaea71332a61ea0f1db97352",
+        "date": "2026-10-01T16:00:23Z",
+        "subject": "fix(dbos): one executor per pod; the sweep re-enqueues what a gone pod left (#1566)"
+      },
+      {
+        "sha": "ec2ad4ca2c9a9e204930f9ed663edf13b9dcad58",
+        "date": "2026-10-01T15:28:53Z",
+        "subject": "feat(slack): channel names by id, a searchable override picker, and the full channel walk (#1564)"
+      },
+      {
+        "sha": "10bed6697176949588b731cd0b1a42d357d9ba62",
+        "date": "2026-10-01T15:09:32Z",
+        "subject": "fix(slack): a resumed thread answers in the thread, silently, with only what is new (#1563)"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:27.617037+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:24.554377+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/deepseek-ai/deepseek-harness",
+    "canonicalName": "deepseek-ai/deepseek-harness",
+    "createdAtUTC": "2026-08-13T11:56:32Z",
+    "createdAtBeijing": "2026-08-13T19:56:32+08:00",
+    "archived": false,
+    "defaultBranch": "master",
+    "observedTotalStars": 242359,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "latestReleases": [
+      {
+        "tag": "dsh-v0.2.0-rc.2",
+        "publishedAtUTC": "2026-09-29T09:42:36Z",
+        "publishedAtBeijing": "2026-09-29T17:42:36+08:00",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.0-rc.2"
+      },
+      {
+        "tag": "dsh-v0.2.0-rc.1",
+        "publishedAtUTC": "2026-09-28T12:36:21Z",
+        "publishedAtBeijing": "2026-09-28T20:36:21+08:00",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.2.0-rc.1"
+      },
+      {
+        "tag": "dsh-v0.1.7-rc.2",
+        "publishedAtUTC": "2026-09-24T14:10:21Z",
+        "publishedAtBeijing": "2026-09-24T22:10:21+08:00",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.7-rc.2"
+      },
+      {
+        "tag": "dsh-v0.1.7-rc.1",
+        "publishedAtUTC": "2026-09-23T13:30:24Z",
+        "publishedAtBeijing": "2026-09-23T21:30:24+08:00",
+        "url": "https://github.com/deepseek-ai/deepseek-harness/releases/tag/dsh-v0.1.7-rc.1"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "da00f7f5358f2949383b35c14f548bc20187d80c",
+        "date": "2026-10-02T23:44:05Z",
+        "subject": "Merge pull request #5623 from deepseek-harness/feat/experimental-claude-code-mods-20261002"
+      },
+      {
+        "sha": "44d678e279170ef76a891ea1470de48bf80ed831",
+        "date": "2026-10-02T22:33:11Z",
+        "subject": "fix(docs): map example plugin aliases to themselves in doc-typecheck"
+      },
+      {
+        "sha": "536bb5840f4d8e4660d3cbfc648322121089b257",
+        "date": "2026-10-02T22:13:21Z",
+        "subject": "test(experimental): serve the claude-code test-kit names from the Vitest config"
+      },
+      {
+        "sha": "a161070a76f81a498ebe92571857bdf43eb2271b",
+        "date": "2026-10-02T22:03:30Z",
+        "subject": "test(experimental): run the example mod tests through a spec the coverage lane inventories"
+      },
+      {
+        "sha": "56f2f4866905f8055c50f9df437cd6eb048e4d7b",
+        "date": "2026-10-02T21:47:53Z",
+        "subject": "fix(experimental): hairline band borders and one engine-event list"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:40:10.196275+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:40:07.785853+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/enkiruntime/enki",
+    "canonicalName": "enkiruntime/enki",
+    "createdAtUTC": "2026-09-22T00:43:02Z",
+    "createdAtBeijing": "2026-09-22T08:43:02+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 5,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.1.0",
+        "publishedAtUTC": "2026-09-22T00:54:58Z",
+        "publishedAtBeijing": "2026-09-22T08:54:58+08:00",
+        "url": "https://github.com/enkiruntime/enki/releases/tag/v0.1.0"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "4df23fe4a645351c49825c81acfd6185359020ca",
+        "date": "2026-10-02T01:34:29Z",
+        "subject": "Initial commit: Enki v0.2.0 (Public Alpha)"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:26.663915+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:24.187879+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/graphene-data/graphene",
+    "canonicalName": "graphene-data/graphene",
+    "createdAtUTC": "2025-08-02T21:14:49Z",
+    "createdAtBeijing": "2025-08-03T05:14:49+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 100,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": null,
+    "latestReleases": [
+      {
+        "tag": "v0.0.30",
+        "publishedAtUTC": "2026-09-28T17:01:18Z",
+        "publishedAtBeijing": "2026-09-29T01:01:18+08:00",
+        "url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.30"
+      },
+      {
+        "tag": "v0.0.29",
+        "publishedAtUTC": "2026-09-01T20:59:36Z",
+        "publishedAtBeijing": "2026-09-02T04:59:36+08:00",
+        "url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.29"
+      },
+      {
+        "tag": "v0.0.28",
+        "publishedAtUTC": "2026-08-27T16:31:22Z",
+        "publishedAtBeijing": "2026-08-28T00:31:22+08:00",
+        "url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.28"
+      },
+      {
+        "tag": "v0.0.27",
+        "publishedAtUTC": "2026-08-19T17:38:55Z",
+        "publishedAtBeijing": "2026-08-20T01:38:55+08:00",
+        "url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.27"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "0436f40733446d930efa5a9b0e88609cee075a8d",
+        "date": "2026-10-01T21:13:27Z",
+        "subject": "Deprecate create-graphene in favor of agent-led setup"
+      },
+      {
+        "sha": "d2d8c0c82a8f5b801d80e55c3eee6be817fa2e8d",
+        "date": "2026-09-30T15:53:42Z",
+        "subject": "Add <Alert> component for threshold alerts on charts, tables, and BigValue"
+      },
+      {
+        "sha": "55c8d5cac6169d5ac1542ef64f17a5cc5d8d8889",
+        "date": "2026-09-29T02:07:51Z",
+        "subject": "Rerun queries when params change during an in-flight request"
+      },
+      {
+        "sha": "2e9911326f0a0902351f89c146cc56c032ce4bbb",
+        "date": "2026-09-28T17:00:04Z",
+        "subject": "[release] v0.0.30"
+      },
+      {
+        "sha": "a02debda1d022fca3da790513323b1bd76b1e7db",
+        "date": "2026-09-28T14:55:24Z",
+        "subject": "Stabilize flights example font CSS in browser tests"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:27.172817+08:00",
+    "licenseResponse": {
+      "ok": false,
+      "checkedAt": "2026-10-03T08:38:24.186106+08:00",
+      "error": "gh: Not Found (HTTP 404)\n"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/ironbee-ai/ironbee-express",
+    "canonicalName": "ironbee-ai/ironbee-express",
+    "createdAtUTC": "2026-09-24T09:59:58Z",
+    "createdAtBeijing": "2026-09-24T17:59:58+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 10,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "latestReleases": [],
+    "recentCommits": [
+      {
+        "sha": "05079b44d09d76ff35dfb550716fb2c29875c5f2",
+        "date": "2026-09-29T11:18:06Z",
+        "subject": "feat: step decisions read the latest 30 actions; new e-shop examples; README banner, demo GIF and platform waitlist"
+      },
+      {
+        "sha": "b2c4fbe8eb9fa3ed99ec4fc918a6f73e07f28b99",
+        "date": "2026-09-28T19:10:43Z",
+        "subject": "docs: make the README a quick, clear path from clone to a first run"
+      },
+      {
+        "sha": "ac822316b265839f1d37cc4f8001a6136fd7887b",
+        "date": "2026-09-28T18:43:32Z",
+        "subject": "feat(scenario): re-identify a changed control with one engine question; wait while a page loads"
+      },
+      {
+        "sha": "98b24e23448d7837bea02bf56d5387316bbcfdad",
+        "date": "2026-09-28T15:25:45Z",
+        "subject": "Readme updated (#1)"
+      },
+      {
+        "sha": "51ba4c942909a52a9ecfbb8680bf63d2c6b5c68f",
+        "date": "2026-09-27T18:32:57Z",
+        "subject": "feat: IronBee Express — a fast, goal-driven browser agent"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:31.861725+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:29.269401+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/ivankovic/omnidiff",
+    "canonicalName": "ivankovic/omnidiff",
+    "createdAtUTC": "2025-10-17T11:25:02Z",
+    "createdAtBeijing": "2025-10-17T19:25:02+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 45,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.2.0",
+        "publishedAtUTC": "2026-10-01T20:18:23Z",
+        "publishedAtBeijing": "2026-10-02T04:18:23+08:00",
+        "url": "https://github.com/ivankovic/omnidiff/releases/tag/v0.2.0"
+      },
+      {
+        "tag": "v0.1.1",
+        "publishedAtUTC": "2026-09-27T10:13:00Z",
+        "publishedAtBeijing": "2026-09-27T18:13:00+08:00",
+        "url": "https://github.com/ivankovic/omnidiff/releases/tag/v0.1.1"
+      },
+      {
+        "tag": "v0.1.0",
+        "publishedAtUTC": "2026-09-25T16:32:37Z",
+        "publishedAtBeijing": "2026-09-26T00:32:37+08:00",
+        "url": "https://github.com/ivankovic/omnidiff/releases/tag/v0.1.0"
+      },
+      {
+        "tag": "v0.0.14",
+        "publishedAtUTC": "2026-09-18T11:00:00Z",
+        "publishedAtBeijing": "2026-09-18T19:00:00+08:00",
+        "url": "https://github.com/ivankovic/omnidiff/releases/tag/v0.0.14"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "4d79b9939177c9a1558a6d085a54fa05f6f6a211",
+        "date": "2026-10-02T16:53:24Z",
+        "subject": "Merge pull request #33 from ivankovic/image-diffs"
+      },
+      {
+        "sha": "9048079146dd1030a8c4ef8c5c40d51656b69ed8",
+        "date": "2026-10-02T16:44:16Z",
+        "subject": "Raise the MSRV to 1.90 for the picture view's graphics library"
+      },
+      {
+        "sha": "8ee9af6c904ff0765934f3d0cffeaade34280973",
+        "date": "2026-10-02T16:22:52Z",
+        "subject": "Pictures reach kitty compressed; the swipe divider is pink"
+      },
+      {
+        "sha": "3166fd82a77e0bb6b508fcca2a7423cd67aa2024",
+        "date": "2026-10-02T16:06:46Z",
+        "subject": "human_solver: `o` works in the picture session and lists picture fixtures"
+      },
+      {
+        "sha": "f7f209dd43420d6a64cfd6b355d0024d01d892dc",
+        "date": "2026-10-02T16:06:46Z",
+        "subject": "A kitty-protocol picture keeps its image id in a 256-color terminal"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:36.076523+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:31.305144+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/kitao/pyxel",
+    "canonicalName": "kitao/pyxel",
+    "createdAtUTC": "2018-06-10T04:58:54Z",
+    "createdAtBeijing": "2018-06-10T12:58:54+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 18343,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "latestReleases": [
+      {
+        "tag": "v2.9.9",
+        "publishedAtUTC": "2026-08-12T07:50:51Z",
+        "publishedAtBeijing": "2026-08-12T15:50:51+08:00",
+        "url": "https://github.com/kitao/pyxel/releases/tag/v2.9.9"
+      },
+      {
+        "tag": "v2.9.8",
+        "publishedAtUTC": "2026-07-14T14:37:56Z",
+        "publishedAtBeijing": "2026-07-14T22:37:56+08:00",
+        "url": "https://github.com/kitao/pyxel/releases/tag/v2.9.8"
+      },
+      {
+        "tag": "v2.9.7",
+        "publishedAtUTC": "2026-07-05T15:19:29Z",
+        "publishedAtBeijing": "2026-07-05T23:19:29+08:00",
+        "url": "https://github.com/kitao/pyxel/releases/tag/v2.9.7"
+      },
+      {
+        "tag": "v2.9.6",
+        "publishedAtUTC": "2026-06-13T11:50:17Z",
+        "publishedAtBeijing": "2026-06-13T19:50:17+08:00",
+        "url": "https://github.com/kitao/pyxel/releases/tag/v2.9.6"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "50f9bd77780c993aca62b5b221766bde5791081d",
+        "date": "2026-08-12T07:31:07Z",
+        "subject": "Update wasm wheel to pyxel 2.9.9"
+      },
+      {
+        "sha": "adeffa24199603a2791d6cda400ed40021809331",
+        "date": "2026-08-12T04:41:12Z",
+        "subject": "Align code and generated docs with ruff 0.16 defaults"
+      },
+      {
+        "sha": "fa7ad0cde36d9f396571a05452deb6b37244b509",
+        "date": "2026-08-12T04:41:00Z",
+        "subject": "Update Rust, Pyodide, and crate dependencies"
+      },
+      {
+        "sha": "bd7d5d919a14cfc4d9ee54ddc00075fc86a31fbf",
+        "date": "2026-08-12T02:34:06Z",
+        "subject": "Update 2.9.9 changelog"
+      },
+      {
+        "sha": "4efcfee7f51c95ffdbf8cf03b8f8ec7b43b45dbd",
+        "date": "2026-08-12T02:32:50Z",
+        "subject": "Release version 2.9.9"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:36.708395+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:34.036445+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/kvoltmer/Audionaut",
+    "canonicalName": "kvoltmer/Audionaut",
+    "createdAtUTC": "2023-01-27T10:05:20Z",
+    "createdAtBeijing": "2023-01-27T18:05:20+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 146,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "latestReleases": [
+      {
+        "tag": "v1.6.4",
+        "publishedAtUTC": "2026-10-01T20:55:47Z",
+        "publishedAtBeijing": "2026-10-02T04:55:47+08:00",
+        "url": "https://github.com/kvoltmer/Audionaut/releases/tag/v1.6.4"
+      },
+      {
+        "tag": "v1.6.3",
+        "publishedAtUTC": "2026-09-29T14:18:11Z",
+        "publishedAtBeijing": "2026-09-29T22:18:11+08:00",
+        "url": "https://github.com/kvoltmer/Audionaut/releases/tag/v1.6.3"
+      },
+      {
+        "tag": "v1.6.2",
+        "publishedAtUTC": "2026-09-28T20:56:32Z",
+        "publishedAtBeijing": "2026-09-29T04:56:32+08:00",
+        "url": "https://github.com/kvoltmer/Audionaut/releases/tag/v1.6.2"
+      },
+      {
+        "tag": "v1.6.1",
+        "publishedAtUTC": "2026-09-25T12:38:29Z",
+        "publishedAtBeijing": "2026-09-25T20:38:29+08:00",
+        "url": "https://github.com/kvoltmer/Audionaut/releases/tag/v1.6.1"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "359b57fc6df635cc66cd50f1c7b4ece7f2dd7731",
+        "date": "2026-10-02T16:17:06Z",
+        "subject": "Merge pull request #171 from kvoltmer/develop"
+      },
+      {
+        "sha": "f3d8881ed6fff0c20495c53239dd091b6ad75088",
+        "date": "2026-10-02T16:16:44Z",
+        "subject": "Merge pull request #169 from kvoltmer/docs/features-list"
+      },
+      {
+        "sha": "7a04b5c9c158e931c88842c42825f02676aa7e95",
+        "date": "2026-10-02T15:24:35Z",
+        "subject": "Add a one-page feature list, linked from the README"
+      },
+      {
+        "sha": "0943a1fe7f0915866fc725ad011a71ea17583da2",
+        "date": "2026-10-01T19:49:57Z",
+        "subject": "Merge pull request #168 from kvoltmer/develop"
+      },
+      {
+        "sha": "6cc19ff47fae5ad18d88b1be7bd003c8ee52b2bd",
+        "date": "2026-10-01T18:57:31Z",
+        "subject": "Bump version to 1.6.4 (build 26), audionaut-mcp to 0.3.0"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:27.261218+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:24.561210+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/openJiuwen-ai/model-router",
+    "canonicalName": "openJiuwen-ai/model-router",
+    "createdAtUTC": "2026-09-24T08:21:49Z",
+    "createdAtBeijing": "2026-09-24T16:21:49+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 10,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "latestReleases": [],
+    "recentCommits": [
+      {
+        "sha": "dd68ef0ad283efcd8de9f6585a5ed13187a3ffd2",
+        "date": "2026-09-24T07:43:08Z",
+        "subject": "!7 merge main into main"
+      },
+      {
+        "sha": "af6f627a31cedb6f8b71a283ac840c535ae65d51",
+        "date": "2026-09-24T06:36:06Z",
+        "subject": "fix: stage router clean code"
+      },
+      {
+        "sha": "851030e9a9cce803efb52d3250acf21a9428f5c4",
+        "date": "2026-09-24T04:51:29Z",
+        "subject": "!6 merge fix/py-extension-build-script into main"
+      },
+      {
+        "sha": "f811460d6f40390375ad4170ee6903c35adf592c",
+        "date": "2026-09-24T04:10:09Z",
+        "subject": "fix: rewrite the extension build script without copying the PyO3 sample"
+      },
+      {
+        "sha": "d5b350c9f85064bfdfccbc3e6868338dfac970f9",
+        "date": "2026-09-24T04:02:29Z",
+        "subject": "!5 merge fix/nan-check-math-isnan into main"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:40:10.726894+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:40:08.222634+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/pch/rawmakase",
+    "canonicalName": "pch/rawmakase",
+    "createdAtUTC": "2026-09-26T13:44:32Z",
+    "createdAtBeijing": "2026-09-26T21:44:32+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 212,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.1.12",
+        "publishedAtUTC": "2026-10-02T18:06:27Z",
+        "publishedAtBeijing": "2026-10-03T02:06:27+08:00",
+        "url": "https://github.com/pch/rawmakase/releases/tag/v0.1.12"
+      },
+      {
+        "tag": "v0.1.11",
+        "publishedAtUTC": "2026-10-01T17:00:09Z",
+        "publishedAtBeijing": "2026-10-02T01:00:09+08:00",
+        "url": "https://github.com/pch/rawmakase/releases/tag/v0.1.11"
+      },
+      {
+        "tag": "v0.1.10",
+        "publishedAtUTC": "2026-09-30T16:16:11Z",
+        "publishedAtBeijing": "2026-10-01T00:16:11+08:00",
+        "url": "https://github.com/pch/rawmakase/releases/tag/v0.1.10"
+      },
+      {
+        "tag": "v0.1.9",
+        "publishedAtUTC": "2026-09-29T15:48:11Z",
+        "publishedAtBeijing": "2026-09-29T23:48:11+08:00",
+        "url": "https://github.com/pch/rawmakase/releases/tag/v0.1.9"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "528a2bbbc936c7483c8ade310c5742e8406cc240",
+        "date": "2026-10-02T20:14:05Z",
+        "subject": "Merge pull request #70 from lukewalker2010/render-matrix-only-dngs-in-color"
+      },
+      {
+        "sha": "a00cec4eb1cc90033e1cc2c4070bc8574ae75234",
+        "date": "2026-10-02T20:13:55Z",
+        "subject": "Merge pull request #69 from lukewalker2010/test-the-guards-that-protect-user-files"
+      },
+      {
+        "sha": "9f68f45611d4ee82c0d8f6e21d5d031241815b9e",
+        "date": "2026-10-02T20:13:46Z",
+        "subject": "Merge pull request #68 from lukewalker2010/fail-on-unmeasured-camera-raw-reference"
+      },
+      {
+        "sha": "eb671bf419e7c5881613b5c54699039531bcf5ab",
+        "date": "2026-10-02T20:13:37Z",
+        "subject": "Merge pull request #67 from lukewalker2010/fsync-imported-assets"
+      },
+      {
+        "sha": "24393ee1d467533a4f7129f82213cf3be5299a78",
+        "date": "2026-10-02T20:13:27Z",
+        "subject": "Merge pull request #66 from lukewalker2010/bound-lightroom-history-decompression"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:31.683221+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:28.627933+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/seamusc/papermono-shopping-list",
+    "canonicalName": "seamusc/papermono-shopping-list",
+    "createdAtUTC": "2026-09-27T12:05:30Z",
+    "createdAtBeijing": "2026-09-27T20:05:30+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 188,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "latestReleases": [],
+    "recentCommits": [
+      {
+        "sha": "dc0e7aee2f99ef540f521d23ce502263754dc5d1",
+        "date": "2026-10-01T21:18:27Z",
+        "subject": "increase webapp logging coverage (#7)"
+      },
+      {
+        "sha": "05f05667efbdc419b6f772836b7f89ed84c4ebda",
+        "date": "2026-10-01T20:50:39Z",
+        "subject": "Light sleep between syncs, with device power history reported on sync (#6)"
+      },
+      {
+        "sha": "d5196df4ddf1edea0ace5ffe1aa7aab152136d6a",
+        "date": "2026-09-29T10:57:03Z",
+        "subject": "Server supplied next sync time, web ui to define sync schedules (#4)"
+      },
+      {
+        "sha": "33da1f61f568f020ad56eaa491a2842ae8c8ef48",
+        "date": "2026-09-29T09:32:23Z",
+        "subject": "Add OpenTelemetry traces, metrics and logs, plus device health on sync (#3)"
+      },
+      {
+        "sha": "398ba517b87c91a3e913e0fc839d7f73dc52e335",
+        "date": "2026-09-29T08:38:50Z",
+        "subject": "Support for OTA updates, more readable header (#2)"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:36.794580+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:34.117995+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/SupercmoHQ/superCMO-skills",
+    "canonicalName": "SupercmoHQ/superCMO-skills",
+    "createdAtUTC": "2026-07-24T11:38:27Z",
+    "createdAtBeijing": "2026-07-24T19:38:27+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 64,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.1.24",
+        "publishedAtUTC": "2026-08-28T13:28:52Z",
+        "publishedAtBeijing": "2026-08-28T21:28:52+08:00",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.24"
+      },
+      {
+        "tag": "v0.1.23",
+        "publishedAtUTC": "2026-08-27T12:46:26Z",
+        "publishedAtBeijing": "2026-08-27T20:46:26+08:00",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.23"
+      },
+      {
+        "tag": "v0.1.22",
+        "publishedAtUTC": "2026-08-27T12:05:37Z",
+        "publishedAtBeijing": "2026-08-27T20:05:37+08:00",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.22"
+      },
+      {
+        "tag": "v0.1.21",
+        "publishedAtUTC": "2026-08-26T06:49:29Z",
+        "publishedAtBeijing": "2026-08-26T14:49:29+08:00",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.21"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "a6dd060ed46132e1944b1dd38981cb9ffcc42fc8",
+        "date": "2026-08-28T13:27:34Z",
+        "subject": "Merge pull request #51 from SupercmoHQ/release/v0.1.24"
+      },
+      {
+        "sha": "e3392e0010326a878e33caa3098135d59110b1b9",
+        "date": "2026-08-28T13:12:25Z",
+        "subject": "feat: release v0.1.24"
+      },
+      {
+        "sha": "84d5aa0e5e72a174beb1f96df1e85cdfe161b2cf",
+        "date": "2026-08-27T12:45:13Z",
+        "subject": "Merge pull request #50 from SupercmoHQ/fix/installer-calendar-extra"
+      },
+      {
+        "sha": "1913f15adc4566aa147b4f5c9272dc8e7826ded9",
+        "date": "2026-08-27T12:36:11Z",
+        "subject": "release: v0.1.23"
+      },
+      {
+        "sha": "7a21a89f31eb1008bbd8b706e4299c7014715d21",
+        "date": "2026-08-27T12:32:54Z",
+        "subject": "fix(calendar): calendar works in the DEFAULT install — icalendar + python-dateutil are base deps"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:32.828977+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:29.602934+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/vshvedov/rhun",
+    "canonicalName": "vshvedov/rhun",
+    "createdAtUTC": "2026-09-26T14:23:56Z",
+    "createdAtBeijing": "2026-09-26T22:23:56+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 75,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.16.3",
+        "publishedAtUTC": "2026-10-02T17:27:43Z",
+        "publishedAtBeijing": "2026-10-03T01:27:43+08:00",
+        "url": "https://github.com/vshvedov/rhun/releases/tag/v0.16.3"
+      },
+      {
+        "tag": "v0.16.2",
+        "publishedAtUTC": "2026-10-01T21:24:50Z",
+        "publishedAtBeijing": "2026-10-02T05:24:50+08:00",
+        "url": "https://github.com/vshvedov/rhun/releases/tag/v0.16.2"
+      },
+      {
+        "tag": "v0.16.1",
+        "publishedAtUTC": "2026-09-30T23:18:04Z",
+        "publishedAtBeijing": "2026-10-01T07:18:04+08:00",
+        "url": "https://github.com/vshvedov/rhun/releases/tag/v0.16.1"
+      },
+      {
+        "tag": "v0.16.0",
+        "publishedAtUTC": "2026-09-30T03:31:14Z",
+        "publishedAtBeijing": "2026-09-30T11:31:14+08:00",
+        "url": "https://github.com/vshvedov/rhun/releases/tag/v0.16.0"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "7f7e6338cc261e1d24d50c808e8ede3910447472",
+        "date": "2026-10-02T22:10:09Z",
+        "subject": "Search PATH only for programs on Windows, clean up staged updates, and show the version being installed"
+      },
+      {
+        "sha": "429b52887e0e98161af00142f12c946dea3ddc9a",
+        "date": "2026-10-02T22:10:09Z",
+        "subject": "Read the last-project marker as UTF-8 in the desktop test"
+      },
+      {
+        "sha": "f4ffffdca48da7aa9b64e92af468d50d9a34f3fb",
+        "date": "2026-10-02T22:10:05Z",
+        "subject": "Fix terminal zoom limits, palette zoom focus and overflowing terminal tabs"
+      },
+      {
+        "sha": "250c4e94d0368941cfbff2e277f2ddc2556c7778",
+        "date": "2026-10-02T22:09:56Z",
+        "subject": "Send feedback to hi@rhun.app"
+      },
+      {
+        "sha": "9cf61941aeb0f1dcd4533b82c8bc1d3b7e66d360",
+        "date": "2026-10-02T21:19:41Z",
+        "subject": "Add Windows self-updates and refresh website previews"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:40:10.335228+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:40:07.761083+08:00"
+    }
+  },
+  {
+    "repositoryUrl": "https://github.com/wileai/pi-codex-connectors",
+    "canonicalName": "wileai/pi-codex-connectors",
+    "createdAtUTC": "2026-09-29T04:30:49Z",
+    "createdAtBeijing": "2026-09-29T12:30:49+08:00",
+    "archived": false,
+    "defaultBranch": "main",
+    "observedTotalStars": 7,
+    "starCaveat": "总量快照不是近期增长",
+    "licenseDetection": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "latestReleases": [
+      {
+        "tag": "v0.1.1",
+        "publishedAtUTC": "2026-10-02T01:40:58Z",
+        "publishedAtBeijing": "2026-10-02T09:40:58+08:00",
+        "url": "https://github.com/wileai/pi-codex-connectors/releases/tag/v0.1.1"
+      },
+      {
+        "tag": "v0.1.0",
+        "publishedAtUTC": "2026-10-02T01:22:13Z",
+        "publishedAtBeijing": "2026-10-02T09:22:13+08:00",
+        "url": "https://github.com/wileai/pi-codex-connectors/releases/tag/v0.1.0"
+      }
+    ],
+    "recentCommits": [
+      {
+        "sha": "32aaac9c89bbe59c6b242b7675d53ee69a43a437",
+        "date": "2026-10-02T02:08:02Z",
+        "subject": "Merge pull request #4 from wileai/codex/release-admin-protection"
+      },
+      {
+        "sha": "65d4b2d768240df710de8fa0a31313d649eb44fa",
+        "date": "2026-10-02T02:07:33Z",
+        "subject": "Restrict npm release publishing to repository administrators"
+      },
+      {
+        "sha": "7c192c4d2eedc37c3c89dc290354a8f14c8f294f",
+        "date": "2026-10-02T02:00:06Z",
+        "subject": "Add GitHub Pages site for the extension"
+      },
+      {
+        "sha": "79b6071a5dd3e08b5e82707e35e8de3d394e978b",
+        "date": "2026-10-02T01:40:48Z",
+        "subject": "Merge pull request #2 from wileai/codex/wileai-npm-scope"
+      },
+      {
+        "sha": "284f05454530f0b291d30dd5747d0a719822ae93",
+        "date": "2026-10-02T01:40:14Z",
+        "subject": "Publish connector under the wileai npm scope"
+      }
+    ],
+    "checkedAt": "2026-10-03T08:38:31.866613+08:00",
+    "licenseResponse": {
+      "ok": true,
+      "checkedAt": "2026-10-03T08:38:28.628174+08:00"
+    }
+  }
+]

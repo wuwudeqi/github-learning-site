@@ -1,0 +1,128 @@
+[
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/model-pixelumm.png",
+    "url": "https://huggingface.co/nvidia/PixelUMM/resolve/main/assets/pixelumm-teaser.png",
+    "bytes": 1157016,
+    "checkedAt": "2026-10-03T09:07:41.725601+08:00",
+    "status": 200
+  },
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/model-tae.jpg",
+    "url": "https://huggingface.co/AcademiaSD/TAE-Qwen-Image-2.1/resolve/main/comparison.jpg",
+    "bytes": 247013,
+    "checkedAt": "2026-10-03T09:07:41.394590+08:00",
+    "status": 200
+  },
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/project-engrams.png",
+    "url": "https://raw.githubusercontent.com/cortexapps/engrams/main/site/src/assets/screenshots/session-pelican.png",
+    "bytes": 962729,
+    "checkedAt": "2026-10-03T09:07:40.921497+08:00",
+    "status": 200
+  },
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/project-rawmakase.png",
+    "url": "https://raw.githubusercontent.com/pch/rawmakase/main/docs/images/screenshot-2026-09-30-full.png",
+    "bytes": 1455152,
+    "checkedAt": "2026-10-03T09:07:40.792619+08:00",
+    "status": 200
+  },
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/project-omnidiff.png",
+    "url": "https://raw.githubusercontent.com/ivankovic/omnidiff/main/assets/readme-screenshot.png",
+    "bytes": 73591,
+    "checkedAt": "2026-10-03T09:07:40.114342+08:00",
+    "status": 200
+  },
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/project-papermono.jpg",
+    "url": "https://raw.githubusercontent.com/seamusc/papermono-shopping-list/main/docs/images/device-list.jpg",
+    "bytes": 254639,
+    "checkedAt": "2026-10-03T09:07:40.409501+08:00",
+    "status": 200
+  },
+  {
+    "file": "content/frontiers/2026/10/2026-10-03/images/project-rhun.png",
+    "url": "https://raw.githubusercontent.com/vshvedov/rhun/main/assets/social/screenshot-terminal.png",
+    "bytes": 319225,
+    "checkedAt": "2026-10-03T09:07:41.949871+08:00",
+    "status": 200
+  },
+  {
+    "file": "news-olmo.png",
+    "url": "https://www.datocms-assets.com/64837/1790799330-olmo-core-3-blog-draft-google-docs-image-2.png",
+    "error": "HTTP Error 403: Forbidden",
+    "checkedAt": "2026-10-03T09:07:40.777070+08:00",
+    "retry": {
+      "checkedAt": "2026-10-03T01:12:19.806480+00:00",
+      "exitCode": 35,
+      "bytes": 0,
+      "error": "  0:00:24 --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:--  0:00:24 --:--:--     0\ncurl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to www.datocms-assets.com:443 \n"
+    }
+  },
+  {
+    "file": "candidate-elyza-0.png",
+    "url": "https://elyza.ai/assets/news/612f0f28046f44ed8b574743162fc4a9.png",
+    "error": "HTTP Error 403: Forbidden",
+    "checkedAt": "2026-10-03T09:07:40.998642+08:00",
+    "retry": {
+      "checkedAt": "2026-10-03T01:12:20.332850+00:00",
+      "exitCode": 0,
+      "bytes": 81781,
+      "error": null
+    }
+  },
+  {
+    "file": "candidate-elyza-1.png",
+    "url": "https://elyza.ai/assets/news/0d7353104ce7403cae4deaf8fdf37cf7.png",
+    "error": "HTTP Error 403: Forbidden",
+    "checkedAt": "2026-10-03T09:07:41.002142+08:00",
+    "retry": {
+      "checkedAt": "2026-10-03T01:12:20.682169+00:00",
+      "exitCode": 0,
+      "bytes": 129004,
+      "error": null
+    }
+  },
+  {
+    "file": "candidate-elyza-2.png",
+    "url": "https://elyza.ai/assets/news/a780041fe2a346d8a90f674c3e63e0e9.png",
+    "error": "HTTP Error 403: Forbidden",
+    "checkedAt": "2026-10-03T09:07:41.133426+08:00",
+    "retry": {
+      "checkedAt": "2026-10-03T01:12:20.918854+00:00",
+      "exitCode": 0,
+      "bytes": 67158,
+      "error": null
+    }
+  },
+  {
+    "retryFile": "olmo-image-retry.json",
+    "result": {
+      "url": "https://www.datocms-assets.com/64837/1790799330-olmo-core-3-blog-draft-google-docs-image-2.png?fit=max&h=810&w=1550",
+      "status": 200,
+      "bytes": 168357,
+      "checkedAt": "2026-10-03T01:15:33.486Z",
+      "via": "node --use-env-proxy"
+    }
+  },
+  {
+    "retryFile": "flux-images-receipt.json",
+    "result": [
+      {
+        "name": "news-flux-before.webp",
+        "url": "https://cdn.sanity.io/images/2gpum2i6/production/b6476b163e11444d6d5490ac1fa1e610d4eab85e-1360x768.webp",
+        "checkedAt": "2026-10-03T01:29:13.589Z",
+        "status": 200,
+        "bytes": 147458
+      },
+      {
+        "name": "news-flux-after.webp",
+        "url": "https://cdn.sanity.io/images/2gpum2i6/production/3c884e72074d330bd62f27e8d222b294b855eb74-1360x768.webp",
+        "checkedAt": "2026-10-03T01:29:13.594Z",
+        "status": 200,
+        "bytes": 148134
+      }
+    ]
+  }
+]

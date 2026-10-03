@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>合成任务的 pass@k</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f7f5ef;color:#1d2d36;font-family:Arial,"PingFang SC",sans-serif}main{width:1200px;height:760px;padding:38px 44px}h1{font-size:34px;margin:0 0 10px}.sub{font-size:19px;margin:0;color:#4f6067}svg{display:block;margin-top:22px;width:1112px;height:520px}.foot{font-size:18px;color:#48545b;line-height:1.5;margin-top:6px}.legend{font-size:20px}text{font-family:Arial,"PingFang SC",sans-serif}</style>
+<main><h1>单次更准，多次尝试却可能覆盖得更少</h1><p class="sub">4 个等权合成任务 · 解析值为实线，CPU 蒙特卡洛实测为圆点 · 每题独立重试</p><svg viewBox="0 0 1112 520" role="img" aria-label="集中配置单次成功率较高，但从两次开始均衡配置更高"></svg><p class="foot">均衡：每题 p = 0.40；集中：p = 0.90、0.90、0.01、0.01。每题 20,000 次模拟，随机种子 20261003。<br>说明概率与任务覆盖的区别；不是大模型评测，也不是论文 PTGS 算法的复现。</p></main>
+<script type="module">
+const data=await(await fetch('./passk-results.json')).json();
+const svg=document.querySelector('svg'),ns='http://www.w3.org/2000/svg';
+function el(tag,attrs={},value){const e=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);if(value!==undefined)e.textContent=value;svg.append(e);return e;}
+const ks=[1,2,4,8,16,32,64],x=k=>90+Math.log2(k)*150,y=v=>425-v*335;
+for(let i=0;i<=5;i++){const v=i/5;el('line',{x1:90,y1:y(v),x2:990,y2:y(v),stroke:'#d4dcd9'});el('text',{x:70,y:y(v)+7,'text-anchor':'end','font-size':20,fill:'#43545e'},Math.round(v*100)+'%');}
+for(const k of ks)el('text',{x:x(k),y:460,'text-anchor':'middle','font-size':20},k);
+el('text',{x:540,y:497,'text-anchor':'middle','font-size':21},'每题尝试次数 k（刻度按倍数增加）');
+el('text',{x:90,y:35,'font-size':20},'至少成功一次的平均概率');
+for(const [name,color,lx]of[['均衡','#187878',535],['集中','#b8583a',770]]){const rows=data.rows.filter(r=>r.profile===name);el('path',{d:rows.map((r,i)=>(i?'L':'M')+x(r.k)+','+y(r.analytic)).join(' '),fill:'none',stroke:color,'stroke-width':4});for(const r of rows)el('circle',{cx:x(r.k),cy:y(r.empirical),r:5.5,fill:color,stroke:'#f7f5ef','stroke-width':1.5});el('line',{x1:lx,y1:29,x2:lx+35,y2:29,stroke:color,'stroke-width':4});el('text',{x:lx+45,y:36,'font-size':21,fill:color},name);}
+for(const[name,k,dy]of[['均衡',16,-19],['集中',16,35]]){const r=data.rows.find(r=>r.profile===name&&r.k===k);el('text',{x:x(k)+8,y:y(r.analytic)+dy,'font-size':23,fill:name==='均衡'?'#187878':'#b8583a'},(100*r.analytic).toFixed(2)+'%');}
+window.chartReady=true;
+</script></html>

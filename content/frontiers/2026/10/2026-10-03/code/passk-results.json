@@ -1,0 +1,136 @@
+{
+  "generatedAt": "2026-10-03T01:35:10.417633+00:00",
+  "python": "3.14.3",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "profiles": {
+    "均衡": [
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "集中": [
+      0.9,
+      0.9,
+      0.01,
+      0.01
+    ]
+  },
+  "trialsPerTask": 20000,
+  "seed": 20261003,
+  "assumption": "independent Bernoulli attempts within each task; four equally weighted synthetic tasks",
+  "rows": [
+    {
+      "profile": "均衡",
+      "k": 1,
+      "analytic": 0.4,
+      "empirical": 0.39905,
+      "mcStandardError": 0.0017320508075688774,
+      "absoluteError": 0.0009500000000000064
+    },
+    {
+      "profile": "均衡",
+      "k": 2,
+      "analytic": 0.64,
+      "empirical": 0.63695,
+      "mcStandardError": 0.001697056274847714,
+      "absoluteError": 0.003049999999999997
+    },
+    {
+      "profile": "均衡",
+      "k": 4,
+      "analytic": 0.8704000000000001,
+      "empirical": 0.869625,
+      "mcStandardError": 0.0011874544201778859,
+      "absoluteError": 0.0007750000000000812
+    },
+    {
+      "profile": "均衡",
+      "k": 8,
+      "analytic": 0.98320384,
+      "empirical": 0.9827875,
+      "mcStandardError": 0.0004543408551029495,
+      "absoluteError": 0.00041634000000001503
+    },
+    {
+      "profile": "均衡",
+      "k": 16,
+      "analytic": 0.9997178890092544,
+      "empirical": 0.9997375,
+      "mcStandardError": 5.937501622468192e-05,
+      "absoluteError": 1.96109907455444e-05
+    },
+    {
+      "profile": "均衡",
+      "k": 32,
+      "analytic": 0.9999999204133889,
+      "empirical": 1.0,
+      "mcStandardError": 9.974129332000548e-07,
+      "absoluteError": 7.958661107920761e-08
+    },
+    {
+      "profile": "均衡",
+      "k": 64,
+      "analytic": 0.9999999999999937,
+      "empirical": 1.0,
+      "mcStandardError": 2.812532497670772e-10,
+      "absoluteError": 6.328271240363392e-15
+    },
+    {
+      "profile": "集中",
+      "k": 1,
+      "analytic": 0.455,
+      "empirical": 0.4548625,
+      "mcStandardError": 0.0007901740314639554,
+      "absoluteError": 0.0001375000000000126
+    },
+    {
+      "profile": "集中",
+      "k": 2,
+      "analytic": 0.50495,
+      "empirical": 0.5048125,
+      "mcStandardError": 0.0004286897916909152,
+      "absoluteError": 0.0001375000000000126
+    },
+    {
+      "profile": "集中",
+      "k": 4,
+      "analytic": 0.519651995,
+      "empirical": 0.518525,
+      "mcStandardError": 0.0004870273707149318,
+      "absoluteError": 0.0011269950000000195
+    },
+    {
+      "profile": "集中",
+      "k": 8,
+      "analytic": 0.5386276477860399,
+      "empirical": 0.5376125,
+      "mcStandardError": 0.0006674903245227812,
+      "absoluteError": 0.0010151477860398384
+    },
+    {
+      "profile": "集中",
+      "k": 16,
+      "analytic": 0.5742711144525622,
+      "empirical": 0.5739875,
+      "mcStandardError": 0.0008890916542215368,
+      "absoluteError": 0.00028361445256219753
+    },
+    {
+      "profile": "集中",
+      "k": 32,
+      "analytic": 0.6375098320210733,
+      "empirical": 0.63785,
+      "mcStandardError": 0.001116310464298271,
+      "absoluteError": 0.0003401679789267753
+    },
+    {
+      "profile": "集中",
+      "k": 64,
+      "analytic": 0.7372017562372191,
+      "empirical": 0.7393625,
+      "mcStandardError": 0.0012483609750047102,
+      "absoluteError": 0.00216074376278097
+    }
+  ]
+}

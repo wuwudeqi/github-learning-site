@@ -1,0 +1,23 @@
+{
+  "issueDate": "2026-10-03",
+  "checks": {
+    "frontiers": {
+      "passed": true,
+      "date": "2026-10-03",
+      "checkedAt": "2026-10-03T10:09:21.894598+08:00",
+      "command": "npm run check:frontiers -- --date 2026-10-03"
+    },
+    "build": {
+      "passed": true,
+      "checkedAt": "2026-10-03T10:09:21.894598+08:00",
+      "exitCode": 0,
+      "log": ".frontiers/build-2026-10-03.log"
+    }
+  },
+  "browserEvidence": [
+    "layout-check.json",
+    "navigation-check.json",
+    "original-size-check.json"
+  ],
+  "publication": "Not yet pushed or deployed at this snapshot"
+}
