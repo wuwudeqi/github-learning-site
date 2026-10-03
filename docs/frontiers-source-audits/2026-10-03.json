@@ -3,7 +3,7 @@
   "informationCutoff": "2026-10-03T09:39:27.736149+08:00",
   "cutoffScope": "初次核心入口08:34起；定稿前只重查OpenAI RSS、Anthropic News、Google AI、NVIDIA Blogs、Alibaba Model Studio五入口，均无新增链接。其它入口使用各自已记录访问时间，不宣称同一时刻全网扫描。",
   "generatedAt": "2026-10-03T10:03:16.973810+08:00",
-  "status": "editorial-and-visual-reviewed",
+  "status": "published",
   "coverage": [
     {
       "provider": "OpenAI",
@@ -4193,13 +4193,28 @@
     "scope": "标准库合成概率实验；不是PTGS复现，非大模型运行。"
   },
   "publication": {
-    "status": "not-yet-published",
-    "gates": [
-      "date-specific check",
-      "build",
-      "matching Actions deployment",
-      "online content/hash verification with Node environment proxy"
-    ]
+    "status": "published",
+    "contentCommit": "6a12d8d1534cdf58fb8322cce62f9de3311c7299",
+    "deploymentRun": 37088958723,
+    "deploymentUrl": "https://github.com/wuwudeqi/github-learning-site/actions/runs/37088958723",
+    "publishedUrl": "https://wuwudeqi.github.io/github-learning-site/#/read/frontiers-2026-10-03-overview",
+    "verifiedAt": "2026-10-03T10:15:21.567572+08:00",
+    "verifiedContentFiles": 34,
+    "verifiedPdfFiles": 5,
+    "dateSpecificCheck": {
+      "passed": true,
+      "date": "2026-10-03",
+      "checkedAt": "2026-10-03T10:09:21.894598+08:00",
+      "command": "npm run check:frontiers -- --date 2026-10-03"
+    },
+    "localBuild": {
+      "passed": true,
+      "checkedAt": "2026-10-03T10:09:21.894598+08:00",
+      "exitCode": 0,
+      "log": ".frontiers/build-2026-10-03.log"
+    },
+    "evidence": "docs/frontiers-source-audits/2026-10-03-evidence/publication-verification.json",
+    "note": "此记录对应内容提交及首次完整线上核验；随后只提交本核验凭据，不重写当期内容。"
   },
   "editorialReview": {
     "checkedAt": "2026-10-03T10:08:40.534015+08:00",

@@ -1,0 +1,44 @@
+{
+  "issueDate": "2026-10-03",
+  "commit": "6a12d8d1534cdf58fb8322cce62f9de3311c7299",
+  "deploymentRun": 37088958723,
+  "passed": true,
+  "verifiedAt": "2026-10-03T10:15:21.567572+08:00",
+  "checks": {
+    "content": {
+      "command": [
+        "node",
+        "--use-env-proxy",
+        "scripts/verify-frontiers-published.mjs",
+        "--date",
+        "2026-10-03"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-03T10:14:31.516104+08:00",
+      "finishedAt": "2026-10-03T10:15:04.276112+08:00",
+      "output": "(node:87043) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.\n(Use `node --trace-warnings ...` to show where the warning was created)\n前沿检查通过：1 期；15 条新闻、10 个项目及来源一致；9 月 10 日起另查 6 个模型、6 篇论文和跨栏目去重。\n{\"issueDate\":\"2026-10-03\",\"verifiedFiles\":34,\"verifiedAt\":\"2026-10-03T02:15:04.270Z\",\"publishedUrl\":\"https://wuwudeqi.github.io/github-learning-site/#/read/frontiers-2026-10-03-overview\"}\n",
+      "result": {
+        "issueDate": "2026-10-03",
+        "verifiedFiles": 34,
+        "verifiedAt": "2026-10-03T02:15:04.270Z",
+        "publishedUrl": "https://wuwudeqi.github.io/github-learning-site/#/read/frontiers-2026-10-03-overview"
+      }
+    },
+    "pdfs": {
+      "command": [
+        "node",
+        "--use-env-proxy",
+        ".frontiers/verify-paper-pdfs-oct03.mjs"
+      ],
+      "exitCode": 0,
+      "startedAt": "2026-10-03T10:14:31.516235+08:00",
+      "finishedAt": "2026-10-03T10:15:21.567384+08:00",
+      "output": "(node:87042) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.\n(Use `node --trace-warnings ...` to show where the warning was created)\nPDF verified: paper-2610.01762 18669217 bytes\nPDF verified: paper-2610.01415 16249297 bytes\nPDF verified: paper-2610.02193 617457 bytes\nPDF verified: paper-2610.01509 8156988 bytes\nPDF verified: paper-2610.02202 6336399 bytes\n{\"passed\":true,\"verifiedPDFs\":5,\"verifiedAt\":\"2026-10-03T02:15:21.560Z\"}\n",
+      "result": {
+        "passed": true,
+        "verifiedPDFs": 5,
+        "verifiedAt": "2026-10-03T02:15:21.560Z"
+      }
+    }
+  }
+}
