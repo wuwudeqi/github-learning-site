@@ -1,0 +1,18 @@
+{
+  "id": "paper-rowbench-2610-02205-pdf",
+  "title": "ROWBench: Do Video Models Render What the Program Specifies?",
+  "category": "论文",
+  "author": "Huang, Zheng-Hui、Lin, Guixu、Tsai, Yu-Ju、Zhu, Jian-Kai、Lan, Fengbo、Liu, Yu-Lun、Chuang, Yung-Yu、Zhang, Kaipeng、Wang, Zhixiang",
+  "date": "2026-10-01",
+  "description": "为什么现在值得看：这项新近实用 / 新近创新评测把程序规定的物体、轨迹和交互作为可检查目标，适合研究可控视频与世界模型。",
+  "tags": [
+    "AI",
+    "前沿",
+    "研究"
+  ],
+  "source": "https://arxiv.org/abs/2610.02205v1",
+  "arxiv": "2610.02205",
+  "version": "v1",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "abstract": "Programmable world models separate executable dynamics from visual generation, offering a promising foundation for next-generation game engines. However, their visual adherence to explicit rules and interactions remains insufficiently evaluated. Existing benchmarks assess visual quality, controllability, and instruction or physical adherence, but rarely test fidelity to fine-grained, program-specified world events. We introduce PROWBench, comprising 170 programmatically constructed episodes and 600 proxy videos covering diverse scenes and interactions. PROWBench logs entity states and timestamped events, including those outside the camera's field of view, as replayable world records, from which it renders synchronized views and proxy representations. This enables generated videos to be checked against the observable consequences of program execution. An extensible framework constructs scenes, controls behaviors, and can render each camera view in different representations, such as coarse 3D, and bounding boxes. The benchmark covers first- and third-person perspectives, with synchronized multi-view observations available for a subset of episodes. Grounded in these records, PROWBench evaluates entity control, long-horizon memory, and, with two VLM-based metrics, Logic-Render Alignment and Interaction Success Rate, adherence to the prescribed timeline and the visual realization of timestamped engine-recorded events."
+}

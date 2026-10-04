@@ -1,0 +1,485 @@
+{
+  "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+  "site": "http://127.0.0.1:4179/github-learning-site/",
+  "viewportHeight": 900,
+  "results": [
+    {
+      "width": 1440,
+      "module": "overview",
+      "clientWidth": 1202,
+      "scrollWidth": 1202,
+      "images": [],
+      "internalLinks": [
+        {
+          "label": "AI 动态",
+          "href": "#/read/frontiers-2026-10-04-news"
+        },
+        {
+          "label": "开源模型",
+          "href": "#/read/frontiers-2026-10-04-models"
+        },
+        {
+          "label": "论文精选",
+          "href": "#/read/frontiers-2026-10-04-papers"
+        },
+        {
+          "label": "开源项目",
+          "href": "#/read/frontiers-2026-10-04-projects"
+        },
+        {
+          "label": "技术实践",
+          "href": "#/read/frontiers-2026-10-04-practice"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "module": "news",
+      "clientWidth": 1202,
+      "scrollWidth": 1202,
+      "images": [
+        {
+          "file": "asta-training.png",
+          "loaded": true,
+          "width": 719.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "asta-results.png",
+          "loaded": true,
+          "width": 719.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "federated-enclave.png",
+          "loaded": true,
+          "width": 719.984375,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": [
+        {
+          "label": "9月21日期刊",
+          "href": "#/read/frontiers-2026-09-21-news"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "module": "models",
+      "clientWidth": 1202,
+      "scrollWidth": 1202,
+      "images": [
+        {
+          "file": "qwen-pi-tokens.png",
+          "loaded": true,
+          "width": 720,
+          "withinArticle": true
+        },
+        {
+          "file": "kai-types.png",
+          "loaded": true,
+          "width": 720,
+          "withinArticle": true
+        },
+        {
+          "file": "ocr-data.png",
+          "loaded": true,
+          "width": 719.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "modernjev.svg",
+          "loaded": true,
+          "width": 719.9375,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": []
+    },
+    {
+      "width": 1440,
+      "module": "papers",
+      "clientWidth": 1202,
+      "scrollWidth": 1202,
+      "images": [
+        {
+          "file": "paper-distillation.png",
+          "loaded": true,
+          "width": 719.9375,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-graphforge.png",
+          "loaded": true,
+          "width": 719.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-emoe.png",
+          "loaded": true,
+          "width": 719.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-active.png",
+          "loaded": true,
+          "width": 719.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-omni.png",
+          "loaded": true,
+          "width": 719.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-row-detail.png",
+          "loaded": true,
+          "width": 719.984375,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": [
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-distillation-dynamics-2609-35259"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-distillation-dynamics-2609-35259-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-graphforge-2609-38923"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-graphforge-2609-38923-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-emoe-2609-37533"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-emoe-2609-37533-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-activesaddler-2610-00906"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-activesaddler-2610-00906-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-omni-embed-mini-2610-02148"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-omni-embed-mini-2610-02148-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-rowbench-2610-02205"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-rowbench-2610-02205-pdf"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "module": "projects",
+      "clientWidth": 1202,
+      "scrollWidth": 1202,
+      "images": [
+        {
+          "file": "jevstiller-flow.svg",
+          "loaded": true,
+          "width": 719.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "jevstiller-results.svg",
+          "loaded": true,
+          "width": 720,
+          "withinArticle": true
+        },
+        {
+          "file": "redox-speedup.svg",
+          "loaded": true,
+          "width": 720,
+          "withinArticle": true
+        },
+        {
+          "file": "carto-building.png",
+          "loaded": true,
+          "width": 720,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": []
+    },
+    {
+      "width": 1440,
+      "module": "practice",
+      "clientWidth": 1202,
+      "scrollWidth": 1202,
+      "images": [
+        {
+          "file": "agreement-results.png",
+          "loaded": true,
+          "width": 719.984375,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": []
+    },
+    {
+      "width": 390,
+      "module": "overview",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "images": [],
+      "internalLinks": [
+        {
+          "label": "AI 动态",
+          "href": "#/read/frontiers-2026-10-04-news"
+        },
+        {
+          "label": "开源模型",
+          "href": "#/read/frontiers-2026-10-04-models"
+        },
+        {
+          "label": "论文精选",
+          "href": "#/read/frontiers-2026-10-04-papers"
+        },
+        {
+          "label": "开源项目",
+          "href": "#/read/frontiers-2026-10-04-projects"
+        },
+        {
+          "label": "技术实践",
+          "href": "#/read/frontiers-2026-10-04-practice"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "module": "news",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "file": "asta-training.png",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "asta-results.png",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "federated-enclave.png",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": [
+        {
+          "label": "9月21日期刊",
+          "href": "#/read/frontiers-2026-09-21-news"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "module": "models",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "file": "qwen-pi-tokens.png",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "kai-types.png",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "ocr-data.png",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "modernjev.svg",
+          "loaded": true,
+          "width": 343.9375,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": []
+    },
+    {
+      "width": 390,
+      "module": "papers",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "file": "paper-distillation.png",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-graphforge.png",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-emoe.png",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-active.png",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-omni.png",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "paper-row-detail.png",
+          "loaded": true,
+          "width": 343.953125,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": [
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-distillation-dynamics-2609-35259"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-distillation-dynamics-2609-35259-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-graphforge-2609-38923"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-graphforge-2609-38923-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-emoe-2609-37533"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-emoe-2609-37533-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-activesaddler-2610-00906"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-activesaddler-2610-00906-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-omni-embed-mini-2610-02148"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-omni-embed-mini-2610-02148-pdf"
+        },
+        {
+          "label": "站内阅读卡",
+          "href": "#/read/paper-rowbench-2610-02205"
+        },
+        {
+          "label": "归档 PDF",
+          "href": "#/read/paper-rowbench-2610-02205-pdf"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "module": "projects",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "file": "jevstiller-flow.svg",
+          "loaded": true,
+          "width": 344,
+          "withinArticle": true
+        },
+        {
+          "file": "jevstiller-results.svg",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        },
+        {
+          "file": "redox-speedup.svg",
+          "loaded": true,
+          "width": 343.984375,
+          "withinArticle": true
+        },
+        {
+          "file": "carto-building.png",
+          "loaded": true,
+          "width": 344,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": []
+    },
+    {
+      "width": 390,
+      "module": "practice",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "images": [
+        {
+          "file": "agreement-results.png",
+          "loaded": true,
+          "width": 343.96875,
+          "withinArticle": true
+        }
+      ],
+      "internalLinks": []
+    }
+  ],
+  "screenshots": [
+    "ui-sheet-0.png",
+    "ui-sheet-1.png",
+    "ui-sheet-2.png"
+  ],
+  "manualInspection": "逐项滚动查看18幅正文图片在1440/390宽屏幕上的实际页面；三张桌面/手机对照图均已打开。无水平溢出或破图，中文说明和原尺寸入口可见。密集英文论文图在手机内缩放，正文保留中文读图和点击大图；不声称所有原图小字在手机内无需放大。"
+}

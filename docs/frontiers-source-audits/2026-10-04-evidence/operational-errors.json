@@ -1,0 +1,32 @@
+[
+  {
+    "stage": "retrieval",
+    "error": "Jina Reader 12次请求HTTP401",
+    "resolution": "同官方原站HTTP成功；保留原始收据",
+    "resolved": true
+  },
+  {
+    "stage": "retrieval",
+    "error": "ChatGPT帮助页本机HTTP403",
+    "resolution": "web工具读取官方帮助页，内容核验后采用",
+    "resolved": true
+  },
+  {
+    "stage": "source-image",
+    "error": "Cartopolis初次获取为132字节Git LFS指针",
+    "resolution": "media/branch/main原图1220707字节成功并目视核对",
+    "resolved": true
+  },
+  {
+    "stage": "visual-review",
+    "error": "直接SVG页面截图等待超时；Whistle缩减动画静态显示空白",
+    "resolution": "HTML img页面渲染其他SVG成功；Whistle不采用且替换为正文参数说明，非伪造成功",
+    "resolved": true
+  },
+  {
+    "stage": "channel-maintenance",
+    "error": "agent-reach check-update因GitHub API限流，重试3次失败",
+    "resolution": "只读更新检查失败，不安装，不影响已取得来源；发布另用授权gh状态核验",
+    "resolved": false
+  }
+]

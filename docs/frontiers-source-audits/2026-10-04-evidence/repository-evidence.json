@@ -1,0 +1,1799 @@
+[
+  {
+    "repository": "graphene-data/graphene",
+    "html_url": "https://github.com/graphene-data/graphene",
+    "created_at": "2025-08-02T21:14:49Z",
+    "pushed_at": "2026-10-01T21:13:29Z",
+    "updated_at": "2026-10-03T23:40:16Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": null,
+    "starsSnapshot": 150,
+    "forksSnapshot": 16,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v0.0.30",
+        "published_at": "2026-09-28T17:01:18Z",
+        "prerelease": false,
+        "html_url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.30",
+        "body": "## 0.0.30\n\n### Breaking changes\n\n- Bare relationship references now resolve only from the `FROM` table or existing query aliases. References through another relationship must use an explicit path such as `contracts.vendors.name` (`f391f65`).\n\n### Added\n\n- Added `graphene export` to save synced Cloud reports as standalone offline HTML, with captured parameters and frozen inputs (`6ba9e23`, `d0b0bd3`).\n- Added `graphene evals` and `graphene reviews` to retrieve Cloud evaluation and session-review results as JSON (`8b33418`).\n- Expanded ClickHouse support with hundreds of functions and native aliases, including `encodeURLComponent` (`b3a033f`, `aa538cc`, `ba4b750`).\n- Added `range` for ClickHouse and DuckDB, and `generate_series` for DuckDB (`55790df`).\n- Allowed expressions in query `ORDER BY`, including non-selected columns and aggregates (`4191279`).\n- Allowed contextual keywords as identifiers and scientific notation in numeric literals (`949bf97`, `0909832`).\n- Added valid YAML schedule strings and lists in report frontmatter, retaining legacy schedule support (`633c0f1`).\n- Allowed Athena connections to use automatically refreshing credential providers (`ea46d06`).\n\n### Fixed\n\n- Quoted keyword identifiers correctly in generated SQL (`cdbffa7`).\n- Suffixed duplicate inferred output names with `_2`, `_3`, etc., including unaliased aggregate `UNION` branches; duplicate explicit aliases still report errors (`349a3ae`).\n- Fixed positional ordering with implicit `SELECT *` (`4191279`).\n- Unified frontmatter parsing to preserve metadata and schedules, and report invalid YAML and cron expressions during checks (`633c0f1`, `ae05439`).\n- Improved nested-aggregate diagnostics and avoided follow-on semantic errors for malformed queries (`64295f1`, `4b4178b`).\n- Deduplicated errors caused by upstream queries (`00e6b12`).\n- Preserved OAuth refresh error descriptions and suggested logging in again when appropriate (`27d67a5`).\n- Included the error-display utility in the published CLI package (`01ead21`).\n- Waited for fonts before rendering ECharts, including charts outside the local app (`1b3f9e7`)."
+      },
+      {
+        "tag_name": "v0.0.29",
+        "published_at": "2026-09-01T20:59:36Z",
+        "prerelease": false,
+        "html_url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.29",
+        "body": "## 0.0.29\n\n### Breaking changes\n\nNone.\n\n### Added\n\n- Updated coding-agent guidance for multi-axis ECharts and requiring visualizations to be built in Graphene pages (`31de0eea`, `8863bdad`).\n\n### Fixed\n\n- Made chart tooltips easy to open across small, dense, and many-series charts by choosing axis or item tooltips based on chart shape (`2bb3b13b`).\n- Fixed numeric time-axis padding after upgrading to ECharts 6.1 (`8b1dc52e`).\n- Fixed page-load waits hanging in hidden browser tabs (`9b4d304c`).\n- Reported incomplete CTEs as diagnostics instead of crashing (`0f1c919a`).\n- Returned useful client errors for missing or invalid query parameters instead of silent server errors (`401e875d`)."
+      },
+      {
+        "tag_name": "v0.0.28",
+        "published_at": "2026-08-27T16:31:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.28",
+        "body": "## 0.0.28\n\n### Breaking changes\n\nNone.\n\n### Added\n\n- Added `ILIKE` and `NOT ILIKE` comparisons, including portable BigQuery rendering (`712793fc`).\n- Added Graphene SQL syntax highlighting and a Tree-sitter grammar for Zed (`1f8e2981`, `ce442c12`).\n- Added component comment actions, comment deep links, and keyboard-shortcut hints for Graphene Cloud reports (`cd0e026b`, `6361ec87`).\n- Added detected CI and coding-agent context to CLI telemetry while simplifying command and project metadata collection (`188b5bc9`, `6aae7ed1`, `2aff1a13`).\n- Added automatic scaling and abbreviations for time, distance, mass, and data units (`eddbcfe8`).\n\n### Fixed\n\n- Prevented SQL injection through query parameters by rejecting structured array values and escaping ClickHouse backslashes (`f2d4269e`).\n- Fixed Windows CLI login URLs containing ampersands (`95f54d30`).\n- Fixed single-digit percentile shorthand such as `p1` and `p5` returning values ten times too large (`f14f38f8`).\n- Fixed quoted aliases to use each database dialect's native identifier quoting (`ce459191`).\n- Preserved metadata through common functions, aggregates, and window expressions (`6993ca25`).\n- Fixed metadata formatting for value-encoded ECharts series, positional dimensions, pie tooltips, and pictorial bars (`c228cd70`).\n- Kept long chart legends clear of top y-axis names and enabled pagination when needed (`b151a556`, `5634ab3b`).\n- Shortened multiselect URLs and requests by encoding whichever is smaller: selected or excluded values (`1a9b659f`).\n- Fixed sidebar overflow, input spacing, and table title styling (`72be1ada`, `7d31d3de`, `52773336`).\n- Simplified CLI update checks and tailored update notices for detected coding agents (`bf68577c`)."
+      },
+      {
+        "tag_name": "v0.0.27",
+        "published_at": "2026-08-19T17:38:55Z",
+        "prerelease": false,
+        "html_url": "https://github.com/graphene-data/graphene/releases/tag/v0.0.27",
+        "body": "## 0.0.27\n\n### Breaking changes\n\nNone.\n\n### Added\n\n- Expanded ClickHouse support for numeric and decimal conversions, collection and temporal functions, and aggregate combinators (`c0b67bcd`).\n\n### Fixed\n\n- Fixed stacked and 100%-stacked bar and area charts with horizontal or multiple-value layouts (`a28451c0`, `6f1c6469`, `d02c50e6`).\n- Fixed negative bar corner rounding and value-label placement (`125037b9`, `a3c8f7c4`).\n- Added clear percentage-axis endpoints and square outer corners to 100%-stacked charts (`61286463`).\n- Updated chart tooltips to identify the exact hovered series (`835933c9`).\n- Reduced standalone HTML size by embedding only Latin WOFF2 font files (`bfc033df`).\n- Reused open `graphene run` tabs when only URL parameters change (`daaba73a`)."
+      }
+    ],
+    "commits": [
+      {
+        "sha": "0436f40733446d930efa5a9b0e88609cee075a8d",
+        "url": "https://github.com/graphene-data/graphene/commit/0436f40733446d930efa5a9b0e88609cee075a8d",
+        "message": "Deprecate create-graphene in favor of agent-led setup\n\nReplace scaffolding with a dependency-free notice linking to setup instructions.\nGuide agents through installing the latest CLI, selecting a database, configuring\nread-only access and skills, and validating a first report.\nUpdate packaged install tests and remove the initializer build from publishing.",
+        "date": "2026-10-01T21:13:27Z"
+      },
+      {
+        "sha": "d2d8c0c82a8f5b801d80e55c3eee6be817fa2e8d",
+        "url": "https://github.com/graphene-data/graphene/commit/d2d8c0c82a8f5b801d80e55c3eee6be817fa2e8d",
+        "message": "Add <Alert> component for threshold alerts on charts, tables, and BigValue\n\nCharts, Table, and BigValue accept an optional page-unique `id`.\n`<Alert for=id above|below=N every=hourly|daily|weekly|cron to=\"#chan @user\" />`\nattaches a threshold to that component. key/value columns are inferred from\nthe chart's x/splitBy/y (explicit for Table/ECharts/multi-y).\n\n- lang: parseAlerts() resolves alerts statically with diagnostics (unknown/duplicate\n  ids, missing threshold, bad schedule, dynamic attrs, target queries using inputs).\n  Shared by editor diagnostics and cloud evaluation. Cron parser moved to lang/cron.ts.\n- ui: Alert registers in a page-level store; targets show a hover bell. When cloud\n  supplies triggered keys: threshold line + red marks on charts, highlighted table\n  rows, red BigValue.\n- docs: base.md \"Threshold alerts\"",
+        "date": "2026-09-30T15:53:42Z"
+      },
+      {
+        "sha": "55c8d5cac6169d5ac1542ef64f17a5cc5d8d8889",
+        "url": "https://github.com/graphene-data/graphene/commit/55c8d5cac6169d5ac1542ef64f17a5cc5d8d8889",
+        "message": "Rerun queries when params change during an in-flight request\n\nCoalesce synchronous parameter changes only. Release the scheduling\npromise before requests run so a later change starts a fresh run and\naborts the obsolete one. Ignore late responses from canceled requests.\n\nCloud's existing standalone export test now holds a date query while\nchanging carrier, reproducing stale AA rows alongside DL controls before\nthis fix and verifying the current data in live and offline screenshots.\n\nValidated: 21 core input/readiness tests, full core (673 passed, 39 skipped),\ntwo full four-worker Cloud runs (178 passed, 7 skipped), and both lints.",
+        "date": "2026-09-29T02:07:51Z"
+      },
+      {
+        "sha": "2e9911326f0a0902351f89c146cc56c032ce4bbb",
+        "url": "https://github.com/graphene-data/graphene/commit/2e9911326f0a0902351f89c146cc56c032ce4bbb",
+        "message": "[release] v0.0.30",
+        "date": "2026-09-28T17:00:04Z"
+      },
+      {
+        "sha": "a02debda1d022fca3da790513323b1bd76b1e7db",
+        "url": "https://github.com/graphene-data/graphene/commit/a02debda1d022fca3da790513323b1bd76b1e7db",
+        "message": "Stabilize flights example font CSS in browser tests\n\nFor some reason google fonts is inconsistent with the files it serves, causing AA differences.",
+        "date": "2026-09-28T14:55:24Z"
+      }
+    ],
+    "receipt": {
+      "repo": "graphene-data/graphene",
+      "startedAt": "2026-10-04T08:41:27.343069+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:28.768185+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.086729+08:00"
+        },
+        "license": {
+          "ok": false,
+          "checkedAt": "2026-10-04T08:41:31.835113+08:00",
+          "error": "gh: Not Found (HTTP 404)\n"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:32.705372+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:33.576694+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:34.348667+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.268639+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": null
+  },
+  {
+    "repository": "bertaye/agentic-cuda-optimizer",
+    "html_url": "https://github.com/bertaye/agentic-cuda-optimizer",
+    "created_at": "2026-09-24T19:43:15Z",
+    "pushed_at": "2026-09-24T19:44:35Z",
+    "updated_at": "2026-09-28T10:00:09Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": null,
+    "starsSnapshot": 35,
+    "forksSnapshot": 2,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "1e9464da54dfc651337a97c3643bfeefec712bc1",
+        "url": "https://github.com/bertaye/agentic-cuda-optimizer/commit/1e9464da54dfc651337a97c3643bfeefec712bc1",
+        "message": "Initial commit, v0.0",
+        "date": "2026-09-24T19:41:43Z"
+      }
+    ],
+    "receipt": {
+      "repo": "bertaye/agentic-cuda-optimizer",
+      "startedAt": "2026-10-04T08:41:27.340016+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:28.485759+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:30.260216+08:00"
+        },
+        "license": {
+          "ok": false,
+          "checkedAt": "2026-10-04T08:41:31.107642+08:00",
+          "error": "gh: Not Found (HTTP 404)\n"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.838627+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:32.672472+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:33.589456+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:34.332076+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": null
+  },
+  {
+    "repository": "tomerglick57/Jevstiller",
+    "html_url": "https://github.com/tomerglick57/Jevstiller",
+    "created_at": "2026-09-21T11:33:55Z",
+    "pushed_at": "2026-10-03T08:17:31Z",
+    "updated_at": "2026-10-03T21:08:08Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "html_url": "https://github.com/tomerglick57/Jevstiller/blob/main/LICENSE",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "starsSnapshot": 61,
+    "forksSnapshot": 8,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v0.4.0",
+        "published_at": "2026-09-27T16:37:59Z",
+        "prerelease": false,
+        "html_url": "https://github.com/tomerglick57/Jevstiller/releases/tag/v0.4.0",
+        "body": "\nThe agreement guarantee can now cover a caller's confidence check, not just the label.\n\n**Upgrading from 0.3.x:**\n- **Nothing changes until you set a floor.** Existing tasks have none after the upgrade, and `[manager] confidence_floor` applies to new tasks. Set an existing task's floor with `jevstiller admin floor <key> 0.6` or `[tasks.\"<key>\"] confidence_floor`; it retrains once for it.\n- **Python API:** a local answer's `Result.confidence` is now Jev's definition. If your code compares it with a threshold tuned on the old values, retune it. With K classes, the new value is `(K·top − 1)/(K − 1)` for the old value `top` (2 classes: 0.8 becomes 0.6). The proxy's responses are unchanged.\n- **Data directories** from 0.3.x work as they are. 0.4.0 writes a `confidence_floor` field into each task's `task.json` and into new routing policies, and 0.3.x can't read those. To go back, restore a backup taken before the upgrade (docs/compatibility.md).\n- **License:** Apache 2.0 from this release on. 0.3.4 and earlier stay under MIT.\n\n- **The guarantee can cover your confidence check too: `confidence_floor`.** Jev's docs suggest treating a low-confidence answer as unsure, for example sending it to review. Until now only the label was covered.\n  - **The problem:** the local model answers only when it's confident, so a local answer never reports a low confidence. Its confidence is its own number, and on the same request it runs lower than Jev's 80–90% of the time. With a check at 0.6, 8–37% of the requests Jev would have flagged came back confident, depending on the task. Counting a different label or a lost flag, the caller's outcome changed on more than 2% of requests in 20 of 25 benchmark splits, while the label bound held in all 25.\n  - **With a floor** (per task: `Task.confidence_floor`, `[manager] confidence_floor` for new tasks, `[tasks.\"<key>\"]`, `jevstiller admin floor <key> 0.6`, `POST /jevstiller/v1/tasks/{key}/floor`):\n    - A local answer also counts as disagreeing when Jev would have answered with less confidence than the floor, in calibration, the shadow test and the audit. So `target_agreement` covers the caller's unsure decision.\n    - Local answers report at least the floor, so your check keeps them.\n    - Requests Jev would be unsure about go to Jev, and its own confidence comes back.\n  - **The cost** is coverage. On the five benchmark tasks it was 4–12 points at a floor of 0.6 and 10–19 at 0.8 (`experiments/confidence_floor.py`, docs/benchmarks.md).\n  - **Changing a task's floor** trains a student calibrated for it at once. Production keeps serving as it was calibrated until the new one passes shadow; the status report says so.\n  - `Jevstiller.evaluate(..., teacher_confidences=...)` counts the same way offline.\n  - Tasks without a floor behave as before.\n- **A local answer's `Result.confidence` in the Python API is now Jev's definition** (the peakedness of the distribution), as the proxy already returned. It used to be the student's top probability, so the same number meant different things depending on who answered: with 2 classes, 0.8 there is 0.6 in Jev's terms. Routing is unchanged: its threshold and the stored `student_confidence` are still the top probability.\n- **The license is now Apache 2.0** (was MIT). It is just as permissive, and adds an explicit patent grant from contributors and a `NOTICE` file that redistributions keep. Releases up to 0.3.4 stay available under MIT.\n\n"
+      },
+      {
+        "tag_name": "v0.3.4",
+        "published_at": "2026-09-26T18:48:35Z",
+        "prerelease": false,
+        "html_url": "https://github.com/tomerglick57/Jevstiller/releases/tag/v0.3.4",
+        "body": "\n- **Disk use no longer grows with every retrain.** The 24-hour soak's data directory reached 53 GB, 23 GB of it old model versions: every superseded version was kept (~8–10 MB each, 645 in the busiest task). Now only the newest `keep_versions` (default 3) versions of each finished state (superseded, rejected, rolled back) keep their files. Production, the shadow and candidates always stay. Older ones stay listed as `deleted`, and rollback goes back at most that far. Versions an earlier release kept are deleted on each task's first maintenance pass after the upgrade.\n- **A retrain waits for 2,000 new Jev answers, not 2,000 new requests** (`min_new_samples`). Requests the student answered counted too, so at 97% answered locally a busy task retrained every ~2 minutes on ~60 new answers, each time storing a new version. Drift and teacher changes still retrain at once. The count is an index seek, so it costs the number of new answers.\n- **Stored requests are bounded too.** Each maintenance pass deletes the rows nothing reads any more:\n  - **With a Jev answer:** all but the newest `max_train_samples` (50,000) training and `max_calib_samples` (20,000) calibration rows per teacher lineage. Training and calibration never read more than those.\n  - **Answered by the student alone:** all but the newest `keep_local_rows` (new setting, 10,000).\n  - **Kept anyway:** a shadow's rows, until it's judged.\n\n  Status totals (requests, who answered, teacher calls and cost) still count deleted rows. A new store hands the space back as it goes. A store from an earlier release is rebuilt once its backlog is gone. A busy task's store now levels off at ~300 MB. On the 24-hour soak's data, everything together goes from 53 GB to 4.3 GB. **After upgrading,** a busy task's backlog is deleted over its first maintenance passes, 20,000 rows at a time. Expect disk I/O for a while: the soak's 6.8 million rows took 18 minutes.\n- Docs: `calib_fraction` is a draw per request (since 0.3.0), not per text; the disk sizing in docs/deploy.md was low (~2 KB per request, no version growth).\n- **`rare_classes` defaults to `\"defer\"`.** A task whose teacher never uses one of its labels used to wait for that label forever before training its first student (the benchmark's CLINC150 run: Jev never answered `reminder_update` in 12,000 messages). Now the loop trains once the other thresholds are met and keeps forwarding any request the student would label with a class that is still below `min_samples_per_class`. Set `rare_classes = \"wait\"` for the old behaviour.\n- **Reproduce the headline result without an API key.** `bash experiments/reproduce.sh` replays Banking77 against Jev's recorded answers, which now ship with the repository (`experiments/cache/banking77.jsonl.gz`), and prints the numbers next to the published ones. `experiments/run.py` has a `--teacher cached` mode for it, and `experiments/record_answers.py` records a complete cache for a dataset.\n- **Replays are reproducible.** The per-request train/calibration split is now seeded from `Config.seed` and the task version instead of the store's file path, so the same replay gives the same result on any machine. Production behaviour is unchanged: the split is still a uniform draw per request.\n- `Status.report(events=False)` leaves out the loop events; floats in event lines are rounded to four decimals.\n- **The 24-hour soak is written up** (docs/benchmarks.md §Soak): 3.6 million requests, 0.012% errors, memory bounded (peak 654 MB, 308 MB at the end), silent drift at hour 12 recovered without intervention. The README's memory claim now says \"bounded\" rather than \"flat\".\n- **A benchmark, runnable by anyone**, with results (docs/benchmarks.md §Benchmark): on five public tasks the loop reaches 22–80% coverage at 98.7–99.7% agreement with Jev and matches Jev's accuracy on every task; over 100 random splits the calibrated threshold broke the 2% budget once while the point-estimate rule broke it on 6–12 of 20 splits per task. `bash experiments/bench.sh` records Jev's answers for five public tasks (Banking77, CLINC150, a 20k AG News sample, TweetEval sentiment and offensive), replays each through the loop, runs `experiments/baselines.py` (four threshold rules on identical splits: soft or hard labels × Clopper-Pearson bound or point estimate) and rebuilds the tables at the top of docs/benchmarks.md with `experiments/bench.py`. `experiments/target_curve.py` adds the coverage-vs-target table (what `admin target` buys on each task). `run.py --rare-classes defer` trains when Jev never uses one of a task's labels (CLINC150 needed it). AG News is now read from CSV (the `datasets` import shadowed the local module).\n- `examples/race.py`: 200 decisions one at a time, straight to Jev and through the proxy, recorded separately and replayed on one clock: 60.2 s vs 24.7 s (docs/benchmarks.md, `docs/media/race.gif`). The website now links images in docs as the files themselves.\n- **The pitch no longer leans on Jev's rate limit.** On 2026-09-26 one key sustained 190 requests/s to Jev for a minute with no 429 (published limit: 1,200/min); TypeSafe says limits adjust dynamically. The README's \"Why\" now argues from latency (~300 ms per answer at every load, ~15 ms locally), sequential decisions, egress and vendor dependence; the measurements are in docs/benchmarks.md.\n- **The README opens with the proxy in front of live Jev.** `examples/proxy_demo.py` is a service that classifies 5,000 real customer messages with the unmodified SDK; recorded through `docker run ... jevstiller` it shows answers moving from Jev (~350 ms) to the local model (~40 ms at 8 concurrent callers) after about 4,000 requests, with no errors (`docs/media/proxy.gif`).\n- `examples/quickstart_synthetic.py` starts from a fresh temporary directory on every run.\n- Repository: GitHub Discussions for questions and results, a pull request template, links from the issue chooser.\n\n"
+      },
+      {
+        "tag_name": "answers-2026-09-26",
+        "published_at": "2026-09-26T16:17:06Z",
+        "prerelease": false,
+        "html_url": "https://github.com/tomerglick57/Jevstiller/releases/tag/answers-2026-09-26",
+        "body": "Jev's answers (jev-1.13.0), with full probability distributions, for every message of the benchmark tasks: CLINC150 (12,000-row sample), AG News (20,000-row sample), TweetEval sentiment and offensive. Banking77's ship in the repository. `bash experiments/bench.sh --no-record` downloads these and reproduces the tables in docs/benchmarks.md without an API key. Not a software release: install Jevstiller from PyPI or the container image."
+      },
+      {
+        "tag_name": "v0.3.3",
+        "published_at": "2026-09-25T22:04:28Z",
+        "prerelease": false,
+        "html_url": "https://github.com/tomerglick57/Jevstiller/releases/tag/v0.3.3",
+        "body": "\n- **`jevstiller admin` works next to the server without flags.** When no token or URL is given, it uses the server's own settings: the config file (`JEVSTILLER_CONFIG`), `JEVSTILLER_ADMIN_TOKEN_FILE` and the port. So `docker exec jevstiller jevstiller admin tasks` (or `docker compose exec`, or `kubectl exec`) just works.\n- The Kubernetes manifest passes its config file as `JEVSTILLER_CONFIG` instead of `--config`, so `kubectl exec ... jevstiller admin` finds the same settings.\n- Website: the getting-started page has install tabs (Docker, Compose, Kubernetes, pip), a \"check it works\" step with the expected output, and a screenshot of the status page.\n\n"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "959b0f59a134c1ffa4806966520aa7c7dde20fb6",
+        "url": "https://github.com/tomerglick57/Jevstiller/commit/959b0f59a134c1ffa4806966520aa7c7dde20fb6",
+        "message": "Bump the website group in /website with 3 updates (#19)\n\nBumps the website group in /website with 3 updates: [@astrojs/starlight](https://github.com/withastro/starlight/tree/HEAD/packages/starlight), [sharp](https://github.com/lovell/sharp) and [wrangler](https://github.com/cloudflare/workers-sdk/tree/HEAD/packages/wrangler).\n\n\nUpdates `@astrojs/starlight` from 0.42.3 to 0.42.4\n- [Release notes](https://github.com/withastro/starlight/releases)\n- [Changelog](https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md)\n- [Commits](https://github.com/withastro/starlight/commits/@astrojs/starlight@0.42.4/packages/starlight)\n\nUpdates `sharp` from 0.35.4 to 0.35.5\n- [Release notes](https://github.com/lovell/sharp/releases)\n- [Commits](https://github.com/lovell/sharp/compare/v0.35.4...v0.35.5)\n\nUpdates `wrangler` from 4.137.0 to 4.144.0\n- [Release notes](https://github.com/cloudflare/workers-sdk/releases)\n- [Commits](https://github.com/cloudflare/workers-sdk/commits/wrangler@4.144.0/packages/wrangler)\n\n---\nupdated-dependencies:\n- dependency-name: \"@astrojs/starlight\"\n  dependency-version: 0.42.4\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: website\n- dependency-name: sharp\n  dependency-version: 0.35.5\n  dependency-type: direct:production\n  update-type: version-update:semver-patch\n  dependency-group: website\n- dependency-name: wrangler\n  dependency-version: 4.144.0\n  dependency-type: direct:development\n  update-type: version-update:semver-minor\n  dependency-group: website\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "date": "2026-10-03T08:17:29Z"
+      },
+      {
+        "sha": "849b0f3931a9c1820ed72e2432f92a54f7c5e4ac",
+        "url": "https://github.com/tomerglick57/Jevstiller/commit/849b0f3931a9c1820ed72e2432f92a54f7c5e4ac",
+        "message": "Website: deploy with the wrangler CLI instead of wrangler-action; CODEOWNERS for .github/ (#18)\n\nThe deploy step now runs `npx wrangler pages deploy`, using the wrangler pinned in\nwebsite/package-lock.json (the one `npm run deploy` uses), so CI and local deploys run\nthe same version and the workflow has one less third-party action holding the token.\nDependabot PRs build only, since they get no secrets. Dependabot now also watches\nwebsite/'s npm packages, wrangler included. CODEOWNERS puts .github/ under review.\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+        "date": "2026-10-03T08:10:08Z"
+      },
+      {
+        "sha": "9db3cfd814eaec47061897e368a668c61e6db61b",
+        "url": "https://github.com/tomerglick57/Jevstiller/commit/9db3cfd814eaec47061897e368a668c61e6db61b",
+        "message": "Roadmap: OpenAI's Decisions API as a second teacher\n\nAssisted-by: Claude Fable 5.1 <noreply@anthropic.com>",
+        "date": "2026-09-29T21:01:05Z"
+      },
+      {
+        "sha": "475a00527c752ad73119eae64124efd7f4160e74",
+        "url": "https://github.com/tomerglick57/Jevstiller/commit/475a00527c752ad73119eae64124efd7f4160e74",
+        "message": "Post: say what it trains, concretely\n\nAssisted-by: Claude Fable 5.1 <noreply@anthropic.com>",
+        "date": "2026-09-29T15:03:40Z"
+      },
+      {
+        "sha": "7f13ce5b3862b3796aa74a670f4b9a32ae899647",
+        "url": "https://github.com/tomerglick57/Jevstiller/commit/7f13ce5b3862b3796aa74a670f4b9a32ae899647",
+        "message": "Benchmarks: 12-hour soak of 0.4.0, 4.3 M requests, 0 errors, RSS 300-445 MB\n\nAssisted-by: Claude Fable 5.1 <noreply@anthropic.com>",
+        "date": "2026-09-29T01:54:39Z"
+      }
+    ],
+    "receipt": {
+      "repo": "tomerglick57/Jevstiller",
+      "startedAt": "2026-10-04T08:41:27.337881+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:28.782907+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.098618+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.853654+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:32.705967+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:33.582450+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:34.351748+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.270604+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  {
+    "repository": "feder-cr/dots",
+    "html_url": "https://github.com/feder-cr/dots",
+    "created_at": "2026-09-29T23:06:00Z",
+    "pushed_at": "2026-10-03T15:21:24Z",
+    "updated_at": "2026-10-03T19:47:59Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "e3941c947e55aa14972bb592d19943f76cf6de1c",
+      "html_url": "https://github.com/feder-cr/dots/blob/main/LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "starsSnapshot": 2573,
+    "forksSnapshot": 436,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "2ff9848c1c8a80460d89242d97beacf23dff05ca",
+        "url": "https://github.com/feder-cr/dots/commit/2ff9848c1c8a80460d89242d97beacf23dff05ca",
+        "message": "README: the title as the first element, so nothing pushes it down",
+        "date": "2026-09-29T23:24:00Z"
+      },
+      {
+        "sha": "454d159b4c50759502c4fe58717834b2ad471e2a",
+        "url": "https://github.com/feder-cr/dots/commit/454d159b4c50759502c4fe58717834b2ad471e2a",
+        "message": "CI: English, claims and the suite on two systems, one gate context",
+        "date": "2026-09-29T23:05:09Z"
+      },
+      {
+        "sha": "6db0edc8e2d9f2e78eb888af180bf550e8fecf8d",
+        "url": "https://github.com/feder-cr/dots/commit/6db0edc8e2d9f2e78eb888af180bf550e8fecf8d",
+        "message": "README: the agent is a model and a browser, and the browser is what the site sees",
+        "date": "2026-09-29T22:52:30Z"
+      },
+      {
+        "sha": "cbbe1bc9c2ca00cbc0e004b54a3d8bbc46639427",
+        "url": "https://github.com/feder-cr/dots/commit/cbbe1bc9c2ca00cbc0e004b54a3d8bbc46639427",
+        "message": "dots: invisible-playwright-mcp's interface under its own name\n\nThe command is the pinned package's ui, reached through its command group so the .env beside it is read. Nothing of the loop, the browser or the page is re-implemented here.",
+        "date": "2026-09-29T22:50:21Z"
+      }
+    ],
+    "receipt": {
+      "repo": "feder-cr/dots",
+      "startedAt": "2026-10-04T08:48:46.648594+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:47.425648+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:48.105302+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:48.903308+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:49.624266+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:50.324367+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:51.048622+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:51.830356+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  {
+    "repository": "wy51ai/floorplan-3d",
+    "html_url": "https://github.com/wy51ai/floorplan-3d",
+    "created_at": "2026-09-29T02:57:30Z",
+    "pushed_at": "2026-10-02T02:32:11Z",
+    "updated_at": "2026-10-03T21:30:13Z",
+    "archived": false,
+    "default_branch": "master",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "9081fb945f7a0cb31c0624c7ee69c99582d4a14c",
+      "html_url": "https://github.com/wy51ai/floorplan-3d/blob/master/LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "starsSnapshot": 1361,
+    "forksSnapshot": 277,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "730ec0923a018fdf38b4687c5ef385c7dcac451f",
+        "url": "https://github.com/wy51ai/floorplan-3d/commit/730ec0923a018fdf38b4687c5ef385c7dcac451f",
+        "message": "update",
+        "date": "2026-10-02T02:31:38Z"
+      },
+      {
+        "sha": "fbcb8d56a12090f53551ddaa7ae31ae4886a94d1",
+        "url": "https://github.com/wy51ai/floorplan-3d/commit/fbcb8d56a12090f53551ddaa7ae31ae4886a94d1",
+        "message": "Update the README and LICENSE files by adding an English version and a license.",
+        "date": "2026-10-01T09:29:31Z"
+      },
+      {
+        "sha": "631f36b5103894e37705bdd73c3890208ec5b9f1",
+        "url": "https://github.com/wy51ai/floorplan-3d/commit/631f36b5103894e37705bdd73c3890208ec5b9f1",
+        "message": "Merge pull request #7 from jinniw43805/feat/traditional-chinese\n\nAdd Traditional Chinese (繁體) UI language",
+        "date": "2026-10-01T09:23:31Z"
+      },
+      {
+        "sha": "e5c444995a5a80b68c66a9ff934c8fee7247b258",
+        "url": "https://github.com/wy51ai/floorplan-3d/commit/e5c444995a5a80b68c66a9ff934c8fee7247b258",
+        "message": "Add Traditional Chinese (繁體) UI language\n\nReplace the EN/中文 toggle with a 简体 / 繁體 / English selector. Traditional\ntext is converted at runtime from the existing Simplified strings via a\ncharacter table generated with OpenCC (s2tw) for the characters used on the\npage, plus a few phrase rules for context-dependent characters\n(布置→佈置, 布局→佈局, 台面→檯面, 复制→複製). The choice is persisted in\nlocalStorage and sets <html lang=\"zh-TW\">.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>",
+        "date": "2026-10-01T07:55:24Z"
+      },
+      {
+        "sha": "a03136c86842968a3de5da4c33549d3df3313c51",
+        "url": "https://github.com/wy51ai/floorplan-3d/commit/a03136c86842968a3de5da4c33549d3df3313c51",
+        "message": "Refactor code structure for improved readability and maintainability",
+        "date": "2026-09-29T08:12:38Z"
+      }
+    ],
+    "receipt": {
+      "repo": "wy51ai/floorplan-3d",
+      "startedAt": "2026-10-04T08:48:40.943944+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:41.688643+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:42.697486+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:43.504224+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.275029+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.190136+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.895253+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:46.763253+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  {
+    "repository": "nykooi1/vibe-wise",
+    "html_url": "https://github.com/nykooi1/vibe-wise",
+    "created_at": "2026-09-29T01:29:57Z",
+    "pushed_at": "2026-10-01T11:26:14Z",
+    "updated_at": "2026-10-04T00:47:13Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "e8c32f47534a4a3df6cc17bd5ffb28d8c02db5c8",
+      "html_url": "https://github.com/nykooi1/vibe-wise/blob/main/LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "starsSnapshot": 702,
+    "forksSnapshot": 37,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "1135f4ae8205da78404a71e85f567d5911da4e4d",
+        "url": "https://github.com/nykooi1/vibe-wise/commit/1135f4ae8205da78404a71e85f567d5911da4e4d",
+        "message": "cut dev stuff from md",
+        "date": "2026-10-01T11:26:12Z"
+      },
+      {
+        "sha": "2fa34051b7f586397c8b6c3b62d2aedd6fe3d22c",
+        "url": "https://github.com/nykooi1/vibe-wise/commit/2fa34051b7f586397c8b6c3b62d2aedd6fe3d22c",
+        "message": "Separate install commands to prevent multiline paste errors",
+        "date": "2026-10-01T10:00:13Z"
+      },
+      {
+        "sha": "835c05ed01374c09ae5cdd61fa59aba501d80403",
+        "url": "https://github.com/nykooi1/vibe-wise/commit/835c05ed01374c09ae5cdd61fa59aba501d80403",
+        "message": "Preserve the learner's effort in reasoning through decisions",
+        "date": "2026-10-01T08:52:19Z"
+      },
+      {
+        "sha": "5ca68d6efe0a78f907ceee588f7bb47954539ae0",
+        "url": "https://github.com/nykooi1/vibe-wise/commit/5ca68d6efe0a78f907ceee588f7bb47954539ae0",
+        "message": "Make learner ownership and minimal guidance the default",
+        "date": "2026-10-01T08:51:59Z"
+      },
+      {
+        "sha": "7ef6c21f7a3e846c4fb2a19e60f189b749c41e25",
+        "url": "https://github.com/nykooi1/vibe-wise/commit/7ef6c21f7a3e846c4fb2a19e60f189b749c41e25",
+        "message": "Keep design questions open when explaining concepts",
+        "date": "2026-10-01T08:48:04Z"
+      }
+    ],
+    "receipt": {
+      "repo": "nykooi1/vibe-wise",
+      "startedAt": "2026-10-04T08:48:46.477208+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:47.320125+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:47.991051+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:48.899470+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:49.624687+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:50.309050+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:51.088263+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:51.885320+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  {
+    "repository": "CopilotKit/OpenDots",
+    "html_url": "https://github.com/CopilotKit/OpenDots",
+    "created_at": "2026-09-29T17:13:58Z",
+    "pushed_at": "2026-10-02T21:16:45Z",
+    "updated_at": "2026-10-04T00:47:12Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "b3bf13ded443fa46a3fbbf69c42d2150c21f4cda",
+      "html_url": "https://github.com/CopilotKit/OpenDots/blob/main/LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "starsSnapshot": 2513,
+    "forksSnapshot": 311,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "c2569bb6a13a22e565cf3eb791c62267d06babb1",
+        "url": "https://github.com/CopilotKit/OpenDots/commit/c2569bb6a13a22e565cf3eb791c62267d06babb1",
+        "message": "feat: add Parallel search and extraction to research (#15)",
+        "date": "2026-10-02T21:16:45Z"
+      },
+      {
+        "sha": "b01ac1f6a903e5e56c119d960901353ac0a3d171",
+        "url": "https://github.com/CopilotKit/OpenDots/commit/b01ac1f6a903e5e56c119d960901353ac0a3d171",
+        "message": "docs: add Automatic Learning to Features (#10)\n\n* docs: list automatic learning under Features\n\n* docs: format README feature table",
+        "date": "2026-10-01T21:53:57Z"
+      },
+      {
+        "sha": "8f53c3bb148068cf0405677de07df34cdfd2f680",
+        "url": "https://github.com/CopilotKit/OpenDots/commit/8f53c3bb148068cf0405677de07df34cdfd2f680",
+        "message": "Merge pull request #8 from CopilotKit/jerel/tanstack-ai\n\nUse TanStack AI for specialist model and tool execution",
+        "date": "2026-10-01T17:33:55Z"
+      },
+      {
+        "sha": "a0b91e71b8ea940e4560ff5f568c0556cb9b7323",
+        "url": "https://github.com/CopilotKit/OpenDots/commit/a0b91e71b8ea940e4560ff5f568c0556cb9b7323",
+        "message": "Update README.md",
+        "date": "2026-10-01T12:36:34Z"
+      },
+      {
+        "sha": "0c29b5ebf6775194ec32115052e5ecf51bbaf0d8",
+        "url": "https://github.com/CopilotKit/OpenDots/commit/0c29b5ebf6775194ec32115052e5ecf51bbaf0d8",
+        "message": "Update README.md",
+        "date": "2026-10-01T12:33:53Z"
+      }
+    ],
+    "receipt": {
+      "repo": "CopilotKit/OpenDots",
+      "startedAt": "2026-10-04T08:48:40.942039+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:42.046074+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:42.801715+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:43.528698+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.356959+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.090438+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.825288+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:46.646816+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  {
+    "repository": "EverMind-AI/Raven",
+    "html_url": "https://github.com/EverMind-AI/Raven",
+    "created_at": "2026-05-21T08:45:07Z",
+    "pushed_at": "2026-10-03T16:19:55Z",
+    "updated_at": "2026-10-03T23:52:14Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "33068551c97e6ca2cce7c1e85ee63d97de1e9e1a",
+      "html_url": "https://github.com/EverMind-AI/Raven/blob/main/LICENSE",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "starsSnapshot": 5119,
+    "forksSnapshot": 146,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v0.2.4",
+        "published_at": "2026-10-03T16:36:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/EverMind-AI/Raven/releases/tag/v0.2.4",
+        "body": "Raven 0.2.4 is a patch release. Raven can now read and change its own configuration from the conversation: a new `raven_config` tool reads any setting without asking, asks before every write, and never takes a key through the chat ([#833](https://github.com/EverMind-AI/Raven/pull/833)). Four things behave differently once you upgrade. The approval sheet on the page no longer answers to 1, 2 and 3: Esc denies, Cmd+Enter (Ctrl+Enter) allows once, and Shift+Cmd+Enter gives the broader grant ([#817](https://github.com/EverMind-AI/Raven/pull/817)). Channels have left the Settings dialog: the rail row that was Agent Connector is now Connectors, with Agents and Channels as its two tabs ([#830](https://github.com/EverMind-AI/Raven/pull/830)). Every turn the gateway runs (the page, chat apps, cron) now takes the per-turn workspace checkpoint, a shadow git repository at `.raven/shadow.git` in the workspace, which is what lets a file an `exec` command wrote open as a diff; `runtime.checkpoint.policy: \"never\"` turns it off ([#829](https://github.com/EverMind-AI/Raven/pull/829), [#849](https://github.com/EverMind-AI/Raven/pull/849)). And the main agent answers in plainer, shorter prose, using headers, bullet menus and emoji only when you ask for them ([#853](https://github.com/EverMind-AI/Raven/pull/853)). No command, flag or config key is removed or renamed.\r\n\r\n## Highlights\r\n\r\n**Raven configures itself**\r\n\r\n- The `raven_config` tool has seven actions: `describe` (every setting with its value, or a search), `get`, `set` (one path, or several under one confirmation), `unset`, `add` (connect preset agents, several at once), `test` and `restart` (reload or restart once pending changes are gathered). Its catalog covers 14 sections and about 93 settings, each saying when a change takes effect: next turn, at once, on reload, on restart, or on the memory server. Writes go through the same methods the Settings page uses, so both are checked the same way. Setting `session.model` switches only the current conversation ([#833](https://github.com/EverMind-AI/Raven/pull/833)).\r\n\r\n- Every write asks first, on a config card that shows what changes, the value before and after, and when it takes effect. Full access, your own allow rule or the smart-mode reviewer can let a change through, but only in a turn someone is at, and the reviewer never approves a sensitive setting (approval mode, sandbox, deny patterns, MCP servers, provider endpoints, who may instruct Raven on a channel, lent keys and the like). Cron and other unattended turns cannot change the configuration ([#833](https://github.com/EverMind-AI/Raven/pull/833)).\r\n\r\n- A key never goes through a tool call. The agent names the setting and a credential card on the page takes the key, which the host writes; the model only learns whether it was saved or skipped. A key passed to the tool directly is not written, and the agent is told to ask you to rotate it. In the terminal or a chat app, where no card can be shown, you are told where to enter it. Tool output is scrubbed of the keys Raven holds. The credential card answers to the same keys as the approval sheet: Esc skips, Cmd+Enter saves ([#833](https://github.com/EverMind-AI/Raven/pull/833), [#849](https://github.com/EverMind-AI/Raven/pull/849)).\r\n\r\n- Raven can connect preset agents, test them and work out why one does not answer. On the Agents page, a refused connect or a failed test offers \"Hand it to Raven\", which opens a new conversation naming the agent and the reason, without sending it. An ACP agent can be started with one of Raven's provider keys (`lendKeys`; Pi only for now), and the connect card says which key it lends ([#833](https://github.com/EverMind-AI/Raven/pull/833), [#849](https://github.com/EverMind-AI/Raven/pull/849)).\r\n\r\n- An EverOS memory LLM left unset now follows the main model, and the memory server restarts when the main model changes ([#833](https://github.com/EverMind-AI/Raven/pull/833)).\r\n\r\n**The page**\r\n\r\n- Connectors: one rail row with Agents and Channels tabs, and it returns to the tab you were last on. The channel page is laid out like the agent hub: All / Connected / Not connected filters over a grid of cards with three states. A connection problem (switched on, but the adapter is not running) is red, sorted first, and says what to do. A card only opens its sheet; connecting happens there, and the list's switches and search are gone. Each tab has a one-line description under it ([#830](https://github.com/EverMind-AI/Raven/pull/830), [#849](https://github.com/EverMind-AI/Raven/pull/849)).\r\n\r\n- Approvals: Esc denies, Cmd+Enter allows once, and Shift+Cmd+Enter grants the saved rule, or this conversation when there is no rule. Ctrl works in place of Cmd. Each button shows its key, digits no longer answer, and Deny keeps the focus, so a bare Enter never grants. The broader button now just says \"Always allow\" and names the rule it saves on its own line. The question sheet keeps number keys for options and gains Cmd+Enter for Next / Submit ([#817](https://github.com/EverMind-AI/Raven/pull/817)).\r\n\r\n- The file viewer shows ten Office formats (ppt, pptx, doc, docx, xls, xlsx, odp, odt, ods, rtf) as pictures of their pages, converted with LibreOffice, where only pptx was before, and delivery tiles get a first-page thumbnail. A file with an unknown or no extension (`Makefile`, `.gitignore`) is judged by its first 8 KB and shown as text when it is text. A broken image says whether the file is gone, too large, refused or could not be drawn. A file with no preview gets a centred card with one open-in-app button ([#817](https://github.com/EverMind-AI/Raven/pull/817)).\r\n\r\n- A previewed image is drawn at its own size, and one bigger than the window scrolls both ways instead of running off the screen ([#854](https://github.com/EverMind-AI/Raven/pull/854)).\r\n\r\n- A delivered file that the agent rewrites shows its new content instead of the browser's cached copy ([#838](https://github.com/EverMind-AI/Raven/pull/838)).\r\n\r\n**Diffs**\r\n\r\n- A file an `exec` command created, rewrote or removed opens as a diff in the desk's diff tab, with +/- counts, instead of as the bare file. The command measures what it wrote against the workspace checkpoint. Files the checkpoint excludes (`.env`, `*.log`, your `.gitignore`) never carry their text, and text files over 256 KB get no counts ([#829](https://github.com/EverMind-AI/Raven/pull/829), [#849](https://github.com/EverMind-AI/Raven/pull/849)).\r\n\r\n- The diff tab no longer lists files with no diff to show (images, Office files, archives, PDFs), and its badge counts only the rows it draws. A task's file chip opens such a file directly ([#847](https://github.com/EverMind-AI/Raven/pull/847)).\r\n\r\n**Replies, agents and scheduling**\r\n\r\n- The main agent leads with the answer, answers a simple question in plain prose with no headers, bullet list or closing recap, and keeps errors, failing output and warnings in full. A format you ask for still wins. Agents the host launches are unaffected. The workspace `SOUL.md` and `AGENTS.md` templates are trimmed to match, but only new workspaces get them; an existing workspace keeps its own copies ([#853](https://github.com/EverMind-AI/Raven/pull/853)).\r\n\r\n- All five bundled agents (raven-code, raven-design, raven-oncall, raven-ppt, raven-research) can inherit a host model signed in with OAuth, OpenAI Codex included ([#841](https://github.com/EverMind-AI/Raven/pull/841)).\r\n\r\n- A plugin connected during a turn can be used in that same turn, instead of reporting \"connected\" and then being unavailable until your next message ([#816](https://github.com/EverMind-AI/Raven/pull/816)).\r\n\r\n- A cron reminder that already replied is no longer sent a second time by the heartbeat ([#843](https://github.com/EverMind-AI/Raven/pull/843)).\r\n\r\n- WhatsApp switched on but never paired stops after three unscanned QR rounds instead of printing a fresh code every 20 seconds indefinitely. The channel then reads as stopped, and trying again restarts pairing ([#832](https://github.com/EverMind-AI/Raven/pull/832)).\r\n\r\n**Providers and MCP**\r\n\r\n- Signing in to OpenAI Codex (ChatGPT subscription) from the page works end to end: a second \"Authorize in browser\" click keeps the same code, the model pickers see the provider without a reload, usage is reported, and the token file is readable by its owner only ([#818](https://github.com/EverMind-AI/Raven/pull/818)).\r\n\r\n- Testing a provider sends the extra headers its endpoint is configured with, so a relay that needs a tenant header is no longer reported as `invalid_key` ([#831](https://github.com/EverMind-AI/Raven/pull/831)).\r\n\r\n- Updating a model's metadata under an equivalent id (`hosted-vllm/team-model` for `team-model`) keeps its existing label, description and tags ([#835](https://github.com/EverMind-AI/Raven/pull/835)).\r\n\r\n- An MCP server that pages its `tools/list` answer now gets all its tools registered, not just the first page ([#825](https://github.com/EverMind-AI/Raven/pull/825)).\r\n\r\n**Sandbox, browser and safety**\r\n\r\n- Sub-agents of `raven playbook` runs now respect `tools.sandbox` and `tools.restrict_to_workspace`; before, they ran on the host unconfined. A playbook that relied on that will now see the configured limits ([#827](https://github.com/EverMind-AI/Raven/pull/827)).\r\n\r\n- A boxlite sandbox with `tools.sandbox.allow_net` set to `false` or to a domain list starts again; with boxlite 0.9.5 it failed with a `TypeError` ([#813](https://github.com/EverMind-AI/Raven/pull/813)).\r\n\r\n- When boxlite is missing, the advice is a command for the environment Raven runs in, `uv pip install --python <Raven's python> boxlite==0.9.5`, instead of `pip install 'raven[sandbox]'`, which installs an unrelated package ([#822](https://github.com/EverMind-AI/Raven/pull/822)).\r\n\r\n- A browser permission prompt names the site the call will actually act on, and the grant is keyed to it, so an approval for one site can no longer be reused for an action that landed on another page ([#839](https://github.com/EverMind-AI/Raven/pull/839)).\r\n\r\n- When Chromium cannot start because a system library is missing, the browser tools name the library and the command to install it (`<python> -m playwright install-deps chromium`, which needs root), instead of reporting a busy profile or a missing browser ([#848](https://github.com/EverMind-AI/Raven/pull/848)).\r\n\r\n- `raven doctor` warns when `permissions.mode` is `full` and when `tools.sandbox.backend` is `none` (commands run on this machine with no isolation). Neither warning changes the exit code, and `--json` reports both values. The agent is also told to install packages into the project's virtual environment, or a temporary one, rather than the global one ([#837](https://github.com/EverMind-AI/Raven/pull/837)).\r\n\r\n**Docs**\r\n\r\n- The Raven technical report is on [arXiv (2609.33439)](https://arxiv.org/abs/2609.33439) with a [Hugging Face paper page](https://huggingface.co/papers/2609.33439), linked from both READMEs, and `docs/technical-report/` carries its abstract and BibTeX entry ([#812](https://github.com/EverMind-AI/Raven/pull/812), [#836](https://github.com/EverMind-AI/Raven/pull/836)).\r\n\r\n## Install\r\n\r\nNew install on Linux, macOS, or WSL2:\r\n\r\n```bash\r\ncurl -fsSL https://raven.evermind.ai/install.sh | bash\r\n```\r\n\r\nNew install on native Windows, in PowerShell:\r\n\r\n```powershell\r\nirm https://raven.evermind.ai/install.ps1 | iex\r\n```\r\n\r\nWindows PowerShell 5.1 (the version built into Windows) rejects that URL with\r\n`Permanent Redirect`; use the direct one instead:\r\n\r\n```powershell\r\nirm https://raw.githubusercontent.com/EverMind-AI/Raven/refs/heads/main/install.ps1 | iex\r\n```\r\n\r\nThe installer puts uv, Node.js 22, Raven and its plugins in place, downloads the\r\nbrowser runtime, installs or offers LibreOffice, and then finishes by opening\r\nRaven in your browser. First-run setup happens on that page. The installer holds\r\nthe terminal while the page is up; press Ctrl-C to stop it, then start Raven\r\nagain with:\r\n\r\n```bash\r\nraven web\r\n```\r\n\r\nThat keeps Raven running in the background and opens the page; `raven web --stop`\r\nstops it. Bare `raven` does the same, and opens the TUI only where no browser\r\ncan be opened. Prefer the terminal? `raven tui` runs the same first-run setup and\r\nopens the TUI, and `raven onboard` stays the explicit way to reconfigure later. Set\r\n`RAVEN_MINIMAL=1` to skip the browser and LibreOffice downloads, or\r\n`RAVEN_NO_LAUNCH=1` to have the installer return without opening the page.\r\n\r\n## Upgrade\r\n\r\nAlready running Raven? Upgrade in place -- configuration, sessions, and memory\r\nare preserved. On a `raven web` install whose page is served by 0.2.3, the update\r\nrow at the bottom of the sidebar does this for you, and the page reloads itself,\r\nstill signed in, once 0.2.4 is up. A page served by 0.2.2 or earlier refuses it;\r\nfrom the command line, stop the page first, then upgrade:\r\n\r\n```bash\r\nraven web --stop\r\nraven upgrade\r\n```\r\n\r\nOn Linux and macOS `raven upgrade` runs the install in the foreground and\r\nreturns when it is done. On native Windows it hands the install to a separate\r\nhelper and returns at once; wait for the helper's completion message. Then\r\nstart Raven again:\r\n\r\n```bash\r\nraven web\r\n```\r\n\r\n`raven upgrade` installs the latest stable release together with the plugin\r\nwheels it ships. It never picks up a pre-release unless this install has joined\r\nthe beta channel (a `~/.raven/beta.json` that only the beta installer writes).\r\n`raven upgrade --check` reports whether a newer release exists without\r\ninstalling it. Editable source checkouts are never overwritten: `raven upgrade`\r\nreports the checkout path and how far it is ahead of or behind `origin/main`,\r\nand the remedy is `git pull && ./install.sh` in the checkout. Rerunning the\r\none-line installer also upgrades, and ends on the running page.\r\n\r\n## Release Status\r\n\r\n- Version: `0.2.4`\r\n- Tag: `v0.2.4`\r\n- Stability: public preview patch\r\n- Assets: the `raven` wheel and source distribution, the three plugin wheels\r\n  (`everos_memory`, `design_engine`, `ppt_engine`), the locked constraints file\r\n  `raven-constraints.txt`, and the plugin list `raven-plugins.txt`\r\n\r\n## Notes\r\n\r\n- Raven is still pre-1.0; CLI surfaces, plugin contracts, and runtime internals may continue to evolve.\r\n- PyPI publishing is not enabled yet; the supported public install path uses the GitHub Release wheel asset.\r\n\r\n"
+      },
+      {
+        "tag_name": "v0.2.3",
+        "published_at": "2026-09-27T04:05:17Z",
+        "prerelease": false,
+        "html_url": "https://github.com/EverMind-AI/Raven/releases/tag/v0.2.3",
+        "body": "Raven 0.2.3 is a patch release with two things worth reading before you upgrade. Bare `raven` now opens the browser page, the way `raven web` does, and falls back to the terminal UI only where no browser can be opened; `raven tui` still opens the TUI outright. And the page's own update row now works on a normal `raven web` install and shows the download's progress, but only once the page is served by this release: a page served by 0.2.2 or earlier still refuses it, so this one upgrade goes through the command line as before ([#806](https://github.com/EverMind-AI/Raven/pull/806)). No command, flag or config key is removed or renamed. Two smaller removals on the page: the file viewer no longer offers a download button, and HTML previews run their scripts by default instead of asking ([#805](https://github.com/EverMind-AI/Raven/pull/805)).\r\n\r\n## Highlights\r\n\r\n**Upgrade from the page**\r\n\r\n- The update row at the bottom of the sidebar upgrades a `raven web` install: the gateway hands the page its own graceful stop on every mount, exits cleanly on upgrade, and the helper waits for the supervisor, installs, and relaunches `raven web --supervise` on the same port with the same token and cookie, so the page reloads itself still signed in. It is refused, each with its own reason, while a turn, a sub-agent or a question waiting for an answer is running (including in an IM channel), and for a Raven started by hand with `raven gateway` or `raven web --foreground`, which has nothing to restart it ([#806](https://github.com/EverMind-AI/Raven/pull/806)).\r\n\r\n- The page shows what is moving. The helper downloads the release itself so the bytes can be counted, then answers `/upgrade/status` on the page's own port with phase, bytes and rate while the old Raven is gone; the card measures the bar while bytes are counted and says when the new Raven is starting. A failed install is held for the page to read before the old version comes back, instead of relaunching it silently. The twenty-minute ceiling now counts silence, not the whole upgrade, so a slow download that is visibly moving is not given up on ([#806](https://github.com/EverMind-AI/Raven/pull/806)).\r\n\r\n- The terminal `raven upgrade` prints each asset's size and the total before downloading, then a live progress line, so a large release on a slow link no longer reads as a stalled install. The downloaded wheels stay under `~/.raven/cache/upgrade/<version>` (about 75 MB for a release with its engines); earlier versions' files are cleared ([#806](https://github.com/EverMind-AI/Raven/pull/806)).\r\n\r\n- `raven gateway` refuses a half-written install the way `raven serve` already did: a gateway that starts inside an upgrade window waits it out and exits instead of serving the placeholder page until restarted by hand. The gateway also closes its websockets on shutdown, so `raven web --stop` with a page open no longer waits on the page's own socket (46 seconds down to 4 ms in the PR's run) ([#806](https://github.com/EverMind-AI/Raven/pull/806)).\r\n\r\n- Bare `raven` opens the page, leaving the resident gateway that `raven web` always leaves. Where no browser can be opened it runs the TUI instead, decided before anything starts. `raven web` and `raven tui` are unchanged ([#806](https://github.com/EverMind-AI/Raven/pull/806)).\r\n\r\n**Desk panes**\r\n\r\n- Every desk pane has one header that names what is on screen. The file path bar, the task status line and the node card's back-and-title row fold into it: a glyph or a back chevron, the title, a muted facts line, then the controls that act on the object. A picked node reads as \"task > node\"; narrow panes drop the parent crumb and keep the facts on their own line. Dragging a pane by its title works again ([#805](https://github.com/EverMind-AI/Raven/pull/805)).\r\n\r\n- Stop leaves the palette's task list and lives in the task pane header, shown only while the task or the picked node is running. The runtime has no per-node cancel for a graph, so on a graph node it stops the whole run, and its tooltip says so ([#805](https://github.com/EverMind-AI/Raven/pull/805)).\r\n\r\n- The file viewer no longer offers a download or the binary note's save-a-copy link; the conversation's delivery cards keep theirs. HTML previews run their scripts by default under `sandbox=\"allow-scripts\"`, never `allow-same-origin`, so the page keeps an opaque origin, and the \"preview does not run scripts\" note and its run button are gone. Trade-off: a previewed page can now make network requests of its own without a click ([#805](https://github.com/EverMind-AI/Raven/pull/805)).\r\n\r\n**Grok Build and GitHub Copilot as coding agents**\r\n\r\n- Each connection problem the agent sheet asks about gets a named failure, and the command in each sentence is one the CLI's own help prints. A credential refusal says to run `grok login` or `copilot login`; a binary that is installed but not on the login PATH Raven launches with is named by its location (Homebrew's prefix, `/usr/local/bin`, `~/.local/bin`) instead of being reported as missing; an invalid key, an expired sign-in, a model not served, no credit, an expired Copilot subscription, a rate limit, a network failure, an ACP server that did not start and a CLI too old to speak ACP are each their own sentence. A Copilot refusal that arrives as the assistant text of a finished turn is a failure, not a success ([#792](https://github.com/EverMind-AI/Raven/pull/792), [#799](https://github.com/EverMind-AI/Raven/pull/799)).\r\n\r\n**Unattended turns and research**\r\n\r\n- A question that an unattended turn could ask nobody is recorded instead of vanishing: a sub-agent `ask_user` or elicitation with no page subscribed, a question that gives up waiting for the conversation lock, and a host `ask_user` call whose answer comes back empty. The session stores a `question_unanswered` notice that a reopened session draws, and `raven agent -m` prints the questions after the reply. The model is still told to proceed, and the exit status is unchanged: a refusal is still the run that exits 3 ([#807](https://github.com/EverMind-AI/Raven/pull/807)).\r\n\r\n- An interrupted research turn keeps the configured report structure. The tool-free synthesis is buffered, one format repair is requested when sections are missing, and only the selected reply is emitted; a failed synthesis produces a structured fallback, and wall-clock exhaustion gets an accurate time-limit fallback. The research flow's turn settings (wall-clock and retry budgets, ask labels, interrupted-reply guidance) now reach the loop ([#808](https://github.com/EverMind-AI/Raven/pull/808)).\r\n\r\n**Experimental: the Curator**\r\n\r\n- The repository gains `experimental/`, a first version of worker self-improvement: a Curator that shapes a Raven worker's harness (memory, planning, capability, action) from the task, the materials handed to it and feedback, at both levels of a harness-of-harnesses whose child agents are hosted over ACP. It is not in the wheel and `raven/` does not import it; the design is in `experimental/docs/design.md`, and the README's self-evolution section now describes it ([#802](https://github.com/EverMind-AI/Raven/pull/802), [#803](https://github.com/EverMind-AI/Raven/pull/803)).\r\n\r\n## Install\r\n\r\nNew install on Linux, macOS, or WSL2:\r\n\r\n```bash\r\ncurl -fsSL https://raven.evermind.ai/install.sh | bash\r\n```\r\n\r\nNew install on native Windows, in PowerShell:\r\n\r\n```powershell\r\nirm https://raven.evermind.ai/install.ps1 | iex\r\n```\r\n\r\nWindows PowerShell 5.1 (the version built into Windows) rejects that URL with\r\n`Permanent Redirect`; use the direct one instead:\r\n\r\n```powershell\r\nirm https://raw.githubusercontent.com/EverMind-AI/Raven/refs/heads/main/install.ps1 | iex\r\n```\r\n\r\nThe installer puts uv, Node.js 22, Raven and its plugins in place, downloads the\r\nbrowser runtime, installs or offers LibreOffice, and then finishes by opening\r\nRaven in your browser. First-run setup happens on that page. The installer holds\r\nthe terminal while the page is up; press Ctrl-C to stop it, then start Raven\r\nagain with:\r\n\r\n```bash\r\nraven web\r\n```\r\n\r\nThat keeps Raven running in the background and opens the page; `raven web --stop`\r\nstops it. From this release on, bare `raven` does the same, and opens the TUI\r\nonly where no browser can be opened. Prefer the terminal? `raven tui` runs the\r\nsame first-run setup and opens the TUI, and `raven onboard` stays the explicit\r\nway to reconfigure later. Set\r\n`RAVEN_MINIMAL=1` to skip the browser and LibreOffice downloads, or\r\n`RAVEN_NO_LAUNCH=1` to have the installer return without opening the page.\r\n\r\n## Upgrade\r\n\r\nAlready running Raven? Upgrade in place -- configuration, sessions, and memory\r\nare preserved. From this release on the update row at the bottom of the page's\r\nsidebar does this too, but a page served by 0.2.2 or earlier refuses it, so for\r\nthis upgrade stop the page first, then upgrade:\r\n\r\n```bash\r\nraven web --stop\r\nraven upgrade\r\n```\r\n\r\nOn Linux and macOS `raven upgrade` runs the install in the foreground and\r\nreturns when it is done. On native Windows it hands the install to a separate\r\nhelper and returns at once; wait for the helper's completion message. Then\r\nstart Raven again:\r\n\r\n```bash\r\nraven web\r\n```\r\n\r\n`raven upgrade` installs the latest stable release together with the plugin\r\nwheels it ships. It never picks up a pre-release unless this install has joined\r\nthe beta channel (a `~/.raven/beta.json` that only the beta installer writes).\r\n`raven upgrade --check` reports whether a newer release exists without\r\ninstalling it. Editable source checkouts are never overwritten: `raven upgrade`\r\nreports the checkout path and how far it is ahead of or behind `origin/main`,\r\nand the remedy is `git pull && ./install.sh` in the checkout. Rerunning the\r\none-line installer also upgrades, and ends on the running page.\r\n\r\n## Release Status\r\n\r\n- Version: `0.2.3`\r\n- Tag: `v0.2.3`\r\n- Stability: public preview patch\r\n- Assets: the `raven` wheel and source distribution, the three plugin wheels\r\n  (`everos_memory`, `design_engine`, `ppt_engine`), the locked constraints file\r\n  `raven-constraints.txt`, and the plugin list `raven-plugins.txt`\r\n\r\n## Notes\r\n\r\n- Raven is still pre-1.0; CLI surfaces, plugin contracts, and runtime internals may continue to evolve.\r\n- PyPI publishing is not enabled yet; the supported public install path uses the GitHub Release wheel asset.\r\n\r\n"
+      },
+      {
+        "tag_name": "tech-report-v1",
+        "published_at": "2026-09-27T10:47:06Z",
+        "prerelease": false,
+        "html_url": "https://github.com/EverMind-AI/Raven/releases/tag/tech-report-v1",
+        "body": "**Raven: The Harness of Harnesses for Composable Agentic Intelligence**\n\nEverMind AI, September 2026\n\nAs large language models advance, AI agents are moving beyond isolated, domain-specific tasks toward long-horizon, cross-domain workflows. This transition exposes two challenges: increasing harness complexity makes manual design difficult to scale, while tighter coupling to specific domains limits the generality of a single harness. The central question thus shifts from how to engineer a stronger harness for one domain to how to autonomously construct specialized harnesses, improve them through experience, and orchestrate them across domains. We introduce Raven, *The Harness of Harnesses*, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model&ndash;harness pair as a composable unit of intelligence. To support an *All-Domain Collaboration Network*, its Host Agent decomposes goals, matches subtasks to specialized agents, coordinates execution dependencies, and integrates results, while a host archive and EverOS preserve experience across tasks and Skill Forge makes that experience available as reusable procedures. Our theory establishes sufficient conditions for such composition to expand reliable task coverage beyond that of the available individual agents under a shared resource budget. On complex and long-horizon tasks, Raven significantly outperforms the state-of-the-art agent systems, pushing the frontier of composable agentic intelligence.\n\n- PDF: `technical-report.pdf`, 82 pages, SHA-256 `14832f50de158ca431d63acf5dd06dfcad05c54a70a8607a50ecd79170fff831`\n- The `tech-report-v1` tag points at the commit of [Raven v0.2.3](https://github.com/EverMind-AI/Raven/releases/tag/v0.2.3), the latest software release when this report was published.\n\nThis is a documentation release, not a software release. To install Raven, use the [latest release](https://github.com/EverMind-AI/Raven/releases/latest).\n\n```bibtex\n@misc{evermind2026raven,\n  title         = {{Raven: The Harness of Harnesses for Composable Agentic Intelligence}},\n  author        = {{EverMind AI}},\n  year          = {2026},\n  eprint        = {2609.33439},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.AI},\n  url           = {https://arxiv.org/abs/2609.33439}\n}\n```\n\n"
+      },
+      {
+        "tag_name": "v0.2.2",
+        "published_at": "2026-09-25T12:02:59Z",
+        "prerelease": false,
+        "html_url": "https://github.com/EverMind-AI/Raven/releases/tag/v0.2.2",
+        "body": "Raven 0.2.2 is a patch release with one thing worth reading before you upgrade: memory runs on native Windows now. No command, flag or config key is removed or renamed, and no configured default changes. The memory plugin's EverOS pin moves from 1.2.3 to 1.4.1, which runs on Windows without WSL, so the platform gate that made memory unavailable there is gone. Two guards found while verifying against a copy of a real 1.2.x store come with it: an embedding model narrower than the memory index is refused rather than left to answer 500 on every store and search, and an upgrade no longer leaves the old server answering on the port ([#791](https://github.com/EverMind-AI/Raven/pull/791)).\n\n## Highlights\n\n**Memory on native Windows**\n\n- The platform gate is gone. `everos_platform_note` and its five call sites, the `UNSUPPORTED` service state, the import scan's refusal and the wizard's WSL notice are removed, and Raven looks for `everos.exe` on Windows. Spawning, probing and reusing the server were already portable; identifying and stopping one was not. The command line now comes from WMI through PowerShell, the listening port from the TCP table, walking the launcher's descendants to the interpreter that actually holds the socket.\n\n- The server is spawned in a process group of its own, so a Ctrl-C at the gateway's console does not take it down with it, and stopped with Ctrl-Break, which uvicorn takes as a shutdown; one that ignores it for ten seconds is terminated as before. Because Windows cannot replace a running executable, `raven upgrade` stops whatever still runs from under the tool environment before it installs -- the memory server outlives the gateway by design, and without that stop `uv` failed on `Scripts\\everos.exe`.\n\n**Two guards for the memory store**\n\n- An embedding model narrower than the 1024-wide memory index is refused where it is pinned, and withheld from the server it would otherwise have started. A 768-dimension model saved from the settings page had left every memory store and search answering 500 about a mismatched width, with nothing on the page saying why. EverOS then runs keyword recall and keeps storing, and the notice names the model and its width. A probe that cannot reach the provider is not a verdict: the pin is written and a warning logged.\n\n- A running EverOS whose version no longer matches the installed one is replaced rather than reused, through the same precheck, stop and spawn chain a rotated credential takes. An upgrade used to leave the old server serving until something unrelated restarted it. A root you manage yourself is never touched. And a gateway that finds nothing listening and no lock held starts the server again, at most once every thirty seconds, so a server that goes away no longer leaves that gateway without memory until you restart it by hand.\n\n**Recall and the memory page**\n\n- Recall on the Cases and Know-how tracks searches by vector when no reranker is configured, instead of asking for an LLM rerank that the four-second recall budget can never wait out.\n\n- The memory page reads the `/api/v2` routes, asks `/health` before a search the way the chat adapter does, and shows the server's own sentence on a refusal. A recalled profile is drawn as lines rather than a `namespace(...)` repr, a tool-call-only row stores empty content rather than the string `\"None\"`, an empty query asks nothing, and `top_k` stays within 1..100.\n\n- The first-run wizard accepts an embedding model wider than 1024 (EverOS keeps the first 1024, as the settings page already allowed) and re-prompts on a refusal instead of showing a traceback.\n\n**Under the wire**\n\n- Every request body the plugin and the memory page send is validated against EverOS 1.4.1's own request models in the suite, so a schema move on the next upgrade fails a test rather than a gateway log. The upgrade is recorded in `docs/memory-plugin-architecture.md` section 7.4.\n\n## Install\n\nNew install on Linux, macOS, or WSL2:\n\n```bash\ncurl -fsSL https://raven.evermind.ai/install.sh | bash\n```\n\nNew install on native Windows, in PowerShell:\n\n```powershell\nirm https://raven.evermind.ai/install.ps1 | iex\n```\n\nWindows PowerShell 5.1 (the version built into Windows) rejects that URL with\n`Permanent Redirect`; use the direct one instead:\n\n```powershell\nirm https://raw.githubusercontent.com/EverMind-AI/Raven/refs/heads/main/install.ps1 | iex\n```\n\nThe installer puts uv, Node.js 22, Raven and its plugins in place, downloads the\nbrowser runtime, installs or offers LibreOffice, and then finishes by opening\nRaven in your browser. First-run setup happens on that page. The installer holds\nthe terminal while the page is up; press Ctrl-C to stop it, then start Raven\nagain with:\n\n```bash\nraven web\n```\n\nThat keeps Raven running in the background and opens the page; `raven web --stop`\nstops it. Prefer the terminal? `raven` runs the same first-run setup and opens\nthe TUI, and `raven onboard` stays the explicit way to reconfigure later. Set\n`RAVEN_MINIMAL=1` to skip the browser and LibreOffice downloads, or\n`RAVEN_NO_LAUNCH=1` to have the installer return without opening the page.\n\n## Upgrade\n\nAlready running Raven? Upgrade in place -- configuration, sessions, and memory\nare preserved. Stop the page first, then upgrade:\n\n```bash\nraven web --stop\nraven upgrade\n```\n\nOn Linux and macOS `raven upgrade` runs the install in the foreground and\nreturns when it is done. On native Windows it hands the install to a separate\nhelper and returns at once; wait for the helper's completion message. Then\nstart Raven again:\n\n```bash\nraven web\n```\n\n`raven upgrade` installs the latest stable release together with the plugin\nwheels it ships. It never picks up a pre-release unless this install has joined\nthe beta channel (a `~/.raven/beta.json` that only the beta installer writes).\n`raven upgrade --check` reports whether a newer release exists without\ninstalling it. Editable source checkouts are never overwritten: `raven upgrade`\nreports the checkout path and how far it is ahead of or behind `origin/main`,\nand the remedy is `git pull && ./install.sh` in the checkout. Rerunning the\none-line installer also upgrades, and ends on the running page.\n\n## Release Status\n\n- Version: `0.2.2`\n- Tag: `v0.2.2`\n- Stability: public preview patch\n- Assets: the `raven` wheel and source distribution, the three plugin wheels\n  (`everos_memory`, `design_engine`, `ppt_engine`), the locked constraints file\n  `raven-constraints.txt`, and the plugin list `raven-plugins.txt`\n\n## Notes\n\n- Raven is still pre-1.0; CLI surfaces, plugin contracts, and runtime internals may continue to evolve.\n- PyPI publishing is not enabled yet; the supported public install path uses the GitHub Release wheel asset.\n"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "3632e6040c7038a60ec418ce39ccae185c72c19f",
+        "url": "https://github.com/EverMind-AI/Raven/commit/3632e6040c7038a60ec418ce39ccae185c72c19f",
+        "message": "chore: bump version to 0.2.4 (#856)\n\n## Summary\n\nBump the package version from 0.2.3 to 0.2.4 for the next release. Only\npyproject.toml and uv.lock change.\n\nSince v0.2.3, main merged 29 PRs: four features (#817 previews files by\nwhat renders and answers approvals with cmd+enter, #830 moves channels\nout of settings beside agents, #833 lets raven read and change its own\nconfiguration, #853 adds reply-style rules to the host prompt), 19\nfixes, four docs PRs, one test PR and one chore. None carries a BREAKING\nCHANGE footer, so this is a patch bump, the way v0.2.1 and v0.2.3 were\nfor their features. A v0.2.4-rc1 tag goes first to dry-run the release\npipeline; the stable tag and release notes follow once this lands.\n\n## Type\n\n- [ ] Fix\n- [ ] Feature\n- [ ] Docs\n- [ ] CI / tooling\n- [ ] Refactor\n- [x] Other\n\n## Verification\n\n- `uv lock` on a clean worktree cut from origin/main: Resolved 251\npackages, Updated raven v0.2.3 -> v0.2.4\n- `git diff --stat origin/main..HEAD`: pyproject.toml and uv.lock, 2\ninsertions, 2 deletions\n- `PYTHONPATH=. python scripts/check_commit_messages.py\norigin/main..HEAD`: exit 0\n- `npx commitlint --from origin/main --to HEAD --config\ncommitlint.config.cjs`: exit 0\n- No test run: the change is version metadata only.\n\n- [ ] Relevant tests pass locally\n- [x] Relevant lint / type checks pass locally\n- [ ] User-facing docs or screenshots are updated when needed\n\n## Risk\n\nNo code change. Rollback is reverting this commit before any v0.2.4 tag\nis pushed.\n\n- [ ] Security impact considered\n- [x] Backward compatibility considered\n- [x] Rollback path is clear for risky changes\n\n## Related Issues\n\nN/A\n\nCo-authored-by: Claude (claude-opus-5-5) <noreply@anthropic.com>",
+        "date": "2026-10-03T16:07:09Z"
+      },
+      {
+        "sha": "d90b6deb7e0a80fd5a3f71a2e73488b91df59ce2",
+        "url": "https://github.com/EverMind-AI/Raven/commit/d90b6deb7e0a80fd5a3f71a2e73488b91df59ce2",
+        "message": "fix: allow agents to inherit OAuth-backed host models (#841)\n\n## Summary\n\nAllow all five shipped agents to inherit an OAuth-backed host model,\nincluding OpenAI Codex, by validating the inherited model binding with\nthe runtime credential check after parent session overrides.\n\n- Reuse the launcher's inheritance decision in setup and update its\nEnglish/Chinese message.\n- Preserve raw provider settings, routing, reasoning effort and product\nlimits. OAuth tokens remain in the host credential store.\n- Cover OAuth aliases, access/refresh tokens, missing or malformed\ncredentials, custom token paths, parent bindings and independent agent\nkeys. Remove the old API-key-only gate exemptions from the auth contract\ntest.\n\n## Type\n\n- [x] Fix\n- [ ] Feature\n- [ ] Docs\n- [ ] CI / tooling\n- [ ] Refactor\n- [ ] Other\n\n## Verification\n\nSelected regression tests: **321 passed, 48 deselected** on Windows with\nPython 3.12. The selection focuses on inheritance and excludes untouched\nPOSIX permission/pruning scenarios.\n\n```powershell\nuv run --no-sync pytest tests/test_config_product_render.py tests/test_subagent_vendored_agents.py tests/test_cli_subagent_setup.py tests/test_provider_auth_method.py tests/test_providers_factory.py tests/test_openai_codex_provider.py tests/test_providers_oauth_login.py tests/test_i18n_prompts.py tests/test_i18n_boundary.py -q -o addopts='' -p no:cacheprovider -k '(not test_config_product_render or inherit_llm or launchers_inherit_oauth or launchers_own_keys or secret_slots or env_wins or dig_and_put) and not prune and not backup and not locks_it_down and not test_a_page_sign_in_runs_the_real_driver_and_leaves_the_token_owner_only' --cov=raven.config.product_render --cov=raven.agent.subagent.vendored_agents --cov=raven.cli.subagent_setup --cov=raven.i18n --cov-branch --cov-report=json:C:/Users/Administrator/AppData/Local/Temp/raven_issue809_coverage_final.json --cov-report=term-missing:skip-covered\n```\n\nThe following checks passed: Ruff across the repository, formatting\n(2149 files), relevant type checks, all 10 import contracts, commit\nmessages, source language and file/asset checks.\n\n```powershell\nuv run --no-sync ruff check raven evolver agents plugins-dist tests scripts docs-site\nuv run --no-sync ruff format --check raven evolver agents plugins-dist tests scripts docs-site\nuv run --no-sync ty check raven/config/product_render.py raven/agent/subagent/vendored_agents.py raven/cli/subagent_setup.py\nuv run --no-sync lint-imports\nuv run --no-sync python scripts/check_commit_messages.py main..HEAD\nuv run --no-sync python scripts/check_source_language.py main..HEAD\nuv run --no-sync python scripts/check_large_files.py main..HEAD\n```\n\nChanged-line coverage: **100% (22/22 executable lines)** after\nnormalizing the Windows report's path separators.\n\n```powershell\nuv run --no-sync python -c \"import json,pathlib; p=pathlib.Path('C:/Users/Administrator/AppData/Local/Temp/raven_issue809_coverage_final.json'); d=json.loads(p.read_text(encoding='utf-8')); d['files']={k.replace(chr(92), '/'):v for k,v in d['files'].items()}; p.with_name('raven_issue809_coverage_posix.json').write_text(json.dumps(d), encoding='utf-8')\"\nuv run --no-sync python scripts/coverage_gate.py --coverage-json C:/Users/Administrator/AppData/Local/Temp/raven_issue809_coverage_posix.json diff --base-ref main --head HEAD --threshold 90\n```\n\nFull local CI remains unverified: `make ci` could not run because make\nis unavailable. Existing POSIX file-permission tests fail on Windows.\n`uv run --no-sync deptry raven` reports 12 missing optional channel\ndependencies in this environment.\n\n- [x] Relevant tests pass locally\n- [x] Relevant lint / type checks pass locally\n- [x] User-facing docs or screenshots are updated when needed\n\n## Risk\n\nInheritance now refuses an unavailable selected model even when an\nunrelated provider has an API key. API-key and independent-agent-key\npaths remain covered. Credential validation only reads stored OAuth\ncredentials; it does not sign in or serialize tokens. Revert this change\nto restore the previous inheritance gate.\n\n- [x] Security impact considered\n- [x] Backward compatibility considered\n- [x] Rollback path is clear for risky changes\n\n## Related Issues\n\nFixes #809\n\n---------\n\nCo-authored-by: Codex <noreply@openai.com>\nCo-authored-by: KT <74288668+0xKT@users.noreply.github.com>",
+        "date": "2026-10-03T15:43:03Z"
+      },
+      {
+        "sha": "c18bba54d08c3725f15a45b4ee31f9929d0bfff6",
+        "url": "https://github.com/EverMind-AI/Raven/commit/c18bba54d08c3725f15a45b4ee31f9929d0bfff6",
+        "message": "fix(sandbox): pass NetworkSpec to boxlite 0.9.5 BoxOptions (#797) (#813)\n\nFixes #797\n\n### Problem\n`pyproject.toml` pins `boxlite==0.9.5`, where `boxlite.BoxOptions`\nreplaced the separate string `network` and list `allow_net` keyword\narguments with `network: Optional[boxlite.NetworkSpec]`:\n- Passing `allow_net=False` in `BoxliteExecutor._ensure_box` still sets\n`extra_kwargs[\"network\"] = \"none\"`, raising `TypeError: argument\n'network': 'str' object cannot be cast as 'NetworkSpec'` on sandbox\nstart.\n- Passing a domain allowlist (`allow_net=[\"pypi.org\", ...]`) still sets\n`extra_kwargs[\"allow_net\"] = self._allow_net`, raising `TypeError:\nBoxOptions.__new__() got an unexpected keyword argument 'allow_net'`.\n\n### Solution\n- Pass `extra_kwargs[\"network\"] = boxlite.NetworkSpec(mode=\"disabled\")`\nwhen `self._allow_net is False`.\n- Pass `extra_kwargs[\"network\"] = boxlite.NetworkSpec(mode=\"enabled\",\nallow_net=self._allow_net)` when `isinstance(self._allow_net, list)`.\n- Leave `network` unset when `self._allow_net is True`.\n\n### Testing\n- Added `TestBoxliteEnsureBoxNetworkSpec` in\n`tests/test_sandbox_unit.py` covering `allow_net=False`,\n`allow_net=[...]`, and `allow_net=True`.\n- `pytest tests/test_sandbox_unit.py -k \"TestBoxliteEnsureBoxNetworkSpec\nor TestBoxliteStartFailureCleanup\"` (`6 passed`).\n- `ruff check` and `ruff format --check` pass.\n\nCo-authored-by: Abreham Melese <xvimelese@gmail.com>\nCo-authored-by: KT <74288668+0xKT@users.noreply.github.com>",
+        "date": "2026-10-03T15:32:00Z"
+      },
+      {
+        "sha": "3ca6d283fadea9af971a53a31c3bda04a07941f8",
+        "url": "https://github.com/EverMind-AI/Raven/commit/3ca6d283fadea9af971a53a31c3bda04a07941f8",
+        "message": "fix(core): prevent heartbeat from repeating cron replies (#843)\n\n## Summary\n\nA Cron reminder could reply through Spine delivery and then enqueue a\ncompletion event that made Heartbeat send the reminder again. Use\n`TurnOutcome.explicit_reply` to skip that redundant event and wake,\nincluding replies without captured readback text.\n\nSuccessful runs clear their pending failure event; explicit replies also\nclear earlier silent completion events for the same job. Silent\ncompletions, failures, missed reminders, and automatic disabling retain\ntheir notification paths. Add a regression using the real Scheduler,\nDeliveryHub, event queue, and HeartbeatService, plus event cleanup tests\nand updated English/Chinese documentation.\n\n## Type\n\n- [x] Fix\n- [ ] Feature\n- [ ] Docs\n- [ ] CI / tooling\n- [ ] Refactor\n- [ ] Other\n\n## Verification\n\n- [x] Relevant tests pass locally\n- [x] Relevant lint / type checks pass locally\n- [x] User-facing docs or screenshots are updated when needed\n\nThe delivery regression failed for both readback variants before the\nfix. After rebasing onto latest official main, 167 focused tests passed\nwith 94.90% combined line/branch coverage for `cron_stack.py`; changed\nexecutable lines have 100% coverage.\n\n```powershell\n$env:PYTHONUTF8 = '1'\n$env:COVERAGE_FILE = Join-Path $env:TEMP 'raven_issue164_coverage'\nuv run --frozen --no-sync pytest tests/test_core_cron_stack.py tests/test_core_cron_stack_ledger.py tests/test_event_wake.py tests/test_gateway_spine.py tests/test_spine_delivery.py tests/test_living_docs.py tests/test_docs_site.py -q --cov=raven.core.cron_stack --cov-branch --cov-report=term-missing\nuv run --frozen --no-sync python scripts/coverage_gate.py --coverage-json $ravenCoveragePosixJson diff --base-ref FETCH_HEAD --threshold 90\n```\n\n`$ravenCoveragePosixJson` is the generated coverage JSON with Windows\npath separators normalized for the diff checker.\n\nBroader Cron service/tool/CLI/TUI coverage passed 336 tests after\nexcluding two failures reproduced on clean official main: Windows\ntimestamp resolution in\n`test_reload_detects_rewrite_within_float_mtime_collision` and terminal\nwrapping in `test_run_test_fire_on_recurring_job`.\n\n```powershell\n$ravenCronTestFiles = @((rg --files tests) | Where-Object { $_ -match '^tests[\\\\/]test_cron_service_.*[.]py$' })\nuv run --frozen --no-sync pytest tests/test_core_cron_stack.py tests/test_core_cron_stack_ledger.py tests/test_event_wake.py tests/test_gateway_spine.py tests/test_spine_delivery.py @ravenCronTestFiles tests/test_cron_tool.py tests/test_cron_wake_grant.py tests/test_cli_cron_commands.py tests/test_tui_cron_tool_wired.py tests/test_tui_cron_delivered_event.py tests/test_living_docs.py tests/test_docs_site.py -q -k 'not test_reload_detects_rewrite_within_float_mtime_collision and not test_run_test_fire_on_recurring_job'\n```\n\nThe following passed: Ruff over the full Python tree, all 10 import\ncontracts, type checking of the changed module, diff whitespace, asset\nlimits, and source language checks.\n\n```powershell\nuv run --frozen --no-sync ruff check raven evolver agents plugins-dist tests scripts docs-site\nuv run --frozen --no-sync ruff format --check raven evolver agents plugins-dist tests scripts docs-site\nuv run --frozen --no-sync lint-imports\nuv run --frozen --no-sync ty check raven/core/cron_stack.py\ngit diff --check FETCH_HEAD...HEAD\nuv run --frozen --no-sync python scripts/check_large_files.py FETCH_HEAD..HEAD\nuv run --frozen --no-sync python scripts/check_source_language.py FETCH_HEAD..HEAD\n```\n\n`make ci` could not run because this Windows environment has no `make`.\nFull-suite collection and wheel smoke testing also encounter existing\nUnix-only assumptions (`os.geteuid` and `venv/bin/python`); full\ndependency/type checks require platform-excluded `nio`/`boxlite`\npackages. Full Linux CI remains to be checked on the PR.\n\n## Risk\n\n- [x] Security impact considered\n- [x] Backward compatibility considered\n- [x] Rollback path is clear for risky changes\n\nExplicit Cron replies no longer trigger Heartbeat completion follow-ups.\nExisting Spine/DeliveryHub delivery and retry handling remains\nresponsible for those replies; this change adds no transport\nacknowledgement or exactly-once guarantee. No schema, permission, or\ndependency changes. Revert this PR to restore the previous event\nbehavior.\n\n## Related Issues\n\nFixes #164\n\nCo-authored-by: Codex <noreply@openai.com>",
+        "date": "2026-10-03T15:28:52Z"
+      },
+      {
+        "sha": "4d13a71381bc89434e29138c7dad5c7fb0c01620",
+        "url": "https://github.com/EverMind-AI/Raven/commit/4d13a71381bc89434e29138c7dad5c7fb0c01620",
+        "message": "feat(*): add reply-style rules to the host prompt (#853)\n\n## Summary\n\nThe host agent answered even a one-line question like a report: headers,\nbullet menus, bold labels and emoji. Its identity said nothing about how\nto reply beyond \"You are Raven, a helpful AI assistant\", and the soul\ntemplate listed adjectives (\"Helpful and friendly\", \"Concise and to the\npoint\") that no reply can be checked against, so the model fell back on\nits own defaults.\n\n`identity_text` now carries a `## How you reply` section after Raven\nGuidelines. It tells the model that the reader may not have seen its\ntool results or reasoning, to lead with the answer, to answer a simple\nquestion in plain prose with no headers, bullet list or closing recap,\nto keep replies short by leaving things out rather than compressing what\nis left, to skip stock openers and closers in any language, and to keep\nerrors, failing test output, security warnings and caveats the user must\nact on in full. A format the user asks for overrides it.\n\nDecisions a reviewer may want to check:\n\n- Host only. Every agent under `agents/` except raven-research renders\nthis identity, and each carries its own conduct for how it reports. The\nsection renders through `_reply_style()`, which is empty in a process\nthe host launched, on the `RAVEN_SUBAGENT` signal `_subagent_note()`\nalready reads; in such a process the identity text is byte-identical to\n`main`. The in-process sub-agent builds its own prompt and never renders\nthis identity.\n- One English section for both reply languages. The language directive\nabove it still names the language, and the section says it does not\ndecide one.\n- One home for the intent rule. Raven Guidelines already says \"State\nintent before tool calls\"; the new bullet names that rule and adds only\nthat it is one sentence, said once, with no narration of each routine\ntool call.\n- The soul template now carries stance and voice only (have a view, know\nwhen to stay quiet, ask only when the answer would change what you do,\nno corporate filler), so it does not repeat the format rules. The agent\ntemplate drops its duplicate \"Be concise, accurate, and friendly\" line.\nTemplate sync fills only missing files in Agent home, so both changes\nreach new installs only.\n- `tests/test_agent_loop_token_budget.py`: the `available_history >\n127_000` bound had about 70 tokens of slack once the tool surface had\ngrown, so any host prompt growth tripped it. It moves to 126_000 with\nthe trade noted beside it, as the `reserved_tools` notes below it do.\nSystem prompt growth still has no bound of its own.\n\nNot covered: an agent under `agents/` started directly rather than by a\nhost has no `RAVEN_SUBAGENT` and renders the section, the same boundary\n`_subagent_note()` has.\n\nMeasured with real one-shot turns (`raven agent`) on the default model,\nopenrouter/z-ai/glm-5.3-flash: six prompts (a simple question, small\ntalk, a bad idea to push back on, explaining a project, running a\nfailing check, an English question), three samples each, each sample in\na fresh Agent home with memory writes and outbound tools off. Before is\n`main`, after is this branch. Means per reply:\n\n```text\n                 chars  headers  bullets  bold  emoji  failing-check error kept\nbefore (main)      699      1.8      4.0   5.8    1.9  3/3\nafter (branch)     490      0.1      2.6   2.6    0.0  3/3\n```\n\nHeaders and emoji are effectively gone, bold falls by more than half and\nbullets by about a third, and replies are 30% shorter. Every\nfailing-check reply still quotes the failure, `expected 12, got 9`. Two\nthings did not move. Replies to requests that used tools still end by\noffering the next step about as often as before; on the failing check\nthat is asking before fixing what the user only asked to check.\nNarration before tool calls fell on the failing check (341 to 203\ncharacters) but not on the read-only request (51 to 71). Openers could\nnot be measured: this model used none on either side. One model and\nthree samples a cell; another model may move differently.\n\n## Type\n\n- [ ] Fix\n- [x] Feature\n- [ ] Docs\n- [ ] CI / tooling\n- [ ] Refactor\n- [ ] Other\n\n## Verification\n\n```text\nuv run --frozen --all-extras pytest tests/ -q -p no:randomly\n  7 failed, 27459 passed, 116 skipped\nuv run --frozen --all-extras pytest tests/test_segments.py tests/test_agent_loop_subagent_role.py tests/test_agent_loop_token_budget.py tests/test_security_untrusted_context.py tests/test_i18n_prompts.py -q\n  108 passed\nmake lint-python      All checks passed; 2161 files already formatted\nmake lint-imports     Contracts: 10 kept, 0 broken\nmake lint-types       All checks passed\nmake check-commits    exit 0\nscripts/check_source_language.py origin/main...HEAD    exit 0\nscripts/check_large_files.py origin/main...HEAD        exit 0\npre-commit run --from-ref origin/main --to-ref HEAD    exit 0, no file modified\n```\n\nThe 7 failures are five proxy tests in\n`tests/test_config_update_providers.py` (this machine exports an HTTP\nproxy),\n`tests/test_install_script.py::test_resolve_node_dir_answers_each_case_it_exists_for`\nand\n`tests/test_subagent_node_runtime.py::test_what_cannot_be_read_names_nothing`.\nThe same 7 ids fail with the change backed out on the same base; CI is\nthe second machine.\n\nThe three new tests in `tests/test_agent_loop_subagent_role.py` were\neach checked against a mutant of `render.py`: dropping the section\nreddens all three, removing the role gate the first, a stray newline on\neither branch the second, and deleting the language clause the third.\nWith `RAVEN_SUBAGENT=1`, this branch's `identity_text` was compared with\n`main`'s and is identical.\n\n- [x] Relevant tests pass locally\n- [x] Relevant lint / type checks pass locally\n- [ ] User-facing docs or screenshots are updated when needed\n\nDocs box left blank: no user-facing document describes the identity text\nor the soul template's contents. The Workspace Template entry in\n`CONTEXT.md` calls `SOUL.md` the agent persona, which still holds.\n\n## Risk\n\n- [x] Security impact considered\n- [x] Backward compatibility considered\n- [x] Rollback path is clear for risky changes\n\nPrompt text only. The untrusted-content rule is unchanged and comes\nfirst; the override clause covers formatting only. The host prompt grows\nby about 260 tokens per turn, inside its stable prefix. Existing\ninstalls keep their `soul.md` and `agent.md`, since template sync never\noverwrites. To roll back, revert the squash commit; installs created\nwhile it was live keep the new soul and agent files until those two are\ndeleted and re-seeded.\n\n## Related Issues\n\nN/A\n\n---------\n\nCo-authored-by: Claude (claude-opus-5-5[1m]) <noreply@anthropic.com>",
+        "date": "2026-10-03T15:03:35Z"
+      }
+    ],
+    "receipt": {
+      "repo": "EverMind-AI/Raven",
+      "startedAt": "2026-10-04T08:41:27.338235+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:28.769115+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.142500+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.857281+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:32.817891+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:33.727553+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:34.517855+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.347845+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  {
+    "repository": "wangmingxuan666/Tiersense",
+    "html_url": "https://github.com/wangmingxuan666/Tiersense",
+    "created_at": "2026-09-24T06:36:17Z",
+    "pushed_at": "2026-10-01T10:02:48Z",
+    "updated_at": "2026-10-04T00:45:01Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": null,
+    "starsSnapshot": 706,
+    "forksSnapshot": 118,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "3a7f36b36c4f53672f286e654cf21c79bad74e37",
+        "url": "https://github.com/wangmingxuan666/Tiersense/commit/3a7f36b36c4f53672f286e654cf21c79bad74e37",
+        "message": "Update authorship statement in README.zh-CN.md\n\nClarified authorship and timeline of research work in README.",
+        "date": "2026-10-01T10:02:48Z"
+      },
+      {
+        "sha": "2531307dee989b1bd8fd0cb179c265c2b939ef97",
+        "url": "https://github.com/wangmingxuan666/Tiersense/commit/2531307dee989b1bd8fd0cb179c265c2b939ef97",
+        "message": "Point both paper entries to official arXiv PDFs",
+        "date": "2026-09-24T07:19:12Z"
+      },
+      {
+        "sha": "f78da043af7817d530cda9b6c33a8044bebb84a2",
+        "url": "https://github.com/wangmingxuan666/Tiersense/commit/f78da043af7817d530cda9b6c33a8044bebb84a2",
+        "message": "Publish StateComp PDF with homepage and module paper badges",
+        "date": "2026-09-24T07:13:26Z"
+      },
+      {
+        "sha": "66cdb79337ebe4adf158b9c1d152e59d26f772d9",
+        "url": "https://github.com/wangmingxuan666/Tiersense/commit/66cdb79337ebe4adf158b9c1d152e59d26f772d9",
+        "message": "Consolidate all TierSense modules, docs, examples and paper in main repository",
+        "date": "2026-09-24T07:08:16Z"
+      },
+      {
+        "sha": "0262144972728b8b8cba43852a589668e3f1faff",
+        "url": "https://github.com/wangmingxuan666/Tiersense/commit/0262144972728b8b8cba43852a589668e3f1faff",
+        "message": "Fix emphasis rendering and link Memory Control paper",
+        "date": "2026-09-24T06:56:20Z"
+      }
+    ],
+    "receipt": {
+      "repo": "wangmingxuan666/Tiersense",
+      "startedAt": "2026-10-04T08:48:40.942075+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:41.689540+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:42.796320+08:00"
+        },
+        "license": {
+          "ok": false,
+          "checkedAt": "2026-10-04T08:48:43.517301+08:00",
+          "error": "gh: Not Found (HTTP 404)\n"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.268571+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.948509+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.716235+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:46.475668+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": null
+  },
+  {
+    "repository": "enkiruntime/enki",
+    "html_url": "https://github.com/enkiruntime/enki",
+    "created_at": "2026-09-22T00:43:02Z",
+    "pushed_at": "2026-10-02T01:34:35Z",
+    "updated_at": "2026-10-03T16:34:57Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "PARSU_LICENSE.md",
+      "path": "PARSU_LICENSE.md",
+      "sha": "a409f0f4114c256d47bec5ed0b102d92d50b583b",
+      "html_url": "https://github.com/enkiruntime/enki/blob/main/PARSU_LICENSE.md",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      }
+    },
+    "starsSnapshot": 14,
+    "forksSnapshot": 0,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v0.1.0",
+        "published_at": "2026-09-22T00:54:58Z",
+        "prerelease": true,
+        "html_url": "https://github.com/enkiruntime/enki/releases/tag/v0.1.0",
+        "body": "### Toolchain Licensing\r\nThe pre-compiled Parsu backend binaries attached to this release are distributed \r\nunder the **Parsu License (Alpha)** — free forever for developers, researchers, \r\nand non-commercial evaluation. See [PARSU_LICENSE.md](https://github.com/enkiruntime/enki/blob/main/PARSU_LICENSE.md) \r\nfor terms and future commercial notice."
+      }
+    ],
+    "commits": [
+      {
+        "sha": "4df23fe4a645351c49825c81acfd6185359020ca",
+        "url": "https://github.com/enkiruntime/enki/commit/4df23fe4a645351c49825c81acfd6185359020ca",
+        "message": "Initial commit: Enki v0.2.0 (Public Alpha)",
+        "date": "2026-10-02T01:34:29Z"
+      }
+    ],
+    "receipt": {
+      "repo": "enkiruntime/enki",
+      "startedAt": "2026-10-04T08:41:34.332730+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.081052+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.819998+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:36.567344+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:37.362988+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:38.039990+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:38.734618+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:39.487935+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    }
+  },
+  {
+    "repository": "ironbee-ai/ironbee-express",
+    "html_url": "https://github.com/ironbee-ai/ironbee-express",
+    "created_at": "2026-09-24T09:59:58Z",
+    "pushed_at": "2026-10-01T09:07:31Z",
+    "updated_at": "2026-10-03T01:23:57Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "64c7e376c2a3b286d72b57b19eab9dd02b6868da",
+      "html_url": "https://github.com/ironbee-ai/ironbee-express/blob/main/LICENSE",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      }
+    },
+    "starsSnapshot": 11,
+    "forksSnapshot": 0,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "05079b44d09d76ff35dfb550716fb2c29875c5f2",
+        "url": "https://github.com/ironbee-ai/ironbee-express/commit/05079b44d09d76ff35dfb550716fb2c29875c5f2",
+        "message": "feat: step decisions read the latest 30 actions; new e-shop examples; README banner, demo GIF and platform waitlist",
+        "date": "2026-09-29T11:18:06Z"
+      },
+      {
+        "sha": "b2c4fbe8eb9fa3ed99ec4fc918a6f73e07f28b99",
+        "url": "https://github.com/ironbee-ai/ironbee-express/commit/b2c4fbe8eb9fa3ed99ec4fc918a6f73e07f28b99",
+        "message": "docs: make the README a quick, clear path from clone to a first run",
+        "date": "2026-09-28T19:10:43Z"
+      },
+      {
+        "sha": "ac822316b265839f1d37cc4f8001a6136fd7887b",
+        "url": "https://github.com/ironbee-ai/ironbee-express/commit/ac822316b265839f1d37cc4f8001a6136fd7887b",
+        "message": "feat(scenario): re-identify a changed control with one engine question; wait while a page loads",
+        "date": "2026-09-28T18:43:32Z"
+      },
+      {
+        "sha": "98b24e23448d7837bea02bf56d5387316bbcfdad",
+        "url": "https://github.com/ironbee-ai/ironbee-express/commit/98b24e23448d7837bea02bf56d5387316bbcfdad",
+        "message": "Readme updated (#1)",
+        "date": "2026-09-28T15:25:45Z"
+      },
+      {
+        "sha": "51ba4c942909a52a9ecfbb8680bf63d2c6b5c68f",
+        "url": "https://github.com/ironbee-ai/ironbee-express/commit/51ba4c942909a52a9ecfbb8680bf63d2c6b5c68f",
+        "message": "feat: IronBee Express — a fast, goal-driven browser agent",
+        "date": "2026-09-27T18:32:57Z"
+      }
+    ],
+    "receipt": {
+      "repo": "ironbee-ai/ironbee-express",
+      "startedAt": "2026-10-04T08:41:35.273101+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:36.090538+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:36.849669+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:37.631196+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:38.422596+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:39.132784+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:39.994343+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:40.890008+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    }
+  },
+  {
+    "repository": "SupercmoHQ/superCMO-skills",
+    "html_url": "https://github.com/SupercmoHQ/superCMO-skills",
+    "created_at": "2026-07-24T11:38:27Z",
+    "pushed_at": "2026-08-28T13:28:52Z",
+    "updated_at": "2026-10-04T00:37:58Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "html_url": "https://github.com/SupercmoHQ/superCMO-skills/blob/main/LICENSE",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "starsSnapshot": 65,
+    "forksSnapshot": 8,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v0.1.24",
+        "published_at": "2026-08-28T13:28:52Z",
+        "prerelease": false,
+        "html_url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.24",
+        "body": "## What's Changed\n* feat: release v0.1.24 by @SayoniDuttaRoy in https://github.com/SupercmoHQ/superCMO-skills/pull/51\n\n\n**Full Changelog**: https://github.com/SupercmoHQ/superCMO-skills/compare/v0.1.23...v0.1.24"
+      },
+      {
+        "tag_name": "v0.1.23",
+        "published_at": "2026-08-27T12:46:26Z",
+        "prerelease": false,
+        "html_url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.23",
+        "body": "## What's Changed\n* release: v0.1.23 — calendar toolset works in the default install by @kshitizkgp in https://github.com/SupercmoHQ/superCMO-skills/pull/50\n\n\n**Full Changelog**: https://github.com/SupercmoHQ/superCMO-skills/compare/v0.1.22...v0.1.23"
+      },
+      {
+        "tag_name": "v0.1.22",
+        "published_at": "2026-08-27T12:05:37Z",
+        "prerelease": false,
+        "html_url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.22",
+        "body": "## What's Changed\n* feat(calendar): calendar toolset — contract, local implementation, MCP tools by @kshitizkgp in https://github.com/SupercmoHQ/superCMO-skills/pull/48\n* release: v0.1.22 by @kshitizkgp in https://github.com/SupercmoHQ/superCMO-skills/pull/49\n\n\n**Full Changelog**: https://github.com/SupercmoHQ/superCMO-skills/compare/v0.1.21...v0.1.22"
+      },
+      {
+        "tag_name": "v0.1.21",
+        "published_at": "2026-08-26T06:49:29Z",
+        "prerelease": false,
+        "html_url": "https://github.com/SupercmoHQ/superCMO-skills/releases/tag/v0.1.21",
+        "body": "## What's Changed\n* feat: release v0.1.21 by @SayoniDuttaRoy in https://github.com/SupercmoHQ/superCMO-skills/pull/47\n\n\n**Full Changelog**: https://github.com/SupercmoHQ/superCMO-skills/compare/v0.1.20...v0.1.21"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "a6dd060ed46132e1944b1dd38981cb9ffcc42fc8",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/commit/a6dd060ed46132e1944b1dd38981cb9ffcc42fc8",
+        "message": "Merge pull request #51 from SupercmoHQ/release/v0.1.24\n\nfeat: release v0.1.24",
+        "date": "2026-08-28T13:27:34Z"
+      },
+      {
+        "sha": "e3392e0010326a878e33caa3098135d59110b1b9",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/commit/e3392e0010326a878e33caa3098135d59110b1b9",
+        "message": "feat: release v0.1.24",
+        "date": "2026-08-28T13:12:25Z"
+      },
+      {
+        "sha": "84d5aa0e5e72a174beb1f96df1e85cdfe161b2cf",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/commit/84d5aa0e5e72a174beb1f96df1e85cdfe161b2cf",
+        "message": "Merge pull request #50 from SupercmoHQ/fix/installer-calendar-extra\n\nrelease: v0.1.23 — calendar toolset works in the default install",
+        "date": "2026-08-27T12:45:13Z"
+      },
+      {
+        "sha": "1913f15adc4566aa147b4f5c9272dc8e7826ded9",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/commit/1913f15adc4566aa147b4f5c9272dc8e7826ded9",
+        "message": "release: v0.1.23\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "date": "2026-08-27T12:36:11Z"
+      },
+      {
+        "sha": "7a21a89f31eb1008bbd8b706e4299c7014715d21",
+        "url": "https://github.com/SupercmoHQ/superCMO-skills/commit/7a21a89f31eb1008bbd8b706e4299c7014715d21",
+        "message": "fix(calendar): calendar works in the DEFAULT install — icalendar + python-dateutil are base deps\n\nNo extras, no special install: `uvx supercmo-skills@<version>` serves the four\ncalendar tools working as-is (verified: a base install with no extras completes\na full add/list over JSON-RPC). The [calendar] extra stays as an empty alias so\nthe briefly-documented spelling keeps resolving. The vendored no-install path\nstill degrades gracefully with an actionable hint; everything else in the\npackage remains stdlib-only.\n\nCo-Authored-By: Claude Fable 5 <noreply@anthropic.com>",
+        "date": "2026-08-27T12:32:54Z"
+      }
+    ],
+    "receipt": {
+      "repo": "supercmohq/supercmo-skills",
+      "startedAt": "2026-10-04T08:41:35.325949+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:36.347345+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:37.204866+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:37.984730+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:38.932623+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:39.616681+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:40.321890+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:41.122394+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  {
+    "repository": "glanderness/BeefTV",
+    "html_url": "https://github.com/glanderness/BeefTV",
+    "created_at": "2026-09-24T05:20:03Z",
+    "pushed_at": "2026-10-03T16:37:32Z",
+    "updated_at": "2026-10-03T23:50:04Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "fc04fafb1c37866ccc32327a6627fdac546937e3",
+      "html_url": "https://github.com/glanderness/BeefTV/blob/main/LICENSE",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "starsSnapshot": 788,
+    "forksSnapshot": 162,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v1.7.2",
+        "published_at": "2026-10-03T08:25:49Z",
+        "prerelease": false,
+        "html_url": "https://github.com/glanderness/BeefTV/releases/tag/v1.7.2",
+        "body": "- Restore the bundled Windows MCP command-line tool and prevent MCP connections from accidentally opening another desktop window.\n- Add separate Claude Desktop setup instructions and stop offering connections when installation files are incomplete.\n- Keep Windows runtime discovery outside AppData so packaged MCP clients cannot reuse an old virtualized runtime file.\n- Start the Windows assistant in the background without opening a Node console window.\n- Explain blocked model-service addresses and DNS failures with actionable connection guidance.\n\n- Automatically remove completed upgrade folders after the local workspace starts successfully, while preserving failed upgrades for recovery. Windows also removes its released lock file; macOS retains the empty lock for compatibility with older update helpers.\n\n- Fix the canvas assistant being unavailable when following a default text model from a custom local channel.\n- Keep explicit model capabilities, protocol restrictions, and channel credentials in effect when resolving assistant connections.\n"
+      },
+      {
+        "tag_name": "v1.7.1",
+        "published_at": "2026-10-02T16:26:46Z",
+        "prerelease": false,
+        "html_url": "https://github.com/glanderness/BeefTV/releases/tag/v1.7.1",
+        "body": "- Choose the canvas assistant model directly beside the message input.\n- Start with GPT 6 Astra after connecting BeefAPI, and keep your chosen model when refreshing the catalog.\n- Offer Astra, Opus 5.5, DeepSeek V4.1 Flash, and GLM 5.3 when available on the connected account.\n- Save model changes before starting the next assistant request.\n"
+      },
+      {
+        "tag_name": "v1.6.23",
+        "published_at": "2026-10-02T14:24:01Z",
+        "prerelease": false,
+        "html_url": "https://github.com/glanderness/BeefTV/releases/tag/v1.6.23",
+        "body": "- Add a canvas assistant for drafting scenes, editing nodes, connecting references, and proposing image or video generation for confirmation.\n- Keep assistant conversations and canvas changes recoverable across restarts, with conflict checks and per-turn undo.\n- Let external agents connect through the bundled CLI and MCP using revocable read-only or read-write access.\n- Share canvas operations and generation delivery across manual editing and agents, preserving original tasks during recovery.\n- Unify media rendering and workspace backup paths while retaining existing projects, assets, and tasks.\n"
+      },
+      {
+        "tag_name": "v1.6.22",
+        "published_at": "2026-10-01T19:57:08Z",
+        "prerelease": false,
+        "html_url": "https://github.com/glanderness/BeefTV/releases/tag/v1.6.22",
+        "body": "- Add a director workbench for staging objects, cameras, motion paths, and shot previews.\n- Keep director references and exported previews attached to the correct scene when switching or closing the workbench.\n- Preserve shot prompts, camera motion, and independent paths when editing or duplicating scenes.\n- Restore the canvas archive import entry in the project library.\n"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "a13bbc12221346f610bc98f81cd1b06b729a9393",
+        "url": "https://github.com/glanderness/BeefTV/commit/a13bbc12221346f610bc98f81cd1b06b729a9393",
+        "message": "test(updater): 建立 Windows 旧包升级与回滚发布门禁 (#74)\n\n* test(updater): Windows 发布 - 旧包替换启动与回滚门禁\n\n* docs(updater): 旧版兼容 - 记录两步过渡边界与验收\n\n* test(updater): Windows 门禁 - 关闭数据库并规范清理路径\n\n* docs(updater): 发布门禁 - 记录 Windows 原生通过证据\n\n* test(updater): 验收修正 - 真实旧进程与业务数据全量文件\n\n* docs(updater): 明确业务数据与完整回滚验收边界\n\n* docs(updater): 记录强化升级与健康回滚验证通过",
+        "date": "2026-10-03T16:37:32Z"
+      },
+      {
+        "sha": "6be3a1323f2a90390aeeab42cf1bebfff94bcee5",
+        "url": "https://github.com/glanderness/BeefTV/commit/6be3a1323f2a90390aeeab42cf1bebfff94bcee5",
+        "message": "Merge pull request #70 from glanderness/codex/mcp-release-fix-20261003\n\nfix(desktop): 修复 MCP 发布入口和 Windows 助手弹窗",
+        "date": "2026-10-03T08:14:21Z"
+      },
+      {
+        "sha": "4ba0235eb8dcb729636fd467ffd688dbc4b45814",
+        "url": "https://github.com/glanderness/BeefTV/commit/4ba0235eb8dcb729636fd467ffd688dbc4b45814",
+        "message": "docs(release): record approved v1.7.2 targeted acceptance",
+        "date": "2026-10-03T08:08:49Z"
+      },
+      {
+        "sha": "5b3e4d574fd0c566642685d6196e8d159fbb23bf",
+        "url": "https://github.com/glanderness/BeefTV/commit/5b3e4d574fd0c566642685d6196e8d159fbb23bf",
+        "message": "docs(mcp): 说明 Windows 运行发现修复与专项验收边界",
+        "date": "2026-10-03T07:55:40Z"
+      },
+      {
+        "sha": "ab309e0dc84c110989b517e362b892ed35fd70cb",
+        "url": "https://github.com/glanderness/BeefTV/commit/ab309e0dc84c110989b517e362b892ed35fd70cb",
+        "message": "fix(runtime): Windows 工作区 - 绕过 MSIX 影子运行描述文件",
+        "date": "2026-10-03T07:54:59Z"
+      }
+    ],
+    "receipt": {
+      "repo": "glanderness/BeefTV",
+      "startedAt": "2026-10-04T08:48:40.948051+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:41.689270+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:42.729034+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:43.528258+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.319900+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.962773+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.717006+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:46.638065+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    }
+  },
+  {
+    "repository": "pi-pod/pipod",
+    "html_url": "https://github.com/pi-pod/pipod",
+    "created_at": "2026-10-01T18:44:18Z",
+    "pushed_at": "2026-10-02T23:58:15Z",
+    "updated_at": "2026-10-04T00:27:28Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "be3f7b28e564e7dd05eaf59d64adba1a4065ac0e",
+      "html_url": "https://github.com/pi-pod/pipod/blob/main/LICENSE",
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      }
+    },
+    "starsSnapshot": 55,
+    "forksSnapshot": 1,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v0.1.5",
+        "published_at": "2026-10-02T23:45:59Z",
+        "prerelease": false,
+        "html_url": "https://github.com/pi-pod/pipod/releases/tag/v0.1.5",
+        "body": "## What's Changed\n* Say the hosted service is coming soon, not available yet by @edverma in https://github.com/pi-pod/pipod/pull/30\n* Manage org, personal and template settings from a web dashboard by @edverma in https://github.com/pi-pod/pipod/pull/31\n* Tell a self-hoster why the dashboard cannot sign in at a public address by @edverma in https://github.com/pi-pod/pipod/pull/32\n* Edit dashboard settings with forms instead of JSON boxes by @edverma in https://github.com/pi-pod/pipod/pull/33\n* Remove settings proposals; pods read the layers behind their launch by @edverma in https://github.com/pi-pod/pipod/pull/34\n* Sign in from a headless machine with a device code by @edverma in https://github.com/pi-pod/pipod/pull/35\n* Release the CLI as 0.1.5 by @edverma in https://github.com/pi-pod/pipod/pull/36\n\n\n**Full Changelog**: https://github.com/pi-pod/pipod/compare/v0.1.4...v0.1.5"
+      },
+      {
+        "tag_name": "v0.1.4",
+        "published_at": "2026-10-02T18:51:59Z",
+        "prerelease": false,
+        "html_url": "https://github.com/pi-pod/pipod/releases/tag/v0.1.4",
+        "body": "## What's Changed\n* Release the CLI as 0.1.4 by @edverma in https://github.com/pi-pod/pipod/pull/29\n\n\n**Full Changelog**: https://github.com/pi-pod/pipod/compare/v0.1.3...v0.1.4"
+      },
+      {
+        "tag_name": "v0.1.3",
+        "published_at": "2026-10-02T18:41:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/pi-pod/pipod/releases/tag/v0.1.3",
+        "body": "> Superseded by [v0.1.4](https://github.com/pi-pod/pipod/releases/tag/v0.1.4); npm never published 0.1.3.\n\n## What's Changed\n* Publish the CLI as @pipod/cli by @edverma in https://github.com/pi-pod/pipod/pull/28\n\n\n**Full Changelog**: https://github.com/pi-pod/pipod/compare/v0.1.2...v0.1.3"
+      },
+      {
+        "tag_name": "v0.1.2",
+        "published_at": "2026-10-02T17:34:53Z",
+        "prerelease": false,
+        "html_url": "https://github.com/pi-pod/pipod/releases/tag/v0.1.2",
+        "body": "> Superseded by [v0.1.3](https://github.com/pi-pod/pipod/releases/tag/v0.1.3). npm refused this package name; the CLI is published as `@pipod/cli`.\n\n## What's Changed\n* Let a self-hosted server own its upgrades on start by @edverma in https://github.com/pi-pod/pipod/pull/6\n* Start a fresh self-hosted server with launches open by @edverma in https://github.com/pi-pod/pipod/pull/7\n* Install and upgrade a self-hosted instance with one command by @edverma in https://github.com/pi-pod/pipod/pull/9\n* Rename Box to Boat by @edverma in https://github.com/pi-pod/pipod/pull/8\n* Rename only system-owned stored values to Boat by @edverma in https://github.com/pi-pod/pipod/pull/11\n* Let a self-hosted operator set the per-pod CPU and memory ceiling by @edverma in https://github.com/pi-pod/pipod/pull/10\n* Bound the Boat rename and leave large tables alone by @edverma in https://github.com/pi-pod/pipod/pull/12\n* Self-host in one command, and fix what using the CLI turned up by @edverma in https://github.com/pi-pod/pipod/pull/13\n* Stop offering already-deleted pods to gc by @edverma in https://github.com/pi-pod/pipod/pull/14\n* Keep pipod update from dirtying the checkout it updates by @edverma in https://github.com/pi-pod/pipod/pull/15\n* Prepare the repository for publication by @edverma in https://github.com/pi-pod/pipod/pull/18\n* Update fastify and fast-uri past their security advisories by @edverma in https://github.com/pi-pod/pipod/pull/19\n* Phone apps: sign in to a self-hosted server, and fix what using them turned up by @edverma in https://github.com/pi-pod/pipod/pull/23\n* Fix the codex-security findings at 98c5e7c by @edverma in https://github.com/pi-pod/pipod/pull/22\n* Limit pod-launched children to their parent's authority; client sign-in boundaries by @edverma in https://github.com/pi-pod/pipod/pull/25\n* Remove approvals: a question pi asks is part of its conversation by @edverma in https://github.com/pi-pod/pipod/pull/24\n* Drop the private-repository clone note from the self-host guide by @edverma in https://github.com/pi-pod/pipod/pull/26\n* Publish the CLI to npm as pipod from a release tag by @edverma in https://github.com/pi-pod/pipod/pull/27\n\n## New Contributors\n* @edverma made their first contribution in https://github.com/pi-pod/pipod/pull/6\n\n**Full Changelog**: https://github.com/pi-pod/pipod/commits/v0.1.2"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "2276084a701edd6b549cfd49624d54223bbf353c",
+        "url": "https://github.com/pi-pod/pipod/commit/2276084a701edd6b549cfd49624d54223bbf353c",
+        "message": "Release the CLI as 0.1.5 (#36)",
+        "date": "2026-10-02T23:45:03Z"
+      },
+      {
+        "sha": "891a8322c4b13ec4fcdd672e17acda78f93c8998",
+        "url": "https://github.com/pi-pod/pipod/commit/891a8322c4b13ec4fcdd672e17acda78f93c8998",
+        "message": "Sign in from a headless machine with a device code (#35)\n\n`pipod login` over SSH, on a server or in a container had no browser to open and\nwaited on a loopback redirect the person's browser could not reach. Where no\nbrowser can open here (or with --device) it now uses the OAuth device flow: it\nprints a page and a short code, and the person finishes on any device.\n\nThe pipod-cli Zitadel app gains the device-code grant. Zitadel checks that grant\nonly at the token endpoint, so the CLI polls once before showing the code; an\nidentity provider without it (an install not yet re-applied) falls back to the\nbrowser flow, or fails with a hint under --device.",
+        "date": "2026-10-02T23:43:33Z"
+      },
+      {
+        "sha": "42eec20884da0e64d7c7214ce0c5a364b34d788e",
+        "url": "https://github.com/pi-pod/pipod/commit/42eec20884da0e64d7c7214ce0c5a364b34d788e",
+        "message": "Remove settings proposals; pods read the layers behind their launch (#34)\n\n* Remove settings proposals: a pod reads its layers and its person changes them\n\nAn agent in a pod could draft a replacement for the organization defaults that an\nadmin then applied. The apply wrote the stored replacement over whatever the layer\nheld by then, so an old proposal silently undid later edits, and the flow cost two\nnative review screens for a rarely used path. Proposals go entirely: routes, apps'\nreview screens, the skill's instructions, and (core 004) the table.\n\nWhat replaces it is reading. GET /v1/settings/layers returns the layers a launch\nbuilds on: org defaults, the caller's own user bundle, and, for a pod token, the\ntemplate that pod launched from as stored now. A pod launched without its owner's\nbundle (an org-scoped job and its children) gets user: null, the same rule that\nalready hides their personal templates. Policy stays unreadable from a pod;\n/pods/resolve reports its clamps. Pods still never write the org or user layers,\nwhose scripts run in every later launch; the skill tells the agent to show the\nperson the exact `pipod settings` / `pipod push` change instead.\n\nThe skill also stops telling agents they can create or share org templates, which\npod tokens have been refused since 7885c40.\n\n* Point the skill at the self-hosted dashboard too\n\n* Drop the org-defaults footer's promise that agents can propose changes\n\n* Keep each pending proposal's content as an audit row before dropping the table",
+        "date": "2026-10-02T23:20:31Z"
+      },
+      {
+        "sha": "56cee5191cfb30c2c8b5808e85e4d4bb6d3e633a",
+        "url": "https://github.com/pi-pod/pipod/commit/56cee5191cfb30c2c8b5808e85e4d4bb6d3e633a",
+        "message": "Edit dashboard settings with forms instead of JSON boxes (#33)\n\nEvery settings page was a raw JSON textarea for the pod configuration, another for Pi's\nfiles, and two script boxes. Each layer, the policy and templates are now one form with\none Save:\n\n- Fields for what people set: pod size, model and thinking, idle stop and archive,\n  internet access and allowed hosts, build and start scripts, Pi packages and agent\n  files. Policy is fully a form.\n- A blank field inherits. It shows what it inherits and from where (\"4 (organization)\",\n  \"15 (default)\"), from GET /v1/settings/defaults and the layers below it.\n- Anything without a field stays editable as JSON under Advanced. A stored value the\n  form cannot show is saved back unchanged rather than dropped, so saving never loosens\n  a policy or loses a key.\n- Pod size is capped at what this server runs, so a layer cannot ask for memory every\n  launch would refuse. An inherited value over the cap is flagged.\n- The organization's policy ceilings show beside the fields they cap.\n- The server's validation findings show under the field they name. A save made against\n  a stale version offers the current one, and leaving with unsaved changes asks first.\n- Templates show how to launch them, can be renamed and shared in place, and members see\n  read-only views of what they cannot change. The whole-layer \"Clear\" buttons are gone.\n\nGET /v1/settings/defaults publishes the built-in defaults, the child-pod defaults, the\nproviders and thinking levels, and the largest pod. The memory ceiling the launch check\nenforces moves into admittedSandboxMemoryGB so both read the same value.",
+        "date": "2026-10-02T20:51:16Z"
+      },
+      {
+        "sha": "c701d7fc8db8e5436d5f8fa958123d21debce270",
+        "url": "https://github.com/pi-pod/pipod/commit/c701d7fc8db8e5436d5f8fa958123d21debce270",
+        "message": "Tell a self-hoster why the dashboard cannot sign in at a public address (#32)\n\nA public install upgraded past the dashboard registers only the loopback redirect unless\nSERVER_URL is set, and Zitadel then answers sign-in with a bare \"redirect_uri is missing\"\npage the dashboard never gets back from. The server now takes SERVER_URL too and publishes\nit as serverUrl, so the page refuses to leave for Zitadel from an address Zitadel will not\nreturn to and says what to set. selfhost/upgrade warns when Zitadel is public and SERVER_URL\nis unset, and the guide says to set it before --apply-zitadel.",
+        "date": "2026-10-02T20:32:46Z"
+      }
+    ],
+    "receipt": {
+      "repo": "pi-pod/pipod",
+      "startedAt": "2026-10-04T08:41:27.335290+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:28.767462+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.090379+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:31.858233+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:32.817257+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:33.724709+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:34.494696+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.324498+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    }
+  },
+  {
+    "repository": "facebookincubator/muse-gadget-sdk",
+    "html_url": "https://github.com/facebookincubator/muse-gadget-sdk",
+    "created_at": "2026-10-02T18:21:23Z",
+    "pushed_at": "2026-10-03T19:06:43Z",
+    "updated_at": "2026-10-04T00:42:16Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "6c05926afc1216986393c614043eeed397311cd7",
+      "html_url": "https://github.com/facebookincubator/muse-gadget-sdk/blob/main/LICENSE",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "starsSnapshot": 855,
+    "forksSnapshot": 138,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [],
+    "commits": [
+      {
+        "sha": "693cde9a884ad1edc87251b9f8944815f8de4809",
+        "url": "https://github.com/facebookincubator/muse-gadget-sdk/commit/693cde9a884ad1edc87251b9f8944815f8de4809",
+        "message": "Support the reTerminal E1002's six-colour e-paper (#35)\n\n* Support the reTerminal E1002's six-colour e-paper\n\nThe reTerminal E1002 is the E1001's board with a 7.3\" 800x480 E Ink\nSpectra 6 panel: black, white, yellow, red, blue and green, 4 bits per\npixel, full refreshes only, about 30 s each. It shows the same still\nstatus screen, with the character in colour, and draws images from\ndisplay.draw_url dithered to the six inks. Grays stay black and white.\n\ndisplay.draw_url tells Muse the resolution, the six exact colours, that\neverything else is dithered, and that a refresh is slow, and gives the\ncommand 120 s. Build it with tools/board.sh reterminal-e1002.\n\nDrawing no longer waits for a panel refresh, only for the dithering, so\na download is not held up behind a status refresh. This applies to the\nE1001 too.\n\n* Make room for the six-colour draw_url description\n\nThe E1002's longer ink list pushed the worst-case display.draw_url\ndescription past its 1024-byte buffer on Muse boards, failing their\nbuilds with -Werror=format-truncation.",
+        "date": "2026-10-03T19:06:43Z"
+      },
+      {
+        "sha": "e4d5cdff0bc9a1321ea4c1ea55708487f5d7679c",
+        "url": "https://github.com/facebookincubator/muse-gadget-sdk/commit/e4d5cdff0bc9a1321ea4c1ea55708487f5d7679c",
+        "message": "Add M5Stack CoreS3 as a board with the full UI (#25)\n\n* Add M5Stack CoreS3 as a board with the full UI\n\nThe CoreS3 runs on Espressif's m5stack_core_s3 BSP (ILI9342C LCD, FT6336U\ntouch, AW88298 amp, ES7210 mics, AXP2101 rails). It has no user button, so\nPWR is push-to-talk, read from the AXP2101's key interrupts through\nmuse_pmu; the PMU also reports the battery and powers the board off.\nSettings are on the touch screen.\n\nIts 1 W speaker is quiet at 70%, so MUSE_DEFAULT_VOLUME lets a board start\nlouder; it stays 70 elsewhere.\n\nTested on a CoreS3 with ESP-IDF 6.0.2: boot, display, touch, PWR\npush-to-talk, microphone self-test, playback, battery, power off and PWR\npower on; pairing, voice turns and an image from Muse.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\n\n* Set the CoreS3's default volume in its overlay\n\nKeep the shared Kconfig default at 70 and raise it to 100 in the CoreS3's\nown overlay, as other per-board settings do.\n\n---------\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>\nCo-authored-by: Anant Narayanan <anant@kix.in>",
+        "date": "2026-10-03T17:34:04Z"
+      },
+      {
+        "sha": "6c487f1364d34103d1183e160abdcdb11dc041a4",
+        "url": "https://github.com/facebookincubator/muse-gadget-sdk/commit/6c487f1364d34103d1183e160abdcdb11dc041a4",
+        "message": "fix: size pairing decrypt buffers to the message (#31)\n\nlink_pairing_decrypt_command() allocated two fixed 8 KB buffers for every\nencrypted setup command, though base64url_decode() accepts at most 4096\ncharacters (3 KB decoded). On a board without PSRAM and with the full UI\n(ESP32-C3) the heap had no two 8 KB blocks left while the 2.8 KB Wi-Fi\ncredentials message was being parsed, so the malloc failed and was\nreported as error_pairing_decrypt, ending every pairing attempt.\n\nSize both buffers from the ciphertext's length (still capped by the\ndecoder's 4096-character limit) and log an allocation failure instead of\nreporting it as a decryption error.\n\n\nClaude-Session: https://claude.ai/code/session_01N2hj3yHToh9jpj3RL7p9Xy\n\nCo-authored-by: Claude Opus 5.5 <noreply@anthropic.com>",
+        "date": "2026-10-03T17:27:15Z"
+      },
+      {
+        "sha": "5853b6cbdf113d9dc7869776d6eaa13984cf2826",
+        "url": "https://github.com/facebookincubator/muse-gadget-sdk/commit/5853b6cbdf113d9dc7869776d6eaa13984cf2826",
+        "message": "Link Waveshare boards to the new documentation site (#30)\n\nWaveshare's board documentation now lives at docs.waveshare.com. Update\nthe three Waveshare reference links in the supported-boards table to\npoint there instead of the old wiki.",
+        "date": "2026-10-03T17:26:44Z"
+      },
+      {
+        "sha": "b1a3822995a51c0203cd1f3d72c1c656b8c3e620",
+        "url": "https://github.com/facebookincubator/muse-gadget-sdk/commit/b1a3822995a51c0203cd1f3d72c1c656b8c3e620",
+        "message": "Add M5Stack Cardputer ADV support (#10)\n\n* Fix text replies on no-PSRAM Muse boards\n\n* Add experimental M5Stack Cardputer ADV support\n\n* Fix Cardputer ADV backlight dimming frequency\n\n* Match WAV test stub to its declared array parameter\n\n* Reuse the row parser for subscribed chat replies\n\nKeep a bounded line splitter and the existing row handling. Limit smaller outbound buffers and shorter voice pre-roll to Cardputer ADV: restoring either reproduced session allocation or upload failures on hardware. Preserve the original settings on C6 and other boards.\n\n* Shorten Cardputer ADV setup documentation",
+        "date": "2026-10-03T07:05:43Z"
+      }
+    ],
+    "receipt": {
+      "repo": "facebookincubator/muse-gadget-sdk",
+      "startedAt": "2026-10-04T08:48:46.639659+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:47.491494+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:48.348584+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:49.124985+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:49.925420+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:50.583985+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:51.360609+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:52.244664+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  {
+    "repository": "CAPCOM-TD-OSS/REDox",
+    "html_url": "https://github.com/CAPCOM-TD-OSS/REDox",
+    "created_at": "2026-09-30T10:20:07Z",
+    "pushed_at": "2026-10-01T10:15:48Z",
+    "updated_at": "2026-10-04T00:47:23Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "aae9e8975b4748e8950d452cef5394fe8b2de5b2",
+      "html_url": "https://github.com/CAPCOM-TD-OSS/REDox/blob/main/LICENSE",
+      "license": {
+        "key": "apache-2.0",
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "node_id": "MDc6TGljZW5zZTI="
+      }
+    },
+    "starsSnapshot": 983,
+    "forksSnapshot": 27,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v1.0.0",
+        "published_at": "2026-10-01T07:10:19Z",
+        "prerelease": false,
+        "html_url": "https://github.com/CAPCOM-TD-OSS/REDox/releases/tag/v1.0.0",
+        "body": "First release  \r\n  \r\n## NuGet Packages\r\n\r\n[CAPCOM.REDox](https://www.nuget.org/packages/CAPCOM.REDox/)\r\n[CAPCOM.REDox.Cbor](https://www.nuget.org/packages/CAPCOM.REDox.Cbor/)\r\n[CAPCOM.REDox.MessagePack](https://www.nuget.org/packages/CAPCOM.REDox.MessagePack/)\r\n[CAPCOM.REDox.Dynamic](https://www.nuget.org/packages/CAPCOM.REDox.Dynamic/)\r\n[CAPCOM.REDox.Serialization.SystemTextJson](https://www.nuget.org/packages/CAPCOM.REDox.Serialization.SystemTextJson/)\r\n[CAPCOM.REDox.Serialization.NewtonsoftJson](https://www.nuget.org/packages/CAPCOM.REDox.Serialization.NewtonsoftJson/)\r\n[CAPCOM.REDox.Serialization.DataContractJson](https://www.nuget.org/packages/CAPCOM.REDox.Serialization.DataContractJson/)\r\n[CAPCOM.REDox.Toml](https://www.nuget.org/packages/CAPCOM.REDox.Toml/)\r\n[CAPCOM.REDox.Xml](https://www.nuget.org/packages/CAPCOM.REDox.Xml/)\r\n[CAPCOM.REDox.Html](https://www.nuget.org/packages/CAPCOM.REDox.Html/)\r\n[CAPCOM.REDox.Ini](https://www.nuget.org/packages/CAPCOM.REDox.Ini/)\r\n[CAPCOM.REDox.Csv](https://www.nuget.org/packages/CAPCOM.REDox.Csv/)"
+      }
+    ],
+    "commits": [
+      {
+        "sha": "e64ee501c18356a7812d68eab0a83b915444d2fd",
+        "url": "https://github.com/CAPCOM-TD-OSS/REDox/commit/e64ee501c18356a7812d68eab0a83b915444d2fd",
+        "message": "Add SECURITY.md file.",
+        "date": "2026-10-01T10:15:33Z"
+      },
+      {
+        "sha": "a87de8cf8839b3e7ceace76baf0e8c1b15a80db6",
+        "url": "https://github.com/CAPCOM-TD-OSS/REDox/commit/a87de8cf8839b3e7ceace76baf0e8c1b15a80db6",
+        "message": "Update Readme.md",
+        "date": "2026-10-01T08:10:06Z"
+      },
+      {
+        "sha": "47a9b74442e8fc3456163fd8a02db9245a111bed",
+        "url": "https://github.com/CAPCOM-TD-OSS/REDox/commit/47a9b74442e8fc3456163fd8a02db9245a111bed",
+        "message": "Improve MessagePack benchmark fairness\n\nSeparate DOX benchmarks into their own category, use realistic mixed data in MessagePackWrite, and validate output equality against MessagePack-CSharp in GlobalSetup.",
+        "date": "2026-10-01T07:05:45Z"
+      },
+      {
+        "sha": "e5338069363e4ee09c70d8a782d50739c89903e9",
+        "url": "https://github.com/CAPCOM-TD-OSS/REDox/commit/e5338069363e4ee09c70d8a782d50739c89903e9",
+        "message": "Add TriviaKind.Style and DTokenVariant.TriviaStyle\n\nIntroduce a dedicated trivia kind for presentation-only hints (e.g. TOML inline/expanded tables), kept separate from Tag which carries semantic data for CBOR tags and MessagePack ext types.",
+        "date": "2026-10-01T06:46:12Z"
+      },
+      {
+        "sha": "dda8f7467b7d28bd58052c7a5bed4936fa5b19c8",
+        "url": "https://github.com/CAPCOM-TD-OSS/REDox/commit/dda8f7467b7d28bd58052c7a5bed4936fa5b19c8",
+        "message": "Use Unsafe.BitCast instead of Unsafe.As for value-type reinterpretation\n\nReplace Unsafe.As<TFrom, TTo>(ref x) with Unsafe.BitCast<TFrom, TTo>(x) where both types are same-sized value types (enum converters, DValue/DoxDocument/MessagePackDocument float and DateTime bit conversions). Avoids taking addresses of locals so values can stay enregistered. Reference and array reinterpretations and unconstrained generic casts are left unchanged.",
+        "date": "2026-10-01T06:31:59Z"
+      }
+    ],
+    "receipt": {
+      "repo": "CAPCOM-TD-OSS/REDox",
+      "startedAt": "2026-10-04T08:48:40.941359+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:42.045778+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:43.092481+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:43.836032+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:44.683923+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:45.489257+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:46.260193+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:48:47.016176+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    }
+  },
+  {
+    "repository": "kitao/pyxel",
+    "html_url": "https://github.com/kitao/pyxel",
+    "created_at": "2018-06-10T04:58:54Z",
+    "pushed_at": "2026-09-28T10:03:27Z",
+    "updated_at": "2026-10-03T23:22:39Z",
+    "archived": false,
+    "default_branch": "main",
+    "license": {
+      "name": "LICENSE",
+      "path": "LICENSE",
+      "sha": "5101a5772d3620ca85b8f230e18d2946f4710954",
+      "html_url": "https://github.com/kitao/pyxel/blob/main/LICENSE",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      }
+    },
+    "starsSnapshot": 18379,
+    "forksSnapshot": 963,
+    "note": "单次总量快照，不是近7/30天增长",
+    "releases": [
+      {
+        "tag_name": "v2.9.9",
+        "published_at": "2026-08-12T07:50:51Z",
+        "prerelease": false,
+        "html_url": "https://github.com/kitao/pyxel/releases/tag/v2.9.9",
+        "body": null
+      },
+      {
+        "tag_name": "v2.9.8",
+        "published_at": "2026-07-14T14:37:56Z",
+        "prerelease": false,
+        "html_url": "https://github.com/kitao/pyxel/releases/tag/v2.9.8",
+        "body": null
+      },
+      {
+        "tag_name": "v2.9.7",
+        "published_at": "2026-07-05T15:19:29Z",
+        "prerelease": false,
+        "html_url": "https://github.com/kitao/pyxel/releases/tag/v2.9.7",
+        "body": null
+      },
+      {
+        "tag_name": "v2.9.6",
+        "published_at": "2026-06-13T11:50:17Z",
+        "prerelease": false,
+        "html_url": "https://github.com/kitao/pyxel/releases/tag/v2.9.6",
+        "body": null
+      }
+    ],
+    "commits": [
+      {
+        "sha": "50f9bd77780c993aca62b5b221766bde5791081d",
+        "url": "https://github.com/kitao/pyxel/commit/50f9bd77780c993aca62b5b221766bde5791081d",
+        "message": "Update wasm wheel to pyxel 2.9.9\n\nRename and replace the WebAssembly wheel in wasm/ from pyxel-2.9.8-cp311-abi3-emscripten_5_0_3_wasm32.whl to pyxel-2.9.9-cp311-abi3-emscripten_5_0_3_wasm32.whl (binary wheel updated).",
+        "date": "2026-08-12T07:31:07Z"
+      },
+      {
+        "sha": "adeffa24199603a2791d6cda400ed40021809331",
+        "url": "https://github.com/kitao/pyxel/commit/adeffa24199603a2791d6cda400ed40021809331",
+        "message": "Align code and generated docs with ruff 0.16 defaults\n\nConform to the expanded ruff default rule set: strip the redundant\nstub bodies after docstrings (and stop generate_pyi_docstrings from\nemitting them), format generated Markdown docs through ruff in\ngenerate_docs, parenthesize implicit string concatenations, pass\nexplicit subprocess.run check arguments, match messages in blind\nexception tests, and simplify the flagged example branches. Clear\nstray executable bits and sort imports across scripts and tests.",
+        "date": "2026-08-12T04:41:12Z"
+      },
+      {
+        "sha": "fa7ad0cde36d9f396571a05452deb6b37244b509",
+        "url": "https://github.com/kitao/pyxel/commit/fa7ad0cde36d9f396571a05452deb6b37244b509",
+        "message": "Update Rust, Pyodide, and crate dependencies\n\nMove Rust to nightly-2026-08-12, Pyodide to 314.0.4 (Emscripten stays\nat 5.0.3, so the wheel ABI and SDL2 pin are unchanged), blip_buf to\n0.2, and refresh Cargo.lock including pyo3 0.29.2. Adapt callers to\nblip_buf's fallible API, rewrite emptiness asserts flagged by the new\nnightly's clippy, and match the pyo3 overflow message in test_resize.",
+        "date": "2026-08-12T04:41:00Z"
+      },
+      {
+        "sha": "bd7d5d919a14cfc4d9ee54ddc00075fc86a31fbf",
+        "url": "https://github.com/kitao/pyxel/commit/bd7d5d919a14cfc4d9ee54ddc00075fc86a31fbf",
+        "message": "Update 2.9.9 changelog",
+        "date": "2026-08-12T02:34:06Z"
+      },
+      {
+        "sha": "4efcfee7f51c95ffdbf8cf03b8f8ec7b43b45dbd",
+        "url": "https://github.com/kitao/pyxel/commit/4efcfee7f51c95ffdbf8cf03b8f8ec7b43b45dbd",
+        "message": "Release version 2.9.9",
+        "date": "2026-08-12T02:32:50Z"
+      }
+    ],
+    "receipt": {
+      "repo": "kitao/pyxel",
+      "startedAt": "2026-10-04T08:41:35.276464+08:00",
+      "responses": {
+        "meta": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:35.992176+08:00"
+        },
+        "readme": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:36.850133+08:00"
+        },
+        "license": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:37.561437+08:00"
+        },
+        "releases": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:38.478498+08:00"
+        },
+        "contents": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:39.298271+08:00"
+        },
+        "commits": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:40.096261+08:00"
+        },
+        "issues": {
+          "ok": true,
+          "checkedAt": "2026-10-04T08:41:40.947676+08:00"
+        }
+      }
+    },
+    "licenseDeclaration": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    }
+  }
+]

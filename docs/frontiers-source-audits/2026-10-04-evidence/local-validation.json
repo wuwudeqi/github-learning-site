@@ -1,0 +1,31 @@
+{
+  "issueDate": "2026-10-04",
+  "checkedAt": "2026-10-04T10:05:38.232786+08:00",
+  "checks": {
+    "dateCheck": {
+      "command": "npm run check:frontiers -- --date 2026-10-04",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-04T10:04:31.746177+08:00",
+      "completedAt": "2026-10-04T10:04:31.915726+08:00",
+      "log": "dateCheck-final.log"
+    },
+    "build": {
+      "command": "npm run build",
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-04T10:04:31.916701+08:00",
+      "completedAt": "2026-10-04T10:04:36.857075+08:00",
+      "log": "build-final.log"
+    }
+  },
+  "publicationStatus": "deployment-and-online-verification-pending",
+  "articleSha256": {
+    "content/frontiers/2026/10/2026-10-04/00-今日导读.md": "17c18d98d10e7ad236be09f609eeb221c3825b053ec8510d3a85dd3a532c34b1",
+    "content/frontiers/2026/10/2026-10-04/04-开源项目.md": "ac80d247d37458413b22473cb1c5cdd3c0115d51d0533d85485b211a85eda431",
+    "content/frontiers/2026/10/2026-10-04/02-开源模型.md": "d07a9b023a9a9dd9e07d64ef628ce32e65cd874ae7784e9de6b515ff946286c7",
+    "content/frontiers/2026/10/2026-10-04/05-技术实践.md": "fc1027e6db2b8d7a36041b06b4f995d389d86fb7391140957ed81a81000113ed",
+    "content/frontiers/2026/10/2026-10-04/03-论文精选.md": "f25efcb9a267b001898f536c4cdc068baffcaeecbad7f66189b0788b150a497a",
+    "content/frontiers/2026/10/2026-10-04/01-AI动态.md": "0262b80c6bfc98180371a32d7a628628964fb71ec58bb4609fffa0030e352d8e"
+  }
+}

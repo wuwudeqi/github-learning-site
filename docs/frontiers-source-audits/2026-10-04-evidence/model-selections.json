@@ -1,0 +1,209 @@
+[
+  {
+    "id": "Cactus-Compute/whistle",
+    "order": 1,
+    "title": "Whistle：让小型语音识别模型进入 CPU 工作流",
+    "sourceUrl": "https://huggingface.co/Cactus-Compute/whistle",
+    "checkedAt": "2026-10-04T09:22:38.050881+08:00",
+    "license": "apache-2.0",
+    "weightFileCount": 2,
+    "weightFiles": [
+      "checkpoints/whistle.safetensors",
+      "whistle.cact"
+    ],
+    "createdAt": "2026-09-30T17:13:26.000Z",
+    "subjectKeys": [
+      "model:cactus-compute/whistle"
+    ],
+    "selectionEvidence": {
+      "lane": "HF近期关注与新权重双池；以新近实用证据入选",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-04",
+      "originalDate": "2026-09-30",
+      "newFact": "短音频转文本/词时间戳，低资源量化包与可调深度",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "短音频转文本/词时间戳，低资源量化包与可调深度",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "七语言无中文；不同对照精度不同；非所有设备保证",
+      "candidatePaths": [
+        "docs/frontiers-source-audits/2026-10-04-evidence/model-selections.json",
+        "https://huggingface.co/Cactus-Compute/whistle"
+      ],
+      "dedupe": "权重规范ID与系列检查，无同日新闻重复展开；近7/30天未重复。"
+    }
+  },
+  {
+    "id": "bytkim/Qwen3.8-27B-pi",
+    "order": 2,
+    "title": "Qwen3.8-27B-pi：把代理完成率与输出 token 一起比较",
+    "sourceUrl": "https://huggingface.co/bytkim/Qwen3.8-27B-pi",
+    "checkedAt": "2026-10-04T09:22:38.051472+08:00",
+    "license": "apache-2.0",
+    "weightFileCount": 14,
+    "weightFiles": [
+      "dflash2/model.safetensors",
+      "model-00001-of-00012.safetensors",
+      "model-00002-of-00012.safetensors",
+      "model-00003-of-00012.safetensors",
+      "model-00004-of-00012.safetensors",
+      "model-00005-of-00012.safetensors",
+      "model-00006-of-00012.safetensors",
+      "model-00007-of-00012.safetensors",
+      "model-00008-of-00012.safetensors",
+      "model-00009-of-00012.safetensors",
+      "model-00010-of-00012.safetensors",
+      "model-00011-of-00012.safetensors",
+      "model-00012-of-00012.safetensors",
+      "mtp.safetensors"
+    ],
+    "createdAt": "2026-09-29T23:46:38.000Z",
+    "subjectKeys": [
+      "model:bytkim/qwen3.8-27b-pi"
+    ],
+    "selectionEvidence": {
+      "lane": "HF近期关注与新权重双池；以新近实用证据入选",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-04",
+      "originalDate": "2026-09-29",
+      "newFact": "近期针对Pi代理的SFT/GRPO社区权重，作者提供质量-token对照",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "近期针对Pi代理的SFT/GRPO社区权重，作者提供质量-token对照",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "非官方基座发布；不同推理档与任务节省并不一致",
+      "candidatePaths": [
+        "docs/frontiers-source-audits/2026-10-04-evidence/model-selections.json",
+        "https://huggingface.co/bytkim/Qwen3.8-27B-pi"
+      ],
+      "dedupe": "权重规范ID与系列检查，无同日新闻重复展开；近7/30天未重复。"
+    }
+  },
+  {
+    "id": "vllm-sr/Decision-2.0-Kai-0.6B",
+    "order": 3,
+    "title": "Decision-2.0-Kai-0.6B：小模型直接输出选择和评分",
+    "sourceUrl": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B",
+    "checkedAt": "2026-10-04T09:22:38.051750+08:00",
+    "license": "apache-2.0",
+    "weightFileCount": 2,
+    "weightFiles": [
+      "backbone/model.safetensors",
+      "decision_head.safetensors"
+    ],
+    "createdAt": "2026-09-28T14:06:25.000Z",
+    "subjectKeys": [
+      "model:vllm-sr/decision-2.0-kai-0.6b"
+    ],
+    "selectionEvidence": {
+      "lane": "HF近期关注与新权重双池；以新近实用证据入选",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-04",
+      "originalDate": "2026-09-28",
+      "newFact": "新的类型化决策模型与逐题型结果，具体服务接口可读",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "新的类型化决策模型与逐题型结果，具体服务接口可读",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "F1不等同准确率；硬件延迟不可泛化；需自定义代码",
+      "candidatePaths": [
+        "docs/frontiers-source-audits/2026-10-04-evidence/model-selections.json",
+        "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B"
+      ],
+      "dedupe": "权重规范ID与系列检查，无同日新闻重复展开；近7/30天未重复。"
+    }
+  },
+  {
+    "id": "speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+    "order": 4,
+    "title": "MiniMax-H3 X2 Detail VAE：生成解码与参考细节要分开",
+    "sourceUrl": "https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+    "checkedAt": "2026-10-04T09:22:38.052017+08:00",
+    "license": "other",
+    "weightFileCount": 1,
+    "weightFiles": [
+      "MiniMax-H3-X2-Detail-v1.safetensors"
+    ],
+    "createdAt": "2026-09-30T19:59:27.000Z",
+    "subjectKeys": [
+      "model:speach1sdef178/minimax-h3-x2-detail-vae"
+    ],
+    "selectionEvidence": {
+      "lane": "HF近期关注与新权重双池；以新近实用证据入选",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-04",
+      "originalDate": "2026-09-30",
+      "newFact": "新公开VAE实验；两条有不同输入信息的路径及失败记录具有研究价值",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "新公开VAE实验；两条有不同输入信息的路径及失败记录具有研究价值",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "社区许可地域/商业限制；未验证显存、画质，不能恢复不存在的信息",
+      "candidatePaths": [
+        "docs/frontiers-source-audits/2026-10-04-evidence/model-selections.json",
+        "https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE"
+      ],
+      "dedupe": "权重规范ID与系列检查，无同日新闻重复展开；近7/30天未重复。"
+    }
+  },
+  {
+    "id": "SeerRay-Lab/Xiaomi-OCR-0",
+    "order": 5,
+    "title": "Xiaomi-OCR-0：同一个小模型连接版面、表格与问答",
+    "sourceUrl": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0",
+    "checkedAt": "2026-10-04T09:22:38.052335+08:00",
+    "license": "apache-2.0",
+    "weightFileCount": 1,
+    "weightFiles": [
+      "model.safetensors"
+    ],
+    "createdAt": "2026-09-29T16:41:40.000Z",
+    "subjectKeys": [
+      "model:seerray-lab/xiaomi-ocr-0"
+    ],
+    "selectionEvidence": {
+      "lane": "HF近期关注与新权重双池；以新近实用证据入选",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-04",
+      "originalDate": "2026-09-29",
+      "newFact": "新0.8B统一文档任务权重和数据制作方法公开",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "新0.8B统一文档任务权重和数据制作方法公开",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "模型卡许可证可见，独立LICENSE文件缺失；非全基准领先",
+      "candidatePaths": [
+        "docs/frontiers-source-audits/2026-10-04-evidence/model-selections.json",
+        "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0"
+      ],
+      "dedupe": "权重规范ID与系列检查，无同日新闻重复展开；近7/30天未重复。"
+    }
+  },
+  {
+    "id": "MaziyarPanahi/ModernJEV-Decide-Preview",
+    "order": 6,
+    "title": "ModernJEV Decide：候选描述也作为输入，未见任务仍是短板",
+    "sourceUrl": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview",
+    "checkedAt": "2026-10-04T09:22:38.053209+08:00",
+    "license": "apache-2.0",
+    "weightFileCount": 1,
+    "weightFiles": [
+      "model.safetensors"
+    ],
+    "createdAt": "2026-09-30T10:42:14.000Z",
+    "subjectKeys": [
+      "model:maziyarpanahi/modernjev-decide-preview"
+    ],
+    "selectionEvidence": {
+      "lane": "HF近期关注与新权重双池；以新近实用证据入选",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-04",
+      "originalDate": "2026-09-30",
+      "newFact": "新ModernBERT决策预览及已披露的范围外失败",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "新ModernBERT决策预览及已披露的范围外失败",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "候选归一化非校准信心；新任务可能低于多数基线",
+      "candidatePaths": [
+        "docs/frontiers-source-audits/2026-10-04-evidence/model-selections.json",
+        "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview"
+      ],
+      "dedupe": "权重规范ID与系列检查，无同日新闻重复展开；近7/30天未重复。"
+    }
+  }
+]

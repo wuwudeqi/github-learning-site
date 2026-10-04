@@ -1,0 +1,18 @@
+{
+  "id": "paper-activesaddler-2610-00906-pdf",
+  "title": "ActiveSaddler: Automated Curriculum Learning for Agent Harness Optimization",
+  "category": "论文",
+  "author": "Park, Sungho、Kim, Wonjoong、Zhang, Jue、Han, Wook-Shin、Gao, Pengfei、Park, Chanyoung、Yao, Yongqiang、Fu, Rao、Nallipogu, Elsie、Lin, Qingwei、Rühle, Victor",
+  "date": "2026-10-01",
+  "description": "为什么现在值得看：这项新近实用 / 新近创新研究把“下一步修哪种失败”变成可适应的课程，而不仅优化补丁生成。",
+  "tags": [
+    "AI",
+    "前沿",
+    "研究"
+  ],
+  "source": "https://arxiv.org/abs/2610.00906v1",
+  "arxiv": "2610.00906",
+  "version": "v1",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "abstract": "Automated harness optimization can substantially improve LLM agents by iteratively updating their prompts, tool interfaces, and control logic from execution feedback. However, existing methods primarily optimize how the harness is updated while largely fixing which training scenarios generate the feedback that drives those updates. As the harness evolves, the scenarios most useful for further optimization can change, suggesting that the training curriculum itself should adapt alongside the harness. We formulate this missing dimension of harness optimization as an automated curriculum learning problem and introduce ActiveSaddler. ActiveSaddler models the evolving curriculum as a non-stationary bandit with dynamically instantiated optimization targets. It abstracts recurring failures into reusable failure-pattern arms, estimates the potential learning progress from further targeting each pattern, and adaptively balances revisiting known weaknesses with exploring unseen scenarios for new ones. Optimization outcomes continually update both the set of discovered failure patterns and their priorities, allowing the curriculum to co-evolve with the harness. Experiments on GAIA2 and Terminal-Bench 2.0 show that ActiveSaddler consistently discovers stronger harnesses, improving test Pass@1 by 4.4 and 7.5 percentage points over the same harness optimizer using a scenario order fixed before optimization, respectively. Ablations further show that these gains depend on dynamically constructing optimization targets, estimating their evolving utility, and balancing continued optimization with new failure discovery. Together, these results establish automated curriculum learning as a new crucial optimization dimension for harness optimization."
+}

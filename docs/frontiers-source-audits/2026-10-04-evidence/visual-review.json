@@ -1,0 +1,1057 @@
+{
+  "images": [
+    {
+      "module": "news",
+      "file": "content/frontiers/2026/10/2026-10-04/images/asta-training.png",
+      "entry": "AstaBrief 在计算机科学问题集上与 DR Tulu、Thinking 模式和基础模型比较",
+      "question": "AstaBrief 在计算机科学问题集上与 DR Tulu、Thinking 模式和基础模型比较",
+      "originalCandidates": [
+        {
+          "url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/nBB2ourke1eQYpjq2mGD5.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/nBB2ourke1eQYpjq2mGD5.png",
+      "sourceDataPath": null,
+      "caption": "Ai2 原图：先看测试集四项指标，再看下面的开发集；每行排序不同，要按颜色辨认模型。开发集参与开发，不能与测试集混算。（[来源原图](https://huggingface.co/blog/allenai/astabrief)；[查看原尺寸](images/asta-training.png)。）",
+      "licenseReview": "原公告未给统一可任意再分发许可；仅作新闻/研究讲解所需的有限图示引用，保留作者版权、链接与实验条件，不标为自由授权",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029725+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "asta-training.png",
+            "loaded": true,
+            "width": 719.984375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "asta-training.png",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "news",
+      "file": "content/frontiers/2026/10/2026-10-04/images/asta-results.png",
+      "entry": "AstaBrief 在 DeepScholarBench 的组织性、事实覆盖和引用指标对照",
+      "question": "AstaBrief 在 DeepScholarBench 的组织性、事实覆盖和引用指标对照",
+      "originalCandidates": [
+        {
+          "url": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/3dI-e2nnf6FDQw6ay-x9N.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/3dI-e2nnf6FDQw6ay-x9N.png",
+      "sourceDataPath": null,
+      "caption": "Ai2 原图：绿色在组织性和关键事实覆盖上有优势，但引用精度、论断覆盖较低。不能用上一张图的平均成绩概括所有综述任务。（[来源原图](https://huggingface.co/blog/allenai/astabrief)；[查看原尺寸](images/asta-results.png)。）",
+      "licenseReview": "原公告未给统一可任意再分发许可；仅作新闻/研究讲解所需的有限图示引用，保留作者版权、链接与实验条件，不标为自由授权",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029746+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "asta-results.png",
+            "loaded": true,
+            "width": 719.96875,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "asta-results.png",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "news",
+      "file": "content/frontiers/2026/10/2026-10-04/images/federated-enclave.png",
+      "entry": "设备、加密存储、TEE密钥服务、聚合处理与透明日志的两条信息流",
+      "question": "设备、加密存储、TEE密钥服务、聚合处理与透明日志的两条信息流",
+      "originalCandidates": [
+        {
+          "url": "https://storage.googleapis.com/gweb-research2023-media/original_images/ProvablyPrivateLearning2-Data_Overview.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://storage.googleapis.com/gweb-research2023-media/original_images/ProvablyPrivateLearning2-Data_Overview.png",
+      "sourceDataPath": null,
+      "caption": "Google Research 原图：蓝色1—6是数据流，黄色A—D是可检查的验证流。重点看第4步：得到钥匙需要满足策略；第6步释放聚合输出，不能理解成释放原始样本。（[来源原图](https://research.google/blog/toward-provably-private-learning-from-federated-data/)；[查看原尺寸](images/federated-enclave.png)。）",
+      "licenseReview": "原公告未给统一可任意再分发许可；仅作新闻/研究讲解所需的有限图示引用，保留作者版权、链接与实验条件，不标为自由授权",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029760+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "federated-enclave.png",
+            "loaded": true,
+            "width": 719.984375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "federated-enclave.png",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "models",
+      "file": "content/frontiers/2026/10/2026-10-04/images/qwen-pi-tokens.png",
+      "entry": "Qwen社区微调与基座在Terminal-Bench中的完成率和输出token对照",
+      "question": "Qwen社区微调与基座在Terminal-Bench中的完成率和输出token对照",
+      "originalCandidates": [
+        {
+          "url": "https://huggingface.co/bytkim/Qwen3.8-27B-pi/resolve/main/assets/terminal-bench-score-tokens.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://huggingface.co/bytkim/Qwen3.8-27B-pi/resolve/main/assets/terminal-bench-score-tokens.png",
+      "sourceDataPath": null,
+      "caption": "bytkim 原图：Pi / Terminal-Bench 2.1 的 89 个任务，FP8 条件；横轴输出 token 与纵轴完成率一起读，并区分 medium 与 xhigh 推理档；图只支持作者的Pi环境实验，不是vLLM部署吞吐测量。来源仓库为Apache 2.0。（[来源原图](https://huggingface.co/bytkim/Qwen3.8-27B-pi)；[查看原尺寸](images/qwen-pi-tokens.png)。）",
+      "licenseReview": "对应模型卡Apache-2.0声明；OCR与ModernJEV独立LICENSE缺失，未扩大到训练数据权利",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029776+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "qwen-pi-tokens.png",
+            "loaded": true,
+            "width": 720,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "qwen-pi-tokens.png",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "models",
+      "file": "content/frontiers/2026/10/2026-10-04/images/kai-types.png",
+      "entry": "Decision Kai在不同决策题型上的对照柱图",
+      "question": "Decision Kai在不同决策题型上的对照柱图",
+      "originalCandidates": [
+        {
+          "url": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B/resolve/main/assets/jevarena-types.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B/resolve/main/assets/jevarena-types.png",
+      "sourceDataPath": null,
+      "caption": "vllm-sr 原图：题型分别比较，避免用总分掩盖某一类型的弱点；这是作者评测，本站未复现。Apache 2.0 来源资源。（[来源原图](https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B)；[查看原尺寸](images/kai-types.png)。）",
+      "licenseReview": "对应模型卡Apache-2.0声明；OCR与ModernJEV独立LICENSE缺失，未扩大到训练数据权利",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029786+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "kai-types.png",
+            "loaded": true,
+            "width": 720,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "kai-types.png",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "models",
+      "file": "content/frontiers/2026/10/2026-10-04/images/ocr-data.png",
+      "entry": "OCR数据引擎以多个专家生成候选，并通过一致性与渲染比较整理训练数据",
+      "question": "OCR数据引擎以多个专家生成候选，并通过一致性与渲染比较整理训练数据",
+      "originalCandidates": [
+        {
+          "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0/resolve/main/assets/data-engine.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0/resolve/main/assets/data-engine.png",
+      "sourceDataPath": null,
+      "caption": "SeerRay-Lab 原图：先看候选标注如何进入筛选，再看渲染校验反馈；这说明数据制作方法，不代表每张真实票据都能无错解析。模型卡标注Apache 2.0。（[来源原图](https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0)；[查看原尺寸](images/ocr-data.png)。）",
+      "licenseReview": "对应模型卡Apache-2.0声明；OCR与ModernJEV独立LICENSE缺失，未扩大到训练数据权利",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029797+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "ocr-data.png",
+            "loaded": true,
+            "width": 719.984375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "ocr-data.png",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "models",
+      "file": "content/frontiers/2026/10/2026-10-04/images/modernjev.svg",
+      "entry": "任务上下文与候选描述进入ModernBERT，再由评分头比较候选",
+      "question": "任务上下文与候选描述进入ModernBERT，再由评分头比较候选",
+      "originalCandidates": [
+        {
+          "url": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview/resolve/main/architecture.svg",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview/resolve/main/architecture.svg",
+      "sourceDataPath": null,
+      "caption": "MaziyarPanahi 原图：每个候选都要评分；结果的归一化范围是当前列表，不能当作经过校准的正确概率。模型卡Apache 2.0。（[来源原图](https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview)；[查看原尺寸](images/modernjev.svg)。）",
+      "licenseReview": "对应模型卡Apache-2.0声明；OCR与ModernJEV独立LICENSE缺失，未扩大到训练数据权利",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029808+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "modernjev.svg",
+            "loaded": true,
+            "width": 719.9375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "modernjev.svg",
+            "loaded": true,
+            "width": 343.9375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "papers",
+      "file": "content/frontiers/2026/10/2026-10-04/images/paper-distillation.png",
+      "entry": "蒸馏动力学：先分清采样策略、损失和学习率的方法或实验原图",
+      "question": "蒸馏动力学：先分清采样策略、损失和学习率的方法或实验原图",
+      "originalCandidates": [
+        {
+          "url": "https://arxiv.org/abs/2609.35259",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://arxiv.org/abs/2609.35259",
+      "sourceDataPath": ".frontiers/papers/2026-10-04/2609.35259/source/figures/02_full_kl_final_metrics.pdf",
+      "caption": "Piskorz, Julianna 等，Figure 1，三任务最终准确率；阴影/误差来自三随机种子，不能跨任务直接比较难度。来源论文原图，CC BY 4.0；用于解释本段方法或实验。（[来源原图](https://arxiv.org/abs/2609.35259v1)；[查看原尺寸](images/paper-distillation.png)。）",
+      "licenseReview": "CC BY 4.0，arXiv v1许可页已逐项核对",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029826+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "paper-distillation.png",
+            "loaded": true,
+            "width": 719.9375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "paper-distillation.png",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "papers",
+      "file": "content/frontiers/2026/10/2026-10-04/images/paper-graphforge.png",
+      "entry": "GraphForge：从职业任务图生成办公训练环境的方法或实验原图",
+      "question": "GraphForge：从职业任务图生成办公训练环境的方法或实验原图",
+      "originalCandidates": [
+        {
+          "url": "https://arxiv.org/abs/2609.38923",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://arxiv.org/abs/2609.38923",
+      "sourceDataPath": ".frontiers/papers/2026-10-04/2609.38923/source/figs/GraphForge_overview.pdf",
+      "caption": "Su, Qisheng 等，Figure 1，O*NET 锚点、任务与评分规则、文件工作区、教师执行构成同一数据流水线。来源论文原图，CC BY 4.0；用于解释本段方法或实验。（[来源原图](https://arxiv.org/abs/2609.38923v1)；[查看原尺寸](images/paper-graphforge.png)。）",
+      "licenseReview": "CC BY 4.0，arXiv v1许可页已逐项核对",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029837+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "paper-graphforge.png",
+            "loaded": true,
+            "width": 719.96875,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "paper-graphforge.png",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "papers",
+      "file": "content/frontiers/2026/10/2026-10-04/images/paper-emoe.png",
+      "entry": "E-MoE：用共享专家变量连接并行生成的位置的方法或实验原图",
+      "question": "E-MoE：用共享专家变量连接并行生成的位置的方法或实验原图",
+      "originalCandidates": [
+        {
+          "url": "https://arxiv.org/abs/2609.37533",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://arxiv.org/abs/2609.37533",
+      "sourceDataPath": ".frontiers/papers/2026-10-04/2609.37533/source/figures/factorization_experts.pdf",
+      "caption": "Ivanov, Arseny 等，Figure 2，把 New York 与 San Diego 的二选一交给共享专家，避免各位置独立抽样拼出错误组合。来源论文原图，CC BY 4.0；用于解释本段方法或实验。（[来源原图](https://arxiv.org/abs/2609.37533v1)；[查看原尺寸](images/paper-emoe.png)。）",
+      "licenseReview": "CC BY 4.0，arXiv v1许可页已逐项核对",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029847+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "paper-emoe.png",
+            "loaded": true,
+            "width": 719.984375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "paper-emoe.png",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "papers",
+      "file": "content/frontiers/2026/10/2026-10-04/images/paper-active.png",
+      "entry": "ActiveSaddler：按失败模式安排代理改进课程的方法或实验原图",
+      "question": "ActiveSaddler：按失败模式安排代理改进课程的方法或实验原图",
+      "originalCandidates": [
+        {
+          "url": "https://arxiv.org/abs/2610.00906",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://arxiv.org/abs/2610.00906",
+      "sourceDataPath": ".frontiers/papers/2026-10-04/2610.00906/source/Figures/main_figure.pdf",
+      "caption": "Park, Sungho 等，Figure 2，先选择探索新场景或重访已知失败，再改提示词、工具接口和控制逻辑；反馈更新优先级。来源论文原图，CC BY 4.0；用于解释本段方法或实验。（[来源原图](https://arxiv.org/abs/2610.00906v1)；[查看原尺寸](images/paper-active.png)。）",
+      "licenseReview": "CC BY 4.0，arXiv v1许可页已逐项核对",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029859+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "paper-active.png",
+            "loaded": true,
+            "width": 719.96875,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "paper-active.png",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "papers",
+      "file": "content/frontiers/2026/10/2026-10-04/images/paper-omni.png",
+      "entry": "Omni-Embed-Mini：冻结文本空间，再接入其他模态的方法或实验原图",
+      "question": "Omni-Embed-Mini：冻结文本空间，再接入其他模态的方法或实验原图",
+      "originalCandidates": [
+        {
+          "url": "https://arxiv.org/abs/2610.02148",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://arxiv.org/abs/2610.02148",
+      "sourceDataPath": ".frontiers/papers/2026-10-04/2610.02148/source/figures/architecture.pdf",
+      "caption": "Kurpath, Mohammed Irfan 等，Figure 4，左侧不同模态经编码器和投影器进入冻结骨干；右侧稠密描述经同一骨干提供目标向量。来源论文原图，CC BY 4.0；用于解释本段方法或实验。（[来源原图](https://arxiv.org/abs/2610.02148v1)；[查看原尺寸](images/paper-omni.png)。）",
+      "licenseReview": "CC BY 4.0，arXiv v1许可页已逐项核对",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029870+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "paper-omni.png",
+            "loaded": true,
+            "width": 719.96875,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "paper-omni.png",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "papers",
+      "file": "content/frontiers/2026/10/2026-10-04/images/paper-row-detail.png",
+      "entry": "ROWBench：视频看起来好，不代表执行了程序状态的方法或实验原图",
+      "question": "ROWBench：视频看起来好，不代表执行了程序状态的方法或实验原图",
+      "originalCandidates": [
+        {
+          "url": "https://arxiv.org/abs/2610.02205v1",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://arxiv.org/abs/2610.02205v1",
+      "sourceDataPath": ".frontiers/papers/2026-10-04/2610.02205/source/figures/teaser2.pdf",
+      "caption": "Huang, Zheng-Hui 等，Figure 1 局部裁切，去除原 PDF 图页空白边缘；保留全部比较内容，较高 CLIP 分数的样例反而没有完成三次指定交互。来源论文原图，CC BY 4.0；用于解释本段方法或实验。（[来源原图](https://arxiv.org/abs/2610.02205v1)；[查看原尺寸](images/paper-row-detail.png)。）",
+      "licenseReview": "CC BY 4.0，arXiv v1许可页已逐项核对",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029883+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "paper-row-detail.png",
+            "loaded": true,
+            "width": 719.984375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "paper-row-detail.png",
+            "loaded": true,
+            "width": 343.953125,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      },
+      "crop": "pdftoppm -scale-to 4000 -x 790 -y 970 -W 2240 -H 870；局部展示，整图paper-row.png保留；不改内容"
+    },
+    {
+      "module": "projects",
+      "file": "content/frontiers/2026/10/2026-10-04/images/jevstiller-flow.svg",
+      "entry": "服务请求由本地模型回答，未确定、新问题或审计请求转给Jev",
+      "question": "服务请求由本地模型回答，未确定、新问题或审计请求转给Jev",
+      "originalCandidates": [
+        {
+          "url": "https://raw.githubusercontent.com/tomerglick57/Jevstiller/main/docs/media/flow-light.svg",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://raw.githubusercontent.com/tomerglick57/Jevstiller/main/docs/media/flow-light.svg",
+      "sourceDataPath": null,
+      "caption": "Jevstiller 作者的路由原图。深色圆点本地回答，橙色圆点回退；图中约16/300毫秒是作者示意的特定运行量级，不是本站测量；Apache-2.0。（[来源原图](https://github.com/tomerglick57/Jevstiller/blob/main/docs/media/flow-light.svg)；[查看原尺寸](images/jevstiller-flow.svg)。）",
+      "licenseReview": "Apache-2.0，仓库LICENSE已核对；保留作者与许可全文",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029900+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "jevstiller-flow.svg",
+            "loaded": true,
+            "width": 719.96875,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "jevstiller-flow.svg",
+            "loaded": true,
+            "width": 344,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "projects",
+      "file": "content/frontiers/2026/10/2026-10-04/images/jevstiller-results.svg",
+      "entry": "Banking77在线流中本地回答覆盖率，以及2000条留出消息上的教师一致率",
+      "question": "Banking77在线流中本地回答覆盖率，以及2000条留出消息上的教师一致率",
+      "originalCandidates": [
+        {
+          "url": "https://raw.githubusercontent.com/tomerglick57/Jevstiller/main/docs/media/results-light.svg",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://raw.githubusercontent.com/tomerglick57/Jevstiller/main/docs/media/results-light.svg",
+      "sourceDataPath": null,
+      "caption": "Jevstiller 作者 Banking77 在线流原图（09-25）。上图随消息积累达到70.7%本地回答；下图在2000条留出消息上与教师一致率99.45%，不同于正文另一项离线实验。两者均非真实准确率；Apache-2.0。（[来源原图](https://github.com/tomerglick57/Jevstiller/blob/main/docs/media/results-light.svg)；[查看原尺寸](images/jevstiller-results.svg)。）",
+      "licenseReview": "Apache-2.0，仓库LICENSE已核对；保留作者与许可全文",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029911+08:00",
+        "result": "已修正初稿图注：此图是Banking77在线流70.7%与留出99.45%，不是Tweets多数据集比较；下图97%起轴明确保留。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "jevstiller-results.svg",
+            "loaded": true,
+            "width": 720,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "jevstiller-results.svg",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "projects",
+      "file": "content/frontiers/2026/10/2026-10-04/images/redox-speedup.svg",
+      "entry": "REDox 在三组作者 JSON 数据上的顺序和并行解析相对速度",
+      "question": "REDox 在三组作者 JSON 数据上的顺序和并行解析相对速度",
+      "originalCandidates": [
+        {
+          "url": "https://raw.githubusercontent.com/CAPCOM-TD-OSS/REDox/main/docs/images/benchmarks/summary-speedup.svg",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://raw.githubusercontent.com/CAPCOM-TD-OSS/REDox/main/docs/images/benchmarks/summary-speedup.svg",
+      "sourceDataPath": null,
+      "caption": "CAPCOM-TD-OSS 基准原图，Threadripper 5975WX / Windows 11 / .NET 10 的作者测量；图内基线与线程条件一起读，Apache-2.0。（[来源原图](https://github.com/CAPCOM-TD-OSS/REDox/blob/main/docs/images/benchmarks/summary-speedup.svg)；[查看原尺寸](images/redox-speedup.svg)。）",
+      "licenseReview": "Apache-2.0，仓库LICENSE已核对；保留作者与许可全文",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029925+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "redox-speedup.svg",
+            "loaded": true,
+            "width": 720,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "redox-speedup.svg",
+            "loaded": true,
+            "width": 343.984375,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "projects",
+      "file": "content/frontiers/2026/10/2026-10-04/images/carto-building.png",
+      "entry": "Cartopolis 建筑面板将三维建筑与年代面积等登记属性对应",
+      "question": "Cartopolis 建筑面板将三维建筑与年代面积等登记属性对应",
+      "originalCandidates": [
+        {
+          "url": "https://code.garage44.eu/jeroen/cartopolis/src/branch/main/docs/img/building.png",
+          "decision": "采用，直接支持正文的机制或实验"
+        }
+      ],
+      "selectedLevel": "source-original",
+      "source": "https://code.garage44.eu/jeroen/cartopolis/src/branch/main/docs/img/building.png",
+      "sourceDataPath": null,
+      "caption": "Jeroen 的原界面截图，建筑卡片展示来源可追踪的属性；引用范围为该功能说明。地图 © OpenStreetMap contributors（ODbL），建筑数据见 3DBAG / PDOK，具体资源许可遵循仓库 license.md；并非本站运行截图。（[来源原图](https://code.garage44.eu/jeroen/cartopolis/src/branch/main/docs/img/building.png)；[查看原尺寸](images/carto-building.png)。）",
+      "licenseReview": "按仓库license.md区分源码与地图/素材；仅引用功能截图，保留作者和OSM/3DBAG/PDOK署名",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029939+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "carto-building.png",
+            "loaded": true,
+            "width": 720,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "carto-building.png",
+            "loaded": true,
+            "width": 344,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      }
+    },
+    {
+      "module": "practice",
+      "file": "content/frontiers/2026/10/2026-10-04/images/agreement-results.png",
+      "entry": "合成实验三组条形对照：两组同为99%教师一致率，真实准确率分别为81%和79%",
+      "question": "合成实验三组条形对照：两组同为99%教师一致率，真实准确率分别为81%和79%",
+      "originalCandidates": [
+        {
+          "url": "本机合成实验，无外部原图",
+          "decision": "不存在能表示本次真实输出的来源图"
+        }
+      ],
+      "selectedLevel": "html-js",
+      "source": null,
+      "sourceDataPath": "content/frontiers/2026/10/2026-10-04/code/agreement-results.json",
+      "caption": "本站 Python 实际输出，经附带 HTML / JS 忠实绘图。三组分母都是 1,000，横轴从 0 到 100%；这里没有真实模型的性能数字。（[查看原尺寸](images/agreement-results.png)；[可复现图表源码](code/agreement-chart.html)；[数据](code/agreement-results.json)。）",
+      "licenseReview": "本站合成实验；代码与数据同目录",
+      "visualInspection": {
+        "status": "inspected",
+        "checkedAt": "2026-10-04T09:49:32.029952+08:00",
+        "result": "已打开最终图核对相邻正文。中文说明与原尺寸入口保留；未改数字、坐标、图例。"
+      },
+      "desktopMobile": {
+        "status": "passed",
+        "checkedAt": "2026-10-04T10:01:36.580207+08:00",
+        "checks": [
+          {
+            "viewportWidth": 1440,
+            "file": "agreement-results.png",
+            "loaded": true,
+            "width": 719.984375,
+            "withinArticle": true
+          },
+          {
+            "viewportWidth": 390,
+            "file": "agreement-results.png",
+            "loaded": true,
+            "width": 343.96875,
+            "withinArticle": true
+          }
+        ],
+        "evidence": "docs/frontiers-source-audits/2026-10-04-evidence/ui-validation.json",
+        "manualResult": "在已查看的桌面/手机截图中无裁切或溢出；对应中文图注与原尺寸入口可读。密集英文图使用原尺寸查看。"
+      },
+      "sourceCodePath": "content/frontiers/2026/10/2026-10-04/code/agreement-chart.html",
+      "whyNotImagegen": "需要逐项精确对应已运行输出；生成图可能改变数字和长度，HTML/JS可复算",
+      "whyNotSourceOriginal": "本次本机合成实验，没有外部原图；数据不能使用现成基准冒充"
+    }
+  ],
+  "itemAssessments": [
+    {
+      "module": "news",
+      "id": "kolibri-1",
+      "title": "Kolibri 开放英德双语权重：活跃参数少，显存仍要装下全模型",
+      "originalPage": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+      "images": [],
+      "reason": "核心难点为活跃/总参数与显存；公告可见宣传/互动图不比本条精确规格表更清楚。用已核对数字表即可，不需要机制概念插画。"
+    },
+    {
+      "module": "news",
+      "id": "muse-gadgets",
+      "title": "Muse Gadgets 开放设备 SDK，把手机代理接到树莓派和 ESP32",
+      "originalPage": "https://gadgets.muse.ai/",
+      "images": [],
+      "reason": "查看官网/SDK及Linux、ESP32说明；设备合影主要是宣传，未选。手机配对、板卡差异和账号权限用两条文字路径解释，避免生成虚构硬件界面。"
+    },
+    {
+      "module": "news",
+      "id": "astabrief",
+      "title": "AstaBrief 用 8B 模型压缩科研报告等待时间，复杂综述仍有取舍",
+      "originalPage": "https://huggingface.co/blog/allenai/astabrief",
+      "images": [
+        "asta-training.png",
+        "asta-results.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "news",
+      "id": "copilot-dynamic-workflows",
+      "title": "Copilot 动态工作流让代码负责顺序、并行与暂停点",
+      "originalPage": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "images": [],
+      "reason": "公告没有适用方法原图，流程关键是精确API状态与暂停权限，四段步骤已充分表达；不增加重复的流程框。"
+    },
+    {
+      "module": "news",
+      "id": "confidential-federated-learning",
+      "title": "Google 解释机密联邦学习：加密上传后，谁能拿到解密钥匙",
+      "originalPage": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "images": [
+        "federated-enclave.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "models",
+      "id": "Cactus-Compute/whistle",
+      "title": "Whistle：让小型语音识别模型进入 CPU 工作流",
+      "originalPage": "https://huggingface.co/Cactus-Compute/whistle",
+      "images": [],
+      "reason": "Whistle原SVG仅概览列表，静态/缩减动画显示为空白；已实际渲染并弃用。输入格式与七语言范围用正文更准确，无需图。"
+    },
+    {
+      "module": "models",
+      "id": "bytkim/Qwen3.8-27B-pi",
+      "title": "Qwen3.8-27B-pi：把代理完成率与输出 token 一起比较",
+      "originalPage": "https://huggingface.co/bytkim/Qwen3.8-27B-pi",
+      "images": [
+        "qwen-pi-tokens.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "models",
+      "id": "vllm-sr/Decision-2.0-Kai-0.6B",
+      "title": "Decision-2.0-Kai-0.6B：小模型直接输出选择和评分",
+      "originalPage": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B",
+      "images": [
+        "kai-types.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "models",
+      "id": "speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+      "title": "MiniMax-H3 X2 Detail VAE：生成解码与参考细节要分开",
+      "originalPage": "https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+      "images": [],
+      "reason": "社区VAE效果涉及受限H3资源，未再分发；两条输入路径和失败边界可用两段文字说清，不生成冒充真实效果的图片。"
+    },
+    {
+      "module": "models",
+      "id": "SeerRay-Lab/Xiaomi-OCR-0",
+      "title": "Xiaomi-OCR-0：同一个小模型连接版面、表格与问答",
+      "originalPage": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0",
+      "images": [
+        "ocr-data.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "models",
+      "id": "MaziyarPanahi/ModernJEV-Decide-Preview",
+      "title": "ModernJEV Decide：候选描述也作为输入，未见任务仍是短板",
+      "originalPage": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview",
+      "images": [
+        "modernjev.svg"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "papers",
+      "id": "2609.35259",
+      "title": "蒸馏动力学：先分清采样策略、损失和学习率",
+      "originalPage": "https://arxiv.org/abs/2609.35259v1",
+      "images": [
+        "paper-distillation.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "papers",
+      "id": "2609.38923",
+      "title": "GraphForge：从职业任务图生成办公训练环境",
+      "originalPage": "https://arxiv.org/abs/2609.38923v1",
+      "images": [
+        "paper-graphforge.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "papers",
+      "id": "2609.37533",
+      "title": "E-MoE：用共享专家变量连接并行生成的位置",
+      "originalPage": "https://arxiv.org/abs/2609.37533v1",
+      "images": [
+        "paper-emoe.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "papers",
+      "id": "2610.00906",
+      "title": "ActiveSaddler：按失败模式安排代理改进课程",
+      "originalPage": "https://arxiv.org/abs/2610.00906v1",
+      "images": [
+        "paper-active.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "papers",
+      "id": "2610.02148",
+      "title": "Omni-Embed-Mini：冻结文本空间，再接入其他模态",
+      "originalPage": "https://arxiv.org/abs/2610.02148v1",
+      "images": [
+        "paper-omni.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "papers",
+      "id": "2610.02205",
+      "title": "ROWBench：视频看起来好，不代表执行了程序状态",
+      "originalPage": "https://arxiv.org/abs/2610.02205v1",
+      "images": [
+        "paper-row-detail.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "projects",
+      "id": "pi-pod/pipod",
+      "title": "PiPod：把持续运行的编码会话带到手机",
+      "originalPage": "https://github.com/pi-pod/pipod",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "tomerglick57/jevstiller",
+      "title": "Jevstiller：给云端分类器加可回退的本地学生",
+      "originalPage": "https://github.com/tomerglick57/Jevstiller",
+      "images": [
+        "jevstiller-flow.svg",
+        "jevstiller-results.svg"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "projects",
+      "id": "capcom-td-oss/redox",
+      "title": "REDox：在保留原始文本的结构上编辑数据",
+      "originalPage": "https://github.com/CAPCOM-TD-OSS/REDox",
+      "images": [
+        "redox-speedup.svg"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    },
+    {
+      "module": "projects",
+      "id": "copilotkit/opendots",
+      "title": "OpenDots：让代理对工作区里的页面提出修改",
+      "originalPage": "https://github.com/CopilotKit/OpenDots",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "wy51ai/floorplan-3d",
+      "title": "floorplan-3d：把二维布局直接转成可检查的三维场景",
+      "originalPage": "https://github.com/wy51ai/floorplan-3d",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "glanderness/beeftv",
+      "title": "BeefTV：画布代理开始与人工编辑共用素材和操作",
+      "originalPage": "https://github.com/glanderness/BeefTV",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "nykooi1/vibe-wise",
+      "title": "VibeWise：让编码助手保留你的学习过程",
+      "originalPage": "https://github.com/nykooi1/vibe-wise",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "evermind-ai/raven",
+      "title": "Raven：用可组合代理和长期记忆推进跨领域任务",
+      "originalPage": "https://github.com/EverMind-AI/Raven",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "enkiruntime/enki",
+      "title": "Enki：同一段 Rust 内核在 CPU 与 GPU 两侧运行",
+      "originalPage": "https://github.com/enkiruntime/enki",
+      "images": [],
+      "reason": "已读仓库文档及演示入口；本条约三段，重点是输入输出、依赖和许可。可见素材为宣传/演示视频或不增加信息的概览，保留具体文字上手路径；不生成虚构实测界面。"
+    },
+    {
+      "module": "projects",
+      "id": "cartopolis",
+      "title": "Cartopolis：把公开地理记录变成可查询的三维世界",
+      "originalPage": "https://code.garage44.eu/jeroen/cartopolis",
+      "images": [
+        "carto-building.png"
+      ],
+      "reason": "采用原图解释独立方法/实验；原图有效，无需imagegen或重画。"
+    }
+  ],
+  "priority": "source-original → imagegen → html-js；先判断解释需求，非每条凑图",
+  "rejected": [
+    {
+      "file": ".frontiers/sources/2026-10-04/whistle-model-candidate.svg",
+      "reason": "Whistle原SVG仅概览列表，静态/缩减动画显示为空白；已实际渲染并弃用。输入格式与七语言范围用正文更准确，无需图。"
+    }
+  ]
+}

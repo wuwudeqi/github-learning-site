@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "seed": null,
+  "design": "deterministic 1000 binary labels; teacher wrong on first 200",
+  "python": "3.14.3",
+  "platform": "Darwin",
+  "machine": "arm64",
+  "teacher_correct": 800,
+  "n": 1000,
+  "coverage_pct": 100,
+  "rows": [
+    {
+      "scenario": "copy",
+      "n": 1000,
+      "teacher_agree": 1000,
+      "correct": 800,
+      "agreement_pct": 100.0,
+      "accuracy_pct": 80.0
+    },
+    {
+      "scenario": "repair_10",
+      "n": 1000,
+      "teacher_agree": 990,
+      "correct": 810,
+      "agreement_pct": 99.0,
+      "accuracy_pct": 81.0
+    },
+    {
+      "scenario": "damage_10",
+      "n": 1000,
+      "teacher_agree": 990,
+      "correct": 790,
+      "agreement_pct": 99.0,
+      "accuracy_pct": 79.0
+    }
+  ]
+}

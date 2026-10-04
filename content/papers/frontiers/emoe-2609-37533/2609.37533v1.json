@@ -1,0 +1,18 @@
+{
+  "id": "paper-emoe-2609-37533-pdf",
+  "title": "E-MoE: Enhanced Mixture-of-Experts for Non-Factorized Diffusion Language Models",
+  "category": "论文",
+  "author": "Ivanov, Arseny、Kolesov, Alexander、Korotin, Alexander、Oseledets, Ivan、Goncharov, Mikhail",
+  "date": "2026-09-29",
+  "description": "为什么现在值得看：这是新近创新的扩散语言建模方法，针对少步并行生成时的位置依赖问题给出了实现与对照。",
+  "tags": [
+    "AI",
+    "前沿",
+    "研究"
+  ],
+  "source": "https://arxiv.org/abs/2609.37533v1",
+  "arxiv": "2609.37533",
+  "version": "v1",
+  "license": "http://creativecommons.org/licenses/by/4.0/",
+  "abstract": "Masked diffusion models (MDMs) generate sequences by progressively unmasking several tokens per denoising step, but their reverse process is typically factorized over positions, limiting sample quality in the few-step regime where diffusion's speed advantage over autoregressive decoding matters most. A recent line of work introduces a continuous Gaussian latent, trained as a variational autoencoder, to capture correlations across positions, but such approaches are prone to posterior collapse, where the latent is silently ignored. We propose Enhanced Mixture-of-Experts (E-MoE), which builds the reverse process as a mixture of factorized distributions over a discrete shared latent given by the expert-routing decisions of a Mixture-of-Experts (MoE) backbone, without increasing active parameters over the factorized baseline. Across synthetic multi-modal benchmarks, binarized MNIST, and LM1B, E-MoE improves few-step generation over factorized baselines."
+}
