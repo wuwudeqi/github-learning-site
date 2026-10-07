@@ -1,0 +1,143 @@
+[
+  {
+    "id": "IndexTeam/Index-Echo-S2ST-9B",
+    "sourceUrl": "https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B",
+    "createdAt": "2026-09-28T08:55:52.000Z",
+    "lastModified": "2026-10-01T07:27:52.000Z",
+    "sha": "62ccfab70a41a4959e82548ff40b07667413db5c",
+    "private": false,
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "bridge/mapper.safetensors",
+      "bridge/mapper_best.pt",
+      "code/ja_ext/pyopenjtalk/open_jtalk_dic_utf_8-1.11/char.bin",
+      "code/ja_ext/pyopenjtalk/open_jtalk_dic_utf_8-1.11/matrix.bin",
+      "cosyvoice3/CosyVoice-BlankEN/model.safetensors",
+      "cosyvoice3/flow.safetensors",
+      "cosyvoice3/hift.safetensors",
+      "cosyvoice3/llm.safetensors",
+      "stlm_ckpt/model.safetensors",
+      "stlm_llm/model.safetensors",
+      "stlm_omni/model-00001-of-00015.safetensors"
+    ],
+    "licenseEvidence": "读取模型卡与官方 GitHub LICENSE，Apache-2.0"
+  },
+  {
+    "id": "autotrust/JEV-27B-VL",
+    "sourceUrl": "https://huggingface.co/autotrust/JEV-27B-VL",
+    "createdAt": "2026-09-30T05:02:23.000Z",
+    "lastModified": "2026-10-03T11:00:42.000Z",
+    "sha": "f34b598d4ef4bcefd337bee8d8e7ddd3b7733ccc",
+    "private": false,
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "adapter_vllm/adapter_model.safetensors",
+      "model-00001-of-00018.safetensors",
+      "model-00002-of-00018.safetensors",
+      "model-00003-of-00018.safetensors",
+      "model-00004-of-00018.safetensors",
+      "model-00005-of-00018.safetensors",
+      "model-00006-of-00018.safetensors",
+      "model-00007-of-00018.safetensors",
+      "model-00008-of-00018.safetensors",
+      "model-00009-of-00018.safetensors",
+      "model-00010-of-00018.safetensors",
+      "model-00011-of-00018.safetensors",
+      "model-00012-of-00018.safetensors",
+      "model-00013-of-00018.safetensors",
+      "model-00014-of-00018.safetensors",
+      "model-00015-of-00018.safetensors",
+      "model-00016-of-00018.safetensors",
+      "model-00017-of-00018.safetensors",
+      "model-00018-of-00018.safetensors"
+    ],
+    "licenseEvidence": "10月6日读取完整 LICENSE，10月7日重新核对模型卡与文件目录"
+  },
+  {
+    "id": "IFM/K2-Type-0.9B",
+    "sourceUrl": "https://huggingface.co/IFM/K2-Type-0.9B",
+    "createdAt": "2026-09-26T01:47:48.000Z",
+    "lastModified": "2026-10-02T19:30:37.000Z",
+    "sha": "0648c43e30d20d85b621e3604c397f8af4d5b1de",
+    "private": false,
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "model.safetensors",
+      "pointer_head.safetensors"
+    ],
+    "licenseEvidence": "作者模型卡license字段；独立LICENSE URL返回404，保留缺口"
+  },
+  {
+    "id": "inclusionAI/Ming-Image-0.1-Design-Layer",
+    "sourceUrl": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer",
+    "createdAt": "2026-09-17T11:36:00.000Z",
+    "lastModified": "2026-09-23T15:44:37.000Z",
+    "sha": "9fabca8b62a67f1f53a957d46389c00451c11e52",
+    "private": false,
+    "gated": false,
+    "license": "mit",
+    "weightFiles": [
+      "connector/model-00001-of-00002.safetensors",
+      "connector/model-00002-of-00002.safetensors",
+      "mllm/model-00001-of-00007.safetensors",
+      "mllm/model-00002-of-00007.safetensors",
+      "mllm/model-00003-of-00007.safetensors",
+      "mllm/model-00004-of-00007.safetensors",
+      "mllm/model-00005-of-00007.safetensors",
+      "mllm/model-00006-of-00007.safetensors",
+      "mllm/model-00007-of-00007.safetensors",
+      "mlp/model.safetensors",
+      "transformer/diffusion_pytorch_model-00001-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00002-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00003-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00004-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00005-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00006-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00007-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00008-of-00009.safetensors",
+      "transformer/diffusion_pytorch_model-00009-of-00009.safetensors",
+      "vae/diffusion_pytorch_model.safetensors"
+    ],
+    "licenseEvidence": "10月6日读取完整 LICENSE，10月7日重新核对模型卡与文件目录"
+  },
+  {
+    "id": "kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers",
+    "sourceUrl": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers",
+    "createdAt": "2026-09-09T10:56:03.000Z",
+    "lastModified": "2026-10-06T12:53:56.000Z",
+    "sha": "4a852c02855395e2757f852e9b1d2bf537cec517",
+    "private": false,
+    "gated": false,
+    "license": "mit",
+    "weightFiles": [
+      "audio_vae/diffusion_pytorch_model.safetensors",
+      "text_encoder/model-00001-of-00005.safetensors",
+      "text_encoder/model-00002-of-00005.safetensors",
+      "text_encoder/model-00003-of-00005.safetensors",
+      "text_encoder/model-00004-of-00005.safetensors",
+      "text_encoder/model-00005-of-00005.safetensors",
+      "text_encoder_2/model.safetensors",
+      "transformer/diffusion_pytorch_model.safetensors",
+      "vae/diffusion_pytorch_model.safetensors",
+      "vocoder/diffusion_pytorch_model.safetensors"
+    ],
+    "licenseEvidence": "官方模型卡 MIT 与代码 LICENSE；论文 CC BY 4.0"
+  },
+  {
+    "id": "pdmd2026/pdmd_4NFE_lora",
+    "sourceUrl": "https://huggingface.co/pdmd2026/pdmd_4NFE_lora",
+    "createdAt": "2026-09-29T08:01:05.000Z",
+    "lastModified": "2026-10-04T05:24:42.000Z",
+    "sha": "9913253b4cee1702671c38637bf3941e1de489f5",
+    "private": false,
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "lora_model_0.safetensors"
+    ],
+    "licenseEvidence": "作者模型卡license字段；独立LICENSE URL返回404，保留缺口"
+  }
+]

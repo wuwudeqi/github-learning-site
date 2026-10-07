@@ -1,0 +1,42 @@
+{
+  "dataset": "synthetic aggregate counts",
+  "python": "3.14.3",
+  "counts": [
+    {
+      "stratum": "common",
+      "total": 980,
+      "A_correct": 970,
+      "B_correct": 940
+    },
+    {
+      "stratum": "rare",
+      "total": 20,
+      "A_correct": 0,
+      "B_correct": 15
+    }
+  ],
+  "target_weights": {
+    "common": 0.8,
+    "rare": 0.2
+  },
+  "scores": {
+    "A": {
+      "by_stratum": {
+        "common": 0.9897959183673469,
+        "rare": 0.0
+      },
+      "micro": 0.97,
+      "macro": 0.49489795918367346,
+      "target_rare_20_percent": 0.7918367346938776
+    },
+    "B": {
+      "by_stratum": {
+        "common": 0.9591836734693877,
+        "rare": 0.75
+      },
+      "micro": 0.955,
+      "macro": 0.8545918367346939,
+      "target_rare_20_percent": 0.9173469387755102
+    }
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "checkedAt": "2026-10-07T09:12:08.405852+08:00",
+  "staticPreview": "http://127.0.0.1:5187/github-learning-site/",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 950
+    },
+    {
+      "width": 390,
+      "height": 950
+    }
+  ],
+  "imageCount": 20,
+  "manualReview": "20幅图逐张查看两种视口截图；密集来源图有中文读图说明及原尺寸入口。Nano Banana左右关系、SCM可见区域已修正并复查最终页面。",
+  "metrics": [
+    {
+      "mode": "desktop",
+      "kind": "overview",
+      "title": "前沿 · 2026 年 10 月 7 日",
+      "width": 850,
+      "scrollWidth": 850,
+      "images": [],
+      "links": [
+        {
+          "text": "AI 动态",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-news"
+        },
+        {
+          "text": "开源模型",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-models"
+        },
+        {
+          "text": "论文精选",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-papers"
+        },
+        {
+          "text": "开源项目",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-projects"
+        },
+        {
+          "text": "技术实践",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-practice"
+        }
+      ]
+    },
+    {
+      "mode": "desktop",
+      "kind": "news",
+      "title": "AI 动态：先看真正开放了什么",
+      "width": 850,
+      "scrollWidth": 850,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/mistral-training.webp",
+          "alt": "Mistral 三个任务面板中监督训练与强化学习检查点的结果曲线",
+          "naturalWidth": 2400,
+          "renderedWidth": 719.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/banana-subject.png",
+          "alt": "官方参考主体及在多个场景中保持蒲公英特征的生成图片",
+          "naturalWidth": 1440,
+          "renderedWidth": 720
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/embedding-code.webp",
+          "alt": "代码嵌入基准中质量与模型规模的对比散点图",
+          "naturalWidth": 1000,
+          "renderedWidth": 719.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/beam-staleness.png",
+          "alt": "Beam 训练样本陈旧程度与策略差异的示意和记录图",
+          "naturalWidth": 2054,
+          "renderedWidth": 719.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/rho-streams.png",
+          "alt": "Rho-1 离散与连续输出流共享注意力键值状态的架构图",
+          "naturalWidth": 700,
+          "renderedWidth": 700
+        }
+      ],
+      "links": []
+    },
+    {
+      "mode": "desktop",
+      "kind": "models",
+      "title": "开源模型：开放的具体是哪一部分",
+      "width": 850,
+      "scrollWidth": 850,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/index-echo.png",
+          "alt": "Index-Echo 的译文生成、隐藏状态映射和语音合成三阶段架构",
+          "naturalWidth": 1612,
+          "renderedWidth": 719.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/ming-layers.webp",
+          "alt": "一张节日卡片被拆成文字、装饰、边框、背景等六层，再重新合成",
+          "naturalWidth": 4096,
+          "renderedWidth": 720
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/kandinsky-inference.png",
+          "alt": "Kandinsky 基础分辨率输出与超分后缩放到高清尺寸的两条路径",
+          "naturalWidth": 4320,
+          "renderedWidth": 720
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/pdmd.png",
+          "alt": "PDMD 把蒸馏更新投影到与端点残差垂直的方向",
+          "naturalWidth": 1900,
+          "renderedWidth": 719.984375
+        }
+      ],
+      "links": [
+        {
+          "text": "10 月 1 日",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-01-models"
+        },
+        {
+          "text": "9 月 23 日",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-09-23-models"
+        }
+      ]
+    },
+    {
+      "mode": "desktop",
+      "kind": "papers",
+      "title": "论文精选：先把机制和分母读清楚",
+      "width": 850,
+      "scrollWidth": 850,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/tiny-relay.png",
+          "alt": "冻结模型和 LoRA 的引用链注意力热图，以及移除父节点注意力的消融结果",
+          "naturalWidth": 1900,
+          "renderedWidth": 719.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/dara-method.png",
+          "alt": "四组回答中的稀疏奖励经活跃密度校准，以及格式奖励的训练曲线",
+          "naturalWidth": 1900,
+          "renderedWidth": 719.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/heterofold.png",
+          "alt": "HeteroFold 对齐 token 和层，分别映射 K、V 并校准后转移缓存",
+          "naturalWidth": 1900,
+          "renderedWidth": 719.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/autogui.png",
+          "alt": "AutoGUIWorld 采样界面条件、规划动作并合成后续截图的流程",
+          "naturalWidth": 1900,
+          "renderedWidth": 719.9765625
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/world-observer.png",
+          "alt": "Actor 与 Observer 共享注意力，全景参照提供四个透视视图",
+          "naturalWidth": 1900,
+          "renderedWidth": 719.9765625
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/realcompanion.png",
+          "alt": "同一段求职对话中，事实档案与有依据的人物理解导致三种不同回应",
+          "naturalWidth": 1120,
+          "renderedWidth": 719.9921875
+        }
+      ],
+      "links": [
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-tiny-lora-relay-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-dara-rewards-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-heterofold-kv-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-autoguiworld-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-world-observer-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-realcompanion-reading"
+        }
+      ]
+    },
+    {
+      "mode": "desktop",
+      "kind": "projects",
+      "title": "开源项目：按任务选工具，再看环境和更新",
+      "width": 850,
+      "scrollWidth": 850,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/scm-tabs.png",
+          "alt": "SCM 的自然语言检索栏、文件场景对话 OCR 入口及模型选择器",
+          "naturalWidth": 1090,
+          "renderedWidth": 719.9765625
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/datamagic.gif",
+          "alt": "DataMagic 官方演示中四类公共空间的停留率排名逐项揭晓",
+          "naturalWidth": 480,
+          "renderedWidth": 480
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/reladraw.png",
+          "alt": "reladraw 将备份服务器和多台终端的相对位置及连线导出为系统图",
+          "naturalWidth": 1520,
+          "renderedWidth": 719.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/montage-board.png",
+          "alt": "OpenMontage 示例看板同时呈现阶段进度、脚本、素材卡和运行活动",
+          "naturalWidth": 1560,
+          "renderedWidth": 719.9921875
+        }
+      ],
+      "links": [
+        {
+          "text": "9 月 27 日",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-09-27-projects"
+        }
+      ]
+    },
+    {
+      "mode": "desktop",
+      "kind": "practice",
+      "title": "技术实践：总分赢了，稀少任务却全错",
+      "width": 850,
+      "scrollWidth": 850,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/stratified-results.png",
+          "alt": "合成评测中两个虚拟系统在总体、常见、稀少任务及宏平均上的准确率",
+          "naturalWidth": 1080,
+          "renderedWidth": 719.9921875
+        }
+      ],
+      "links": [
+        {
+          "text": "RealCompanion 的阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-realcompanion-reading"
+        }
+      ]
+    },
+    {
+      "mode": "mobile",
+      "kind": "overview",
+      "title": "前沿 · 2026 年 10 月 7 日",
+      "width": 375,
+      "scrollWidth": 375,
+      "images": [],
+      "links": [
+        {
+          "text": "AI 动态",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-news"
+        },
+        {
+          "text": "开源模型",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-models"
+        },
+        {
+          "text": "论文精选",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-papers"
+        },
+        {
+          "text": "开源项目",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-projects"
+        },
+        {
+          "text": "技术实践",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-practice"
+        }
+      ]
+    },
+    {
+      "mode": "mobile",
+      "kind": "news",
+      "title": "AI 动态：先看真正开放了什么",
+      "width": 375,
+      "scrollWidth": 375,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/mistral-training.webp",
+          "alt": "Mistral 三个任务面板中监督训练与强化学习检查点的结果曲线",
+          "naturalWidth": 2400,
+          "renderedWidth": 328.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/banana-subject.png",
+          "alt": "官方参考主体及在多个场景中保持蒲公英特征的生成图片",
+          "naturalWidth": 1440,
+          "renderedWidth": 329
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/embedding-code.webp",
+          "alt": "代码嵌入基准中质量与模型规模的对比散点图",
+          "naturalWidth": 1000,
+          "renderedWidth": 328.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/beam-staleness.png",
+          "alt": "Beam 训练样本陈旧程度与策略差异的示意和记录图",
+          "naturalWidth": 2054,
+          "renderedWidth": 328.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/rho-streams.png",
+          "alt": "Rho-1 离散与连续输出流共享注意力键值状态的架构图",
+          "naturalWidth": 700,
+          "renderedWidth": 328.984375
+        }
+      ],
+      "links": []
+    },
+    {
+      "mode": "mobile",
+      "kind": "models",
+      "title": "开源模型：开放的具体是哪一部分",
+      "width": 375,
+      "scrollWidth": 375,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/index-echo.png",
+          "alt": "Index-Echo 的译文生成、隐藏状态映射和语音合成三阶段架构",
+          "naturalWidth": 1612,
+          "renderedWidth": 328.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/ming-layers.webp",
+          "alt": "一张节日卡片被拆成文字、装饰、边框、背景等六层，再重新合成",
+          "naturalWidth": 4096,
+          "renderedWidth": 328.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/kandinsky-inference.png",
+          "alt": "Kandinsky 基础分辨率输出与超分后缩放到高清尺寸的两条路径",
+          "naturalWidth": 4320,
+          "renderedWidth": 328.9765625
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/pdmd.png",
+          "alt": "PDMD 把蒸馏更新投影到与端点残差垂直的方向",
+          "naturalWidth": 1900,
+          "renderedWidth": 328.9921875
+        }
+      ],
+      "links": [
+        {
+          "text": "10 月 1 日",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-01-models"
+        },
+        {
+          "text": "9 月 23 日",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-09-23-models"
+        }
+      ]
+    },
+    {
+      "mode": "mobile",
+      "kind": "papers",
+      "title": "论文精选：先把机制和分母读清楚",
+      "width": 375,
+      "scrollWidth": 375,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/tiny-relay.png",
+          "alt": "冻结模型和 LoRA 的引用链注意力热图，以及移除父节点注意力的消融结果",
+          "naturalWidth": 1900,
+          "renderedWidth": 328.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/dara-method.png",
+          "alt": "四组回答中的稀疏奖励经活跃密度校准，以及格式奖励的训练曲线",
+          "naturalWidth": 1900,
+          "renderedWidth": 328.9765625
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/heterofold.png",
+          "alt": "HeteroFold 对齐 token 和层，分别映射 K、V 并校准后转移缓存",
+          "naturalWidth": 1900,
+          "renderedWidth": 328.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/autogui.png",
+          "alt": "AutoGUIWorld 采样界面条件、规划动作并合成后续截图的流程",
+          "naturalWidth": 1900,
+          "renderedWidth": 328.984375
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/world-observer.png",
+          "alt": "Actor 与 Observer 共享注意力，全景参照提供四个透视视图",
+          "naturalWidth": 1900,
+          "renderedWidth": 328.96875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/realcompanion.png",
+          "alt": "同一段求职对话中，事实档案与有依据的人物理解导致三种不同回应",
+          "naturalWidth": 1120,
+          "renderedWidth": 329
+        }
+      ],
+      "links": [
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-tiny-lora-relay-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-dara-rewards-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-heterofold-kv-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-autoguiworld-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-world-observer-reading"
+        },
+        {
+          "text": "站内阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-realcompanion-reading"
+        }
+      ]
+    },
+    {
+      "mode": "mobile",
+      "kind": "projects",
+      "title": "开源项目：按任务选工具，再看环境和更新",
+      "width": 375,
+      "scrollWidth": 375,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/scm-tabs.png",
+          "alt": "SCM 的自然语言检索栏、文件场景对话 OCR 入口及模型选择器",
+          "naturalWidth": 1090,
+          "renderedWidth": 328.96875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/datamagic.gif",
+          "alt": "DataMagic 官方演示中四类公共空间的停留率排名逐项揭晓",
+          "naturalWidth": 480,
+          "renderedWidth": 329
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/reladraw.png",
+          "alt": "reladraw 将备份服务器和多台终端的相对位置及连线导出为系统图",
+          "naturalWidth": 1520,
+          "renderedWidth": 328.9921875
+        },
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/montage-board.png",
+          "alt": "OpenMontage 示例看板同时呈现阶段进度、脚本、素材卡和运行活动",
+          "naturalWidth": 1560,
+          "renderedWidth": 328.9921875
+        }
+      ],
+      "links": [
+        {
+          "text": "9 月 27 日",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-09-27-projects"
+        }
+      ]
+    },
+    {
+      "mode": "mobile",
+      "kind": "practice",
+      "title": "技术实践：总分赢了，稀少任务却全错",
+      "width": 375,
+      "scrollWidth": 375,
+      "images": [
+        {
+          "src": "http://127.0.0.1:5187/github-learning-site/documents/frontiers/2026/10/2026-10-07/images/stratified-results.png",
+          "alt": "合成评测中两个虚拟系统在总体、常见、稀少任务及宏平均上的准确率",
+          "naturalWidth": 1080,
+          "renderedWidth": 328.9921875
+        }
+      ],
+      "links": [
+        {
+          "text": "RealCompanion 的阅读卡",
+          "href": "http://127.0.0.1:5187/github-learning-site/#/read/paper-realcompanion-reading"
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "kind": "news",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-news",
+      "title": "AI 动态：先看真正开放了什么"
+    },
+    {
+      "kind": "models",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-models",
+      "title": "开源模型：开放的具体是哪一部分"
+    },
+    {
+      "kind": "papers",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-papers",
+      "title": "论文精选：先把机制和分母读清楚"
+    },
+    {
+      "kind": "projects",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-projects",
+      "title": "开源项目：按任务选工具，再看环境和更新"
+    },
+    {
+      "kind": "practice",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/frontiers-2026-10-07-practice",
+      "title": "技术实践：总分赢了，稀少任务却全错"
+    },
+    {
+      "kind": "reading-card",
+      "id": "tiny-lora-relay",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/paper-tiny-lora-relay-reading",
+      "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
+      "pdf": "#/read/paper-2609-36585v1"
+    },
+    {
+      "kind": "reading-card",
+      "id": "dara-rewards",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/paper-dara-rewards-reading",
+      "title": "Make Sparse Rewards Count: Density-Aware Reward Aggregation for Multi-Reward RL",
+      "pdf": null
+    },
+    {
+      "kind": "reading-card",
+      "id": "heterofold-kv",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/paper-heterofold-kv-reading",
+      "title": "Prefill-Free Cross-Family KV Cache Transfer for Heterogeneous Multi-Agent LLMs",
+      "pdf": "#/read/paper-2609-32259v1"
+    },
+    {
+      "kind": "reading-card",
+      "id": "autoguiworld",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/paper-autoguiworld-reading",
+      "title": "AutoGUIWorld: Image Generators as Visual World Models for GUI Agent",
+      "pdf": null
+    },
+    {
+      "kind": "reading-card",
+      "id": "world-observer",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/paper-world-observer-reading",
+      "title": "World Observer: Joint Actor-Observer Generation for Persistent World Modeling",
+      "pdf": "#/read/paper-2610-02162v1"
+    },
+    {
+      "kind": "reading-card",
+      "id": "realcompanion",
+      "url": "http://127.0.0.1:5187/github-learning-site/#/read/paper-realcompanion-reading",
+      "title": "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World Conversations",
+      "pdf": null
+    }
+  ],
+  "relativeLinks": {
+    "documents": 12,
+    "relativeLinksChecked": 70,
+    "missing": []
+  },
+  "pdfIntegrity": [
+    {
+      "file": "content/papers/frontiers/tiny-lora-relay/2609.36585v1.pdf",
+      "status": 200,
+      "catalogId": "paper-2609-36585v1",
+      "bytes": 672192,
+      "sha256": "37edb9e7d3ccd56945daf90c3d04b038c31c28b6325dbeb0b14449dbe6deaaf0",
+      "matches": true
+    },
+    {
+      "file": "content/papers/frontiers/heterofold-kv/2609.32259v1.pdf",
+      "status": 200,
+      "catalogId": "paper-2609-32259v1",
+      "bytes": 749610,
+      "sha256": "14ff61d06a06e97369f800fd8f9756513689304ede060a3cd9732a191f73ae8b",
+      "matches": true
+    },
+    {
+      "file": "content/papers/frontiers/world-observer/2610.02162v1.pdf",
+      "status": 200,
+      "catalogId": "paper-2610-02162v1",
+      "bytes": 18657798,
+      "sha256": "f4d16dc7b23bff9e0360114934868ac7898e8e2634247ebe735de06b383a6369",
+      "matches": true
+    }
+  ],
+  "pdfReader": "实际点击Tiny LoRA阅读卡的站内原文，PDF阅读器显示第一页及翻页控件。",
+  "localChecks": {
+    "frontiers": {
+      "command": "npm run check:frontiers -- --date 2026-10-07",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "npm run build",
+      "exitCode": 0,
+      "sizeMB": 812.8
+    }
+  },
+  "status": "local-passed-deployment-pending"
+}

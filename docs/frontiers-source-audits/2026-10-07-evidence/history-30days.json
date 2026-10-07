@@ -1,0 +1,4476 @@
+[
+  {
+    "date": "2026-09-09",
+    "news": [
+      {
+        "id": "openai-images-25",
+        "url": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+        "title": "OpenAI 发布 Images 2.5，图像编辑与生成提速"
+      },
+      {
+        "id": "meta-muse",
+        "url": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/",
+        "title": "Meta 发布 Muse，把个人 AI 代理带到独立应用"
+      },
+      {
+        "id": "google-alphagenome-atlas",
+        "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+        "title": "Google DeepMind 发布 AlphaGenome Atlas，预计算 90 亿种 DNA 变异影响"
+      },
+      {
+        "id": "microsoft-mdash-government",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/08/codename-mdash-brings-agentic-ai-security-scanning-to-us-government/",
+        "title": "微软 MDASH 进入 Azure Government，向部分政府客户开放预览"
+      },
+      {
+        "id": "qwen-work-collaboration",
+        "url": "https://finance.sina.com.cn/roll/2026-09-07/doc-iniqyrkc0457412.shtml",
+        "title": "千问 Work 上线多人工作台，生成应用走向团队协作"
+      },
+      {
+        "id": "tencent-hy4-thinking-update",
+        "url": "https://m.ithome.com/html/999369.htm",
+        "title": "腾讯回应 Hy4 preview“思考过长”，优化 WorkBuddy 中的任务执行"
+      },
+      {
+        "id": "github-hydrafusion-report",
+        "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+        "title": "GitHub 公布 HydraFusion，用多模型协作选择编码工作流"
+      },
+      {
+        "id": "microsoft-mai-image-26-preview",
+        "url": "https://microsoft.ai/news/pushing-the-quality-cost-frontier-with-mai-image-2-6/",
+        "title": "微软扩展 MAI-Image-2.6，新增 Flash 并进入 Foundry 公共预览"
+      },
+      {
+        "id": "nvidia-pair",
+        "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/",
+        "title": "NVIDIA 发布 PAIR，让局域网中的多台电脑分担本地 AI 推理"
+      },
+      {
+        "id": "microsoft-mai-transcribe-2",
+        "url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/",
+        "title": "微软发布 MAI-Transcribe-2，补齐说话人区分与词级时间戳"
+      },
+      {
+        "id": "xai-bot-enterprise",
+        "url": "https://x.ai/news/grok-bot-for-enterprise",
+        "title": "Grok Bot 扩展到企业，让团队部署持续工作的代理"
+      },
+      {
+        "id": "hyperframes-daily-20260909",
+        "url": "https://github.com/heygen-com/hyperframes",
+        "title": "HyperFrames 登上当日 Trending，HTML 视频工作流受到关注"
+      },
+      {
+        "id": "markitdown-daily-20260909",
+        "url": "https://github.com/microsoft/markitdown",
+        "title": "MarkItDown 当日新增超过两千 Star，文档转 Markdown 仍是热门入口"
+      },
+      {
+        "id": "ecc-daily-20260909",
+        "url": "https://github.com/affaan-m/ECC",
+        "title": "ECC 持续升温，Agent 的规则、记忆与执行框架成为关注点"
+      },
+      {
+        "id": "openai-navier-stokes",
+        "url": "https://openai.com/index/navier-stokes-solution/",
+        "title": "OpenAI 公布 Navier–Stokes 问题证明与 Lean 形式化材料"
+      }
+    ],
+    "models": [],
+    "papers": [],
+    "projects": [
+      {
+        "id": "open-notebook",
+        "url": "https://github.com/lfnovo/open-notebook"
+      },
+      {
+        "id": "langflow",
+        "url": "https://github.com/langflow-ai/langflow"
+      },
+      {
+        "id": "d2-tala",
+        "url": "https://github.com/d2lang/d2"
+      },
+      {
+        "id": "hyperframes",
+        "url": "https://github.com/heygen-com/hyperframes"
+      },
+      {
+        "id": "markitdown",
+        "url": "https://github.com/microsoft/markitdown"
+      },
+      {
+        "id": "browser-use",
+        "url": "https://github.com/browser-use/browser-use"
+      },
+      {
+        "id": "mem0",
+        "url": "https://github.com/mem0ai/mem0"
+      },
+      {
+        "id": "dspy",
+        "url": "https://github.com/stanfordnlp/dspy"
+      },
+      {
+        "id": "promptfoo",
+        "url": "https://github.com/promptfoo/promptfoo"
+      },
+      {
+        "id": "ecc",
+        "url": "https://github.com/affaan-m/ECC"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "news": [
+      {
+        "id": "astra-work",
+        "url": "https://openai.com/index/gpt-6-astra-next-generation-work/",
+        "title": "Astra 补齐企业工作能力：权限、插件与执行边界"
+      },
+      {
+        "id": "adk-kotlin",
+        "url": "https://developers.googleblog.com/en/announcing-adk-for-kotlin-10-building-production-ready-ai-agents-in-kotlin-android-and-beyond/",
+        "title": "Google ADK Kotlin 1.0：把 Agent 接入应用生命周期"
+      },
+      {
+        "id": "tencent-auk",
+        "url": "https://github.com/Tencent-Hunyuan/AuK",
+        "title": "腾讯 AuK 开源：用同一套指令生成和编辑语音"
+      },
+      {
+        "id": "granite-r2",
+        "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+        "title": "IBM 详解新版时序模型：预测区间与缺失值一起处理"
+      },
+      {
+        "id": "discovery-clio",
+        "url": "https://azure.microsoft.com/en-us/blog/beyond-the-benchmark-how-an-adaptive-approach-drives-scientific-discovery/",
+        "title": "Microsoft Discovery 引入 CLIO，让科研推理随证据调整"
+      },
+      {
+        "id": "nvidia-ibc",
+        "url": "https://blogs.nvidia.com/blog/ibc-news-2026/",
+        "title": "NVIDIA 更新媒体 AI 组件，覆盖视频处理与生成内容检测"
+      },
+      {
+        "id": "mistral-series-d",
+        "url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+        "title": "Mistral 融资 30 亿欧元，继续扩建开放权重与算力体系"
+      },
+      {
+        "id": "copilot-policy",
+        "url": "https://github.blog/changelog/2026-09-09-enterprise-managed-permissions-for-github-copilot-agent-operations/",
+        "title": "Copilot 企业管理员可以集中规定 Agent 操作权限"
+      },
+      {
+        "id": "copilot-autofix",
+        "url": "https://github.blog/changelog/2026-09-09-remediate-code-quality-findings-with-agentic-autofix/",
+        "title": "GitHub Code Quality 支持一次交给 Copilot 修复 25 项问题"
+      },
+      {
+        "id": "school-standard",
+        "url": "https://news.microsoft.com/source/2026/09/09/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-for-schools-to-protect-students-families-and-educators/",
+        "title": "微软与教师组织提出学校 AI 数据保护合同标准"
+      },
+      {
+        "id": "gpn-star",
+        "url": "https://news.berkeley.edu/2026/09/09/new-ai-model-for-dna-learns-from-evolution-to-unlock-secrets-of-the-human-genome/",
+        "title": "GPN-Star 用进化对齐信息筛选值得研究的基因变异"
+      },
+      {
+        "id": "ppocr-v6",
+        "url": "https://ai.baidu.com/support/news?action=detail&id=3283",
+        "title": "百度 PP-OCRv6 云服务扩展到 50 种语言与复杂版面"
+      },
+      {
+        "id": "teamai-heat",
+        "url": "https://github.com/Tencent/teamai-cli",
+        "title": "TeamAI 进入热榜：把团队技能和规则同步到多种 Agent"
+      },
+      {
+        "id": "diagram-heat",
+        "url": "https://github.com/cathrynlavery/diagram-design",
+        "title": "Diagram Design 获关注：把结构说明变成可编辑图解"
+      },
+      {
+        "id": "pi-heat",
+        "url": "https://github.com/vastsa/PI-Desktop",
+        "title": "PI-Desktop 获关注：本地项目中的多模型桌面工作台"
+      }
+    ],
+    "models": [
+      {
+        "id": "gander-omni/gander",
+        "url": "https://huggingface.co/Gander-Omni/Gander"
+      },
+      {
+        "id": "nex-agi/nex-n2.5-mini",
+        "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini"
+      },
+      {
+        "id": "xhtoken/spark-x2.5-4b",
+        "url": "https://huggingface.co/XHToken/Spark-X2.5-4B"
+      },
+      {
+        "id": "microsoft/vibevoice-asr-streaming-7b",
+        "url": "https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B"
+      },
+      {
+        "id": "deepseek-ai/deepseek-v4-flash-vision-exp",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+      },
+      {
+        "id": "zai-org/glm-5.3-flash",
+        "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
+      }
+    ],
+    "papers": [
+      {
+        "id": "2609.09153",
+        "url": "https://arxiv.org/abs/2609.09153v1"
+      },
+      {
+        "id": "2609.08798",
+        "url": "https://arxiv.org/abs/2609.08798v1"
+      },
+      {
+        "id": "2609.04971",
+        "url": "https://arxiv.org/abs/2609.04971v1"
+      },
+      {
+        "id": "2609.07816",
+        "url": "https://arxiv.org/abs/2609.07816v1"
+      },
+      {
+        "id": "2609.08404",
+        "url": "https://arxiv.org/abs/2609.08404v1"
+      },
+      {
+        "id": "2609.04280",
+        "url": "https://arxiv.org/abs/2609.04280v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "treeverse-dvc",
+        "url": "https://github.com/treeverse/dvc"
+      },
+      {
+        "id": "bentoml-bentoml",
+        "url": "https://github.com/bentoml/BentoML"
+      },
+      {
+        "id": "vibrantlabsai-ragas",
+        "url": "https://github.com/vibrantlabsai/ragas"
+      },
+      {
+        "id": "docling-project-docling",
+        "url": "https://github.com/docling-project/docling"
+      },
+      {
+        "id": "unclecode-crawl4ai",
+        "url": "https://github.com/unclecode/crawl4ai"
+      },
+      {
+        "id": "google-langextract",
+        "url": "https://github.com/google/langextract"
+      },
+      {
+        "id": "pydantic-pydantic-ai",
+        "url": "https://github.com/pydantic/pydantic-ai"
+      },
+      {
+        "id": "getzep-graphiti",
+        "url": "https://github.com/getzep/graphiti"
+      },
+      {
+        "id": "marimo-team-marimo",
+        "url": "https://github.com/marimo-team/marimo"
+      },
+      {
+        "id": "pascalorg-editor",
+        "url": "https://github.com/pascalorg/editor"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "news": [
+      {
+        "id": "deepseek-v41",
+        "url": "https://api-docs.deepseek.com/news/news260910",
+        "title": "DeepSeek V4.1 Flash：模型升级，也改变旧 API 的实际指向"
+      },
+      {
+        "id": "agents-api",
+        "url": "https://openai.com/index/introducing-the-agents-api/",
+        "title": "Agents API 公测：把长任务的执行环境交给托管服务"
+      },
+      {
+        "id": "gpt-live-api",
+        "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
+        "title": "GPT-Live-1 进入 API：语音交互与后台推理解耦"
+      },
+      {
+        "id": "cognition-swe2",
+        "url": "https://cognition.com/blog/swe-2",
+        "title": "SWE-2：把代码任务的成功率与执行成本一起训练"
+      },
+      {
+        "id": "suno-v6",
+        "url": "https://suno.com/blog/introducing-v6",
+        "title": "Suno v6 推出三种音乐模型，编辑可以落到局部段落"
+      },
+      {
+        "id": "data-agent",
+        "url": "https://openai.com/index/put-data-to-work/",
+        "title": "ChatGPT Work 新增 Data agent：沿着企业指标定义做分析"
+      },
+      {
+        "id": "chatgpt-finance",
+        "url": "https://openai.com/index/introducing-chatgpt-financial-services/",
+        "title": "ChatGPT for Financial Services：把授权数据与交付模板接起来"
+      },
+      {
+        "id": "amap-abot-earth",
+        "url": "https://www.prnewswire.com/news-releases/amap-street-stars-marks-the-first-anniversary-with-spatial-intelligence-upgrade-302874994.html",
+        "title": "高德 ABot-Earth 0.7 接入飞行街景 2.0"
+      },
+      {
+        "id": "jd-physical-ai",
+        "url": "https://jdcorporateblog.com/from-ai-models-to-the-physical-world-highlights-from-jddiscovery-2026/",
+        "title": "京东发布物理 AI 新进展，JoyAI-Echo WM 与购物助手一同亮相"
+      },
+      {
+        "id": "apple-health-ai",
+        "url": "https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/",
+        "title": "Apple Intelligence 将进入新版健康 App，年内先支持美式英语"
+      },
+      {
+        "id": "openai-pro200-pause",
+        "url": "https://help.openai.com/en/articles/9793128-what-is-chatgpt-pro",
+        "title": "ChatGPT 暂停 Pro 200 美元档的新购与升级，现有订阅继续"
+      },
+      {
+        "id": "anthropic-threat-september",
+        "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+        "title": "Anthropic 公布新一期滥用调查：关注完整操作链"
+      },
+      {
+        "id": "vllm-029",
+        "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+        "title": "vLLM 0.29 默认切换 Model Runner V2"
+      },
+      {
+        "id": "trl-113",
+        "url": "https://github.com/huggingface/trl/releases/tag/v1.13.0",
+        "title": "TRL 1.13 给出百万 token 训练示例，并移除旧 PPO 实现"
+      },
+      {
+        "id": "perplexity-oauth",
+        "url": "https://community.perplexity.ai/t/the-perplexity-api-mcp-server-now-supports-oauth/6053",
+        "title": "Perplexity API 的 MCP 服务支持 OAuth 登录"
+      }
+    ],
+    "models": [
+      {
+        "id": "m-a-p/YuE2-3B",
+        "url": "https://huggingface.co/m-a-p/YuE2-3B"
+      },
+      {
+        "id": "robbyant/lingbot-world-v2-1.3b-causal-fast",
+        "url": "https://huggingface.co/robbyant/lingbot-world-v2-1.3b-causal-fast"
+      },
+      {
+        "id": "CohereLabs/North-Small-Translate-1.0",
+        "url": "https://huggingface.co/CohereLabs/North-Small-Translate-1.0"
+      },
+      {
+        "id": "inclusionAI/LLaDA-Image",
+        "url": "https://huggingface.co/inclusionAI/LLaDA-Image"
+      },
+      {
+        "id": "BreezeBlue/Breeze-TTS-2",
+        "url": "https://huggingface.co/BreezeBlue/Breeze-TTS-2"
+      },
+      {
+        "id": "inclusionAI/Ling-3.0-flash-VL",
+        "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
+      }
+    ],
+    "papers": [
+      {
+        "id": "2609.08572",
+        "url": "https://arxiv.org/abs/2609.08572v1"
+      },
+      {
+        "id": "2609.06702",
+        "url": "https://arxiv.org/abs/2609.06702v1"
+      },
+      {
+        "id": "2609.08149",
+        "url": "https://arxiv.org/abs/2609.08149v1"
+      },
+      {
+        "id": "2609.10226",
+        "url": "https://arxiv.org/abs/2609.10226v1"
+      },
+      {
+        "id": "2609.07103",
+        "url": "https://arxiv.org/abs/2609.07103v1"
+      },
+      {
+        "id": "2609.08650",
+        "url": "https://arxiv.org/abs/2609.08650v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "paperless-ngx/paperless-ngx",
+        "url": "https://github.com/paperless-ngx/paperless-ngx"
+      },
+      {
+        "id": "grobidorg/grobid",
+        "url": "https://github.com/grobidOrg/grobid"
+      },
+      {
+        "id": "deepset-ai/haystack",
+        "url": "https://github.com/deepset-ai/haystack"
+      },
+      {
+        "id": "hkuds/lightrag",
+        "url": "https://github.com/HKUDS/LightRAG"
+      },
+      {
+        "id": "berriai/litellm",
+        "url": "https://github.com/BerriAI/litellm"
+      },
+      {
+        "id": "chainlit/chainlit",
+        "url": "https://github.com/Chainlit/chainlit"
+      },
+      {
+        "id": "comfy-org/comfyui",
+        "url": "https://github.com/Comfy-Org/ComfyUI"
+      },
+      {
+        "id": "cline/cline",
+        "url": "https://github.com/cline/cline"
+      },
+      {
+        "id": "crewaiinc/crewai",
+        "url": "https://github.com/crewAIInc/crewAI"
+      },
+      {
+        "id": "comet-ml/opik",
+        "url": "https://github.com/comet-ml/opik"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "news": [
+      {
+        "id": "kimi-k28-preview",
+        "url": "https://www.kimi.com/code/docs/kimi-code/whats-new.html",
+        "title": "Kimi K2.8 Preview 全量上线，旧模型 ID 直接升级"
+      },
+      {
+        "id": "fugu-max-ultra-v2",
+        "url": "https://sakana.ai/fugu-max-release/",
+        "title": "Fugu Max 与 Ultra v2：由编排层选择不同模型完成任务"
+      },
+      {
+        "id": "deepseek-pro-retained",
+        "url": "https://api-docs.deepseek.com/updates/",
+        "title": "DeepSeek 改为保留 V4 Pro，服务页与旧公告出现差异"
+      },
+      {
+        "id": "roblox-rdc-ai-build",
+        "url": "https://about.roblox.com/newsroom/2026/09/rdc-2026-the-world-needs-more-play",
+        "title": "Roblox 扩大 Build 测试，场景生成将连接手机与 Studio"
+      },
+      {
+        "id": "eleven-music-25",
+        "url": "https://elevenlabs.io/blog/music-v2-5-model",
+        "title": "ElevenMusic 默认切换到 Music v2.5，下载与使用条件同步更新"
+      },
+      {
+        "id": "miit-ai-software",
+        "url": "https://wap.miit.gov.cn/jgsj/xxjsfzs/gzdt/art/2026/art_45df9463e105446c996568f299e07bca.html",
+        "title": "工信部发布“人工智能＋软件”行动方案，覆盖开发与智能体应用"
+      },
+      {
+        "id": "openhabi-storage",
+        "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one/",
+        "title": "OpenAI 详解 Habitat：把存储客户端改成可统一升级的服务"
+      },
+      {
+        "id": "runway-adobe-plugins",
+        "url": "https://runway.com/changelog",
+        "title": "Runway 推出 Adobe 插件，在剪辑软件内生成与回填素材"
+      },
+      {
+        "id": "kimi-work-327",
+        "url": "https://www.kimi.com/help/kimi-work/release-notes",
+        "title": "Kimi Work 3.2.7 加入长截图 OCR 与网站部署插件"
+      },
+      {
+        "id": "dmatrix-nvlink",
+        "url": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion/",
+        "title": "d-Matrix 采用 NVLink Fusion，计划把专用推理芯片接入统一机架"
+      },
+      {
+        "id": "skild-nvidia-integration",
+        "url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+        "title": "Skild 披露机器人部署链路，视频提示之外还需要仿真与硬件验证"
+      },
+      {
+        "id": "copilot-review-update",
+        "url": "https://github.blog/changelog/2026-09-11-auto-resolution-and-analysis-updates-in-copilot-code-review",
+        "title": "Copilot 代码审查增加执行检查，并自动关闭已解决意见"
+      },
+      {
+        "id": "github-ai-scan-api",
+        "url": "https://github.blog/changelog/2026-09-10-ai-scan-for-pull-request-apis-in-public-preview",
+        "title": "GitHub AI Scan 开放管理 API，组织级开关仍优先"
+      },
+      {
+        "id": "replit-databricks-ga",
+        "url": "https://replit.com/blog/databricks2026",
+        "title": "Replit 与 Databricks 集成正式可用，增加 Lakebase 数据库支持"
+      },
+      {
+        "id": "epoch-latency-scaling",
+        "url": "https://epoch.ai/publications/long-context-latency-scaling-gpt-vs-claude",
+        "title": "Epoch AI 测量长上下文延迟，提醒把首 token 等待单独记录"
+      }
+    ],
+    "models": [
+      {
+        "id": "minicpm5-2b",
+        "url": "https://huggingface.co/openbmb/MiniCPM5-2B"
+      },
+      {
+        "id": "edge0-35b-a3b-preview",
+        "url": "https://huggingface.co/Edge0/Edge0-35B-A3B-preview"
+      },
+      {
+        "id": "qwen-drive-1.0-4b",
+        "url": "https://huggingface.co/Qwen/Qwen-Drive-1.0-4B"
+      },
+      {
+        "id": "oui-1",
+        "url": "https://huggingface.co/thesysdev/OUI-1"
+      },
+      {
+        "id": "k2-horizon-mova-36b-a4b",
+        "url": "https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B"
+      },
+      {
+        "id": "viggle-animate",
+        "url": "https://huggingface.co/Viggle/Viggle-Animate"
+      }
+    ],
+    "papers": [
+      {
+        "id": "2609.10715",
+        "url": "https://arxiv.org/abs/2609.10715"
+      },
+      {
+        "id": "2609.11699",
+        "url": "https://arxiv.org/abs/2609.11699"
+      },
+      {
+        "id": "2609.11808",
+        "url": "https://arxiv.org/abs/2609.11808"
+      },
+      {
+        "id": "2609.10539",
+        "url": "https://arxiv.org/abs/2609.10539"
+      },
+      {
+        "id": "2609.05903",
+        "url": "https://arxiv.org/abs/2609.05903"
+      },
+      {
+        "id": "2609.11412",
+        "url": "https://arxiv.org/abs/2609.11412"
+      }
+    ],
+    "projects": [
+      {
+        "id": "zotero",
+        "url": "https://github.com/zotero/zotero"
+      },
+      {
+        "id": "khoj",
+        "url": "https://github.com/khoj-ai/khoj"
+      },
+      {
+        "id": "openhands-canvas",
+        "url": "https://github.com/OpenHands/OpenHands"
+      },
+      {
+        "id": "smolagents",
+        "url": "https://github.com/huggingface/smolagents"
+      },
+      {
+        "id": "fastmcp",
+        "url": "https://github.com/PrefectHQ/fastmcp"
+      },
+      {
+        "id": "langfuse",
+        "url": "https://github.com/langfuse/langfuse"
+      },
+      {
+        "id": "label-studio",
+        "url": "https://github.com/HumanSignal/label-studio"
+      },
+      {
+        "id": "duckdb",
+        "url": "https://github.com/duckdb/duckdb"
+      },
+      {
+        "id": "prefect",
+        "url": "https://github.com/PrefectHQ/prefect"
+      },
+      {
+        "id": "giskard",
+        "url": "https://github.com/Giskard-AI/giskard-oss"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "news": [
+      {
+        "id": "cursor-projects",
+        "url": "https://cursor.com/changelog/projects",
+        "title": "Cursor Projects 开始测试：由协调 Agent 分派一整个项目"
+      },
+      {
+        "id": "gemini-windows",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-app-now-on-windows/",
+        "title": "Gemini 推出 Windows 应用，快捷唤起与完整工作区分开使用"
+      },
+      {
+        "id": "amazon-quick-desktop",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-quick-desktop-app-generally-available-macos-windows/",
+        "title": "Amazon Quick 桌面版正式可用，任务可在电脑与手机间接续"
+      },
+      {
+        "id": "nasa-ibm-lunar",
+        "url": "https://science.nasa.gov/science-research/artificial-intelligence-lunar-foundation-model/",
+        "title": "NASA 与 IBM 发布月球基础模型，用少量标注识别月面特征"
+      },
+      {
+        "id": "amodei-pace-frontier",
+        "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+        "title": "Amodei 提议放缓未经验证的前沿进展，并承诺引入常驻外部评估者"
+      },
+      {
+        "id": "adobe-premiere-generative",
+        "url": "https://blog.adobe.com/en/publish/2026/09/08/generate-create-directly-in-your-timeline-with-new-ai-powered-innovations-in-premiere-after-effects",
+        "title": "Adobe 把生成视频与音效接入 Premiere 时间线"
+      },
+      {
+        "id": "flow-ios",
+        "url": "https://apps.apple.com/ca/app/google-flow/id6751294549",
+        "title": "Google Flow 上架 iPhone，素材与项目可跨设备同步"
+      },
+      {
+        "id": "mybank-bailing-2",
+        "url": "https://www2.xinhuanet.com/tech/20260911/34a0626af917444a8b2c1f342af89feb/c.html",
+        "title": "网商银行介绍百灵 2.0，把信贷、票据与财税服务放进对话入口"
+      },
+      {
+        "id": "ant-lingying",
+        "url": "https://www.ce.cn/cysc/newmain/yc/jsxw/202609/t20260912_3209384.shtml",
+        "title": "蚂蚁将 GPASS 升级为“灵影”，面向 AI 眼镜等终端开放能力"
+      },
+      {
+        "id": "stationerybench-release",
+        "url": "https://github.com/robocurve/stationerybench",
+        "title": "StationeryBench 开放双臂桌面操作任务，区分完成率与过程分数"
+      },
+      {
+        "id": "rubygems-incident-disclosure",
+        "url": "https://www.reuters.com/legal/litigation/openai-agents-attacked-software-service-rubygems-before-hugging-face-incident-2026-09-11/",
+        "title": "Reuters 披露 5 月 RubyGems 事件，OpenAI 表示将继续调查"
+      },
+      {
+        "id": "math-ai-declaration",
+        "url": "https://mathandai.org/",
+        "title": "25 位菲尔兹奖得主联合声明：解出题目仍需转化为可理解的数学"
+      },
+      {
+        "id": "baidu-document-v2",
+        "url": "https://ai.baidu.com/support/news?action=detail&id=3284",
+        "title": "百度文档矫正增强 V2 与去手写 V2 开始公测"
+      },
+      {
+        "id": "amazon-chatgpt-ads",
+        "url": "https://advertising.amazon.com/library/news/amazon-ads-chat-gpt-advertising-integration",
+        "title": "Amazon Ads 宣布 ChatGPT 广告集成，先由部分美国广告主试点"
+      },
+      {
+        "id": "iifaa-agent-identity",
+        "url": "https://www.iifaa.org.cn/",
+        "title": "IIFAA 成立智能体可信身份工作组，聚焦授权与行动追溯"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-agnes",
+        "url": "https://huggingface.co/Agnes-AI/Agnes-3.0-Flash"
+      },
+      {
+        "id": "model-sense",
+        "url": "https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT"
+      },
+      {
+        "id": "model-firered",
+        "url": "https://huggingface.co/FireRedTeam/FireRedTTS3"
+      },
+      {
+        "id": "model-neohorse",
+        "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B"
+      },
+      {
+        "id": "model-indic",
+        "url": "https://huggingface.co/bodhan-ai/indic-translate"
+      },
+      {
+        "id": "model-timesfm",
+        "url": "https://huggingface.co/google/timesfm-3.0-pytorch"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.11561",
+        "url": "https://arxiv.org/abs/2609.11561v1"
+      },
+      {
+        "id": "paper-2608.27875",
+        "url": "https://arxiv.org/abs/2608.27875v1"
+      },
+      {
+        "id": "paper-2609.10712",
+        "url": "https://arxiv.org/abs/2609.10712v1"
+      },
+      {
+        "id": "paper-2609.10016",
+        "url": "https://arxiv.org/abs/2609.10016v1"
+      },
+      {
+        "id": "paper-2609.09143",
+        "url": "https://arxiv.org/abs/2609.09143v1"
+      },
+      {
+        "id": "paper-2609.11317",
+        "url": "https://arxiv.org/abs/2609.11317v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-anything-llm",
+        "url": "https://github.com/Mintplex-Labs/anything-llm"
+      },
+      {
+        "id": "project-jupyterlab",
+        "url": "https://github.com/jupyterlab/jupyterlab"
+      },
+      {
+        "id": "project-mlflow",
+        "url": "https://github.com/mlflow/mlflow"
+      },
+      {
+        "id": "project-rerun",
+        "url": "https://github.com/rerun-io/rerun"
+      },
+      {
+        "id": "project-fiftyone",
+        "url": "https://github.com/voxel51/fiftyone"
+      },
+      {
+        "id": "project-ocrmypdf",
+        "url": "https://github.com/ocrmypdf/OCRmyPDF"
+      },
+      {
+        "id": "project-openrefine",
+        "url": "https://github.com/OpenRefine/OpenRefine"
+      },
+      {
+        "id": "project-ollama",
+        "url": "https://github.com/ollama/ollama"
+      },
+      {
+        "id": "project-dagster",
+        "url": "https://github.com/dagster-io/dagster"
+      },
+      {
+        "id": "project-open-interpreter",
+        "url": "https://github.com/openinterpreter/openinterpreter"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "news": [
+      {
+        "id": "devin-local-fusion",
+        "url": "https://cognition.ai/blog/local-fusion",
+        "title": "Devin Fusion 进入桌面端与 CLI：两套上下文如何分工"
+      },
+      {
+        "id": "mobile-heterogeneous-inference",
+        "url": "https://www.cnr.cn/gd/guangdongyaowen/20260913/t20260913_527812317.shtml",
+        "title": "中国移动展示 GPU 与类脑芯片混合推理系统"
+      },
+      {
+        "id": "bedrock-marengo3-kb",
+        "url": "https://aws.amazon.com/blogs/machine-learning/video-and-image-search-in-amazon-bedrock-knowledge-base-using-marengo-3-0/",
+        "title": "Bedrock 用 Marengo 3.0 把视频搜索落到具体片段"
+      },
+      {
+        "id": "nvidia-palantir-supplychain",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-palantir-bring-sovereign-intelligence-to-critical-supply-chains",
+        "title": "NVIDIA 与 Palantir：把约束求解和业务推理接在一起"
+      },
+      {
+        "id": "physbrain15-release",
+        "url": "https://deepcybo-physai.github.io/PhysBrain-1.5/",
+        "title": "PhysBrain 1.5：理解、动作与未来状态共用一个模型"
+      },
+      {
+        "id": "alibaba-vidu-api",
+        "url": "https://www.alibabacloud.com/help/en/model-studio/newly-released-models",
+        "title": "阿里云国际地域新增 Vidu 图像与视频接口"
+      },
+      {
+        "id": "zhipu-self-training-filing",
+        "url": "https://ea-cdn.eurolandir.com/press-releases-attachments/4179721/HKEX-EPS_20260913_12330384_0.PDF",
+        "title": "智谱融资公告披露下一代 GLM 的完全自训练方向"
+      },
+      {
+        "id": "cmi-navier-response",
+        "url": "https://www.claymath.org/news/navier-stokes-announcement/",
+        "title": "CMI 回应 Navier–Stokes 进展：评估仍按奖项规则推进"
+      },
+      {
+        "id": "anthropic-econ-scenarios",
+        "url": "https://www.anthropic.com/institute/econ-scenarios",
+        "title": "Anthropic 发布经济情景探索器"
+      },
+      {
+        "id": "oversight-followup",
+        "url": "https://the-decoder.com/altman-musk-and-hassabis-back-amodeis-call-to-add-independent-oversight/",
+        "title": "多位 AI 领导者回应独立监督倡议"
+      },
+      {
+        "id": "sagemaker-prefix-routing",
+        "url": "https://aws.amazon.com/blogs/machine-learning/reduce-llm-latency-with-prefix-aware-routing-on-amazon-sagemaker-inference/",
+        "title": "SageMaker 增加前缀感知路由"
+      },
+      {
+        "id": "nvidia-australia-capacity",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-expands-ai-infrastructure-capacity-in-partnership-with-australias-data-center-ecosystem",
+        "title": "NVIDIA 与澳大利亚伙伴规划最高 2GW AI 基础设施"
+      },
+      {
+        "id": "kimi-work329",
+        "url": "https://www.kimi.com/help/kimi-work/release-notes",
+        "title": "Kimi Work 3.2.9 增加系统分享入口与 PDF 导航"
+      },
+      {
+        "id": "dioxus-cognition",
+        "url": "https://cognition.ai/blog/welcoming-dioxus",
+        "title": "Dioxus 团队加入 Cognition，继续投入原有开源项目"
+      },
+      {
+        "id": "liberty-positron-investment",
+        "url": "https://rss.globenewswire.com/news-release/2026/09/11/3360204/34554/en/liberty-global-tech-ventures-invests-in-ai-inference-hardware-and-software-company-positron-ai.html",
+        "title": "Liberty Global 投资 Positron，关注推理的内存成本"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-iris",
+        "url": "https://huggingface.co/AllSpark-Research/Iris-mini"
+      },
+      {
+        "id": "model-alice",
+        "url": "https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B"
+      },
+      {
+        "id": "model-marigold",
+        "url": "https://huggingface.co/huawei-bayerlab/marigold-v2-0"
+      },
+      {
+        "id": "model-qwenflash",
+        "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      },
+      {
+        "id": "model-tinyaya",
+        "url": "https://huggingface.co/CohereLabs/tiny-aya-l2-thinker"
+      },
+      {
+        "id": "model-irodori",
+        "url": "https://huggingface.co/phasefield-audio/Irodori-TTS-v4.1-Anime"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.07064",
+        "url": "https://arxiv.org/abs/2609.07064v1"
+      },
+      {
+        "id": "paper-2609.11085",
+        "url": "https://arxiv.org/abs/2609.11085v1"
+      },
+      {
+        "id": "paper-2609.11499",
+        "url": "https://arxiv.org/abs/2609.11499v1"
+      },
+      {
+        "id": "paper-2609.09076",
+        "url": "https://arxiv.org/abs/2609.09076v1"
+      },
+      {
+        "id": "paper-2609.10745",
+        "url": "https://arxiv.org/abs/2609.10745v1"
+      },
+      {
+        "id": "paper-2609.11486",
+        "url": "https://arxiv.org/abs/2609.11486v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "unstructured-io--unstructured",
+        "url": "https://github.com/Unstructured-IO/unstructured"
+      },
+      {
+        "id": "weaviate--weaviate",
+        "url": "https://github.com/weaviate/weaviate"
+      },
+      {
+        "id": "gradio-app--gradio",
+        "url": "https://github.com/gradio-app/gradio"
+      },
+      {
+        "id": "kestra-io--kestra",
+        "url": "https://github.com/kestra-io/kestra"
+      },
+      {
+        "id": "aider-ai--aider",
+        "url": "https://github.com/Aider-AI/aider"
+      },
+      {
+        "id": "ukgovernmentbeis--inspect_ai",
+        "url": "https://github.com/UKGovernmentBEIS/inspect_ai"
+      },
+      {
+        "id": "eleutherai--lm-evaluation-harness",
+        "url": "https://github.com/EleutherAI/lm-evaluation-harness"
+      },
+      {
+        "id": "astral-sh--uv",
+        "url": "https://github.com/astral-sh/uv"
+      },
+      {
+        "id": "ml-explore--mlx-lm",
+        "url": "https://github.com/ml-explore/mlx-lm"
+      },
+      {
+        "id": "infiniflow--ragflow",
+        "url": "https://github.com/infiniflow/ragflow"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "news": [
+      {
+        "id": "siri-ai-release",
+        "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+        "title": "Siri AI 正式到来：理解当前屏幕，再接着办事"
+      },
+      {
+        "id": "doubao-consumer",
+        "url": "https://o.doubao.com/",
+        "title": "豆包手机助手推出消费者版：识屏、记忆与执行连起来"
+      },
+      {
+        "id": "intern-s2-397b",
+        "url": "https://huggingface.co/internlm/Intern-S2-397B",
+        "title": "Intern-S2 开放 397B 权重：科学文献同时看文字和版面"
+      },
+      {
+        "id": "perplexity-windows-local",
+        "url": "https://www.perplexity.ai/hub/blog/portable-computer-for-windows-is-here",
+        "title": "Perplexity Portable Computer 登陆 Windows：本地执行有明确硬件门槛"
+      },
+      {
+        "id": "copilot-auto-tiers",
+        "url": "https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/",
+        "title": "Copilot Auto 增加三档取向：选择成本与质量偏好"
+      },
+      {
+        "id": "mai-humanist-draft",
+        "url": "https://microsoft.ai/code-of-conduct/",
+        "title": "Microsoft 发布 AI 行为规范草案，开启公众讨论"
+      },
+      {
+        "id": "superhuman-fathom",
+        "url": "https://blog.superhuman.com/superhuman-acquires-fathom/",
+        "title": "Superhuman 收购 Fathom，将会议上下文接入工作流"
+      },
+      {
+        "id": "claude-managed-auto",
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "title": "Claude Managed Agents 加入自动权限策略与会话连接"
+      },
+      {
+        "id": "claude-smart-reports",
+        "url": "https://support.claude.com/en/articles/16893491-get-started-with-smart-reports",
+        "title": "Claude 企业版开放 Smart Reports 测试"
+      },
+      {
+        "id": "baidu-doc-v2",
+        "url": "https://ai.baidu.com/support/news?action=detail&id=3284",
+        "title": "百度文档矫正与去手写 V2 开放公测"
+      },
+      {
+        "id": "step-audio3-gen-report",
+        "url": "https://arxiv.org/abs/2609.12945v1",
+        "title": "Step-Audio 3 Gen 公开报告，统一多种语音生成任务"
+      },
+      {
+        "id": "lingbot-challenge",
+        "url": "https://www.qbitai.com/2026/09/489105.html",
+        "title": "LingBot 发起具身操作挑战，线上仿真衔接真机"
+      },
+      {
+        "id": "opensearch-v0",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-opensearch-serverless-available-V0-vercel/",
+        "title": "OpenSearch Serverless 接入 v0 的应用生成流程"
+      },
+      {
+        "id": "aws-transform-dotnet",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-transform-dotnet-cli",
+        "title": "AWS Transform 扩展 CLI 的 .NET 现代化流程"
+      },
+      {
+        "id": "kiro-students-expansion",
+        "url": "https://kiro.dev/blog/students-2026/",
+        "title": "Kiro 学生计划扩展学校范围，提供一年额度"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-atria",
+        "url": "https://huggingface.co/internlm/Atria-Dawn-Preview"
+      },
+      {
+        "id": "model-oxcoder",
+        "url": "https://huggingface.co/OrionLLM/OxCoder-9B"
+      },
+      {
+        "id": "model-gigachat",
+        "url": "https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning"
+      },
+      {
+        "id": "model-intern-u2",
+        "url": "https://huggingface.co/internlm/InternLumina-U2"
+      },
+      {
+        "id": "model-orukeet",
+        "url": "https://huggingface.co/oruk/orukeet"
+      },
+      {
+        "id": "model-rumik",
+        "url": "https://huggingface.co/rumik-ai/rumik-oss-1"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.06107",
+        "url": "https://arxiv.org/abs/2609.06107v1"
+      },
+      {
+        "id": "paper-2609.13141",
+        "url": "https://arxiv.org/abs/2609.13141v1"
+      },
+      {
+        "id": "paper-2609.11682",
+        "url": "https://arxiv.org/abs/2609.11682v1"
+      },
+      {
+        "id": "paper-2609.10824",
+        "url": "https://arxiv.org/abs/2609.10824v1"
+      },
+      {
+        "id": "paper-2609.10297",
+        "url": "https://arxiv.org/abs/2609.10297v1"
+      },
+      {
+        "id": "paper-2609.12641",
+        "url": "https://arxiv.org/abs/2609.12641v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "neuml--txtai",
+        "url": "https://github.com/neuml/txtai"
+      },
+      {
+        "id": "qdrant--qdrant",
+        "url": "https://github.com/qdrant/qdrant"
+      },
+      {
+        "id": "streamlit--streamlit",
+        "url": "https://github.com/streamlit/streamlit"
+      },
+      {
+        "id": "mljar--mercury",
+        "url": "https://github.com/mljar/mercury"
+      },
+      {
+        "id": "evidentlyai--evidently",
+        "url": "https://github.com/evidentlyai/evidently"
+      },
+      {
+        "id": "argilla-io--argilla",
+        "url": "https://github.com/argilla-io/argilla"
+      },
+      {
+        "id": "microsoft--agent-framework",
+        "url": "https://github.com/microsoft/agent-framework"
+      },
+      {
+        "id": "zenml-io--zenml",
+        "url": "https://github.com/zenml-io/zenml"
+      },
+      {
+        "id": "run-llama--llama_index",
+        "url": "https://github.com/run-llama/llama_index"
+      },
+      {
+        "id": "semgrep--semgrep",
+        "url": "https://github.com/semgrep/semgrep"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "news": [
+      {
+        "id": "gemini-38-live",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+        "title": "Gemini 3.8 Live：边说话、边推理、边调用工具"
+      },
+      {
+        "id": "typesafe-jev",
+        "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+        "title": "Jev：把 AI 变成带概率的结构化决策函数"
+      },
+      {
+        "id": "salesforce-koa",
+        "url": "https://www.salesforce.com/au/news/stories/koa-reasoning-model/",
+        "title": "Koa：为 CRM 动作后训练的企业推理模型"
+      },
+      {
+        "id": "zgcm1-release",
+        "url": "https://github.com/zgcagi/ZGCM-1",
+        "title": "ZGCM-1：把小模型数学能力与工具搜索放进同一训练配方"
+      },
+      {
+        "id": "claude-on-demand-compaction",
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "title": "Claude API 新增按需压缩：应用决定何时整理长对话"
+      },
+      {
+        "id": "meta-one",
+        "url": "https://about.fb.com/news/2026/09/introducing-meta-one-subscription-service-more-features-ai/",
+        "title": "Meta One 把跨应用 AI 用量与订阅权益打包"
+      },
+      {
+        "id": "hidream-hdv1",
+        "url": "https://www.qbitai.com/2026/09/489389.html",
+        "title": "HiDream 发布 HD-V1，把叙事规划与音视频生成结合"
+      },
+      {
+        "id": "vidu-s2",
+        "url": "https://vidu.com/vidu-stream",
+        "title": "Vidu S2 把视频编辑推进到流式交互"
+      },
+      {
+        "id": "salesforce-aiforce",
+        "url": "https://www.salesforce.com/au/news/stories/aiforce-announcement/",
+        "title": "AIforce：把业务权限和动作带到外部 AI 界面"
+      },
+      {
+        "id": "nvidia-infra-summit",
+        "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+        "title": "NVIDIA 与伙伴公布 AI 机房功率调度的新结果"
+      },
+      {
+        "id": "byte-distillation",
+        "url": "https://arxiv.org/abs/2609.12303v1",
+        "title": "字节级蒸馏：让小模型摆脱固定 token 词表的约束"
+      },
+      {
+        "id": "aiuc-series-a",
+        "url": "https://aiuc.com/updates/series-a-announcement",
+        "title": "AIUC 融资后计划把审计覆盖扩至前沿模型"
+      },
+      {
+        "id": "profound-series-d",
+        "url": "https://www.tryprofound.com/blog/series-d",
+        "title": "Profound 获新融资，继续从可见度分析走向营销 Agent"
+      },
+      {
+        "id": "github-property-suggestions",
+        "url": "https://github.blog/changelog/2026-09-15-github-copilot-suggests-custom-properties-definitions",
+        "title": "Copilot 为仓库自定义属性建议取值"
+      },
+      {
+        "id": "microsoft-ai-voter-literacy",
+        "url": "https://blogs.microsoft.com/on-the-issues/2026/09/15/2026-midterm-elections-helping-voters-navigate-election-information-in-the-age-of-ai/",
+        "title": "微软更新 AI 信息核验教育计划"
+      }
+    ],
+    "models": [
+      {
+        "id": "Accio-Lab/occamy-1.0",
+        "url": "https://huggingface.co/Accio-Lab/occamy-1.0"
+      },
+      {
+        "id": "TaichuAI/ZDTaichu5.0-9B",
+        "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B"
+      },
+      {
+        "id": "m-a-p/SheetSage2",
+        "url": "https://huggingface.co/m-a-p/SheetSage2"
+      },
+      {
+        "id": "knowledgator/gliformer-large-v1",
+        "url": "https://huggingface.co/knowledgator/gliformer-large-v1"
+      },
+      {
+        "id": "ukisai/Swift-Qwen3.8-27b",
+        "url": "https://huggingface.co/ukisai/Swift-Qwen3.8-27b"
+      },
+      {
+        "id": "AlicanKiraz0/Kahya-TTS-v1.0",
+        "url": "https://huggingface.co/AlicanKiraz0/Kahya-TTS-v1.0"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.14858",
+        "url": "https://arxiv.org/abs/2609.14858v1"
+      },
+      {
+        "id": "paper-2609.13285",
+        "url": "https://arxiv.org/abs/2609.13285v1"
+      },
+      {
+        "id": "paper-2609.15504",
+        "url": "https://arxiv.org/abs/2609.15504v1"
+      },
+      {
+        "id": "paper-2609.15478",
+        "url": "https://arxiv.org/abs/2609.15478v1"
+      },
+      {
+        "id": "paper-2609.15128",
+        "url": "https://arxiv.org/abs/2609.15128v1"
+      },
+      {
+        "id": "paper-2609.15134",
+        "url": "https://arxiv.org/abs/2609.15134v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "alibaba--open-code-review",
+        "url": "https://github.com/alibaba/open-code-review"
+      },
+      {
+        "id": "justvugg--colibri",
+        "url": "https://github.com/JustVugg/colibri"
+      },
+      {
+        "id": "debpalash--voicestudio",
+        "url": "https://github.com/debpalash/VoiceStudio"
+      },
+      {
+        "id": "homebrew--brewui",
+        "url": "https://github.com/Homebrew/BrewUI"
+      },
+      {
+        "id": "alphaxiv--openresearch",
+        "url": "https://github.com/alphaXiv/OpenResearch"
+      },
+      {
+        "id": "danny-avila--librechat",
+        "url": "https://github.com/danny-avila/LibreChat"
+      },
+      {
+        "id": "rlinf--apxinf-robo",
+        "url": "https://github.com/RLinf/APXinf-robo"
+      },
+      {
+        "id": "human-agent-society--reef",
+        "url": "https://github.com/Human-Agent-Society/reef"
+      },
+      {
+        "id": "mg1937--asc",
+        "url": "https://github.com/MG1937/ASC"
+      },
+      {
+        "id": "pacifio--atlas",
+        "url": "https://github.com/pacifio/atlas"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "news": [
+      {
+        "id": "claude-unified",
+        "url": "https://claude.com/blog/cowork-is-now-claude",
+        "title": "Claude 合并聊天与 Cowork，文档和演示稿进入同一对话"
+      },
+      {
+        "id": "doubao-21-0915",
+        "url": "https://ark.volcengine.com/region:cn-beijing/model/detail?name=doubao-seed-2-1-pro",
+        "title": "豆包 2.1 Pro 0915：把异步协作和交付验收作为升级重点"
+      },
+      {
+        "id": "mlperf-61",
+        "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+        "title": "MLPerf 6.1 发布：Rubin 成绩之外，更要看完整工作负载"
+      },
+      {
+        "id": "google-home-mcp",
+        "url": "https://support.google.com/googlehome/blog/467705013/introducing-home-mcp-enabling-your-agent-to-interact-with-your-home?hl=en",
+        "title": "Google Home MCP：让 Agent 读取家庭状态并执行受限操作"
+      },
+      {
+        "id": "openai-misalignment-disclosure",
+        "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+        "title": "OpenAI 发布模型失准事件披露框架及六份案例"
+      },
+      {
+        "id": "grok-build-memory",
+        "url": "https://x.ai/news/grok-build-memory",
+        "title": "Grok Build 增加跨会话记忆与整理命令"
+      },
+      {
+        "id": "openai-sponsored-agents",
+        "url": "https://openai.com/index/reimagining-advertising-with-ai/",
+        "title": "ChatGPT 试验 Sponsored Agents，并接入广告管理工具"
+      },
+      {
+        "id": "alexa-india",
+        "url": "https://www.aboutamazon.in/news/devices-and-alexa/alexa-plus-launch-india",
+        "title": "Alexa+ 在印度开启英语、印地语及混合语早期访问"
+      },
+      {
+        "id": "nvidia-energy-alliance",
+        "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+        "title": "AI 能源管理联盟推动数据中心参与电网调节"
+      },
+      {
+        "id": "mediatek-9600",
+        "url": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips",
+        "title": "天玑 9600 Pro 发布，双 NPU 面向常驻与复杂端侧任务"
+      },
+      {
+        "id": "m365-g7",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/industry-government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+        "title": "Microsoft 365 G7 面向美国政府云整合 AI 与治理"
+      },
+      {
+        "id": "claude-smb-workflows",
+        "url": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
+        "title": "Claude for Small Business 扩展工作流和业务连接器"
+      },
+      {
+        "id": "github-ai-scan",
+        "url": "https://github.blog/changelog/2026-09-16-code-scanning-ai-scan-no-longer-requires-codeql-default-setup",
+        "title": "GitHub AI Scan 取消对 CodeQL 默认配置的前置依赖"
+      },
+      {
+        "id": "openai-api-key-governance",
+        "url": "https://developers.openai.com/changelog/",
+        "title": "OpenAI 增加组织与项目的 API 密钥创建限制"
+      },
+      {
+        "id": "github-copilot-budget",
+        "url": "https://github.blog/changelog/2026-09-16-copilot-budget-increase-requests-are-generally-available",
+        "title": "Copilot 预算申请正式可用：额度耗尽后可原地申请恢复"
+      }
+    ],
+    "models": [
+      {
+        "id": "stable-ai/LimiX-2",
+        "url": "https://huggingface.co/stable-ai/LimiX-2"
+      },
+      {
+        "id": "Gensyn/open-1b-sft",
+        "url": "https://huggingface.co/Gensyn/open-1b-sft"
+      },
+      {
+        "id": "Viggle/Meridian",
+        "url": "https://huggingface.co/Viggle/Meridian"
+      },
+      {
+        "id": "inclusionAI/LLaDA-UI",
+        "url": "https://huggingface.co/inclusionAI/LLaDA-UI"
+      },
+      {
+        "id": "hongchi/Fire3D",
+        "url": "https://huggingface.co/hongchi/Fire3D"
+      },
+      {
+        "id": "HeartMuLa/MuLaCover",
+        "url": "https://huggingface.co/HeartMuLa/MuLaCover"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.16816",
+        "url": "https://arxiv.org/abs/2609.16816v1"
+      },
+      {
+        "id": "paper-2609.16372",
+        "url": "https://arxiv.org/abs/2609.16372v1"
+      },
+      {
+        "id": "paper-2609.16591",
+        "url": "https://arxiv.org/abs/2609.16591v1"
+      },
+      {
+        "id": "paper-2609.15195",
+        "url": "https://arxiv.org/abs/2609.15195v1"
+      },
+      {
+        "id": "paper-2609.13680",
+        "url": "https://arxiv.org/abs/2609.13680v1"
+      },
+      {
+        "id": "paper-2609.15982",
+        "url": "https://arxiv.org/abs/2609.15982v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "cloudflare--security-audit-skill",
+        "url": "https://github.com/cloudflare/security-audit-skill"
+      },
+      {
+        "id": "abue-ammar--tinycast",
+        "url": "https://github.com/abue-ammar/tinycast"
+      },
+      {
+        "id": "tencent--weknora",
+        "url": "https://github.com/Tencent/WeKnora"
+      },
+      {
+        "id": "jamiepine--voicebox",
+        "url": "https://github.com/jamiepine/voicebox"
+      },
+      {
+        "id": "rlaope--oh-my-hermes",
+        "url": "https://github.com/rlaope/oh-my-hermes"
+      },
+      {
+        "id": "fission-ai--openspec",
+        "url": "https://github.com/Fission-AI/OpenSpec"
+      },
+      {
+        "id": "roboflow--supervision",
+        "url": "https://github.com/roboflow/supervision"
+      },
+      {
+        "id": "agentverse-os--agentverse-os",
+        "url": "https://github.com/agentverse-os/AgentVerse-OS"
+      },
+      {
+        "id": "chuloo--mural",
+        "url": "https://github.com/Chuloo/mural"
+      },
+      {
+        "id": "nationalsecurityagency--ghidra",
+        "url": "https://github.com/NationalSecurityAgency/ghidra"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "news": [
+      {
+        "id": "astra-law",
+        "url": "https://openai.com/index/astra-for-law/",
+        "title": "Astra for Law：先找到可核验的法律依据，再组织答案"
+      },
+      {
+        "id": "tang-post",
+        "url": "https://x.com/jietang/status/2100482019088060470",
+        "title": "GLM Infra Agent：用密集反馈改进推理系统"
+      },
+      {
+        "id": "huawei-official",
+        "url": "https://www.huawei.com/en/news/2026/9/hc-wang-keynote",
+        "title": "华为公布昇腾路线图：芯片交付与超节点系统要分开看"
+      },
+      {
+        "id": "prism-official",
+        "url": "https://prismml.com/news/bonsai-2-27b",
+        "title": "Bonsai 2 27B：约 5.9 GB 的语言权重，部署还要看运行时"
+      },
+      {
+        "id": "google-cc",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups/",
+        "title": "Google CC 扩展到家庭小组：共享信息与对外行动分别授权"
+      },
+      {
+        "id": "google-un-official",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
+        "title": "UN System Data Commons：让统计查询保留指标与来源"
+      },
+      {
+        "id": "life-sciences",
+        "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+        "title": "Anthropic 为生命科学研究设置验证通道"
+      },
+      {
+        "id": "anthropic-pace",
+        "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+        "title": "Anthropic 披露内部 AI 研发参与度：26% 不等于全自主"
+      },
+      {
+        "id": "pinterest-restyle",
+        "url": "https://newsroom.pinterest.com/news/new-pinterest-visual-search-performance-ads/",
+        "title": "Pinterest Restyle：把房间照片带进装修探索"
+      },
+      {
+        "id": "instinct-post",
+        "url": "https://x.com/noahrshinn/status/2100262985491231101",
+        "title": "Instinct Concierge：高接触任务进入小范围服务测试"
+      },
+      {
+        "id": "u2-flash",
+        "url": "https://maas.unisound.com/models/u2-flash",
+        "title": "云知声 U2-Flash：把 Agent 训练接入可执行环境"
+      },
+      {
+        "id": "actions-protections",
+        "url": "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available",
+        "title": "GitHub Actions 执行保护正式可用：约束谁能触发工作流"
+      },
+      {
+        "id": "copilot-impact",
+        "url": "https://github.blog/changelog/2026-09-17-copilot-impact-dashboard-now-shows-feature-engagement",
+        "title": "Copilot 新增采用情况统计：调用次数与有效使用分开"
+      },
+      {
+        "id": "baselabs-post",
+        "url": "https://x.com/baselabs/status/2100286099121705396",
+        "title": "Base Labs 与 Baseten 等合作：训练与运行期安全仍是建设计划"
+      },
+      {
+        "id": "microsoft-transformation",
+        "url": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
+        "title": "微软发布内部转型复盘：工具采用之外，开始对照业务结果"
+      }
+    ],
+    "models": [
+      {
+        "id": "XingChen-AGI/Xing4.0-29B-A4B",
+        "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B"
+      },
+      {
+        "id": "netease-youdao/Confucius4-R2T2",
+        "url": "https://huggingface.co/netease-youdao/Confucius4-R2T2"
+      },
+      {
+        "id": "AlexWortega/openjev",
+        "url": "https://huggingface.co/AlexWortega/openjev"
+      },
+      {
+        "id": "TaoLiveAIGC/TaoMate-H3",
+        "url": "https://huggingface.co/TaoLiveAIGC/TaoMate-H3"
+      },
+      {
+        "id": "Linkup-Platform/linkup-sparseup-embed-v1",
+        "url": "https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v1"
+      },
+      {
+        "id": "Cactus-Compute/needle3",
+        "url": "https://huggingface.co/Cactus-Compute/needle3"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.19134",
+        "url": "https://arxiv.org/abs/2609.19134v1"
+      },
+      {
+        "id": "paper-2609.18708",
+        "url": "https://arxiv.org/abs/2609.18708v1"
+      },
+      {
+        "id": "paper-2609.17708",
+        "url": "https://arxiv.org/abs/2609.17708v1"
+      },
+      {
+        "id": "paper-2609.18805",
+        "url": "https://arxiv.org/abs/2609.18805v1"
+      },
+      {
+        "id": "paper-2609.15810",
+        "url": "https://arxiv.org/abs/2609.15810v1"
+      },
+      {
+        "id": "paper-2609.14320",
+        "url": "https://arxiv.org/abs/2609.14320v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "tencent--browserskill",
+        "url": "https://github.com/Tencent/BrowserSkill"
+      },
+      {
+        "id": "tencentcloud--octop",
+        "url": "https://github.com/TencentCloud/Octop"
+      },
+      {
+        "id": "slng-ai--unmute",
+        "url": "https://github.com/slng-ai/unmute"
+      },
+      {
+        "id": "asciimoo--hister",
+        "url": "https://github.com/asciimoo/hister"
+      },
+      {
+        "id": "summcr--summ",
+        "url": "https://github.com/summcr/summ"
+      },
+      {
+        "id": "browser-use--jev-ultrafast",
+        "url": "https://github.com/browser-use/jev-ultrafast"
+      },
+      {
+        "id": "max-sixty--worktrunk",
+        "url": "https://github.com/max-sixty/worktrunk"
+      },
+      {
+        "id": "stablyai--orca",
+        "url": "https://github.com/stablyai/orca"
+      },
+      {
+        "id": "lovablelabs--oj",
+        "url": "https://github.com/lovablelabs/oj"
+      },
+      {
+        "id": "sharpa-robotics--wm-craftnet",
+        "url": "https://github.com/sharpa-robotics/WM-Craftnet"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "news": [
+      {
+        "id": "qwen-omni",
+        "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-omni",
+        "title": "Qwen3.8-Omni-Flash：多模态输入之后，先看清输出范围"
+      },
+      {
+        "id": "claude-projects",
+        "url": "https://claude.com/blog/projects-redesigned",
+        "title": "Claude Projects 重做协作流程：主对话安排工作，线程各自推进"
+      },
+      {
+        "id": "radar-inference.md",
+        "url": "https://github.com/alibaba-damo-academy/damo-radar",
+        "title": "达摩院 RADAR：把腹部 CT 与解剖结构、报告描述对应起来"
+      },
+      {
+        "id": "kimi-bedrock-blog",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-on-amazon-bedrock/",
+        "title": "Kimi K3 进入 Amazon Bedrock：新增的是部署与缓存选择"
+      },
+      {
+        "id": "mimo-qbit",
+        "url": "https://www.qbitai.com/2026/09/490950.html",
+        "title": "MiMo 直播强化学习：扩大任务环境，还要扩大反馈能力"
+      },
+      {
+        "id": "accenture",
+        "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+        "title": "Anthropic 与 Accenture 推进嵌入式模型评估"
+      },
+      {
+        "id": "openai-chatgpt-releases",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "title": "ChatGPT for Word 扩大文档内的写作与修改入口"
+      },
+      {
+        "id": "google-incident-cnbc",
+        "url": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html",
+        "title": "Google 披露 Gemini 测试越界：发生时间与报道时间分开"
+      },
+      {
+        "id": "copilot-review",
+        "url": "https://github.blog/changelog/2026-09-18-copilot-code-review-an-improved-review-experience",
+        "title": "GitHub Copilot 代码审查区分新问题与历史问题"
+      },
+      {
+        "id": "copilot-retire",
+        "url": "https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october",
+        "title": "Copilot 公告六个模型将于 10 月 19 日退役"
+      },
+      {
+        "id": "npm-stage",
+        "url": "https://github.blog/changelog/2026-09-18-stage-only-npm-tokens-for-safer-automation",
+        "title": "npm 增加仅暂存发布的令牌，把最终确认留给维护者"
+      },
+      {
+        "id": "sair",
+        "url": "https://terrytao.wordpress.com/2026/09/18/sairs-open-math-model-initiative/",
+        "title": "SAIR 发起开放数学模型倡议，目前处于组织阶段"
+      },
+      {
+        "id": "ca-order-official",
+        "url": "https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/",
+        "title": "加州行政令要求推进 AI 独立监督与停机机制研究"
+      },
+      {
+        "id": "claude-code-changelog",
+        "url": "https://code.claude.com/docs/en/changelog",
+        "title": "Claude Code 2.1.277 支持 AGENTS.md 回退读取"
+      },
+      {
+        "id": "hacktron-openai",
+        "url": "https://www.hacktron.ai/blog/hacking-openai",
+        "title": "Hacktron 安全报告重新引起讨论：连接器权限会放大身份漏洞影响"
+      }
+    ],
+    "models": [
+      {
+        "id": "tencent/WeVisDoc-4B",
+        "url": "https://huggingface.co/tencent/WeVisDoc-4B"
+      },
+      {
+        "id": "inclusionAI/Realtime-Venus",
+        "url": "https://huggingface.co/inclusionAI/Realtime-Venus"
+      },
+      {
+        "id": "convaiinnovations/laya",
+        "url": "https://huggingface.co/convaiinnovations/laya"
+      },
+      {
+        "id": "cua-ai/cua-s1-forms",
+        "url": "https://huggingface.co/cua-ai/cua-s1-forms"
+      },
+      {
+        "id": "mlabonne/LFM2.5-230M-Chess",
+        "url": "https://huggingface.co/mlabonne/LFM2.5-230M-Chess"
+      },
+      {
+        "id": "mncai/Hunmin-397B-A17B-CUA",
+        "url": "https://huggingface.co/mncai/Hunmin-397B-A17B-CUA"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.20804",
+        "url": "https://arxiv.org/abs/2609.20804v1"
+      },
+      {
+        "id": "paper-2609.19969",
+        "url": "https://arxiv.org/abs/2609.19969v1"
+      },
+      {
+        "id": "paper-2609.20519",
+        "url": "https://arxiv.org/abs/2609.20519v1"
+      },
+      {
+        "id": "paper-2609.20511",
+        "url": "https://arxiv.org/abs/2609.20511v1"
+      },
+      {
+        "id": "paper-2609.20784",
+        "url": "https://arxiv.org/abs/2609.20784v1"
+      },
+      {
+        "id": "paper-2609.19656",
+        "url": "https://arxiv.org/abs/2609.19656v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "TheoLeeCJ--SemIf",
+        "url": "https://github.com/TheoLeeCJ/SemIf"
+      },
+      {
+        "id": "robbietilton--Compositor",
+        "url": "https://github.com/robbietilton/Compositor"
+      },
+      {
+        "id": "Qiuner--birdview",
+        "url": "https://github.com/Qiuner/birdview"
+      },
+      {
+        "id": "apple--xcode-project-format",
+        "url": "https://github.com/apple/xcode-project-format"
+      },
+      {
+        "id": "opencoredev--bg0",
+        "url": "https://github.com/opencoredev/bg0"
+      },
+      {
+        "id": "logolabs--inkvec",
+        "url": "https://github.com/logolabs/inkvec"
+      },
+      {
+        "id": "binuka200--package-doctor",
+        "url": "https://github.com/binuka200/package-doctor"
+      },
+      {
+        "id": "Matthew0822--ToolReplay",
+        "url": "https://github.com/Matthew0822/ToolReplay"
+      },
+      {
+        "id": "ruc-datalab--EvoOntology",
+        "url": "https://github.com/ruc-datalab/EvoOntology"
+      },
+      {
+        "id": "wso2--agent-manager",
+        "url": "https://github.com/wso2/agent-manager"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "news": [
+      {
+        "id": "grok-transcribe2",
+        "url": "https://x.ai/news/grok-voice-transcribe-2",
+        "title": "Grok Voice Transcribe 2：把转写接进真实语音流程"
+      },
+      {
+        "id": "splash-engine",
+        "url": "https://lmstudio.ai/blog/splash-engine",
+        "title": "Splash：在合适的 Mac 上，为少数模型深度优化"
+      },
+      {
+        "id": "agentcore-v2",
+        "url": "https://aws.amazon.com/blogs/machine-learning/the-new-agentcore-runtime-elastic-optimized-and-consistently-fast-starts/",
+        "title": "AgentCore Runtime V2：长会话不再一直占着峰值内存"
+      },
+      {
+        "id": "gemini-managed-september",
+        "url": "https://aistudio.google.com/learn/managed-agents-updated-harness-files-credentials",
+        "title": "Gemini 托管 Agent：文件能取出来，密钥由出口代理注入"
+      },
+      {
+        "id": "unsloth-docker-september",
+        "url": "https://unsloth.ai/docs/new/changelog",
+        "title": "Unsloth：Docker、AMD 与多用户工作区接到一起"
+      },
+      {
+        "id": "muse-mac",
+        "url": "https://ai.meta.com/muse/download/",
+        "title": "Muse 来到 Mac：本次新增的是桌面入口"
+      },
+      {
+        "id": "limix2-release",
+        "url": "https://huggingface.co/stable-ai/LimiX-2",
+        "title": "LimiX-2：表格分类、回归与补缺共享一个模型"
+      },
+      {
+        "id": "unity-codex-plugin",
+        "url": "https://unity.com/blog/unity-plugin-codex",
+        "title": "Unity 给 Codex 提供面向引擎工作的插件"
+      },
+      {
+        "id": "huawei-financial-agents",
+        "url": "https://www.huawei.com/cn/news/2026/9/hc-agenticai-openjiuwen-fab2",
+        "title": "华为发布金融启元体系与 openJiuwen、FAB2 进展"
+      },
+      {
+        "id": "earth2-air-pollution",
+        "url": "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/",
+        "title": "Earth-2 用在空气污染预测：分辨率与时间演化分开处理"
+      },
+      {
+        "id": "deepmind-institute-launch",
+        "url": "https://institute.deepmind.com/",
+        "title": "DeepMind Institute：把 AGI 的社会问题放进持续研究入口"
+      },
+      {
+        "id": "crusoe-seriesf",
+        "url": "https://www.globenewswire.com/news-release/2026/09/17/3364326/0/en/crusoe-raises-3-9-billion-series-f-for-its-vertically-integrated-ai-infrastructure-platform.html",
+        "title": "Crusoe 完成F轮首次交割，整轮预计39亿美元"
+      },
+      {
+        "id": "copilot-custom-metrics",
+        "url": "https://github.blog/changelog/2026-09-17-agentic-cli-customizations-now-in-the-usage-metrics-api/",
+        "title": "Copilot CLI 使用统计新增技能、MCP 与插件维度"
+      },
+      {
+        "id": "continuum-preflight",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-security-agent/",
+        "title": "AWS Security Agent 在测试前检查登录凭据"
+      },
+      {
+        "id": "happyoyster-international",
+        "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+        "title": "HappyOyster 进入百炼国际目录：模型首发与服务上架分开看"
+      }
+    ],
+    "models": [
+      {
+        "id": "bespokelabs/Bespoke-Nimble-9B",
+        "url": "https://huggingface.co/bespokelabs/Bespoke-Nimble-9B"
+      },
+      {
+        "id": "jinaai/jina-ocr-v1",
+        "url": "https://huggingface.co/jinaai/jina-ocr-v1"
+      },
+      {
+        "id": "yandex/AliceAI-Foundation-80B-A3B-Base",
+        "url": "https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base"
+      },
+      {
+        "id": "TokenRhythm/NeoHorse-1-9B",
+        "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-9B"
+      },
+      {
+        "id": "oddadmix/Kokoro-7M-Distill",
+        "url": "https://huggingface.co/oddadmix/Kokoro-7M-Distill"
+      },
+      {
+        "id": "knowledgator/gliformer-base-v1",
+        "url": "https://huggingface.co/knowledgator/gliformer-base-v1"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.20800",
+        "url": "https://arxiv.org/abs/2609.20800v1"
+      },
+      {
+        "id": "paper-2609.20744",
+        "url": "https://arxiv.org/abs/2609.20744v1"
+      },
+      {
+        "id": "paper-2609.19671",
+        "url": "https://arxiv.org/abs/2609.19671v1"
+      },
+      {
+        "id": "paper-2609.19745",
+        "url": "https://arxiv.org/abs/2609.19745v1"
+      },
+      {
+        "id": "paper-2609.18605",
+        "url": "https://arxiv.org/abs/2609.18605v1"
+      },
+      {
+        "id": "paper-2609.17653",
+        "url": "https://arxiv.org/abs/2609.17653v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "tamaratran--fast-jev-compaction",
+        "url": "https://github.com/tamaratran/fast-jev-compaction"
+      },
+      {
+        "id": "shadcn-ui--lint",
+        "url": "https://github.com/shadcn-ui/lint"
+      },
+      {
+        "id": "kitze--skillbox",
+        "url": "https://github.com/kitze/skillbox"
+      },
+      {
+        "id": "anmolkapil--plexo",
+        "url": "https://github.com/anmolkapil/plexo"
+      },
+      {
+        "id": "Qiuner--QCode",
+        "url": "https://github.com/Qiuner/QCode"
+      },
+      {
+        "id": "eliasstravik--herdr-projects",
+        "url": "https://github.com/eliasstravik/herdr-projects"
+      },
+      {
+        "id": "lnkiai--m3e-canvas",
+        "url": "https://github.com/lnkiai/m3e-canvas"
+      },
+      {
+        "id": "crwdla--tokentab",
+        "url": "https://github.com/crwdla/tokentab"
+      },
+      {
+        "id": "tigerless-labs--agent-memory",
+        "url": "https://github.com/tigerless-labs/agent-memory"
+      },
+      {
+        "id": "Player-YN--PawWork_ZhuaZhua",
+        "url": "https://github.com/Player-YN/PawWork_ZhuaZhua"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "news": [
+      {
+        "id": "qwen-image-21",
+        "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+        "title": "Qwen-Image-2.1：把多图编辑与透明素材放进同一流程"
+      },
+      {
+        "id": "step-5-preview",
+        "url": "https://www.stepfun.com/step-5-preview",
+        "title": "Step 5 Preview：长上下文与长任务能力进入 API 预览"
+      },
+      {
+        "id": "xing4-29b",
+        "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+        "title": "星辰 Xing4.0：29B 总参数、4B 激活的开放模型"
+      },
+      {
+        "id": "wso2-agent-ga",
+        "url": "https://wso2.com/about/news/wso2-agent-manager-sovereign-ai-governance/",
+        "title": "WSO2 Agent Manager 正式可用：把 Agent 身份与运行记录管起来"
+      },
+      {
+        "id": "optimum-intel22",
+        "url": "https://huggingface.co/blog/echarlaix/optimum-intel-v22",
+        "title": "Optimum Intel 2.2：导出、量化与推理运行时一起更新"
+      },
+      {
+        "id": "capcut-hub",
+        "url": "https://www.qbitai.com/2026/09/492973.html",
+        "title": "剪映 Hub 与小剪助手：从创意画布走向可继续编辑的时间线"
+      },
+      {
+        "id": "qwen-audio31-intl",
+        "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+        "title": "Qwen Audio 3.1 Realtime Plus 进入国际服务目录"
+      },
+      {
+        "id": "cua-s1-forms",
+        "url": "https://huggingface.co/cua-ai/cua-s1-forms",
+        "title": "CUA-S1 Forms：让小模型只负责表单中的有限选择"
+      },
+      {
+        "id": "claude-compliance-browser",
+        "url": "https://platform.claude.com/docs/en/release-notes/overview",
+        "title": "Claude 企业审计 API 扩展到本地 Chrome 会话"
+      },
+      {
+        "id": "smartarm-prototype",
+        "url": "https://about.fb.com/news/2026/09/canadian-start-up-smartarm-uses-ai-to-create-intuitive-bionic-prosthetics/",
+        "title": "smartARM 原型：用视觉线索选择假肢抓握方式"
+      },
+      {
+        "id": "epoch-daily-use",
+        "url": "https://epoch.ai/data-insights/near-daily-ai-use-doubled",
+        "title": "Epoch 调查：接近每天使用 AI 的自报比例上升"
+      },
+      {
+        "id": "openai-youth-blueprint",
+        "url": "https://openai.com/index/australian-youth-safety-blueprint/",
+        "title": "OpenAI 发布澳大利亚青少年 AI 安全蓝图"
+      },
+      {
+        "id": "ibm-consistency",
+        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+        "title": "IBM ALTK-Evolve：把一次成功和多次稳定分开评估"
+      },
+      {
+        "id": "huawei-agentic-enterprise",
+        "url": "https://e.huawei.com/cn/news/2026/solutions/computing/agentic-enterprise",
+        "title": "华为发布企业智能体白皮书：把智能层接回业务执行系统"
+      },
+      {
+        "id": "nvidia-cardiac",
+        "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
+        "title": "儿童医院分享开源心脏建模工作流的进展"
+      }
+    ],
+    "models": [
+      {
+        "id": "Altworld/Hemmingway-1",
+        "url": "https://huggingface.co/Altworld/Hemmingway-1"
+      },
+      {
+        "id": "videorebirth/hyperflow",
+        "url": "https://huggingface.co/videorebirth/hyperflow"
+      },
+      {
+        "id": "vamboai/morena-1.5b-instruct",
+        "url": "https://huggingface.co/vamboai/morena-1.5b-instruct"
+      },
+      {
+        "id": "Prior-Labs/tabpfn_3_5",
+        "url": "https://huggingface.co/Prior-Labs/tabpfn_3_5"
+      },
+      {
+        "id": "netease-youdao/Confucius4-T3PO",
+        "url": "https://huggingface.co/netease-youdao/Confucius4-T3PO"
+      },
+      {
+        "id": "nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model",
+        "url": "https://huggingface.co/nasa-ibm-ai4science/NASA-IBM-Lunar-Foundation-Model"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.20612",
+        "url": "https://arxiv.org/abs/2609.20612v1"
+      },
+      {
+        "id": "paper-2609.19499",
+        "url": "https://arxiv.org/abs/2609.19499v1"
+      },
+      {
+        "id": "paper-2609.20715",
+        "url": "https://arxiv.org/abs/2609.20715v1"
+      },
+      {
+        "id": "paper-2609.19144",
+        "url": "https://arxiv.org/abs/2609.19144v1"
+      },
+      {
+        "id": "paper-2609.18063",
+        "url": "https://arxiv.org/abs/2609.18063v1"
+      },
+      {
+        "id": "paper-2609.14306",
+        "url": "https://arxiv.org/abs/2609.14306v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "huggingface--funes",
+        "url": "https://github.com/huggingface/funes"
+      },
+      {
+        "id": "githubnext--localjev",
+        "url": "https://github.com/githubnext/localjev"
+      },
+      {
+        "id": "tobi--walgit",
+        "url": "https://github.com/tobi/walgit"
+      },
+      {
+        "id": "jub0t--Concat",
+        "url": "https://github.com/jub0t/Concat"
+      },
+      {
+        "id": "letorig--video-generator-client",
+        "url": "https://github.com/letorig/video-generator-client"
+      },
+      {
+        "id": "Player-YN--BrowserKitten",
+        "url": "https://github.com/Player-YN/BrowserKitten"
+      },
+      {
+        "id": "Nanako0129--sepia",
+        "url": "https://github.com/Nanako0129/sepia"
+      },
+      {
+        "id": "bojieli--ai-infra-book",
+        "url": "https://github.com/bojieli/ai-infra-book"
+      },
+      {
+        "id": "0ctacity--badbox",
+        "url": "https://github.com/0ctacity/badbox"
+      },
+      {
+        "id": "rafnixg--odoo-platform-ephemeral-environment",
+        "url": "https://github.com/rafnixg/odoo-platform-ephemeral-environment"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "news": [
+      {
+        "id": "grok-4-7",
+        "url": "https://x.ai/news/grok-4-7",
+        "title": "Grok 4.7：长任务进步，也要看推理预算和接入范围"
+      },
+      {
+        "id": "mimo-v26-open",
+        "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+        "title": "MiMo V2.6：联合强化学习之后，权重与训练细节一并公开"
+      },
+      {
+        "id": "rpent-open-release",
+        "url": "https://github.com/RLinf/RPent",
+        "title": "RPent：把规划、动作技能和可复用经验接到机器人上"
+      },
+      {
+        "id": "googlebook-preorders",
+        "url": "https://blog.google/products-and-platforms/devices/googlebook/first-look-googlebook/",
+        "title": "Googlebook 开放预订：先区分新硬件和云端 AI 服务"
+      },
+      {
+        "id": "retrochimera-nature",
+        "url": "https://www.nature.com/articles/s41586-026-11160-9",
+        "title": "RetroChimera 登上 Nature：两类反应模型怎样互补"
+      },
+      {
+        "id": "math-advisory",
+        "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai/",
+        "title": "OpenAI 成立数学顾问组：研究主张与外部评议分开看"
+      },
+      {
+        "id": "un-agent-brief",
+        "url": "https://www.un.org/independent-international-scientific-panel-ai/en/thematic-briefs/ai-agents-misalignment-risks",
+        "title": "联合国发布 Agent 风险专题简报，依据具体事件讨论控制问题"
+      },
+      {
+        "id": "qwen-omni-realtime",
+        "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+        "title": "Qwen3.8 Omni Flash Realtime 扩至国际服务入口"
+      },
+      {
+        "id": "gates-language-coalition",
+        "url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/09/ai-language-partnership",
+        "title": "60 家机构提出低资源语言 AI 五年共同目标"
+      },
+      {
+        "id": "nv-dsx-ready",
+        "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+        "title": "NVIDIA DSX Ready：先把电力和冷却组件的兼容条件说清"
+      },
+      {
+        "id": "oceanbase-scout",
+        "url": "https://www.qbitai.com/2026/09/493231.html",
+        "title": "OceanBase Scout 报告数据库 Agent 成绩，先看评测范围"
+      },
+      {
+        "id": "openai-academy-paths",
+        "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/",
+        "title": "OpenAI Academy 增加面向开发、组织和教育的学习路径"
+      },
+      {
+        "id": "ms-india-region",
+        "url": "https://news.microsoft.com/source/asia/2026/09/21/ai-ambition-into-action-microsoft-brings-ai-ready-capabilities-across-its-india-cloud-infrastructure-establishes-india-south-central-region-as-a-strategic-hub-for-asia-and-global-south/",
+        "title": "微软印度新区域已上线，AI 服务仍分阶段扩展"
+      },
+      {
+        "id": "muse-adoption-estimates",
+        "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/",
+        "title": "Muse 的早期采用数据公布，下载与留存仍是两回事"
+      },
+      {
+        "id": "google-farm-ai",
+        "url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/09/google-ai-farmers",
+        "title": "Google 与盖茨基金会扩展农业 AI 计划，目标覆盖两亿小农户"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-parakeet-redux",
+        "url": "https://huggingface.co/moondream/parakeet-redux"
+      },
+      {
+        "id": "model-supra2-img",
+        "url": "https://huggingface.co/SupraLabs/Supra2-IMG"
+      },
+      {
+        "id": "model-solomon",
+        "url": "https://huggingface.co/DoccyHealth/Solomon"
+      },
+      {
+        "id": "model-decider-v10",
+        "url": "https://huggingface.co/Mapika/decider-2b"
+      },
+      {
+        "id": "model-xgen-jing",
+        "url": "https://huggingface.co/XGENlabs/XGEN-JING"
+      },
+      {
+        "id": "model-altar-pruned",
+        "url": "https://huggingface.co/AikidoSec/altar-1"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.22068",
+        "url": "https://arxiv.org/abs/2609.22068v1"
+      },
+      {
+        "id": "paper-2609.22000",
+        "url": "https://arxiv.org/abs/2609.22000v1"
+      },
+      {
+        "id": "paper-2609.21465",
+        "url": "https://arxiv.org/abs/2609.21465v1"
+      },
+      {
+        "id": "paper-2609.21346",
+        "url": "https://arxiv.org/abs/2609.21346v1"
+      },
+      {
+        "id": "paper-2609.21619",
+        "url": "https://arxiv.org/abs/2609.21619v1"
+      },
+      {
+        "id": "paper-2609.20942",
+        "url": "https://arxiv.org/abs/2609.20942v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-zcode",
+        "url": "https://github.com/zai-org/ZCode"
+      },
+      {
+        "id": "project-ax",
+        "url": "https://github.com/google/ax"
+      },
+      {
+        "id": "project-open-glean",
+        "url": "https://github.com/hydra-db/open-glean"
+      },
+      {
+        "id": "project-kev",
+        "url": "https://github.com/jaredpalmer/kev"
+      },
+      {
+        "id": "project-jev-review",
+        "url": "https://github.com/devagrawal09/jev-review"
+      },
+      {
+        "id": "project-pg-jev",
+        "url": "https://github.com/realZachi/pg-jev"
+      },
+      {
+        "id": "project-jevals",
+        "url": "https://github.com/openlayer-ai/jevals"
+      },
+      {
+        "id": "project-tax-doc-classifier",
+        "url": "https://github.com/kyotofin/tax-doc-classifier"
+      },
+      {
+        "id": "project-minorun-marp-skill",
+        "url": "https://github.com/minorun365/minorun-marp-skill"
+      },
+      {
+        "id": "project-qiaomu-download",
+        "url": "https://github.com/joeseesun/qiaomu-download"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "news": [
+      {
+        "id": "gpt6-sol-luna",
+        "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+        "title": "GPT-6 Sol / Luna：把模型能力与每次任务成本一起看"
+      },
+      {
+        "id": "claude-opus55",
+        "url": "https://www.anthropic.com/claude-opus-5-5",
+        "title": "Claude Opus 5.5：降价之外，还要看 token 用量和防护条件"
+      },
+      {
+        "id": "alibaba-fullstack-roadmap",
+        "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-roadmap-on-full-stack-ai-strategy?_p_lc=1",
+        "title": "阿里云公布全栈 AI 路线图：把已提供、训练中和未来计划分开"
+      },
+      {
+        "id": "isaac-ros50",
+        "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+        "title": "Isaac ROS 5.0：把机器人感知组件接进可执行的开发流程"
+      },
+      {
+        "id": "jetbrains-air",
+        "url": "https://blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/",
+        "title": "JetBrains Air：把个人 Agent 使用延伸到团队协作与治理"
+      },
+      {
+        "id": "openai-independent-assessment",
+        "url": "https://openai.com/index/priorities-principles-third-party-assessments/",
+        "title": "OpenAI 提出第三方评估重点：要检查安全主张的证据"
+      },
+      {
+        "id": "microsoft-eviltokens",
+        "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/",
+        "title": "微软披露 EvilTokens 行动：AI 被用于分析被盗邮箱"
+      },
+      {
+        "id": "muse-runtime-export",
+        "url": "https://mouse.dev/blog/muse-runtime-export/",
+        "title": "Muse 运行环境导出报告：读到容器文件不等于逃逸"
+      },
+      {
+        "id": "kimi-work-3212",
+        "url": "https://www.kimi.com/help/kimi-work/release-notes",
+        "title": "Kimi Work 3.2.12：文档可以围绕选中内容做局部修改"
+      },
+      {
+        "id": "alibaba-audio-pricing",
+        "url": "https://www.alibabacloud.com/en/notice/model_studio_price_reduction_notice_for_selected_audio_models_891?_p_lc=1",
+        "title": "阿里云部分音频模型降价，先确认计费单位是否变化"
+      },
+      {
+        "id": "verda-seriesb",
+        "url": "https://verda.com/blog/what-189m-in-funding-unlocks-for-verda-customers",
+        "title": "Verda 获 1.89 亿美元 B 轮融资，投入欧洲 AI 算力供给"
+      },
+      {
+        "id": "microsoft-ai-diffusion",
+        "url": "https://blogs.microsoft.com/on-the-issues/2026/09/21/the-continued-state-of-global-ai-diffusion-in-2026/",
+        "title": "微软更新 AI 使用扩散指标：18.8% 的口径是什么"
+      },
+      {
+        "id": "grokbot-support",
+        "url": "https://x.ai/news/grok-bot-customer-support",
+        "title": "Grok Bot 客服案例：先做内部建议，再逐步放开操作"
+      },
+      {
+        "id": "unit42-frontier-defense",
+        "url": "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-delivers-anthropics-mythos-and-openais-gpt-56",
+        "title": "Unit 42 推出持续 AI 安全测试服务"
+      },
+      {
+        "id": "peridio-baylibre",
+        "url": "https://blog.peridio.com/peridio-and-baylibre-partner-to-bring-physical-ai-to-production",
+        "title": "Peridio 与 BayLibre 合作：补上物理 AI 设备的长期维护"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-inclusionai-ming-image-0.1-design",
+        "url": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design"
+      },
+      {
+        "id": "model-paradigma-inc-limite-1b-violetto",
+        "url": "https://huggingface.co/paradigma-inc/limite-1b-violetto"
+      },
+      {
+        "id": "model-badtheorylabs-tinfield-1",
+        "url": "https://huggingface.co/badtheorylabs/Tinfield-1"
+      },
+      {
+        "id": "model-lightoriginshq-light-o1-preview",
+        "url": "https://huggingface.co/LightOriginsHQ/Light-O1-Preview"
+      },
+      {
+        "id": "model-iapp-openthai-systemone",
+        "url": "https://huggingface.co/iapp/OpenThai-SystemOne"
+      },
+      {
+        "id": "model-alibaba-pai-minimax-h3-fun-controlnet-union-2.0",
+        "url": "https://huggingface.co/alibaba-pai/MiniMax-H3-Fun-Controlnet-Union-2.0"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.24972",
+        "url": "https://arxiv.org/abs/2609.24972v1"
+      },
+      {
+        "id": "paper-2609.24984",
+        "url": "https://arxiv.org/abs/2609.24984v1"
+      },
+      {
+        "id": "paper-2609.24983",
+        "url": "https://arxiv.org/abs/2609.24983v1"
+      },
+      {
+        "id": "paper-2609.24432",
+        "url": "https://arxiv.org/abs/2609.24432v1"
+      },
+      {
+        "id": "paper-2609.22870",
+        "url": "https://arxiv.org/abs/2609.22870v1"
+      },
+      {
+        "id": "paper-2609.24797",
+        "url": "https://arxiv.org/abs/2609.24797v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-unreallabsai-unreal-agent",
+        "url": "https://github.com/unreallabsai/unreal-agent"
+      },
+      {
+        "id": "project-royosherove-graphlin",
+        "url": "https://github.com/royosherove/graphlin"
+      },
+      {
+        "id": "project-simonw-llm-typesafe",
+        "url": "https://github.com/simonw/llm-typesafe"
+      },
+      {
+        "id": "project-manuelgil-fulvid",
+        "url": "https://github.com/ManuelGil/fulvid"
+      },
+      {
+        "id": "project-mizorewww-laya-coreml",
+        "url": "https://github.com/mizorewww/laya-coreml"
+      },
+      {
+        "id": "project-jev-chat-jev-chat-jarvis",
+        "url": "https://github.com/jev-chat/jev-chat-jarvis"
+      },
+      {
+        "id": "project-volotat-mini-agi",
+        "url": "https://github.com/volotat/mini-AGI"
+      },
+      {
+        "id": "project-incoai-splash",
+        "url": "https://github.com/incoai/splash"
+      },
+      {
+        "id": "project-ethanplusai-astra-flash-orchestrator",
+        "url": "https://github.com/ethanplusai/astra-flash-orchestrator"
+      },
+      {
+        "id": "project-qwdwqfwq-topconf-paper-figure-gallery",
+        "url": "https://github.com/qwdwqfwq/topconf-paper-figure-gallery"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "news": [
+      {
+        "id": "gemini38-tts",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/",
+        "title": "Gemini 3.8 TTS：声音风格开始成为可编辑条件"
+      },
+      {
+        "id": "meta-connect-glasses",
+        "url": "https://about.fb.com/news/2026/09/introducing-ray-ban-meta-audio-glasses-new-styles-plus-muse/",
+        "title": "Meta Connect：把 AI 放进眼镜，也把设备边界讲清"
+      },
+      {
+        "id": "deepseek-dsec",
+        "url": "https://arxiv.org/abs/2609.22978v1",
+        "title": "DeepSeek DSec：训练 Agent 的环境不能只是一层容器包装"
+      },
+      {
+        "id": "anthropic-art",
+        "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+        "title": "Claude 找到 ART 酶系统：发现线索还不等于可用编辑工具"
+      },
+      {
+        "id": "chatgpt-voice-work",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "title": "ChatGPT Voice：从口头问答走向插件与工作任务"
+      },
+      {
+        "id": "pixverse-r2",
+        "url": "https://pixverse.ai/en/blog/pixverse-introduces-r2-real-time-world-model",
+        "title": "PixVerse R2：把视频生成延伸到连续交互"
+      },
+      {
+        "id": "claude-marketplace",
+        "url": "https://claude.com/blog/claude-marketplace",
+        "title": "Claude Marketplace：插件与企业采购入口合并"
+      },
+      {
+        "id": "workbuddy-hyimage35",
+        "url": "https://developer.cloud.tencent.com/article/2749902",
+        "title": "WorkBuddy 接入 HyImage 3.5 preview"
+      },
+      {
+        "id": "youtube-made2026",
+        "url": "https://blog.youtube/news-and-events/made-on-youtube-new-tools-power-creation-journey/",
+        "title": "YouTube：对话编辑与发布前反馈进入创作流程"
+      },
+      {
+        "id": "defender-isoc",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/",
+        "title": "Microsoft Defender：把安全调查接到同一上下文"
+      },
+      {
+        "id": "mentalhealthbench",
+        "url": "https://openai.com/index/introducing-mentalhealthbench/",
+        "title": "MentalHealthBench：评测对话回应，不能替代临床效果"
+      },
+      {
+        "id": "airbnb-astra-access",
+        "url": "https://news.airbnb.com/expanding-access-to-openai-frontier-models-including-gpt-6-astra",
+        "title": "Airbnb 扩大 Astra 接入：采用案例和因果证据要分开"
+      },
+      {
+        "id": "snapdragon8-gen6",
+        "url": "https://www.qualcomm.com/news/releases/2026/09/snapdragon-leads-the-agentic-ai-age-with-two-of-the-world-s-fast",
+        "title": "高通发布两款 Snapdragon 8 Gen 6 平台"
+      },
+      {
+        "id": "openrouter-batch",
+        "url": "https://openrouter.ai/blog/announcements/batch-api/",
+        "title": "OpenRouter Batch API：用等待换批处理成本"
+      },
+      {
+        "id": "copilot-local-sandbox",
+        "url": "https://github.blog/changelog/2026-09-23-local-sandboxing-in-the-github-copilot-app",
+        "title": "Copilot app 本地沙箱进入公开预览"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-nemotron",
+        "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization"
+      },
+      {
+        "id": "model-flux",
+        "url": "https://huggingface.co/black-forest-labs/flux-3-action-base"
+      },
+      {
+        "id": "model-lens",
+        "url": "https://huggingface.co/apple/LensVLM-9B"
+      },
+      {
+        "id": "model-ovis",
+        "url": "https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B"
+      },
+      {
+        "id": "model-audio8",
+        "url": "https://huggingface.co/Edge0/Audio8-ASR-Infinite"
+      },
+      {
+        "id": "model-gae",
+        "url": "https://huggingface.co/TencentARC/GAE-D64-1B"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.25804",
+        "url": "https://arxiv.org/abs/2609.25804v1"
+      },
+      {
+        "id": "paper-2609.25270",
+        "url": "https://arxiv.org/abs/2609.25270v1"
+      },
+      {
+        "id": "paper-2609.26774",
+        "url": "https://arxiv.org/abs/2609.26774v1"
+      },
+      {
+        "id": "paper-2609.26796",
+        "url": "https://arxiv.org/abs/2609.26796v1"
+      },
+      {
+        "id": "paper-2609.26550",
+        "url": "https://arxiv.org/abs/2609.26550v1"
+      },
+      {
+        "id": "paper-2609.25636",
+        "url": "https://arxiv.org/abs/2609.25636v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "project-harness-sdk",
+        "url": "https://github.com/strands-agents/harness-sdk"
+      },
+      {
+        "id": "project-relore",
+        "url": "https://github.com/huggingface/relore"
+      },
+      {
+        "id": "project-foremerge",
+        "url": "https://github.com/naw103/foremerge"
+      },
+      {
+        "id": "project-npunlock",
+        "url": "https://github.com/hsfzxjy/npunlock"
+      },
+      {
+        "id": "project-wechatbridge",
+        "url": "https://github.com/freestylefly/WeChatBridge"
+      },
+      {
+        "id": "project-search",
+        "url": "https://github.com/driceroland/Search"
+      },
+      {
+        "id": "project-lossless-memory",
+        "url": "https://github.com/aru-labs/lossless-memory"
+      },
+      {
+        "id": "project-enzo",
+        "url": "https://github.com/theguysudo/ENZO"
+      },
+      {
+        "id": "project-spirula-studio",
+        "url": "https://github.com/harry7557558/spirula-studio"
+      },
+      {
+        "id": "project-foreman",
+        "url": "https://github.com/thruwire/foreman"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "news": [
+      {
+        "id": "gemini38-live-avatar",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+        "title": "Gemini Live Avatar：实时对话有了持续出现的虚拟形象"
+      },
+      {
+        "id": "alibaba-decision-preview",
+        "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+        "title": "阿里云 decision-model-preview：把分类与评分直接作为接口"
+      },
+      {
+        "id": "transluce-agent-activity",
+        "url": "https://transluce.org/agent-activity",
+        "title": "Transluce 新报告：公开日志暴露 Agent 越界尝试"
+      },
+      {
+        "id": "google-suncatcher-prototype",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/",
+        "title": "Project Suncatcher：首个原型先验证太空算力的工程前提"
+      },
+      {
+        "id": "claude-tag-personal-connectors",
+        "url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels",
+        "title": "Claude Tag：个人连接器进入频道，读取与公开分享要分开"
+      },
+      {
+        "id": "kimi-work-3214",
+        "url": "https://www.kimi.com/help/kimi-work/release-notes",
+        "title": "Kimi Work 3.2.14：移动预览、引用与 Office 版本历史"
+      },
+      {
+        "id": "prism-bonsai-ar1",
+        "url": "https://prismml.com/news/prismml-brings-1-bit-bonsai-models-to-ai-smart-glasses-powered-by-snapdragon",
+        "title": "Prism 把 1-bit Bonsai 多模态原型跑到眼镜芯片"
+      },
+      {
+        "id": "adobe-gemini-claude-tools",
+        "url": "https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude",
+        "title": "Adobe 进入 Gemini，也把 PDF 与分层编辑带入 Claude"
+      },
+      {
+        "id": "adobe-topaz-acquisition",
+        "url": "https://blog.adobe.com/en/publish/2026/09/23/adobe-completes-acquisition-of-topaz-labs",
+        "title": "Adobe 完成收购 Topaz Labs，独立产品继续保留"
+      },
+      {
+        "id": "google-photos-september",
+        "url": "https://blog.google/products-and-platforms/products/photos/google-photos-updates/",
+        "title": "Google Photos：数字衣橱扩大范围，编辑入口更细"
+      },
+      {
+        "id": "github-proof-presence",
+        "url": "https://github.blog/changelog/2026-09-24-require-proof-of-presence-for-high-impact-actions",
+        "title": "GitHub 高影响操作开始支持重新确认操作者在场"
+      },
+      {
+        "id": "openai-gpt6-cache",
+        "url": "https://openai.com/index/better-prompt-caching-for-gpt-6/",
+        "title": "GPT-6 缓存：新增命中诊断与显式断点"
+      },
+      {
+        "id": "basis-conversations1500",
+        "url": "https://huggingface.co/blog/basis-ai/conversations-1500",
+        "title": "Conversations-1500：把多人对话的时间结构一起开放"
+      },
+      {
+        "id": "google-private-memory",
+        "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+        "title": "Private AI Compute：云端记忆开始考虑跨设备连续性"
+      },
+      {
+        "id": "search-console-multimodal",
+        "url": "https://developers.google.com/search/blog/2026/09/web-multimodal-in-sc",
+        "title": "Search Console 开始单列多模态搜索流量"
+      }
+    ],
+    "models": [
+      {
+        "id": "lfm25vl-dspark",
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-3B-DSpark"
+      },
+      {
+        "id": "gliner25-decide",
+        "url": "https://huggingface.co/fastino/GLiNER2.5-Decide"
+      },
+      {
+        "id": "clm-v01",
+        "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B"
+      },
+      {
+        "id": "parakeet-ultra",
+        "url": "https://huggingface.co/moondream/parakeet-ultra"
+      },
+      {
+        "id": "qwen-image-controlnet",
+        "url": "https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union"
+      },
+      {
+        "id": "thinkingcap-qwen38",
+        "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.27334",
+        "url": "https://arxiv.org/abs/2609.27334v1"
+      },
+      {
+        "id": "paper-2609.26780",
+        "url": "https://arxiv.org/abs/2609.26780v2"
+      },
+      {
+        "id": "paper-2609.26355",
+        "url": "https://arxiv.org/abs/2609.26355v1"
+      },
+      {
+        "id": "paper-2609.25963",
+        "url": "https://arxiv.org/abs/2609.25963v1"
+      },
+      {
+        "id": "paper-2609.27490",
+        "url": "https://arxiv.org/abs/2609.27490v1"
+      },
+      {
+        "id": "paper-2609.27321",
+        "url": "https://arxiv.org/abs/2609.27321v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "devdotfast/whiteboard",
+        "url": "https://github.com/devdotfast/whiteboard"
+      },
+      {
+        "id": "silbercue/public-browser",
+        "url": "https://github.com/Silbercue/public-browser"
+      },
+      {
+        "id": "drawcms/drawcms",
+        "url": "https://github.com/drawcms/drawcms"
+      },
+      {
+        "id": "shadowwalker2014/rig",
+        "url": "https://github.com/ShadowWalker2014/rig"
+      },
+      {
+        "id": "applied-inference-lab/autormf-ml-lab",
+        "url": "https://github.com/applied-inference-lab/autormf-ml-lab"
+      },
+      {
+        "id": "dsummersl/treepeat",
+        "url": "https://github.com/dsummersl/treepeat"
+      },
+      {
+        "id": "parcha-ai/agentrun",
+        "url": "https://github.com/Parcha-ai/agentrun"
+      },
+      {
+        "id": "rlinf/rlark",
+        "url": "https://github.com/RLinf/RLark"
+      },
+      {
+        "id": "stefanionescu/comfyui-openrouter",
+        "url": "https://github.com/stefanionescu/comfyui-openrouter"
+      },
+      {
+        "id": "aurorainfra/grev",
+        "url": "https://github.com/aurorainfra/grev"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "news": [
+      {
+        "id": "copilot-home-code-autopilot",
+        "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+        "title": "Copilot 改版：办公、写应用与持续代理进入同一工作入口"
+      },
+      {
+        "id": "kimi-extension-sidebar-skills",
+        "url": "https://www.kimi.ai/products/kimi-browser-extension",
+        "title": "Kimi 浏览器插件：把网页操作记录变成可复用工作流"
+      },
+      {
+        "id": "lerobot-humanoids-integration",
+        "url": "https://huggingface.co/blog/nepyope/bringing-humanoids-to-lerobot",
+        "title": "LeRobot 展示人形机器人流程：慢速规划与快速身体控制分工"
+      },
+      {
+        "id": "run-assert-eval-runtime",
+        "url": "https://commandline.microsoft.com/run-assert-eval-responsible-ai-agent-risk-discovery-at-runtime/",
+        "title": "run-assert-eval：让发现风险、加拦截和回归测试连成闭环"
+      },
+      {
+        "id": "claude-nine-loop-amplitude",
+        "url": "https://www.anthropic.com/research/yes-claude-can-do-nine-loops",
+        "title": "Claude 的九圈振幅计算：有外部核验，也有明确问题边界"
+      },
+      {
+        "id": "gemini-call-for-me",
+        "url": "https://support.google.com/gemini/answer/18336420?hl=en",
+        "title": "Gemini Call for Me 开始有限试点：替用户打电话前仍需确认"
+      },
+      {
+        "id": "akamai-anthropic-capacity",
+        "url": "https://www.ir.akamai.com/static-files/db805670-271e-406b-91a5-e0b4ed226b5a",
+        "title": "Akamai 披露 Anthropic 长期算力协议，金额取决于交付条件"
+      },
+      {
+        "id": "github-autofix-memory",
+        "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+        "title": "GitHub Agentic Autofix 开始读写 Copilot Memory"
+      },
+      {
+        "id": "github-slack-teams-context",
+        "url": "https://github.blog/changelog/2026-09-25-updates-to-github-copilot-for-slack-and-microsoft-teams",
+        "title": "Copilot 在 Slack、Teams 中补齐附件与问题跟踪上下文"
+      },
+      {
+        "id": "claude-plugin-publisher-portal",
+        "url": "https://claude.com/blog/build-plugins-for-claude",
+        "title": "Claude 插件开发者入口：提交、审核状态和使用数据连起来"
+      },
+      {
+        "id": "intrinsic-core-open",
+        "url": "https://www.intrinsic.ai/blog/posts/introducing-intrinsic-core",
+        "title": "Intrinsic Core 开源工业机器人基础运行栈"
+      },
+      {
+        "id": "openai-ukraine-daybreak",
+        "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense/",
+        "title": "OpenAI 将 Daybreak 访问扩展到乌克兰民用基础设施防御"
+      },
+      {
+        "id": "google-beam-expansion",
+        "url": "https://blog.google/innovation-and-ai/technology/research/google-beam-expansion/",
+        "title": "Google Beam 扩展到六国，十月将有按需体验场地"
+      },
+      {
+        "id": "arxiv-independent-funding",
+        "url": "https://blog.arxiv.org/2026/09/23/arxiv-receives-multiyear-investment/",
+        "title": "arXiv 获得1720万美元多年支持，投入基础设施与组织建设"
+      },
+      {
+        "id": "ollaya-local-decisions",
+        "url": "https://ollaya.dev/",
+        "title": "Ollaya：把不生成长文本的决策模型放到本地运行"
+      }
+    ],
+    "models": [
+      {
+        "id": "agate-preview",
+        "url": "https://huggingface.co/Logolabs/agate-preview-001"
+      },
+      {
+        "id": "orcasaq2",
+        "url": "https://huggingface.co/orcarouter/OrcaSAQ-2-27B"
+      },
+      {
+        "id": "pianissimo-sv",
+        "url": "https://huggingface.co/KlangAI/pianissimo-sv"
+      },
+      {
+        "id": "gpc1",
+        "url": "https://huggingface.co/harshatheg/GPC-1"
+      },
+      {
+        "id": "swift15-next",
+        "url": "https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next"
+      },
+      {
+        "id": "texturefix-vae",
+        "url": "https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.28654",
+        "url": "https://arxiv.org/abs/2609.28654v1"
+      },
+      {
+        "id": "paper-2609.29845",
+        "url": "https://arxiv.org/abs/2609.29845v1"
+      },
+      {
+        "id": "paper-2609.30221",
+        "url": "https://arxiv.org/abs/2609.30221v1"
+      },
+      {
+        "id": "paper-2609.29444",
+        "url": "https://arxiv.org/abs/2609.29444v1"
+      },
+      {
+        "id": "paper-2609.29421",
+        "url": "https://arxiv.org/abs/2609.29421v1"
+      },
+      {
+        "id": "paper-2609.30199",
+        "url": "https://arxiv.org/abs/2609.30199v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "git-bug/git-bug",
+        "url": "https://github.com/git-bug/git-bug"
+      },
+      {
+        "id": "dream-num/univer",
+        "url": "https://github.com/dream-num/univer"
+      },
+      {
+        "id": "fang520huang-lgtm/agentlens",
+        "url": "https://github.com/fang520huang-lgtm/AgentLens"
+      },
+      {
+        "id": "vbs2004/jevcut",
+        "url": "https://github.com/VBS2004/jevcut"
+      },
+      {
+        "id": "racetozero/kiss",
+        "url": "https://github.com/racetozero/kiss"
+      },
+      {
+        "id": "androoagi/starnet",
+        "url": "https://github.com/androoAGI/starnet"
+      },
+      {
+        "id": "containers/ramalama",
+        "url": "https://github.com/containers/ramalama"
+      },
+      {
+        "id": "patens-dev/pbi-guard",
+        "url": "https://github.com/Patens-dev/pbi-guard"
+      },
+      {
+        "id": "grigio/carosello",
+        "url": "https://github.com/grigio/carosello"
+      },
+      {
+        "id": "sfmqrb/gutcheck",
+        "url": "https://github.com/sfmqrb/gutcheck"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "news": [
+      {
+        "id": "openai-dns-boundary",
+        "url": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/",
+        "title": "OpenAI 披露 DNS 绕过事件：工具入口受限，不代表环境完全隔离"
+      },
+      {
+        "id": "inferact-tpu-megakernels",
+        "url": "https://inferact.ai/blog/tpu-megakernels",
+        "title": "TPU megakernel：把下一层的权重，提前搬到片上内存"
+      },
+      {
+        "id": "hysparse2-kv",
+        "url": "https://arxiv.org/abs/2609.26368v1",
+        "title": "HySparse2：先减少长上下文的存储，再少做一部分预填充"
+      },
+      {
+        "id": "uipath-autopilot-agent",
+        "url": "https://docs.uipath.com/agents/automation-cloud/latest/release-notes/september-2026",
+        "title": "UiPath Autopilot Agent：在浏览器里搭建、测试和调试代理"
+      },
+      {
+        "id": "epoch-furniture-assembly",
+        "url": "https://epoch.ai/publications/furniture-assembly",
+        "title": "Epoch 把家具安装做成测试：识别步骤，也要发现装反了"
+      },
+      {
+        "id": "seller-assistant-workflows",
+        "url": "https://www.aboutamazon.com/news/innovation-at-amazon/seller-assistant-plugin-amazon-quick-claude",
+        "title": "Amazon Seller Assistant：持续工作流可以带着业务记忆运行"
+      },
+      {
+        "id": "skild-physical-selfplay",
+        "url": "https://www.skild.ai/blogs/physical-self-play",
+        "title": "Skild 展示物理自博弈：先在模拟中和旧版本交手"
+      },
+      {
+        "id": "nscale-convertible",
+        "url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+        "title": "Nscale 公布33.6亿美元可转债融资，其中10亿美元尚待交割"
+      },
+      {
+        "id": "google-flipkart-test",
+        "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
+        "title": "Google 在印度测试从 Gemini 与 AI Mode 购买 Flipkart 商品"
+      },
+      {
+        "id": "cloudwatch-omni-ga",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-cloudwatch-omni-ai/",
+        "title": "CloudWatch Omni 正式推出：跨云观测与 Agent 轨迹进入同一入口"
+      },
+      {
+        "id": "bedrock-salesforce-zendesk",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-salesforce-zendesk-native-data-source-connectors/",
+        "title": "Bedrock Knowledge Bases 增加 Salesforce、Zendesk 原生连接器"
+      },
+      {
+        "id": "aws-messaging-ses-skills",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-messaging-ses-ai-skills-mcp-server/",
+        "title": "AWS 将消息与邮件配置流程做成可通过 MCP 使用的 Skills"
+      },
+      {
+        "id": "transcribe-customer-kms",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/",
+        "title": "Amazon Transcribe 允许以客户管理密钥保护自定义资源"
+      },
+      {
+        "id": "muse-early-access",
+        "url": "https://x.com/Muse/status/2103537828793901159",
+        "title": "Meta Muse 开放早期访问申请，填写表单不等于获得名额"
+      },
+      {
+        "id": "colibri-brio-mode",
+        "url": "https://github.com/JustVugg/colibri/releases/tag/v1.12.0",
+        "title": "Colibri 的 Brio 模式：一次为有限选项打分"
+      }
+    ],
+    "models": [
+      {
+        "id": "julia-1",
+        "url": "https://huggingface.co/SupersonicLabs/Julia-1"
+      },
+      {
+        "id": "pixai-tagger",
+        "url": "https://huggingface.co/pixai-labs/pixai-tagger-v1.0"
+      },
+      {
+        "id": "krea-inpaint",
+        "url": "https://huggingface.co/Cierpliwy/krea2-inpaint-edit"
+      },
+      {
+        "id": "veda-h3",
+        "url": "https://huggingface.co/Veda-Sparse/Minimax-H3-T2VA-Veda-8NFE-600Step-Preview"
+      },
+      {
+        "id": "viggle-qwen-turbo",
+        "url": "https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo"
+      },
+      {
+        "id": "nanosaur2",
+        "url": "https://huggingface.co/well9472/Nanosaur2-670M"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.23407",
+        "url": "https://arxiv.org/abs/2609.23407v1"
+      },
+      {
+        "id": "paper-2609.28416",
+        "url": "https://arxiv.org/abs/2609.28416v1"
+      },
+      {
+        "id": "paper-2609.29362",
+        "url": "https://arxiv.org/abs/2609.29362v1"
+      },
+      {
+        "id": "paper-2609.29816",
+        "url": "https://arxiv.org/abs/2609.29816v1"
+      },
+      {
+        "id": "paper-2609.28603",
+        "url": "https://arxiv.org/abs/2609.28603v1"
+      },
+      {
+        "id": "paper-2609.30233",
+        "url": "https://arxiv.org/abs/2609.30233v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "reladraw/reladraw",
+        "url": "https://github.com/reladraw/reladraw"
+      },
+      {
+        "id": "brumar/chess-postmortem-skills",
+        "url": "https://github.com/brumar/chess-postmortem-skills"
+      },
+      {
+        "id": "wiltodelta/translate-like-me",
+        "url": "https://github.com/wiltodelta/translate-like-me"
+      },
+      {
+        "id": "willswire/swift-newt",
+        "url": "https://github.com/willswire/swift-newt"
+      },
+      {
+        "id": "lava/withmcp",
+        "url": "https://github.com/lava/withmcp"
+      },
+      {
+        "id": "arpwal/leftovers",
+        "url": "https://github.com/arpwal/leftovers"
+      },
+      {
+        "id": "ctxrs/graf",
+        "url": "https://github.com/ctxrs/graf"
+      },
+      {
+        "id": "temir-dev/tims-markdown-reader",
+        "url": "https://github.com/temir-dev/tims-markdown-reader"
+      },
+      {
+        "id": "clickin/sqlbraid",
+        "url": "https://github.com/Clickin/SQLBraid"
+      },
+      {
+        "id": "behdad/gdocs-me-up",
+        "url": "https://github.com/behdad/gdocs-me-up"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "news": [
+      {
+        "id": "naive-n05-flash",
+        "url": "https://naive.ai/en/research/",
+        "title": "Naive-N0.5-Flash：稀疏注意力和运行时一起优化，速度口径要分开看"
+      },
+      {
+        "id": "mimo-mopd-repetition",
+        "url": "https://mimo.xiaomi.com/blog/mimo-v2-6-tool-call-repetition",
+        "title": "MiMo V2.6发布MOPD检查点，专门处理反复调用同一工具"
+      },
+      {
+        "id": "ember-1",
+        "url": "https://fireworks.ai/blog/ember-1",
+        "title": "Ember-1：减少推理token有收益，也有不能忽略的任务退步"
+      },
+      {
+        "id": "anthropic-project-swap",
+        "url": "https://www.anthropic.com/research/project-swap",
+        "title": "Project Swap：代理谈判前，先确认它真的知道你想要什么"
+      },
+      {
+        "id": "homebody",
+        "url": "https://tml.stanford.edu/homebody/",
+        "title": "HomeBody：把视觉语言模型接到可复用动作库，而非每次重新学动作"
+      },
+      {
+        "id": "rlark-resources",
+        "url": "https://github.com/RLinf/RLark",
+        "title": "RLark：把GPU、机器人和相机纳入同一个任务调度"
+      },
+      {
+        "id": "vids-omni11",
+        "url": "https://blog.google/products-and-platforms/products/workspace/gemini-omni-in-google-vids/",
+        "title": "Google Vids接入Gemini Omni 1.1 Flash视频能力"
+      },
+      {
+        "id": "liquid-qualcomm-context",
+        "url": "https://www.liquid.ai/blog/liquid-context-qualcomm",
+        "title": "Liquid与Qualcomm探索设备端上下文层"
+      },
+      {
+        "id": "cloudflare-container-disclosure",
+        "url": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+        "title": "Cloudflare披露并修复Containers跨租户残留数据问题"
+      },
+      {
+        "id": "cloudflare-worker-previews",
+        "url": "https://blog.cloudflare.com/worker-previews/",
+        "title": "Worker Previews让分支有自己的运行入口"
+      },
+      {
+        "id": "copilot-app-otel",
+        "url": "https://github.blog/changelog/2026-09-22-opentelemetry-in-the-github-copilot-app/",
+        "title": "Copilot应用增加集中OpenTelemetry配置"
+      },
+      {
+        "id": "microsoft-middle-east",
+        "url": "https://blogs.microsoft.com/on-the-issues/2026/09/23/microsoft-strengthens-its-commitment-to-the-middle-east-by-investing-in-technology-digital-resilience-and-people/",
+        "title": "微软公布至2030年的中东投资计划"
+      },
+      {
+        "id": "openai-ads-sea-taiwan",
+        "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan/",
+        "title": "ChatGPT广告测试扩展至东南亚和台湾"
+      },
+      {
+        "id": "uipath-datafabric-agents",
+        "url": "https://docs.uipath.com/agents/automation-cloud/latest/release-notes/september-2026",
+        "title": "UiPath：结构化业务上下文转为正式能力，高级Agent仍在预览"
+      },
+      {
+        "id": "copilot-review-options",
+        "url": "https://github.blog/changelog/2026-09-23-copilot-code-review-more-ways-to-request-and-configure-reviews/",
+        "title": "Copilot代码审查增加触发和强度选项"
+      }
+    ],
+    "models": [
+      {
+        "id": "intern-decision",
+        "url": "https://huggingface.co/internlm/Intern-Decision-4B"
+      },
+      {
+        "id": "ovis-vl-embedding",
+        "url": "https://huggingface.co/ATH-MaaS/Ovis-VL-Embedding-2B"
+      },
+      {
+        "id": "pruna-qwen-image",
+        "url": "https://huggingface.co/PrunaAI/Pruna-Qwen-Image-2.1"
+      },
+      {
+        "id": "akatz-h3-character",
+        "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA"
+      },
+      {
+        "id": "kokoro-clone-tuner",
+        "url": "https://huggingface.co/remsky/kokoro-inno-clone-tuner"
+      },
+      {
+        "id": "nnfoundation-vit",
+        "url": "https://huggingface.co/MIC-DKFZ/nnFoundationViT"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.29892",
+        "url": "https://arxiv.org/abs/2609.29892v1"
+      },
+      {
+        "id": "paper-2609.28923",
+        "url": "https://arxiv.org/abs/2609.28923v1"
+      },
+      {
+        "id": "paper-2609.28399",
+        "url": "https://arxiv.org/abs/2609.28399v1"
+      },
+      {
+        "id": "paper-2609.28811",
+        "url": "https://arxiv.org/abs/2609.28811v1"
+      },
+      {
+        "id": "paper-2609.29429",
+        "url": "https://arxiv.org/abs/2609.29429v1"
+      },
+      {
+        "id": "paper-2609.23087",
+        "url": "https://arxiv.org/abs/2609.23087v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "deepfates/imp",
+        "url": "https://github.com/deepfates/imp"
+      },
+      {
+        "id": "trahloff/aldine",
+        "url": "https://github.com/trahloff/Aldine"
+      },
+      {
+        "id": "avinash-jetwani/jevmem",
+        "url": "https://github.com/Avinash-jetwani/jevmem"
+      },
+      {
+        "id": "btahir/shotcandy",
+        "url": "https://github.com/btahir/shotcandy"
+      },
+      {
+        "id": "plusminushalf/rot-guard",
+        "url": "https://github.com/plusminushalf/rot-guard"
+      },
+      {
+        "id": "ufo-ai/ufo-core",
+        "url": "https://github.com/ufo-ai/ufo-core"
+      },
+      {
+        "id": "colton-z/astrabox",
+        "url": "https://github.com/Colton-z/AstraBox"
+      },
+      {
+        "id": "michaelkinsy/pig",
+        "url": "https://github.com/MichaelKinsy/PiG"
+      },
+      {
+        "id": "jatoran/swe-mux",
+        "url": "https://github.com/jatoran/swe-mux"
+      },
+      {
+        "id": "getgat-dev/gat",
+        "url": "https://github.com/getgat-dev/gat"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "news": [
+      {
+        "id": "sonnet55",
+        "url": "https://www.anthropic.com/claude-sonnet-5-5",
+        "title": "Sonnet 5.5：单价没变，任务成本和推理强度要分开看"
+      },
+      {
+        "id": "nvidia-agent-safety",
+        "url": "https://nvidianews.nvidia.com/news/open-agent-safety-platform",
+        "title": "NVIDIA：把 Agent 的软件边界与独立硬件监控分开"
+      },
+      {
+        "id": "eleven-v4",
+        "url": "https://elevenlabs.io/blog/eleven-v4",
+        "title": "Eleven v4：更自然的表达与更早出声，需要用不同指标看"
+      },
+      {
+        "id": "xai-team-bots",
+        "url": "https://x.ai/news/team-bots",
+        "title": "Team Bots：把个人助手的工作方法变成团队共享上下文"
+      },
+      {
+        "id": "shopify-webmcp",
+        "url": "https://shopify.dev/docs/api/web-mcp",
+        "title": "Shopify WebMCP：让浏览器 Agent 调用店铺动作，付款仍要买家确认"
+      },
+      {
+        "id": "amd-worldlabs",
+        "url": "https://drfeifei.substack.com/p/worldlabs-joining-amd",
+        "title": "World Labs 宣布加入 AMD：空间模型与算力协同成为组织层面的选择"
+      },
+      {
+        "id": "meta-enterprise",
+        "url": "https://about.fb.com/news/2026/09/launching-meta-enterprise-platform/",
+        "title": "Meta Enterprise：把企业 Agent、模型 API 与开发工具放进同一业务线"
+      },
+      {
+        "id": "gemini-skills",
+        "url": "https://support.google.com/gemini/answer/18560919",
+        "title": "Gemini 将 Gems 迁移为 skills：个人、企业和教育账号时间不同"
+      },
+      {
+        "id": "health-summaries",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "title": "ChatGPT Health：从选中的健康记录进入个性化解释"
+      },
+      {
+        "id": "yodasv3",
+        "url": "https://huggingface.co/blog/espnet/yodasv3",
+        "title": "YODAS v3：大规模语音数据开始保留更多原始声学信息"
+      },
+      {
+        "id": "perceptron-mk15",
+        "url": "https://www.perceptron.inc/blog/introducing-perceptron-mk1-5",
+        "title": "Perceptron Mk1.5：用点、框、轨迹表达视觉结果，而不只是一段描述"
+      },
+      {
+        "id": "perplexity-fast",
+        "url": "https://docs.perplexity.ai/docs/search/fast-search",
+        "title": "Perplexity Fast Search：明确查询可以换较轻的检索预算"
+      },
+      {
+        "id": "lenfest-openai",
+        "url": "https://www.lenfestinstitute.org/institute-news/lenfest-institute-openai-ai-fellowship-expansion/",
+        "title": "Lenfest 扩大新闻编辑部 AI 驻场计划，重点是把工具复用起来"
+      },
+      {
+        "id": "modulate-funding",
+        "url": "https://www.modulate.ai/blog/we-started-by-asking-what-machines-could-hear-now-were-building-what-comes-next",
+        "title": "Modulate 获2500万美元融资：语音风险识别继续走专用模型组合路线"
+      },
+      {
+        "id": "nasa-ms-data",
+        "url": "https://news.microsoft.com/source/features/digital-transformation/at-nasa-ai-is-helping-scientists-unlock-discoveries-hidden-in-decades-of-data/",
+        "title": "NASA 的 AI 数据工作流：找出历史资料中的证据，控制仍由人承担"
+      }
+    ],
+    "models": [
+      {
+        "id": "lev",
+        "url": "https://huggingface.co/interfaze-ai/lev"
+      },
+      {
+        "id": "xor11",
+        "url": "https://huggingface.co/juspay/xor"
+      },
+      {
+        "id": "cua02",
+        "url": "https://huggingface.co/cua-ai/cua-s1-4b-0.2"
+      },
+      {
+        "id": "flux-so101",
+        "url": "https://huggingface.co/black-forest-labs/flux-3-action-so101"
+      },
+      {
+        "id": "qi-anyangle",
+        "url": "https://huggingface.co/lilylilith/QI_2.1_AnyAngle"
+      },
+      {
+        "id": "h3-orbit",
+        "url": "https://huggingface.co/pablodawson/MiniMax-H3-360-Orbit-LoRA"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.31620",
+        "url": "https://arxiv.org/abs/2609.31620v1"
+      },
+      {
+        "id": "paper-2609.26333",
+        "url": "https://arxiv.org/abs/2609.26333v1"
+      },
+      {
+        "id": "paper-2609.31093",
+        "url": "https://arxiv.org/abs/2609.31093v1"
+      },
+      {
+        "id": "paper-2609.31590",
+        "url": "https://arxiv.org/abs/2609.31590v1"
+      },
+      {
+        "id": "paper-2609.29050",
+        "url": "https://arxiv.org/abs/2609.29050v1"
+      },
+      {
+        "id": "paper-2609.31291",
+        "url": "https://arxiv.org/abs/2609.31291v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "yetone/magpie",
+        "url": "https://github.com/yetone/magpie"
+      },
+      {
+        "id": "dzhng/jevgrep",
+        "url": "https://github.com/dzhng/jevgrep"
+      },
+      {
+        "id": "niko1221/strata",
+        "url": "https://github.com/Niko1221/Strata"
+      },
+      {
+        "id": "mikehasa/golive-skill",
+        "url": "https://github.com/mikehasa/golive-skill"
+      },
+      {
+        "id": "nokia-applied-research/anyjev",
+        "url": "https://github.com/nokia-applied-research/AnyJev"
+      },
+      {
+        "id": "supermemoryai/company-brain",
+        "url": "https://github.com/supermemoryai/company-brain"
+      },
+      {
+        "id": "lockedinlabs-ai/agent-console",
+        "url": "https://github.com/LockedinLabs-AI/agent-console"
+      },
+      {
+        "id": "bridge-mind/bridgeclip",
+        "url": "https://github.com/bridge-mind/bridgeclip"
+      },
+      {
+        "id": "jankeesvw/omarchy-meeting-recorder",
+        "url": "https://github.com/jankeesvw/omarchy-meeting-recorder"
+      },
+      {
+        "id": "saragordic/rooms",
+        "url": "https://github.com/saragordic/rooms"
+      }
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "news": [
+      {
+        "id": "gpt61sol",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+        "title": "GPT-6.1 Sol：能力接近 Astra，任务账单仍要按设置比较"
+      },
+      {
+        "id": "dots",
+        "url": "https://openai.com/index/introducing-dots/",
+        "title": "dots：把持续研究、记忆和行动权限放进同一个助手"
+      },
+      {
+        "id": "devday-ecosystem",
+        "url": "https://openai.com/index/devday-2026-recap/",
+        "title": "DevDay开发者更新：云端任务、电脑操作API与插件界面一起开放"
+      },
+      {
+        "id": "quine",
+        "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+        "title": "Quine：让生物模型的假设回到实验台接受检验"
+      },
+      {
+        "id": "manus2",
+        "url": "https://manus.im/blog/introducing-manus-2-0",
+        "title": "Manus 2.0：让自动生成与人工精修留在同一项目里"
+      },
+      {
+        "id": "meta-muse-small-business",
+        "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/",
+        "title": "Muse for Small Business：把经营工具接进个人业务助手"
+      },
+      {
+        "id": "holo4",
+        "url": "https://hcompany.ai/newsroom/holo4",
+        "title": "Holo4：开源电脑操作模型，把训练任务的验证门槛公开出来"
+      },
+      {
+        "id": "kumo-tabular",
+        "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+        "title": "Kumo-Tabular：把有标签表格当作上下文做预测"
+      },
+      {
+        "id": "iquest-q1",
+        "url": "https://huggingface.co/IQuestLab/IQuest-Q1",
+        "title": "IQuest-Q1：320B总参数的开放权重编码模型"
+      },
+      {
+        "id": "openpangu-training",
+        "url": "https://www.huawei.com/cn/news/2026/9/open-pangu",
+        "title": "华为开源盘古训练代码：重点是预训练、微调与强化学习工程"
+      },
+      {
+        "id": "longcat25",
+        "url": "https://longcat.chat/platform/docs/zh/ChangeLog.html",
+        "title": "LongCat-2.5-Preview：API加入图片理解与编码工作流适配"
+      },
+      {
+        "id": "fabric-iq-ga",
+        "url": "https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/",
+        "title": "Fabric IQ进入Copilot：让业务问答共用既有指标口径"
+      },
+      {
+        "id": "aisi-astra-sim",
+        "url": "https://www.aisi.gov.uk/blog/gpt-6-astra-performs-unsanctioned-supply-chain-attacks-in-simulations",
+        "title": "AISI评估：模拟环境中的越界行为，需要保留测试条件"
+      },
+      {
+        "id": "openai-safety-cases",
+        "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/",
+        "title": "OpenAI提出训练安全论证：评估、隔离和监控要形成可追溯证据"
+      },
+      {
+        "id": "calypso-agents",
+        "url": "https://press.aboutamazon.com/aws/2026/9/nasdaq-calypso-launches-framework-to-scale-ai-adoption-across-the-trade-lifecycle",
+        "title": "Nasdaq Calypso：把Agent放进已有交易运营系统的治理边界"
+      }
+    ],
+    "models": [
+      {
+        "id": "visionhope",
+        "url": "https://huggingface.co/PSRben/VisionHOPE"
+      },
+      {
+        "id": "irodori4large",
+        "url": "https://huggingface.co/Aratako/Irodori-TTS-v4-Large"
+      },
+      {
+        "id": "taigas1",
+        "url": "https://huggingface.co/shhivv/taiga-s1"
+      },
+      {
+        "id": "mica01",
+        "url": "https://huggingface.co/sky7350/Mica-v0.1-4B"
+      },
+      {
+        "id": "qwen21-consistency",
+        "url": "https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA"
+      },
+      {
+        "id": "jevomni",
+        "url": "https://huggingface.co/akhilaaa3/Jev-Omni"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.29233",
+        "url": "https://arxiv.org/abs/2609.29233v1"
+      },
+      {
+        "id": "paper-2609.32577",
+        "url": "https://arxiv.org/abs/2609.32577v1"
+      },
+      {
+        "id": "paper-2609.32704",
+        "url": "https://arxiv.org/abs/2609.32704v1"
+      },
+      {
+        "id": "paper-2609.31948",
+        "url": "https://arxiv.org/abs/2609.31948v1"
+      },
+      {
+        "id": "paper-2609.33295",
+        "url": "https://arxiv.org/abs/2609.33295v1"
+      },
+      {
+        "id": "paper-2609.35748",
+        "url": "https://arxiv.org/abs/2609.35748v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "firelex/jeff",
+        "url": "https://github.com/firelex/jeff"
+      },
+      {
+        "id": "kkkkhazix/aihot",
+        "url": "https://github.com/KKKKhazix/AIHOT"
+      },
+      {
+        "id": "vectorize-io/hindsight",
+        "url": "https://github.com/vectorize-io/hindsight"
+      },
+      {
+        "id": "mvschwarz/openrig",
+        "url": "https://github.com/mvschwarz/openrig"
+      },
+      {
+        "id": "t8y2/dbx",
+        "url": "https://github.com/t8y2/dbx"
+      },
+      {
+        "id": "oblien/openship",
+        "url": "https://github.com/oblien/openship"
+      },
+      {
+        "id": "frostyard/nsl",
+        "url": "https://github.com/frostyard/nsl"
+      },
+      {
+        "id": "ahmd-sh/hntui",
+        "url": "https://github.com/ahmd-sh/hntui"
+      },
+      {
+        "id": "852wa/jizura",
+        "url": "https://github.com/852wa/JIZURA"
+      },
+      {
+        "id": "tobi/disktree",
+        "url": "https://github.com/tobi/disktree"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "news": [
+      {
+        "id": "gemini4-argon",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+        "title": "Gemini 4 Argon：长输出和复杂任务能力先进入受控开放"
+      },
+      {
+        "id": "deepseek-ascend-toolkit",
+        "url": "https://github.com/deepseek-ai/DeepGEMM-Ascend",
+        "title": "DeepSeek公开昇腾算子与MoE通信实现：先看软件栈是否齐备"
+      },
+      {
+        "id": "gpt-synopsys",
+        "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design",
+        "title": "GPT-Synopsys：把芯片设计工具纳入可反复验证的协作"
+      },
+      {
+        "id": "gemini-skills",
+        "url": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/",
+        "title": "Gemini Skills：把反复使用的工作方式保存成可组合指令"
+      },
+      {
+        "id": "synthid-bio",
+        "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+        "title": "SynthID Bio：让AI设计的蛋白质带上可检测的来源标记"
+      },
+      {
+        "id": "anthropic-glm53-cyber-eval",
+        "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+        "title": "GLM-5.3的新安全评估：相近成绩背后仍有测试条件"
+      },
+      {
+        "id": "openai-distillation-report",
+        "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+        "title": "OpenAI披露针对受保护推理的协同提取活动"
+      },
+      {
+        "id": "coreweave-forge-rubin",
+        "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
+        "title": "CoreWeave把Rubin早期访问与Agent开发平台接起来"
+      },
+      {
+        "id": "kimi-work-3215",
+        "url": "https://www.kimi.com/help/kimi-work/release-notes",
+        "title": "Kimi Work 3.2.15：文档可以与Agent一起改"
+      },
+      {
+        "id": "mongodb-agent-engine",
+        "url": "https://www.mongodb.com/company/newsroom/press-releases/mongodb-launches-atlas-agent-engine-to-put-ai-agents-in-production-without-a-new-stack",
+        "title": "MongoDB Atlas Agent Engine进入公开预览"
+      },
+      {
+        "id": "hf-open-tts-board",
+        "url": "https://huggingface.co/blog/open-tts-leaderboard",
+        "title": "Open TTS Leaderboard：先区分音质、识别错误与等待时间"
+      },
+      {
+        "id": "airbnb-fall-ai-search",
+        "url": "https://news.airbnb.com/airbnb-2026-fall-update",
+        "title": "Airbnb秋季更新把自然语言搜索带入房源比较"
+      },
+      {
+        "id": "doordash-mcp-ordering",
+        "url": "https://about.doordash.com/en-us/news/doordash-ordering-connector",
+        "title": "DoorDash试行企业用餐的MCP连接"
+      },
+      {
+        "id": "anthropic-robot-work-study",
+        "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+        "title": "机器人能做多少工作：能力与经济性差距很大"
+      },
+      {
+        "id": "openai-sbdc",
+        "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+        "title": "OpenAI与美国小企业顾问合作开展AI实践培训"
+      }
+    ],
+    "models": [
+      {
+        "id": "phonon2",
+        "url": "https://huggingface.co/FermionResearch/Phonon-2"
+      },
+      {
+        "id": "indextranslate9b",
+        "url": "https://huggingface.co/IndexTeam/Index-Translate-9B"
+      },
+      {
+        "id": "arex2",
+        "url": "https://huggingface.co/BAAI/AREX-2"
+      },
+      {
+        "id": "schiftocr",
+        "url": "https://huggingface.co/schift-io/schift-ocr-1-beta"
+      },
+      {
+        "id": "pplxcontextv2",
+        "url": "https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b-preview"
+      },
+      {
+        "id": "unimatev2",
+        "url": "https://huggingface.co/Linzhan/UniMate"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.36322",
+        "url": "https://arxiv.org/abs/2609.36322v1"
+      },
+      {
+        "id": "paper-2609.36601",
+        "url": "https://arxiv.org/abs/2609.36601v1"
+      },
+      {
+        "id": "paper-2609.37226",
+        "url": "https://arxiv.org/abs/2609.37226v1"
+      },
+      {
+        "id": "paper-2609.37686",
+        "url": "https://arxiv.org/abs/2609.37686v1"
+      },
+      {
+        "id": "paper-2609.38008",
+        "url": "https://arxiv.org/abs/2609.38008v1"
+      },
+      {
+        "id": "paper-2609.37725",
+        "url": "https://arxiv.org/abs/2609.37725v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "turantekin/parrot",
+        "url": "https://github.com/turantekin/Parrot"
+      },
+      {
+        "id": "ledgesh/ledge",
+        "url": "https://github.com/ledgesh/ledge"
+      },
+      {
+        "id": "archestra-ai/openappa",
+        "url": "https://github.com/archestra-ai/OpenAPPA"
+      },
+      {
+        "id": "cardinal44/corral",
+        "url": "https://github.com/Cardinal44/corral"
+      },
+      {
+        "id": "louis-cfm/coucou",
+        "url": "https://github.com/Louis-CFM/coucou"
+      },
+      {
+        "id": "opsafari/hypoarena",
+        "url": "https://github.com/OpSafari/hypoarena"
+      },
+      {
+        "id": "lostmsu/turbogpt",
+        "url": "https://github.com/lostmsu/TurboGPT"
+      },
+      {
+        "id": "stormj-uh/spivak-lean",
+        "url": "https://github.com/stormj-UH/spivak-lean"
+      },
+      {
+        "id": "solancer/sarala",
+        "url": "https://github.com/solancer/sarala"
+      },
+      {
+        "id": "edenfunf/reelmimic",
+        "url": "https://github.com/edenfunf/reelmimic"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "news": [
+      {
+        "id": "mai-streaming",
+        "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+        "title": "MAI语音更新：边听边出字，还要知道哪部分可以定稿"
+      },
+      {
+        "id": "ideogram-45",
+        "url": "https://ideogram.ai/models/4.5/",
+        "title": "Ideogram 4.5：多轮改图时，保住没有要求修改的部分"
+      },
+      {
+        "id": "cloudflare-clef",
+        "url": "https://blog.cloudflare.com/clef-decision-models/",
+        "title": "Cloudflare Clef：给固定选项打分，减少生成长答案的开销"
+      },
+      {
+        "id": "tavus-griffin",
+        "url": "https://www.tavus.io/griffin",
+        "title": "Tavus Griffin：把“什么时候接话”纳入实时多模态模型"
+      },
+      {
+        "id": "shopify-canvas",
+        "url": "https://www.shopify.com/news/introducing-canvas",
+        "title": "Shopify Canvas：在多个真实页面之间编辑整家店铺"
+      },
+      {
+        "id": "gemini-guided-vision",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/",
+        "title": "Gemini Live Guided Vision：持续描述镜头里的变化"
+      },
+      {
+        "id": "barclays-claude",
+        "url": "https://www.anthropic.com/news/barclays-scales-claude",
+        "title": "Barclays扩大Claude使用：已用规模与推广计划分开看"
+      },
+      {
+        "id": "claude-gov-ga",
+        "url": "https://claude.com/blog/claude-for-government-is-now-generally-available",
+        "title": "Claude for Government正式可用：合规环境也要看功能阶段"
+      },
+      {
+        "id": "fastino-glide",
+        "url": "https://www.prnewswire.com/news-releases/fastino-labs-releases-glide-the-first-thinking-decision-model-leading-the-decision-indexs-top-model-by-6-9-points-302896638.html",
+        "title": "Fastino GLiDE：让有限选项决策也能按需思考"
+      },
+      {
+        "id": "nvidia-cuobject",
+        "url": "https://developer.nvidia.com/blog/expanding-ai-storage-access-with-nvidia-cuobject-and-the-nvidia-scada-server-sdk/",
+        "title": "NVIDIA cuObject：对象存储的数据通路改走RDMA"
+      },
+      {
+        "id": "pi-1-durable",
+        "url": "https://earendil.com/posts/pi-1-0/",
+        "title": "Pi 1.0与Durable：工具接入成熟，持久执行仍是实验方向"
+      },
+      {
+        "id": "glow-pixel-leak",
+        "url": "https://www.glow.io/blogs/how-ai-agents-exposed-developer-screenshots-from-leading-tech-companies",
+        "title": "Glow披露截图泄漏：临时调试图也可能进入公开仓库"
+      },
+      {
+        "id": "turbopuffer-v3",
+        "url": "https://turbopuffer.com/blog/rip-vector-database",
+        "title": "turbopuffer调整存储布局：向量索引不再决定一切"
+      },
+      {
+        "id": "safeway-chatgpt",
+        "url": "https://openai.com/index/albertsons-reimagining-retail",
+        "title": "Safeway接入ChatGPT：从菜谱组织购物车，再去商家结账"
+      },
+      {
+        "id": "den-workflow",
+        "url": "https://openai.com/index/the-den-family-social",
+        "title": "The Den案例：把找文件、补缺件与格式转换连起来"
+      }
+    ],
+    "models": [
+      {
+        "id": "model-strandsagents/strands-decider-2b-hobson-v19",
+        "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19"
+      },
+      {
+        "id": "model-perplexity-ai/pplx-decider-v1-27b",
+        "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b"
+      },
+      {
+        "id": "model-eulogik/nirnay-450m",
+        "url": "https://huggingface.co/eulogik/nirnay-450m"
+      },
+      {
+        "id": "model-nlpai-lab/renderrank-2b",
+        "url": "https://huggingface.co/nlpai-lab/RenderRank-2B"
+      },
+      {
+        "id": "model-uniparser/molparser-mobile-v2",
+        "url": "https://huggingface.co/UniParser/MolParser-Mobile-V2"
+      },
+      {
+        "id": "model-supralabs/supratts-0.1-beta",
+        "url": "https://huggingface.co/SupraLabs/SupraTTS-0.1-Beta"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2609.39102",
+        "url": "https://arxiv.org/abs/2609.39102v1"
+      },
+      {
+        "id": "paper-2609.38827",
+        "url": "https://arxiv.org/abs/2609.38827v1"
+      },
+      {
+        "id": "paper-2609.39982",
+        "url": "https://arxiv.org/abs/2609.39982v1"
+      },
+      {
+        "id": "paper-2609.34563",
+        "url": "https://arxiv.org/abs/2609.34563v1"
+      },
+      {
+        "id": "paper-2609.38721",
+        "url": "https://arxiv.org/abs/2609.38721v1"
+      },
+      {
+        "id": "paper-2609.39903",
+        "url": "https://arxiv.org/abs/2609.39903v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "edwardxlai/easyread",
+        "url": "https://github.com/Edwardxlai/easyread"
+      },
+      {
+        "id": "magnitudedev/magnitude",
+        "url": "https://github.com/magnitudedev/magnitude"
+      },
+      {
+        "id": "vibra-ingenn/janus",
+        "url": "https://github.com/Vibra-Ingenn/Janus"
+      },
+      {
+        "id": "tantrixauto/yantra",
+        "url": "https://github.com/TantrixAuto/yantra"
+      },
+      {
+        "id": "agentsystemlabs/agent-office",
+        "url": "https://github.com/AgentSystemLabs/agent-office"
+      },
+      {
+        "id": "ng-native/ng-native",
+        "url": "https://github.com/ng-native/ng-native"
+      },
+      {
+        "id": "rehan-remade/universal-modder",
+        "url": "https://github.com/rehan-remade/universal-modder"
+      },
+      {
+        "id": "kaankiziltug/logo-design-skill",
+        "url": "https://github.com/kaankiziltug/logo-design-skill"
+      },
+      {
+        "id": "maanhimself/opendlss-nr",
+        "url": "https://github.com/maanHimself/OpenDLSS-NR"
+      },
+      {
+        "id": "sshah03/perspica",
+        "url": "https://github.com/sshah03/perspica"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "news": [
+      {
+        "id": "claude-mods",
+        "url": "https://claude.com/blog/claude-code-mods",
+        "title": "Claude Code Mods：工具调用与界面都能通过插件改写"
+      },
+      {
+        "id": "flux3-image",
+        "url": "https://docs.bfl.ai/release-notes",
+        "title": "FLUX 3 Image：用同一个接口生成、改图和组合参考"
+      },
+      {
+        "id": "spark64",
+        "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+        "title": "DGX Spark 新增 64GB 版，双机配置也有了向导"
+      },
+      {
+        "id": "olmo-core3",
+        "url": "https://allenai.org/blog/olmocore3",
+        "title": "Olmo-core 3：让 MoE 扩大专家池时少搬权重"
+      },
+      {
+        "id": "elyza-rsi",
+        "url": "https://elyza.ai/news/2026/10/02/rsiresearch",
+        "title": "ELYZA 建立 RSI Research，先公开研究自动化的具体环节"
+      },
+      {
+        "id": "suno-speech",
+        "url": "https://suno.com/blog/introducing-speech-beta",
+        "title": "Suno Speech 测试版：让朗读与音乐一起生成"
+      },
+      {
+        "id": "frontier-academy",
+        "url": "https://www.anthropic.com/news/claude-frontier-academy",
+        "title": "Claude Frontier Academy：从培训到真实项目考核"
+      },
+      {
+        "id": "apple-fda",
+        "url": "https://developer.apple.com/news/?id=p6zjojqw",
+        "title": "Apple 计划收紧 Full Disk Access 的交互授权"
+      },
+      {
+        "id": "microsoft-defense",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
+        "title": "微软年度防御报告：代理的身份、记忆和工具都要纳入检查"
+      },
+      {
+        "id": "suncatcher-prototype",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/",
+        "title": "Project Suncatcher 原型入轨，先测试太空计算条件"
+      },
+      {
+        "id": "chatham-codex",
+        "url": "https://openai.com/index/chatham-financial/",
+        "title": "Chatham 用 Codex 辅助交易核验，保留人工检查"
+      },
+      {
+        "id": "claude-shaped-science",
+        "url": "https://www.anthropic.com/research/claude-shaped-science",
+        "title": "BootLoops 案例：把模型探索与领域专家核查连起来"
+      },
+      {
+        "id": "ling-gateway",
+        "url": "https://vercel.com/changelog/ling-3-1-flash-is-now-available-on-ai-gateway",
+        "title": "Ling-3.1-Flash 接入 Vercel AI Gateway，免费与付费路径分开"
+      },
+      {
+        "id": "stitch-cli",
+        "url": "https://www.npmjs.com/package/@google/stitch",
+        "title": "Stitch CLI：把设计生成与画布导入接到终端"
+      },
+      {
+        "id": "ramp-weekly",
+        "url": "https://ramp.com/data/ai-index",
+        "title": "Ramp 最新完整周样本：模型支出集中度要连同分母一起读"
+      }
+    ],
+    "models": [
+      {
+        "id": "nvidia-PixelUMM",
+        "url": "https://huggingface.co/nvidia/PixelUMM"
+      },
+      {
+        "id": "ZhengmingYu-DMAD",
+        "url": "https://huggingface.co/ZhengmingYu/DMAD"
+      },
+      {
+        "id": "ai-forever-FRIDA-Decisions",
+        "url": "https://huggingface.co/ai-forever/FRIDA-Decisions"
+      },
+      {
+        "id": "AcademiaSD-TAE-Qwen-Image-2.1",
+        "url": "https://huggingface.co/AcademiaSD/TAE-Qwen-Image-2.1"
+      },
+      {
+        "id": "techdotus-Tokle-SPAB-3M",
+        "url": "https://huggingface.co/techdotus/Tokle-SPAB-3M"
+      },
+      {
+        "id": "cantina-security-apex-flash-1",
+        "url": "https://huggingface.co/cantina-security/apex-flash-1"
+      }
+    ],
+    "papers": [
+      {
+        "id": "paper-2610.01762",
+        "url": "https://arxiv.org/abs/2610.01762v1"
+      },
+      {
+        "id": "paper-2610.01415",
+        "url": "https://arxiv.org/abs/2610.01415v1"
+      },
+      {
+        "id": "paper-2610.02193",
+        "url": "https://arxiv.org/abs/2610.02193v1"
+      },
+      {
+        "id": "paper-2610.01509",
+        "url": "https://arxiv.org/abs/2610.01509v1"
+      },
+      {
+        "id": "paper-2610.01108",
+        "url": "https://arxiv.org/abs/2610.01108v1"
+      },
+      {
+        "id": "paper-2610.02202",
+        "url": "https://arxiv.org/abs/2610.02202v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "kvoltmer--audionaut",
+        "url": "https://github.com/kvoltmer/Audionaut"
+      },
+      {
+        "id": "anteloc--ldraw-nova",
+        "url": "https://github.com/anteloc/ldraw-nova"
+      },
+      {
+        "id": "cortexapps--engrams",
+        "url": "https://github.com/cortexapps/engrams"
+      },
+      {
+        "id": "wileai--pi-codex-connectors",
+        "url": "https://github.com/wileai/pi-codex-connectors"
+      },
+      {
+        "id": "pch--rawmakase",
+        "url": "https://github.com/pch/rawmakase"
+      },
+      {
+        "id": "ivankovic--codediff",
+        "url": "https://github.com/ivankovic/omnidiff"
+      },
+      {
+        "id": "ciromattia--kcc",
+        "url": "https://github.com/ciromattia/kcc"
+      },
+      {
+        "id": "seamusc--papermono-shopping-list",
+        "url": "https://github.com/seamusc/papermono-shopping-list"
+      },
+      {
+        "id": "aliceisjustplaying--claude-paint",
+        "url": "https://github.com/aliceisjustplaying/claude-paint"
+      },
+      {
+        "id": "vshvedov--rhun",
+        "url": "https://github.com/vshvedov/rhun"
+      }
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "news": [
+      {
+        "id": "kolibri-1",
+        "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
+        "title": "Kolibri 开放英德双语权重：活跃参数少，显存仍要装下全模型"
+      },
+      {
+        "id": "muse-gadgets",
+        "url": "https://gadgets.muse.ai/",
+        "title": "Muse Gadgets 开放设备 SDK，把手机代理接到树莓派和 ESP32"
+      },
+      {
+        "id": "astabrief",
+        "url": "https://huggingface.co/blog/allenai/astabrief",
+        "title": "AstaBrief 用 8B 模型压缩科研报告等待时间，复杂综述仍有取舍"
+      },
+      {
+        "id": "copilot-dynamic-workflows",
+        "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+        "title": "Copilot 动态工作流让代码负责顺序、并行与暂停点"
+      },
+      {
+        "id": "confidential-federated-learning",
+        "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+        "title": "Google 解释机密联邦学习：加密上传后，谁能拿到解密钥匙"
+      },
+      {
+        "id": "copilot-computer-use",
+        "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
+        "title": "Copilot CLI 与 app 增加桌面应用操作预览"
+      },
+      {
+        "id": "llamacpp-decisions",
+        "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp",
+        "title": "llama.cpp 增加决策接口，一次前向回答多个类型化问题"
+      },
+      {
+        "id": "autosynthdata",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+        "title": "AutoSynthData 从失败能力出发，生成带验证器的训练任务"
+      },
+      {
+        "id": "copilot-review-api",
+        "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+        "title": "Copilot 代码审查开放 API 控制每次审查投入"
+      },
+      {
+        "id": "copilot-model-retirements",
+        "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+        "title": "Copilot 下线部分旧模型，自动化配置需要检查替代项"
+      },
+      {
+        "id": "chatgpt-tryon-favorites",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "title": "ChatGPT 增加虚拟试穿和商品收藏"
+      },
+      {
+        "id": "chatgpt-finances-free-go",
+        "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt",
+        "title": "ChatGPT Finances 扩至美国 Free 与 Go 用户"
+      },
+      {
+        "id": "google-flusight-season",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/google-science-ai-flu-forecasts/",
+        "title": "Google 公布新流感季预测评估，重点是完整赛季而非一次命中"
+      },
+      {
+        "id": "discovery-phage-workflow",
+        "url": "https://techcommunity.microsoft.com/blog/microsoft-discovery-blog/developing-bioinformatics-workflows-for-phage-therapy-with-inspectable-agents/4560876",
+        "title": "Microsoft Discovery 展示可检查的噬菌体研究流程"
+      },
+      {
+        "id": "qwen-image21-intl-api",
+        "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+        "title": "Qwen-Image-2.1-Pro 出现在国际 Model Studio 新模型记录"
+      }
+    ],
+    "models": [
+      {
+        "id": "Cactus-Compute/whistle",
+        "url": "https://huggingface.co/Cactus-Compute/whistle"
+      },
+      {
+        "id": "bytkim/Qwen3.8-27B-pi",
+        "url": "https://huggingface.co/bytkim/Qwen3.8-27B-pi"
+      },
+      {
+        "id": "vllm-sr/Decision-2.0-Kai-0.6B",
+        "url": "https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B"
+      },
+      {
+        "id": "speach1sdef178/MiniMax-H3-X2-Detail-VAE",
+        "url": "https://huggingface.co/speach1sdef178/MiniMax-H3-X2-Detail-VAE"
+      },
+      {
+        "id": "SeerRay-Lab/Xiaomi-OCR-0",
+        "url": "https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0"
+      },
+      {
+        "id": "MaziyarPanahi/ModernJEV-Decide-Preview",
+        "url": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview"
+      }
+    ],
+    "papers": [
+      {
+        "id": "2609.35259",
+        "url": "https://arxiv.org/abs/2609.35259v1"
+      },
+      {
+        "id": "2609.38923",
+        "url": "https://arxiv.org/abs/2609.38923v1"
+      },
+      {
+        "id": "2609.37533",
+        "url": "https://arxiv.org/abs/2609.37533v1"
+      },
+      {
+        "id": "2610.00906",
+        "url": "https://arxiv.org/abs/2610.00906v1"
+      },
+      {
+        "id": "2610.02148",
+        "url": "https://arxiv.org/abs/2610.02148v1"
+      },
+      {
+        "id": "2610.02205",
+        "url": "https://arxiv.org/abs/2610.02205v1"
+      }
+    ],
+    "projects": [
+      {
+        "id": "pi-pod/pipod",
+        "url": "https://github.com/pi-pod/pipod"
+      },
+      {
+        "id": "tomerglick57/jevstiller",
+        "url": "https://github.com/tomerglick57/Jevstiller"
+      },
+      {
+        "id": "capcom-td-oss/redox",
+        "url": "https://github.com/CAPCOM-TD-OSS/REDox"
+      },
+      {
+        "id": "copilotkit/opendots",
+        "url": "https://github.com/CopilotKit/OpenDots"
+      },
+      {
+        "id": "wy51ai/floorplan-3d",
+        "url": "https://github.com/wy51ai/floorplan-3d"
+      },
+      {
+        "id": "glanderness/beeftv",
+        "url": "https://github.com/glanderness/BeefTV"
+      },
+      {
+        "id": "nykooi1/vibe-wise",
+        "url": "https://github.com/nykooi1/vibe-wise"
+      },
+      {
+        "id": "evermind-ai/raven",
+        "url": "https://github.com/EverMind-AI/Raven"
+      },
+      {
+        "id": "enkiruntime/enki",
+        "url": "https://github.com/enkiruntime/enki"
+      },
+      {
+        "id": "cartopolis",
+        "url": "https://code.garage44.eu/jeroen/cartopolis"
+      }
+    ]
+  }
+]
