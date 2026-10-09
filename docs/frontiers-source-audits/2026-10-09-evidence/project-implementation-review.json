@@ -1,0 +1,192 @@
+[
+  {
+    "id": "nanomuse",
+    "license": "GPL-3.0-or-later",
+    "licenseUrl": "https://github.com/nano-muse/nanoMuse/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-08T19:45:10Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-09-23T06:13:06Z"
+    },
+    "versionStatus": "把同一会话接到不同设备及其本地执行能力，v1.0.0 Keel 于10月8日16:38 UTC发布（北京时间9日）",
+    "implementationEvidence": {
+      "path": "android/src/android/app/src/main/java/io/github/nanomuse/guard/RiskApprovalNotifier.kt",
+      "commit": "28edfc29002c0fa8f039a195275563267e19e46f",
+      "sourceUrl": "https://github.com/nano-muse/nanoMuse/blob/28edfc29002c0fa8f039a195275563267e19e46f/android/src/android/app/src/main/java/io/github/nanomuse/guard/RiskApprovalNotifier.kt",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-nanomuse.txt",
+      "sha256": "1bbceb36707571c037cb3335c9906b41a49ec8c6894a7cbf3ce2124a1903588d",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "rembrandt",
+    "license": "GPL-3.0",
+    "licenseUrl": "https://github.com/thesnarkitecht/rembrandt/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-08T23:18:58Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-09-29T18:25:04Z"
+    },
+    "versionStatus": "9月29日建立的近期图像编辑应用，公开RAW、局部蒙版与实际编辑界面，近期补充",
+    "implementationEvidence": {
+      "path": "engine/src/pipeline.js",
+      "commit": "409bedf35b15bd79095a9942456017ec753aff84",
+      "sourceUrl": "https://github.com/thesnarkitecht/rembrandt/blob/409bedf35b15bd79095a9942456017ec753aff84/engine/src/pipeline.js",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-rembrandt.txt",
+      "sha256": "b5d7ebf31a0447a94d532b3fc476f38f9dda1509cf38365848ce5bea95f71451",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "rgpu",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/ymcrcat/rgpu/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-08T16:44:30Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-09-11T01:46:43Z"
+    },
+    "versionStatus": "9月11日新仓库，10月7日Show HN公开演示；按30天近期补充，不把讨论日当首发",
+    "implementationEvidence": {
+      "path": "server/main.cpp",
+      "commit": "a1d63cacd9374bb183dff407452b91f3fc681581",
+      "sourceUrl": "https://github.com/ymcrcat/rgpu/blob/a1d63cacd9374bb183dff407452b91f3fc681581/server/main.cpp",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-ymcrcat--rgpu.txt",
+      "sha256": "f84cb16f41922ad70bf85b35792d32602058f5373dbded2be5254b697bdd6f10",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "durable",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/TerseAI/durable-actors/blob/main/LICENSE.md",
+    "maintenance": {
+      "lastPushedAt": "2026-10-09T01:34:03Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-08-30T14:37:15Z"
+    },
+    "versionStatus": "旧仓库8月30日；10月3日17:36 UTC的v0.7.10将WebSocket连接保留在网关，空闲沙箱关闭、消息再唤醒；v0.7.12新增SQLite WAL恢复",
+    "implementationEvidence": {
+      "path": "examples/ai-chat/src/actors.ts",
+      "commit": "924e5cd1ed87607e3e04e5eb29e20d335e733670",
+      "sourceUrl": "https://github.com/TerseAI/durable-actors/blob/924e5cd1ed87607e3e04e5eb29e20d335e733670/examples/ai-chat/src/actors.ts",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-durable.txt",
+      "sha256": "eeeb0c734509c3d2135530cfa2edac0ed1c5808a1d9421fda42d11283c064502",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "k10s",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/p10node/k10s/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-08T17:59:52Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-08-26T04:37:57Z"
+    },
+    "versionStatus": "旧仓库8月26日；10月8日18:04 UTC的v0.1.7新增UI和HTTP transport双层只读模式",
+    "implementationEvidence": {
+      "path": "internal/k8s/readonly.go",
+      "commit": "227fed8d5381e11e6baa283db7d4c6d3bb5bfa2c",
+      "sourceUrl": "https://github.com/p10node/k10s/blob/227fed8d5381e11e6baa283db7d4c6d3bb5bfa2c/internal/k8s/readonly.go",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-k10s.txt",
+      "sha256": "a168875b1bb3f80607e194402741bea195e20935d89e81e7fbbf218aa38432e2",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "sherpa",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/SALT-NLP/Sherpa/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-07T02:16:46Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-09-30T06:23:55Z"
+    },
+    "versionStatus": "9月30日公开仓库及10月新论文，公开师生交互与奖励计算训练实现",
+    "implementationEvidence": {
+      "path": "examples/sherpa/core/callers.py",
+      "commit": "23e2a47c2c84fe59a087258a29d931b801a72fd5",
+      "sourceUrl": "https://github.com/SALT-NLP/Sherpa/blob/23e2a47c2c84fe59a087258a29d931b801a72fd5/examples/sherpa/core/callers.py",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-sherpa.txt",
+      "sha256": "6c893d04d3507ef62bc460cfd301e896b03dd030bb3c3d430a9e51e4b69befbc",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "rgc",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/IMBALDY/RecursiveGameCreator/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-08T00:57:42Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-10-07T18:04:25Z"
+    },
+    "versionStatus": "10月7日18:04 UTC建立公开实现，设计、构建、试玩、评审四角色循环",
+    "implementationEvidence": {
+      "path": "src/game_agent_lite/agent.py",
+      "commit": "8284caeac655e8c6c08354a759b97b1599d426fd",
+      "sourceUrl": "https://github.com/IMBALDY/RecursiveGameCreator/blob/8284caeac655e8c6c08354a759b97b1599d426fd/src/game_agent_lite/agent.py",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-rgc.txt",
+      "sha256": "04c899f62df874d32f8059dd78e899df52e2b354be06d825a62da6b4b8ecac3a",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "webfovea",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/jianganghan/WebFovea/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-07T13:27:08Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-10-07T13:19:58Z"
+    },
+    "versionStatus": "10月7日公开浏览器控制实现；比赛结果属于8月29日至9月2日，不能视作10月新实验",
+    "implementationEvidence": {
+      "path": "src/agent/web_controller.py",
+      "commit": "4b75e10722e2f9c1c662f16dbb8319fe2a33188f",
+      "sourceUrl": "https://github.com/jianganghan/WebFovea/blob/4b75e10722e2f9c1c662f16dbb8319fe2a33188f/src/agent/web_controller.py",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-jianganghan--WebFovea.txt",
+      "sha256": "e2a9064cf850e7d819d105f02832332f7a52ff22f201ed8596c13c275110a112",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "cadfather",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/kulibinai/cadfather/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-08T14:30:31Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-10-06T09:44:49Z"
+    },
+    "versionStatus": "10月6日公开反向CAD代理与几何执行实现，10月7日配套论文",
+    "implementationEvidence": {
+      "path": "agent/cad_agent/capabilities/execute.py",
+      "commit": "2ca0891e66b5c2c9c2f10243e84c874550d34514",
+      "sourceUrl": "https://github.com/kulibinai/cadfather/blob/2ca0891e66b5c2c9c2f10243e84c874550d34514/agent/cad_agent/capabilities/execute.py",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-kulibinai--cadfather.txt",
+      "sha256": "fe4e29cc09d986da122dfcd1f6c4fff4fced2d0fe5012ab7db878191c3be250f",
+      "verification": "静态读取，未执行项目"
+    }
+  },
+  {
+    "id": "photoc",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/ahmetomerv/photoc/blob/main/LICENSE",
+    "maintenance": {
+      "lastPushedAt": "2026-10-06T20:16:01Z",
+      "defaultBranch": "main",
+      "repositoryCreatedAt": "2026-09-27T16:56:46Z"
+    },
+    "versionStatus": "9月27日新仓库；10月6日19:28 UTC的v0.6.0新增交互式JPEG审片与原子保存选择状态",
+    "implementationEvidence": {
+      "path": "src/commands/rename.c",
+      "commit": "5b28cd4e210868de2644bdb29580fdfe751ccf10",
+      "sourceUrl": "https://github.com/ahmetomerv/photoc/blob/5b28cd4e210868de2644bdb29580fdfe751ccf10/src/commands/rename.c",
+      "localResearchPath": ".frontiers/sources/2026-10-09/impl-ahmetomerv--photoc.txt",
+      "sha256": "7e3105cc3f198eefb0d6598392eb4f82b549cc4f4add8174b50a15ae53037f1e",
+      "verification": "静态读取，未执行项目"
+    }
+  }
+]

@@ -1,0 +1,185 @@
+{
+  "experiment": "synthetic selective prediction; not a model benchmark",
+  "seed": 42,
+  "samples": 5000,
+  "python": "3.14.3",
+  "generation": "p ~ Uniform(0.5, 0.99); correctness ~ Bernoulli(p); same labels and predictions for both score versions",
+  "remapping": "overconfident score = sqrt(p); monotonic; no training or calibration is fitted",
+  "overall_accuracy": 0.74,
+  "scores": {
+    "original": {
+      "ece": 0.008551766254100781,
+      "bins": [
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 1009,
+          "mean_score": 0.5509967854516327,
+          "accuracy": 0.5490584737363726
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.7,
+          "count": 1017,
+          "mean_score": 0.6495223918915715,
+          "accuracy": 0.6578171091445427
+        },
+        {
+          "lo": 0.7,
+          "hi": 0.8,
+          "count": 1023,
+          "mean_score": 0.7502335632075223,
+          "accuracy": 0.7272727272727273
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 1059,
+          "mean_score": 0.8489627854028252,
+          "accuracy": 0.8470254957507082
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 892,
+          "mean_score": 0.9448731192832371,
+          "accuracy": 0.9372197309417041
+        }
+      ],
+      "thresholds": [
+        {
+          "threshold": 0.5,
+          "accepted": 5000,
+          "wrong": 1300,
+          "coverage": 1.0,
+          "risk": 0.26
+        },
+        {
+          "threshold": 0.7,
+          "accepted": 2974,
+          "wrong": 497,
+          "coverage": 0.5948,
+          "risk": 0.16711499663752521
+        },
+        {
+          "threshold": 0.8,
+          "accepted": 1951,
+          "wrong": 218,
+          "coverage": 0.3902,
+          "risk": 0.11173757047667862
+        },
+        {
+          "threshold": 0.9,
+          "accepted": 892,
+          "wrong": 56,
+          "coverage": 0.1784,
+          "risk": 0.06278026905829596
+        },
+        {
+          "threshold": 0.95,
+          "accepted": 400,
+          "wrong": 11,
+          "coverage": 0.08,
+          "risk": 0.0275
+        },
+        {
+          "threshold": 1.0,
+          "accepted": 0,
+          "wrong": 0,
+          "coverage": 0.0,
+          "risk": null
+        }
+      ]
+    },
+    "overconfident": {
+      "ece": 0.1193347955487976,
+      "bins": [
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.7,
+          "count": 0,
+          "mean_score": null,
+          "accuracy": null
+        },
+        {
+          "lo": 0.7,
+          "hi": 0.8,
+          "count": 1415,
+          "mean_score": 0.7551750939192452,
+          "accuracy": 0.568904593639576
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 1740,
+          "mean_score": 0.8509196091161265,
+          "accuracy": 0.7137931034482758
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 1845,
+          "mean_score": 0.9471550677431956,
+          "accuracy": 0.8959349593495934
+        }
+      ],
+      "thresholds": [
+        {
+          "threshold": 0.5,
+          "accepted": 5000,
+          "wrong": 1300,
+          "coverage": 1.0,
+          "risk": 0.26
+        },
+        {
+          "threshold": 0.7,
+          "accepted": 5000,
+          "wrong": 1300,
+          "coverage": 1.0,
+          "risk": 0.26
+        },
+        {
+          "threshold": 0.8,
+          "accepted": 3585,
+          "wrong": 690,
+          "coverage": 0.717,
+          "risk": 0.19246861924686193
+        },
+        {
+          "threshold": 0.9,
+          "accepted": 1845,
+          "wrong": 192,
+          "coverage": 0.369,
+          "risk": 0.1040650406504065
+        },
+        {
+          "threshold": 0.95,
+          "accepted": 866,
+          "wrong": 54,
+          "coverage": 0.1732,
+          "risk": 0.06235565819861432
+        },
+        {
+          "threshold": 1.0,
+          "accepted": 0,
+          "wrong": 0,
+          "coverage": 0.0,
+          "risk": null
+        }
+      ]
+    }
+  },
+  "matched_coverage": {
+    "accepted": 892,
+    "same_sample_ids": true,
+    "wrong": 56,
+    "risk": 0.06278026905829596
+  }
+}

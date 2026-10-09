@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>合成实验：分数与正确率</title>
+<style>body{margin:0;background:#f5f1e8;color:#173530;font:20px system-ui,-apple-system,sans-serif}main{padding:45px 50px;width:1100px;box-sizing:border-box}h1{font-size:38px;margin:8px 0 12px}p{margin:8px 0;color:#42625a;line-height:1.55}.kicker{font-size:16px;letter-spacing:.12em}svg{display:block;margin-top:20px;background:#fffcf5;border-radius:16px}text{font-family:system-ui,-apple-system,sans-serif}.foot{font-size:17px;margin-top:18px}b{color:#173530}</style>
+<main><div class="kicker">前沿实验 · 2026-10-09 · 合成数据</div><h1>分数变自信，预测并没有变准</h1><p id="intro"></p><svg id="chart" viewBox="0 0 1000 555" width="1000" height="555" role="img" aria-label="合成实验的置信分数分箱与相同阈值下的接受比例、错误率"></svg><p class="foot">左图越接近虚线，分数与实际正确率越一致。右图固定分数阈值 0.9，<br>展示被接受样本中的错误率；它的分母是接受数，不是全部 5,000 个样本。</p><p class="foot">数据：本期 Python 标准库实测，种子 42。该示例未运行任何 AI 模型。</p></main>
+<script type="module">
+const d=await(await fetch('./results.json')).json();
+const svg=document.querySelector('svg');const ns='http://www.w3.org/2000/svg';
+function el(t,a={},v){let x=document.createElementNS(ns,t);for(const[k,b]of Object.entries(a))x.setAttribute(k,b);if(v!=null)x.textContent=v;svg.append(x);return x;}
+const pct=x=>(100*x).toFixed(1)+'%';
+document.querySelector('#intro').textContent=`相同的 ${d.samples.toLocaleString()} 个结果，总正确率均为 ${pct(d.overall_accuracy)}；只将分数 p 改成 √p。`;
+const X=x=>75+(x-.5)*720,Y=y=>475-(y-.5)*720;
+el('text',{x:45,y:40,'font-size':22,'font-weight':650},'① 分箱：平均分数 vs. 实际正确率');
+for(let t=.5;t<=1.001;t+=.1){el('line',{x1:75,y1:Y(t),x2:435,y2:Y(t),stroke:'#dce2db'});el('text',{x:60,y:Y(t)+6,'text-anchor':'end','font-size':15},Math.round(100*t)+'%');el('text',{x:X(t),y:501,'text-anchor':'middle','font-size':15},Math.round(100*t)+'%');}
+el('line',{x1:75,y1:475,x2:435,y2:115,stroke:'#899a90','stroke-dasharray':'6 7','stroke-width':2});
+el('text',{x:252,y:534,'text-anchor':'middle','font-size':18},'分箱平均分数');
+for(const [name,col]of [['original','#17766b'],['overconfident','#c6713d']]){let bins=d.scores[name].bins.filter(b=>b.count);el('polyline',{points:bins.map(b=>`${X(b.mean_score)},${Y(b.accuracy)}`).join(' '),fill:'none',stroke:col,'stroke-width':3});for(const b of bins)el('circle',{cx:X(b.mean_score),cy:Y(b.accuracy),r:5,fill:col});}
+el('text',{x:100,y:79,'font-size':17,fill:'#17766b'},'● 原始分数 p');el('text',{x:278,y:79,'font-size':17,fill:'#c6713d'},'● 高估分数 √p');
+el('text',{x:530,y:40,'font-size':22,'font-weight':650},'② 同样设阈值 ≥ 0.9');
+let yy=114;for(const [name,label,col]of [['original','原始分数 p','#17766b'],['overconfident','高估分数 √p','#c6713d']]){const r=d.scores[name].thresholds.find(x=>x.threshold===.9);el('text',{x:530,y:yy,'font-size':21,'font-weight':650},label);el('text',{x:530,y:yy+36,'font-size':18},`接受 ${r.accepted} / ${d.samples}，覆盖率 ${pct(r.coverage)}`);el('rect',{x:530,y:yy+52,width:385,height:20,rx:5,fill:'#e5e8df'});el('rect',{x:530,y:yy+52,width:385*r.coverage,height:20,rx:5,fill:col});el('text',{x:530,y:yy+106,'font-size':23,'font-weight':650},`接受后的错误率 ${pct(r.risk)}`);el('text',{x:530,y:yy+135,'font-size':16},`分子 ${r.wrong} 个错误 / 分母 ${r.accepted} 个接受样本`);yy+=200;}
+window.renderComplete=true;
+</script></html>

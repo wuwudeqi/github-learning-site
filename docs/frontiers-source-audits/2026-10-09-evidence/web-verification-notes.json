@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.goodfire.com/research/production-cyber-monitors-on-kimi-k3",
+    "method": "web工具打开官方正文；原站直连TLS失败",
+    "observedOn": "2026-10-09",
+    "notes": "2.4k会话/60k轮；93% harmful recall/5.5% benign interruptions；静态非自适应攻击中仍有个别突破。不把作者/合作团队演示标本站独立测试。"
+  },
+  {
+    "url": "https://openai.com/index/gpt-6-for-everyone/",
+    "method": "web官方正文与release notes；本地帮助页403",
+    "observedOn": "2026-10-09",
+    "notes": "Sol对应付费、Luna对应Free/Go；Intelligent UI不含Astra Pro模式；Chat rollout和Work/Codex分开。"
+  },
+  {
+    "url": "https://developers.google.com/edge/foresight",
+    "method": "官方页面+frame尝试",
+    "observedOn": "2026-10-09",
+    "notes": "官方壳可打开；frame两次TLS与web失败。保持未核实，不收入15条。"
+  }
+]

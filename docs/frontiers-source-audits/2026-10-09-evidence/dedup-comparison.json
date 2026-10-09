@@ -1,0 +1,340 @@
+[
+  {
+    "id": "sol-ultrafast",
+    "title": "GPT-6.1 Sol Ultrafast：加快生成，也要算上连接和工具等待",
+    "subjectKeys": [
+      "event:sol-ultrafast",
+      "https://developers.openai.com/api/docs/changelog"
+    ],
+    "matches": []
+  },
+  {
+    "id": "gemini-work-agent",
+    "title": "Gemini 企业代理：任务留在云端，权限跟着工作走",
+    "subjectKeys": [
+      "event:gemini-work-agent",
+      "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+    ],
+    "matches": []
+  },
+  {
+    "id": "claude-dashboard-motion",
+    "title": "Claude 增加 Dashboards 与 Motion：图表需要可查的依据",
+    "subjectKeys": [
+      "event:claude-dashboard-motion",
+      "https://claude.com/resources/articles/dashboards-and-motion"
+    ],
+    "matches": []
+  },
+  {
+    "id": "gpt6-chat-ui",
+    "title": "GPT-6 进入 ChatGPT Chat：回答可以边生成边交互",
+    "subjectKeys": [
+      "event:gpt6-chat-ui",
+      "https://openai.com/index/gpt-6-for-everyone"
+    ],
+    "matches": []
+  },
+  {
+    "id": "haiku55",
+    "title": "Claude Haiku 5.5：更便宜的小任务模型，先看完整工作成本",
+    "subjectKeys": [
+      "event:haiku55",
+      "https://www.anthropic.com/claude-haiku-5-5"
+    ],
+    "matches": []
+  },
+  {
+    "id": "windows-local-sandbox",
+    "title": "Windows 上的 Copilot：本地推理与工具沙箱一起推进",
+    "subjectKeys": [
+      "event:windows-local-sandbox",
+      "https://commandline.microsoft.com/local-models-sandboxed-tools-github-windows"
+    ],
+    "matches": []
+  },
+  {
+    "id": "decisions-api",
+    "title": "Decisions API 公开测试：直接返回概率、选项与评分",
+    "subjectKeys": [
+      "event:decisions-api",
+      "https://developers.openai.com/api/docs/guides/decisions"
+    ],
+    "matches": []
+  },
+  {
+    "id": "cyber-mission",
+    "title": "Anthropic Cyber Mission：把防御支持延伸到关键系统和开源维护者",
+    "subjectKeys": [
+      "event:cyber-mission",
+      "https://www.anthropic.com/news/anthropic-cyber-mission"
+    ],
+    "matches": []
+  },
+  {
+    "id": "goodfire-monitors",
+    "title": "Goodfire 把内部探针接入推理栈，先筛查再调用裁判",
+    "subjectKeys": [
+      "event:goodfire-monitors",
+      "https://www.goodfire.com/research/production-cyber-monitors-on-kimi-k3"
+    ],
+    "matches": []
+  },
+  {
+    "id": "synthid-global",
+    "title": "SynthID Detector 向公众开放，检测结果仍有覆盖边界",
+    "subjectKeys": [
+      "event:synthid-global",
+      "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content"
+    ],
+    "matches": []
+  },
+  {
+    "id": "google-playground",
+    "title": "Google Playground：把描述变成可玩的游戏原型",
+    "subjectKeys": [
+      "event:google-playground",
+      "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform"
+    ],
+    "matches": []
+  },
+  {
+    "id": "biohub-data",
+    "title": "Biohub 扩大虚拟生物学合作，重点投入可训练的数据",
+    "subjectKeys": [
+      "event:biohub-data",
+      "https://biohub.org/news/virtual-biology-initiative-expansion"
+    ],
+    "matches": []
+  },
+  {
+    "id": "pinterest-beauty",
+    "title": "Pinterest Beauty Guides：从一张参考图走到可执行的说明",
+    "subjectKeys": [
+      "event:pinterest-beauty",
+      "https://newsroom.pinterest.com/news/pinterest-launches-beauty-guides-to-turn-inspiration-into-action"
+    ],
+    "matches": []
+  },
+  {
+    "id": "genesis-compute-credits",
+    "title": "Genesis 科研支持新增算力与模型额度承诺",
+    "subjectKeys": [
+      "event:genesis-compute-credits",
+      "https://nvidianews.nvidia.com/news/nvidia-commits-1-billion-to-advance-us-science-over-the-next-five-years"
+    ],
+    "matches": []
+  },
+  {
+    "id": "false-front",
+    "title": "OpenAI 披露两起“伪装机构”影响行动的处置",
+    "subjectKeys": [
+      "event:false-front",
+      "https://openai.com/index/disrupting-ai-enabled-false-front-operations"
+    ],
+    "matches": []
+  },
+  {
+    "id": "nanomuse",
+    "title": "nanoMuse：手机与电脑之间接续一项任务",
+    "subjectKeys": [
+      "https://github.com/nano-muse/nanomuse",
+      "paper:2610.08699",
+      "repo:nano-muse/nanomuse"
+    ],
+    "matches": []
+  },
+  {
+    "id": "rembrandt",
+    "title": "Rembrandt：在本地 GPU 上整理与编辑研究图片",
+    "subjectKeys": [
+      "https://github.com/thesnarkitecht/rembrandt",
+      "repo:thesnarkitecht/rembrandt"
+    ],
+    "matches": []
+  },
+  {
+    "id": "rgpu",
+    "title": "rGPU：保留本地 Python，把张量运算交给远程 GPU",
+    "subjectKeys": [
+      "https://github.com/ymcrcat/rgpu",
+      "repo:ymcrcat/rgpu"
+    ],
+    "matches": []
+  },
+  {
+    "id": "durable",
+    "title": "Durable Actors：连接留在网关，空闲执行实例可以休眠",
+    "subjectKeys": [
+      "https://github.com/terseai/durable-actors",
+      "repo:terseai/durable-actors"
+    ],
+    "matches": []
+  },
+  {
+    "id": "k10s",
+    "title": "k10s：把只读模式落到 Kubernetes 请求层",
+    "subjectKeys": [
+      "https://github.com/p10node/k10s",
+      "repo:p10node/k10s"
+    ],
+    "matches": []
+  },
+  {
+    "id": "sherpa",
+    "title": "Sherpa：用学生的后续表现训练辅导模型",
+    "subjectKeys": [
+      "https://github.com/salt-nlp/sherpa",
+      "paper:2610.08778",
+      "repo:salt-nlp/sherpa"
+    ],
+    "matches": []
+  },
+  {
+    "id": "rgc",
+    "title": "Recursive Game Creator：让游戏生成带上试玩和复查",
+    "subjectKeys": [
+      "https://github.com/imbaldy/recursivegamecreator",
+      "paper:2610.08621",
+      "repo:imbaldy/recursivegamecreator"
+    ],
+    "matches": []
+  },
+  {
+    "id": "webfovea",
+    "title": "WebFovea：把截图、点击位置和网页反馈对齐",
+    "subjectKeys": [
+      "https://github.com/jianganghan/webfovea",
+      "paper:2610.03036",
+      "repo:jianganghan/webfovea"
+    ],
+    "matches": []
+  },
+  {
+    "id": "cadfather",
+    "title": "CADFather：把三角网格反推为可编辑 CAD 程序",
+    "subjectKeys": [
+      "https://github.com/kulibinai/cadfather",
+      "paper:2610.09127",
+      "repo:kulibinai/cadfather"
+    ],
+    "matches": []
+  },
+  {
+    "id": "photoc",
+    "title": "photoc：先在终端筛选照片，再交给模型处理",
+    "subjectKeys": [
+      "https://github.com/ahmetomerv/photoc",
+      "repo:ahmetomerv/photoc"
+    ],
+    "matches": []
+  },
+  {
+    "id": "d1",
+    "title": "d1-3B：为有限选项直接打分",
+    "subjectKeys": [
+      "https://huggingface.co/liquidai/d1-3b",
+      "model:liquidai/d1-3b"
+    ],
+    "matches": []
+  },
+  {
+    "id": "interfaze",
+    "title": "Interfaze 1 Lite：把多个专业组件装进同一调用入口",
+    "subjectKeys": [
+      "https://huggingface.co/interfaze-ai/interfaze-1-lite",
+      "model:interfaze-ai/interfaze-1-lite"
+    ],
+    "matches": []
+  },
+  {
+    "id": "alodlm",
+    "title": "ALoDLM：还没确定的 token，可以继续在内部迭代",
+    "subjectKeys": [
+      "https://huggingface.co/amazon/alodlm-8b",
+      "model:amazon/alodlm-8b"
+    ],
+    "matches": []
+  },
+  {
+    "id": "kitten",
+    "title": "Kitten TTS 2：语音克隆还要算上声码器的体积",
+    "subjectKeys": [
+      "https://huggingface.co/kittenml/kitten-tts-2",
+      "model:kittenml/kitten-tts-2"
+    ],
+    "matches": []
+  },
+  {
+    "id": "spotlight",
+    "title": "Spotlight VM：一个手工构造的 Transformer 执行器",
+    "subjectKeys": [
+      "https://huggingface.co/percepta-ai/spotlight-vm",
+      "model:percepta-ai/spotlight-vm"
+    ],
+    "matches": []
+  },
+  {
+    "id": "saluki",
+    "title": "Saluki 27B：压到 8GB 文件以内，工具调用保留多少",
+    "subjectKeys": [
+      "https://huggingface.co/conwayresearch/underdog-saluki-27b-1.0",
+      "model:conwayresearch/underdog-saluki-27b-1.0"
+    ],
+    "matches": []
+  },
+  {
+    "id": "2610.08448",
+    "title": "跨分词器蒸馏：监督更多位置，不一定学得更好",
+    "subjectKeys": [
+      "https://arxiv.org/abs/2610.08448v1",
+      "paper:2610.08448"
+    ],
+    "matches": []
+  },
+  {
+    "id": "2610.07767",
+    "title": "TRACE：让 FP4 训练看见 rollout 时真正发生的量化",
+    "subjectKeys": [
+      "https://arxiv.org/abs/2610.07767v1",
+      "paper:2610.07767"
+    ],
+    "matches": []
+  },
+  {
+    "id": "2610.08463",
+    "title": "UNREAL：用同一模型的隐状态做检索，再用它回答",
+    "subjectKeys": [
+      "https://arxiv.org/abs/2610.08463v1",
+      "paper:2610.08463"
+    ],
+    "matches": []
+  },
+  {
+    "id": "2610.07753",
+    "title": "SafeAct：会回答风险问题，不等于会在行动前查证",
+    "subjectKeys": [
+      "https://arxiv.org/abs/2610.07753v1",
+      "paper:2610.07753"
+    ],
+    "matches": []
+  },
+  {
+    "id": "2610.10528",
+    "title": "Long-WAM：更长历史与更短控制等待，要同时处理",
+    "subjectKeys": [
+      "https://arxiv.org/abs/2610.10528v1",
+      "paper:2610.10528"
+    ],
+    "matches": []
+  },
+  {
+    "id": "2610.03543",
+    "title": "DuoMatching：视频老师管时间，图像老师补画面",
+    "subjectKeys": [
+      "https://arxiv.org/abs/2610.03543v1",
+      "paper:2610.03543"
+    ],
+    "matches": []
+  }
+]

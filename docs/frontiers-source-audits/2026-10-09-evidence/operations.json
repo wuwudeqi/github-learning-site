@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-10-09T10:46:48.354962+08:00",
+  "resolvedErrors": [
+    {
+      "stage": "project-writing",
+      "error": "缺nanoMuse commits缓存",
+      "resolution": "通过GitHub API补取并重新成功生成10项目"
+    },
+    {
+      "stage": "dedup",
+      "error": "arXiv索引URL不含paper id导致脚本空匹配",
+      "resolution": "加空匹配判断，37项及方法论文ID重新比对成功"
+    },
+    {
+      "stage": "browser-startup",
+      "error": "Vite依赖初次加载时导航超时60秒",
+      "resolution": "等待实际依赖加载后，目录与文章HTTP200，实际导读点击进入新闻成功；非线上部署错误"
+    },
+    {
+      "stage": "source-images",
+      "error": "OPD PNG截断及个别原图TLS",
+      "resolution": "OPD用许可允许的完整PDF裁切；保留失败回执，Claude改标注概念图"
+    }
+  ],
+  "buildAttempts": [
+    {
+      "at": "2026-10-09T10:53:32.949674+08:00",
+      "result": "cancelled-stale-snapshot",
+      "detail": "首次npm run build的catalog之后补入固定覆盖率实验对照和nanoMuse NOTICE；终止自己正在执行的旧构建，完整重跑最终文件。此前进程仍在复制历史附件，并非网站部署错误。"
+    }
+  ],
+  "uiAttempts": [
+    {
+      "at": "2026-10-09T10:53:32.949980+08:00",
+      "result": "test-selector-timeout",
+      "detail": "DOM检测脚本等待了不存在的实践标题关键词；按真实技术实践h1修正选择器后重跑。"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+2026-10-09 前沿配图来源与许可
+本清单仅描述所引图片，正文其他内容与产品/素材许可另行判断。
+
+gemini-cloud-concept.png
+AI生成概念示意，非产品截图、不证明权限系统绝无泄漏
+来源：https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026
+原图地址：见来源/制作记录
+用途：关机后云端任务为何还能继续，授权资料与执行位置有何区别
+
+claude-dashboard-concept.png
+AI生成概念示意，柱形无实验数值
+来源：https://claude.com/resources/articles/dashboards-and-motion
+原图地址：见来源/制作记录
+用途：图表怎样回到查询、刷新时间与来源
+
+d1.png
+Liquid AI / LFM Open License 1.0，随附原许可；引用整图未改数值；较高d1不是本文3B权重
+来源：https://huggingface.co/LiquidAI/d1-3B
+原图地址：https://cdn-uploads.huggingface.co/production/uploads/61b8e2ba285851687028d395/r2H7UlZ_m48SYAhZWIHiu.png
+用途：对照图中开放d1-3B和其他服务的位置及参数规模
+
+alodlm.png
+Amazon作者图 / CC BY-NC 4.0，非商业说明性引用，未裁切
+来源：https://huggingface.co/amazon/ALoDLM-8B
+原图地址：https://huggingface.co/amazon/ALoDLM-8B/resolve/main/assets/research-overview.png
+用途：内部循环何时继续计算，何时提交token
+
+paper-opd.png
+Bingxi Hou等 / CC BY 4.0；PDF页面局部裁切，完整原PDF随阅读卡归档
+来源：https://arxiv.org/abs/2610.08448v1
+原图地址：https://arxiv.org/html/2610.08448v1/overview.png
+用途：跨词表蒸馏的token投影与span、梯度比较
+
+paper-unreal.png
+Edan Kinderman等 / CC BY 4.0；未改动
+来源：https://arxiv.org/abs/2610.08463v1
+原图地址：https://arxiv.org/html/2610.08463v1/intra_nemo_overview.drawio.png
+用途：冻结模型的多个内部状态怎样聚合成检索表示
+
+paper-wam.png
+Wei Huang等 / CC BY 4.0；未改动，非本站机器人轨迹
+来源：https://arxiv.org/abs/2610.10528v1
+原图地址：https://arxiv.org/html/2610.10528v1/async.png
+用途：异步控制如何减少等待
+
+muse.png
+nanoMuse contributors / GPL-3.0-or-later；完整原图，许可随附
+来源：https://github.com/nano-muse/nanoMuse
+原图地址：https://raw.githubusercontent.com/nano-muse/nanoMuse/main/assets/brand/devices-loop.png
+用途：会话和执行能力怎样跨手机与电脑衔接
+
+rembrandt.jpg
+thesnarkitecht / GPL-3.0；完整截图，许可随附
+来源：https://github.com/thesnarkitecht/rembrandt
+原图地址：https://raw.githubusercontent.com/thesnarkitecht/rembrandt/main/docs/screenshots/masks.jpg
+用途：局部径向蒙版在真实编辑界面怎样选择范围
+
+sherpa.png
+SALT-NLP / Apache-2.0；许可随附，未改动
+来源：https://github.com/SALT-NLP/Sherpa
+原图地址：https://raw.githubusercontent.com/SALT-NLP/Sherpa/main/assets/pipeline.png
+用途：教师提示、学生轨迹和奖励怎样组成训练循环
+
+gamecreator.png
+IMBALDY contributors / MIT；许可随附，图内素材不另授独立再用权
+来源：https://github.com/IMBALDY/RecursiveGameCreator
+原图地址：https://raw.githubusercontent.com/IMBALDY/RecursiveGameCreator/main/docs/assets/framework-overview.png
+用途：设计、实现、试玩、评审怎样围绕游戏迭代
+
+selective-risk.png
+前沿编辑原创；Python3.14.3标准库实际运行；合成示例非模型基准
+来源：code/results.json
+原图地址：见来源/制作记录
+用途：同样预测经分数映射后，在同一阈值下覆盖率和条件错误率怎样改变
+
+Creative Commons许可：
+CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+CC BY-NC 4.0 https://creativecommons.org/licenses/by-nc/4.0/
+GPL、Apache、MIT、LFM具体文本见同目录license-*.txt。
+生成图最终提示词：imagegen-prompts.json
+实验绘图源码：../code/selective-risk.html；数据 ../code/results.json

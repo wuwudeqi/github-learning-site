@@ -1,0 +1,231 @@
+{
+  "issueDate": "2026-10-09",
+  "checkedAt": "2026-10-09T11:01:27.236753+08:00",
+  "checks": {
+    "contentCheck": {
+      "command": "npm run check:frontiers -- --date 2026-10-09",
+      "startedAt": "2026-10-09T10:59:17.575944+08:00",
+      "finishedAt": "2026-10-09T10:59:17.755135+08:00",
+      "exitCode": 0,
+      "log": ".frontiers/contentCheck-oct09-final.log"
+    },
+    "build": {
+      "command": "npm run build",
+      "startedAt": "2026-10-09T10:59:17.755829+08:00",
+      "finishedAt": "2026-10-09T10:59:44.418049+08:00",
+      "exitCode": 0,
+      "log": ".frontiers/build-oct09-final.log"
+    }
+  },
+  "localLinks": "50个相对链接全部存在",
+  "visual": "12幅图在1440和390宽度已实际查看；6个阅读卡和3份PDF跳转通过",
+  "distBytesNote": "build报告837.4 MB，低于1000 MB硬上限，已有800 MB容量提醒",
+  "contentManifest": [
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/00-今日导读.md",
+      "bytes": 4660,
+      "sha256": "2c86a7658b5bd2efc55ebafadd74339c6e5c536d5d64beb90232e2153a8f7be9"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/01-AI动态.md",
+      "bytes": 20780,
+      "sha256": "db71e3a2fad3bca91d26adbee363375be59affcfe170fa86b90dcf83f2a1bb87"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/02-开源模型.md",
+      "bytes": 9639,
+      "sha256": "57be40a47c818576e4fb5cea9da0a3df8b1ffd3f3f327186aa475a08fdfe4d9d"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/03-论文精选.md",
+      "bytes": 11543,
+      "sha256": "ad68099719c408e0b7c14f2ce205152ad989b60ddd491ffa9adaa898f5f14b0e"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/04-开源项目.md",
+      "bytes": 16943,
+      "sha256": "993834190d785493448f95d30f970cf1dc44188488ee593cdd507226f3c93cf9"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/05-技术实践.md",
+      "bytes": 4603,
+      "sha256": "fe94a481bd145404c7e52d83e5b64a6b1e8baf73c90d9a40272e824367325a9d"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/code/results.json",
+      "bytes": 4329,
+      "sha256": "64dfb2ecc1369b464a23e763fcf184a0cc9e1c1df2395d418202be263be29c34"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/code/selective-risk.html",
+      "bytes": 3766,
+      "sha256": "5a2a66d69b957ca57ff0850905af749ba22d42378948a27db5d4bcdcedc651c4"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/code/selective_risk.py",
+      "bytes": 2470,
+      "sha256": "388d2ac0c0eb3d90f0bf6e0ede64daee7c759f53ffd0375c47aff47253555c14"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/alodlm.png",
+      "bytes": 397936,
+      "sha256": "24f438de9ae39cdab4e50d18ee1a8bc982fc009398a978221141db75cdd33038"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/claude-dashboard-concept.png",
+      "bytes": 2031156,
+      "sha256": "5271574ee2207e91260ef6dcc2eb751ac6fa49ee5044d062590798ef19c324f3"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/credits.txt",
+      "bytes": 3887,
+      "sha256": "338654157c70f0fb7bb10fccaceca9982d0bc48a387d4f289784d00bad89d995"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/d1.png",
+      "bytes": 164238,
+      "sha256": "9a477c27ccfb002a25923ee5c2073c4a0a207c01276961ca000b20ed5282794c"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/gamecreator.png",
+      "bytes": 967573,
+      "sha256": "072392ab8d2a07f5c51993edcbf1cc73f4e0fda88813dc0cb62f7e643f43fc62"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/gemini-cloud-concept.png",
+      "bytes": 1971466,
+      "sha256": "c15a1114bcd8189a3ed3675c6f77c5ce5092272f92356ff71a87fd9c66762ab0"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/imagegen-prompts.json",
+      "bytes": 2158,
+      "sha256": "4fd815b2dc7dd6e6eb824489bfa10ff4bd129c78754c9e360b6d3a45bd446942"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/license-d1.txt",
+      "bytes": 10574,
+      "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/license-gamecreator.txt",
+      "bytes": 1092,
+      "sha256": "13172ad2ea7e25832faff519f84839298e17d9fdd68d66b94784f415bb7fff81"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/license-nanomuse-NOTICE.txt",
+      "bytes": 1679,
+      "sha256": "8a203dde64c0abd314f876cb6516810878fc0e3120eacd5bfd2da932b4d4a439"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/license-nanomuse.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/license-rembrandt.txt",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/license-sherpa.txt",
+      "bytes": 11382,
+      "sha256": "75b7bf8051ab8ed98be1bf61428908b90728fd36be4f3b9394932b0015428a0d"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/muse.png",
+      "bytes": 306157,
+      "sha256": "dd51438bc59ca2d9ff9cdf4fd93d03f2f36d90161bb947008775a57d019f368f"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/paper-opd.png",
+      "bytes": 133146,
+      "sha256": "5986eeeb2e743fc758a81f9a15619b8831f8ee43a9a0ea13dbc6797c0633625c"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/paper-unreal.png",
+      "bytes": 34015,
+      "sha256": "5a796542e900f17c8da2a1887f41e6811bd7269dacf0571aa1f7fcdb6a3c771f"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/paper-wam.png",
+      "bytes": 57835,
+      "sha256": "81861ebadceff72ae8e80ddb2c7edecf059af2f4dafec67a91d5979bf9144857"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/rembrandt.jpg",
+      "bytes": 115281,
+      "sha256": "f9459ced428ccd6dcd0e4411bb34af845ee465424472b75f8244f38328edcbf4"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/selective-risk.png",
+      "bytes": 145535,
+      "sha256": "4c52d9a820e46dd365c87943c680a408d5df2ea225b3ecd8141392b476a8c33f"
+    },
+    {
+      "path": "content/frontiers/2026/10/2026-10-09/images/sherpa.png",
+      "bytes": 529594,
+      "sha256": "2e618f4f21b5c62d9c08a60ad8a26f8a3a66aadaf2685f59a94619d6d5783572"
+    },
+    {
+      "path": "content/papers/frontiers/2610.08448/00-阅读卡.md",
+      "bytes": 2083,
+      "sha256": "4c3bafbbc31ebbc34e8de18002593e0a46441711057969b5e1970e9af54fbd8d"
+    },
+    {
+      "path": "content/papers/frontiers/2610.08448/2610.08448v1.json",
+      "bytes": 477,
+      "sha256": "4bc214c52c471a3f57e1c1ac0611ff2ea6e06754bb63a054e94ee584a8cc2dc7"
+    },
+    {
+      "path": "content/papers/frontiers/2610.08448/2610.08448v1.pdf",
+      "bytes": 770070,
+      "sha256": "fe70b064a25745be71f4842c940bddbbec3fd64358125b6506358aebaf3a8895"
+    },
+    {
+      "path": "content/papers/frontiers/2610.07767/00-阅读卡.md",
+      "bytes": 2300,
+      "sha256": "8dfc508196a83afc7378e9ae048b27be356604112cdbabd8f5cfcd6e354c2824"
+    },
+    {
+      "path": "content/papers/frontiers/2610.08463/00-阅读卡.md",
+      "bytes": 2153,
+      "sha256": "66e6e97daca907c5bf9c68ed1992fadeb703a8dd413511a9d682e69f28799a79"
+    },
+    {
+      "path": "content/papers/frontiers/2610.08463/2610.08463v1.json",
+      "bytes": 445,
+      "sha256": "68d13f3195ccfe32e79bf995391a71ebfd470be4b5ab63353c48dc75220d1bb1"
+    },
+    {
+      "path": "content/papers/frontiers/2610.08463/2610.08463v1.pdf",
+      "bytes": 1097365,
+      "sha256": "c75963a9db70fd2afbf0e7d6d6e06fb8cd9501db784e36185024b57c5cf4952b"
+    },
+    {
+      "path": "content/papers/frontiers/2610.07753/00-阅读卡.md",
+      "bytes": 2190,
+      "sha256": "0b179cda581fefbd07bf1b8525a8756f97161e077a56ce0140e0219fe680783e"
+    },
+    {
+      "path": "content/papers/frontiers/2610.10528/00-阅读卡.md",
+      "bytes": 2403,
+      "sha256": "9d0a33803480ce7fd52e5597139507026ba04508195661e4d82e8414fd87c22e"
+    },
+    {
+      "path": "content/papers/frontiers/2610.10528/2610.10528v1.json",
+      "bytes": 538,
+      "sha256": "0c5e8e5811ae80f709c3124d7eac4c7e2b0c3355d3ec929ca1068ec14565e4f4"
+    },
+    {
+      "path": "content/papers/frontiers/2610.10528/2610.10528v1.pdf",
+      "bytes": 15651589,
+      "sha256": "f04a095c14201f63f29ae41a668786627d9f3ea4a716dd2d67cec172422ee494"
+    },
+    {
+      "path": "content/papers/frontiers/2610.03543/00-阅读卡.md",
+      "bytes": 2165,
+      "sha256": "a247e8e1805d5adf511e07efd3c476afe789b7da7d227d054df2178b4497b323"
+    }
+  ],
+  "gitWhitespaceReview": "git diff --check仅报告来源许可license-d1.txt第1行的原始尾空格；保持原许可字节，不改第三方许可文本"
+}

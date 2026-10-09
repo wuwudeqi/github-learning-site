@@ -1,0 +1,588 @@
+[
+  {
+    "module": "overview",
+    "viewport": 1440,
+    "heading": "今日导读：速度、持续执行与能查清的结果",
+    "pageWidth": 1440,
+    "pageScrollWidth": 1440,
+    "articleWidth": 850,
+    "articleScrollWidth": 850,
+    "images": [],
+    "links": [
+      {
+        "text": "AI 动态",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-news"
+      },
+      {
+        "text": "开源模型",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-models"
+      },
+      {
+        "text": "论文精选",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-papers"
+      },
+      {
+        "text": "开源项目",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-projects"
+      },
+      {
+        "text": "技术实践",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-practice"
+      },
+      {
+        "text": "新闻重点",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-news"
+      },
+      {
+        "text": "模型栏",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-models"
+      },
+      {
+        "text": "论文栏",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-papers"
+      },
+      {
+        "text": "开源项目",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-projects"
+      }
+    ]
+  },
+  {
+    "module": "news",
+    "viewport": 1440,
+    "heading": "AI 动态：5 条重点详解 + 10 条速读",
+    "pageWidth": 1440,
+    "pageScrollWidth": 1440,
+    "articleWidth": 850,
+    "articleScrollWidth": 850,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gemini-cloud-concept.png",
+        "alt": "已共享资料通过授权边界进入持续云端任务，关闭电脑后仍可继续，人员能够暂停",
+        "naturalWidth": 1536,
+        "naturalHeight": 1024,
+        "clientWidth": 720,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/claude-dashboard-concept.png",
+        "alt": "图表背后连着查询、数据源和刷新状态的概念示意",
+        "naturalWidth": 1536,
+        "naturalHeight": 1024,
+        "clientWidth": 720,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gemini-cloud-concept.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/claude-dashboard-concept.png"
+      }
+    ]
+  },
+  {
+    "module": "models",
+    "viewport": 1440,
+    "heading": "开源模型：六个不同的部署与研究取舍",
+    "pageWidth": 1440,
+    "pageScrollWidth": 1440,
+    "articleWidth": 850,
+    "articleScrollWidth": 850,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/d1.png",
+        "alt": "作者给出的 d1 决策模型对照图，需按原图任务和配置阅读",
+        "naturalWidth": 1932,
+        "naturalHeight": 1302,
+        "clientWidth": 720,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/alodlm.png",
+        "alt": "ALoDLM 在内部循环中让不同位置逐步提交 token，未完成位置保留隐状态",
+        "naturalWidth": 3096,
+        "naturalHeight": 1371,
+        "clientWidth": 720,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/d1.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/alodlm.png"
+      }
+    ]
+  },
+  {
+    "module": "papers",
+    "viewport": 1440,
+    "heading": "论文精选：从结果分数回到实现条件",
+    "pageWidth": 1440,
+    "pageScrollWidth": 1440,
+    "articleWidth": 850,
+    "articleScrollWidth": 850,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-opd.png",
+        "alt": "看左图的实际对齐率，再看中图增加不匹配监督后的变化；右图说明共享词表保留了大部分概率质量",
+        "naturalWidth": 1210,
+        "naturalHeight": 335,
+        "clientWidth": 720,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-unreal.png",
+        "alt": "先看左侧用同一冻结 LLM 编码文本块，再看中间少量可学习的检索 token 和层组合；右侧才是读回片段后生成答案",
+        "naturalWidth": 639,
+        "naturalHeight": 432,
+        "clientWidth": 639,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-wam.png",
+        "alt": "上半部分是流式观察与执行重叠，下半部分等待完整观察，黄色 WAIT 表示等待段",
+        "naturalWidth": 660,
+        "naturalHeight": 257,
+        "clientWidth": 660,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08448"
+      },
+      {
+        "text": "站内 PDF",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08448v1"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-opd.png"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-07767"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08463"
+      },
+      {
+        "text": "站内 PDF",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08463v1"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-unreal.png"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-07753"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-10528"
+      },
+      {
+        "text": "站内 PDF",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-10528v1"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-wam.png"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-03543"
+      }
+    ]
+  },
+  {
+    "module": "projects",
+    "viewport": 1440,
+    "heading": "开源项目：从输入资料到可检查的产出",
+    "pageWidth": 1440,
+    "pageScrollWidth": 1440,
+    "articleWidth": 850,
+    "articleScrollWidth": 850,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/muse.png",
+        "alt": "作者架构示意把手机与电脑的本地执行放在会话两端；它解释任务如何跨端接续，不是真实操作截图，也不构成数据保密性测试",
+        "naturalWidth": 1837,
+        "naturalHeight": 1067,
+        "clientWidth": 720,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/rembrandt.jpg",
+        "alt": "看猫眼附近的圆形范围：这是作者展示的径向蒙版界面，帮助理解局部调整的作用区域，不能标成深度分割结果",
+        "naturalWidth": 1280,
+        "naturalHeight": 800,
+        "clientWidth": 720,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/sherpa.png",
+        "alt": "从左到右看教师提示怎样影响学生后续行为，再由学生轨迹形成反馈",
+        "naturalWidth": 2400,
+        "naturalHeight": 1350,
+        "clientWidth": 720,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gamecreator.png",
+        "alt": "四个角色围绕可玩的产出反复迭代，关键区别是 Player 产生试玩材料再交给 Reviewer",
+        "naturalWidth": 2200,
+        "naturalHeight": 1293,
+        "clientWidth": 720,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/muse.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/rembrandt.jpg"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/sherpa.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gamecreator.png"
+      }
+    ]
+  },
+  {
+    "module": "practice",
+    "viewport": 1440,
+    "heading": "技术实践：用 50 行 Python 检查决策阈值的分母",
+    "pageWidth": 1440,
+    "pageScrollWidth": 1440,
+    "articleWidth": 850,
+    "articleScrollWidth": 850,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/selective-risk.png",
+        "alt": "合成实验中原始与高估分数的校准曲线，以及阈值0.9下的覆盖率和接受后错误率",
+        "naturalWidth": 1100,
+        "naturalHeight": 915,
+        "clientWidth": 720,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/selective-risk.png"
+      }
+    ]
+  },
+  {
+    "module": "overview",
+    "viewport": 390,
+    "heading": "今日导读：速度、持续执行与能查清的结果",
+    "pageWidth": 390,
+    "pageScrollWidth": 390,
+    "articleWidth": 390,
+    "articleScrollWidth": 390,
+    "images": [],
+    "links": [
+      {
+        "text": "AI 动态",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-news"
+      },
+      {
+        "text": "开源模型",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-models"
+      },
+      {
+        "text": "论文精选",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-papers"
+      },
+      {
+        "text": "开源项目",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-projects"
+      },
+      {
+        "text": "技术实践",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-practice"
+      },
+      {
+        "text": "新闻重点",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-news"
+      },
+      {
+        "text": "模型栏",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-models"
+      },
+      {
+        "text": "论文栏",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-papers"
+      },
+      {
+        "text": "开源项目",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/frontiers-2026-10-09-projects"
+      }
+    ]
+  },
+  {
+    "module": "news",
+    "viewport": 390,
+    "heading": "AI 动态：5 条重点详解 + 10 条速读",
+    "pageWidth": 390,
+    "pageScrollWidth": 390,
+    "articleWidth": 390,
+    "articleScrollWidth": 390,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gemini-cloud-concept.png",
+        "alt": "已共享资料通过授权边界进入持续云端任务，关闭电脑后仍可继续，人员能够暂停",
+        "naturalWidth": 1536,
+        "naturalHeight": 1024,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/claude-dashboard-concept.png",
+        "alt": "图表背后连着查询、数据源和刷新状态的概念示意",
+        "naturalWidth": 1536,
+        "naturalHeight": 1024,
+        "clientWidth": 344,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gemini-cloud-concept.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/claude-dashboard-concept.png"
+      }
+    ]
+  },
+  {
+    "module": "models",
+    "viewport": 390,
+    "heading": "开源模型：六个不同的部署与研究取舍",
+    "pageWidth": 390,
+    "pageScrollWidth": 390,
+    "articleWidth": 390,
+    "articleScrollWidth": 390,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/d1.png",
+        "alt": "作者给出的 d1 决策模型对照图，需按原图任务和配置阅读",
+        "naturalWidth": 1932,
+        "naturalHeight": 1302,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/alodlm.png",
+        "alt": "ALoDLM 在内部循环中让不同位置逐步提交 token，未完成位置保留隐状态",
+        "naturalWidth": 3096,
+        "naturalHeight": 1371,
+        "clientWidth": 344,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/d1.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/alodlm.png"
+      }
+    ]
+  },
+  {
+    "module": "papers",
+    "viewport": 390,
+    "heading": "论文精选：从结果分数回到实现条件",
+    "pageWidth": 390,
+    "pageScrollWidth": 390,
+    "articleWidth": 390,
+    "articleScrollWidth": 390,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-opd.png",
+        "alt": "看左图的实际对齐率，再看中图增加不匹配监督后的变化；右图说明共享词表保留了大部分概率质量",
+        "naturalWidth": 1210,
+        "naturalHeight": 335,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-unreal.png",
+        "alt": "先看左侧用同一冻结 LLM 编码文本块，再看中间少量可学习的检索 token 和层组合；右侧才是读回片段后生成答案",
+        "naturalWidth": 639,
+        "naturalHeight": 432,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-wam.png",
+        "alt": "上半部分是流式观察与执行重叠，下半部分等待完整观察，黄色 WAIT 表示等待段",
+        "naturalWidth": 660,
+        "naturalHeight": 257,
+        "clientWidth": 344,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08448"
+      },
+      {
+        "text": "站内 PDF",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08448v1"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-opd.png"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-07767"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08463"
+      },
+      {
+        "text": "站内 PDF",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-08463v1"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-unreal.png"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-07753"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-10528"
+      },
+      {
+        "text": "站内 PDF",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-10528v1"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/paper-wam.png"
+      },
+      {
+        "text": "站内阅读卡",
+        "href": "http://127.0.0.1:5178/github-learning-site/#/read/paper-2610-03543"
+      }
+    ]
+  },
+  {
+    "module": "projects",
+    "viewport": 390,
+    "heading": "开源项目：从输入资料到可检查的产出",
+    "pageWidth": 390,
+    "pageScrollWidth": 390,
+    "articleWidth": 390,
+    "articleScrollWidth": 390,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/muse.png",
+        "alt": "作者架构示意把手机与电脑的本地执行放在会话两端；它解释任务如何跨端接续，不是真实操作截图，也不构成数据保密性测试",
+        "naturalWidth": 1837,
+        "naturalHeight": 1067,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/rembrandt.jpg",
+        "alt": "看猫眼附近的圆形范围：这是作者展示的径向蒙版界面，帮助理解局部调整的作用区域，不能标成深度分割结果",
+        "naturalWidth": 1280,
+        "naturalHeight": 800,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/sherpa.png",
+        "alt": "从左到右看教师提示怎样影响学生后续行为，再由学生轨迹形成反馈",
+        "naturalWidth": 2400,
+        "naturalHeight": 1350,
+        "clientWidth": 344,
+        "loaded": true
+      },
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gamecreator.png",
+        "alt": "四个角色围绕可玩的产出反复迭代，关键区别是 Player 产生试玩材料再交给 Reviewer",
+        "naturalWidth": 2200,
+        "naturalHeight": 1293,
+        "clientWidth": 344,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/muse.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/rembrandt.jpg"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/sherpa.png"
+      },
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/gamecreator.png"
+      }
+    ]
+  },
+  {
+    "module": "practice",
+    "viewport": 390,
+    "heading": "技术实践：用 50 行 Python 检查决策阈值的分母",
+    "pageWidth": 390,
+    "pageScrollWidth": 390,
+    "articleWidth": 390,
+    "articleScrollWidth": 390,
+    "images": [
+      {
+        "src": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/selective-risk.png",
+        "alt": "合成实验中原始与高估分数的校准曲线，以及阈值0.9下的覆盖率和接受后错误率",
+        "naturalWidth": 1100,
+        "naturalHeight": 915,
+        "clientWidth": 344,
+        "loaded": true
+      }
+    ],
+    "links": [
+      {
+        "text": "查看原尺寸",
+        "href": "http://127.0.0.1:5178/github-learning-site/documents/frontiers/2026/10/2026-10-09/images/selective-risk.png"
+      }
+    ]
+  }
+]
