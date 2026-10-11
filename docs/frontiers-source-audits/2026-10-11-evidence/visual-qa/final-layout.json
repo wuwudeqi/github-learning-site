@@ -1,0 +1,72 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "tables": [
+      {
+        "scrollWidth": 720,
+        "clientWidth": 720,
+        "text": "任务\t本期对象\t先确认的条件\n文档转Markdown并定位块\tLightOnOCR 3\tPDF渲染、模型版本与grounding格式\n图像生成转深度/修复\tIris-3B\t下游任务需要各自微调权重\n图像、语音、视频统一解析\tYoutu-Parsing-Omni\t自定义许可与专用推理依赖\n阿拉伯语实时转录\tVoxtral Realtime Arabic\t16kHz输入、配置延迟与实际延迟区别\n地形高度图细化\tTerrainSR\t合成细节不等于测绘观测\n小体积土耳其语朗读\tEMA Lightning\t单音色；速度与音质分别评估"
+      }
+    ],
+    "dateLabels": [
+      "原始仓库日期（UTC）：2026-10-06；北京时间：2026-10-07｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-05；北京时间：2026-10-05｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-09；北京时间：2026-10-09｜近7天。许可：Youtu-Parsing自定义许可（含欧盟地域限制）。",
+      "原始仓库日期（UTC）：2026-10-08；北京时间：2026-10-08｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-06；北京时间：2026-10-07｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-01；北京时间：2026-10-01｜近期补充（近30天首次收录）。许可：Apache-2.0。"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "tables": [
+      {
+        "scrollWidth": 720,
+        "clientWidth": 720,
+        "text": "测试\t接受正确；拒绝错误\n单一样例\t2 / 2；2 / 4\n样例＋源码样式\t1 / 2；3 / 4\n五组合同行为样例\t2 / 2；4 / 4"
+      }
+    ],
+    "dateLabels": null
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "tables": [
+      {
+        "scrollWidth": 361,
+        "clientWidth": 344,
+        "text": "任务\t本期对象\t先确认的条件\n文档转Markdown并定位块\tLightOnOCR 3\tPDF渲染、模型版本与grounding格式\n图像生成转深度/修复\tIris-3B\t下游任务需要各自微调权重\n图像、语音、视频统一解析\tYoutu-Parsing-Omni\t自定义许可与专用推理依赖\n阿拉伯语实时转录\tVoxtral Realtime Arabic\t16kHz输入、配置延迟与实际延迟区别\n地形高度图细化\tTerrainSR\t合成细节不等于测绘观测\n小体积土耳其语朗读\tEMA Lightning\t单音色；速度与音质分别评估"
+      }
+    ],
+    "dateLabels": [
+      "原始仓库日期（UTC）：2026-10-06；北京时间：2026-10-07｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-05；北京时间：2026-10-05｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-09；北京时间：2026-10-09｜近7天。许可：Youtu-Parsing自定义许可（含欧盟地域限制）。",
+      "原始仓库日期（UTC）：2026-10-08；北京时间：2026-10-08｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-06；北京时间：2026-10-07｜近7天。许可：Apache-2.0。",
+      "原始仓库日期（UTC）：2026-10-01；北京时间：2026-10-01｜近期补充（近30天首次收录）。许可：Apache-2.0。"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "tables": [
+      {
+        "scrollWidth": 344,
+        "clientWidth": 344,
+        "text": "测试\t接受正确；拒绝错误\n单一样例\t2 / 2；2 / 4\n样例＋源码样式\t1 / 2；3 / 4\n五组合同行为样例\t2 / 2；4 / 4"
+      }
+    ],
+    "dateLabels": null
+  }
+]

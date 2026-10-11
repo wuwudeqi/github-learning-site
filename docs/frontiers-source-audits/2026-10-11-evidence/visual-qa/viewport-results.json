@@ -1,0 +1,474 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "overview",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-11-news",
+      "#/read/frontiers-2026-10-11-models",
+      "#/read/frontiers-2026-10-11-papers",
+      "#/read/frontiers-2026-10-11-projects",
+      "#/read/frontiers-2026-10-11-practice"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "news",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/qwen-input.png",
+        "alt": "Qwen官方多图编辑示例的四张输入：椅子场景、边桌、柜子与空房间",
+        "complete": true,
+        "naturalWidth": 1352,
+        "width": 720,
+        "height": 720
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/qwen-output.png",
+        "alt": "Qwen官方示例将椅子、边桌和柜子放进参考房间后的合成输出",
+        "complete": true,
+        "naturalWidth": 2528,
+        "width": 719.984375,
+        "height": 469.359375
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/managed-workflow-concept.png",
+        "alt": "协调台将任务分给检索、分析、校对三个示例角色，共享预算后汇总结果",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-02-news",
+      "#/read/frontiers-2026-10-07-news",
+      "#/read/frontiers-2026-10-11-overview"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/iris-photo.webp",
+        "alt": "Iris官方深度估计示例的室内输入图像",
+        "complete": true,
+        "naturalWidth": 640,
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/iris-depth.webp",
+        "alt": "同一室内输入对应的Iris相对深度预测图",
+        "complete": true,
+        "naturalWidth": 640,
+        "width": 640,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/youtu-architecture.png",
+        "alt": "Youtu架构将视觉和音频输入经共享Transformer编码后送入语言解码器生成OmniSchema JSON",
+        "complete": true,
+        "naturalWidth": 3920,
+        "width": 719.96875,
+        "height": 368.25
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/voxtral-delay.png",
+        "alt": "Voxtral阿拉伯语模型配置延迟从80到720毫秒时的字符错误率曲线",
+        "complete": true,
+        "naturalWidth": 3875,
+        "width": 719.96875,
+        "height": 322.734375
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/ema-architecture.png",
+        "alt": "EMA Lightning由文本编码和持续时间预测构造对齐条件，四步潜变量生成后解码为48kHz语音",
+        "complete": true,
+        "naturalWidth": 4000,
+        "width": 719.984375,
+        "height": 381.59375
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-11-overview"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "papers",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/tokenrouter.png",
+        "alt": "TokenRouter中客户端连接统一接口，各模型子服务包含调度器、解码器和路由传递循环",
+        "complete": true,
+        "naturalWidth": 2048,
+        "width": 720,
+        "height": 338.90625
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/learn2play.png",
+        "alt": "Learn2Play论文中Memory方法配合四种基座的相对学习进度曲线",
+        "complete": true,
+        "naturalWidth": 1248,
+        "width": 719.984375,
+        "height": 470.765625
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/testprism.png",
+        "alt": "TestPrism从任务筛选到隐藏正确错误实现面板，再对同一测试运行11种状态",
+        "complete": true,
+        "naturalWidth": 1923,
+        "width": 719.96875,
+        "height": 403.984375
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/srd.png",
+        "alt": "SRD用交互轨迹和验证器结果构造停止梯度教师，监督学生的事前预见分布",
+        "complete": true,
+        "naturalWidth": 1959,
+        "width": 719.96875,
+        "height": 357.234375
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-12242",
+      "#/read/paper-2610-08215",
+      "#/read/paper-2610-09087",
+      "#/read/frontiers-2026-10-11-practice",
+      "#/read/paper-2610-12289",
+      "#/read/paper-2610-08077",
+      "#/read/paper-2610-10444",
+      "#/read/frontiers-2026-10-11-overview"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "projects",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/bigarrow.png",
+        "alt": "Big Arrow作者用绿色箭头和橙色圈标出Mac设置中的按钮",
+        "complete": true,
+        "naturalWidth": 1920,
+        "width": 720,
+        "height": 400.125
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/talorys-memory.png",
+        "alt": "Talorys作者演示界面将记忆分为偏好、事实、目标与习惯",
+        "complete": true,
+        "naturalWidth": 2560,
+        "width": 720,
+        "height": 450
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/pinrail-review.png",
+        "alt": "Pinrail代码审阅界面同时显示发现列表、文件差异和逐条接受拒绝状态",
+        "complete": true,
+        "naturalWidth": 2880,
+        "width": 720,
+        "height": 450
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/docflare-widget.png",
+        "alt": "DocFlare AI文档站右侧问答浮层展示回答与来源链接",
+        "complete": true,
+        "naturalWidth": 2560,
+        "width": 720,
+        "height": 450
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/agentgarten.png",
+        "alt": "AgentGarten原图展示同一几何世界的不同外观以及研究中的代理练习",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 719.96875,
+        "height": 384.390625
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/trace2env-overview.png",
+        "alt": "Trace2Env先从轨迹重建worldbook，再由语言世界模型与状态检查器协作运行环境",
+        "complete": true,
+        "naturalWidth": 3300,
+        "width": 719.953125,
+        "height": 229.296875
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/procinsh-space.png",
+        "alt": "ProcInSh作者示例用三维节点与连线表示多个Linux进程及关系",
+        "complete": true,
+        "naturalWidth": 3828,
+        "width": 719.96875,
+        "height": 364.125
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/test-diversity-results.png",
+        "alt": "六种实现经过三种测试，单一样例漏掉两个错误，源码样式误杀字典实现，五组合同样例在本例判断全部正确",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 720,
+        "height": 531
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-11-papers"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "overview",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-11-news",
+      "#/read/frontiers-2026-10-11-models",
+      "#/read/frontiers-2026-10-11-papers",
+      "#/read/frontiers-2026-10-11-projects",
+      "#/read/frontiers-2026-10-11-practice"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "news",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/qwen-input.png",
+        "alt": "Qwen官方多图编辑示例的四张输入：椅子场景、边桌、柜子与空房间",
+        "complete": true,
+        "naturalWidth": 1352,
+        "width": 344,
+        "height": 344
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/qwen-output.png",
+        "alt": "Qwen官方示例将椅子、边桌和柜子放进参考房间后的合成输出",
+        "complete": true,
+        "naturalWidth": 2528,
+        "width": 343.984375,
+        "height": 224.25
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/managed-workflow-concept.png",
+        "alt": "协调台将任务分给检索、分析、校对三个示例角色，共享预算后汇总结果",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.984375,
+        "height": 229.328125
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-02-news",
+      "#/read/frontiers-2026-10-07-news",
+      "#/read/frontiers-2026-10-11-overview"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/iris-photo.webp",
+        "alt": "Iris官方深度估计示例的室内输入图像",
+        "complete": true,
+        "naturalWidth": 640,
+        "width": 344,
+        "height": 258
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/iris-depth.webp",
+        "alt": "同一室内输入对应的Iris相对深度预测图",
+        "complete": true,
+        "naturalWidth": 640,
+        "width": 344,
+        "height": 258
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/youtu-architecture.png",
+        "alt": "Youtu架构将视觉和音频输入经共享Transformer编码后送入语言解码器生成OmniSchema JSON",
+        "complete": true,
+        "naturalWidth": 3920,
+        "width": 343.96875,
+        "height": 175.9375
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/voxtral-delay.png",
+        "alt": "Voxtral阿拉伯语模型配置延迟从80到720毫秒时的字符错误率曲线",
+        "complete": true,
+        "naturalWidth": 3875,
+        "width": 343.96875,
+        "height": 154.1875
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/ema-architecture.png",
+        "alt": "EMA Lightning由文本编码和持续时间预测构造对齐条件，四步潜变量生成后解码为48kHz语音",
+        "complete": true,
+        "naturalWidth": 4000,
+        "width": 343.984375,
+        "height": 182.3125
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-11-overview"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "papers",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/tokenrouter.png",
+        "alt": "TokenRouter中客户端连接统一接口，各模型子服务包含调度器、解码器和路由传递循环",
+        "complete": true,
+        "naturalWidth": 2048,
+        "width": 344,
+        "height": 161.921875
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/learn2play.png",
+        "alt": "Learn2Play论文中Memory方法配合四种基座的相对学习进度曲线",
+        "complete": true,
+        "naturalWidth": 1248,
+        "width": 343.984375,
+        "height": 224.921875
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/testprism.png",
+        "alt": "TestPrism从任务筛选到隐藏正确错误实现面板，再对同一测试运行11种状态",
+        "complete": true,
+        "naturalWidth": 1923,
+        "width": 343.984375,
+        "height": 193.015625
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/srd.png",
+        "alt": "SRD用交互轨迹和验证器结果构造停止梯度教师，监督学生的事前预见分布",
+        "complete": true,
+        "naturalWidth": 1959,
+        "width": 343.96875,
+        "height": 170.671875
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-12242",
+      "#/read/paper-2610-08215",
+      "#/read/paper-2610-09087",
+      "#/read/frontiers-2026-10-11-practice",
+      "#/read/paper-2610-12289",
+      "#/read/paper-2610-08077",
+      "#/read/paper-2610-10444",
+      "#/read/frontiers-2026-10-11-overview"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "projects",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/bigarrow.png",
+        "alt": "Big Arrow作者用绿色箭头和橙色圈标出Mac设置中的按钮",
+        "complete": true,
+        "naturalWidth": 1920,
+        "width": 343.96875,
+        "height": 191.15625
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/talorys-memory.png",
+        "alt": "Talorys作者演示界面将记忆分为偏好、事实、目标与习惯",
+        "complete": true,
+        "naturalWidth": 2560,
+        "width": 344,
+        "height": 215
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/pinrail-review.png",
+        "alt": "Pinrail代码审阅界面同时显示发现列表、文件差异和逐条接受拒绝状态",
+        "complete": true,
+        "naturalWidth": 2880,
+        "width": 344,
+        "height": 215
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/docflare-widget.png",
+        "alt": "DocFlare AI文档站右侧问答浮层展示回答与来源链接",
+        "complete": true,
+        "naturalWidth": 2560,
+        "width": 344,
+        "height": 215
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/agentgarten.png",
+        "alt": "AgentGarten原图展示同一几何世界的不同外观以及研究中的代理练习",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 343.984375,
+        "height": 183.65625
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/trace2env-overview.png",
+        "alt": "Trace2Env先从轨迹重建worldbook，再由语言世界模型与状态检查器协作运行环境",
+        "complete": true,
+        "naturalWidth": 3300,
+        "width": 343.953125,
+        "height": 109.546875
+      },
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/procinsh-space.png",
+        "alt": "ProcInSh作者示例用三维节点与连线表示多个Linux进程及关系",
+        "complete": true,
+        "naturalWidth": 3828,
+        "width": 343.96875,
+        "height": 173.96875
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50612/github-learning-site/documents/frontiers/2026/10/2026-10-11/images/test-diversity-results.png",
+        "alt": "六种实现经过三种测试，单一样例漏掉两个错误，源码样式误杀字典实现，五组合同样例在本例判断全部正确",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 343.96875,
+        "height": 253.6875
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-11-papers"
+    ]
+  }
+]

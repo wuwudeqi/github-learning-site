@@ -1,0 +1,37 @@
+{
+  "executedAt": "2026-10-11T09:17:50.246025+08:00",
+  "command": "python3 content/frontiers/2026/10/2026-10-11/code/test-diversity.py",
+  "exitCode": 0,
+  "runtime": {
+    "python": "3.14.3",
+    "system": "Darwin",
+    "machine": "arm64"
+  },
+  "results": [
+    {
+      "id": "weak_example",
+      "label": "单一样例",
+      "validAccepted": 2,
+      "validTotal": 2,
+      "invalidRejected": 2,
+      "invalidTotal": 4
+    },
+    {
+      "id": "source_style",
+      "label": "样例＋源码样式",
+      "validAccepted": 1,
+      "validTotal": 2,
+      "invalidRejected": 3,
+      "invalidTotal": 4
+    },
+    {
+      "id": "contract_examples",
+      "label": "五组合同行为样例",
+      "validAccepted": 2,
+      "validTotal": 2,
+      "invalidRejected": 4,
+      "invalidTotal": 4
+    }
+  ],
+  "scope": "One synthetic task; not TestPrism reproduction or LLM evaluation"
+}

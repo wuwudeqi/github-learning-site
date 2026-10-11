@@ -1,0 +1,141 @@
+{
+  "scope": "One synthetic task; not TestPrism reproduction or LLM evaluation",
+  "python": "3.14.3",
+  "system": "Darwin",
+  "machine": "arm64",
+  "cases": [
+    [
+      [
+        "b",
+        "a",
+        "b",
+        "",
+        "a"
+      ],
+      [
+        "b",
+        "a",
+        ""
+      ]
+    ],
+    [
+      [],
+      []
+    ],
+    [
+      [
+        "",
+        ""
+      ],
+      [
+        ""
+      ]
+    ],
+    [
+      [
+        "b",
+        "a"
+      ],
+      [
+        "b",
+        "a"
+      ]
+    ],
+    [
+      [
+        "x"
+      ],
+      [
+        "x"
+      ]
+    ]
+  ],
+  "rows": [
+    {
+      "id": "loop_unique",
+      "label": "循环去重",
+      "validByContract": true,
+      "passes": {
+        "weak_example": true,
+        "source_style": true,
+        "contract_examples": true
+      }
+    },
+    {
+      "id": "dict_unique",
+      "label": "字典去重",
+      "validByContract": true,
+      "passes": {
+        "weak_example": true,
+        "source_style": false,
+        "contract_examples": true
+      }
+    },
+    {
+      "id": "sorted_unique",
+      "label": "排序后去重",
+      "validByContract": false,
+      "passes": {
+        "weak_example": true,
+        "source_style": false,
+        "contract_examples": false
+      }
+    },
+    {
+      "id": "identity",
+      "label": "保留全部元素",
+      "validByContract": false,
+      "passes": {
+        "weak_example": false,
+        "source_style": false,
+        "contract_examples": false
+      }
+    },
+    {
+      "id": "drop_empty",
+      "label": "错误丢弃空串",
+      "validByContract": false,
+      "passes": {
+        "weak_example": true,
+        "source_style": true,
+        "contract_examples": false
+      }
+    },
+    {
+      "id": "keep_last",
+      "label": "保留末次顺序",
+      "validByContract": false,
+      "passes": {
+        "weak_example": false,
+        "source_style": false,
+        "contract_examples": false
+      }
+    }
+  ],
+  "suites": [
+    {
+      "id": "weak_example",
+      "label": "单一样例",
+      "validAccepted": 2,
+      "validTotal": 2,
+      "invalidRejected": 2,
+      "invalidTotal": 4
+    },
+    {
+      "id": "source_style",
+      "label": "样例＋源码样式",
+      "validAccepted": 1,
+      "validTotal": 2,
+      "invalidRejected": 3,
+      "invalidTotal": 4
+    },
+    {
+      "id": "contract_examples",
+      "label": "五组合同行为样例",
+      "validAccepted": 2,
+      "validTotal": 2,
+      "invalidRejected": 4,
+      "invalidTotal": 4
+    }
+  ]
+}

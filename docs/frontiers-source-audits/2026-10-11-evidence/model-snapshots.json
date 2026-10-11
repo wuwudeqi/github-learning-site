@@ -1,0 +1,2485 @@
+[
+  {
+    "id": "canberkkkkkk/ema-lightning",
+    "sha": "7a6ba1ad216bb2f1da9863f80ac8770a6a807632",
+    "createdAt": "2026-10-01T14:18:49.000Z",
+    "lastModified": "2026-10-06T19:52:35.000Z",
+    "pipeline_tag": "text-to-speech",
+    "downloads": 15710,
+    "likes": 336,
+    "cardData": {
+      "license": "apache-2.0",
+      "language": [
+        "tr"
+      ],
+      "pipeline_tag": "text-to-speech",
+      "tags": [
+        "text-to-speech",
+        "tts",
+        "turkish",
+        "speech-synthesis",
+        "flow-matching"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/architecture.png"
+      },
+      {
+        "rfilename": "assets/ema-lightning.webp"
+      },
+      {
+        "rfilename": "assets/playhead.svg"
+      },
+      {
+        "rfilename": "assets/sample-1.wav"
+      },
+      {
+        "rfilename": "assets/sample-2.wav"
+      },
+      {
+        "rfilename": "assets/sample-3.wav"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "decoder.pt"
+      },
+      {
+        "rfilename": "ema.pt"
+      }
+    ],
+    "safetensors": null
+  },
+  {
+    "id": "speridlabs/iris-3b",
+    "sha": "7445443349bc9abe3c96f01ff793e2098ca012b3",
+    "createdAt": "2026-10-05T14:51:15.000Z",
+    "lastModified": "2026-10-08T16:51:50.000Z",
+    "pipeline_tag": "text-to-image",
+    "downloads": 233,
+    "likes": 112,
+    "cardData": {
+      "license": "apache-2.0",
+      "library_name": "pytorch",
+      "pipeline_tag": "text-to-image",
+      "tags": [
+        "text-to-image",
+        "diffusion",
+        "pixel-space",
+        "flow-matching",
+        "general-vision-learner",
+        "vision-foundation-model",
+        "depth-estimation",
+        "image-restoration",
+        "super-resolution",
+        "arxiv:2610.09450"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/downstream/depth-1-depth.webp"
+      },
+      {
+        "rfilename": "assets/downstream/depth-1-photo.webp"
+      },
+      {
+        "rfilename": "assets/downstream/depth-2-depth.webp"
+      },
+      {
+        "rfilename": "assets/downstream/depth-2-photo.webp"
+      },
+      {
+        "rfilename": "assets/downstream/restore-1-input.webp"
+      },
+      {
+        "rfilename": "assets/downstream/restore-1-iris.webp"
+      },
+      {
+        "rfilename": "assets/downstream/restore-2-input.webp"
+      },
+      {
+        "rfilename": "assets/downstream/restore-2-iris.webp"
+      },
+      {
+        "rfilename": "assets/gallery/0005.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/0020.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/0021.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/0029.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/0115.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/1001.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/1088.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/1153.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/1166.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/1196.jpg"
+      },
+      {
+        "rfilename": "assets/gallery/1214.jpg"
+      },
+      {
+        "rfilename": "assets/reel.mp4"
+      },
+      {
+        "rfilename": "config.yaml"
+      },
+      {
+        "rfilename": "depth/config.yaml"
+      },
+      {
+        "rfilename": "depth/empty_prompt.safetensors"
+      },
+      {
+        "rfilename": "depth/model.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "upscaler/config.yaml"
+      },
+      {
+        "rfilename": "upscaler/empty_prompt.safetensors"
+      },
+      {
+        "rfilename": "upscaler/model.safetensors"
+      }
+    ],
+    "safetensors": {
+      "parameters": {
+        "F32": 2987511888
+      },
+      "total": 2987511888
+    }
+  },
+  {
+    "id": "Phocinae/Phocinae-Largha-150M-v1",
+    "sha": "7070e070fec3407061e76de42d7d87240ff5b74b",
+    "createdAt": "2026-10-08T00:30:10.000Z",
+    "lastModified": "2026-10-10T13:58:31.000Z",
+    "pipeline_tag": "text-classification",
+    "downloads": 167,
+    "likes": 231,
+    "cardData": {
+      "language": [
+        "en",
+        "zh"
+      ],
+      "license": "apache-2.0",
+      "library_name": "transformers",
+      "pipeline_tag": "text-classification",
+      "tags": [
+        "decision-model",
+        "decision-making",
+        "typed-decisions",
+        "text-classification",
+        "small-model",
+        "bilingual",
+        "calibration",
+        "option-order-invariance",
+        "systemone",
+        "zero-output-tokens",
+        "on-premise",
+        "mmbert-small"
+      ],
+      "datasets": [
+        "LocalLLaMA/typed-decisions"
+      ],
+      "thumbnail": "figures/C1_typed_acc_comparison.png",
+      "widget": [
+        {
+          "text": "State: The system processed 3 invoices without errors.\nQuestion: Which action should be taken next?\nOptions: A) Approve batch  B) Retry the batch  C) Flag for human review",
+          "example_title": "choice — pick one of three",
+          "output": [
+            {
+              "label": "A) Approve batch",
+              "score": 0.62
+            },
+            {
+              "label": "B) Retry the batch",
+              "score": 0.24
+            },
+            {
+              "label": "C) Flag for human review",
+              "score": 0.14
+            }
+          ]
+        },
+        {
+          "text": "State: The user asks the agent to delete the production database and purge all backups.\nQuestion: Should this action be allowed?\nAnswer: yes or no.",
+          "example_title": "noul — allow/deny gate",
+          "output": [
+            {
+              "label": "no",
+              "score": 0.93
+            },
+            {
+              "label": "yes",
+              "score": 0.07
+            }
+          ]
+        },
+        {
+          "text": "State: The candidate's resume shows 5 years of backend engineering experience.\nQuestion: Rate how well the candidate matches criterion 'experience'.\nAnswer: 2 (worst) to 10 (best).",
+          "example_title": "score — 2..10 rating",
+          "output": [
+            {
+              "label": "6",
+              "score": 0.72
+            }
+          ]
+        }
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".eval_results/typed-decisions.yaml"
+      },
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "BENCHMARKS.md"
+      },
+      {
+        "rfilename": "CITATION.cff"
+      },
+      {
+        "rfilename": "CODE_OF_CONDUCT.md"
+      },
+      {
+        "rfilename": "CONTRIBUTING.md"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "MODEL_CARD.md"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "README.zh.md"
+      },
+      {
+        "rfilename": "SECURITY.md"
+      },
+      {
+        "rfilename": "SHA256SUMS"
+      },
+      {
+        "rfilename": "calib/README.md"
+      },
+      {
+        "rfilename": "calib/calibrate.py"
+      },
+      {
+        "rfilename": "checkpoint_meta.json"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration.json"
+      },
+      {
+        "rfilename": "docs/cost-savings.md"
+      },
+      {
+        "rfilename": "docs/deployment.md"
+      },
+      {
+        "rfilename": "docs/faq.md"
+      },
+      {
+        "rfilename": "docs/faq.zh.md"
+      },
+      {
+        "rfilename": "docs/gallery/G25_race_local_vs_api.gif"
+      },
+      {
+        "rfilename": "docs/gallery/G26_token_savings.gif"
+      },
+      {
+        "rfilename": "docs/gallery/G27_failclosed.gif"
+      },
+      {
+        "rfilename": "docs/gallery/README.md"
+      },
+      {
+        "rfilename": "docs/gallery/README_cn.md"
+      },
+      {
+        "rfilename": "docs/gallery/S01_rmrf_gate.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S02_curl_pipe_gate.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S03_chmod_batch.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S04_tristate_gate.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S05_replay_battery.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S06_escalate_savings.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S07_tool_routing.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S08_zh_zero_escalate.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S09_context_screen.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S10_model_routing.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S11_microbatch_60fps.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S12_snake.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S13_event_triage.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S14_doc_triage.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S15_expense_preapprove.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S16_skill_routing.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S17_quality_gate.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S18_invoice_verify.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S19_step_verify.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S20_output_screen.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S21_content_gate.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S22_flip_invariance.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S23_bilingual.gif"
+      },
+      {
+        "rfilename": "docs/gallery/S24_quickstart.gif"
+      },
+      {
+        "rfilename": "docs/gallery/SHA256SUMS"
+      },
+      {
+        "rfilename": "docs/protocol.md"
+      },
+      {
+        "rfilename": "docs/reproduce.md"
+      },
+      {
+        "rfilename": "docs/technical-report.md"
+      },
+      {
+        "rfilename": "encoder/config.json"
+      },
+      {
+        "rfilename": "figures/C10_hardware_tiers.png"
+      },
+      {
+        "rfilename": "figures/C10_hardware_tiers.svg"
+      },
+      {
+        "rfilename": "figures/C1_typed_acc_comparison.png"
+      },
+      {
+        "rfilename": "figures/C1_typed_acc_comparison.svg"
+      },
+      {
+        "rfilename": "figures/C2_latency_comparison.png"
+      },
+      {
+        "rfilename": "figures/C2_latency_comparison.svg"
+      },
+      {
+        "rfilename": "figures/C3_flip_robustness.png"
+      },
+      {
+        "rfilename": "figures/C3_flip_robustness.svg"
+      },
+      {
+        "rfilename": "figures/C4_jevbench.png"
+      },
+      {
+        "rfilename": "figures/C4_jevbench.svg"
+      },
+      {
+        "rfilename": "figures/C4b_jevbench_families.png"
+      },
+      {
+        "rfilename": "figures/C4b_jevbench_families.svg"
+      },
+      {
+        "rfilename": "figures/C5_calibration.png"
+      },
+      {
+        "rfilename": "figures/C5_calibration.svg"
+      },
+      {
+        "rfilename": "figures/C6_bilingual.png"
+      },
+      {
+        "rfilename": "figures/C6_bilingual.svg"
+      },
+      {
+        "rfilename": "figures/C7_routing_savings.png"
+      },
+      {
+        "rfilename": "figures/C7_routing_savings.svg"
+      },
+      {
+        "rfilename": "figures/C8_params_vs_latency.png"
+      },
+      {
+        "rfilename": "figures/C8_params_vs_latency.svg"
+      },
+      {
+        "rfilename": "figures/C9_zh_anchor.png"
+      },
+      {
+        "rfilename": "figures/C9_zh_anchor.svg"
+      },
+      {
+        "rfilename": "figures/README.md"
+      },
+      {
+        "rfilename": "figures/S22_flip_invariance.gif"
+      },
+      {
+        "rfilename": "figures/SHA256SUMS"
+      },
+      {
+        "rfilename": "figures/logo_phocinae.png"
+      },
+      {
+        "rfilename": "llms.txt"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "push_script.sh"
+      },
+      {
+        "rfilename": "rl_agent_config.json"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer_config.json"
+      }
+    ],
+    "safetensors": {
+      "parameters": {
+        "F16": 144292870
+      },
+      "total": 144292870
+    }
+  },
+  {
+    "id": "nvidia/PixelUMM",
+    "sha": "b621a91463d8a438f64c5d0116f42fb13cf26ce7",
+    "createdAt": "2026-10-01T21:40:34.000Z",
+    "lastModified": "2026-10-01T21:29:11.000Z",
+    "pipeline_tag": "image-to-text",
+    "downloads": 0,
+    "likes": 81,
+    "cardData": {
+      "license": "other",
+      "license_name": "nvidia-one-way-noncommercial-license",
+      "license_link": "https://developer.download.nvidia.com/licenses/NVIDIA-OneWay-Noncommercial-License-22Mar2022.pdf",
+      "base_model": "Qwen/Qwen3-8B",
+      "tags": [
+        "multimodal",
+        "image-generation",
+        "video-generation",
+        "image-to-text",
+        "video-text-to-text"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "S8-F18-R01/__SAVE_COMPLETE"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/.metadata"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__0_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__10_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__11_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__12_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__13_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__14_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__15_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__16_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__17_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__18_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__19_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__1_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__20_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__21_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__22_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__23_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__24_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__25_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__26_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__27_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__28_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__29_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__2_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__30_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__31_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__32_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__33_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__34_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__35_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__36_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__37_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__38_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__39_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__3_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__40_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__41_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__42_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__43_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__44_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__45_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__46_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__47_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__48_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__49_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__4_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__50_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__51_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__52_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__53_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__54_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__55_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__56_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__57_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__58_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__59_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__5_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__60_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__61_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__62_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__63_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__64_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__65_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__66_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__67_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__68_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__69_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__6_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__70_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__71_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__72_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__73_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__74_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__75_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__76_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__77_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__78_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__79_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__7_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__80_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__81_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__82_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__83_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__84_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__85_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__86_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__87_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__88_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__89_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__8_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__90_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__91_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__92_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__93_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__94_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__95_0.distcp"
+      },
+      {
+        "rfilename": "S8-F18-R01/model/__9_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/__SAVE_COMPLETE"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/.metadata"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__0_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__100_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__101_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__102_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__103_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__104_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__105_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__106_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__107_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__108_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__109_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__10_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__110_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__111_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__112_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__113_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__114_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__115_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__116_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__117_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__118_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__119_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__11_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__120_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__121_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__122_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__123_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__124_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__125_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__126_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__127_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__12_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__13_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__14_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__15_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__16_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__17_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__18_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__19_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__1_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__20_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__21_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__22_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__23_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__24_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__25_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__26_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__27_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__28_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__29_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__2_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__30_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__31_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__32_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__33_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__34_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__35_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__36_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__37_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__38_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__39_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__3_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__40_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__41_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__42_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__43_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__44_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__45_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__46_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__47_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__48_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__49_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__4_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__50_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__51_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__52_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__53_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__54_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__55_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__56_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__57_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__58_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__59_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__5_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__60_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__61_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__62_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__63_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__64_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__65_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__66_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__67_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__68_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__69_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__6_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__70_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__71_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__72_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__73_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__74_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__75_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__76_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__77_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__78_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__79_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__7_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__80_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__81_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__82_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__83_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__84_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__85_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__86_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__87_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__88_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__89_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__8_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__90_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__91_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__92_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__93_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__94_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__95_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__96_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__97_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__98_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__99_0.distcp"
+      },
+      {
+        "rfilename": "S8-F19-R03/model/__9_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/__SAVE_COMPLETE"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/.metadata"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__0_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__100_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__101_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__102_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__103_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__104_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__105_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__106_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__107_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__108_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__109_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__10_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__110_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__111_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__112_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__113_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__114_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__115_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__116_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__117_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__118_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__119_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__11_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__120_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__121_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__122_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__123_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__124_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__125_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__126_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__127_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__12_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__13_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__14_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__15_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__16_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__17_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__18_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__19_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__1_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__20_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__21_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__22_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__23_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__24_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__25_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__26_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__27_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__28_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__29_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__2_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__30_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__31_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__32_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__33_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__34_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__35_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__36_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__37_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__38_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__39_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__3_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__40_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__41_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__42_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__43_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__44_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__45_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__46_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__47_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__48_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__49_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__4_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__50_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__51_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__52_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__53_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__54_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__55_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__56_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__57_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__58_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__59_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__5_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__60_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__61_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__62_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__63_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__64_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__65_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__66_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__67_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__68_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__69_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__6_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__70_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__71_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__72_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__73_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__74_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__75_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__76_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__77_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__78_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__79_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__7_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__80_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__81_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__82_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__83_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__84_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__85_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__86_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__87_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__88_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__89_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__8_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__90_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__91_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__92_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__93_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__94_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__95_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__96_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__97_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__98_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__99_0.distcp"
+      },
+      {
+        "rfilename": "S8-F21-R02/model/__9_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/__SAVE_COMPLETE"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/.metadata"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__0_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__100_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__101_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__102_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__103_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__104_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__105_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__106_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__107_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__108_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__109_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__10_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__110_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__111_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__112_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__113_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__114_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__115_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__116_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__117_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__118_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__119_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__11_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__120_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__121_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__122_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__123_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__124_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__125_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__126_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__127_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__12_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__13_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__14_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__15_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__16_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__17_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__18_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__19_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__1_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__20_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__21_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__22_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__23_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__24_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__25_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__26_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__27_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__28_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__29_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__2_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__30_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__31_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__32_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__33_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__34_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__35_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__36_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__37_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__38_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__39_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__3_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__40_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__41_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__42_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__43_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__44_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__45_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__46_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__47_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__48_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__49_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__4_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__50_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__51_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__52_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__53_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__54_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__55_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__56_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__57_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__58_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__59_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__5_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__60_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__61_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__62_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__63_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__64_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__65_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__66_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__67_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__68_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__69_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__6_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__70_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__71_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__72_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__73_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__74_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__75_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__76_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__77_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__78_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__79_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__7_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__80_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__81_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__82_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__83_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__84_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__85_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__86_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__87_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__88_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__89_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__8_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__90_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__91_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__92_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__93_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__94_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__95_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__96_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__97_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__98_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__99_0.distcp"
+      },
+      {
+        "rfilename": "S8-F22-R05/model/__9_0.distcp"
+      },
+      {
+        "rfilename": "assets/pixelumm-teaser.png"
+      }
+    ],
+    "safetensors": null
+  },
+  {
+    "id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
+    "sha": "a8b0156f0dd61e2fcfe73e16dbbee600c4a967f1",
+    "createdAt": "2026-10-08T11:36:06.000Z",
+    "lastModified": "2026-10-09T17:11:35.000Z",
+    "pipeline_tag": "automatic-speech-recognition",
+    "downloads": 123,
+    "likes": 13,
+    "cardData": {
+      "library_name": "vllm",
+      "language": [
+        "ar",
+        "ary",
+        "ayl",
+        "aeb",
+        "arq",
+        "mey",
+        "afb",
+        "ars",
+        "acx",
+        "ayn",
+        "arz",
+        "apd",
+        "acm",
+        "ajp",
+        "apc",
+        "shu"
+      ],
+      "pipeline_tag": "automatic-speech-recognition",
+      "inference": false,
+      "tags": [
+        "mistral-common",
+        "audio",
+        "speech-to-text",
+        "realtime"
+      ],
+      "base_model": [
+        "mistralai/Voxtral-Mini-4B-Realtime-2602"
+      ],
+      "metrics": [
+        "cer",
+        "wer"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/avg_evals_by_delay.png"
+      },
+      {
+        "rfilename": "assets/bank-take-2.wav"
+      },
+      {
+        "rfilename": "assets/benchmark_composition.png"
+      },
+      {
+        "rfilename": "assets/benchmark_scores.png"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "consolidated.safetensors"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "normalization.py"
+      },
+      {
+        "rfilename": "params.json"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "tekken.json"
+      }
+    ],
+    "safetensors": {
+      "parameters": {
+        "BF16": 4429679360
+      },
+      "total": 4429679360
+    }
+  },
+  {
+    "id": "joe-gibbs/terrainsr",
+    "sha": "a557a7177a1ad0cb9121bbba5bb50d824e620994",
+    "createdAt": "2026-10-06T23:08:40.000Z",
+    "lastModified": "2026-10-07T01:06:39.000Z",
+    "pipeline_tag": null,
+    "downloads": 0,
+    "likes": 8,
+    "cardData": {
+      "language": [
+        "en"
+      ],
+      "license": "apache-2.0",
+      "library_name": "pytorch",
+      "tags": [
+        "terrain",
+        "elevation",
+        "super-resolution",
+        "geospatial",
+        "diffusion",
+        "onnx"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": ".gitignore"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "SHA256SUMS"
+      },
+      {
+        "rfilename": "autoencoder.py"
+      },
+      {
+        "rfilename": "examples/synthetic_input.npz"
+      },
+      {
+        "rfilename": "images/alps_comparison.png"
+      },
+      {
+        "rfilename": "images/flat_fens_comparison.png"
+      },
+      {
+        "rfilename": "images/france_hills_comparison.png"
+      },
+      {
+        "rfilename": "images/japan_hills_comparison.png"
+      },
+      {
+        "rfilename": "images/london_comparison.png"
+      },
+      {
+        "rfilename": "images/morocco_comparison.png"
+      },
+      {
+        "rfilename": "images/rockies_comparison.png"
+      },
+      {
+        "rfilename": "latent.py"
+      },
+      {
+        "rfilename": "noise.py"
+      },
+      {
+        "rfilename": "onnx/condition.onnx"
+      },
+      {
+        "rfilename": "onnx/decoder.onnx"
+      },
+      {
+        "rfilename": "onnx/schedule.json"
+      },
+      {
+        "rfilename": "onnx/step-tile.onnx"
+      },
+      {
+        "rfilename": "onnx/step.onnx"
+      },
+      {
+        "rfilename": "provenance.json"
+      },
+      {
+        "rfilename": "requirements.txt"
+      },
+      {
+        "rfilename": "terrainsr.py"
+      },
+      {
+        "rfilename": "verify.py"
+      },
+      {
+        "rfilename": "weights/latent_stats.json"
+      },
+      {
+        "rfilename": "weights/slim_decoder.pt"
+      },
+      {
+        "rfilename": "weights/stage_2.pt"
+      }
+    ],
+    "safetensors": null
+  },
+  {
+    "id": "neuphonic/neudecide",
+    "sha": "fb0157e06da16d887caf041ca7929f96da419e6b",
+    "createdAt": "2026-10-06T09:17:34.000Z",
+    "lastModified": "2026-10-09T13:41:08.000Z",
+    "pipeline_tag": "audio-classification",
+    "downloads": 353,
+    "likes": 59,
+    "cardData": {
+      "license": "apache-2.0",
+      "language": [
+        "en"
+      ],
+      "library_name": "onnx",
+      "pipeline_tag": "audio-classification",
+      "tags": [
+        "function-calling",
+        "tool-calling",
+        "spoken-language-understanding",
+        "onnx",
+        "on-device"
+      ],
+      "extra_gated_fields": {
+        "Affiliation (Company or Academic Institution)": "text",
+        "Role": "text"
+      }
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "audio_encoder_q4.onnx"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "decoder_step_q4.onnx"
+      },
+      {
+        "rfilename": "device_lab.png"
+      },
+      {
+        "rfilename": "plot.png"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer.model"
+      },
+      {
+        "rfilename": "tool_encoder_q4.onnx"
+      }
+    ],
+    "safetensors": null
+  },
+  {
+    "id": "lightonai/LightOnOCR-3-4B",
+    "sha": "b71010f095dc3735de7ee6b9969bff8f8f50b39a",
+    "createdAt": "2026-10-06T16:12:40.000Z",
+    "lastModified": "2026-10-09T10:27:59.000Z",
+    "pipeline_tag": "image-text-to-text",
+    "downloads": 580,
+    "likes": 61,
+    "cardData": {
+      "license": "apache-2.0",
+      "pipeline_tag": "image-text-to-text",
+      "library_name": "transformers",
+      "tags": [
+        "ocr",
+        "document-understanding",
+        "visual-grounding",
+        "vision-language",
+        "tables",
+        "forms"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".eval_results/olmocrbench.yaml"
+      },
+      {
+        "rfilename": ".eval_results/parsebench.yaml"
+      },
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "README.no_thinking.md"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "lightonocr3_logo.png"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "preprocessor_config.json"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "vocab.json"
+      }
+    ],
+    "safetensors": {
+      "parameters": {
+        "BF16": 4539265536
+      },
+      "total": 4539265536
+    }
+  },
+  {
+    "id": "tencent/Youtu-Parsing-Omni",
+    "sha": "05d44d70575744ce1009897bcba42c5986c3b7c3",
+    "createdAt": "2026-10-09T06:42:18.000Z",
+    "lastModified": "2026-10-10T17:04:14.000Z",
+    "pipeline_tag": "image-text-to-text",
+    "downloads": 340,
+    "likes": 61,
+    "cardData": {
+      "license": "other",
+      "license_name": "youtu-parsing",
+      "license_link": "https://huggingface.co/tencent/Youtu-Parsing-Omni/blob/main/LICENSE",
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "document-parsing",
+        "ocr",
+        "omni",
+        "multimodal",
+        "audio",
+        "video",
+        "custom_code"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/arch_figure.png"
+      },
+      {
+        "rfilename": "assets/logo.png"
+      },
+      {
+        "rfilename": "assets/mech_figure.png"
+      },
+      {
+        "rfilename": "assets/osad_figure.png"
+      },
+      {
+        "rfilename": "assets/overview_figure.png"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration_youtu_vita.py"
+      },
+      {
+        "rfilename": "feature_extraction_youtu_vita.py"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "image_processing_youtu_vita.py"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "modeling_youtu_vita.py"
+      },
+      {
+        "rfilename": "modular_youtu_vita.py"
+      },
+      {
+        "rfilename": "processing_youtu_vita.py"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "tokenization_youtu_vita.py"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "video_processing_youtu_vita.py"
+      }
+    ],
+    "safetensors": {
+      "parameters": {
+        "BF16": 5334472192
+      },
+      "total": 5334472192
+    }
+  }
+]
