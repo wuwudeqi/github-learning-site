@@ -1,0 +1,30 @@
+# 2026-10-12 图片归属与制作记录
+
+所有图片只用于对应段落的解读。公开可访问不自动等于可任意再分发。来源原图均保留作者、必要图例与数据；请按各自许可使用。
+
+| 文件 | 作者/机构与来源 | 范围、许可与改动 |
+| --- | --- | --- |
+| [maia-paths.png](maia-paths.png) | 前沿编辑（HTML/JS） · [来源](https://azure.microsoft.com/en-us/blog/wp-content/uploads/2026/10/Top-tier-Scale-Up-Network.webp) | 官方架构事实的原创路径示意 |
+| [odyssey-concept.png](odyssey-concept.png) | 前沿编辑（内置 imagegen） · [来源](https://odyssey.systems/meet-odyssey-3) | AI生成概念示意，非产品/物理结果 |
+| [grok-cost.png](grok-cost.png) | 前沿编辑（HTML/JS） · [来源](https://docs.x.ai/developers/pricing) | 仅10秒输出美元，不含输入/重试/候选 |
+| [aescode.png](aescode.png) | Microsoft AesCode 团队 · [来源](https://github.com/microsoft/AesCode) | MIT原图；图中统计为作者合成示例，未裁切 |
+| [prism.png](prism.png) | Prism 作者团队 / Tencent-Hunyuan · [来源](https://huggingface.co/FrancisRing/Prism) | MIT及依赖许可；未裁切 |
+| [sspace.png](sspace.png) | Shi, Zhiyuan, Li, Xiang, Guo, Xingzhuo, Miao, Shangchen, Chen, Weiliang, Dai, Qiyu, Ren, Jinshan, Lyu, Jiangran, Liu, Fangfu, Long, Mingsheng, Wu, Jialong，论文 2610.13527 · [来源](https://arxiv.org/html/2610.13527v1) | CC BY-NC-SA 4.0，非商业学习解读，未修改 |
+| [softwaregym.png](softwaregym.png) | Jin, Tian, Wang, Wenhao, Kang, Jing, Shi, Haoting, Ye, Rui, Lu, Yijun, Chen, Siheng，论文 2610.12611 · [来源](https://arxiv.org/html/2610.12611v1) | CC BY 4.0，未裁切 |
+| [remory.png](remory.png) | Xia, Hanchen, Chen, Baoyou, Ge, Yutang, Deng, Naihao, Yang, Senqiao, Dong, Zilong, Yuan, Weihao, Zhu, Siyu，论文 2610.11287 · [来源](https://arxiv.org/pdf/2610.11287v1) | CC BY 4.0；裁去页面周边正文，保留完整图轴图例 |
+| [dcoco.png](dcoco.png) | Eisenstadt, Roy, Lidar, Harel, Gonen, Tal, Luxembourg, Omer, Zimerman, Itamar, Wolf, Lior, David, Eli, Naiman, Ilan，论文 2610.12570 · [来源](https://arxiv.org/pdf/2610.12570v1) | CC BY 4.0；只裁页面周边文字，不改图内部关系 |
+| [soloq.png](soloq.png) | Lee, Donghyun, Ghosh, Arkapravo, Manjunath, Varun, Rhee, Bumjoon Kyle, Kook, Hyunho, Xiao, Shiting, Kim, Youngeun, Panda, Priyadarshini，论文 2610.07121 · [来源](https://arxiv.org/html/2610.07121v1) | CC BY 4.0，未裁切 |
+| [diffle.png](diffle.png) | Moritz Wilksch / Diffle · [来源](https://github.com/moritzwilksch/diffle) | Apache-2.0，未裁切 |
+| [brainotes.png](brainotes.png) | swimmingbrain / Brainotes · [来源](https://github.com/swimmingbrain/brainotes) | MIT，未裁切 |
+| [work2skill.png](work2skill.png) | Work2Skill 作者团队 / china-qijizhifeng · [来源](https://github.com/china-qijizhifeng/Work2Skill) | MIT，未裁切，完整评测实现存在缺口 |
+| [rsi.png](rsi.png) | Gen-Verse / RSI-Anything · [来源](https://github.com/Gen-Verse/RSI-Anything) | Apache-2.0，NOTICE随附，未裁切 |
+| [candidate-results.png](candidate-results.png) | 前沿编辑（HTML/JS） · [来源](code/candidate-results.json) | 本机合成教学数据；不报告性能/速度 |
+
+## 附件与条件
+
+- 六个代码仓库所用图片的原许可全文保存在 [licenses/](licenses/)；RSI-Anything 的 NOTICE 同时保留。
+- S-Space 的 CC BY-NC-SA 4.0 仅用于本非商业学习解读，图片不修改；[许可](https://creativecommons.org/licenses/by-nc-sa/4.0/)。其余采用的论文图使用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，原作者与版本见对应站内阅读卡。
+- REMORY 图3取自原 PDF 第3页，DCOCO 图2取自第4页；只裁去图区外正文，完整图轴、图例、数值与关系不变，原始 PDF 入口保留在正文图注。
+- Odyssey 为 AI 生成概念示意；[最终提示词及采用路径](odyssey-prompt.txt) 随图保存，不能用于声称产品画面或物理实测。
+- Maia 路径、Grok费用和合成实践结果分别有 [Maia源码](../code/maia-paths.html)、[费用源码](../code/grok-cost.html)、[实践源码](../code/candidate-results.html)。Maia原网络图的再分发授权未明确，本站只保留外链；费用和路径依据官方事实独立绘制。
+- 实践条形图的候选与分数为手工构造，实际执行结果见 [JSON](../code/candidate-results.json)；不代表模型性能或论文复现。

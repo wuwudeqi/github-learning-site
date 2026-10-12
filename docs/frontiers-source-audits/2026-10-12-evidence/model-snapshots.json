@@ -1,0 +1,180 @@
+[
+  {
+    "id": "vllm-sr/d3",
+    "sha": "093cffbaa7be6f5dfe14252ae7e80c396c06dbd9",
+    "createdAt": "2026-10-10T09:38:30.000Z",
+    "lastModified": "2026-10-12T12:03:13.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "model-00001-of-00011.safetensors",
+      "model-00002-of-00011.safetensors",
+      "model-00003-of-00011.safetensors",
+      "model-00004-of-00011.safetensors",
+      "model-00005-of-00011.safetensors",
+      "model-00006-of-00011.safetensors",
+      "model-00007-of-00011.safetensors",
+      "model-00008-of-00011.safetensors",
+      "model-00009-of-00011.safetensors",
+      "model-00010-of-00011.safetensors",
+      "model-00011-of-00011.safetensors",
+      "readout.safetensors"
+    ],
+    "selectionNote": {
+      "lane": "新近实用 / 新近创新",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-12",
+      "originalDate": "2026-10-10",
+      "newFact": "10月10日发布Decision 3.0权重，10月11—12日继续修订运行接口",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "对同一输入提出选择、是非和评分问题，省去自由文本输出再解析的环节",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "公共套件、内部多模态测试与旧图分数不同；开发通道，硬件测量仅作者MI325X单并发",
+      "candidatePath": "Hugging Face近期趋势/新上传→原始模型卡、文件清单、提交时间→官方代码/许可→7/30天去重",
+      "sourceEvidencePath": "docs/frontiers-source-audits/2026-10-12-evidence/model-snapshots.json"
+    }
+  },
+  {
+    "id": "neuphonic/neudecide",
+    "sha": "fb0157e06da16d887caf041ca7929f96da419e6b",
+    "createdAt": "2026-10-06T09:17:34.000Z",
+    "lastModified": "2026-10-09T13:41:08.000Z",
+    "gated": "auto",
+    "license": "apache-2.0",
+    "weightFiles": [
+      "audio_encoder_q4.onnx",
+      "decoder_step_q4.onnx",
+      "tool_encoder_q4.onnx"
+    ],
+    "selectionNote": {
+      "lane": "新近实用 / 新近创新",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-12",
+      "originalDate": "2026-10-06",
+      "newFact": "10月6日创建的模型仓库提供直接语音到工具调用的量化ONNX文件",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "英语语音加工具schema直接输出结构化调用，减少ASR转写和语言模型串联",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "英语限定；受限下载未完成；官方特定SLURP设置不能外推；噪声触发与低完整匹配率",
+      "candidatePath": "Hugging Face近期趋势/新上传→原始模型卡、文件清单、提交时间→官方代码/许可→7/30天去重",
+      "sourceEvidencePath": "docs/frontiers-source-audits/2026-10-12-evidence/model-snapshots.json"
+    }
+  },
+  {
+    "id": "microsoft/AesCode-8B",
+    "sha": "fd63cd69a43700f06b0fcefee6fd40cc047ad1eb",
+    "createdAt": "2026-09-29T13:04:44.000Z",
+    "lastModified": "2026-10-07T03:35:13.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "model-00001-of-00004.safetensors",
+      "model-00002-of-00004.safetensors",
+      "model-00003-of-00004.safetensors",
+      "model-00004-of-00004.safetensors"
+    ],
+    "selectionNote": {
+      "lane": "新近实用 / 新近创新",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-12",
+      "originalDate": "2026-10-07",
+      "newFact": "10月7日Release AesCode-8B提交包含权重",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "提示词和参考图到HTML/CSS，兼顾可编辑结构与视觉评价",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "自建评价和固定采样条件；示例数据为合成；显存下限本站未测",
+      "candidatePath": "Hugging Face近期趋势/新上传→原始模型卡、文件清单、提交时间→官方代码/许可→7/30天去重",
+      "sourceEvidencePath": "docs/frontiers-source-audits/2026-10-12-evidence/model-snapshots.json"
+    }
+  },
+  {
+    "id": "microsoft/FrogNano-4B-2609",
+    "sha": "b90468c11a913c1916b4542b4b7a530ec42024a4",
+    "createdAt": "2026-09-17T00:13:57.000Z",
+    "lastModified": "2026-10-02T18:50:47.000Z",
+    "gated": false,
+    "license": "mit",
+    "weightFiles": [
+      "model-00000-of-00002.safetensors",
+      "model-00001-of-00002.safetensors"
+    ],
+    "selectionNote": {
+      "lane": "新近实用 / 新近创新",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-12",
+      "originalDate": "2026-09-22",
+      "newFact": "9月22日模型卡标示发布，首次收录的30天内研究补充",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "1500个按策略校准的合成SWE任务配合Leaf五工具闭环，不借强模型解题轨迹",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "权重许可标注冲突待上游澄清；英语Python偏置；Avg@3不同于Pass@3；不保证最低显卡",
+      "candidatePath": "Hugging Face近期趋势/新上传→原始模型卡、文件清单、提交时间→官方代码/许可→7/30天去重",
+      "sourceEvidencePath": "docs/frontiers-source-audits/2026-10-12-evidence/model-snapshots.json"
+    }
+  },
+  {
+    "id": "sahilmahendrakar/Paradee-8M-v1.0",
+    "sha": "c7f83f86c04e84d0ae94cbe1aad7618e0544f80a",
+    "createdAt": "2026-09-25T21:28:44.000Z",
+    "lastModified": "2026-10-09T19:40:20.000Z",
+    "gated": false,
+    "license": "apache-2.0",
+    "weightFiles": [
+      "onnx/paradee.onnx",
+      "onnx/paradee_int8.onnx",
+      "pytorch/decoder.pt",
+      "pytorch/text_side.pt"
+    ],
+    "selectionNote": {
+      "lane": "新近实用 / 新近创新",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-12",
+      "originalDate": "2026-09-25",
+      "newFact": "9月25日上传权重，10月初论文与模型说明补齐蒸馏和部署证据",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "音素序列到24kHz语音；8M规模适合端侧实验但牺牲多音色和语言范围",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "单英文音色；作者200句测试；PyTorch/ONNX/榜单协议不同；音素前端依赖",
+      "candidatePath": "Hugging Face近期趋势/新上传→原始模型卡、文件清单、提交时间→官方代码/许可→7/30天去重",
+      "sourceEvidencePath": "docs/frontiers-source-audits/2026-10-12-evidence/model-snapshots.json"
+    }
+  },
+  {
+    "id": "FrancisRing/Prism",
+    "sha": "0ff9e33dc323a9a97ca3defcc019d745e93f3a26",
+    "createdAt": "2026-09-24T09:58:12.000Z",
+    "lastModified": "2026-10-06T15:17:27.000Z",
+    "gated": false,
+    "license": "mit",
+    "weightFiles": [
+      "pretrained_models/MOVA-360p/audio_dit/diffusion_pytorch_model.safetensors",
+      "pretrained_models/MOVA-360p/audio_vae/diffusion_pytorch_model.safetensors",
+      "pretrained_models/MOVA-360p/dual_tower_bridge/diffusion_pytorch_model.safetensors",
+      "pretrained_models/MOVA-360p/text_encoder/model-00001-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/text_encoder/model-00002-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/text_encoder/model-00003-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_dit/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_dit/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_dit/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_dit_2/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_dit_2/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_dit_2/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "pretrained_models/MOVA-360p/video_vae/diffusion_pytorch_model.safetensors",
+      "preview_alpha/diffusion_pytorch_model.safetensors",
+      "preview_beta/diffusion_pytorch_model.safetensors"
+    ],
+    "selectionNote": {
+      "lane": "新近实用 / 新近创新",
+      "timeWindow": "新闻近24小时优先，依次72小时/7天；项目论文近7天优先，必要时30天，观察于2026-10-12",
+      "originalDate": "2026-10-05",
+      "newFact": "10月5日提交上传两组预览checkpoint；公告日期占位符未完成，按上传时间记",
+      "heatSignals": [],
+      "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+      "valueEvidence": "联合音视频生成按局部变化和音画耦合选择块形状，面向高分辨率训练",
+      "validationLevel": "官方文档或作者实验，本站未运行",
+      "limitations": "预览状态；正式日期占位符；需基础模型和高显存CUDA环境；未验证作者速度收益",
+      "candidatePath": "Hugging Face近期趋势/新上传→原始模型卡、文件清单、提交时间→官方代码/许可→7/30天去重",
+      "sourceEvidencePath": "docs/frontiers-source-audits/2026-10-12-evidence/model-snapshots.json"
+    }
+  }
+]

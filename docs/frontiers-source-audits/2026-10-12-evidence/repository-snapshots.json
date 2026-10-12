@@ -1,0 +1,541 @@
+[
+  {
+    "repository": "THU-CST-SAST/AAArena",
+    "url": "https://github.com/THU-CST-SAST/AAArena",
+    "createdAt": "2026-10-06T05:19:44Z",
+    "pushedAt": "2026-10-09T09:09:42Z",
+    "archived": false,
+    "starsObserved": 36,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "fd52d2337b6711f0f3a239216f48720c125750be",
+    "releases": [],
+    "implementation": {
+      "repo": "THU-CST-SAST/AAArena",
+      "path": "scripts/setup_local.py",
+      "url": "https://raw.githubusercontent.com/THU-CST-SAST/AAArena/fd52d2337b6711f0f3a239216f48720c125750be/scripts/setup_local.py",
+      "commit": "fd52d2337b6711f0f3a239216f48720c125750be",
+      "checkedAt": "2026-10-12T22:16:43.149509+08:00",
+      "ok": true,
+      "bytes": 7402,
+      "sha256": "dbc5b0418bf6af9c710e357d946b28127bdce4e7b6051fc52261b4339b28d72a",
+      "localPath": ".frontiers/sources/2026-10-12/impl-THU-CST-SAST--AAArena.txt"
+    }
+  },
+  {
+    "repository": "moritzwilksch/diffle",
+    "url": "https://github.com/moritzwilksch/diffle",
+    "createdAt": "2026-09-08T20:33:22Z",
+    "pushedAt": "2026-10-12T08:59:06Z",
+    "archived": false,
+    "starsObserved": 132,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "defaultBranch": "main",
+    "commit": "a69274d512a588dd86714bef103c8dbc2cadb2cf",
+    "releases": [
+      {
+        "tag_name": "v0.2.4",
+        "published_at": "2026-10-07T23:37:48Z",
+        "prerelease": false,
+        "html_url": "https://github.com/moritzwilksch/diffle/releases/tag/v0.2.4"
+      },
+      {
+        "tag_name": "v0.2.3",
+        "published_at": "2026-10-07T11:37:51Z",
+        "prerelease": false,
+        "html_url": "https://github.com/moritzwilksch/diffle/releases/tag/v0.2.3"
+      },
+      {
+        "tag_name": "v0.2.2",
+        "published_at": "2026-10-06T21:20:02Z",
+        "prerelease": false,
+        "html_url": "https://github.com/moritzwilksch/diffle/releases/tag/v0.2.2"
+      }
+    ],
+    "implementation": {
+      "repo": "moritzwilksch/diffle",
+      "path": "src/cli/main.ts",
+      "url": "https://raw.githubusercontent.com/moritzwilksch/diffle/a69274d512a588dd86714bef103c8dbc2cadb2cf/src/cli/main.ts",
+      "commit": "a69274d512a588dd86714bef103c8dbc2cadb2cf",
+      "checkedAt": "2026-10-12T22:16:42.961426+08:00",
+      "ok": true,
+      "bytes": 21472,
+      "sha256": "71842082b659857295eb6b4e7ba5f8eca51b29b0b279472b3688cb1735837a09",
+      "localPath": ".frontiers/sources/2026-10-12/impl-moritzwilksch--diffle.txt"
+    }
+  },
+  {
+    "repository": "sweduel/SWE-Duel",
+    "url": "https://github.com/sweduel/SWE-Duel",
+    "createdAt": "2026-10-08T05:32:14Z",
+    "pushedAt": "2026-10-12T07:03:31Z",
+    "archived": false,
+    "starsObserved": 3,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "d1889697193281aabce074647fd3fb4311285eea",
+    "releases": [],
+    "implementation": {
+      "repo": "sweduel/SWE-Duel",
+      "path": "src/swe_duel/agents/red.py",
+      "url": "https://raw.githubusercontent.com/sweduel/SWE-Duel/d1889697193281aabce074647fd3fb4311285eea/src/swe_duel/agents/red.py",
+      "commit": "d1889697193281aabce074647fd3fb4311285eea",
+      "checkedAt": "2026-10-12T22:16:42.420583+08:00",
+      "ok": true,
+      "bytes": 45232,
+      "sha256": "9941cdaa4648025bcce61137b74a773d1c4890eb97f00c78d8e9f2862a0671ad",
+      "localPath": ".frontiers/sources/2026-10-12/impl-sweduel--SWE-Duel.txt"
+    }
+  },
+  {
+    "repository": "microsoft/FrogNano",
+    "url": "https://github.com/microsoft/FrogNano",
+    "createdAt": "2026-08-25T15:56:06Z",
+    "pushedAt": "2026-10-08T15:35:08Z",
+    "archived": false,
+    "starsObserved": 16,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "5038f91560c635acb50daa452eb62c12daa737ad",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "darshi1337/apogee",
+    "url": "https://github.com/darshi1337/apogee",
+    "createdAt": "2026-05-26T07:33:58Z",
+    "pushedAt": "2026-10-12T02:13:40Z",
+    "archived": false,
+    "starsObserved": 84,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "cb26b44f836b7f2116d7cc49ba388abf3493577c",
+    "releases": [
+      {
+        "tag_name": "v0.2.4",
+        "published_at": "2026-10-05T03:15:23Z",
+        "prerelease": false,
+        "html_url": "https://github.com/darshi1337/apogee/releases/tag/v0.2.4"
+      },
+      {
+        "tag_name": "v0.2.3",
+        "published_at": "2026-10-01T02:37:13Z",
+        "prerelease": false,
+        "html_url": "https://github.com/darshi1337/apogee/releases/tag/v0.2.3"
+      },
+      {
+        "tag_name": "v0.2.2",
+        "published_at": "2026-09-22T02:03:50Z",
+        "prerelease": false,
+        "html_url": "https://github.com/darshi1337/apogee/releases/tag/v0.2.2"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "microsoft/AesCode",
+    "url": "https://github.com/microsoft/AesCode",
+    "createdAt": "2026-07-23T12:33:52Z",
+    "pushedAt": "2026-10-08T23:14:55Z",
+    "archived": false,
+    "starsObserved": 21,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "afe2282b3c1270338a20bf14c80a56166fa833c5",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "Tencent-Hunyuan/Prism",
+    "url": "https://github.com/Tencent-Hunyuan/Prism",
+    "createdAt": "2026-09-21T11:31:58Z",
+    "pushedAt": "2026-10-06T15:14:31Z",
+    "archived": false,
+    "starsObserved": 216,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "defaultBranch": "main",
+    "commit": "8f0c2633f40ccf89e26f928c6d1771616caeb510",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "vanzll/DiffusionART",
+    "url": "https://github.com/vanzll/DiffusionART",
+    "createdAt": "2026-09-24T08:35:23Z",
+    "pushedAt": "2026-10-12T07:50:08Z",
+    "archived": false,
+    "starsObserved": 66,
+    "license": null,
+    "defaultBranch": "main",
+    "commit": "d43b9d0e773a9bc8a7f4754c3828e5c7733c64e6",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "storytold/artcraft",
+    "url": "https://github.com/storytold/artcraft",
+    "createdAt": "2022-03-31T23:19:12Z",
+    "pushedAt": "2026-10-11T13:47:59Z",
+    "archived": false,
+    "starsObserved": 20185,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "defaultBranch": "main",
+    "commit": "d4e4ac69bbd93d237eaf5d0260bc6a5ff3a5e373",
+    "releases": [
+      {
+        "tag_name": "artcraft-v0.41.0",
+        "published_at": "2026-09-26T11:14:22Z",
+        "prerelease": false,
+        "html_url": "https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.0"
+      },
+      {
+        "tag_name": "artcraft-v0.37.0",
+        "published_at": "2026-09-11T05:41:04Z",
+        "prerelease": false,
+        "html_url": "https://github.com/storytold/artcraft/releases/tag/artcraft-v0.37.0"
+      },
+      {
+        "tag_name": "artcraft-v0.32.0",
+        "published_at": "2026-05-14T17:05:23Z",
+        "prerelease": false,
+        "html_url": "https://github.com/storytold/artcraft/releases/tag/artcraft-v0.32.0"
+      }
+    ],
+    "implementation": {
+      "repo": "storytold/artcraft",
+      "path": "artcraft-native/src/backend/providers/submit.rs",
+      "url": "https://raw.githubusercontent.com/storytold/artcraft/d4e4ac69bbd93d237eaf5d0260bc6a5ff3a5e373/artcraft-native/src/backend/providers/submit.rs",
+      "commit": "d4e4ac69bbd93d237eaf5d0260bc6a5ff3a5e373",
+      "checkedAt": "2026-10-12T22:16:41.846309+08:00",
+      "ok": true,
+      "bytes": 11858,
+      "sha256": "738c0246988ddaf785402df6d437831a0e8d8e4b305141e150d3ed581cae1d92",
+      "localPath": ".frontiers/sources/2026-10-12/impl-storytold--artcraft.txt"
+    }
+  },
+  {
+    "repository": "china-qijizhifeng/Work2Skill",
+    "url": "https://github.com/china-qijizhifeng/Work2Skill",
+    "createdAt": "2026-10-12T05:36:25Z",
+    "pushedAt": "2026-10-12T13:34:40Z",
+    "archived": false,
+    "starsObserved": 15,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "f2ecdc9992749952864d05fb864d670b782dee0a",
+    "releases": [],
+    "implementation": {
+      "repo": "china-qijizhifeng/Work2Skill",
+      "path": "AgenticSkillInduction/start.py",
+      "url": "https://raw.githubusercontent.com/china-qijizhifeng/Work2Skill/f2ecdc9992749952864d05fb864d670b782dee0a/AgenticSkillInduction/start.py",
+      "commit": "f2ecdc9992749952864d05fb864d670b782dee0a",
+      "checkedAt": "2026-10-12T22:16:42.228845+08:00",
+      "ok": true,
+      "bytes": 8899,
+      "sha256": "eab5acd9b936d9efae7a1993113aaee105525aa5beef0ee099ca3f4728445a87",
+      "localPath": ".frontiers/sources/2026-10-12/impl-china-qijizhifeng--Work2Skill.txt"
+    }
+  },
+  {
+    "repository": "opennookorg/betterwispr",
+    "url": "https://github.com/opennookorg/betterwispr",
+    "createdAt": "2026-10-07T19:52:04Z",
+    "pushedAt": "2026-10-12T06:26:32Z",
+    "archived": false,
+    "starsObserved": 257,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "defaultBranch": "main",
+    "commit": "c10b57fd9525216045ab7e9e35d851bacca5cfe7",
+    "releases": [
+      {
+        "tag_name": "v0.1.5",
+        "published_at": "2026-10-12T06:26:49Z",
+        "prerelease": false,
+        "html_url": "https://github.com/opennookorg/betterwispr/releases/tag/v0.1.5"
+      },
+      {
+        "tag_name": "v0.1.4",
+        "published_at": "2026-10-09T20:30:27Z",
+        "prerelease": false,
+        "html_url": "https://github.com/opennookorg/betterwispr/releases/tag/v0.1.4"
+      },
+      {
+        "tag_name": "v0.1.3",
+        "published_at": "2026-10-08T19:35:30Z",
+        "prerelease": false,
+        "html_url": "https://github.com/opennookorg/betterwispr/releases/tag/v0.1.3"
+      }
+    ],
+    "implementation": {
+      "repo": "opennookorg/betterwispr",
+      "path": "Sources/BetterWispr/App/MeetingModel.swift",
+      "url": "https://raw.githubusercontent.com/opennookorg/betterwispr/c10b57fd9525216045ab7e9e35d851bacca5cfe7/Sources/BetterWispr/App/MeetingModel.swift",
+      "commit": "c10b57fd9525216045ab7e9e35d851bacca5cfe7",
+      "checkedAt": "2026-10-12T22:16:42.407583+08:00",
+      "ok": true,
+      "bytes": 17533,
+      "sha256": "22a5596933191b23474ddceeb538d05f2bafbec11b198453513d31457910e8ef",
+      "localPath": ".frontiers/sources/2026-10-12/impl-opennookorg--betterwispr.txt"
+    }
+  },
+  {
+    "repository": "SaarthurR/atticus-mac",
+    "url": "https://github.com/SaarthurR/atticus-mac",
+    "createdAt": "2026-10-10T01:07:04Z",
+    "pushedAt": "2026-10-12T01:14:14Z",
+    "archived": false,
+    "starsObserved": 39,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "39c27c92df84f43842680af85a0f9bc1ea4f5119",
+    "releases": [],
+    "implementation": {
+      "repo": "SaarthurR/atticus-mac",
+      "path": "atticus.py",
+      "url": "https://raw.githubusercontent.com/SaarthurR/atticus-mac/39c27c92df84f43842680af85a0f9bc1ea4f5119/atticus.py",
+      "commit": "39c27c92df84f43842680af85a0f9bc1ea4f5119",
+      "checkedAt": "2026-10-12T22:16:42.404463+08:00",
+      "ok": true,
+      "bytes": 81846,
+      "sha256": "61f0e902462902f0b85578eb56a45378e765c5bef25cd89cdbb4543d21f0cb91",
+      "localPath": ".frontiers/sources/2026-10-12/impl-SaarthurR--atticus-mac.txt"
+    }
+  },
+  {
+    "repository": "opper-ai/jevman-benchmark",
+    "url": "https://github.com/opper-ai/jevman-benchmark",
+    "createdAt": "2026-10-07T10:59:35Z",
+    "pushedAt": "2026-10-12T13:19:03Z",
+    "archived": false,
+    "starsObserved": 19,
+    "license": {
+      "key": "agpl-3.0",
+      "name": "GNU Affero General Public License v3.0",
+      "spdx_id": "AGPL-3.0",
+      "url": "https://api.github.com/licenses/agpl-3.0",
+      "node_id": "MDc6TGljZW5zZTE="
+    },
+    "defaultBranch": "main",
+    "commit": "b202e2cefd3dcf62b99835b319450b687960f40a",
+    "releases": [],
+    "implementation": {
+      "repo": "opper-ai/jevman-benchmark",
+      "path": "scripts/example-endpoint.ts",
+      "url": "https://raw.githubusercontent.com/opper-ai/jevman-benchmark/b202e2cefd3dcf62b99835b319450b687960f40a/scripts/example-endpoint.ts",
+      "commit": "b202e2cefd3dcf62b99835b319450b687960f40a",
+      "checkedAt": "2026-10-12T22:16:42.751484+08:00",
+      "ok": true,
+      "bytes": 1512,
+      "sha256": "b7c12dd3e3fd857c5f22ad794d96d280d1231527f174191fd2ae2fb434000063",
+      "localPath": ".frontiers/sources/2026-10-12/impl-opper-ai--jevman-benchmark.txt"
+    }
+  },
+  {
+    "repository": "project-minigraf/minigraf",
+    "url": "https://github.com/project-minigraf/minigraf",
+    "createdAt": "2023-07-02T12:20:33Z",
+    "pushedAt": "2026-10-11T18:23:50Z",
+    "archived": false,
+    "starsObserved": 190,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "defaultBranch": "main",
+    "commit": "72d847e3767c7b236beffc0eb9e18b034f469066",
+    "releases": [
+      {
+        "tag_name": "v2.0.5",
+        "published_at": "2026-10-11T08:17:02Z",
+        "prerelease": false,
+        "html_url": "https://github.com/project-minigraf/minigraf/releases/tag/v2.0.5"
+      },
+      {
+        "tag_name": "v2.0.4",
+        "published_at": "2026-10-08T08:51:33Z",
+        "prerelease": false,
+        "html_url": "https://github.com/project-minigraf/minigraf/releases/tag/v2.0.4"
+      },
+      {
+        "tag_name": "v2.0.3",
+        "published_at": "2026-10-06T05:11:17Z",
+        "prerelease": false,
+        "html_url": "https://github.com/project-minigraf/minigraf/releases/tag/v2.0.3"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "anupray95/AI-Agent-on-a-NOKIA",
+    "url": "https://github.com/anupray95/AI-Agent-on-a-NOKIA",
+    "createdAt": "2026-10-08T14:09:02Z",
+    "pushedAt": "2026-10-09T06:25:10Z",
+    "archived": false,
+    "starsObserved": 9,
+    "license": null,
+    "defaultBranch": "master",
+    "commit": "1bd81e1aa1abf8940acbc94de2306ba780edea4a",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "sahilmahendrakar/paradee",
+    "url": "https://github.com/sahilmahendrakar/paradee",
+    "createdAt": "2026-09-25T21:29:15Z",
+    "pushedAt": "2026-10-05T17:39:33Z",
+    "archived": false,
+    "starsObserved": 59,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "defaultBranch": "main",
+    "commit": "9c8b4d7504cbee7e64de2d0341bb690f0b0ab708",
+    "releases": [
+      {
+        "tag_name": "v1.0",
+        "published_at": "2026-09-25T21:42:45Z",
+        "prerelease": false,
+        "html_url": "https://github.com/sahilmahendrakar/paradee/releases/tag/v1.0"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "swimmingbrain/brainotes",
+    "url": "https://github.com/swimmingbrain/brainotes",
+    "createdAt": "2026-10-05T06:13:26Z",
+    "pushedAt": "2026-10-09T19:12:01Z",
+    "archived": false,
+    "starsObserved": 16,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "defaultBranch": "main",
+    "commit": "6bf099946aeb0d617fea841f5d771fa1e32f38fa",
+    "releases": [],
+    "implementation": {
+      "repo": "swimmingbrain/brainotes",
+      "path": "src/lib/editor/notebook-file.ts",
+      "url": "https://raw.githubusercontent.com/swimmingbrain/brainotes/6bf099946aeb0d617fea841f5d771fa1e32f38fa/src/lib/editor/notebook-file.ts",
+      "commit": "6bf099946aeb0d617fea841f5d771fa1e32f38fa",
+      "checkedAt": "2026-10-12T22:16:41.904891+08:00",
+      "ok": true,
+      "bytes": 1393,
+      "sha256": "68770ef233d6eacec68af38f228dd68c9dba5eb596a1137cd18fc417a42539a1",
+      "localPath": ".frontiers/sources/2026-10-12/impl-swimmingbrain--brainotes.txt"
+    }
+  },
+  {
+    "repository": "Gen-Verse/RSI-Anything",
+    "url": "https://github.com/Gen-Verse/RSI-Anything",
+    "createdAt": "2026-10-08T22:52:16Z",
+    "pushedAt": "2026-10-12T04:50:21Z",
+    "archived": false,
+    "starsObserved": 286,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "defaultBranch": "main",
+    "commit": "99dbf000a424b9033651b1096c5da2b6d5fa3865",
+    "releases": [
+      {
+        "tag_name": "assets-v1",
+        "published_at": "2026-10-10T07:30:14Z",
+        "prerelease": false,
+        "html_url": "https://github.com/Gen-Verse/RSI-Anything/releases/tag/assets-v1"
+      }
+    ],
+    "implementation": {
+      "repo": "Gen-Verse/RSI-Anything",
+      "path": "src/rsi_anything/workflow/runner.py",
+      "url": "https://raw.githubusercontent.com/Gen-Verse/RSI-Anything/99dbf000a424b9033651b1096c5da2b6d5fa3865/src/rsi_anything/workflow/runner.py",
+      "commit": "99dbf000a424b9033651b1096c5da2b6d5fa3865",
+      "checkedAt": "2026-10-12T22:16:43.933255+08:00",
+      "ok": true,
+      "bytes": 8342,
+      "sha256": "1163a5970235c340bafa25eb7513d266fb9ef9cc90910537baaa3a02b203918f",
+      "localPath": ".frontiers/sources/2026-10-12/impl-Gen-Verse--RSI-Anything.txt"
+    }
+  }
+]

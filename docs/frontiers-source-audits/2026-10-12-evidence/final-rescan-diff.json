@@ -1,0 +1,107 @@
+[
+  {
+    "source": "final-deepseek.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-tencent.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-anthropic.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-openai-changelog.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-google.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-kimi.txt",
+    "same": false,
+    "delta": [
+      "--- \n",
+      "+++ \n",
+      "@@ -1,2 +1,2 @@\n",
+      "-",
+      "+Kimi Work 发布日志 - Kimi 帮助中心",
+      " 产品产品",
+      "@@ -312,2 +312 @@\n",
+      " © 2026 北京月之暗面科技有限公司|京ICP备2023011302号-14|京B2-20240852|京公网安备11010802043150号",
+      "-Kimi Work 发布日志 - Kimi 帮助中心"
+    ]
+  },
+  {
+    "source": "final-nvidia.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-xai.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-baidu.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-zhipu.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-bytedance.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-google-ai.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-alibaba.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-minimax.txt",
+    "same": true,
+    "delta": []
+  },
+  {
+    "source": "final-microsoft.txt",
+    "same": false,
+    "delta": [
+      "--- \n",
+      "+++ \n",
+      "@@ -77,2 +77,5 @@\n",
+      "  Tags",
+      "+October 12, 2026",
+      "+Introducing Microsoft's latest custom chip: Maia 300",
+      "+Company News",
+      " October 9, 2026",
+      "@@ -109,5 +112,2 @@\n",
+      " XBOX returns to where it all began for its 25th anniversary",
+      "-Company News",
+      "-October 5, 2026",
+      "-How Power Platform helps businesses build AI into existing apps",
+      " Company News"
+    ]
+  },
+  {
+    "source": "final-meta.txt",
+    "same": true,
+    "delta": []
+  }
+]

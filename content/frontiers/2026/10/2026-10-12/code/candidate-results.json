@@ -1,0 +1,129 @@
+{
+  "generatedAt": "2026-10-12T14:10:22.284265+00:00",
+  "python": "3.14.3",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "dataType": "hand-constructed synthetic cases and scores",
+  "scope": "illustration of candidate selection and reference fallback; no speed or model accuracy claim",
+  "results": [
+    {
+      "id": "agreement",
+      "label": "搭配可纠正",
+      "independent": [
+        "These",
+        "key",
+        "is",
+        "missing"
+      ],
+      "conditional": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ],
+      "reference": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ],
+      "accepted_independent": 1,
+      "accepted_conditional": 4,
+      "final_after_toy_verification": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ]
+    },
+    {
+      "id": "coherent",
+      "label": "原候选已正确",
+      "independent": [
+        "The",
+        "cat",
+        "sits",
+        "here"
+      ],
+      "conditional": [
+        "The",
+        "cat",
+        "sits",
+        "here"
+      ],
+      "reference": [
+        "The",
+        "cat",
+        "sits",
+        "here"
+      ],
+      "accepted_independent": 4,
+      "accepted_conditional": 4,
+      "final_after_toy_verification": [
+        "The",
+        "cat",
+        "sits",
+        "here"
+      ]
+    },
+    {
+      "id": "missing",
+      "label": "正确候选缺失",
+      "independent": [
+        "These",
+        "key",
+        "is",
+        "missing"
+      ],
+      "conditional": [
+        "These",
+        "key",
+        "is",
+        "missing"
+      ],
+      "reference": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ],
+      "accepted_independent": 1,
+      "accepted_conditional": 1,
+      "final_after_toy_verification": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ]
+    },
+    {
+      "id": "first",
+      "label": "首个候选错误",
+      "independent": [
+        "Those",
+        "keys",
+        "are",
+        "missing"
+      ],
+      "conditional": [
+        "Those",
+        "keys",
+        "are",
+        "missing"
+      ],
+      "reference": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ],
+      "accepted_independent": 0,
+      "accepted_conditional": 0,
+      "final_after_toy_verification": [
+        "These",
+        "keys",
+        "are",
+        "missing"
+      ]
+    }
+  ]
+}

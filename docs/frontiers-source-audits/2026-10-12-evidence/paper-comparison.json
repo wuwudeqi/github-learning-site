@@ -1,0 +1,164 @@
+[
+  {
+    "id": "2610.12572",
+    "title": "DiffusionART：先形成奖励方向，再更新扩散模型",
+    "selected": true,
+    "sourceUrl": "https://arxiv.org/abs/2610.12572",
+    "originalDate": "2026-10-08",
+    "readScope": "核心方法、实验表与图、基线、条件和局限",
+    "method": "原文分析NFT正负训练中未完全抵消的一致性力；ART将奖励聚合后作用于反向过程状态，用信任域掩码恢复项替代逐任务EMA调参。",
+    "results": "HunyuanVideo-13B等权视觉/运动奖励中，达到NFT与Flow-GRPO-Fast后期平均奖励所需GPU小时分别少12.02和11.72倍；这是达到指定奖励水平的训练成本比较。",
+    "reason": "本周新预印本；扩散模型强化学习将同一提示的奖励先聚合成方向，并用第二次受约束更新控制漂移。",
+    "limitations": "奖励函数与目标一致性依赖评测；不能把GPU小时比值当任意生成任务的加速；代码可见但本期未确认项目自身统一许可。"
+  },
+  {
+    "id": "2610.13527",
+    "title": "S-Space：看见位置与算对视角是两回事",
+    "selected": true,
+    "sourceUrl": "https://arxiv.org/abs/2610.13527",
+    "originalDate": "2026-10-09",
+    "readScope": "核心方法、实验表与图、基线、条件和局限",
+    "method": "对空间回答分数求对象token激活梯度，利用角色与方向对称性识别水平、垂直、距离轴；投影读出坐标并做因果干预。",
+    "results": "Molmo2-ER在SpinBench无前提设置中，直接回答60.96%，读出坐标再执行已知确定旋转为94.52%；外置计算不同于模型原生能力。",
+    "reason": "本周新预印本；多模态模型内部可读出三维线性空间表示，但视角变换仍可能失败。",
+    "limitations": "坐标不是物理米制测量；视角变换利用明确规则；抽象左右语言案例不能推广为政治或社会偏见测量。"
+  },
+  {
+    "id": "2610.12611",
+    "title": "SoftwareGym：生成应用后，真的点一遍再拿来训练",
+    "selected": true,
+    "sourceUrl": "https://arxiv.org/abs/2610.12611",
+    "originalDate": "2026-10-08",
+    "readScope": "核心方法、实验表与图、基线、条件和局限",
+    "method": "设计功能和界面，生成Avalonia应用；GUI执行检查失败后回流修复；任务从已验证能力中组合。",
+    "results": "182个应用覆盖12类，平均GUI任务通过率91.5%；Qwen3.5-9B的OSWorld Pass@3从41.39%到56.97%，每任务3次、100步预算。",
+    "reason": "本周新预印本；合成原生GUI应用，并用执行和修复循环验证功能，再收集训练轨迹。",
+    "limitations": "合成分布不等于真实软件；同域训练基线61.48%高于纯合成56.97%；成功标准与评估器影响可靠性。"
+  },
+  {
+    "id": "2610.11287",
+    "title": "REMORY：给文字摘要补一段连续记忆",
+    "selected": true,
+    "sourceUrl": "https://arxiv.org/abs/2610.11287",
+    "originalDate": "2026-10-08",
+    "readScope": "核心方法、实验表与图、基线、条件和局限",
+    "method": "记忆网络以摘要为条件，从冻结actor特征提取连续token；先学重建，再学匹配完整历史下的后续预测，仅更新记忆网络。",
+    "results": "SummHay同92条查询中以约5.2%的输入位置接近完整上下文联合分；AutomationBench五次运行35.5±1.3到45.3±1.0。",
+    "reason": "本周新预印本；把历史与摘要编码为有界软token，补足上下文压缩后仍影响后续决策的信息。",
+    "limitations": "需要接触actor嵌入和训练记忆网络，不是纯API提示技巧；成本表不含记忆网络和工具全部开销；部分基准仅单次运行。"
+  },
+  {
+    "id": "2610.12570",
+    "title": "DCOCO：并行草稿先保留候选，再修正相邻选择",
+    "selected": true,
+    "sourceUrl": "https://arxiv.org/abs/2610.12570",
+    "originalDate": "2026-10-08",
+    "readScope": "核心方法、实验表与图、基线、条件和局限",
+    "method": "DFlash一次前向为每个位置提供top-K候选，共享MLP并行打分相邻候选组合，再从首位置按已选前驱依次选择。",
+    "results": "四类验证器、十个评测套件，默认单张B200并发1；最高约6.6倍相对自回归，高并发4—32下相对最强基线增益约6%—23%。",
+    "reason": "本周新预印本；在并行投机解码的候选集合上加入相邻位置条件评分，提高验证器可接受的前缀。",
+    "limitations": "最高值不是统一收益；需保留温度、推理模式、硬件与并发；最终验证器仍负责接受和修正，不能省去。"
+  },
+  {
+    "id": "2610.07121",
+    "title": "SoloQ：扩散语言模型的量化不再依赖校准样本",
+    "selected": true,
+    "sourceUrl": "https://arxiv.org/abs/2610.07121",
+    "originalDate": "2026-10-05",
+    "readScope": "核心方法、实验表与图、基线、条件和局限",
+    "method": "K-RPBH将置换、块Hadamard与跨块混合组合；SoloQ-C用匹配码本、SoloQ-N用NVFP4；仅量化已提交块的持久KV。",
+    "results": "比较全序列和块扩散模型及RTN/AWQ/QuaRot等基线，准确率与效率分开测；C版在H200、N版在RTX Pro6000与各自BF16比较。",
+    "reason": "本周新预印本；通过结构化旋转改善激活分布，再执行无需校准的权重、激活及提交后KV量化。",
+    "limitations": "尚在去噪的块维持高精度；NVFP4需要硬件和kernel支持；不同GPU上的速度不可直接互比。"
+  },
+  {
+    "id": "2610.13113",
+    "title": "SynthSelf",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.13113",
+    "selected": false,
+    "readScope": "核心方法与对比设置/结果",
+    "reason": "较大同族aligner改写并筛选离线SFT数据，比较SFT/SDFT/DFT/ASFT和能力保留；本期六篇优先更分散的问题，非判定论文低质量"
+  },
+  {
+    "id": "2610.13021",
+    "title": "EmbodiedCLBench",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.13021",
+    "selected": false,
+    "readScope": "核心方法与结果",
+    "reason": "268任务、168基础100高级；TongSim状态图离线化，零样本约8—10%到单示例28—40%，增加示例不保证扩展；选SoftwareGym展开GUI评测，任务领域不同但名额有限"
+  },
+  {
+    "id": "2610.07987",
+    "title": "VisionWeave",
+    "originalDate": "2026-10-06",
+    "sourceUrl": "https://arxiv.org/abs/2610.07987",
+    "selected": false,
+    "readScope": "核心方法与对照结果",
+    "reason": "细粗pooler路由、MRoPE与自蒸馏；八项基准43%token保留98.9%质量，30k A100 GPU小时；需注意修改FastV基线兼容条件，本期推理栏选择DCOCO/SoloQ"
+  },
+  {
+    "id": "2610.12341",
+    "title": "AAArena",
+    "originalDate": "2026-10-08",
+    "sourceUrl": "https://arxiv.org/abs/2610.12341",
+    "selected": false,
+    "readScope": "方法、设置与实现",
+    "reason": "12类游戏与1920个人类程序，固定模型代理与预算；已在开源项目栏展开实现，论文栏不重复"
+  },
+  {
+    "id": "2610.09788",
+    "title": "LatentGRM",
+    "originalDate": "2026-10-08",
+    "sourceUrl": "https://arxiv.org/abs/2610.09788",
+    "selected": false,
+    "readScope": "核心方法、数据与结果",
+    "reason": "将rubric评判压入隐轨迹，35612配对数据、8B对照与不同速度设置；隐轨迹可解释性不能等同可读推理，本期保留为未选候选"
+  },
+  {
+    "id": "2610.12668",
+    "title": "ReHarness",
+    "originalDate": "2026-10-08",
+    "sourceUrl": "https://arxiv.org/abs/2610.12668",
+    "selected": false,
+    "readScope": "核心方法与结果",
+    "reason": "检索反思结合原来源和当前轨迹重新修订，三模型三基准对照TopK检索；聚焦检索反思而REMORY聚焦神经残余记忆，本期选择后者详细说明"
+  },
+  {
+    "id": "2610.13912",
+    "title": "RSI-Anything",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.13912",
+    "selected": false,
+    "readScope": "方法、领域实验边界与实现",
+    "reason": "项目栏展开反馈与世界模型的公开框架，跨栏去重；公开适配不等于全部科学领域独立复现"
+  },
+  {
+    "id": "2610.12984",
+    "title": "Work2Skill",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.12984",
+    "selected": false,
+    "readScope": "方法、实验设置与公开实现",
+    "reason": "操作记录到技能；代码10月12日新公开，项目栏讲清上手与评测链路缺口，不在论文栏重复"
+  },
+  {
+    "id": "2610.13395",
+    "title": "ProgramGym",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.13395",
+    "selected": false,
+    "readScope": "标题、摘要、可复核材料范围",
+    "reason": "未完成可用实现和完整结果核验，不凭题名入选；资料不及已选六篇完整"
+  },
+  {
+    "id": "2610.12569",
+    "title": "SWE-Duel",
+    "originalDate": "2026-10-08",
+    "sourceUrl": "https://arxiv.org/abs/2610.12569",
+    "selected": false,
+    "readScope": "核心方法与公开实现",
+    "reason": "四类harness、15仓库五语言，对抗造题受回归/特征/隐藏测试约束；项目栏展开，跨栏去重"
+  }
+]

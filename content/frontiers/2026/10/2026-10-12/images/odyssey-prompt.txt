@@ -1,0 +1,13 @@
+Use case: scientific-educational
+Asset type: explanatory illustration for a Chinese AI research daily article about Odyssey-3's action-conditioned world modelling, not an actual screenshot.
+Primary request: explain visually that a user's action is an input to the next generated visual state, so an interactive world is not just a fixed video clip.
+Scene/backdrop: a simple imaginary sunlit courtyard with one orange cube sculpture, one blue bench and a small arched doorway. No real brand.
+Composition: wide 1536x1024, editorial illustration. Top half show a large current first-person scene with cube near center and blue bench to the right, label “当前画面”. Lower half show two hypothetical next first-person views of the same courtyard, separated clearly: lower left looks left toward the cube after turning left, lower right moves closer to the doorway after walking forward. One branching connector from the current scene to the two views, label left branch “向左转”, right branch “向前走”. Maintain object identities and spatial plausibility across views. These are alternative action-conditioned continuations, not simultaneous screens.
+Style: restrained, high-quality architectural concept illustration, muted cream paper background, terracotta and teal accents, clear depth and large readable Simplified Chinese labels, minimal text.
+Text verbatim: “动作改变后续画面” title at top; “当前画面”; “向左转”; “向前走”; bottom footnote “AI 生成概念示意 · 非产品截图或实验结果”.
+Constraints: no claims of physical correctness, no performance numbers, no faux software UI, no logos, no charts, no robotic control claims, no extra text. Make the scene and perspective changes carry the explanation, not a list of boxes.
+
+Revision:
+Edit this explanatory illustration. Change ONLY the lower left action label from “向左转” to “靠近方块”. Keep all other text, scenes, spatial layout, colors and sizes exactly the same. The label should describe approaching the orange cube, which fits the nearer viewpoint. Preserve bottom notice AI 生成概念示意 · 非产品截图或实验结果. Do not add anything.
+
+Adopted output: /Users/fujiasen/.codex/generated_images/01a088de-fb45-7c00-bead-09bc5c14279e/exec-c79bfe20-fa75-4efc-9ab9-4b01599a80cd.png

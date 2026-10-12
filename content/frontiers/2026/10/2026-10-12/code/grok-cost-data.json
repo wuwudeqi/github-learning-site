@@ -1,0 +1,24 @@
+{
+  "observedDate": "2026-10-12",
+  "source": "https://docs.x.ai/developers/pricing",
+  "seconds": 10,
+  "currency": "USD",
+  "scope": "output-only; excludes image input, retries and multiple candidates",
+  "pricesPerSecond": [
+    {
+      "resolution": "480p",
+      "lite": 0.02,
+      "full": 0.08
+    },
+    {
+      "resolution": "720p",
+      "lite": 0.03,
+      "full": 0.14
+    },
+    {
+      "resolution": "1080p",
+      "lite": 0.14,
+      "full": 0.25
+    }
+  ]
+}
