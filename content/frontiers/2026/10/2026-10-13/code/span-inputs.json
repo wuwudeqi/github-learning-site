@@ -1,0 +1,29 @@
+[
+  {
+    "case": "emoji-before-email",
+    "text": "用户🙂：联系李雷，邮箱 li.lei@example.com。",
+    "start": 12,
+    "end": 30,
+    "expected": "li.lei@example.com",
+    "codePoints": 31,
+    "utf8Bytes": 56
+  },
+  {
+    "case": "arabic-after-emoji",
+    "text": "🙂 اكتب إلى علي الآن",
+    "start": 11,
+    "end": 14,
+    "expected": "علي",
+    "codePoints": 19,
+    "utf8Bytes": 36
+  },
+  {
+    "case": "combining-accent",
+    "text": "café🙂: contact@example.com",
+    "start": 8,
+    "end": 27,
+    "expected": "contact@example.com",
+    "codePoints": 27,
+    "utf8Bytes": 31
+  }
+]

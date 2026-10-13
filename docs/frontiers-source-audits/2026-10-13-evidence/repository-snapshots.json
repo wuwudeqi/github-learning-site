@@ -1,0 +1,993 @@
+[
+  {
+    "repository": "InternLM/InstantFusion",
+    "url": "https://github.com/InternLM/InstantFusion",
+    "createdAt": "2026-09-29T14:53:48Z",
+    "pushedAt": "2026-10-12T03:15:01Z",
+    "archived": false,
+    "starsObserved": 18,
+    "license": null,
+    "commit": "71c7179ccc2911200fbc15b877fd540591289030",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "lmsdss/SAVER",
+    "url": "https://github.com/lmsdss/SAVER",
+    "createdAt": "2026-10-07T12:03:33Z",
+    "pushedAt": "2026-10-09T07:27:12Z",
+    "archived": false,
+    "starsObserved": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "870b21eb81052a0c61ff8cec14ab7aa149c026ea",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": {
+      "repo": "lmsdss/SAVER",
+      "url": "https://raw.githubusercontent.com/lmsdss/SAVER/870b21eb81052a0c61ff8cec14ab7aa149c026ea/scripts/eval/evaluate.sh",
+      "path": "scripts/eval/evaluate.sh",
+      "commit": "870b21eb81052a0c61ff8cec14ab7aa149c026ea",
+      "checkedAt": "2026-10-13T08:01:07.421508+08:00",
+      "ok": true,
+      "sha256": "3819da9b318309a151431aa2f9327d611cbfe05cf24a9c9ad733703c226f49e7",
+      "bytes": 2315
+    }
+  },
+  {
+    "repository": "VinyehShaw/CASE",
+    "url": "https://github.com/VinyehShaw/CASE",
+    "createdAt": "2026-09-30T10:23:38Z",
+    "pushedAt": "2026-10-10T16:13:53Z",
+    "archived": false,
+    "starsObserved": 2,
+    "license": null,
+    "commit": "ee7de534889fe6a841dc321680d4d2b8a6d9fb47",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "Nan-Jiang-Group/PreSTO",
+    "url": "https://github.com/Nan-Jiang-Group/PreSTO",
+    "createdAt": "2026-10-02T06:30:27Z",
+    "pushedAt": "2026-10-12T06:22:59Z",
+    "archived": false,
+    "starsObserved": 0,
+    "license": null,
+    "commit": "39785081f732f741debb96e9868be9397ae77937",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "OpenBMB/MiniCPM-V",
+    "url": "https://github.com/OpenBMB/MiniCPM-V",
+    "createdAt": "2024-01-29T05:30:33Z",
+    "pushedAt": "2026-10-12T17:03:48Z",
+    "archived": false,
+    "starsObserved": 26564,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "f8498b5b7f27ce2270dbce1a8246acc6f39e4224",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "20250527",
+        "published_at": "2025-05-27T09:55:51Z",
+        "prerelease": false,
+        "html_url": "https://github.com/OpenBMB/MiniCPM-V/releases/tag/20250527"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "tlack/babytalk",
+    "url": "https://github.com/tlack/babytalk",
+    "createdAt": "2026-09-26T03:43:58Z",
+    "pushedAt": "2026-10-09T22:23:52Z",
+    "archived": false,
+    "starsObserved": 40,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit": "96b9bb73fdf8492617f38893622d42d1e2ee8558",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": {
+      "repo": "tlack/babytalk",
+      "url": "https://raw.githubusercontent.com/tlack/babytalk/96b9bb73fdf8492617f38893622d42d1e2ee8558/components/stt_engine/stt_engine.c",
+      "path": "components/stt_engine/stt_engine.c",
+      "commit": "96b9bb73fdf8492617f38893622d42d1e2ee8558",
+      "checkedAt": "2026-10-13T08:01:06.926299+08:00",
+      "ok": true,
+      "sha256": "3ad0a3c08cf21b140ef92ecd166c9fe3f96f158710c20136a3f79c2351e5299b",
+      "bytes": 8803
+    }
+  },
+  {
+    "repository": "physicalvision/artisan",
+    "url": "https://github.com/physicalvision/artisan",
+    "createdAt": "2026-10-09T08:12:51Z",
+    "pushedAt": "2026-10-12T03:26:25Z",
+    "archived": false,
+    "starsObserved": 62,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "ad322b5b31e50bdb84155520f09622c00c6056c3",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": {
+      "repo": "physicalvision/artisan",
+      "url": "https://raw.githubusercontent.com/physicalvision/artisan/ad322b5b31e50bdb84155520f09622c00c6056c3/artisan/physics_policy.py",
+      "path": "artisan/physics_policy.py",
+      "commit": "ad322b5b31e50bdb84155520f09622c00c6056c3",
+      "checkedAt": "2026-10-13T08:01:07.401921+08:00",
+      "ok": true,
+      "sha256": "44a6d0be31c995e880cfbf5cf20542d6d746888725657de7af5bd9fc49385e03",
+      "bytes": 794
+    }
+  },
+  {
+    "repository": "EADMO/LatentGRM",
+    "url": "https://github.com/EADMO/LatentGRM",
+    "createdAt": "2026-09-22T06:52:35Z",
+    "pushedAt": "2026-09-27T05:19:11Z",
+    "archived": false,
+    "starsObserved": 7,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "74148022febfc25a20bf9144ba3801b01eab2118",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "qufei1993/skills-hub",
+    "url": "https://github.com/qufei1993/skills-hub",
+    "createdAt": "2026-01-25T03:31:21Z",
+    "pushedAt": "2026-10-12T13:00:48Z",
+    "archived": false,
+    "starsObserved": 1774,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "d16c0a1400078a9c6f49eea68155e214bdf51b3f",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v1.0.0",
+        "published_at": "2026-10-11T07:44:33Z",
+        "prerelease": false,
+        "html_url": "https://github.com/qufei1993/skills-hub/releases/tag/v1.0.0"
+      },
+      {
+        "tag_name": "v0.11.0",
+        "published_at": "2026-10-01T08:02:24Z",
+        "prerelease": false,
+        "html_url": "https://github.com/qufei1993/skills-hub/releases/tag/v0.11.0"
+      },
+      {
+        "tag_name": "v0.10.1",
+        "published_at": "2026-09-13T03:02:17Z",
+        "prerelease": false,
+        "html_url": "https://github.com/qufei1993/skills-hub/releases/tag/v0.10.1"
+      }
+    ],
+    "implementation": {
+      "repo": "qufei1993/skills-hub",
+      "url": "https://raw.githubusercontent.com/qufei1993/skills-hub/d16c0a1400078a9c6f49eea68155e214bdf51b3f/src/components/skills/collections/install-plan.ts",
+      "path": "src/components/skills/collections/install-plan.ts",
+      "commit": "d16c0a1400078a9c6f49eea68155e214bdf51b3f",
+      "checkedAt": "2026-10-13T08:01:06.925546+08:00",
+      "ok": true,
+      "sha256": "335ae438c6589ea06c4dd049e3c79d631f8cbc3d9e5664b6f75c377a2cd76cd3",
+      "bytes": 3119
+    }
+  },
+  {
+    "repository": "darshi1337/apogee",
+    "url": "https://github.com/darshi1337/apogee",
+    "createdAt": "2026-05-26T07:33:58Z",
+    "pushedAt": "2026-10-12T22:29:44Z",
+    "archived": false,
+    "starsObserved": 84,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "b127281f16f8c4bc2c6bc991e92fa51227f51891",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v0.2.4",
+        "published_at": "2026-10-05T03:15:23Z",
+        "prerelease": false,
+        "html_url": "https://github.com/darshi1337/apogee/releases/tag/v0.2.4"
+      },
+      {
+        "tag_name": "v0.2.3",
+        "published_at": "2026-10-01T02:37:13Z",
+        "prerelease": false,
+        "html_url": "https://github.com/darshi1337/apogee/releases/tag/v0.2.3"
+      },
+      {
+        "tag_name": "v0.2.2",
+        "published_at": "2026-09-22T02:03:50Z",
+        "prerelease": false,
+        "html_url": "https://github.com/darshi1337/apogee/releases/tag/v0.2.2"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "KnowledgeXLab/A2-OPD",
+    "url": "https://github.com/KnowledgeXLab/A2-OPD",
+    "createdAt": "2026-10-12T03:54:28Z",
+    "pushedAt": "2026-10-12T04:04:24Z",
+    "archived": false,
+    "starsObserved": 4,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "f84d351d14a50437a3bdddf8a5efb52a13d7400d",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "YIGE24/MetaKernelBench",
+    "url": "https://github.com/YIGE24/MetaKernelBench",
+    "createdAt": "2026-10-06T03:40:36Z",
+    "pushedAt": "2026-10-06T10:55:43Z",
+    "archived": false,
+    "starsObserved": 4,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "d90ba286164c2fa8e64afd75db5813002ede2ddd",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": {
+      "repo": "YIGE24/MetaKernelBench",
+      "url": "https://raw.githubusercontent.com/YIGE24/MetaKernelBench/d90ba286164c2fa8e64afd75db5813002ede2ddd/metakernelbench/plan.py",
+      "path": "metakernelbench/plan.py",
+      "commit": "d90ba286164c2fa8e64afd75db5813002ede2ddd",
+      "checkedAt": "2026-10-13T08:01:07.399880+08:00",
+      "ok": true,
+      "sha256": "33094184e4c899b4c87b99c58b85a48d4b2eb6c3d1ea57712456e857d54fec88",
+      "bytes": 4948
+    }
+  },
+  {
+    "repository": "atfortes/ThinkDrag",
+    "url": "https://github.com/atfortes/ThinkDrag",
+    "createdAt": "2026-05-22T03:48:10Z",
+    "pushedAt": "2026-10-12T07:47:06Z",
+    "archived": false,
+    "starsObserved": 5,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit": "3f18eba359358534c1a39cf7d92e9369a2e549fb",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "vivoCameraResearch/StereoBind",
+    "url": "https://github.com/vivoCameraResearch/StereoBind",
+    "createdAt": "2026-09-29T03:15:12Z",
+    "pushedAt": "2026-09-29T08:36:08Z",
+    "archived": false,
+    "starsObserved": 12,
+    "license": null,
+    "commit": "4e2eabfdb9770f8daaa7d19a4645188ae3f6ce87",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "hananshafi/Mental-Models",
+    "url": "https://github.com/hananshafi/Mental-Models",
+    "createdAt": "2026-10-05T19:36:57Z",
+    "pushedAt": "2026-10-09T18:50:18Z",
+    "archived": false,
+    "starsObserved": 3,
+    "license": null,
+    "commit": "978a7639ad74d3aeb3c3cc9688d450ec773dec7f",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "LogneBudo/llmxray",
+    "url": "https://github.com/LogneBudo/llmxray",
+    "createdAt": "2026-03-11T18:27:26Z",
+    "pushedAt": "2026-10-12T11:54:17Z",
+    "archived": false,
+    "starsObserved": 22,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "776deb91a15d152d27dfd13b30a340523d1e69ba",
+    "defaultBranch": "master",
+    "releases": [
+      {
+        "tag_name": "v0.7.2",
+        "published_at": "2026-10-12T11:53:36Z",
+        "prerelease": false,
+        "html_url": "https://github.com/LogneBudo/llmxray/releases/tag/v0.7.2"
+      },
+      {
+        "tag_name": "v0.7.1",
+        "published_at": "2026-10-11T20:43:55Z",
+        "prerelease": false,
+        "html_url": "https://github.com/LogneBudo/llmxray/releases/tag/v0.7.1"
+      },
+      {
+        "tag_name": "v0.7.0",
+        "published_at": "2026-10-11T20:19:01Z",
+        "prerelease": false,
+        "html_url": "https://github.com/LogneBudo/llmxray/releases/tag/v0.7.0"
+      }
+    ],
+    "implementation": {
+      "repo": "LogneBudo/llmxray",
+      "url": "https://raw.githubusercontent.com/LogneBudo/llmxray/776deb91a15d152d27dfd13b30a340523d1e69ba/src/composables/useMetrics.ts",
+      "path": "src/composables/useMetrics.ts",
+      "commit": "776deb91a15d152d27dfd13b30a340523d1e69ba",
+      "checkedAt": "2026-10-13T08:01:06.922623+08:00",
+      "ok": true,
+      "sha256": "f6d061bb45f53be930a89f5d7f82cc1c6429c16819ae627e6607806a849cf589",
+      "bytes": 549
+    }
+  },
+  {
+    "repository": "longsurf-ai/openchart",
+    "url": "https://github.com/longsurf-ai/openchart",
+    "createdAt": "2026-10-05T16:16:41Z",
+    "pushedAt": "2026-10-12T23:16:40Z",
+    "archived": false,
+    "starsObserved": 171,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit": "589362b34f98072f04b933241e387c9c318bb44a",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v0.1.16",
+        "published_at": "2026-10-12T16:53:11Z",
+        "prerelease": false,
+        "html_url": "https://github.com/longsurf-ai/openchart/releases/tag/v0.1.16"
+      },
+      {
+        "tag_name": "v0.1.15",
+        "published_at": "2026-10-12T02:05:44Z",
+        "prerelease": false,
+        "html_url": "https://github.com/longsurf-ai/openchart/releases/tag/v0.1.15"
+      },
+      {
+        "tag_name": "v0.1.14",
+        "published_at": "2026-10-11T20:35:13Z",
+        "prerelease": false,
+        "html_url": "https://github.com/longsurf-ai/openchart/releases/tag/v0.1.14"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "ferdiex/easagru",
+    "url": "https://github.com/ferdiex/easagru",
+    "createdAt": "2026-09-30T05:04:58Z",
+    "pushedAt": "2026-10-12T05:57:23Z",
+    "archived": false,
+    "starsObserved": 0,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit": "b37752900c158bc62870a21c9278ed240fbc10e5",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v1.0.0",
+        "published_at": "2026-09-30T05:14:02Z",
+        "prerelease": false,
+        "html_url": "https://github.com/ferdiex/easagru/releases/tag/v1.0.0"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "inclusionAI/PolyOCR-Venus",
+    "url": "https://github.com/inclusionAI/PolyOCR-Venus",
+    "createdAt": "2026-10-10T06:12:41Z",
+    "pushedAt": "2026-10-10T07:58:41Z",
+    "archived": false,
+    "starsObserved": 54,
+    "license": {
+      "key": "gpl-2.0",
+      "name": "GNU General Public License v2.0",
+      "spdx_id": "GPL-2.0",
+      "url": "https://api.github.com/licenses/gpl-2.0",
+      "node_id": "MDc6TGljZW5zZTg="
+    },
+    "commit": "d105c060a1ec97b7afeee570799876ab5646109c",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "nyuolab/RCQ-Map",
+    "url": "https://github.com/nyuolab/RCQ-Map",
+    "createdAt": "2026-10-07T19:58:02Z",
+    "pushedAt": "2026-10-09T11:53:23Z",
+    "archived": false,
+    "starsObserved": 2,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "800d9b4986e5f9c87f28a289c16f6fdb4a4c1923",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": {
+      "repo": "nyuolab/RCQ-Map",
+      "url": "https://raw.githubusercontent.com/nyuolab/RCQ-Map/800d9b4986e5f9c87f28a289c16f6fdb4a4c1923/src/rcqmap/derive.py",
+      "path": "src/rcqmap/derive.py",
+      "commit": "800d9b4986e5f9c87f28a289c16f6fdb4a4c1923",
+      "checkedAt": "2026-10-13T08:01:07.443496+08:00",
+      "ok": true,
+      "sha256": "df3012893945b0182a2af7569e5c22031ceaa2704d151d08f510a8e63199244d",
+      "bytes": 3541
+    }
+  },
+  {
+    "repository": "vanzll/DiffusionART",
+    "url": "https://github.com/vanzll/DiffusionART",
+    "createdAt": "2026-09-24T08:35:23Z",
+    "pushedAt": "2026-10-12T16:11:58Z",
+    "archived": false,
+    "starsObserved": 78,
+    "license": null,
+    "commit": "8652c8a100b01a5124781124a8ccdfc4d6bef158",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "bingjunluo/Video-RSI",
+    "url": "https://github.com/bingjunluo/Video-RSI",
+    "createdAt": "2026-09-29T16:06:17Z",
+    "pushedAt": "2026-09-30T13:38:23Z",
+    "archived": false,
+    "starsObserved": 17,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "e64a462955e739d3314ed96daac839ff0e2a41e9",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "dkremsa/claude-pacer",
+    "url": "https://github.com/dkremsa/claude-pacer",
+    "createdAt": "2026-08-23T11:35:09Z",
+    "pushedAt": "2026-10-12T12:09:17Z",
+    "archived": false,
+    "starsObserved": 13,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "50b1d2d3c335a92035b0e52798ede57dd93005fd",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v2.0.0",
+        "published_at": "2026-09-19T10:58:14Z",
+        "prerelease": false,
+        "html_url": "https://github.com/dkremsa/claude-pacer/releases/tag/v2.0.0"
+      }
+    ],
+    "implementation": null
+  },
+  {
+    "repository": "HKUSTDial/DataVista",
+    "url": "https://github.com/HKUSTDial/DataVista",
+    "createdAt": "2026-10-04T08:18:09Z",
+    "pushedAt": "2026-10-04T15:32:10Z",
+    "archived": false,
+    "starsObserved": 2,
+    "license": null,
+    "commit": "f07f03ce795e239f0d6c23e302fe72c1339e31be",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "NoizAI/HelixWorld",
+    "url": "https://github.com/NoizAI/HelixWorld",
+    "createdAt": "2026-08-03T03:34:11Z",
+    "pushedAt": "2026-10-12T11:01:26Z",
+    "archived": false,
+    "starsObserved": 627,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "d8da2defbd553f910d3db9e58bf30f909ba14ab2",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "AviadDahan/SepGen",
+    "url": "https://github.com/AviadDahan/SepGen",
+    "createdAt": "2026-10-05T17:24:46Z",
+    "pushedAt": "2026-10-09T05:35:27Z",
+    "archived": false,
+    "starsObserved": 10,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit": "488b428321b16a0c30c2c7ef76c679ff6cce0f26",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "two-delta/DCOCO",
+    "url": "https://github.com/two-delta/DCOCO",
+    "createdAt": "2026-10-07T07:44:06Z",
+    "pushedAt": "2026-10-12T19:27:07Z",
+    "archived": false,
+    "starsObserved": 21,
+    "license": null,
+    "commit": "b992c2ef081ba5fce2021a085678c1b0c040c3e4",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "apd-smcclendon/massive_activations_2",
+    "url": "https://github.com/apd-smcclendon/massive_activations_2",
+    "createdAt": "2026-09-09T19:46:30Z",
+    "pushedAt": "2026-09-10T14:04:23Z",
+    "archived": false,
+    "starsObserved": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "fc42e72e696d86e42e0c0c15a7aa9cd62cf6378d",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "nat-nischw/AMLworld-Compact",
+    "url": "https://github.com/nat-nischw/AMLworld-Compact",
+    "createdAt": "2026-08-10T11:45:30Z",
+    "pushedAt": "2026-10-12T09:26:41Z",
+    "archived": false,
+    "starsObserved": 0,
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "commit": "e5a9eb528b13761a6a2aa1a8c77975b3ba82d3a1",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "phai-lab/touchscale",
+    "url": "https://github.com/phai-lab/touchscale",
+    "createdAt": "2026-09-23T19:49:09Z",
+    "pushedAt": "2026-10-08T07:22:02Z",
+    "archived": false,
+    "starsObserved": 8,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "6f8c5c5b1714bc16841121620f5a158852d6c467",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "ToberJ/reflex",
+    "url": "https://github.com/ToberJ/reflex",
+    "createdAt": "2026-10-09T02:45:52Z",
+    "pushedAt": "2026-10-09T17:35:31Z",
+    "archived": false,
+    "starsObserved": 21,
+    "license": null,
+    "commit": "4ccecbaab65da19fe8472e5b6902333de464b6c7",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "plimsollmark/plimsoll",
+    "url": "https://github.com/plimsollmark/plimsoll",
+    "createdAt": "2026-09-10T20:07:00Z",
+    "pushedAt": "2026-10-12T01:39:29Z",
+    "archived": false,
+    "starsObserved": 23,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "e3881cfee69c6be2ca94a5f828596562a5b0f1eb",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v0.21.0",
+        "published_at": "2026-10-09T21:34:33Z",
+        "prerelease": false,
+        "html_url": "https://github.com/plimsollmark/plimsoll/releases/tag/v0.21.0"
+      },
+      {
+        "tag_name": "v0.20.0",
+        "published_at": "2026-10-09T05:13:09Z",
+        "prerelease": false,
+        "html_url": "https://github.com/plimsollmark/plimsoll/releases/tag/v0.20.0"
+      },
+      {
+        "tag_name": "v0.19.0",
+        "published_at": "2026-10-04T22:46:49Z",
+        "prerelease": false,
+        "html_url": "https://github.com/plimsollmark/plimsoll/releases/tag/v0.19.0"
+      }
+    ],
+    "implementation": {
+      "repo": "plimsollmark/plimsoll",
+      "url": "https://raw.githubusercontent.com/plimsollmark/plimsoll/e3881cfee69c6be2ca94a5f828596562a5b0f1eb/client/answer.go",
+      "path": "client/answer.go",
+      "commit": "e3881cfee69c6be2ca94a5f828596562a5b0f1eb",
+      "checkedAt": "2026-10-13T08:01:06.924714+08:00",
+      "ok": true,
+      "sha256": "883b0b788e58649fe276930408f33958dc950f24bba63c1eae609443542bb158",
+      "bytes": 5440
+    }
+  },
+  {
+    "repository": "umamicode/self-preservation",
+    "url": "https://github.com/umamicode/self-preservation",
+    "createdAt": "2026-10-07T17:57:15Z",
+    "pushedAt": "2026-10-07T17:57:17Z",
+    "archived": false,
+    "starsObserved": 0,
+    "license": null,
+    "commit": null,
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "Alex-q-z/stateless-language-agents",
+    "url": "https://github.com/Alex-q-z/stateless-language-agents",
+    "createdAt": "2026-10-06T01:23:56Z",
+    "pushedAt": "2026-10-06T06:32:57Z",
+    "archived": false,
+    "starsObserved": 3,
+    "license": null,
+    "commit": "1271183f6c73729d0c5e1602e12951fba59cf657",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "anupray95/AI-Agent-on-a-NOKIA",
+    "url": "https://github.com/anupray95/AI-Agent-on-a-NOKIA",
+    "createdAt": "2026-10-08T14:09:02Z",
+    "pushedAt": "2026-10-09T06:25:10Z",
+    "archived": false,
+    "starsObserved": 9,
+    "license": null,
+    "commit": "1bd81e1aa1abf8940acbc94de2306ba780edea4a",
+    "defaultBranch": "master",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "VictorYXL/GraphDecisionBench",
+    "url": "https://github.com/VictorYXL/GraphDecisionBench",
+    "createdAt": "2026-09-23T04:19:10Z",
+    "pushedAt": "2026-10-12T07:25:18Z",
+    "archived": false,
+    "starsObserved": 4,
+    "license": null,
+    "commit": "8711a4b6e1cac96a1448d196cf15450b0c47db6c",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "Pan-Zihao/Representation-Guidance",
+    "url": "https://github.com/Pan-Zihao/Representation-Guidance",
+    "createdAt": "2026-09-29T10:35:02Z",
+    "pushedAt": "2026-09-30T13:30:04Z",
+    "archived": false,
+    "starsObserved": 8,
+    "license": null,
+    "commit": "65b573f49d61359f3395a22c47d038c11bf0d95f",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "MirroS-Lab/S-Space",
+    "url": "https://github.com/MirroS-Lab/S-Space",
+    "createdAt": "2026-09-06T10:28:05Z",
+    "pushedAt": "2026-09-08T01:50:33Z",
+    "archived": false,
+    "starsObserved": 247,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "489f151e720e9ddb69c0617544cc0f7d5eabcbc3",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "Acm1011/ProgramGym",
+    "url": "https://github.com/Acm1011/ProgramGym",
+    "createdAt": "2026-10-12T02:02:03Z",
+    "pushedAt": "2026-10-12T02:42:33Z",
+    "archived": false,
+    "starsObserved": 11,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "755ac1bccb567f6ce94124d92929d9cbd3b328c9",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "MAPS-research/DRMoET",
+    "url": "https://github.com/MAPS-research/DRMoET",
+    "createdAt": "2026-10-04T20:50:13Z",
+    "pushedAt": "2026-10-07T03:34:48Z",
+    "archived": false,
+    "starsObserved": 1,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "7354d80dce31ba38543febf42c103e870986d386",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "PKU-VaLuE-Lab/EmbodiedCLBench",
+    "url": "https://github.com/PKU-VaLuE-Lab/EmbodiedCLBench",
+    "createdAt": "2026-10-01T02:10:10Z",
+    "pushedAt": "2026-10-12T01:41:47Z",
+    "archived": false,
+    "starsObserved": 11,
+    "license": null,
+    "commit": "f33105f017f5408f8d2c6debe8bd4086881d3ea4",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "lowenbjer/claude-terse",
+    "url": "https://github.com/lowenbjer/claude-terse",
+    "createdAt": "2026-09-23T00:57:19Z",
+    "pushedAt": "2026-10-08T00:10:34Z",
+    "archived": false,
+    "starsObserved": 50,
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "commit": "edcdb651a5e0d34a9dfc4e4328754d7243aecb4a",
+    "defaultBranch": "main",
+    "releases": [
+      {
+        "tag_name": "v1.2.2",
+        "published_at": "2026-10-02T01:25:04Z",
+        "prerelease": false,
+        "html_url": "https://github.com/lowenbjer/claude-terse/releases/tag/v1.2.2"
+      },
+      {
+        "tag_name": "v1.2.1",
+        "published_at": "2026-10-02T01:25:03Z",
+        "prerelease": false,
+        "html_url": "https://github.com/lowenbjer/claude-terse/releases/tag/v1.2.1"
+      },
+      {
+        "tag_name": "v1.1.0",
+        "published_at": "2026-10-02T01:25:02Z",
+        "prerelease": false,
+        "html_url": "https://github.com/lowenbjer/claude-terse/releases/tag/v1.1.0"
+      }
+    ],
+    "implementation": {
+      "repo": "lowenbjer/claude-terse",
+      "url": "https://raw.githubusercontent.com/lowenbjer/claude-terse/edcdb651a5e0d34a9dfc4e4328754d7243aecb4a/bench/score.py",
+      "path": "bench/score.py",
+      "commit": "edcdb651a5e0d34a9dfc4e4328754d7243aecb4a",
+      "checkedAt": "2026-10-13T08:01:06.926567+08:00",
+      "ok": true,
+      "sha256": "de08f1e48014f334ae5c65d980073daee9a8d11ef9a429708da497b758bd08b1",
+      "bytes": 4417
+    }
+  },
+  {
+    "repository": "FFY0/VisionWeave",
+    "url": "https://github.com/FFY0/VisionWeave",
+    "createdAt": "2026-10-04T09:17:24Z",
+    "pushedAt": "2026-10-09T05:56:04Z",
+    "archived": false,
+    "starsObserved": 44,
+    "license": null,
+    "commit": "321a4460e6febb84d10f68cd0ee7bee1fd78c59f",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "MrKiing-Jin/SoftwareGym",
+    "url": "https://github.com/MrKiing-Jin/SoftwareGym",
+    "createdAt": "2026-10-08T11:25:28Z",
+    "pushedAt": "2026-10-09T07:20:02Z",
+    "archived": false,
+    "starsObserved": 16,
+    "license": null,
+    "commit": "4a8fc16491bee61e0210d96dd346464950759aba",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  },
+  {
+    "repository": "JetBrains-Research/SWE-TaskFlow-Generation-Public",
+    "url": "https://github.com/JetBrains-Research/SWE-TaskFlow-Generation-Public",
+    "createdAt": "2026-10-11T10:49:08Z",
+    "pushedAt": "2026-10-11T11:22:26Z",
+    "archived": false,
+    "starsObserved": 1,
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "commit": "d760d0ae6309bd6fcebdc4efad3a295960483f13",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": {
+      "repo": "JetBrains-Research/SWE-TaskFlow-Generation-Public",
+      "url": "https://raw.githubusercontent.com/JetBrains-Research/SWE-TaskFlow-Generation-Public/d760d0ae6309bd6fcebdc4efad3a295960483f13/src/interactive_benchmark_generation/qa_validation.py",
+      "path": "src/interactive_benchmark_generation/qa_validation.py",
+      "commit": "d760d0ae6309bd6fcebdc4efad3a295960483f13",
+      "checkedAt": "2026-10-13T08:01:07.391498+08:00",
+      "ok": true,
+      "sha256": "bd143b674f4c87e5a5e36793fe0b749070616639f07e02610d5d0f80d2a0cd6f",
+      "bytes": 30966
+    }
+  },
+  {
+    "repository": "LCGLiChenge/MixTok",
+    "url": "https://github.com/LCGLiChenge/MixTok",
+    "createdAt": "2026-09-24T12:55:52Z",
+    "pushedAt": "2026-10-12T08:33:21Z",
+    "archived": false,
+    "starsObserved": 3,
+    "license": null,
+    "commit": "f1e40ce6c23e3835b0e1901f55d5033cea8fac37",
+    "defaultBranch": "main",
+    "releases": [],
+    "implementation": null
+  }
+]

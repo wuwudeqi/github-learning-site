@@ -1,0 +1,172 @@
+[
+  {
+    "name": "openai.xml",
+    "url": "https://openai.com/news/rss.xml",
+    "fetchUrl": "https://openai.com/news/rss.xml",
+    "checkedAt": "2026-10-13T08:05:41.629702+08:00",
+    "ok": true,
+    "bytes": 784414,
+    "sameBytes": false,
+    "sha256": "a9c78c595b9e4e2a1d93d39e104de298245678e68fc38ecc8790b4359116a04c"
+  },
+  {
+    "name": "anthropic.html",
+    "url": "https://www.anthropic.com/news",
+    "fetchUrl": "https://www.anthropic.com/news",
+    "checkedAt": "2026-10-13T08:05:41.628031+08:00",
+    "ok": true,
+    "bytes": 429462,
+    "sameBytes": true,
+    "sha256": "9d2ffe5d37e9851b16b972c4a8b6260c23245d35b62d2dfcab7f9e5af55bb162"
+  },
+  {
+    "name": "google.html",
+    "url": "https://deepmind.google/discover/blog/",
+    "fetchUrl": "https://deepmind.google/discover/blog/",
+    "checkedAt": "2026-10-13T08:05:41.629488+08:00",
+    "ok": true,
+    "bytes": 197443,
+    "sameBytes": true,
+    "sha256": "922191b53a39dec389a07f6bd0d707e34d0b9eeeb3f95ea55a55202b7aa023bb"
+  },
+  {
+    "name": "meta.html",
+    "url": "https://about.fb.com/news/",
+    "fetchUrl": "https://about.fb.com/news/",
+    "checkedAt": "2026-10-13T08:05:41.629176+08:00",
+    "ok": true,
+    "bytes": 307862,
+    "sameBytes": true,
+    "sha256": "fa365a075f3cb43a94a1652b67d4d7b4d537ee7cfa1bc857fe3f72cfd9a6f082"
+  },
+  {
+    "name": "microsoft.html",
+    "url": "https://news.microsoft.com/source/view-all/",
+    "fetchUrl": "https://news.microsoft.com/source/view-all/",
+    "checkedAt": "2026-10-13T08:05:41.630139+08:00",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "xai.html",
+    "url": "https://x.ai/news?category=all",
+    "fetchUrl": "https://x.ai/news?category=all",
+    "checkedAt": "2026-10-13T08:05:41.630537+08:00",
+    "ok": false,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "nvidia.html",
+    "url": "https://nvidianews.nvidia.com/news",
+    "fetchUrl": "https://nvidianews.nvidia.com/news",
+    "checkedAt": "2026-10-13T08:05:41.804531+08:00",
+    "ok": true,
+    "bytes": 68837,
+    "sameBytes": true,
+    "sha256": "486c64baf661371e2f8c877ab7e41f48ce2a973a50cb449724d25af40f05bd02"
+  },
+  {
+    "name": "alibaba.html",
+    "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+    "fetchUrl": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+    "checkedAt": "2026-10-13T08:05:41.917204+08:00",
+    "ok": true,
+    "bytes": 356636,
+    "sameBytes": false,
+    "sha256": "6d388c0884297cdbcfa0e88acd46fa6a49d0765572999b08df7247be7b3389a7"
+  },
+  {
+    "name": "deepseek.html",
+    "url": "https://api-docs.deepseek.com/updates/",
+    "fetchUrl": "https://api-docs.deepseek.com/updates/",
+    "checkedAt": "2026-10-13T08:05:42.192986+08:00",
+    "ok": true,
+    "bytes": 48079,
+    "sameBytes": true,
+    "sha256": "2922113bc4e0e970fa6d3c4065c3cff3ec661a4db03d671cc2310545c5b5bb71"
+  },
+  {
+    "name": "bytedance.html",
+    "url": "https://seed.bytedance.com/en/blog",
+    "fetchUrl": "https://seed.bytedance.com/en/blog",
+    "checkedAt": "2026-10-13T08:05:42.202085+08:00",
+    "ok": true,
+    "bytes": 11037,
+    "sameBytes": false,
+    "sha256": "5898fdfbb3e5131be16ab2e68c1304d42b719925ed925cb637b073be1a7137d4"
+  },
+  {
+    "name": "tencent.html",
+    "url": "https://hunyuan.tencent.com/",
+    "fetchUrl": "https://hunyuan.tencent.com/",
+    "checkedAt": "2026-10-13T08:05:42.248494+08:00",
+    "ok": true,
+    "bytes": 6893,
+    "sameBytes": true,
+    "sha256": "da81976b12c1877c1780f896fe382ca12f11d91fc3dbc335ea40821efa656a3e"
+  },
+  {
+    "name": "baidu.html",
+    "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+    "fetchUrl": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+    "checkedAt": "2026-10-13T08:05:42.349027+08:00",
+    "ok": true,
+    "bytes": 809276,
+    "sameBytes": false,
+    "sha256": "d991a0afe77c220bbb649db1a674468d7a5a7d5fda49f4e4dad7e4d8a6232016"
+  },
+  {
+    "name": "zhipu.html",
+    "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+    "fetchUrl": "https://docs.bigmodel.cn/cn/update/new-releases",
+    "checkedAt": "2026-10-13T08:05:42.423014+08:00",
+    "ok": true,
+    "bytes": 860073,
+    "sameBytes": true,
+    "sha256": "f821484bd872926f6f5da1577e6cff54a5a7fe63d67604c5b2bb582d0b2e0a7b"
+  },
+  {
+    "name": "kimi.html",
+    "url": "https://www.kimi.com/help/kimi-work/release-notes",
+    "fetchUrl": "https://www.kimi.com/help/kimi-work/release-notes",
+    "checkedAt": "2026-10-13T08:05:42.613026+08:00",
+    "ok": true,
+    "bytes": 623501,
+    "sameBytes": true,
+    "sha256": "9176e096a1af110581edc64b781137e1cbc4eb5122e7f58146fe9f2c7069a9fd"
+  },
+  {
+    "name": "minimax.html",
+    "url": "https://www.minimax.io/news",
+    "fetchUrl": "https://www.minimax.io/news",
+    "checkedAt": "2026-10-13T08:05:42.683177+08:00",
+    "ok": true,
+    "bytes": 54333,
+    "sameBytes": false,
+    "sha256": "4f8fd6edd3355a9e1344eacaa7ce7c2799d202390424141d27e27b6779b72703"
+  },
+  {
+    "name": "meta-research",
+    "url": "https://research.meta.ai/blog/",
+    "fetchUrl": "https://r.jina.ai/https://research.meta.ai/blog/",
+    "checkedAt": "2026-10-13T08:05:42.793559+08:00",
+    "ok": true,
+    "bytes": 7270,
+    "sameBytes": false,
+    "sha256": "ba49751c29d8c54a88dc77ac48c4eb9e6f922c173df035ab098d15e0291a28c1"
+  },
+  {
+    "name": "anthropic-research",
+    "skipped": "no receipt"
+  },
+  {
+    "name": "google-research.html",
+    "url": "https://research.google/blog/",
+    "fetchUrl": "https://research.google/blog/",
+    "checkedAt": "2026-10-13T08:05:42.965018+08:00",
+    "ok": true,
+    "bytes": 176948,
+    "sameBytes": true,
+    "sha256": "64ef3416cbf34c8c7909dcf21a527d144161b9d215940c692bb50570c98e6b1c"
+  }
+]

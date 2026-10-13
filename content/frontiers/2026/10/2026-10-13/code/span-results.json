@@ -1,0 +1,52 @@
+{
+  "note": "Synthetic local protocol demonstration; not Vela model evaluation",
+  "node": "v22.22.3",
+  "cases": [
+    {
+      "case": "emoji-before-email",
+      "text": "用户🙂：联系李雷，邮箱 li.lei@example.com。",
+      "start": 12,
+      "end": 30,
+      "expected": "li.lei@example.com",
+      "codePoints": 31,
+      "utf8Bytes": 56,
+      "correct": "li.lei@example.com",
+      "viaUtf16Map": "li.lei@example.com",
+      "start16": 13,
+      "end16": 31,
+      "naive": " li.lei@example.co",
+      "utf16Units": 32
+    },
+    {
+      "case": "arabic-after-emoji",
+      "text": "🙂 اكتب إلى علي الآن",
+      "start": 11,
+      "end": 14,
+      "expected": "علي",
+      "codePoints": 19,
+      "utf8Bytes": 36,
+      "correct": "علي",
+      "viaUtf16Map": "علي",
+      "start16": 12,
+      "end16": 15,
+      "naive": " عل",
+      "utf16Units": 20
+    },
+    {
+      "case": "combining-accent",
+      "text": "café🙂: contact@example.com",
+      "start": 8,
+      "end": 27,
+      "expected": "contact@example.com",
+      "codePoints": 27,
+      "utf8Bytes": 31,
+      "correct": "contact@example.com",
+      "viaUtf16Map": "contact@example.com",
+      "start16": 9,
+      "end16": 28,
+      "naive": " contact@example.co",
+      "utf16Units": 28
+    }
+  ],
+  "invalidRejected": true
+}
