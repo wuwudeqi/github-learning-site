@@ -1,0 +1,71 @@
+{
+  "receipt": {
+    "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=created_at_i%3E1791321600&hitsPerPage=100",
+    "startedAt": "2026-10-14T07:32:36.349151+08:00",
+    "checkedAt": "2026-10-14T07:32:37.676649+08:00",
+    "ok": true,
+    "chars": 180060
+  },
+  "entries": [
+    {
+      "repo": "https://github.com/bherbruck/solidcraft",
+      "source": "show-hn.json",
+      "storyId": "50064840",
+      "title": "Show HN: SolidCraft – Open-Source Parametric CAD in Rust (With MCP Support)",
+      "createdAt": "2026-10-13T00:11:04Z",
+      "points": 133,
+      "comments": 44,
+      "url": "https://github.com/bherbruck/solidcraft"
+    },
+    {
+      "repo": "https://github.com/watzon/sayso",
+      "source": "show-hn.json",
+      "storyId": "50073755",
+      "title": "Show HN: Sayso, free open source dictation for Mac, Windows, and Linux",
+      "createdAt": "2026-10-13T15:56:30Z",
+      "points": 13,
+      "comments": 7,
+      "url": "https://github.com/watzon/sayso"
+    },
+    {
+      "repo": "https://github.com/academa-labs/manimgx",
+      "source": "show-hn.json",
+      "storyId": "50037852",
+      "title": "Show HN: ManimGX – Manim's API on a Rust/wgpu engine, for 3D videos in Python",
+      "createdAt": "2026-10-10T22:33:30Z",
+      "points": 10,
+      "comments": 3,
+      "url": "https://github.com/academa-labs/manimgx"
+    },
+    {
+      "repo": "https://github.com/preloopdev/preloop",
+      "source": "show-hn.json",
+      "storyId": "50049531",
+      "title": "Show HN: Preloop – GitHub Actions locally in microvms and SSH/pause failures",
+      "createdAt": "2026-10-12T00:07:41Z",
+      "points": 9,
+      "comments": 1,
+      "url": "https://github.com/preloopdev/preloop"
+    },
+    {
+      "repo": "https://github.com/gonzaroman/IHMT-MEMORY",
+      "source": "show-hn.json",
+      "storyId": "50058903",
+      "title": "Show HN: IHMT – Infinite Hierarchical Memory Tree for AI Agents",
+      "createdAt": "2026-10-12T16:34:41Z",
+      "points": 8,
+      "comments": 2,
+      "url": "https://github.com/gonzaroman/IHMT-MEMORY"
+    },
+    {
+      "repo": "https://github.com/preferencemodel/karotte",
+      "source": "show-hn.json",
+      "storyId": "49996497",
+      "title": "Show HN: Karotte, a framework for building robust RL envs",
+      "createdAt": "2026-10-07T18:05:38Z",
+      "points": 8,
+      "comments": 0,
+      "url": "https://github.com/preferencemodel/karotte"
+    }
+  ]
+}

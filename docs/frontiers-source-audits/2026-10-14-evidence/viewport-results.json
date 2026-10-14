@@ -1,0 +1,394 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "overview",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-14-news",
+      "#/read/frontiers-2026-10-14-models",
+      "#/read/frontiers-2026-10-14-papers",
+      "#/read/frontiers-2026-10-14-projects",
+      "#/read/frontiers-2026-10-14-practice",
+      "#/read/frontiers-2026-10-13-overview"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "news",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/play-personal-library.webp",
+        "alt": "Google Play 官方演示的个人应用库，以及个人应用未经 Play 审核的提示",
+        "complete": true,
+        "naturalWidth": 884,
+        "width": 340,
+        "height": 713.84375
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/gem-concept.webp",
+        "alt": "概念图：中心模型生成可复用表示，在线小模型在实时请求到来时取用",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/intent-concept.webp",
+        "alt": "AI 概念示意：人确认购物约束，代理持有限凭据，交易端核对意图，范围外商品未获授权",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-01-news"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/uibk.png",
+        "alt": "UIBK 原图：共享编码器之后分成 token 与 dense 两个分支，结果进入同一向量列表",
+        "complete": true,
+        "naturalWidth": 2380,
+        "width": 719.9765625,
+        "height": 303.421875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/lightvae-concept.webp",
+        "alt": "AI 概念图：原编码器输出潜变量，Pro 和 Lite 两种较轻解码器接受同一接口",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "papers",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/thinking.png",
+        "alt": "2610.11765 Figure 3 原图：中文读图：左边的空前缀、相关说明和明确推断是不同输出类别；同样短的回答可能属于不同类别。",
+        "complete": true,
+        "naturalWidth": 1149,
+        "width": 719.9765625,
+        "height": 323.9609375
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/agentswe.png",
+        "alt": "2610.13361 Figure 3（PDF 第 7 页，裁切保留图与图注） 原图：中文读图：先看左侧开发反馈循环，再看中间的冻结步骤；右侧留出测试的反馈不会再回流给构建者。",
+        "complete": true,
+        "naturalWidth": 823,
+        "width": 719.9765625,
+        "height": 273.8203125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/terminal.png",
+        "alt": "2610.13166 Figure 2 原图：中文读图：挑战与修复位于扩大任务复杂度之前；重点看反馈回到哪里，避免把更长的轨迹直接当作更好的数据。",
+        "complete": true,
+        "naturalWidth": 1400,
+        "width": 719.9921875,
+        "height": 410.9140625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/msar.png",
+        "alt": "2610.13630 Figure 2（PDF 第 7 页，裁切保留图与图注） 原图：中文读图：左侧逐层传递，中间按深度取回，右侧把单一路径扩成多路后再次融合；关注右侧绿色融合模块。",
+        "complete": true,
+        "naturalWidth": 885,
+        "width": 719.9921875,
+        "height": 512.5390625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/branchopd.png",
+        "alt": "2610.13481 Figure 2（PDF 第 4 页，裁切保留图与图注） 原图：中文读图：A 选择分叉点，B 从共享前缀生成新后缀；底部 PBR 是独立的协议修复分支，因此读成绩必须同时看消融。",
+        "complete": true,
+        "naturalWidth": 824,
+        "width": 719.9921875,
+        "height": 469.21875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/arcs.png",
+        "alt": "2610.09396 Figure 1 原图：中文读图：留意结构化选择怎样限定澄清范围，同时允许用户表达原选项没有覆盖的意思；这不保证歧义识别本身正确。",
+        "complete": true,
+        "naturalWidth": 705,
+        "width": 705,
+        "height": 386
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-11765",
+      "#/read/paper-2610-11765v1",
+      "#/read/paper-2610-13361",
+      "#/read/paper-2610-13361v1",
+      "#/read/paper-2610-13166",
+      "#/read/paper-2610-13630",
+      "#/read/paper-2610-13630v1",
+      "#/read/paper-2610-13481",
+      "#/read/paper-2610-13481v1",
+      "#/read/paper-2610-09396",
+      "#/read/paper-2610-09396v1"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "projects",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/llama-windows.png",
+        "alt": "Llama-Windows README 中较早版本的模型托盘与聊天界面",
+        "complete": true,
+        "naturalWidth": 1310,
+        "width": 719.984375,
+        "height": 405.0625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/solidcraft-frame.png",
+        "alt": "Solidcraft 作者演示中正在编辑的开口壳体，可见圆角和侧壁",
+        "complete": true,
+        "naturalWidth": 800,
+        "width": 720,
+        "height": 405
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/sayso.webp",
+        "alt": "Sayso 作者界面，展示语音输入工具的首页和配置状态",
+        "complete": true,
+        "naturalWidth": 1280,
+        "width": 720,
+        "height": 461.25
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-07-projects"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/coverage-result.png",
+        "alt": "12个合成样本的正确、错误和未回答状态，选择性回答准确率100%但只找回一半阳性",
+        "complete": true,
+        "naturalWidth": 1160,
+        "width": 719.9921875,
+        "height": 520.1328125
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "overview",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-14-news",
+      "#/read/frontiers-2026-10-14-models",
+      "#/read/frontiers-2026-10-14-papers",
+      "#/read/frontiers-2026-10-14-projects",
+      "#/read/frontiers-2026-10-14-practice",
+      "#/read/frontiers-2026-10-13-overview"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "news",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/play-personal-library.webp",
+        "alt": "Google Play 官方演示的个人应用库，以及个人应用未经 Play 审核的提示",
+        "complete": true,
+        "naturalWidth": 884,
+        "width": 340,
+        "height": 713.84375
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/gem-concept.webp",
+        "alt": "概念图：中心模型生成可复用表示，在线小模型在实时请求到来时取用",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.9921875,
+        "height": 229.328125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/intent-concept.webp",
+        "alt": "AI 概念示意：人确认购物约束，代理持有限凭据，交易端核对意图，范围外商品未获授权",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.9921875,
+        "height": 229.328125
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-01-news"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/uibk.png",
+        "alt": "UIBK 原图：共享编码器之后分成 token 与 dense 两个分支，结果进入同一向量列表",
+        "complete": true,
+        "naturalWidth": 2380,
+        "width": 343.9921875,
+        "height": 144.96875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/lightvae-concept.webp",
+        "alt": "AI 概念图：原编码器输出潜变量，Pro 和 Lite 两种较轻解码器接受同一接口",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.9921875,
+        "height": 229.328125
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "papers",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/thinking.png",
+        "alt": "2610.11765 Figure 3 原图：中文读图：左边的空前缀、相关说明和明确推断是不同输出类别；同样短的回答可能属于不同类别。",
+        "complete": true,
+        "naturalWidth": 1149,
+        "width": 343.984375,
+        "height": 154.78125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/agentswe.png",
+        "alt": "2610.13361 Figure 3（PDF 第 7 页，裁切保留图与图注） 原图：中文读图：先看左侧开发反馈循环，再看中间的冻结步骤；右侧留出测试的反馈不会再回流给构建者。",
+        "complete": true,
+        "naturalWidth": 823,
+        "width": 343.9921875,
+        "height": 130.828125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/terminal.png",
+        "alt": "2610.13166 Figure 2 原图：中文读图：挑战与修复位于扩大任务复杂度之前；重点看反馈回到哪里，避免把更长的轨迹直接当作更好的数据。",
+        "complete": true,
+        "naturalWidth": 1400,
+        "width": 343.984375,
+        "height": 196.3203125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/msar.png",
+        "alt": "2610.13630 Figure 2（PDF 第 7 页，裁切保留图与图注） 原图：中文读图：左侧逐层传递，中间按深度取回，右侧把单一路径扩成多路后再次融合；关注右侧绿色融合模块。",
+        "complete": true,
+        "naturalWidth": 885,
+        "width": 343.984375,
+        "height": 244.875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/branchopd.png",
+        "alt": "2610.13481 Figure 2（PDF 第 4 页，裁切保留图与图注） 原图：中文读图：A 选择分叉点，B 从共享前缀生成新后缀；底部 PBR 是独立的协议修复分支，因此读成绩必须同时看消融。",
+        "complete": true,
+        "naturalWidth": 824,
+        "width": 343.9921875,
+        "height": 224.1796875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/arcs.png",
+        "alt": "2610.09396 Figure 1 原图：中文读图：留意结构化选择怎样限定澄清范围，同时允许用户表达原选项没有覆盖的意思；这不保证歧义识别本身正确。",
+        "complete": true,
+        "naturalWidth": 705,
+        "width": 343.9921875,
+        "height": 188.34375
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-11765",
+      "#/read/paper-2610-11765v1",
+      "#/read/paper-2610-13361",
+      "#/read/paper-2610-13361v1",
+      "#/read/paper-2610-13166",
+      "#/read/paper-2610-13630",
+      "#/read/paper-2610-13630v1",
+      "#/read/paper-2610-13481",
+      "#/read/paper-2610-13481v1",
+      "#/read/paper-2610-09396",
+      "#/read/paper-2610-09396v1"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "projects",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/llama-windows.png",
+        "alt": "Llama-Windows README 中较早版本的模型托盘与聊天界面",
+        "complete": true,
+        "naturalWidth": 1310,
+        "width": 343.9921875,
+        "height": 193.53125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/solidcraft-frame.png",
+        "alt": "Solidcraft 作者演示中正在编辑的开口壳体，可见圆角和侧壁",
+        "complete": true,
+        "naturalWidth": 800,
+        "width": 344,
+        "height": 193.5
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/sayso.webp",
+        "alt": "Sayso 作者界面，展示语音输入工具的首页和配置状态",
+        "complete": true,
+        "naturalWidth": 1280,
+        "width": 344,
+        "height": 220.375
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-07-projects"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-14/images/coverage-result.png",
+        "alt": "12个合成样本的正确、错误和未回答状态，选择性回答准确率100%但只找回一半阳性",
+        "complete": true,
+        "naturalWidth": 1160,
+        "width": 343.9921875,
+        "height": 248.5078125
+      }
+    ],
+    "internalLinks": []
+  }
+]

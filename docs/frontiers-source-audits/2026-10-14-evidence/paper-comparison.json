@@ -1,0 +1,128 @@
+[
+  {
+    "id": "2610.11765",
+    "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To",
+    "submittedDate": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.11765",
+    "selected": true,
+    "readingScope": "核心方法、实验条件、结果、局限",
+    "reason": "控制开关与可观察行为分离，提出多级输出指标并测任务难度影响。"
+  },
+  {
+    "id": "2610.13361",
+    "title": "AgentSWE: Can Coding Agents Build the Agent You Actually Want?",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.13361",
+    "selected": true,
+    "readingScope": "核心方法、实验条件、结果、局限",
+    "reason": "对创建/编辑/优化 Agent 的交付物进行冻结后留出评估。"
+  },
+  {
+    "id": "2610.13166",
+    "title": "Scaling Agentic Data for Long-Horizon Terminal Intelligence",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.13166",
+    "selected": true,
+    "readingScope": "核心方法、实验条件、结果、局限",
+    "reason": "生成、挑战、修复、扩展的长时序终端训练数据流程。"
+  },
+  {
+    "id": "2610.13630",
+    "title": "Multi-Stream Attention Residuals",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.13630",
+    "selected": true,
+    "readingScope": "核心方法、实验条件、结果、局限",
+    "reason": "以多尺度深度上下文增强残差检索，比较参数与训练预算。"
+  },
+  {
+    "id": "2610.13481",
+    "title": "Branching On-Policy Distillation",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.13481",
+    "selected": true,
+    "readingScope": "核心方法、实验条件、结果、局限",
+    "reason": "根据不确定性/师生分歧选择共享前缀的分叉续写，并给出PBR消融。"
+  },
+  {
+    "id": "2610.09396",
+    "title": "ARCS: Towards Precise Text-to-SQL via Structured Disambiguation",
+    "submittedDate": "2026-10-07",
+    "url": "https://arxiv.org/abs/2610.09396",
+    "selected": true,
+    "readingScope": "核心方法、实验条件、结果、局限",
+    "reason": "把SQL歧义显式结构化，比较准确率与用户交互负担。"
+  },
+  {
+    "id": "2610.13832",
+    "title": "SpatialASM: Internalizing Active Mentalization for Spatial Reasoning",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.13832",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "空间建模方向候选；本期优先终端/训练/检索等读者当前任务，未进行全文实验核验，不能推断研究质量不足"
+  },
+  {
+    "id": "2610.12933",
+    "title": "Learning More by Training Less: Uncertainty-Guided Progressive Contraction for Efficient Reasoning Post-Training",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.12933",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "渐进收缩与不确定性候选；摘要速度主张的预计算预算尚未充分核实，不采用数字"
+  },
+  {
+    "id": "2610.02740",
+    "title": "Prospective Hindsight: Self-Calibrating Reinforcement Learning via Prediction-Reality Gaps",
+    "submittedDate": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.02740",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "10月2日较早候选，本期优先7天内具完整对照阅读的BranchOPD，未将摘要解读为已复现"
+  },
+  {
+    "id": "2610.03825",
+    "title": "Same Output, Different Gold: Measuring How Reference Choice Moves a Multilingual Benchmark Score",
+    "submittedDate": "2026-10-02",
+    "url": "https://arxiv.org/abs/2610.03825",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "10月2日候选超出优先7天窗口；与评测主题相近，选择已充分读完的AgentSWE"
+  },
+  {
+    "id": "2610.12099",
+    "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+    "submittedDate": "2026-10-08",
+    "url": "https://arxiv.org/abs/2610.12099",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "统一模型候选；本期未完成核心实验条件全文审查，保留不选理由"
+  },
+  {
+    "id": "2610.09116",
+    "title": "SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code",
+    "submittedDate": "2026-10-06",
+    "url": "https://arxiv.org/abs/2610.09116",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "三维表示方向候选；任务覆盖取舍，未声称原研究低质量"
+  },
+  {
+    "id": "2610.05637",
+    "title": "Visual Grounding Safety in Vision-Language Models",
+    "submittedDate": "2026-10-05",
+    "url": "https://arxiv.org/abs/2610.05637",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "视觉定位安全候选；选题优先可核验的输出行为与SQL消歧，未完整阅读全文"
+  },
+  {
+    "id": "2610.12998",
+    "title": "Evaluating LLM Creativity through Long-Tail Performance",
+    "submittedDate": "2026-10-09",
+    "url": "https://arxiv.org/abs/2610.12998",
+    "selected": false,
+    "readingScope": "摘要及提交记录，未宣称完成全文审查",
+    "reason": "创造性长尾候选；摘要已有线索但独立价值及评测条件核验不足，本期不选"
+  }
+]

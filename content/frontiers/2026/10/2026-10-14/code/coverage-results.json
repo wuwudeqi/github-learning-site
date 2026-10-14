@@ -1,0 +1,103 @@
+{
+  "data_origin": "handcrafted synthetic cases; not actual model output",
+  "python": "3.14.3",
+  "truth": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "predictions": {
+    "always_negative": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "balanced_errors": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "selective": [
+      1,
+      1,
+      null,
+      null,
+      null,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "results": {
+    "always_negative": {
+      "total": 12,
+      "answered": 12,
+      "correct": 8,
+      "tp": 0,
+      "fp": 0,
+      "positive_total": 4,
+      "coverage": 1.0,
+      "accuracy_on_answered": 0.6666666666666666,
+      "correct_over_all": 0.6666666666666666,
+      "precision": null,
+      "positive_capture_over_all": 0.0
+    },
+    "balanced_errors": {
+      "total": 12,
+      "answered": 12,
+      "correct": 10,
+      "tp": 3,
+      "fp": 1,
+      "positive_total": 4,
+      "coverage": 1.0,
+      "accuracy_on_answered": 0.8333333333333334,
+      "correct_over_all": 0.8333333333333334,
+      "precision": 0.75,
+      "positive_capture_over_all": 0.75
+    },
+    "selective": {
+      "total": 12,
+      "answered": 9,
+      "correct": 9,
+      "tp": 2,
+      "fp": 0,
+      "positive_total": 4,
+      "coverage": 0.75,
+      "accuracy_on_answered": 1.0,
+      "correct_over_all": 0.75,
+      "precision": 1.0,
+      "positive_capture_over_all": 0.5
+    }
+  }
+}
