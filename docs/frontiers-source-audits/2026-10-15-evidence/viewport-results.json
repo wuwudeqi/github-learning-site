@@ -1,0 +1,362 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "overview",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-15-news",
+      "#/read/frontiers-2026-10-15-models",
+      "#/read/frontiers-2026-10-15-papers",
+      "#/read/frontiers-2026-10-15-projects",
+      "#/read/frontiers-2026-10-15-practice"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "news",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/deepreview-concept.webp",
+        "alt": "一份技术文档拆成并行检查任务，每个任务背后仍保留全文，最终合并重复意见",
+        "complete": true,
+        "naturalWidth": 1774,
+        "width": 720,
+        "height": 360
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/hydra-concept.webp",
+        "alt": "蓝色草稿、检查仓库文件的橙色复核工具，以及按批注修订的绿色工具",
+        "complete": true,
+        "naturalWidth": 1774,
+        "width": 720,
+        "height": 360
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/videojev.png",
+        "alt": "VideoJev 与同规模视频模型在三项时间定位基准上的 mIoU 和延迟对照",
+        "complete": true,
+        "naturalWidth": 2800,
+        "width": 719.96875,
+        "height": 265.875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/groundingpi.png",
+        "alt": "GroundingPI 的视觉编码器与语言解码器连接，并输出目标名称及边界框坐标 token",
+        "complete": true,
+        "naturalWidth": 2800,
+        "width": 719.984375,
+        "height": 217.796875
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-02-models"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "papers",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/reflex.png",
+        "alt": "Agent-Reflex 在带噪交互中产生轨迹，再由反思教师重新评价学生动作",
+        "complete": true,
+        "naturalWidth": 1304,
+        "width": 719.953125,
+        "height": 294.28125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/harness2.png",
+        "alt": "Harness² 的任务内提出探测组合循环，与任务间经验更新循环相连",
+        "complete": true,
+        "naturalWidth": 1014,
+        "width": 719.984375,
+        "height": 232.1875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/tppo-method.png",
+        "alt": "标准 critic 独立预测各前缀价值，TPPO 将逐位置增量累计后转为概率",
+        "complete": true,
+        "naturalWidth": 825,
+        "width": 719.96875,
+        "height": 331.625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/dosa-method.png",
+        "alt": "DoSA 先计算筛选点积和上界，再为幸存候选完成所有头并稀疏写回",
+        "complete": true,
+        "naturalWidth": 825,
+        "width": 719.984375,
+        "height": 466.90625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/tev.png",
+        "alt": "Tev 从已知世界生成工作流和材料，制造可恢复的损坏，同时保留隐藏验证器",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 720,
+        "height": 405
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/switchmem.png",
+        "alt": "SwitchMem 训练阶段比较两种记忆造成的隐藏状态变化，推理阶段仅选择一种记忆送给执行器",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 720,
+        "height": 364.5
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-17953-reading",
+      "#/read/paper-2610-14224-reading",
+      "#/read/paper-2610-16794-reading",
+      "#/read/paper-2610-13990-reading",
+      "#/read/paper-2610-18868-reading",
+      "#/read/paper-2610-17928-reading"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "projects",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/petal.png",
+        "alt": "Petal 作者展示的独立远程共享代码窗口，带 View 和 Draw 控件",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 719.984375,
+        "height": 491.390625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/apus-memory.png",
+        "alt": "APUS会话事件经过记忆准入、持久记录、索引检索，再注入请求上下文；Reflex选择器是可选模块",
+        "complete": true,
+        "naturalWidth": 1450,
+        "width": 719.96875,
+        "height": 364.953125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/anis.png",
+        "alt": "ANIS 从 QGIS 能力发现到单步命令，再把多个命令组合成目标级调用",
+        "complete": true,
+        "naturalWidth": 1984,
+        "width": 719.984375,
+        "height": 205.765625
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/metric-results.png",
+        "alt": "四个合成任务的步骤统计与三种指标，步骤微平均98%、宏平均98.75%、任务成功率50%",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 720,
+        "height": 465
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "overview",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-15-news",
+      "#/read/frontiers-2026-10-15-models",
+      "#/read/frontiers-2026-10-15-papers",
+      "#/read/frontiers-2026-10-15-projects",
+      "#/read/frontiers-2026-10-15-practice"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "news",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/deepreview-concept.webp",
+        "alt": "一份技术文档拆成并行检查任务，每个任务背后仍保留全文，最终合并重复意见",
+        "complete": true,
+        "naturalWidth": 1774,
+        "width": 344,
+        "height": 172
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/hydra-concept.webp",
+        "alt": "蓝色草稿、检查仓库文件的橙色复核工具，以及按批注修订的绿色工具",
+        "complete": true,
+        "naturalWidth": 1774,
+        "width": 344,
+        "height": 172
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/videojev.png",
+        "alt": "VideoJev 与同规模视频模型在三项时间定位基准上的 mIoU 和延迟对照",
+        "complete": true,
+        "naturalWidth": 2800,
+        "width": 343.984375,
+        "height": 127.03125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/groundingpi.png",
+        "alt": "GroundingPI 的视觉编码器与语言解码器连接，并输出目标名称及边界框坐标 token",
+        "complete": true,
+        "naturalWidth": 2800,
+        "width": 343.953125,
+        "height": 104.046875
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-02-models"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "papers",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/reflex.png",
+        "alt": "Agent-Reflex 在带噪交互中产生轨迹，再由反思教师重新评价学生动作",
+        "complete": true,
+        "naturalWidth": 1304,
+        "width": 343.953125,
+        "height": 140.59375
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/harness2.png",
+        "alt": "Harness² 的任务内提出探测组合循环，与任务间经验更新循环相连",
+        "complete": true,
+        "naturalWidth": 1014,
+        "width": 343.953125,
+        "height": 110.921875
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/tppo-method.png",
+        "alt": "标准 critic 独立预测各前缀价值，TPPO 将逐位置增量累计后转为概率",
+        "complete": true,
+        "naturalWidth": 825,
+        "width": 343.96875,
+        "height": 158.4375
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/dosa-method.png",
+        "alt": "DoSA 先计算筛选点积和上界，再为幸存候选完成所有头并稀疏写回",
+        "complete": true,
+        "naturalWidth": 825,
+        "width": 343.984375,
+        "height": 223.078125
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/tev.png",
+        "alt": "Tev 从已知世界生成工作流和材料，制造可恢复的损坏，同时保留隐藏验证器",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 344,
+        "height": 193.5
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/switchmem.png",
+        "alt": "SwitchMem 训练阶段比较两种记忆造成的隐藏状态变化，推理阶段仅选择一种记忆送给执行器",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 343.96875,
+        "height": 174.140625
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-17953-reading",
+      "#/read/paper-2610-14224-reading",
+      "#/read/paper-2610-16794-reading",
+      "#/read/paper-2610-13990-reading",
+      "#/read/paper-2610-18868-reading",
+      "#/read/paper-2610-17928-reading"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "projects",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/petal.png",
+        "alt": "Petal 作者展示的独立远程共享代码窗口，带 View 和 Draw 控件",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 343.96875,
+        "height": 234.765625
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/apus-memory.png",
+        "alt": "APUS会话事件经过记忆准入、持久记录、索引检索，再注入请求上下文；Reflex选择器是可选模块",
+        "complete": true,
+        "naturalWidth": 1450,
+        "width": 343.96875,
+        "height": 174.359375
+      },
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/anis.png",
+        "alt": "ANIS 从 QGIS 能力发现到单步命令，再把多个命令组合成目标级调用",
+        "complete": true,
+        "naturalWidth": 1984,
+        "width": 343.9375,
+        "height": 98.296875
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50615/github-learning-site/documents/frontiers/2026/10/2026-10-15/images/metric-results.png",
+        "alt": "四个合成任务的步骤统计与三种指标，步骤微平均98%、宏平均98.75%、任务成功率50%",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 343.96875,
+        "height": 222.15625
+      }
+    ],
+    "internalLinks": []
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "synthetic": true,
+  "python": "3.14.3",
+  "rows": [
+    {
+      "task": "A",
+      "correct_steps": 10,
+      "total_steps": 10,
+      "task_success": true
+    },
+    {
+      "task": "B",
+      "correct_steps": 10,
+      "total_steps": 10,
+      "task_success": true
+    },
+    {
+      "task": "C",
+      "correct_steps": 39,
+      "total_steps": 40,
+      "task_success": false
+    },
+    {
+      "task": "D",
+      "correct_steps": 39,
+      "total_steps": 40,
+      "task_success": false
+    }
+  ],
+  "metrics": {
+    "micro_step_accuracy": {
+      "numerator": 98,
+      "denominator": 100,
+      "rate": 0.98
+    },
+    "macro_step_accuracy": {
+      "denominator": 4,
+      "rate": 0.9875
+    },
+    "task_success_rate": {
+      "numerator": 2,
+      "denominator": 4,
+      "rate": 0.5
+    }
+  },
+  "checks": {
+    "analytical_values": "pass",
+    "zero_denominator_rejected": true
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "reason": "新增PDF与图片需要GitHub Pages构建空间；八幅历史PNG无损转WebP，解码RGBA完全相同，历史审计保留当时记录",
+  "savedBytes": 26327328,
+  "command": "cwebp -lossless -exact -z 9",
+  "files": [
+    {
+      "original": "content/frontiers/2026/09/2026-09-27/images/krea-comparison.png",
+      "replacement": "content/frontiers/2026/09/2026-09-27/images/krea-comparison.webp",
+      "originalBytes": 29019297,
+      "bytes": 17962058,
+      "savedBytes": 11057239,
+      "dimensions": [
+        3072,
+        8192
+      ],
+      "decodedRgbaSha256": "f9f60d9dc0e67f00989dfb613fb6ae6b7d17229d716ce9c64762bdd585b60b52",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/09/2026-09-27/02-开源模型.md"
+      ],
+      "originalSha256": "5b36d217fa53eaa3018b2b38227dd8dad63290043c2fede7b565fb8d05514750",
+      "replacementSha256": "b710cddced4957163829c571859d0fe7cebb5a2b1d43e409f4c636f5f78383a1"
+    },
+    {
+      "original": "content/frontiers/2026/09/2026-09-24/images/robofollow-scenes.png",
+      "replacement": "content/frontiers/2026/09/2026-09-24/images/robofollow-scenes.webp",
+      "originalBytes": 5582374,
+      "bytes": 2094116,
+      "savedBytes": 3488258,
+      "dimensions": [
+        6644,
+        4338
+      ],
+      "decodedRgbaSha256": "d0062d258495a5e0a2c5d46c82e6d41344b367bf7e39ef64d06e09db20b2a75e",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/09/2026-09-24/03-论文精选.md",
+        "content/papers/frontiers/robofollow/00-阅读卡.md"
+      ],
+      "originalSha256": "97c424e7b545e38837e1c7cf95075f0eff0092bd078b301da6097197e1c8121f",
+      "replacementSha256": "9179d9e954d579f7ae8bf90392b497055afe5376066c4c1b784e5680e0b1fcd1"
+    },
+    {
+      "original": "content/frontiers/2026/09/2026-09-21/images/qwen-multi-reference.png",
+      "replacement": "content/frontiers/2026/09/2026-09-21/images/qwen-multi-reference.webp",
+      "originalBytes": 4635757,
+      "bytes": 2029724,
+      "savedBytes": 2606033,
+      "dimensions": [
+        1353,
+        1453
+      ],
+      "decodedRgbaSha256": "82d5dc1c3ac0817df0f511f6ed14c3c0579f3bcf3c857a4520731a820142c7e5",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/09/2026-09-21/01-AI动态.md"
+      ],
+      "originalSha256": "cd0d2aba6434ade01131c59db9a49d016d4f44bd0077a578d131c93d5c750979",
+      "replacementSha256": "460653b1d0e136348391765e2d281cedd32368c5552fad64e75810a7769479d6"
+    },
+    {
+      "original": "content/frontiers/2026/09/2026-09-13/images/project-rerun.png",
+      "replacement": "content/frontiers/2026/09/2026-09-13/images/project-rerun.webp",
+      "originalBytes": 4635043,
+      "bytes": 2710672,
+      "savedBytes": 1924371,
+      "dimensions": [
+        2634,
+        1828
+      ],
+      "decodedRgbaSha256": "2c2fb50d7e1853f4081604f12dbf20825b7aba747e5a7b9fcd2876e94a619082",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/09/2026-09-13/04-开源项目.md"
+      ],
+      "originalSha256": "b9bcd93b79f2b4f0806568a1427a33c9125c56c4ed854f9a157fd53423f1e2e6",
+      "replacementSha256": "93febc4cbb940e3f2df182f87ccee611115cc4853bd5fa1d0eb45ec6ef148819"
+    },
+    {
+      "original": "content/frontiers/2026/10/2026-10-11/images/qwen-output.png",
+      "replacement": "content/frontiers/2026/10/2026-10-11/images/qwen-output.webp",
+      "originalBytes": 4486660,
+      "bytes": 3028986,
+      "savedBytes": 1457674,
+      "dimensions": [
+        2528,
+        1648
+      ],
+      "decodedRgbaSha256": "aa1a9818fa26c9a5e18d63cd0599ab475f1d75502d8c4baeb2961e7d829b3090",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/10/2026-10-11/01-AI动态.md"
+      ],
+      "originalSha256": "90d37b3880d179caa158a0273dd61756f567c5ca16144f61fd08cca2e608da49",
+      "replacementSha256": "dfc2b04f20b74862d13ce0dc619a446a111060e8bb1253405e12e6b2b93b8e49"
+    },
+    {
+      "original": "content/frontiers/2026/09/2026-09-26/images/univer-workspace.png",
+      "replacement": "content/frontiers/2026/09/2026-09-26/images/univer-workspace.webp",
+      "originalBytes": 4022568,
+      "bytes": 1760932,
+      "savedBytes": 2261636,
+      "dimensions": [
+        3828,
+        1960
+      ],
+      "decodedRgbaSha256": "4ff02fa08d334aa19c8be321896cf98cad33b70ad4b964d29e72d572d367a9ae",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/09/2026-09-26/04-开源项目.md"
+      ],
+      "originalSha256": "f283bf2d64a0f108ecc5f8314e36ce07017e05b58c8ad8649de01c40aa00eb52",
+      "replacementSha256": "f8f324f9f2259ab12c1980373f84f783c657220d5d15938b618e98bbf39b0165"
+    },
+    {
+      "original": "content/frontiers/2026/10/2026-10-11/images/procinsh-space.png",
+      "replacement": "content/frontiers/2026/10/2026-10-11/images/procinsh-space.webp",
+      "originalBytes": 3928799,
+      "bytes": 2141706,
+      "savedBytes": 1787093,
+      "dimensions": [
+        3828,
+        1936
+      ],
+      "decodedRgbaSha256": "a93c7bacccb91e1288d900be9661427bf660ed26f9ecf81c1b4857105402fcc2",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/10/2026-10-11/04-开源项目.md"
+      ],
+      "originalSha256": "49880547697834589011181af073cfdc9b49c71c90ffff8771cd9d6135663462",
+      "replacementSha256": "6976cb0cea7eebc0bb2c2fa9588527636d900185167fc6fd851c4615e5839b40"
+    },
+    {
+      "original": "content/frontiers/2026/09/2026-09-15/images/model-intern-u2.png",
+      "replacement": "content/frontiers/2026/09/2026-09-15/images/model-intern-u2.webp",
+      "originalBytes": 3638000,
+      "bytes": 1892976,
+      "savedBytes": 1745024,
+      "dimensions": [
+        2342,
+        1627
+      ],
+      "decodedRgbaSha256": "37092891a600e318a7b1780393351cb3b5babbf1a3a4c1902365c5494320bbd2",
+      "pixelEquality": true,
+      "changedReferences": [
+        "content/frontiers/2026/09/2026-09-15/02-开源模型.md"
+      ],
+      "originalSha256": "08be6f340ea64c56e7e13cc2cf31c00520f727dfae36c4586c07dfd87db3d4d7",
+      "replacementSha256": "8475fc800d04cc189905dbefe833f5f2789e52f5d9df6c1dfa34818e73eefd40"
+    }
+  ]
+}

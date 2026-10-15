@@ -1,0 +1,991 @@
+[
+  {
+    "id": "ZhuYuhan/VideoJev-4B",
+    "sha": "2fc62181d25ed055104754b7884e17db4969c297",
+    "createdAt": "2026-10-10T16:48:53.000Z",
+    "lastModified": "2026-10-14T04:31:22.000Z",
+    "private": false,
+    "gated": false,
+    "pipeline_tag": "feature-extraction",
+    "tags": [
+      "transformers",
+      "safetensors",
+      "videojev",
+      "feature-extraction",
+      "video",
+      "video-question-answering",
+      "temporal-grounding",
+      "custom_code",
+      "arxiv:2610.18615",
+      "base_model:Qwen/Qwen3.5-4B",
+      "base_model:finetune:Qwen/Qwen3.5-4B",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "cardData": {
+      "library_name": "transformers",
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.5-4B",
+      "base_model_relation": "finetune",
+      "tags": [
+        "video",
+        "video-question-answering",
+        "temporal-grounding",
+        "custom_code"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "USAGE.md"
+      },
+      {
+        "rfilename": "assets/benchmark-grounding.png"
+      },
+      {
+        "rfilename": "assets/benchmark-grounding.svg"
+      },
+      {
+        "rfilename": "assets/benchmark-qa.png"
+      },
+      {
+        "rfilename": "assets/benchmark-qa.svg"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration_videojev.py"
+      },
+      {
+        "rfilename": "conversion.json"
+      },
+      {
+        "rfilename": "export_complete.json"
+      },
+      {
+        "rfilename": "model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "modeling_videojev.py"
+      },
+      {
+        "rfilename": "processing_videojev.py"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "validation.json"
+      },
+      {
+        "rfilename": "videojev_moe.py"
+      },
+      {
+        "rfilename": "videojev_temporal.py"
+      },
+      {
+        "rfilename": "videojev_video.py"
+      }
+    ]
+  },
+  {
+    "id": "SberRoboticsCenter/GreenWAM",
+    "sha": "9459a4508ad2342695c924398f7310f939b6358e",
+    "createdAt": "2026-10-14T07:36:44.000Z",
+    "lastModified": "2026-10-14T07:41:25.000Z",
+    "private": false,
+    "gated": false,
+    "pipeline_tag": "robotics",
+    "tags": [
+      "cosmos",
+      "safetensors",
+      "robotics",
+      "world-model",
+      "world-action-model",
+      "arxiv:2610.18774",
+      "base_model:nvidia/Cosmos3-Edge",
+      "base_model:finetune:nvidia/Cosmos3-Edge",
+      "license:other",
+      "region:us"
+    ],
+    "cardData": {
+      "license": "other",
+      "license_name": "openmdw-1.1",
+      "license_link": "LICENSE",
+      "pipeline_tag": "robotics",
+      "base_model": "nvidia/Cosmos3-Edge",
+      "tags": [
+        "robotics",
+        "world-model",
+        "world-action-model",
+        "cosmos"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "calvin/SHA256SUMS"
+      },
+      {
+        "rfilename": "calvin/calvin_stats.json"
+      },
+      {
+        "rfilename": "calvin/config.json"
+      },
+      {
+        "rfilename": "calvin/config.yaml"
+      },
+      {
+        "rfilename": "calvin/model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "calvin/model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "calvin/model.safetensors.index.json"
+      },
+      {
+        "rfilename": "libero/SHA256SUMS"
+      },
+      {
+        "rfilename": "libero/config.json"
+      },
+      {
+        "rfilename": "libero/config.yaml"
+      },
+      {
+        "rfilename": "libero/libero_stats.json"
+      },
+      {
+        "rfilename": "libero/model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "libero/model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "libero/model.safetensors.index.json"
+      },
+      {
+        "rfilename": "robotwin/SHA256SUMS"
+      },
+      {
+        "rfilename": "robotwin/config.json"
+      },
+      {
+        "rfilename": "robotwin/config.yaml"
+      },
+      {
+        "rfilename": "robotwin/model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "robotwin/model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "robotwin/model.safetensors.index.json"
+      },
+      {
+        "rfilename": "robotwin/stats/delta_from_q0/statistics.json"
+      },
+      {
+        "rfilename": "worldarena/SHA256SUMS"
+      },
+      {
+        "rfilename": "worldarena/config.json"
+      },
+      {
+        "rfilename": "worldarena/config.yaml"
+      },
+      {
+        "rfilename": "worldarena/model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "worldarena/model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "worldarena/model.safetensors.index.json"
+      },
+      {
+        "rfilename": "worldarena/stats/absolute/statistics.json"
+      },
+      {
+        "rfilename": "worldarena/stats/delta_from_q0/statistics.json"
+      }
+    ]
+  },
+  {
+    "id": "fishaudio/drama-3",
+    "sha": "e0a9218aa48888270f06ef1ed9ea67622c0e17d2",
+    "createdAt": "2026-10-01T04:34:57.000Z",
+    "lastModified": "2026-10-14T06:15:21.000Z",
+    "private": false,
+    "gated": false,
+    "pipeline_tag": "text-to-speech",
+    "tags": [
+      "safetensors",
+      "fish_omni",
+      "fish-audio",
+      "text-to-speech",
+      "multi-speaker",
+      "audio-editing",
+      "emotional-speech-generation",
+      "zh",
+      "en",
+      "ja",
+      "ko",
+      "es",
+      "pt",
+      "ar",
+      "ru",
+      "fr",
+      "de",
+      "sv",
+      "it",
+      "tr",
+      "no",
+      "nl",
+      "cy",
+      "eu",
+      "ca",
+      "da",
+      "gl",
+      "ta",
+      "hu",
+      "fi",
+      "pl",
+      "et",
+      "hi",
+      "la",
+      "ur",
+      "th",
+      "vi",
+      "jw",
+      "bn",
+      "yo",
+      "sl",
+      "cs",
+      "sw",
+      "nn",
+      "he",
+      "ms",
+      "uk",
+      "id",
+      "kk",
+      "bg",
+      "lv",
+      "my",
+      "tl",
+      "sk",
+      "ne",
+      "fa",
+      "af",
+      "el",
+      "bo",
+      "hr",
+      "ro",
+      "sn",
+      "mi",
+      "yi",
+      "am",
+      "be",
+      "km",
+      "is",
+      "az",
+      "sd",
+      "br",
+      "sq",
+      "ps",
+      "mn",
+      "ht",
+      "ml",
+      "sr",
+      "sa",
+      "te",
+      "ka",
+      "bs",
+      "pa",
+      "lt",
+      "kn",
+      "si",
+      "hy",
+      "mr",
+      "as",
+      "gu",
+      "fo",
+      "arxiv:2610.18010",
+      "license:other",
+      "bsgemm-moe",
+      "region:us"
+    ],
+    "cardData": {
+      "language": [
+        "zh",
+        "en",
+        "ja",
+        "ko",
+        "es",
+        "pt",
+        "ar",
+        "ru",
+        "fr",
+        "de",
+        "sv",
+        "it",
+        "tr",
+        "no",
+        "nl",
+        "cy",
+        "eu",
+        "ca",
+        "da",
+        "gl",
+        "ta",
+        "hu",
+        "fi",
+        "pl",
+        "et",
+        "hi",
+        "la",
+        "ur",
+        "th",
+        "vi",
+        "jw",
+        "bn",
+        "yo",
+        "sl",
+        "cs",
+        "sw",
+        "nn",
+        "he",
+        "ms",
+        "uk",
+        "id",
+        "kk",
+        "bg",
+        "lv",
+        "my",
+        "tl",
+        "sk",
+        "ne",
+        "fa",
+        "af",
+        "el",
+        "bo",
+        "hr",
+        "ro",
+        "sn",
+        "mi",
+        "yi",
+        "am",
+        "be",
+        "km",
+        "is",
+        "az",
+        "sd",
+        "br",
+        "sq",
+        "ps",
+        "mn",
+        "ht",
+        "ml",
+        "sr",
+        "sa",
+        "te",
+        "ka",
+        "bs",
+        "pa",
+        "lt",
+        "kn",
+        "si",
+        "hy",
+        "mr",
+        "as",
+        "gu",
+        "fo"
+      ],
+      "license": "other",
+      "license_name": "fish-audio-research-license",
+      "license_link": "LICENSE.md",
+      "pipeline_tag": "text-to-speech",
+      "tags": [
+        "fish-audio",
+        "text-to-speech",
+        "multi-speaker",
+        "audio-editing",
+        "emotional-speech-generation"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "codec.pth"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "model-00001-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00005-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00006-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00007-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model-00008-of-00008.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "special_tokens_map.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "datalab-to/indra-ocr",
+    "sha": "5993a956d7ea1d43c0d40d409962bb0b033ac1e8",
+    "createdAt": "2026-10-10T14:12:33.000Z",
+    "lastModified": "2026-10-13T15:53:08.000Z",
+    "private": false,
+    "gated": false,
+    "pipeline_tag": "image-to-text",
+    "tags": [
+      "onnx",
+      "ocr",
+      "cpu",
+      "pdf",
+      "markdown",
+      "layout",
+      "document-parsing",
+      "image-to-text",
+      "en",
+      "fr",
+      "de",
+      "es",
+      "it",
+      "pt",
+      "nl",
+      "pl",
+      "ru",
+      "uk",
+      "el",
+      "hi",
+      "bn",
+      "zh",
+      "license:openrail",
+      "region:us"
+    ],
+    "cardData": {
+      "library_name": "onnx",
+      "license": "openrail",
+      "license_link": "LICENSE",
+      "pipeline_tag": "image-to-text",
+      "language": [
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "pt",
+        "nl",
+        "pl",
+        "ru",
+        "uk",
+        "el",
+        "hi",
+        "bn",
+        "zh"
+      ],
+      "tags": [
+        "ocr",
+        "onnx",
+        "cpu",
+        "pdf",
+        "markdown",
+        "layout",
+        "document-parsing"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "datalab-logo.png"
+      },
+      {
+        "rfilename": "det.onnx"
+      },
+      {
+        "rfilename": "examples/chinese_essay.png"
+      },
+      {
+        "rfilename": "examples/multi_column.png"
+      },
+      {
+        "rfilename": "examples/rotated_letter.png"
+      },
+      {
+        "rfilename": "examples/table_pmc.png"
+      },
+      {
+        "rfilename": "math_dec_init.onnx"
+      },
+      {
+        "rfilename": "math_dec_step.onnx"
+      },
+      {
+        "rfilename": "math_enc.onnx"
+      },
+      {
+        "rfilename": "math_meta.json"
+      },
+      {
+        "rfilename": "mathcls.onnx"
+      },
+      {
+        "rfilename": "meta.json"
+      },
+      {
+        "rfilename": "order.onnx"
+      },
+      {
+        "rfilename": "orient.onnx"
+      },
+      {
+        "rfilename": "rec.onnx"
+      },
+      {
+        "rfilename": "rec_cjk.onnx"
+      },
+      {
+        "rfilename": "script.onnx"
+      },
+      {
+        "rfilename": "speed_score.png"
+      },
+      {
+        "rfilename": "throughput.png"
+      }
+    ]
+  },
+  {
+    "id": "GroundingPI/GroundingPI",
+    "sha": "08d397c8769f7f10b96ff6d56ee6f56acb04181f",
+    "createdAt": "2026-09-30T08:17:38.000Z",
+    "lastModified": "2026-10-14T10:41:16.000Z",
+    "private": false,
+    "gated": false,
+    "pipeline_tag": "image-text-to-text",
+    "tags": [
+      "transformers",
+      "safetensors",
+      "groundingpi",
+      "text-generation",
+      "visual-grounding",
+      "object-detection",
+      "referring-expression-comprehension",
+      "pointing",
+      "ocr",
+      "document-layout",
+      "custom-code",
+      "image-text-to-text",
+      "conversational",
+      "custom_code",
+      "en",
+      "zh",
+      "arxiv:2609.39601",
+      "license:other",
+      "region:us"
+    ],
+    "cardData": {
+      "license": "other",
+      "license_name": "apache-2.0-with-upstream-kimi-k3",
+      "license_link": "LICENSE",
+      "language": [
+        "en",
+        "zh"
+      ],
+      "library_name": "transformers",
+      "pipeline_tag": "image-text-to-text",
+      "tags": [
+        "visual-grounding",
+        "object-detection",
+        "referring-expression-comprehension",
+        "pointing",
+        "ocr",
+        "document-layout",
+        "custom-code"
+      ],
+      "inference": false
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "LICENSE-Apache-2.0"
+      },
+      {
+        "rfilename": "LICENSE-Kimi-K3"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "added_tokens.json"
+      },
+      {
+        "rfilename": "assets/demo-poster.jpg"
+      },
+      {
+        "rfilename": "assets/demo.mp4"
+      },
+      {
+        "rfilename": "assets/fig1-teaser.png"
+      },
+      {
+        "rfilename": "assets/fig2-architecture.png"
+      },
+      {
+        "rfilename": "assets/fig5-grounding-performance.png"
+      },
+      {
+        "rfilename": "assets/fig6-physical-intelligence.png"
+      },
+      {
+        "rfilename": "assets/huggingface-paper-gold-day.svg"
+      },
+      {
+        "rfilename": "assets/logo.png"
+      },
+      {
+        "rfilename": "assets/modelscope-logo.svg"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "checksums.sha256"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration_groundingpi.py"
+      },
+      {
+        "rfilename": "configuration_groundingpi_vision.py"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "image_processing_groundingpi.py"
+      },
+      {
+        "rfilename": "media_utils.py"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "modeling_groundingpi.py"
+      },
+      {
+        "rfilename": "modeling_groundingpi_vision.py"
+      },
+      {
+        "rfilename": "preprocessor_config.json"
+      },
+      {
+        "rfilename": "processing_groundingpi.py"
+      },
+      {
+        "rfilename": "requirements.txt"
+      },
+      {
+        "rfilename": "special_tokens_map.json"
+      },
+      {
+        "rfilename": "streammind_gate.py"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "vocab.json"
+      }
+    ]
+  },
+  {
+    "id": "perplexity-ai/pplx-decider-v1.1-27b",
+    "sha": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+    "createdAt": "2026-10-05T12:32:27.000Z",
+    "lastModified": "2026-10-12T07:26:21.000Z",
+    "private": false,
+    "gated": false,
+    "pipeline_tag": "text-classification",
+    "tags": [
+      "pytorch",
+      "safetensors",
+      "qwen3_5",
+      "classification",
+      "multimodal",
+      "custom-code",
+      "decider",
+      "decision-model",
+      "text-classification",
+      "base_model:Qwen/Qwen3.8-27B",
+      "base_model:finetune:Qwen/Qwen3.8-27B",
+      "license:apache-2.0",
+      "region:us"
+    ],
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.8-27B",
+      "base_model_relation": "finetune",
+      "library_name": "pytorch",
+      "pipeline_tag": "text-classification",
+      "tags": [
+        "classification",
+        "multimodal",
+        "custom-code",
+        "decider",
+        "decision-model"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "decision_config.json"
+      },
+      {
+        "rfilename": "evaluation/checkpoint-verification.json"
+      },
+      {
+        "rfilename": "evaluation/decision-index.json"
+      },
+      {
+        "rfilename": "model-00001-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00005-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00006-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00007-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00008-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00009-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00010-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00011-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "readout.safetensors"
+      },
+      {
+        "rfilename": "release-manifest.json"
+      },
+      {
+        "rfilename": "requirements.txt"
+      },
+      {
+        "rfilename": "source/pyproject.toml"
+      },
+      {
+        "rfilename": "source/src/autojev/__init__.py"
+      },
+      {
+        "rfilename": "source/src/autojev/data.py"
+      },
+      {
+        "rfilename": "source/src/autojev/distributed.py"
+      },
+      {
+        "rfilename": "source/src/autojev/evaluate.py"
+      },
+      {
+        "rfilename": "source/src/autojev/events.py"
+      },
+      {
+        "rfilename": "source/src/autojev/loss.py"
+      },
+      {
+        "rfilename": "source/src/autojev/model.py"
+      },
+      {
+        "rfilename": "source/src/autojev/optim.py"
+      },
+      {
+        "rfilename": "source/src/autojev/report.py"
+      },
+      {
+        "rfilename": "source/src/autojev/server.py"
+      },
+      {
+        "rfilename": "source/src/autojev/sft_numeric.py"
+      },
+      {
+        "rfilename": "source/src/autojev/sft_pipeline.py"
+      },
+      {
+        "rfilename": "source/src/autojev/sft_synthetic.py"
+      },
+      {
+        "rfilename": "source/src/autojev/synthetic.py"
+      },
+      {
+        "rfilename": "source/src/autojev/train.py"
+      },
+      {
+        "rfilename": "source/src/autojev/types.py"
+      },
+      {
+        "rfilename": "source/uv.lock"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "training/config.json"
+      },
+      {
+        "rfilename": "training/data-manifest.json"
+      },
+      {
+        "rfilename": "training/train.sbatch"
+      }
+    ]
+  }
+]

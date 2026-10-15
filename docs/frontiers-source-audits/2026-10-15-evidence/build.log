@@ -1,0 +1,29 @@
+
+> github-learning-site@1.0.0 build
+> node scripts/check-frontiers.mjs && node scripts/catalog.mjs && vite build && node scripts/check-size.mjs
+
+前沿检查通过：33 期；15 条新闻、10 个项目及来源一致；9 月 10 日起另查 6 个模型、6 篇论文和跨栏目去重。
+已生成 572 份资料的目录及 Markdown 搜索索引。
+vite v8.3.3 building client environment for production...
+transforming...
+✓ 2017 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                          1.21 kB │ gzip:   0.68 kB
+dist/assets/cursor-editorTextHighlight-kG3uUOwL.svg      5.40 kB │ gzip:   2.20 kB
+dist/assets/pdf.worker.min-CjEcRF4W.mjs              1,264.34 kB
+dist/assets/reader-DdKuH37F.css                          1.06 kB │ gzip:   0.44 kB
+dist/assets/index-D4y49IIM.css                          29.07 kB │ gzip:   7.11 kB
+dist/assets/pdf_viewer-BjKg6Q3J.css                    230.26 kB │ gzip:  41.85 kB
+dist/assets/pdf.worker.min-k3yLrkI4.js                   0.08 kB │ gzip:   0.10 kB
+dist/assets/rolldown-runtime-Dd_uD5pT.js                 1.10 kB │ gzip:   0.62 kB
+dist/assets/preload-helper-Xxyoh2Gl.js                   1.40 kB │ gzip:   0.76 kB
+dist/assets/index-XyAq8ZYQ.js                           23.99 kB │ gzip:   9.55 kB
+dist/assets/pdf_viewer-9vMNVemj.js                     169.63 kB │ gzip:  51.60 kB
+dist/assets/reader-CqESnh7W.js                         237.61 kB │ gzip:  80.66 kB
+dist/assets/epub-reader-C8I7-BWe.js                    351.57 kB │ gzip: 106.41 kB
+dist/assets/pdf-D79pRKGG.js                            430.87 kB │ gzip: 129.35 kB
+
+✓ built in 1.74s
+发布体积：991.3 MB / 1000 MB
+容量提醒：已达到 800 MB，请规划附件迁移。
