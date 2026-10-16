@@ -1,0 +1,128 @@
+[
+  {
+    "id": "2610.20344",
+    "title": "Doc2Harness: Benchmarking LLMs on Long-Horizon Harness Engineering of Coding Agents",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20344",
+    "selected": true,
+    "reason": "已读TeX核心方法、基线、预算、结果与限制后入选；对应阅读卡逐项归纳。",
+    "readingScope": "核心方法与结果TeX全文"
+  },
+  {
+    "id": "2610.19789",
+    "title": "More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.19789",
+    "selected": true,
+    "reason": "已读TeX核心方法、基线、预算、结果与限制后入选；对应阅读卡逐项归纳。",
+    "readingScope": "核心方法与结果TeX全文"
+  },
+  {
+    "id": "2610.19975",
+    "title": "LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.19975",
+    "selected": true,
+    "reason": "已读TeX核心方法、基线、预算、结果与限制后入选；对应阅读卡逐项归纳。",
+    "readingScope": "核心方法与结果TeX全文"
+  },
+  {
+    "id": "2610.20399",
+    "title": "Cortex: Consolidating Context into Parametric Memory",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20399",
+    "selected": true,
+    "reason": "已读TeX核心方法、基线、预算、结果与限制后入选；对应阅读卡逐项归纳。",
+    "readingScope": "核心方法与结果TeX全文"
+  },
+  {
+    "id": "2610.14448",
+    "title": "KV4-RL: Unlocking Faster Asynchronous Rollouts for RLVR with INT4 KV Cache Quantization",
+    "originalDate": "2026-10-10",
+    "sourceUrl": "https://arxiv.org/abs/2610.14448",
+    "selected": true,
+    "reason": "已读TeX核心方法、基线、预算、结果与限制后入选；对应阅读卡逐项归纳。",
+    "readingScope": "核心方法与结果TeX全文"
+  },
+  {
+    "id": "2610.20456",
+    "title": "The COUNT: Counting N-grams Unlocks Scaling on Host Memory and Training-Free Adaptation",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20456",
+    "selected": true,
+    "reason": "已读TeX核心方法、基线、预算、结果与限制后入选；对应阅读卡逐项归纳。",
+    "readingScope": "核心方法与结果TeX全文"
+  },
+  {
+    "id": "2610.20571",
+    "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20571",
+    "selected": false,
+    "reason": "已有公开实现，放项目ATAS栏，不跨栏重复。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.20584",
+    "title": "Player-1: Learning to Play from Synthetic Experience",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20584",
+    "selected": false,
+    "reason": "代码、模型、Gym仍coming soon；纯论文仍可候选，但本期优先可复核实验细节的六篇。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.13521",
+    "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.13521",
+    "selected": false,
+    "reason": "多教师蒸馏主题与自蒸馏比较重叠，优先统一预算和时间对照的现实检查。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.20572",
+    "title": "Recovering Reliable Supervision via Critique-Guided On-Policy Distillation",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20572",
+    "selected": false,
+    "reason": "蒸馏主题重叠，减少同一训练方法方向占比。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.19820",
+    "title": "ActionOPD: Distilling Decisions, Not Tokens",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.19820",
+    "selected": false,
+    "reason": "动作蒸馏方向有价值，综合主题覆盖优先测试、缓存与内存取舍。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.17771",
+    "title": "Many Right Answers, One Training Example: Removing Responder Noise from GRPO for LLM Recommenders",
+    "originalDate": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17771",
+    "selected": false,
+    "reason": "已选择ReMaRk公开实现项目，论文栏不重复。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.14270",
+    "title": "The Thinking Leakage in Reinforcement Learning for LLMs",
+    "originalDate": "2026-10-09",
+    "sourceUrl": "https://arxiv.org/abs/2610.14270",
+    "selected": false,
+    "reason": "RL思考泄漏值得单独复核，本期不以仅摘要结论代替完整方法阅读。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  },
+  {
+    "id": "2610.20256",
+    "title": "Long-Horizon RL Needs Muon",
+    "originalDate": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20256",
+    "selected": false,
+    "reason": "优化器论文需要进一步核对长程训练与统计条件，未超过已完整阅读六篇的证据准备度。",
+    "readingScope": "摘要页、链接与已公开实现范围筛选；未声称全文精读"
+  }
+]

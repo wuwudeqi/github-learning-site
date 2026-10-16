@@ -1,0 +1,374 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "overview",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-16-news",
+      "#/read/frontiers-2026-10-16-models",
+      "#/read/frontiers-2026-10-16-papers",
+      "#/read/frontiers-2026-10-16-projects",
+      "#/read/frontiers-2026-10-16-practice"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "news",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/flux-editing.jpg",
+        "alt": "FLUX 官方编辑对照，上排输入，下排分别改变天气、猫的服装、房间陈设和组合两张参考图",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 720,
+        "height": 447.75
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/matrix-concept.webp",
+        "alt": "同一城堡场景先以低模表达状态，再由视频模型增加外观细节，HUD 单独叠加",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/ling-concept.webp",
+        "alt": "上方笔记本代表压缩历史状态，下方完整纸片代表直接访问上下文，两种直觉共同帮助理解混合注意力",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-03-news",
+      "#/read/frontiers-2026-10-03-news",
+      "#/read/frontiers-2026-09-17-news",
+      "#/read/frontiers-2026-09-26-news",
+      "#/read/frontiers-2026-10-14-news"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/ultrabert-evaluation.webp",
+        "alt": "UltraBERT 官方分类与检索二维比较，左为较小规模、右为中等规模模型",
+        "complete": true,
+        "naturalWidth": 6600,
+        "width": 719.9921875,
+        "height": 392.7265625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/aurora-cfg.webp",
+        "alt": "AuroraIMG 官方八组提示、同一种子的四行 CFG 对照，图像原始生成分辨率为64乘64",
+        "complete": true,
+        "naturalWidth": 1024,
+        "width": 720,
+        "height": 360
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "papers",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/doc2harness.webp",
+        "alt": "Doc2Harness 上半部分生成并冻结外围系统，下半部分由模拟模型驱动，用阳性对照和断言检查实际行为",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 719.984375,
+        "height": 381.59375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/latentloop.webp",
+        "alt": "LatentLoop 从完整输入进入压缩的第一遍，再把增量写回完整状态，执行第二遍共享MoE",
+        "complete": true,
+        "naturalWidth": 1184,
+        "width": 719.9921875,
+        "height": 1216.2109375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/kv4rl.webp",
+        "alt": "KV4-RL 上方为部分rollout调度，下方为INT4历史与INT8保护区的分开计算和softmax合并",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 719.984375,
+        "height": 263.515625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/count.webp",
+        "alt": "COUNT 左侧从CPU计数表提取后续token并借用输出矩阵组成输入，右侧比较拟合训练计算前沿",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 719.9765625,
+        "height": 228.953125
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-20344-reading",
+      "#/read/paper-2610-19789-reading",
+      "#/read/paper-2610-19975-reading",
+      "#/read/paper-2610-20399-reading",
+      "#/read/paper-2610-14448-reading",
+      "#/read/paper-2610-20456-reading"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "projects",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/flipflop-screen.webp",
+        "alt": "Flipflop 官方界面示例：左侧选择设备，右侧显示发送文字与文件的记录",
+        "complete": true,
+        "naturalWidth": 1040,
+        "width": 719.9921875,
+        "height": 498.4609375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/hybridagent.webp",
+        "alt": "HybridAgent 的连续隐藏状态与文本工具动作交替工作示意",
+        "complete": true,
+        "naturalWidth": 1420,
+        "width": 719.984375,
+        "height": 360.5
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/remark.svg",
+        "alt": "ReMaRk 用多个回应者的推荐集合构造训练奖励的官方对比图",
+        "complete": true,
+        "naturalWidth": 720,
+        "width": 720,
+        "height": 530
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/atas.webp",
+        "alt": "ATAS 的剧本编译、分镜生成校验和记忆更新流程原图",
+        "complete": true,
+        "naturalWidth": 3200,
+        "width": 720,
+        "height": 165.375
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/positive-control.webp",
+        "alt": "三种策略的真实实验结果：全部拒绝的两个禁止样本通过但正常读取失败；路径受限实现三项均通过；全部放行未通过禁止样本",
+        "complete": true,
+        "naturalWidth": 1100,
+        "width": 719.984375,
+        "height": 441.8125
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-16-papers"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "overview",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-16-news",
+      "#/read/frontiers-2026-10-16-models",
+      "#/read/frontiers-2026-10-16-papers",
+      "#/read/frontiers-2026-10-16-projects",
+      "#/read/frontiers-2026-10-16-practice"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "news",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/flux-editing.jpg",
+        "alt": "FLUX 官方编辑对照，上排输入，下排分别改变天气、猫的服装、房间陈设和组合两张参考图",
+        "complete": true,
+        "naturalWidth": 1600,
+        "width": 343.9921875,
+        "height": 213.921875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/matrix-concept.webp",
+        "alt": "同一城堡场景先以低模表达状态，再由视频模型增加外观细节，HUD 单独叠加",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.9921875,
+        "height": 229.328125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/ling-concept.webp",
+        "alt": "上方笔记本代表压缩历史状态，下方完整纸片代表直接访问上下文，两种直觉共同帮助理解混合注意力",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.9921875,
+        "height": 229.328125
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-03-news",
+      "#/read/frontiers-2026-10-03-news",
+      "#/read/frontiers-2026-09-17-news",
+      "#/read/frontiers-2026-09-26-news",
+      "#/read/frontiers-2026-10-14-news"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/ultrabert-evaluation.webp",
+        "alt": "UltraBERT 官方分类与检索二维比较，左为较小规模、右为中等规模模型",
+        "complete": true,
+        "naturalWidth": 6600,
+        "width": 343.9921875,
+        "height": 187.6328125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/aurora-cfg.webp",
+        "alt": "AuroraIMG 官方八组提示、同一种子的四行 CFG 对照，图像原始生成分辨率为64乘64",
+        "complete": true,
+        "naturalWidth": 1024,
+        "width": 344,
+        "height": 172
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "papers",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/doc2harness.webp",
+        "alt": "Doc2Harness 上半部分生成并冻结外围系统，下半部分由模拟模型驱动，用阳性对照和断言检查实际行为",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 343.984375,
+        "height": 182.3125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/latentloop.webp",
+        "alt": "LatentLoop 从完整输入进入压缩的第一遍，再把增量写回完整状态，执行第二遍共享MoE",
+        "complete": true,
+        "naturalWidth": 1184,
+        "width": 343.9921875,
+        "height": 581.078125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/kv4rl.webp",
+        "alt": "KV4-RL 上方为部分rollout调度，下方为INT4历史与INT8保护区的分开计算和softmax合并",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 343.984375,
+        "height": 125.8984375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/count.webp",
+        "alt": "COUNT 左侧从CPU计数表提取后续token并借用输出矩阵组成输入，右侧比较拟合训练计算前沿",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 343.9921875,
+        "height": 109.390625
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-20344-reading",
+      "#/read/paper-2610-19789-reading",
+      "#/read/paper-2610-19975-reading",
+      "#/read/paper-2610-20399-reading",
+      "#/read/paper-2610-14448-reading",
+      "#/read/paper-2610-20456-reading"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "projects",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/flipflop-screen.webp",
+        "alt": "Flipflop 官方界面示例：左侧选择设备，右侧显示发送文字与文件的记录",
+        "complete": true,
+        "naturalWidth": 1040,
+        "width": 343.9921875,
+        "height": 238.1484375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/hybridagent.webp",
+        "alt": "HybridAgent 的连续隐藏状态与文本工具动作交替工作示意",
+        "complete": true,
+        "naturalWidth": 1420,
+        "width": 343.9921875,
+        "height": 172.2421875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/remark.svg",
+        "alt": "ReMaRk 用多个回应者的推荐集合构造训练奖励的官方对比图",
+        "complete": true,
+        "naturalWidth": 720,
+        "width": 343.9921875,
+        "height": 253.21875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/atas.webp",
+        "alt": "ATAS 的剧本编译、分镜生成校验和记忆更新流程原图",
+        "complete": true,
+        "naturalWidth": 3200,
+        "width": 343.9765625,
+        "height": 79.0078125
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-16/images/positive-control.webp",
+        "alt": "三种策略的真实实验结果：全部拒绝的两个禁止样本通过但正常读取失败；路径受限实现三项均通过；全部放行未通过禁止样本",
+        "complete": true,
+        "naturalWidth": 1100,
+        "width": 343.984375,
+        "height": 211.0859375
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-16-papers"
+    ]
+  }
+]

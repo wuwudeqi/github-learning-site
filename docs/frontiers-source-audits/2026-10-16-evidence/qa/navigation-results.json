@@ -1,0 +1,82 @@
+[
+  {
+    "type": "overview-navigation",
+    "href": "#/read/frontiers-2026-10-16-news",
+    "label": "AI 动态：15 条",
+    "title": "AI 动态"
+  },
+  {
+    "type": "overview-navigation",
+    "href": "#/read/frontiers-2026-10-16-models",
+    "label": "开源模型：6 项",
+    "title": "开源模型"
+  },
+  {
+    "type": "overview-navigation",
+    "href": "#/read/frontiers-2026-10-16-papers",
+    "label": "论文精选：6 篇",
+    "title": "论文精选"
+  },
+  {
+    "type": "overview-navigation",
+    "href": "#/read/frontiers-2026-10-16-projects",
+    "label": "开源项目：10 项",
+    "title": "开源项目"
+  },
+  {
+    "type": "overview-navigation",
+    "href": "#/read/frontiers-2026-10-16-practice",
+    "label": "技术实践",
+    "title": "技术实践"
+  },
+  {
+    "type": "paper-card-navigation",
+    "href": "#/read/paper-2610-20344-reading",
+    "label": "站内阅读卡",
+    "title": "Doc2Harness：工具没有越界，可能只是根本没工作",
+    "attachments": [
+      "#/read/paper-2610-20344v1"
+    ]
+  },
+  {
+    "type": "paper-card-navigation",
+    "href": "#/read/paper-2610-19789-reading",
+    "label": "站内阅读卡",
+    "title": "自蒸馏的现实检查：收益要和训练时间一起读",
+    "attachments": []
+  },
+  {
+    "type": "paper-card-navigation",
+    "href": "#/read/paper-2610-19975-reading",
+    "label": "站内阅读卡",
+    "title": "LatentLoop：第一次少看几个位置，第二次再看完整序列",
+    "attachments": [
+      "#/read/paper-2610-19975v1"
+    ]
+  },
+  {
+    "type": "paper-card-navigation",
+    "href": "#/read/paper-2610-20399-reading",
+    "label": "站内阅读卡",
+    "title": "Cortex：把上下文知识写进新参数，同时检查旧能力",
+    "attachments": []
+  },
+  {
+    "type": "paper-card-navigation",
+    "href": "#/read/paper-2610-14448-reading",
+    "label": "站内阅读卡",
+    "title": "KV4-RL：压低采样缓存精度，保留更敏感的位置",
+    "attachments": [
+      "#/read/paper-2610-14448v1"
+    ]
+  },
+  {
+    "type": "paper-card-navigation",
+    "href": "#/read/paper-2610-20456-reading",
+    "label": "站内阅读卡",
+    "title": "COUNT：把语料计数放进主机内存，给模型补一条输入",
+    "attachments": [
+      "#/read/paper-2610-20456v1"
+    ]
+  }
+]

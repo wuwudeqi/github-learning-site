@@ -1,0 +1,160 @@
+{
+  "cutoff": "2026-10-16T08:07:04.610914+08:00",
+  "receipts": [
+    {
+      "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+      "startedAt": "2026-10-16T08:07:02.336803+08:00",
+      "checkedAt": "2026-10-16T08:07:04.610914+08:00",
+      "ok": true,
+      "chars": 206825,
+      "localReceipt": "final-alibaba.html-receipt.json",
+      "sha256": "0272ead221d323fa557e1df0425fc79bd9eba71d92f03bcedc87e73768b0dc13"
+    },
+    {
+      "url": "https://www.anthropic.com/engineering",
+      "startedAt": "2026-10-16T08:07:00.223254+08:00",
+      "checkedAt": "2026-10-16T08:07:01.551211+08:00",
+      "ok": true,
+      "chars": 141382,
+      "localReceipt": "final-anthropic-engineering.html-receipt.json",
+      "sha256": "62e2f509a660c2873c018db3180f6310da5497a9c3209a9d7a3c2bcbbbcf18c7"
+    },
+    {
+      "url": "https://www.anthropic.com/news",
+      "startedAt": "2026-10-16T08:07:00.222979+08:00",
+      "checkedAt": "2026-10-16T08:07:02.433964+08:00",
+      "ok": true,
+      "chars": 432339,
+      "localReceipt": "final-anthropic.html-receipt.json",
+      "sha256": "be11e3bdfbb81dd3a4daace6ca9be53fb70490f83d682cae249e5a58e470d6c5"
+    },
+    {
+      "url": "https://github.blog/changelog/",
+      "startedAt": "2026-10-16T08:07:02.434259+08:00",
+      "checkedAt": "2026-10-16T08:07:03.074940+08:00",
+      "ok": true,
+      "chars": 207633,
+      "localReceipt": "final-github-changelog.html-receipt.json",
+      "sha256": "3ffbfc911a45fe51bd9e3816c90ab25c63938b89bae6df9d89aa6a23652219fc"
+    },
+    {
+      "url": "https://deepmind.google/discover/blog/",
+      "startedAt": "2026-10-16T08:07:00.223475+08:00",
+      "checkedAt": "2026-10-16T08:07:01.822474+08:00",
+      "ok": true,
+      "chars": 192154,
+      "localReceipt": "final-google.html-receipt.json",
+      "sha256": "fef22a60d9ac07faeb400ce269ae678087f1b447bd339e1090381a76b99279fc"
+    },
+    {
+      "url": "https://about.fb.com/news/",
+      "startedAt": "2026-10-16T08:07:00.223714+08:00",
+      "checkedAt": "2026-10-16T08:07:03.771268+08:00",
+      "ok": true,
+      "chars": 307635,
+      "localReceipt": "final-meta.html-receipt.json",
+      "sha256": "72f48b4dced529110f0df7c0a5d17c888f1364dfe2a458368c58816f06160993"
+    },
+    {
+      "url": "https://news.microsoft.com/source/view-all/",
+      "startedAt": "2026-10-16T08:07:00.224015+08:00",
+      "checkedAt": "2026-10-16T08:07:02.143058+08:00",
+      "ok": true,
+      "chars": 151127,
+      "localReceipt": "final-microsoft.html-receipt.json",
+      "sha256": "10936a4c762b8038c2e7ea48d58b779cb67fa2d12fd4ed977db67ddabb13ae12"
+    },
+    {
+      "url": "https://blogs.nvidia.com/",
+      "startedAt": "2026-10-16T08:07:01.822869+08:00",
+      "checkedAt": "2026-10-16T08:07:03.954177+08:00",
+      "ok": true,
+      "chars": 147979,
+      "localReceipt": "final-nvidia-blog.html-receipt.json",
+      "sha256": "c3d636683ce5bd16263ea9717059063db85590d827e419ddd9ec9e015e6abec0"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news",
+      "startedAt": "2026-10-16T08:07:01.551443+08:00",
+      "checkedAt": "2026-10-16T08:07:02.854427+08:00",
+      "ok": true,
+      "chars": 68982,
+      "localReceipt": "final-nvidia.html-receipt.json",
+      "sha256": "c7670d904cce134de641c3ff77071430e99a93ca834137d2f7fa7b7df7e4af14"
+    },
+    {
+      "url": "https://openai.com/news/rss.xml",
+      "startedAt": "2026-10-16T08:07:00.222461+08:00",
+      "checkedAt": "2026-10-16T08:07:02.336351+08:00",
+      "ok": true,
+      "chars": 787391,
+      "localReceipt": "final-openai.xml-receipt.json",
+      "sha256": "a8f02c8581af6d4239a83b3eceb223d58dc95d063579f7e87a91a8f0cd6ddc11"
+    },
+    {
+      "url": "https://x.ai/news?category=all",
+      "startedAt": "2026-10-16T08:07:02.143850+08:00",
+      "checkedAt": "2026-10-16T08:07:03.075120+08:00",
+      "ok": true,
+      "chars": 279780,
+      "localReceipt": "final-xai.html-receipt.json",
+      "sha256": "54198c08d73b936ef11b05af302db9db66d31e4bae7bd4ef2650ed00f01b2c6f"
+    }
+  ],
+  "textComparisons": [
+    {
+      "file": "final-alibaba.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-anthropic-engineering.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-anthropic.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-github-changelog.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-google.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-meta.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-microsoft.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-nvidia-blog.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-nvidia.txt",
+      "textUnchanged": true,
+      "diff": []
+    },
+    {
+      "file": "final-xai.txt",
+      "textUnchanged": true,
+      "diff": []
+    }
+  ],
+  "openaiRssIdentical": false,
+  "openaiRssItemsUnchanged": true,
+  "rssDifference": "仅channel.lastBuildDate从23:26:08变为23:30:04 GMT，1295个item完全一致",
+  "result": "实际可读内容未变化；原先动态页面缺口继续保留，不推断全站无新发布"
+}

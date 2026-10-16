@@ -1,0 +1,27 @@
+{
+  "targetDate": {
+    "command": [
+      "npm",
+      "run",
+      "check:frontiers",
+      "--",
+      "--date",
+      "2026-10-16"
+    ],
+    "startedAt": "2026-10-16T08:19:58.324927+08:00",
+    "finishedAt": "2026-10-16T08:19:58.503973+08:00",
+    "exitCode": 0,
+    "log": "docs/frontiers-source-audits/2026-10-16-evidence/targetDate.log"
+  },
+  "build": {
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "startedAt": "2026-10-16T08:19:58.504378+08:00",
+    "finishedAt": "2026-10-16T08:20:03.446252+08:00",
+    "exitCode": 0,
+    "log": "docs/frontiers-source-audits/2026-10-16-evidence/build.log"
+  }
+}

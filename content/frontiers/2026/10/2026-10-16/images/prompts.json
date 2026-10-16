@@ -1,0 +1,18 @@
+{
+  "ling-concept.png": {
+    "prompt": "Use case: scientific-educational\nAsset type: Chinese research newsletter inline explanatory image, landscape 1536x1024.\nPrimary request: Explain hybrid attention conceptually with a visual metaphor, not a product screenshot or benchmark. A horizontal stream of six small paper slips each containing a different simple symbol flows into two clearly distinguished paths. Upper path: a compact evolving notebook condenses information from earlier slips, with a subtle visible loss of detail; lower path: a desk with the original slips preserved in sequence, showing direct pairwise relationships via thin threads. Both paths contribute to a final single output slip on the right. Use an elegant editorial cut-paper illustration on warm off-white, muted teal and dark blue, high contrast and generous spacing.\nText exactly: title \"两种记忆方式，交替工作\"; upper label \"压缩历史状态\"; lower label \"读取完整上下文\"; footer \"概念示意 · 不代表层数或性能\". No other text, logos, numbers, metrics or fake screens. Chinese labels must be legible.\nConstraints: Mechanism metaphor for Ling-3.1-flash's hybrid linear attention and gated MLA. Do not suggest data disappear from the actual context, do not show sequential layers or an exact architecture, no speed claims, no invented results. The notebook is a metaphor for a bounded summary state. Clear arrows toward the output, no decorative logo.",
+    "mode": "built-in image_gen",
+    "originalPath": "/Users/fujiasen/.codex/generated_images/01a088de-fb45-7c00-bead-09bc5c14279e/exec-1ee9d55f-edb1-4dd4-b0c8-c64efceb76ff.png",
+    "review": "中文正确、两类记忆的直觉清晰；正文注明不是网络连接图，不能从并行画法推断实际层序。",
+    "finalOutputPath": "content/frontiers/2026/10/2026-10-16/images/ling-concept.webp",
+    "losslessStorage": "原生成PNG经无损WebP存储，RGBA像素一致，见审计lossless-images.json"
+  },
+  "matrix-concept.png": {
+    "prompt": "Use case: scientific-educational. Asset type: explanatory inline illustration for a Chinese AI research newsletter, landscape 1536x1024.\nExplain the division of responsibilities in Matrix-Game 4.0, concept only. One simple isometric miniature castle courtyard is shown twice with exactly matching geometry and objects: on the left, an untextured low-poly scene with a small avatar, a gate, and a block obstacle; on the right the same layout with illustrative stone, grass and sunlight textures. A small keyboard beside the left scene sends an arrow to the avatar position. A painter-like neural rendering ribbon connects the left scene to the right, carrying the same geometry, not changing the game rules. A separate slim layer above the right scene holds simple abstract HUD symbols.\nVerbatim Chinese text: title \"规则由引擎决定，画面交给模型\"; left label \"游戏引擎：状态、碰撞、输入\"; middle label \"低模画面 + 提示词\"; right label \"视频模型：连续渲染\"; footer \"AI 生成概念示意 · 非游戏截图\". Elegant editorial illustration on off-white with restrained emerald and sandstone colors. Readable labels, generous margins. No numeric FPS or performance, no logos, no photoreal screenshots, no invented Matrix UI, no benchmark. This illustrates roles, not a complete network architecture.",
+    "mode": "built-in image_gen",
+    "originalPath": "/Users/fujiasen/.codex/generated_images/01a088de-fb45-7c00-bead-09bc5c14279e/exec-6dfe3920-8241-4ae2-89b5-c3756cf09f5e.png",
+    "review": "已逐图查看：中文正确，引擎状态与神经渲染分工清晰；左右物件位置与画风仅为概念，不当作逐像素对应或实际运行截图。",
+    "finalOutputPath": "content/frontiers/2026/10/2026-10-16/images/matrix-concept.webp",
+    "losslessStorage": "原生成PNG经无损WebP存储，RGBA像素一致，见审计lossless-images.json"
+  }
+}

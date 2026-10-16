@@ -1,0 +1,559 @@
+[
+  {
+    "id": "dmis-lab/UltraBERT-380M",
+    "createdAt": "2026-10-10T10:53:18.000Z",
+    "lastModified": "2026-10-15T20:26:30.000Z",
+    "sha": "65bbbfeefb03bc93b9965d1d511708dabcee8511",
+    "cardData": {
+      "license": "apache-2.0",
+      "language": [
+        "en"
+      ],
+      "library_name": "transformers",
+      "pipeline_tag": "fill-mask",
+      "tags": [
+        "ultrabert",
+        "encoder",
+        "masked-language-modeling",
+        "long-context"
+      ],
+      "datasets": [
+        "mlfoundations/dclm-baseline-1.0",
+        "HuggingFaceFW/fineweb-edu",
+        "HuggingFaceTB/stack-edu",
+        "allenai/peS2o",
+        "LLM360/MegaMath",
+        "HuggingFaceTB/finemath",
+        "HuggingFaceTB/smollm-corpus",
+        "allenai/dolma",
+        "Open-Orca/FLAN",
+        "facebook/natural_reasoning"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration_ultrabert.py"
+      },
+      {
+        "rfilename": "head_50%.pth"
+      },
+      {
+        "rfilename": "img/ultrabert_banner.jpg"
+      },
+      {
+        "rfilename": "img/ultrabert_evaluation.png"
+      },
+      {
+        "rfilename": "img/ultrabert_passkey.png"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "modeling_ultrabert.py"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "qnguyen3/QUAN-Transcribe-1.0",
+    "createdAt": "2026-10-14T01:58:15.000Z",
+    "lastModified": "2026-10-14T03:59:50.000Z",
+    "sha": "a08726d9fffeb5f16fc1ab05eecc8ad0b86af5a0",
+    "cardData": {
+      "language": "vi",
+      "license": "gemma",
+      "base_model": "google/embeddinggemma-2",
+      "pipeline_tag": "automatic-speech-recognition",
+      "tags": [
+        "ctc",
+        "vietnamese",
+        "streaming",
+        "embeddinggemma"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "best.pt"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "lm/lm_config.json"
+      },
+      {
+        "rfilename": "lm/unigrams.txt"
+      },
+      {
+        "rfilename": "lm/vi_4gram.bin"
+      },
+      {
+        "rfilename": "metrics.jsonl"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "units.json"
+      }
+    ]
+  },
+  {
+    "id": "KaanAydinli/Duyu-small",
+    "createdAt": "2026-10-11T15:39:07.000Z",
+    "lastModified": "2026-10-15T10:48:07.000Z",
+    "sha": "a9aa79751ea6e99c1e035fcb056318d5c1b67f13",
+    "cardData": {
+      "language": [
+        "tr",
+        "en"
+      ],
+      "license": "apache-2.0",
+      "pipeline_tag": "automatic-speech-recognition",
+      "tags": [
+        "speech-recognition",
+        "turkish",
+        "english",
+        "onnx",
+        "edge",
+        "conformer",
+        "ctc"
+      ],
+      "library_name": "duyu-small"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "duyu_small/__init__.py"
+      },
+      {
+        "rfilename": "duyu_small/audio.py"
+      },
+      {
+        "rfilename": "duyu_small/cli.py"
+      },
+      {
+        "rfilename": "duyu_small/decode.py"
+      },
+      {
+        "rfilename": "duyu_small/features.py"
+      },
+      {
+        "rfilename": "duyu_small/model.py"
+      },
+      {
+        "rfilename": "engine.json"
+      },
+      {
+        "rfilename": "fbank.npz"
+      },
+      {
+        "rfilename": "fp32/decoder.onnx"
+      },
+      {
+        "rfilename": "fp32/encoder_pass.onnx"
+      },
+      {
+        "rfilename": "fp32/encoder_post.onnx"
+      },
+      {
+        "rfilename": "fp32/encoder_pre.onnx"
+      },
+      {
+        "rfilename": "int8/decoder.onnx"
+      },
+      {
+        "rfilename": "int8/encoder_pass.onnx"
+      },
+      {
+        "rfilename": "int8/encoder_post.onnx"
+      },
+      {
+        "rfilename": "int8/encoder_pre.onnx"
+      },
+      {
+        "rfilename": "passes.npz"
+      },
+      {
+        "rfilename": "pyproject.toml"
+      },
+      {
+        "rfilename": "q4/decoder.onnx"
+      },
+      {
+        "rfilename": "q4/encoder_pass.onnx"
+      },
+      {
+        "rfilename": "q4/encoder_post.onnx"
+      },
+      {
+        "rfilename": "q4/encoder_pre.onnx"
+      },
+      {
+        "rfilename": "spm.model"
+      }
+    ]
+  },
+  {
+    "id": "inclusionAI/LemonDecider",
+    "createdAt": "2026-10-05T04:27:12.000Z",
+    "lastModified": "2026-10-12T06:34:56.000Z",
+    "sha": "6930d153625642f21824a7bd523f163f2caa2213",
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.5-4B",
+      "library_name": "transformers",
+      "tags": [
+        "jev",
+        "decision",
+        "autojev",
+        "typed-decision",
+        "classification",
+        "distillation"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "LICENSE.code"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "configuration_autojev.py"
+      },
+      {
+        "rfilename": "decision_utils.py"
+      },
+      {
+        "rfilename": "model-00001-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00002.safetensors"
+      },
+      {
+        "rfilename": "model.py"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "modeling_autojev.py"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "sft_receipt.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "nace-ai/drex-v1.5",
+    "createdAt": "2026-09-28T21:05:09.000Z",
+    "lastModified": "2026-10-15T21:16:49.000Z",
+    "sha": "f80f9d2b5c3dadde590a30f203f1ecd99acd6cf3",
+    "cardData": {
+      "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+      "license": "other",
+      "license_name": "nace-ai-open-rail-m",
+      "license_link": "LICENSE",
+      "tags": [
+        "decision-model",
+        "system-one",
+        "kev",
+        "drex",
+        "typed-decisions",
+        "decision-index",
+        "classification",
+        "qwen3_5",
+        "calibrated-probabilities",
+        "decisionbench",
+        "zero-shot",
+        "recommendation"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "code/kev/__init__.py"
+      },
+      {
+        "rfilename": "code/kev/api.py"
+      },
+      {
+        "rfilename": "code/kev/checkpoint.py"
+      },
+      {
+        "rfilename": "code/kev/model.py"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "examples/request.json"
+      },
+      {
+        "rfilename": "game_arena.png"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "head.pt"
+      },
+      {
+        "rfilename": "inference.py"
+      },
+      {
+        "rfilename": "model-00001-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "requirements.txt"
+      },
+      {
+        "rfilename": "serve.py"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "AuroraAI-Research/AuroraIMG-6M",
+    "createdAt": "2026-10-11T11:42:15.000Z",
+    "lastModified": "2026-10-11T19:02:56.000Z",
+    "sha": "3d66743c3139d034b832a670d067221f5d544bbb",
+    "cardData": {
+      "license": "apache-2.0",
+      "library_name": "pytorch",
+      "pipeline_tag": "text-to-image",
+      "language": [
+        "en"
+      ],
+      "datasets": [
+        "pixparse/cc12m-wds"
+      ],
+      "tags": [
+        "text-to-image",
+        "flow-matching",
+        "rectified-flow",
+        "latent-diffusion",
+        "tiny-model",
+        "from-scratch",
+        "muon"
+      ],
+      "model-index": [
+        {
+          "name": "AuroraIMG-6M",
+          "results": [
+            {
+              "task": {
+                "type": "text-to-image",
+                "name": "Text-to-image generation"
+              },
+              "dataset": {
+                "name": "GenEval",
+                "type": "geneval"
+              },
+              "metrics": [
+                {
+                  "type": "geneval_overall",
+                  "value": 0.1387,
+                  "name": "GenEval overall (avg. over tasks)",
+                  "verified": false
+                }
+              ]
+            },
+            {
+              "task": {
+                "type": "text-to-image",
+                "name": "Text-to-image generation"
+              },
+              "dataset": {
+                "name": "GenEval 2",
+                "type": "geneval2"
+              },
+              "metrics": [
+                {
+                  "type": "soft_tifa_gm",
+                  "value": 2.21,
+                  "name": "Soft-TIFA GM (prompt-level, official)",
+                  "verified": false
+                },
+                {
+                  "type": "soft_tifa_am",
+                  "value": 21.84,
+                  "name": "Soft-TIFA AM (atom-level)",
+                  "verified": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "Model.pt"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "coco_real_vs_gen.png"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "final_report.json"
+      },
+      {
+        "rfilename": "guidance_sweep.png"
+      },
+      {
+        "rfilename": "guidance_sweep.txt"
+      },
+      {
+        "rfilename": "metrics.jsonl"
+      },
+      {
+        "rfilename": "model_index.json"
+      },
+      {
+        "rfilename": "pipeline.py"
+      },
+      {
+        "rfilename": "samples_0300000.png"
+      },
+      {
+        "rfilename": "scheduler/scheduler_config.json"
+      },
+      {
+        "rfilename": "text_encoder/config.json"
+      },
+      {
+        "rfilename": "text_encoder/diffusion_pytorch_model.safetensors"
+      },
+      {
+        "rfilename": "text_encoder/pipeline.py"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer_config.json"
+      },
+      {
+        "rfilename": "unet/config.json"
+      },
+      {
+        "rfilename": "unet/diffusion_pytorch_model.safetensors"
+      },
+      {
+        "rfilename": "unet/pipeline.py"
+      },
+      {
+        "rfilename": "vae.pt"
+      },
+      {
+        "rfilename": "vae/config.json"
+      },
+      {
+        "rfilename": "vae/diffusion_pytorch_model.safetensors"
+      },
+      {
+        "rfilename": "vae/pipeline.py"
+      },
+      {
+        "rfilename": "vae_metrics.json"
+      },
+      {
+        "rfilename": "vae_recon.png"
+      }
+    ]
+  }
+]

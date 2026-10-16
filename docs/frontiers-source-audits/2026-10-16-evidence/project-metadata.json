@@ -1,0 +1,397 @@
+[
+  {
+    "repositoryUrl": "https://github.com/anomalyco/opencode",
+    "createdAt": "2025-04-30T20:08:00Z",
+    "pushedAt": "2026-10-15T23:34:31Z",
+    "archived": false,
+    "defaultBranch": "dev",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "licenseUrl": "https://github.com/anomalyco/opencode/blob/dev/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "867a77a38fa2d5d748e7e5e172fc6be6addabc87",
+        "date": "2026-10-15T23:34:29Z",
+        "subject": "fix(app): keep the review pane steady when the side terminal toggles (#55879)"
+      },
+      {
+        "sha": "2e7ac8c8ead60bf44c2ae216251f9f8c368cb661",
+        "date": "2026-10-15T23:34:22Z",
+        "subject": "fix(tui): roll the compact form over to M at the rounding boundary (#55871)"
+      },
+      {
+        "sha": "13263f30eda5fbf0c5b32e444921e01368746c00",
+        "date": "2026-10-15T23:01:10Z",
+        "subject": "chore(release): publish the desktop app from beta (#55878)"
+      },
+      {
+        "sha": "b3aa790aaed7a4a84c34dd687cec3b083a08297c",
+        "date": "2026-10-15T22:45:48Z",
+        "subject": "chore: update nix node_modules hashes"
+      },
+      {
+        "sha": "d0f32046192b2ec53e2648d68665b89f68673e73",
+        "date": "2026-10-15T22:45:40Z",
+        "subject": "fix(util): hide plugin Git console windows on Windows (#55475)"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/andunieee/flipflop",
+    "createdAt": "2026-09-05T22:28:26Z",
+    "pushedAt": "2026-10-15T04:21:48Z",
+    "archived": false,
+    "defaultBranch": "master",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "licenseUrl": "https://github.com/andunieee/flipflop/blob/master/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "62bb498520aacb60ec4e101cdfbb94f9bab0cdf8",
+        "date": "2026-10-15T04:21:38Z",
+        "subject": "change our license to gpl3 as slint requires"
+      },
+      {
+        "sha": "8c9f4ca7dcb07c78719104992c5ebc568d813279",
+        "date": "2026-10-15T04:04:13Z",
+        "subject": "a nicer readme"
+      },
+      {
+        "sha": "16c79754123c9a30b059964773a7521cdddd1bee",
+        "date": "2026-10-13T16:37:58Z",
+        "subject": "Add Zapstore publishing to release workflow and docs"
+      },
+      {
+        "sha": "2650f75ceca0bad94e9fc0e0a4deb7422a284c5c",
+        "date": "2026-10-13T15:54:50Z",
+        "subject": "Add F-Droid metadata and release docs for v0.0.6"
+      },
+      {
+        "sha": "af898c250539b7cfdab4ee9d45082897a58b0497",
+        "date": "2026-10-13T13:07:33Z",
+        "subject": "add browser guest link for swapping files and text"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/uji-labs/ito",
+    "createdAt": "2026-10-05T07:47:00Z",
+    "pushedAt": "2026-10-14T14:14:10Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "licenseUrl": "https://github.com/uji-labs/ito/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "08c6a5ac8bdf72f3595db17cf2c32a10edca3f9f",
+        "date": "2026-10-14T14:13:51Z",
+        "subject": "Add a WebAssembly Canvas backend with shared terminal input (#5)"
+      },
+      {
+        "sha": "eb2a02a1221e8444a1ab12882f26e1759f773fde",
+        "date": "2026-10-14T13:40:38Z",
+        "subject": "fix: make function name const"
+      },
+      {
+        "sha": "e5d59653d7d865620d5202dd88275d7ceab66a78",
+        "date": "2026-10-14T13:37:59Z",
+        "subject": "Add composable image views and Kitty graphics rendering (#3)"
+      },
+      {
+        "sha": "33b5f81f78042deefba223fdf1801fb4b76d6672",
+        "date": "2026-10-13T15:16:17Z",
+        "subject": "fix: draw nothing for a view that was given no place"
+      },
+      {
+        "sha": "3da7997efea223a935e76d1cc1847ddff3ce7ce2",
+        "date": "2026-10-13T15:16:11Z",
+        "subject": "fix: lay a fold out again whenever it is measured"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/Proa-Labs/proa",
+    "createdAt": "2026-09-12T18:17:23Z",
+    "pushedAt": "2026-10-15T15:06:09Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "licenseUrl": "https://github.com/Proa-Labs/proa/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "384136f87fc9f9174747735ca017c7f8adcc0b60",
+        "date": "2026-10-15T14:25:58Z",
+        "subject": "Update marketing Google Analytics measurement ID (#35)"
+      },
+      {
+        "sha": "8c7aa4869c34ea338bc325b2f252870e1369e880",
+        "date": "2026-10-14T18:45:12Z",
+        "subject": "Fix the homepage intro video link (#32)"
+      },
+      {
+        "sha": "244b64534436bc41c919837b4a498b9edc27fdd9",
+        "date": "2026-10-14T15:32:56Z",
+        "subject": "Align website and docs with Proa's multi-target interface positioning (#31)"
+      },
+      {
+        "sha": "80d2215d960aeeabacbc2e1a5910c4d8bbb99312",
+        "date": "2026-10-13T23:34:57Z",
+        "subject": "Configure the marketing Google Analytics tag (#30)"
+      },
+      {
+        "sha": "aa1e89ae12007812fab50d7890af3d25630fb105",
+        "date": "2026-10-13T18:26:06Z",
+        "subject": "feat(marketing): add introduction and render-target video CTAs (#29)"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/jpzk/opensidian",
+    "createdAt": "2026-08-29T18:06:01Z",
+    "pushedAt": "2026-10-12T16:15:56Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "gpl-3.0",
+      "name": "GNU General Public License v3.0",
+      "spdx_id": "GPL-3.0",
+      "url": "https://api.github.com/licenses/gpl-3.0",
+      "node_id": "MDc6TGljZW5zZTk="
+    },
+    "licenseUrl": "https://github.com/jpzk/opensidian/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "4fe24c937532951a51f7c253817f2a05083d380e",
+        "date": "2026-10-12T06:03:50Z",
+        "subject": "graphperf: html is a one-item flex column, not a grid — WebKit's grid track sizing ran over body on every root layout; explicit minmax(0,1fr) tracks (7e7aa2ab) got back only 1 ms of testvault tabsw_note (9.25 vs v0.6.1 6.25, N=10 tabswF). flex-basis 0 + min-height 0 sizes body from html alone; same stretch-minus-margin noscroll geometry"
+      },
+      {
+        "sha": "7e7aa2ab3e24a359091934942e817f1465378b22",
+        "date": "2026-10-12T05:21:14Z",
+        "subject": "graphperf: html's one grid cell is explicit, minmax(0,1fr) both ways — implicit 'auto' tracks take body's max-content contribution, so every root layout (a note tab switch) ran an intrinsic pass over the whole app first (testvault tabsw_note N=10: fc780bc7 8.5 -> c1e569ce 10.25 ms, v0.6.1 7.0, tabswN); same cell, same noscroll geometry"
+      },
+      {
+        "sha": "876f8ab7c5db6952922816c8a050628b3c6d9681",
+        "date": "2026-10-12T03:10:31Z",
+        "subject": "graphperf: graph_open_settle carries sg = click -> startGraph ms — since aa2367c3 a local graph's settle clock starts at the click (cmdLocalGraph), v0.6.1's at startGraph; the code between them (cmdLocalGraph/flushSave/splitWith) is unchanged, so the A/B subtracts sg to compare like with like"
+      },
+      {
+        "sha": "c1e569cea307cd899fd2338d6c3962e8bdf3625f",
+        "date": "2026-10-12T00:53:25Z",
+        "subject": "graphperf: body static again, html sizes it (one-cell grid, height 100%) — an absolute body still cost idle CPU after typing on the big vault (WebKitWebProcess 760-850 -> 1000-1160 ms/10s, gidleB1/B2); same noscroll geometry, no positioned body"
+      },
+      {
+        "sha": "fc780bc7cf682ca58db35d50696edac868a2466b",
+        "date": "2026-10-11T22:12:12Z",
+        "subject": "graphperf: afterPaint waits two frames — the gg first frame's step() runs synchronously before the tab_switch span queues its paint rAF, so one rAF + setTimeout landed updateTitle() + perf.flush() inside that span's layout_ms (fixab3: layout 2 -> 5-9 ms, tabsw_gg x1.21)"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/google-research/CLASHarness",
+    "createdAt": "2026-09-16T17:05:57Z",
+    "pushedAt": "2026-10-15T05:48:18Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "licenseUrl": "https://github.com/google-research/CLASHarness/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "234161ddc44755017215dd734d38be15419a45e0",
+        "date": "2026-10-15T05:48:16Z",
+        "subject": "Add official arXiv paper link (https://arxiv.org/abs/2610.19128)"
+      },
+      {
+        "sha": "62e456fbe04e38d77dd8b7569e8ffb8386f4453d",
+        "date": "2026-10-14T20:25:11Z",
+        "subject": "Polish Dataset Card (docs/dataset-card.md) with GitHub links, leaderboard, and schema guide"
+      },
+      {
+        "sha": "b9c0aa211b73439cb7e19d28aa6a2b2496ac1ba5",
+        "date": "2026-10-14T20:17:46Z",
+        "subject": "Add end-to-end Hugging Face dataset download and evaluation commands to README and Quickstart"
+      },
+      {
+        "sha": "5846116175c751efb1fecad823bdd3310065fef7",
+        "date": "2026-10-14T20:09:27Z",
+        "subject": "Clarify full 600-episode evaluation (--split total) and Easy/Mid/Hard bands in docs"
+      },
+      {
+        "sha": "ac7807f91344038efdd20da5b13a7e0de6177463",
+        "date": "2026-10-14T20:05:39Z",
+        "subject": "Link Hugging Face dataset repository yuxianglai117/CLASHarness"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/togethercomputer/HybridAgent",
+    "createdAt": "2026-10-09T02:59:46Z",
+    "pushedAt": "2026-10-14T04:27:10Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "licenseUrl": "https://github.com/togethercomputer/HybridAgent/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "8ad7d8f56a802ca85f0bcad65e6475b96294fe0e",
+        "date": "2026-10-14T04:27:10Z",
+        "subject": "Update Documents for Public Release (#2)"
+      },
+      {
+        "sha": "a3b09580c2bdc1dde2aec1e98b845dc189259f40",
+        "date": "2026-10-11T05:26:12Z",
+        "subject": "Merge pull request #1 from togethercomputer/release-squashed"
+      },
+      {
+        "sha": "3c98dc0c970c88eddc56dc645fd287b389aa7020",
+        "date": "2026-10-10T22:34:06Z",
+        "subject": "HybridAgent public release"
+      },
+      {
+        "sha": "bf38b065a183a756af81e067522b4781a250de83",
+        "date": "2026-10-09T02:59:47Z",
+        "subject": "Initial commit"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/sahsaeedi/tau-emotion-bench",
+    "createdAt": "2026-09-17T18:46:21Z",
+    "pushedAt": "2026-10-15T02:40:24Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "licenseUrl": "https://github.com/sahsaeedi/tau-emotion-bench/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "287ebfce6181b4e141f778661b3455c2c3f03859",
+        "date": "2026-10-15T02:40:23Z",
+        "subject": "record whether the model thinks, link the leaderboard page"
+      },
+      {
+        "sha": "64fc8683f6b69617336b64cc9e56ccbce9c916bb",
+        "date": "2026-10-15T02:18:19Z",
+        "subject": "Merge pull request #5 from sahsaeedi/submission-feature"
+      },
+      {
+        "sha": "a384fcc4028a031bb94f47799e62f96d1c382d39",
+        "date": "2026-10-15T02:12:22Z",
+        "subject": "add the arXiv link and citation to README"
+      },
+      {
+        "sha": "3e73fda0751b8e3a652e98e95595df1612cd25ff",
+        "date": "2026-10-15T02:11:35Z",
+        "subject": "link the submission guide's run step to the README"
+      },
+      {
+        "sha": "4a0758f9fe7b918500c6e441216340abd47b2757",
+        "date": "2026-10-15T02:08:00Z",
+        "subject": "attach trajectories to the submission issue, check and accept it automatically"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/LiXin97/ReMaRk",
+    "createdAt": "2026-10-09T13:40:58Z",
+    "pushedAt": "2026-10-14T04:52:46Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "licenseUrl": "https://github.com/LiXin97/ReMaRk/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "505e9da573ee316d25d0a9ff3bd647a5c7012a2e",
+        "date": "2026-10-14T03:51:19Z",
+        "subject": "README: arXiv 2610.17771 (badge, news, BibTeX from arXiv)"
+      },
+      {
+        "sha": "a5e8b841be49bd8b75d5709b611fc219e817a5a8",
+        "date": "2026-10-13T11:52:39Z",
+        "subject": "README rewritten: overview, results table, quick start, model/data table; full guide moved to docs/REPRODUCE.md"
+      },
+      {
+        "sha": "2c05339c4b51559eb10d85b0066f59e6d6f311b6",
+        "date": "2026-10-13T11:47:12Z",
+        "subject": "README: project page and public Hugging Face models (collection) and dataset"
+      },
+      {
+        "sha": "978d62ac54fc78305c56dbee36ef599bbce9c546",
+        "date": "2026-10-13T05:25:08Z",
+        "subject": "data_release: SFT targets as catalog item ids (LLM-generated teacher lists); CC BY-NC 4.0 for data_release"
+      },
+      {
+        "sha": "f08954b65e940a52bba2218f5371a002edcffc99",
+        "date": "2026-10-13T05:16:42Z",
+        "subject": "ReMaRk: code and data release"
+      }
+    ]
+  },
+  {
+    "repositoryUrl": "https://github.com/ziplab/ATAS",
+    "createdAt": "2026-10-12T02:32:56Z",
+    "pushedAt": "2026-10-15T02:09:20Z",
+    "archived": false,
+    "defaultBranch": "main",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "licenseUrl": "https://github.com/ziplab/ATAS/blob/main/LICENSE",
+    "recentCommits": [
+      {
+        "sha": "b86aab046368a399cdbbf761e633073ff3823b9f",
+        "date": "2026-10-15T02:09:17Z",
+        "subject": "Initial commit"
+      }
+    ]
+  }
+]

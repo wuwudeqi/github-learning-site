@@ -1,0 +1,80 @@
+{
+  "python": "3.14.3",
+  "platform": "Darwin",
+  "synthetic": true,
+  "model_calls": 0,
+  "results": [
+    {
+      "strategy": "deny_all",
+      "allowed_control_passed": false,
+      "negative_passed": 2,
+      "negative_total": 2,
+      "joint_pass": false,
+      "observations": [
+        {
+          "case": "allowed",
+          "outcome": "denied",
+          "passed": false
+        },
+        {
+          "case": "parent_traversal",
+          "outcome": "denied",
+          "passed": true
+        },
+        {
+          "case": "symlink_escape",
+          "outcome": "denied",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "strategy": "bounded",
+      "allowed_control_passed": true,
+      "negative_passed": 2,
+      "negative_total": 2,
+      "joint_pass": true,
+      "observations": [
+        {
+          "case": "allowed",
+          "outcome": "read",
+          "passed": true
+        },
+        {
+          "case": "parent_traversal",
+          "outcome": "denied",
+          "passed": true
+        },
+        {
+          "case": "symlink_escape",
+          "outcome": "denied",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "strategy": "allow_all",
+      "allowed_control_passed": true,
+      "negative_passed": 0,
+      "negative_total": 2,
+      "joint_pass": false,
+      "observations": [
+        {
+          "case": "allowed",
+          "outcome": "read",
+          "passed": true
+        },
+        {
+          "case": "parent_traversal",
+          "outcome": "read",
+          "passed": false
+        },
+        {
+          "case": "symlink_escape",
+          "outcome": "read",
+          "passed": false
+        }
+      ]
+    }
+  ]
+}
