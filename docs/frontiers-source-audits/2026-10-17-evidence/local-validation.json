@@ -1,0 +1,27 @@
+[
+  {
+    "name": "target-date",
+    "command": [
+      "npm",
+      "run",
+      "check:frontiers",
+      "--",
+      "--date",
+      "2026-10-17"
+    ],
+    "exitCode": 0,
+    "checkedAt": "2026-10-17T08:16:21.698001+08:00",
+    "log": "docs/frontiers-source-audits/2026-10-17-evidence/target-date.log"
+  },
+  {
+    "name": "build",
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "exitCode": 0,
+    "checkedAt": "2026-10-17T08:16:25.388720+08:00",
+    "log": "docs/frontiers-source-audits/2026-10-17-evidence/build.log"
+  }
+]

@@ -43,6 +43,21 @@ test("same model or news project cannot occupy two sections under different name
 test("current six model and paper selections have matching evidence and distinct topics", () => {
   assert.deepEqual(validateExpandedSelections(audit, articles), []);
 });
+test("distinct dated release-note sections are events, while the same section still deduplicates", () => {
+  const first = { id: "slides", kind: "news", eventDate: "2026-10-16",
+    sourceUrl: "https://example.com/releases", sourceSection: "Create slides" };
+  const second = { ...first, id: "model-update", sourceSection: "Model update" };
+  assert.deepEqual(validateTopicDeduplication([first, second]), []);
+  for (const pair of [[first, { ...second, sourceSection: undefined }],
+    [{ ...first, sourceSection: undefined }, second]]) {
+    assert.match(validateTopicDeduplication(pair).join("\n"), /without dated sections/);
+  }
+  assert.match(validateTopicDeduplication([first, { ...second, sourceSection: "Create slides" }]).join("\n"), /duplicate topic/);
+  assert.match(validateTopicDeduplication([
+    { ...first, sourceUrl: "https://arxiv.org/abs/2610.22200" },
+    { ...second, sourceUrl: "https://arxiv.org/pdf/2610.22200v1" },
+  ]).join("\n"), /duplicate topic/);
+});
 test("omitting a model, moving evidence, or repeating a paper fails validation", () => {
   const missing = structuredClone(audit);
   missing.expandedSelections.models.pop();

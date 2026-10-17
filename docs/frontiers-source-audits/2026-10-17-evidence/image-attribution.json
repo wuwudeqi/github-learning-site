@@ -1,0 +1,521 @@
+[
+  {
+    "file": "hy-memory.svg",
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/Hy-Memory/main/docs/images/architecture.svg",
+    "checkedAt": "2026-10-17T07:46:32.442300+08:00",
+    "bytes": 11851,
+    "sha256": "d664ef6aad0cf486a46cd981a53e01b517012823d727b01b1dd714590ad24957",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/hy-memory.svg",
+    "level": "source-original",
+    "license": "Tencent-Hunyuan/Hy-Memory，Apache-2.0仓库原图",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/01-AI动态.md",
+    "alt": "Hy-Memory 官方架构展示记忆的组织、处理与检索组件如何连接应用",
+    "caption": "腾讯混元仓库架构原图，Apache 2.0。左边是聊天的七层记忆，右边是工作/编程的事实与经验两层结构；先看写入如何整理事实，再看检索如何带回回答，编程分支另保留修改链；图展示设计关系，不是部署成功或效果保证（[来源原图](https://github.com/Tencent-Hunyuan/Hy-Memory)；[查看原尺寸](images/hy-memory.svg)。）",
+    "purpose": "Hy-Memory 官方架构展示记忆的组织、处理与检索组件如何连接应用",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/Tencent-Hunyuan/Hy-Memory/main/docs/images/architecture.svg",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.884886+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-hy-memory.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-hy-memory.png"
+      ]
+    }
+  },
+  {
+    "file": "moss-layout.webp",
+    "url": "https://raw.githubusercontent.com/OpenMOSS/MOSS-Image/main/assets/showcase/layout-bboxes.webp",
+    "checkedAt": "2026-10-17T07:46:32.442763+08:00",
+    "bytes": 851254,
+    "sha256": "0cd091fbd9145b9dc640e1d70dc10e6776b661bb1f443bdefadc9a24f78214d1",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/moss-layout.webp",
+    "level": "source-original",
+    "license": "OpenMOSS/MOSS-Image，Apache-2.0仓库示例",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/02-开源模型.md",
+    "alt": "MOSS-Image 官方示例在图像上标出布局框，展示结构化位置与生成画面之间的对应",
+    "caption": "OpenMOSS 仓库原图，Apache 2.0。先看框的位置，再看图中对象是否对应；这是作者示例，不保证每次生成都严格满足坐标（[来源原图](https://github.com/OpenMOSS/MOSS-Image)；[查看原尺寸](images/moss-layout.webp)。）",
+    "purpose": "MOSS-Image 官方示例在图像上标出布局框，展示结构化位置与生成画面之间的对应",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/OpenMOSS/MOSS-Image/main/assets/showcase/layout-bboxes.webp",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.885391+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-moss-layout.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-moss-layout.png"
+      ]
+    }
+  },
+  {
+    "file": "timestral.png",
+    "url": "https://cdn-uploads.huggingface.co/production/uploads/6a883eae29d17c41f6dbdfd4/FoDdgcwd64Zwg4L29FShg.png",
+    "checkedAt": "2026-10-17T07:46:32.443014+08:00",
+    "bytes": 976745,
+    "sha256": "c24d559dfb283c295584cb8d983ce3a4f51e434595ff9e3e4dc4431c16e7e780",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/timestral.png",
+    "level": "source-original",
+    "license": "mistralai/Timestral-209M模型卡附图，修改版MIT；商用阈值见原许可",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/02-开源模型.md",
+    "alt": "Timestral 官方对照图比较不同模型的预测误差与参数规模",
+    "caption": "Mistral 模型卡原图，按仓库附带修改版 MIT 条款引用。横轴是参数量（对数刻度），不是耗时；六个面板的纵轴误差均为越低越好。结合任务和规模读点位，不能据此推出实测推理速度；结果来自作者协议，并非本站测试（[来源原图](https://huggingface.co/mistralai/Timestral-209M)；[查看原尺寸](images/timestral.png)。）",
+    "purpose": "Timestral 官方对照图比较不同模型的预测误差与参数规模",
+    "originalCandidates": [
+      {
+        "source": "https://cdn-uploads.huggingface.co/production/uploads/6a883eae29d17c41f6dbdfd4/FoDdgcwd64Zwg4L29FShg.png",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.885876+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-timestral.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-timestral.png"
+      ]
+    }
+  },
+  {
+    "file": "lumma.png",
+    "url": "https://cdn-uploads.huggingface.co/production/uploads/638828121901766b88076aa1/BGjw_Sp5CldqiNmqBCgYf.png",
+    "checkedAt": "2026-10-17T07:46:32.443242+08:00",
+    "bytes": 68270,
+    "sha256": "7c0df8f741b10719025d646c282ec7b0f62e0b1e8a2b42b28d9959fd6103afe6",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/lumma.png",
+    "level": "source-original",
+    "license": "FrontiersMind官方文章单图引用；模型Apache-2.0不自动授权博客图片；限定于紧邻正文的研究解读，保留图例坐标",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/02-开源模型.md",
+    "alt": "Lumma 官方校准图显示预测置信度与观察准确率之间的关系",
+    "caption": "FrontiersMind 官方文章原图，仅引用此校准图作研究解读，保留完整坐标与图例；图的单独再分发许可未明确，模型的 Apache 2.0 不自动延伸为博客图授权。沿置信度分组读实际表现；接近对角线意味着该评测分布上更一致，不是对单条答案的正确保证（[来源原图](https://huggingface.co/blog/FrontiersMind/lumma-fev-27b)；[查看原尺寸](images/lumma.png)。）",
+    "purpose": "Lumma 官方校准图显示预测置信度与观察准确率之间的关系",
+    "originalCandidates": [
+      {
+        "source": "https://cdn-uploads.huggingface.co/production/uploads/638828121901766b88076aa1/BGjw_Sp5CldqiNmqBCgYf.png",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.886363+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-lumma.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-lumma.png"
+      ]
+    }
+  },
+  {
+    "file": "modelsphere.png",
+    "url": "https://raw.githubusercontent.com/modelsphere/modelsphere/main/docs/arch.png",
+    "checkedAt": "2026-10-17T07:46:32.443529+08:00",
+    "bytes": 1248345,
+    "sha256": "0dcb68e4bbc549973bd9ec88b4b3e8f327cba17757b91f05ac79061827750877",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/modelsphere.png",
+    "level": "source-original",
+    "license": "ModelSphere仓库Apache-2.0",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/04-开源项目.md",
+    "alt": "ModelSphere 官方架构展示入口路由、集群服务与观察组件的分工",
+    "caption": "ModelSphere 仓库原图，Apache 2.0。先找请求入口，再看模型后端与控制组件；架构可用性不等于已在本站完成部署（[来源原图](https://github.com/modelsphere/modelsphere)；[查看原尺寸](images/modelsphere.png)。）",
+    "purpose": "ModelSphere 官方架构展示入口路由、集群服务与观察组件的分工",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/modelsphere/modelsphere/main/docs/arch.png",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.886874+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-modelsphere.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-modelsphere.png"
+      ]
+    }
+  },
+  {
+    "file": "info-vis.jpg",
+    "url": "https://raw.githubusercontent.com/VectorSpaceLab/InfoVis/main/assets/overview.jpg",
+    "checkedAt": "2026-10-17T07:46:32.737255+08:00",
+    "bytes": 449306,
+    "sha256": "1bc0455b5aecbe76a23db6979180c73e81b9ae5614c7b3ff06055167b3323f96",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/info-vis.jpg",
+    "level": "source-original",
+    "license": "VectorSpaceLab/InfoVis仓库Apache-2.0原图；权重及数据非商用条件另列，不混同",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/04-开源项目.md",
+    "alt": "InfoVis 官方示例并列展示文字、模板、参考图与编辑指令对应的幻灯片图片",
+    "caption": "VectorSpaceLab 仓库原图；代码Apache2.0，模型与数据另有非商用限制。本图仅用于说明论文中的输入输出任务；细节请打开原尺寸（[来源原图](https://github.com/VectorSpaceLab/InfoVis)；[查看原尺寸](images/info-vis.jpg)。）",
+    "purpose": "InfoVis 官方示例并列展示文字、模板、参考图与编辑指令对应的幻灯片图片",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/VectorSpaceLab/InfoVis/main/assets/overview.jpg",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.887367+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-info-vis.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-info-vis.png"
+      ]
+    }
+  },
+  {
+    "file": "orbia.png",
+    "url": "https://raw.githubusercontent.com/worldbench/orbia/main/assets/templates.png",
+    "checkedAt": "2026-10-17T07:46:32.753441+08:00",
+    "bytes": 76897,
+    "sha256": "fcc323e6b7b5ce24c05ed588b81ceb4f515b67cb958c22f376b3b4f39a41514c",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/orbia.png",
+    "level": "source-original",
+    "license": "Orbia代码Apache-2.0；轨迹模板示意，不下载或转授权原始视频数据",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/04-开源项目.md",
+    "alt": "Orbia 六种相机轨迹中标出起点、查询点、首次访问和重访位置",
+    "caption": "作者仓库轨迹原图，Apache 2.0。箭头表达控制路径，彩色位置说明同一区域何时被再次看见；不是模型生成画面的实测结果（[来源原图](https://github.com/worldbench/orbia)；[查看原尺寸](images/orbia.png)。）",
+    "purpose": "Orbia 六种相机轨迹中标出起点、查询点、首次访问和重访位置",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/worldbench/orbia/main/assets/templates.png",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.887830+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-orbia.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-orbia.png"
+      ]
+    }
+  },
+  {
+    "file": "dbs.png",
+    "url": "https://raw.githubusercontent.com/JusperLee/Dynamic-Band-Splitting/main/project_page/assets/overall.png",
+    "checkedAt": "2026-10-17T07:46:32.833157+08:00",
+    "bytes": 159827,
+    "sha256": "613748e5c8e4fd869a7c896d0ee8318823fc85326555e9291108a86465023aee",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/dbs.png",
+    "level": "source-original",
+    "license": "JusperLee/Dynamic-Band-Splitting Apache-2.0方法图",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/04-开源项目.md",
+    "alt": "DBS 原图展示从频率评分、动态分组到骨干分离和频谱重建的路径",
+    "caption": "清华团队仓库方法原图，Apache 2.0。看频带边界随输入变化，而token数量保持固定；图示不意味着所有骨干使用相同切分规则（[来源原图](https://github.com/JusperLee/Dynamic-Band-Splitting)；[查看原尺寸](images/dbs.png)。）",
+    "purpose": "DBS 原图展示从频率评分、动态分组到骨干分离和频谱重建的路径",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/JusperLee/Dynamic-Band-Splitting/main/project_page/assets/overall.png",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.888296+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-dbs.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-dbs.png"
+      ]
+    }
+  },
+  {
+    "file": "jevcrawl.svg",
+    "url": "https://raw.githubusercontent.com/RayenMlayeh/jevcrawl/main/assets/how-light.svg",
+    "checkedAt": "2026-10-17T07:46:33.049647+08:00",
+    "bytes": 7320,
+    "sha256": "e968cfa05f9633b734dfa13d2eec8401d72a0985eebff868b08137342106de33",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/jevcrawl.svg",
+    "level": "source-original",
+    "license": "RayenMlayeh/jevcrawl Apache-2.0仓库原图",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/04-开源项目.md",
+    "alt": "Jevcrawl 官方流程连接目标路由、页面读取与保留来源的文本输出",
+    "caption": "作者仓库原图，Apache 2.0。按“起点→取页→分段→过滤→评分→停止判断”阅读；底部 token 数、费用和耗时只对应作者的 docs.python.org 单例，不是本站实测或普遍收益（[来源原图](https://github.com/RayenMlayeh/jevcrawl)；[查看原尺寸](images/jevcrawl.svg)。）",
+    "purpose": "Jevcrawl 官方流程连接目标路由、页面读取与保留来源的文本输出",
+    "originalCandidates": [
+      {
+        "source": "https://raw.githubusercontent.com/RayenMlayeh/jevcrawl/main/assets/how-light.svg",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.888747+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-jevcrawl.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-jevcrawl.png"
+      ]
+    }
+  },
+  {
+    "file": "omnicompass.png",
+    "sourcePath": "/Users/fujiasen/.cache/nanochat/knowledge/2610.18829/Figures/benchmark_overview.pdf",
+    "url": "https://arxiv.org/abs/2610.18829",
+    "license": "CC BY 4.0",
+    "checkedAt": "2026-10-17T07:46:33.757046+08:00",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/omnicompass.png",
+    "bytes": 1322773,
+    "sha256": "2d238a59a1e993d73255b9b512fab39f4f3c1ceda8dbfdbe068f2a43e054fbfb",
+    "level": "source-original",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/03-论文精选.md",
+    "alt": "OmniCompass 将纯文字和文字加图片指向同一对象，并分别检查时间、空间和问答",
+    "caption": "论文基准总览，CC BY 4.0，从作者 TeX 附图忠实渲染；视频画面仅随论文图作研究解读引用。先看左侧 Same target，再看右侧三类答案：目标相同不代表任务相同（[来源原图](https://arxiv.org/abs/2610.18829)；[查看原尺寸](images/omnicompass.png)。）",
+    "purpose": "OmniCompass 将纯文字和文字加图片指向同一对象，并分别检查时间、空间和问答",
+    "originalCandidates": [
+      {
+        "source": "https://arxiv.org/abs/2610.18829",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.889227+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-omnicompass.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-omnicompass.png"
+      ]
+    }
+  },
+  {
+    "file": "waypoint.png",
+    "sourcePath": "/Users/fujiasen/.cache/nanochat/knowledge/2610.21601/figures/waypoint_overview.pdf",
+    "url": "https://arxiv.org/abs/2610.21601",
+    "license": "CC BY 4.0",
+    "checkedAt": "2026-10-17T07:46:33.811618+08:00",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/waypoint.png",
+    "bytes": 226406,
+    "sha256": "c2f909015a3fb9f429a265b6825c1f997a9cc40b86708ff40b87440cbf1e5d28",
+    "level": "source-original",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/03-论文精选.md",
+    "alt": "Waypoint-OPD 从学生采样得到候选，再比较教师两段变化，通过一致性门控形成学生更新信号",
+    "caption": "作者方法原图，CC BY 4.0。重点看第三列：同向保留，反向抑制；第二列中途检查点只是计算方向变化，不是新增监督答案（[来源原图](https://arxiv.org/abs/2610.21601)；[查看原尺寸](images/waypoint.png)。）",
+    "purpose": "Waypoint-OPD 从学生采样得到候选，再比较教师两段变化，通过一致性门控形成学生更新信号",
+    "originalCandidates": [
+      {
+        "source": "https://arxiv.org/abs/2610.21601",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.890242+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-waypoint.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-waypoint.png"
+      ]
+    }
+  },
+  {
+    "file": "opengcua.png",
+    "sourcePath": "/Users/fujiasen/.cache/nanochat/knowledge/2610.22200/figures/sdk_architecture.pdf",
+    "url": "https://arxiv.org/abs/2610.22200",
+    "license": "CC BY 4.0",
+    "checkedAt": "2026-10-17T07:46:33.923204+08:00",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/opengcua.png",
+    "bytes": 205420,
+    "sha256": "92b7f693e2be419d3802a387facd02b1a5ad533e96a0253398e3505a641632c5",
+    "level": "source-original",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/03-论文精选.md",
+    "alt": "OpenGCUA 统一脚本环境通过可访问性信息和视觉观察连接手机、电脑与浏览器",
+    "caption": "作者 SDK 架构原图，CC BY 4.0。中间的选择性输出是重点：采集、筛选和返回给模型是不同步骤；下方跨设备例子是设计示意（[来源原图](https://arxiv.org/abs/2610.22200)；[查看原尺寸](images/opengcua.png)。）",
+    "purpose": "OpenGCUA 统一脚本环境通过可访问性信息和视觉观察连接手机、电脑与浏览器",
+    "originalCandidates": [
+      {
+        "source": "https://arxiv.org/abs/2610.22200",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.890922+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-opengcua.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-opengcua.png"
+      ]
+    }
+  },
+  {
+    "file": "fde-gym.png",
+    "ok": true,
+    "previousError": "no such file: '/Users/fujiasen/.cache/nanochat/knowledge/2610.22350/fig4.pdf'",
+    "sourcePath": "/Users/fujiasen/.cache/nanochat/knowledge/2610.22350/fig4.png",
+    "url": "https://arxiv.org/abs/2610.22350",
+    "license": "CC BY 4.0",
+    "checkedAt": "2026-10-17T08:06:50.076610+08:00",
+    "path": "content/frontiers/2026/10/2026-10-17/images/fde-gym.png",
+    "bytes": 584647,
+    "sha256": "b5f01b6be5b5de2ab2b1cb1621f4855f0f075c83bdae8adb3b613935457ec0e9",
+    "level": "source-original",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/03-论文精选.md",
+    "alt": "FDE-Gym 原图展示任务中的客户信息、工作系统和评判依据",
+    "caption": "作者 fig4 原图，CC BY 4.0，保留完整图。图中隐藏信息和结果检查属于评测设计，不是 Agent 在一开始就能看到的标准答案（[来源原图](https://arxiv.org/abs/2610.22350)；[查看原尺寸](images/fde-gym.png)。）",
+    "purpose": "FDE-Gym 原图展示任务中的客户信息、工作系统和评判依据",
+    "originalCandidates": [
+      {
+        "source": "https://arxiv.org/abs/2610.22350",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.891443+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-fde-gym.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-fde-gym.png"
+      ]
+    }
+  },
+  {
+    "file": "speculative-forcing.png",
+    "sourcePath": "/Users/fujiasen/.cache/nanochat/knowledge/2610.22347/Fig/pdf/method_final.pdf",
+    "url": "https://arxiv.org/abs/2610.22347",
+    "license": "CC BY 4.0",
+    "checkedAt": "2026-10-17T07:46:33.977819+08:00",
+    "ok": true,
+    "path": "content/frontiers/2026/10/2026-10-17/images/speculative-forcing.png",
+    "bytes": 223233,
+    "sha256": "601a9c3c5105ac46d1a2c9c476d7736c5448fbab77f4d5e390c016bbff6179ad",
+    "level": "source-original",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/03-论文精选.md",
+    "alt": "上方每步处理全部token，下方验证器提前接受稳定token，仅对剩余位置继续计算",
+    "caption": "作者方法原图，CC BY 4.0。绿色代表已接受位置，橙色仍需计算；下方阈值判断表达近似质量取舍，不是严格无损保证（[来源原图](https://arxiv.org/abs/2610.22347)；[查看原尺寸](images/speculative-forcing.png)。）",
+    "purpose": "上方每步处理全部token，下方验证器提前接受稳定token，仅对剩余位置继续计算",
+    "originalCandidates": [
+      {
+        "source": "https://arxiv.org/abs/2610.22347",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.892081+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-speculative-forcing.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-speculative-forcing.png"
+      ]
+    }
+  },
+  {
+    "file": "step5-sparse-gqa.png",
+    "url": "https://platform.stepfun.ai/blog/step5-sparse-gqa.png",
+    "checkedAt": "2026-10-17T08:01:45.931293+08:00",
+    "ok": true,
+    "bytes": 551200,
+    "sha256": "4f02a5bd1b6bffaef1fc6adff002a0f7450068685fadc31306528e8237cc8d71",
+    "path": "content/frontiers/2026/10/2026-10-17/images/step5-sparse-gqa.png",
+    "level": "source-original",
+    "license": "StepFun官方技术说明图2，单图研究解读引用；保留来源与完整图，不将模型许可扩展为博客图通用授权",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/01-AI动态.md",
+    "alt": "Step-5 图2显示先按块压缩索引键、每个KV组分别选择历史，再从原始KV中读取被选中的部分",
+    "caption": "StepFun 技术说明图 2，保持原图，限于本段方法解读引用；模型自定义许可并非博客图片的通用授权。上半部先给块打分，两个 KV 组选出的蓝色历史块可以不同；下半部仍读取原始 K/V，黄色当前前缀受因果可见性约束。[原图出处](https://platform.stepfun.ai/blog/inside-step-5-preview) · [查看原尺寸](images/step5-sparse-gqa.png)。",
+    "purpose": "Step-5 图2显示先按块压缩索引键、每个KV组分别选择历史，再从原始KV中读取被选中的部分",
+    "originalCandidates": [
+      {
+        "source": "https://platform.stepfun.ai/blog/step5-sparse-gqa.png",
+        "decision": "采用帮助解释的完整原图；不为统一风格重画"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.892591+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-step5-sparse-gqa.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-step5-sparse-gqa.png"
+      ]
+    }
+  },
+  {
+    "file": "live-concept.png",
+    "url": "https://deploymentsafety.openai.com/gpt-live-1-1/avoiding-deceptive-interactions-with-users",
+    "sourcePath": "/Users/fujiasen/.codex/generated_images/01a088de-fb45-7c00-bead-09bc5c14279e/exec-d0925914-82c9-4ae5-af7f-088769f2b420.png",
+    "level": "imagegen",
+    "promptPath": "content/frontiers/2026/10/2026-10-17/code/live-image-prompt.txt",
+    "checkedAt": "2026-10-17T08:06:50.076950+08:00",
+    "path": "content/frontiers/2026/10/2026-10-17/images/live-concept.png",
+    "bytes": 1824261,
+    "sha256": "4ff7253dc423f213c3671368474b73de19cf7cac02b69e2ba1ab7276ab38acdb",
+    "license": "本站使用内置imagegen生成的概念示意；不是论文图，不套用原文许可",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/01-AI动态.md",
+    "alt": "三幅概念场景依次表示持续聆听、用户打断和边听边回应，蓝绿波纹区分两条语音方向",
+    "caption": "AI 生成的概念示意。看中间一格：用户补充信息时，回应可以让出空间；波纹不表示实测时延，也不代表每次打断都成功（[生成提示词](code/live-image-prompt.txt)；[查看原尺寸](images/live-concept.png)。）",
+    "purpose": "三幅概念场景依次表示持续聆听、用户打断和边听边回应，蓝绿波纹区分两条语音方向",
+    "originalCandidates": [
+      {
+        "source": "https://deploymentsafety.openai.com/gpt-live-1-1/avoiding-deceptive-interactions-with-users",
+        "decision": "GPT-Live系统卡/更新记录没有适合解释打断轮次的交互图；不伪造界面"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.893154+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-live-concept.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-live-concept.png"
+      ]
+    },
+    "sourcePriorityReason": "用概念场景说明持续聆听与打断；原文无适用交互示意，未冒充产品界面或时延实验"
+  },
+  {
+    "file": "date-results.png",
+    "level": "html-js",
+    "sourcePath": "content/frontiers/2026/10/2026-10-17/code/date-results.html",
+    "dataPath": "content/frontiers/2026/10/2026-10-17/code/date-results.json",
+    "checkedAt": "2026-10-17T08:06:50.076963+08:00",
+    "path": "content/frontiers/2026/10/2026-10-17/images/date-results.png",
+    "bytes": 151964,
+    "sha256": "8887eb26d416f22b6dab06b1c9f404a19e0fcc5e1030721c133de2ac61d1fce4",
+    "license": "本站根据本机运行结果制作；原始数据和可复现HTML源码随附，不是论文图",
+    "articlePath": "content/frontiers/2026/10/2026-10-17/05-技术实践.md",
+    "alt": "日期检查实际结果：六项有本次事件来源的记录进入近期复核，一项仅有修改时间的对照被留待核验",
+    "caption": "制作方式：HTML/JS 忠实呈现本机输出；无来源原图能表示这次运行，生成图也不适合准确复写逐项日期和状态。[结果数据](code/date-results.json) · [可复现源码](code/date-results.html) · [查看原尺寸](images/date-results.png)。手机上可按下表阅读日期，完整图用于核对运行输出。",
+    "purpose": "日期检查实际结果：六项有本次事件来源的记录进入近期复核，一项仅有修改时间的对照被留待核验",
+    "originalCandidates": [
+      {
+        "source": "content/frontiers/2026/10/2026-10-17/code/date-results.json",
+        "decision": "此次本机运行没有外部原图；准确日期与输出不适合生成图"
+      }
+    ],
+    "inspection": {
+      "content": "已逐图打开查看，核对与相邻中文解释、图例/轴及条件；保留原尺寸入口",
+      "viewport": "已查看1440与390宽实际网站截图，无裁切或页面横向溢出；密集原图以中文图注及原尺寸入口辅助阅读",
+      "checkedAt": "2026-10-17T08:15:05.893635+08:00",
+      "screenshots": [
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/desktop-date-results.png",
+        "docs/frontiers-source-audits/2026-10-17-evidence/qa/mobile-date-results.png"
+      ]
+    },
+    "sourcePriorityReason": "精确展示实际运行表格；原图不存在，imagegen会误写数据，不适用"
+  }
+]

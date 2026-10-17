@@ -1,0 +1,646 @@
+[
+  {
+    "id": "OpenMOSS-Team/MOSS-Image-SFT",
+    "sha": "fc5de0d56fc910cbca6f6625a70f5f582b26deb1",
+    "createdAt": "2026-10-11T07:01:17.000Z",
+    "lastModified": "2026-10-16T19:30:54.000Z",
+    "gated": false,
+    "disabled": false,
+    "downloads": 54,
+    "likes": 129,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+      "base_model_relation": "finetune",
+      "language": [
+        "en",
+        "zh"
+      ],
+      "pipeline_tag": "text-to-image",
+      "tags": [
+        "moss-image",
+        "diffusers",
+        "text-to-image"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": ".gitignore"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "assets/comparison/base.webp"
+      },
+      {
+        "rfilename": "assets/comparison/sft.webp"
+      },
+      {
+        "rfilename": "assets/feishu-builders-badge.svg"
+      },
+      {
+        "rfilename": "assets/lockup-dark.svg"
+      },
+      {
+        "rfilename": "assets/lockup-light.svg"
+      },
+      {
+        "rfilename": "assets/modelscope-base-badge.svg"
+      },
+      {
+        "rfilename": "assets/modelscope-sft-badge.svg"
+      },
+      {
+        "rfilename": "assets/showcase/layout-bboxes.webp"
+      },
+      {
+        "rfilename": "assets/showcase/overview.webp"
+      },
+      {
+        "rfilename": "assets/showcase/overview2.webp"
+      },
+      {
+        "rfilename": "assets/showcase/text-rendering.webp"
+      },
+      {
+        "rfilename": "assets/teaser.webp"
+      },
+      {
+        "rfilename": "model_index.json"
+      },
+      {
+        "rfilename": "pipeline_moss_image.py"
+      },
+      {
+        "rfilename": "scheduler/pipeline_moss_image.py"
+      },
+      {
+        "rfilename": "scheduler/scheduler_config.json"
+      },
+      {
+        "rfilename": "text_encoder/config.json"
+      },
+      {
+        "rfilename": "text_encoder/model-00001-of-00004.safetensors"
+      },
+      {
+        "rfilename": "text_encoder/model-00002-of-00004.safetensors"
+      },
+      {
+        "rfilename": "text_encoder/model-00003-of-00004.safetensors"
+      },
+      {
+        "rfilename": "text_encoder/model-00004-of-00004.safetensors"
+      },
+      {
+        "rfilename": "text_encoder/model.safetensors.index.json"
+      },
+      {
+        "rfilename": "tokenizer/chat_template.jinja"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer/tokenizer_config.json"
+      },
+      {
+        "rfilename": "transformer/config.json"
+      },
+      {
+        "rfilename": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors"
+      },
+      {
+        "rfilename": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors"
+      },
+      {
+        "rfilename": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors"
+      },
+      {
+        "rfilename": "transformer/diffusion_pytorch_model.safetensors.index.json"
+      },
+      {
+        "rfilename": "transformer/pipeline_moss_image.py"
+      },
+      {
+        "rfilename": "vae/config.json"
+      },
+      {
+        "rfilename": "vae/diffusion_pytorch_model.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "mistralai/Timestral-209M",
+    "sha": "9874d252ab0aae16f7f7c999f98f98d6ad7d8365",
+    "createdAt": "2026-10-14T08:52:36.000Z",
+    "lastModified": "2026-10-15T15:33:49.000Z",
+    "gated": false,
+    "disabled": false,
+    "downloads": 333,
+    "likes": 66,
+    "cardData": {
+      "pipeline_tag": "time-series-forecasting",
+      "library_name": "timestral",
+      "tags": [
+        "time-series",
+        "forecasting",
+        "foundation-model"
+      ],
+      "model-index": [
+        {
+          "name": "Timestral-209M",
+          "results": [
+            {
+              "task": {
+                "type": "time-series-forecasting",
+                "name": "Time Series Forecasting"
+              },
+              "dataset": {
+                "name": "GIFT-Eval",
+                "type": "Salesforce/GiftEval"
+              },
+              "metrics": [
+                {
+                  "name": "MASE",
+                  "type": "mase",
+                  "value": 0.658,
+                  "verified": false
+                },
+                {
+                  "name": "CRPS",
+                  "type": "crps",
+                  "value": 0.446,
+                  "verified": false
+                }
+              ],
+              "source": {
+                "name": "GIFT-Eval leaderboard",
+                "url": "https://huggingface.co/spaces/Salesforce/GIFT-Eval"
+              }
+            },
+            {
+              "task": {
+                "type": "time-series-forecasting",
+                "name": "Time Series Forecasting"
+              },
+              "dataset": {
+                "name": "TIME",
+                "type": "Real-TSF/TIME"
+              },
+              "metrics": [
+                {
+                  "name": "MASE",
+                  "type": "mase",
+                  "value": 0.626,
+                  "verified": false
+                },
+                {
+                  "name": "CRPS",
+                  "type": "crps",
+                  "value": 0.522,
+                  "verified": false
+                }
+              ],
+              "source": {
+                "name": "TIME leaderboard",
+                "url": "https://huggingface.co/spaces/Real-TSF/TIME-leaderboard"
+              }
+            },
+            {
+              "task": {
+                "type": "time-series-forecasting",
+                "name": "Time Series Forecasting"
+              },
+              "dataset": {
+                "name": "fev-bench",
+                "type": "autogluon/fev-bench"
+              },
+              "metrics": [
+                {
+                  "name": "SQL skill score",
+                  "type": "skill-score",
+                  "value": 50.39,
+                  "verified": false
+                },
+                {
+                  "name": "MASE skill score",
+                  "type": "skill-score",
+                  "value": 39.49,
+                  "verified": false
+                }
+              ],
+              "source": {
+                "name": "fev-bench leaderboard",
+                "url": "https://huggingface.co/spaces/autogluon/fev-bench"
+              }
+            }
+          ]
+        }
+      ],
+      "license": "other"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "model.safetensors"
+      },
+      {
+        "rfilename": "timestral-hourglass.png"
+      }
+    ]
+  },
+  {
+    "id": "ibm-granite/granite-switch-4.1-8b",
+    "sha": "0d1625d16df2d54cafb6bc5cb0650aec043f77d6",
+    "createdAt": "2026-10-14T21:38:09.000Z",
+    "lastModified": "2026-10-15T20:27:14.000Z",
+    "gated": false,
+    "disabled": false,
+    "downloads": 278,
+    "likes": 18,
+    "cardData": {
+      "license": "apache-2.0",
+      "library_name": "transformers",
+      "tags": [
+        "language",
+        "granite-switch",
+        "granite-4.1"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "BUILD.md"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "adapter_index.json"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "compose_report.json"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "io_configs/decision/io.yaml"
+      },
+      {
+        "rfilename": "io_configs/guardian-core/io.yaml"
+      },
+      {
+        "rfilename": "merges.txt"
+      },
+      {
+        "rfilename": "model-00001-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "special_tokens_map.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      },
+      {
+        "rfilename": "vocab.json"
+      }
+    ]
+  },
+  {
+    "id": "FrontiersMind/Lumma-fev-27B",
+    "sha": "2c080fb4b44bbad2a140353393d935e8b7af8bcb",
+    "createdAt": "2026-10-13T13:08:46.000Z",
+    "lastModified": "2026-10-14T14:50:08.000Z",
+    "gated": false,
+    "disabled": false,
+    "downloads": 71,
+    "likes": 25,
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3.8-27B",
+      "base_model_relation": "finetune",
+      "library_name": "pytorch",
+      "pipeline_tag": "text-classification",
+      "tags": [
+        "decision-model",
+        "classification",
+        "lumma-fev"
+      ],
+      "language": [
+        "en",
+        "hi",
+        "ta",
+        "kn"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "NOTICE"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "benchmark-2.png"
+      },
+      {
+        "rfilename": "benchmark-3.png"
+      },
+      {
+        "rfilename": "benchmark_1.png"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "decision_config.json"
+      },
+      {
+        "rfilename": "model-00001-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00002-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00003-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00004-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00005-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00006-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00007-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00008-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00009-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00010-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model-00011-of-00011.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "readout.safetensors"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "swiss-ai/Apertus-v1.5-8B",
+    "sha": "ef4bbc54d6fe658bc782280ff9f3b53a10a9758f",
+    "createdAt": "2026-07-24T06:03:10.000Z",
+    "lastModified": "2026-10-14T22:04:30.000Z",
+    "gated": "auto",
+    "disabled": false,
+    "downloads": 621652,
+    "likes": 147,
+    "cardData": {
+      "license": "apache-2.0",
+      "pipeline_tag": "image-text-to-text",
+      "library_name": "transformers",
+      "tags": [
+        "multilingual",
+        "multimodal",
+        "switzerland",
+        "swiss-ai",
+        "apertus"
+      ],
+      "gated": "auto",
+      "extra_gated_prompt": "By clicking \"Agree\" I confirm I have read and agree to the Apache 2․0 license and the Acceptable Use Policy (AUP), available at: https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf.\n\nBy clicking \"Agree\" you accept to share your contact information (email and username) with the repository authors. The Apertus v1․5 privacy policy relating to the use of your contact information is available at https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/PRIVACY_POLICY.pdf.",
+      "extra_gated_fields": {
+        "Company": "text",
+        "Institutional email": "text",
+        "I agree with the Apache 2․0 license and the AUP, and the Apertus v1․5 privacy policy": "checkbox"
+      },
+      "extra_gated_button_content": "Agree and send request to access repository"
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "Apertus_1_5_EU_Code_of_Practice.pdf"
+      },
+      {
+        "rfilename": "Apertus_1_5_EU_Public_Summary.pdf"
+      },
+      {
+        "rfilename": "LICENSE.txt"
+      },
+      {
+        "rfilename": "PRIVACY_POLICY.pdf"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "USAGE_POLICY.pdf"
+      },
+      {
+        "rfilename": "assets/text_performance_plot.png"
+      },
+      {
+        "rfilename": "assets/visual_performance_plot.png"
+      },
+      {
+        "rfilename": "chat_template.jinja"
+      },
+      {
+        "rfilename": "config.json"
+      },
+      {
+        "rfilename": "generation_config.json"
+      },
+      {
+        "rfilename": "model-apertus-model-00001-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-apertus-model-00002-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-apertus-model-00003-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-apertus-model-00004-of-00004.safetensors"
+      },
+      {
+        "rfilename": "model-vision_tokenizer-model.safetensors"
+      },
+      {
+        "rfilename": "model-wavtokenizer-model.safetensors"
+      },
+      {
+        "rfilename": "model.safetensors.index.json"
+      },
+      {
+        "rfilename": "processor_config.json"
+      },
+      {
+        "rfilename": "special_tokens_map.json"
+      },
+      {
+        "rfilename": "tokenizer.json"
+      },
+      {
+        "rfilename": "tokenizer_config.json"
+      }
+    ]
+  },
+  {
+    "id": "FINAL-Bench/VKORE-46M-NPU",
+    "sha": "acc1eddb2abc97545c39d32653be32529c81a39d",
+    "createdAt": "2026-10-14T05:04:13.000Z",
+    "lastModified": "2026-10-15T13:33:55.000Z",
+    "gated": false,
+    "disabled": false,
+    "downloads": 0,
+    "likes": 25,
+    "cardData": {
+      "language": [
+        "en",
+        "ko"
+      ],
+      "license": "apache-2.0",
+      "datasets": [
+        "roneneldan/TinyStories"
+      ],
+      "library_name": "transformers",
+      "pipeline_tag": "text-generation",
+      "tags": [
+        "npu",
+        "rebellions",
+        "atom-max",
+        "rbln",
+        "npu-training",
+        "npu-pretraining",
+        "inference-accelerator",
+        "backpropagation",
+        "from-scratch",
+        "pretraining",
+        "pretrained-from-scratch",
+        "vkore",
+        "vkte",
+        "vidraft",
+        "final-bench",
+        "small-language-model",
+        "slm",
+        "tiny-llm",
+        "language-model",
+        "causal-lm",
+        "decoder-only",
+        "transformer",
+        "rope",
+        "swiglu",
+        "rmsnorm",
+        "gqa",
+        "char-level",
+        "tinystories",
+        "edge-ai",
+        "on-device",
+        "low-power",
+        "cost-efficient",
+        "blackwell-alternative",
+        "gpu-alternative",
+        "korea",
+        "korean-ai",
+        "research",
+        "proof-of-concept"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "README_ko.md"
+      },
+      {
+        "rfilename": "cartoon.png"
+      },
+      {
+        "rfilename": "comparison_NPU_vs_B200_ko.md"
+      },
+      {
+        "rfilename": "gradcheck_46M_1chip.json"
+      },
+      {
+        "rfilename": "tiny_ckpt.pt"
+      }
+    ]
+  }
+]

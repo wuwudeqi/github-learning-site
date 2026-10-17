@@ -1,0 +1,414 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "overview",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-17-news",
+      "#/read/frontiers-2026-10-17-models",
+      "#/read/frontiers-2026-10-17-papers",
+      "#/read/frontiers-2026-10-17-projects",
+      "#/read/frontiers-2026-10-17-practice"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "news",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/step5-sparse-gqa.png",
+        "alt": "Step-5 图2显示先按块压缩索引键、每个KV组分别选择历史，再从原始KV中读取被选中的部分",
+        "complete": true,
+        "naturalWidth": 1280,
+        "width": 720,
+        "height": 393.75
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/hy-memory.svg",
+        "alt": "Hy-Memory 官方架构展示记忆的组织、处理与检索组件如何连接应用",
+        "complete": true,
+        "naturalWidth": 1120,
+        "width": 720,
+        "height": 405
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/live-concept.png",
+        "alt": "三幅概念场景依次表示持续聆听、用户打断和边听边回应，蓝绿波纹区分两条语音方向",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-07-news",
+      "#/read/frontiers-2026-09-21-news",
+      "#/read/frontiers-2026-10-14-news"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/moss-layout.webp",
+        "alt": "MOSS-Image 官方示例在图像上标出布局框，展示结构化位置与生成画面之间的对应",
+        "complete": true,
+        "naturalWidth": 4128,
+        "width": 719.984375,
+        "height": 231.625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/timestral.png",
+        "alt": "Timestral 官方对照图比较不同模型的预测误差与参数规模",
+        "complete": true,
+        "naturalWidth": 3800,
+        "width": 719.96875,
+        "height": 403.1875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/lumma.png",
+        "alt": "Lumma 官方校准图显示预测置信度与观察准确率之间的关系",
+        "complete": true,
+        "naturalWidth": 1015,
+        "width": 719.984375,
+        "height": 591.59375
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "papers",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/omnicompass.png",
+        "alt": "OmniCompass 将纯文字和文字加图片指向同一对象，并分别检查时间、空间和问答",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 720,
+        "height": 386
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/waypoint.png",
+        "alt": "Waypoint-OPD 从学生采样得到候选，再比较教师两段变化，通过一致性门控形成学生更新信号",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 719.96875,
+        "height": 383.1875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/opengcua.png",
+        "alt": "OpenGCUA 统一脚本环境通过可访问性信息和视觉观察连接手机、电脑与浏览器",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 719.984375,
+        "height": 350.796875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/fde-gym.png",
+        "alt": "FDE-Gym 原图展示任务中的客户信息、工作系统和评判依据",
+        "complete": true,
+        "naturalWidth": 2484,
+        "width": 719.984375,
+        "height": 304.34375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/speculative-forcing.png",
+        "alt": "上方每步处理全部token，下方验证器提前接受稳定token，仅对剩余位置继续计算",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 719.984375,
+        "height": 352.796875
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-18829-reading",
+      "#/read/paper-2610-21601-reading",
+      "#/read/paper-2610-22200-reading",
+      "#/read/paper-2610-22350-reading",
+      "#/read/paper-2610-22347-reading",
+      "#/read/paper-2610-22174-reading"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "projects",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/jevcrawl.svg",
+        "alt": "Jevcrawl 官方流程连接目标路由、页面读取与保留来源的文本输出",
+        "complete": true,
+        "naturalWidth": 980,
+        "width": 719.984375,
+        "height": 301.21875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/modelsphere.png",
+        "alt": "ModelSphere 官方架构展示入口路由、集群服务与观察组件的分工",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/dbs.png",
+        "alt": "DBS 原图展示从频率评分、动态分组到骨干分离和频谱重建的路径",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 719.96875,
+        "height": 114.796875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/info-vis.jpg",
+        "alt": "InfoVis 官方示例并列展示文字、模板、参考图与编辑指令对应的幻灯片图片",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 719.96875,
+        "height": 455.75
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/orbia.png",
+        "alt": "Orbia 六种相机轨迹中标出起点、查询点、首次访问和重访位置",
+        "complete": true,
+        "naturalWidth": 1400,
+        "width": 719.984375,
+        "height": 322.453125
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/date-results.png",
+        "alt": "日期检查实际结果：六项有本次事件来源的记录进入近期复核，一项仅有修改时间的对照被留待核验",
+        "complete": true,
+        "naturalWidth": 1280,
+        "width": 720,
+        "height": 491.0625
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "overview",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-17-news",
+      "#/read/frontiers-2026-10-17-models",
+      "#/read/frontiers-2026-10-17-papers",
+      "#/read/frontiers-2026-10-17-projects",
+      "#/read/frontiers-2026-10-17-practice"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "news",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/step5-sparse-gqa.png",
+        "alt": "Step-5 图2显示先按块压缩索引键、每个KV组分别选择历史，再从原始KV中读取被选中的部分",
+        "complete": true,
+        "naturalWidth": 1280,
+        "width": 344,
+        "height": 188.125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/hy-memory.svg",
+        "alt": "Hy-Memory 官方架构展示记忆的组织、处理与检索组件如何连接应用",
+        "complete": true,
+        "naturalWidth": 1120,
+        "width": 344,
+        "height": 193.5
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/live-concept.png",
+        "alt": "三幅概念场景依次表示持续聆听、用户打断和边听边回应，蓝绿波纹区分两条语音方向",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.984375,
+        "height": 229.328125
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-07-news",
+      "#/read/frontiers-2026-09-21-news",
+      "#/read/frontiers-2026-10-14-news"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/moss-layout.webp",
+        "alt": "MOSS-Image 官方示例在图像上标出布局框，展示结构化位置与生成画面之间的对应",
+        "complete": true,
+        "naturalWidth": 4128,
+        "width": 343.953125,
+        "height": 110.65625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/timestral.png",
+        "alt": "Timestral 官方对照图比较不同模型的预测误差与参数规模",
+        "complete": true,
+        "naturalWidth": 3800,
+        "width": 343.96875,
+        "height": 192.625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/lumma.png",
+        "alt": "Lumma 官方校准图显示预测置信度与观察准确率之间的关系",
+        "complete": true,
+        "naturalWidth": 1015,
+        "width": 343.96875,
+        "height": 282.640625
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "papers",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/omnicompass.png",
+        "alt": "OmniCompass 将纯文字和文字加图片指向同一对象，并分别检查时间、空间和问答",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 343.984375,
+        "height": 184.421875
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/waypoint.png",
+        "alt": "Waypoint-OPD 从学生采样得到候选，再比较教师两段变化，通过一致性门控形成学生更新信号",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 343.984375,
+        "height": 183.078125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/opengcua.png",
+        "alt": "OpenGCUA 统一脚本环境通过可访问性信息和视觉观察连接手机、电脑与浏览器",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 343.96875,
+        "height": 167.59375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/fde-gym.png",
+        "alt": "FDE-Gym 原图展示任务中的客户信息、工作系统和评判依据",
+        "complete": true,
+        "naturalWidth": 2484,
+        "width": 343.984375,
+        "height": 145.40625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/speculative-forcing.png",
+        "alt": "上方每步处理全部token，下方验证器提前接受稳定token，仅对剩余位置继续计算",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 343.96875,
+        "height": 168.546875
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-18829-reading",
+      "#/read/paper-2610-21601-reading",
+      "#/read/paper-2610-22200-reading",
+      "#/read/paper-2610-22350-reading",
+      "#/read/paper-2610-22347-reading",
+      "#/read/paper-2610-22174-reading"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "projects",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/jevcrawl.svg",
+        "alt": "Jevcrawl 官方流程连接目标路由、页面读取与保留来源的文本输出",
+        "complete": true,
+        "naturalWidth": 980,
+        "width": 343.96875,
+        "height": 143.90625
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/modelsphere.png",
+        "alt": "ModelSphere 官方架构展示入口路由、集群服务与观察组件的分工",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.984375,
+        "height": 229.328125
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/dbs.png",
+        "alt": "DBS 原图展示从频率评分、动态分组到骨干分离和频谱重建的路径",
+        "complete": true,
+        "naturalWidth": 1800,
+        "width": 343.953125,
+        "height": 54.84375
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/info-vis.jpg",
+        "alt": "InfoVis 官方示例并列展示文字、模板、参考图与编辑指令对应的幻灯片图片",
+        "complete": true,
+        "naturalWidth": 2000,
+        "width": 343.984375,
+        "height": 217.75
+      },
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/orbia.png",
+        "alt": "Orbia 六种相机轨迹中标出起点、查询点、首次访问和重访位置",
+        "complete": true,
+        "naturalWidth": 1400,
+        "width": 343.984375,
+        "height": 154.0625
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50617/github-learning-site/documents/frontiers/2026/10/2026-10-17/images/date-results.png",
+        "alt": "日期检查实际结果：六项有本次事件来源的记录进入近期复核，一项仅有修改时间的对照被留待核验",
+        "complete": true,
+        "naturalWidth": 1280,
+        "width": 343.984375,
+        "height": 234.609375
+      }
+    ],
+    "internalLinks": []
+  }
+]

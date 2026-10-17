@@ -182,11 +182,28 @@ export function canonicalSubject(url) {
 
 export function validateTopicDeduplication(entries) {
   const errors = [],
-    seen = new Map();
+    seen = new Map(),
+    sourcePages = new Map();
   for (const item of entries) {
+    // A release-note page can contain several independent dated announcements.
+    // Keep repository/model/paper identities intact; only a news article's
+    // explicitly recorded section can distinguish events on a shared source page.
+    let sourceKey = canonicalSubject(item.sourceUrl ?? item.repositoryUrl);
+    const datedSection = item.kind === "news" && item.sourceSection?.trim() &&
+      /^\d{4}-\d{2}-\d{2}$/.test(item.eventDate ?? "");
+    if (sourceKey.startsWith("source:")) {
+      const previous = sourcePages.get(sourceKey);
+      if (previous && (!previous.datedSection || !datedSection)) {
+        errors.push(`duplicate topic on shared source without dated sections: ${sourceKey} (${previous.id} / ${item.id})`);
+      }
+      if (!previous || !datedSection) sourcePages.set(sourceKey, { id: item.id, datedSection });
+    }
+    if (sourceKey.startsWith("source:") && datedSection) {
+      sourceKey += `|${item.eventDate}|${item.sourceSection.trim().toLowerCase()}`;
+    }
     const keys = new Set(
       [
-        canonicalSubject(item.sourceUrl ?? item.repositoryUrl),
+        sourceKey,
         ...(item.subjectKeys ?? []).map((k) => k.toLowerCase()),
       ].filter(Boolean),
     );

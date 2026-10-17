@@ -1,0 +1,9 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>日期来源核验</title><style>
+*{box-sizing:border-box}body{margin:0;background:#edf2f5;color:#143044;font:20px/1.5 "PingFang SC",sans-serif;padding:42px;width:1280px}main{background:white;border-radius:20px;padding:32px}h1{font-size:38px;margin:0 0 8px}.sub{color:#506573;margin-bottom:26px}table{border-collapse:collapse;width:100%;font-size:20px}th,td{text-align:left;padding:14px 12px;border-bottom:1px solid #dce5e9}th{color:#536b7a;font-size:17px}.ok{color:#087357}.review{color:#b26117}footer{margin-top:22px;font-size:17px;color:#546b78}b{font-size:29px}
+</style><main><h1>新修改 ≠ 新发布</h1><div class="sub">真实公开元数据 + 原始事件来源 · 2026-10-17 本机运行</div><div id="summary"></div><table><thead><tr><th>对象</th><th>仓库创建</th><th>本次事实</th><th>证据类型</th><th>程序判断</th></tr></thead><tbody id="rows"></tbody></table><footer>“进入近期复核”仅通过日期证据筛查；实用性、创新性、许可与重复情况仍需人工复核。<br>最后一行复用 MOSS 的真实修改时间作弱证据对照，不是第七个独立项目。</footer></main><script>
+fetch('date-results.json').then(r=>r.json()).then(d=>{
+document.getElementById('summary').innerHTML='<p><b>'+d.summary['进入近期复核']+'</b> 条有近期事件来源　 <b>'+d.summary['需人工核验']+'</b> 条仅有修改时间</p>';
+for(const r of d.rows){const tr=document.createElement('tr');for(const k of ['name','originalDate','newFactDate','evidenceType','status']){const td=document.createElement('td');td.textContent=r[k];if(k==='status')td.className=r.status==='进入近期复核'?'ok':'review';tr.append(td)}document.getElementById('rows').append(tr)}document.body.dataset.ready='true';
+});
+</script></html>
+

@@ -1,0 +1,104 @@
+{
+  "issueDate": "2026-10-17",
+  "runAt": "2026-10-16T23:55:19.345194+00:00",
+  "python": "3.14.3",
+  "platform": "Darwin",
+  "networkCalls": 0,
+  "summary": {
+    "进入近期复核": 6,
+    "需人工核验": 1
+  },
+  "rows": [
+    {
+      "name": "Beam",
+      "originalDate": "2026-10-07",
+      "originalDateMeaning": "仓库创建日期；不自动等于发布日",
+      "newFactDate": "2026-10-16",
+      "evidenceType": "权重发布",
+      "eventSource": "https://reflection.ai/blog/beam-is-available",
+      "metadataSource": "https://huggingface.co/api/models/reflection/Beam-1.0-501B-A23B",
+      "originalAgeDays": 10,
+      "newFactAgeDays": 1,
+      "status": "进入近期复核",
+      "reason": "有近7天事件来源；仍须人工判断价值与去重"
+    },
+    {
+      "name": "MOSS-Image",
+      "originalDate": "2026-10-11",
+      "originalDateMeaning": "仓库创建日期；不自动等于发布日",
+      "newFactDate": "2026-10-16",
+      "evidenceType": "代码与示例发布",
+      "eventSource": "https://github.com/OpenMOSS/MOSS-Image",
+      "metadataSource": "https://huggingface.co/api/models/OpenMOSS-Team/MOSS-Image-SFT",
+      "originalAgeDays": 6,
+      "newFactAgeDays": 1,
+      "status": "进入近期复核",
+      "reason": "有近7天事件来源；仍须人工判断价值与去重"
+    },
+    {
+      "name": "Apertus v1.5",
+      "originalDate": "2026-07-24",
+      "originalDateMeaning": "仓库创建日期；不自动等于发布日",
+      "newFactDate": "2026-10-15",
+      "evidenceType": "技术配方披露",
+      "eventSource": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+      "metadataSource": "https://huggingface.co/api/models/swiss-ai/Apertus-v1.5-8B",
+      "originalAgeDays": 85,
+      "newFactAgeDays": 2,
+      "status": "进入近期复核",
+      "reason": "有近7天事件来源；仍须人工判断价值与去重"
+    },
+    {
+      "name": "ModelSphere",
+      "originalDate": "2026-09-27",
+      "originalDateMeaning": "仓库创建日期；不自动等于发布日",
+      "newFactDate": "2026-10-15",
+      "evidenceType": "正式版本",
+      "eventSource": "https://github.com/modelsphere/modelsphere/releases/tag/v0.1.0",
+      "metadataSource": "https://api.github.com/repos/modelsphere/modelsphere",
+      "originalAgeDays": 20,
+      "newFactAgeDays": 2,
+      "status": "进入近期复核",
+      "reason": "有近7天事件来源；仍须人工判断价值与去重"
+    },
+    {
+      "name": "DBS",
+      "originalDate": "2026-10-09",
+      "originalDateMeaning": "仓库创建日期；不自动等于发布日",
+      "newFactDate": "2026-10-10",
+      "evidenceType": "代码权重发布",
+      "eventSource": "https://github.com/JusperLee/Dynamic-Band-Splitting",
+      "metadataSource": "https://api.github.com/repos/JusperLee/Dynamic-Band-Splitting",
+      "originalAgeDays": 8,
+      "newFactAgeDays": 7,
+      "status": "进入近期复核",
+      "reason": "有近7天事件来源；仍须人工判断价值与去重"
+    },
+    {
+      "name": "3DCodeVerse",
+      "originalDate": "2026-08-23",
+      "originalDateMeaning": "仓库创建日期；不自动等于发布日",
+      "newFactDate": "2026-10-15",
+      "evidenceType": "研究与实现披露",
+      "eventSource": "https://arxiv.org/abs/2610.22341",
+      "metadataSource": "https://api.github.com/repos/gaoypeng/3dcodeverse",
+      "originalAgeDays": 55,
+      "newFactAgeDays": 2,
+      "status": "进入近期复核",
+      "reason": "有近7天事件来源；仍须人工判断价值与去重"
+    },
+    {
+      "name": "MOSS：仅看修改时间",
+      "originalDate": "2026-10-11",
+      "originalDateMeaning": "同一真实元数据的弱证据对照",
+      "newFactDate": "2026-10-16",
+      "evidenceType": "metadata-only",
+      "eventSource": null,
+      "metadataSource": "https://huggingface.co/api/models/OpenMOSS-Team/MOSS-Image-SFT",
+      "originalAgeDays": 6,
+      "newFactAgeDays": 1,
+      "status": "需人工核验",
+      "reason": "最后修改时间不能证明有实质新进展"
+    }
+  ]
+}
