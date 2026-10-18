@@ -1,0 +1,112 @@
+{
+  "observedAt": "2026-10-18T00:15:10.973970+00:00",
+  "environment": {
+    "python": "3.14.3",
+    "sqlite": "3.53.2",
+    "platform": "Darwin",
+    "machine": "arm64"
+  },
+  "data": "synthetic local orders; process exits are real, not power-loss tests",
+  "requests": 9,
+  "uniqueKeys": 4,
+  "finalOrders": 4,
+  "checks": "passed",
+  "cases": [
+    {
+      "case": "首次 A",
+      "exitCode": 0,
+      "response": {
+        "status": "created",
+        "request": "A",
+        "result": {
+          "order_id": 1,
+          "amount": 3
+        }
+      },
+      "ordersAfter": 1
+    },
+    {
+      "case": "重试 A",
+      "exitCode": 0,
+      "response": {
+        "status": "replayed",
+        "request": "A",
+        "result": {
+          "order_id": 1,
+          "amount": 3
+        }
+      },
+      "ordersAfter": 1
+    },
+    {
+      "case": "A 换参数",
+      "exitCode": 0,
+      "response": {
+        "status": "conflict",
+        "request": "A"
+      },
+      "ordersAfter": 1
+    },
+    {
+      "case": "B 提交前退出",
+      "exitCode": 74,
+      "response": null,
+      "ordersAfter": 1
+    },
+    {
+      "case": "重试 B",
+      "exitCode": 0,
+      "response": {
+        "status": "created",
+        "request": "B",
+        "result": {
+          "order_id": 2,
+          "amount": 3
+        }
+      },
+      "ordersAfter": 2
+    },
+    {
+      "case": "C 提交后退出",
+      "exitCode": 75,
+      "response": null,
+      "ordersAfter": 3
+    },
+    {
+      "case": "重试 C",
+      "exitCode": 0,
+      "response": {
+        "status": "replayed",
+        "request": "C",
+        "result": {
+          "order_id": 3,
+          "amount": 3
+        }
+      },
+      "ordersAfter": 3
+    },
+    {
+      "case": "并发 D × 2",
+      "responses": [
+        {
+          "status": "created",
+          "request": "D",
+          "result": {
+            "order_id": 4,
+            "amount": 3
+          }
+        },
+        {
+          "status": "replayed",
+          "request": "D",
+          "result": {
+            "order_id": 4,
+            "amount": 3
+          }
+        }
+      ],
+      "ordersAfter": 4,
+      "exitCode": 0
+    }
+  ]
+}

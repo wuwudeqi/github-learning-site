@@ -1,0 +1,192 @@
+[
+  {
+    "id": "2610.17560",
+    "title": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17560",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "同为云端委派，与已选轨迹推测主题接近；优先有明确写入边界和成本拆解的SpecAgent。",
+    "checkedAt": "2026-10-18T07:43:11.568239+08:00"
+  },
+  {
+    "id": "2610.17670",
+    "title": "Cowork-Gym: Synthesizing Interactive Work Environments at Scale",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17670",
+    "selected": false,
+    "readLevel": "原文与候选比较",
+    "reason": "环境合成有价值，本期训练环境主题让位于特征、奖励和推理结构的多样性。",
+    "checkedAt": "2026-10-18T07:43:12.482789+08:00"
+  },
+  {
+    "id": "2610.17901",
+    "title": "FlashMask-3: Efficient and Expressive Mask-Aware Distributed Attention",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17901",
+    "selected": false,
+    "readLevel": "原文与候选比较",
+    "reason": "FlashMask已在项目栏详解，跨栏去重。",
+    "checkedAt": "2026-10-18T07:43:12.575909+08:00"
+  },
+  {
+    "id": "2610.17959",
+    "title": "Virtual Head Attention",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17959",
+    "selected": true,
+    "readLevel": "核心方法、结果、对照和图",
+    "reason": "将虚拟头表达折叠到推理投影，明确缓存节省的不同分母。",
+    "checkedAt": "2026-10-18T07:43:11.617222+08:00"
+  },
+  {
+    "id": "2610.19849",
+    "title": "DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding",
+    "date": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.19849",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "流式视频理解候选，本期优先多码本方法及可核对的缓存消融。",
+    "checkedAt": "2026-10-18T07:43:11.376408+08:00"
+  },
+  {
+    "id": "2610.20818",
+    "title": "Intern Lumina U2: A Multi-Codebook Diffusion Large Language Model for Omni-Visual Understanding and Image Generation",
+    "date": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20818",
+    "selected": true,
+    "readLevel": "核心方法、结果、对照和图",
+    "reason": "把多码本视觉表征、扩散解码与缓存策略放在可对照实验中。",
+    "checkedAt": "2026-10-18T07:43:11.170261+08:00"
+  },
+  {
+    "id": "2610.20939",
+    "title": "MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments",
+    "date": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20939",
+    "selected": false,
+    "readLevel": "原文与候选比较",
+    "reason": "平台型论文，与方法研究比较后未入选；项目候选另因未找到许可排除。",
+    "checkedAt": "2026-10-18T07:43:12.057679+08:00"
+  },
+  {
+    "id": "2610.21055",
+    "title": "Athanor: An Agent-Native System for Autonomous Post-Training Research",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21055",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "自动后训练系统候选，本期更重视奖励分配可隔离的机制对照。",
+    "checkedAt": "2026-10-18T07:43:12.362360+08:00"
+  },
+  {
+    "id": "2610.21261",
+    "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21261",
+    "selected": true,
+    "readLevel": "核心方法、结果、对照和图",
+    "reason": "提出对SAE行为可组合性的干预评估及匹配旋转对照。",
+    "checkedAt": "2026-10-18T07:43:11.202207+08:00"
+  },
+  {
+    "id": "2610.21359",
+    "title": "SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21359",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "问题合成平台候选，代码许可未明确；不占用本期六篇方法名额。",
+    "checkedAt": "2026-10-18T07:43:12.363966+08:00"
+  },
+  {
+    "id": "2610.21412",
+    "title": "JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21412",
+    "selected": false,
+    "readLevel": "原文与候选比较",
+    "reason": "JevAgentHarness在项目栏讨论可运行代理与论文条件，跨栏去重。",
+    "checkedAt": "2026-10-18T07:43:12.654529+08:00"
+  },
+  {
+    "id": "2610.21439",
+    "title": "Each Reward to Its Relevant Tokens: Reward-Specific Token-Level Credit Assignment for Multi-Reward RL",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21439",
+    "selected": true,
+    "readLevel": "核心方法、结果、对照和图",
+    "reason": "用验证信息改变token奖励分配，并以多任务和消融检查收益。",
+    "checkedAt": "2026-10-18T07:43:11.326903+08:00"
+  },
+  {
+    "id": "2610.21463",
+    "title": "Trajectory-Level Speculation with Semantic Verification for Tool-Using Agents",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21463",
+    "selected": true,
+    "readLevel": "核心方法、结果、对照和图",
+    "reason": "轨迹级语义验证降低大模型逐步生成成本，同时明确工具写入假设。",
+    "checkedAt": "2026-10-18T07:43:12.000042+08:00"
+  },
+  {
+    "id": "2610.22131",
+    "title": "Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22131",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "结构化决策主题已由模型与新闻覆盖，避免整期过度集中。",
+    "checkedAt": "2026-10-18T07:43:12.043968+08:00"
+  },
+  {
+    "id": "2610.22194",
+    "title": "AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22194",
+    "selected": false,
+    "readLevel": "原文与候选比较",
+    "reason": "作者尚未公开完整实现；论文保留候选，优先已取得充分方法/对照资料的条目。",
+    "checkedAt": "2026-10-18T07:43:12.575780+08:00"
+  },
+  {
+    "id": "2610.22264",
+    "title": "SCOPE: Semantic Bounded Credit Optimization for Prompt Engineering in Text-to-image Generation",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22264",
+    "selected": true,
+    "readLevel": "核心方法、结果、对照和图",
+    "reason": "语义片段级提示优化具有基线与分组消融，代码许可缺口明确。",
+    "checkedAt": "2026-10-18T07:43:11.475930+08:00"
+  },
+  {
+    "id": "2610.22280",
+    "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22280",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "弱强升级与SpecAgent主题重叠，选后者展开具体工具语义验证。",
+    "checkedAt": "2026-10-18T07:43:12.106714+08:00"
+  },
+  {
+    "id": "2610.22282",
+    "title": "Routing Policy Optimization for Online Diffusion Reinforcement Learning",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22282",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "另一扩散RL候选，优先SCOPE的语义片段与随机片段消融。",
+    "checkedAt": "2026-10-18T07:43:11.865442+08:00"
+  },
+  {
+    "id": "2610.22344",
+    "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22344",
+    "selected": false,
+    "readLevel": "摘要及元数据；未宣称全文细读",
+    "reason": "自主ML工程候选，本期未取得足够独立复现资料且已有多项Agent，不以标题填数。",
+    "checkedAt": "2026-10-18T07:43:11.669004+08:00"
+  }
+]

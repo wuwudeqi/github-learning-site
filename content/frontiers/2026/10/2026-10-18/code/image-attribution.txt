@@ -1,0 +1,161 @@
+# 配图归属与引用范围
+
+## dory.png
+
+共享循环层与输入输出段。
+
+来源：https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16/resolve/main/dory_arch.png
+
+许可/范围：有限方法/产品评述引用，保留作者来源，不按公开可读推断全文转载权
+
+中文读图：I 是输入段，R 是共享循环段，O 是输出段。重复出现的 R 表示同一组权重多次执行，不是多个独立模型。NVIDIA 模型卡原图；循环预算和缓存策略需与运行配置一起记录。（[来源原图](https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16)；[查看原尺寸](images/dory.png)。）
+
+## flashmask.jpg
+
+mask、kernel和分布式调度的层次。
+
+来源：https://raw.githubusercontent.com/PaddlePaddle/FlashMask/HEAD/docs/assets/flashmask3_architecture.jpg
+
+许可/范围：BSD-3-Clause，仓库许可已核对
+
+中文读图：不同层次分别处理 mask 表示、稀疏计算及分布式调度，不能把整个系统的收益只归给一个 kernel。PaddlePaddle 仓库原图，BSD-3-Clause。（[来源原图](https://github.com/PaddlePaddle/FlashMask)；[查看原尺寸](images/flashmask.jpg)。）
+
+## google-scam.svg
+
+端侧两阶段筛查的计算分工。
+
+来源：https://storage.googleapis.com/gdm-deepmind-com-prod-public/media/original_images/7e4maMVKyIrSjysg/Figure_1_-_light_1.svg
+
+许可/范围：有限方法/产品评述引用，保留作者来源，不按公开可读推断全文转载权
+
+中文读图：昂贵的语义判断位于第二级，只有经过前级筛选的内容才进入；这是官方机制示意，不是本站检测结果（[来源原图](https://deepmind.google/blog/on-device-ai-scam-detection-mddi/)；[查看原尺寸](images/google-scam.svg)。）
+
+## idempotency-results.png
+
+真实进程退出前后，业务条数如何变化。
+
+来源：None
+
+许可/范围：本期原创制作；不冒充来源图或产品实测
+
+中文读图：B 在提交前退出，记录没有增加，重试才增加；C 在提交后退出，记录已经存在，重试读取原回执。并发 D 的两个调用分别得到 created 和 replayed，最终只新增一条。图表由 HTML/JS 直接读取本机结果 JSON 导出，人造业务数据、真实进程退出；不是性能基准。（[原尺寸](images/idempotency-results.png) · [数据](code/idempotency-results.json) · [图表源码](code/idempotency-results.html)。）
+
+## jev.svg
+
+代理层路由、结束检查和错误回退。
+
+来源：https://raw.githubusercontent.com/JevAgentHarness/JevAgentHarness/HEAD/assets/architecture.svg
+
+许可/范围：MIT，仓库LICENSE已核对
+
+中文读图：模型选择发生在请求代理层，结束判断和异常路径会回到强模型。图中费用属于作者设定，不能套用为今日服务报价；MIT 仓库原图。（[来源原图](https://github.com/JevAgentHarness/JevAgentHarness)；[查看原尺寸](images/jev.svg)。）
+
+## mrtpo.png
+
+不同奖励定位不同错误token。
+
+来源：https://arxiv.org/html/2610.21439v1/fig1.png
+
+许可/范围：有限方法/产品评述引用，保留作者来源，不按公开可读推断全文转载权
+
+图 1，Zhai 等。重点看 SQL 年龄边界：语法正确不意味着语义正确，不同奖励应影响不同位置。为方法评述有限引用原图；论文采用 arXiv 非独占分发许可，本期不转载完整 PDF。（[来源原图](https://arxiv.org/abs/2610.21439)；[查看原尺寸](images/mrtpo.png)。）
+
+## sabi.png
+
+分数与共同成功子集的token消耗分母。
+
+来源：https://huggingface.co/sabicap/sabi-noema/resolve/main/assets/sabi-noema-tokens.png
+
+许可/范围：有限方法/产品评述引用，保留作者来源，不按公开可读推断全文转载权
+
+中文读图：任务成绩与 token 用量的分母不同。节省统计限定为两个模型共同解出的题，且各任务组的 token 横向刻度不同；不能按柱长直接跨任务比较。Sabicap 官方评测原图，非本站实测。（[来源原图](https://huggingface.co/sabicap/sabi-noema)；[查看原尺寸](images/sabi.png)。）
+
+## sae.png
+
+固定背景后的特征组合干预。
+
+来源：https://raw.githubusercontent.com/OpenSAE/SAE-Behavioral-Compositionality/HEAD/assets/figures/fig1.png
+
+许可/范围：Apache-2.0，OpenSAE实现仓库附图及许可
+
+图 1，Ma、Mei、Sala。看特征选择与干预后行为的关系：保留相同背景，只改变少量特征，才有机会区分单项效应与组合效应。采用 Apache-2.0 实现仓库所附原图，保留作者归属。（[来源原图](https://arxiv.org/abs/2610.21261)；[查看原尺寸](images/sae.png)。）
+
+## scope.png
+
+整句奖励与语义片段奖励。
+
+来源：https://arxiv.org/html/2610.22264v1/GRPO_SCOPE_editable.png
+
+许可/范围：CC BY 4.0；原图与图注保留作者，SpecAgent注明裁切
+
+图 2，Jiao 等，CC BY 4.0。上方整句更新与下方语义片段更新形成对照；颜色表示分配区域，0.25 与 0.75 只是图示奖励，不可当成实验平均值。（[来源原图](https://arxiv.org/abs/2610.22264)；[查看原尺寸](images/scope.png)。）
+
+## search-fetch.png
+
+搜索候选与单页抓取的职责区分。
+
+来源：None
+
+许可/范围：本期原创制作；不冒充来源图或产品实测
+
+中文读图：左边解决“去哪里找”，右边解决“这页具体写了什么”。抓到网页后仍须核对日期和出处。AI 生成概念示意，不是 DeepSeek 界面或实验结果（[提示词与制作记录](code/imagegen-prompt.txt)；[查看原尺寸](images/search-fetch.png)。）
+
+## siltop.png
+
+系统瓶颈的CPU/GPU/功耗多维观察。
+
+来源：https://raw.githubusercontent.com/CLoaKY233/siltop/HEAD/docs/media/hero-dark.png
+
+许可/范围：MIT OR Apache-2.0，仓库许可已核对
+
+中文读图：演示画面中 CPU 与 GPU 负载不同，说明只看总占用可能误判瓶颈。图中百分比、功耗均是作者演示数据，不是本机测量；MIT / Apache-2.0 仓库原图。（[来源原图](https://github.com/CLoaKY233/siltop)；[查看原尺寸](images/siltop.png)。）
+
+## specagent.png
+
+只读推进、暂缓写入、一次验证和修复。
+
+来源：https://arxiv.org/pdf/2610.21463v1
+
+许可/范围：CC BY 4.0；原图与图注保留作者，SpecAgent注明裁切
+
+图 1，Wang 等，CC BY 4.0。绿色先执行查询，虚线框把首次写入留住，蓝色模型在一次检查中接受前三步并修复第四步。采用 PDF 第 3 页原图及图注的忠实裁切；未修改数值或连接关系，原尺寸入口与完整 PDF 均保留。（[来源原图](https://arxiv.org/abs/2610.21463)；[查看原尺寸](images/specagent.png)。）
+
+## tyger.png
+
+等待与过早结束的联合取舍。
+
+来源：https://huggingface.co/nineninesix/tyger/resolve/main/assets/endpoint-evaluation.png
+
+许可/范围：有限方法/产品评述引用，保留作者来源，不按公开可读推断全文转载权
+
+中文读图：三幅图分别展示等待、提前截断及未检测到结束点；必须一起看。OpenYap 的作者离线实验，固定阈值条件，不是本站语音对话测试，也不是不同系统的端到端速度排行榜。（[来源原图](https://huggingface.co/nineninesix/tyger)；[查看原尺寸](images/tyger.png)。）
+
+## u2.png
+
+模态输入、并行位置与顺序码本。
+
+来源：https://arxiv.org/html/2610.20818v1/main.png
+
+许可/范围：CC BY 4.0；原图与图注保留作者，SpecAgent注明裁切
+
+方法总览，Yu 等，CC BY 4.0。底部不同模态进入共享骨干，顶部的文本与视觉头承担不同输出；图像位置的并行生成与位置内的码本顺序不是同一维度。保留完整原图，手机请打开原尺寸结合正文阅读。（[来源原图](https://arxiv.org/abs/2610.20818)；[查看原尺寸](images/u2.png)。）
+
+## vha.svg
+
+训练混合到推理投影的折叠关系。
+
+来源：https://arxiv.org/html/2610.17959v1/VHAall.svg
+
+许可/范围：有限方法/产品评述引用，保留作者来源，不按公开可读推断全文转载权
+
+图 1，Ding 等。先看查询头的 pre-mix，再看输出的 post-mix；折叠发生在投影权重里。原图用于解释线性关系，不表示所有训练和推理开销都消失。有限方法评述引用，完整论文见原始链接。（[来源原图](https://arxiv.org/abs/2610.17959)；[查看原尺寸](images/vha.svg)。）
+
+## weatherdeck.png
+
+静默来源与健康来源区分。
+
+来源：https://raw.githubusercontent.com/Moshik21/weatherdeck/HEAD/docs/img/hero-tv.png
+
+许可/范围：MIT，仓库LICENSE已核对
+
+中文读图：Live 的数量和 Silent 标记同时出现，离线来源没有被画成健康。截图来自作者的虚构演示数据，示范的是状态表达，非真实生产事故；MIT 原图。（[来源原图](https://github.com/Moshik21/weatherdeck)；[查看原尺寸](images/weatherdeck.png)。）

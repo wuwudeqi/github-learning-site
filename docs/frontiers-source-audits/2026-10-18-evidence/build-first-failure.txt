@@ -1,0 +1,19 @@
+
+> github-learning-site@1.0.0 build
+> node scripts/check-frontiers.mjs && node scripts/catalog.mjs && vite build && node scripts/check-size.mjs
+
+前沿检查通过：36 期；15 条新闻、10 个项目及来源一致；9 月 10 日起另查 6 个模型、6 篇论文和跨栏目去重。
+file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:43
+      throw new Error(`${relative}: id 必须为不重复的英文小写、数字或连字符`);
+            ^
+
+Error: frontiers/2026/10/2026-10-18/code/image-attribution.md: id 必须为不重复的英文小写、数字或连字符
+    at walk (file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:43:13)
+    at async walk (file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:21:7)
+    at async walk (file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:21:7)
+    at async walk (file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:21:7)
+    at async walk (file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:21:7)
+    at async walk (file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:21:7)
+    at async file:///Users/fujiasen/Desktop/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/github%E5%AD%A6%E4%B9%A0%E7%BD%91%E7%AB%99/github-learning-site/scripts/catalog.mjs:75:1
+
+Node.js v22.22.3
