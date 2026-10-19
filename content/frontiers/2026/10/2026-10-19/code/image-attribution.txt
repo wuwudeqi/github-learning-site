@@ -1,0 +1,73 @@
+配图归属与引用范围
+
+autosft.webp
+每轮数据配方、训练和评估的闭环
+来源：https://arxiv.org/html/2610.22194v1/AutoSFT_Flow.png
+许可/引用范围：CC BY 4.0，归属原文作者；完整原图，只转换编码格式
+图中从数据配方到训练、评估再回到配方，表示每轮可以更换数据操作；不是沿同一个检查点无限续训。He 等，AutoSFT 原图，CC BY 4.0。中文说明与图分开，保留完整原图。（[来源原图](https://arxiv.org/abs/2610.22194)；[查看原尺寸](images/autosft.webp)。）
+
+cart.webp
+购物车权益提示与用户确认的交互位置
+来源：https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3._Card_points_and_promos_in_car.width-1200.format-webp.webp
+许可/引用范围：保留作者及来源，仅引用一幅图用于紧邻产品评论；未获得整页/素材的开放再分发许可，不宣称图片为开放授权
+读图：优惠提示附着在购物车上，用户仍需确认条件与结账。Google 官方界面原图，仅作功能说明引用；示例优惠不是本站实测节省。（[来源原图](https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/)；[查看原尺寸](images/cart.webp)。）
+
+dataworld.webp
+机制真值、观测文件、审计和任务之间的顺序
+来源：https://arxiv.org/html/2610.21656v1/dataworld_main.png
+许可/引用范围：CC BY-NC-ND 4.0，本站非商业研究讲解，像素无损转WebP，中文说明位于图外
+图 2，Li 等，Data World 原图，CC BY-NC-ND 4.0。先沿上方看机制与真值，再看观测文件、审计及任务；审计器不回写真值。图片未经修改，用于本站非商业研究讲解；密集标签请打开原尺寸，中文解读在图外。（[来源原图](https://arxiv.org/abs/2610.21656)；[查看原尺寸](images/dataworld.webp)。）
+
+desk.jpg
+真实桌面中窗口、抽屉和通知的层级
+来源：https://raw.githubusercontent.com/fyzugx/DEsk/main/docs/screenshots/desk.jpg
+许可/引用范围：MIT附图，保留作者/项目归属和完整LICENSE；ESP32固件GPL范围另述
+中文读图：纸张样式是实际窗口，抽屉是应用入口，便签呈现通知。DEsk 维护者提供的真实桌面截图，MIT；用于说明界面组织，不是本站运行结果，也不证明 Agent 操作效果。（[来源原图](https://github.com/fyzugx/DEsk)；[查看原尺寸](images/desk.jpg)。）
+
+dspine.jpg
+目标模型多深度特征到并行草稿的信息流
+来源：https://dspine-project.github.io/assets/overview.jpg
+许可/引用范围：Apache-2.0，保留来源/作者与完整LICENSE，t0示例属于Alpha版本
+中文读图：左侧是目标模型各层，中部把上一时刻不同深度的特征送入草稿网络，右侧展示并行提出 token 的位置。腾讯 DSpine 官方结构图；它解释信息如何传递，不代表同等比例的端到端加速。（[来源原图](https://huggingface.co/tencent/Qwen3-8B-DSpine-b16)；[查看原尺寸](images/dspine.jpg)。）
+
+edgewise.webp
+本地默认执行与关键步云端委托
+来源：https://arxiv.org/html/2610.17560v1/pipeline.png
+许可/引用范围：CC BY 4.0，归属原文作者；完整原图，只转换编码格式
+中文读图：本地模型是默认执行者，委托发生在它判断需要帮助的步骤；云端回复又回到同一任务上下文。Shi 等，EdgeWise 方法图，CC BY 4.0。箭头表示协作过程，不表示所有步骤都经过两个模型。（[来源原图](https://arxiv.org/abs/2610.17560)；[查看原尺寸](images/edgewise.webp)。）
+
+esp32.webp
+手机屏幕、Agent观察和指针校准的对应
+来源：https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png
+许可/引用范围：MIT附图，保留作者/项目归属和完整LICENSE；ESP32固件GPL范围另述
+作者真实 App 截图：对照手机画面与经板子镜像后 Agent 收到的画面，再看指针校准。主体图片随 MIT 项目资料引用；固件的 GPL-3.0 范围另述。它展示观察链路，不是本站执行手机任务的记录。（[来源原图](https://github.com/onehumanbeing/esp32-iphone-agent)；[查看原尺寸](images/esp32.webp)。）
+
+figma-specs.webp
+代码上下文到结构化规格的真实产品界面
+来源：https://cdn.sanity.io/images/599r6htc/regionalized/bbbca76b8e9aa644e38e72e1eb45083513d3e8a4-3840x2160.png
+许可/引用范围：保留作者及来源，仅引用一幅图用于紧邻产品评论；未获得整页/素材的开放再分发许可，不宣称图片为开放授权
+读图：左边是带 GitHub 上下文的请求，右边是生成的 spec。它说明需求文档与代码来源的连接，不代表生产代码已经验证。Figma 官方界面原图，仅作本条产品评述引用。（[来源原图](https://www.figma.com/blog/introducing-figma-specs/)；[查看原尺寸](images/figma-specs.webp)。）
+
+glimpse-concept.webp
+说明推理中反复回看视觉证据，而非实际模型轨迹
+来源：https://elorian.ai/blog/introducing-glimpse
+许可/引用范围：本期原创解释图，明确AI生成或合成数据，不冒充实际模型结果
+概念读图：重点看视觉材料与推理之间的回看关系。这是 AI 生成概念示意，不是 Glimpse 界面、模型轨迹或性能证据。（[事实依据](https://elorian.ai/blog/introducing-glimpse)；[查看原尺寸](images/glimpse-concept.webp)。）
+
+handwired.webp
+受限程序网络化后的作者可交互输出演示
+来源：https://raw.githubusercontent.com/chenglou/handwired/main/assets/demos-handwiredos.webp
+许可/引用范围：MIT附图，保留作者/项目归属和完整LICENSE；ESP32固件GPL范围另述
+Handwired 作者的 HandwiredOS 演示截图，MIT。图中是受限演示程序的可交互输出；不是通用操作系统移植成功的证据，也不是本站测试。（[来源原图](https://github.com/chenglou/handwired)；[查看原尺寸](images/handwired.webp)。）
+
+normalization.png
+合成实际算例中加权均值、上限与再分配
+来源：https://arxiv.org/abs/2610.17666
+许可/引用范围：本期原创解释图，明确AI生成或合成数据，不冒充实际模型结果
+中文读图：第一行虽然按步骤平均为 1，右侧按 token 的平均只有 0.462；第二行修正尺度，但第一步权重超过上限；第三行截断后再分配。图由本机 Python 输出的合成数据经 HTML/JS 导出，非模型性能或训练实验。[原尺寸](images/normalization.png) · [原始输出](code/normalization-result.json) · [可复现 HTML](code/normalization.html)。
+
+t0.webp
+未来已知协变量如何改变预测；明确Alpha示例不当Gamma结果
+来源：https://raw.githubusercontent.com/theforecastingcompany/tfc-t0/main/assets/enedis_with_holidays.webp
+许可/引用范围：Apache-2.0，保留来源/作者与完整LICENSE，t0示例属于Alpha版本
+中文读图：同一段负荷历史，在加入假日信息后，未来曲线的形状可以变化；阴影是预测区间。The Forecasting Company 的 t0 Alpha 示例原图（Apache-2.0），用于解释家族的协变量接口，不是 t0-gamma 的新评测。（[来源原图](https://huggingface.co/theforecastingcompany/t0-gamma)；[查看原尺寸](images/t0.webp)。）

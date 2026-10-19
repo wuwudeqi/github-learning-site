@@ -1,0 +1,122 @@
+[
+  {
+    "id": "2610.22194",
+    "title": "AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22194",
+    "selected": true,
+    "reason": "分离执行、分析与合成，扩大自动SFT可探索的数据操作范围。",
+    "readLevel": "原文核心方法、结果、基线和条件",
+    "checkedAt": "2026-10-19T07:35:10.593042+08:00"
+  },
+  {
+    "id": "2610.17560",
+    "title": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17560",
+    "selected": true,
+    "reason": "训练本地模型自己决定何时委托云端，并检查上下文保留与成本边界。",
+    "readLevel": "原文核心方法、结果、基线和条件",
+    "checkedAt": "2026-10-19T07:35:10.946233+08:00"
+  },
+  {
+    "id": "2610.22280",
+    "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22280",
+    "selected": false,
+    "reason": "同为强弱模型升级/协作，本期优先EdgeWise的成本分母与自主委托细节；非认定该论文无价值。",
+    "readLevel": "摘要、元数据和相关方法线索；不宣称全部全文细读",
+    "checkedAt": "2026-10-19T07:35:11.066179+08:00"
+  },
+  {
+    "id": "2610.21359",
+    "title": "SWE-at-Scale: Scalable Issue Synthesis from Historical Bug Fixes",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21359",
+    "selected": false,
+    "reason": "软件环境规模化候选，本期选择Data World展开显式真值与独立可恢复性审计，避免数据环境主题过密。",
+    "readLevel": "摘要、元数据和相关方法线索；不宣称全部全文细读",
+    "checkedAt": "2026-10-19T07:35:11.145933+08:00"
+  },
+  {
+    "id": "2610.20341",
+    "title": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views",
+    "date": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.20341",
+    "selected": true,
+    "reason": "解耦冻结的几何预测与可训练的高斯属性，检查监督角度与细化的影响。",
+    "readLevel": "原文核心方法、结果、基线和条件",
+    "checkedAt": "2026-10-19T07:35:11.359365+08:00"
+  },
+  {
+    "id": "2610.21656",
+    "title": "Data World: Scaling Data Environments from Scratch",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.21656",
+    "selected": true,
+    "reason": "显式机制、不可变真值和独立审计让合成分析任务具有可核验答案。",
+    "readLevel": "原文核心方法、结果、基线和条件",
+    "checkedAt": "2026-10-19T07:35:11.805371+08:00"
+  },
+  {
+    "id": "2610.19849",
+    "title": "DeltaStreamer: Towards Human-Like Agentic Streaming Video Understanding",
+    "date": "2026-10-14",
+    "sourceUrl": "https://arxiv.org/abs/2610.19849",
+    "selected": false,
+    "reason": "流式视频候选，已读摘要与方法入口，本期优先六项可完整核对的核心对照。",
+    "readLevel": "摘要、元数据和相关方法线索；不宣称全部全文细读",
+    "checkedAt": "2026-10-19T07:35:11.809264+08:00"
+  },
+  {
+    "id": "2610.22322",
+    "title": "Learning Self-Orchestration in Decentralized Agent Swarms",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22322",
+    "selected": true,
+    "reason": "通过出价、后向信用传递和反事实比较联合学习行动与自组织。",
+    "readLevel": "原文核心方法、结果、基线和条件",
+    "checkedAt": "2026-10-19T07:35:12.085039+08:00"
+  },
+  {
+    "id": "2610.16354",
+    "title": "Self-Distillation with Verbal Regularization",
+    "date": "2026-10-12",
+    "sourceUrl": "https://arxiv.org/abs/2610.16354",
+    "selected": false,
+    "reason": "VRSD近期已在项目栏介绍，按论文/实现主题去重。",
+    "readLevel": "摘要、元数据和相关方法线索；不宣称全部全文细读",
+    "checkedAt": "2026-10-19T07:35:12.268718+08:00"
+  },
+  {
+    "id": "2610.17666",
+    "title": "DeltaTTG: Training Multi-Turn Agents with a Token-to-Go Progress Meter",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.17666",
+    "selected": true,
+    "reason": "冻结的Token-to-Go估计器重分配终局优势，保留符号和按token计算的平均尺度。",
+    "readLevel": "原文核心方法、结果、基线和条件",
+    "checkedAt": "2026-10-19T07:35:12.481707+08:00"
+  },
+  {
+    "id": "2610.18484",
+    "title": "ReTerm: Recovery Training for Self-Improving Terminal Agents",
+    "date": "2026-10-13",
+    "sourceUrl": "https://arxiv.org/abs/2610.18484",
+    "selected": false,
+    "reason": "Agent记忆方向候选，摘要和元数据已核对；本期优先数据、委托、信用分配三组完整对照。",
+    "readLevel": "摘要、元数据和相关方法线索；不宣称全部全文细读",
+    "checkedAt": "2026-10-19T07:35:12.685588+08:00"
+  },
+  {
+    "id": "2610.22355",
+    "title": "OmniVerifier-C1: Decomposed Graded Verifier for Rule-Governed Generative World Modeling",
+    "date": "2026-10-15",
+    "sourceUrl": "https://arxiv.org/abs/2610.22355",
+    "selected": false,
+    "reason": "验证器候选，未完成与六篇同深度的基线核验，不凭标题或关注度入选。",
+    "readLevel": "摘要、元数据和相关方法线索；不宣称全部全文细读",
+    "checkedAt": "2026-10-19T07:35:12.906915+08:00"
+  }
+]

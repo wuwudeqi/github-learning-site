@@ -1,0 +1,7 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+const d=JSON.parse(readFileSync(new URL('./normalization-result.json',import.meta.url)));
+const colors=['#b74c2c','#267279','#405b91'];
+const rows=[['按步骤均值归一化',d.step_mean_normalization,d.token_mean_of_naive],['按 token 归一化',d.token_normalization_uncapped,1],['限制 2.5 后再分配',d.token_normalization_capped,d.token_mean_after_cap]];
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720"><rect width="1200" height="720" fill="#fbf7ee"/><g font-family="PingFang SC, sans-serif" fill="#183b40"><text x="56" y="70" font-size="34" font-weight="bold">同一条轨迹，平均权重要按 token 算</text><text x="56" y="112" font-size="21">合成输入：三步长度为 5、50、10 token；原始正权重为 0.8、0.1、0.1</text>${rows.map(([name,values,mean],r)=>`<text x="56" y="${179+r*160}" font-size="25">${name}</text>${values.map((v,i)=>`<text x="290" y="${170+r*160+i*31}" font-size="19">步骤 ${i+1}</text><rect x="370" y="${151+r*160+i*31}" width="${v*100}" height="22" rx="4" fill="${colors[i]}"/><text x="${380+v*100}" y="${170+r*160+i*31}" font-size="19">${v.toFixed(3)}</text>`).join('')}<text x="960" y="${194+r*160}" font-size="23">均值 ${mean.toFixed(3)}</text>`).join('')}<text x="56" y="666" font-size="21">本机 Python 实际输出 · 仅展示归一化；不是论文训练、成功率或性能实验</text></g></svg>`;
+writeFileSync(new URL('./normalization.svg',import.meta.url),svg);
+writeFileSync(new URL('./normalization.html',import.meta.url),`<!doctype html><meta charset="utf-8"><title>按 token 归一化</title><style>body{margin:0}svg{display:block}</style>${svg}`);

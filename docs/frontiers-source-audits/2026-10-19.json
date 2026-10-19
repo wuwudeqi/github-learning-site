@@ -1,0 +1,3243 @@
+{
+  "issueDate": "2026-10-19",
+  "status": "ready-for-publication",
+  "informationCutoff": "2026-10-19T08:01:34.190224+08:00",
+  "coverage": [
+    {
+      "provider": "OpenAI",
+      "url": "https://openai.com/news/rss.xml",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:22.826120+08:00",
+      "note": "官方RSS逐标题对照，另读API changelog与ChatGPT更新；BSP案例10月16日收录。Stack Overflow/Itau/Higgsfield等近期案例已报道；案例发布时间不当模型首发。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Anthropic",
+      "url": "https://www.anthropic.com/news",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:22.127923+08:00",
+      "note": "新闻、研究、工程入口及时间窗内标题已比较。10月18日公共利益基金入选；量子/ECDSA、评估者、新加坡、中期选举等与近期归档去重。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Google",
+      "url": "https://deepmind.google/discover/blog/",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:22.209202+08:00",
+      "note": "DeepMind、Google AI、Research及Cloud入口、Gemini应用记录交叉检查。收录购物车美国推出及YouTube音乐AI标记；Guided Vision10月1日、Connected Apps9月23日不当新闻。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Meta",
+      "url": "https://about.fb.com/news/",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:22.477755+08:00",
+      "note": "新闻和工程入口均读取；Forum系统与机会式推理为不同工程发布，分别入选。Muse Wonder系列与Muse Spark Open分别核对历史，不将模型导航名称当新事件。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Microsoft",
+      "url": "https://microsoft.ai/news/",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:22.140071+08:00",
+      "note": "Microsoft AI列表可读；Source首轮直连失败。补读具体公告：MAI-Base-2原日期10月15日、10月17日已报；Code1.1为10月7日、流式转写10月1日，排除旧闻。GitHub产品和安全更新另读原文。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "xAI",
+      "url": "https://x.ai/news?category=all",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:23.214575+08:00",
+      "note": "新闻列表逐标题比较；10月14日Grok Voice3已在10月15日报道，10月12日X统一订阅此前未选，本期说明Grok额度等具体变化。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "NVIDIA",
+      "url": "https://nvidianews.nvidia.com/news",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:22.556011+08:00",
+      "note": "Newsroom与博客交叉检查；Mercedes合作后续入选。RTX Spark发售、Volvo合作与近期归档去重，不把后续庆祝文章当另一次发布。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Alibaba",
+      "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:23.395846+08:00",
+      "note": "百炼新模型记录可读，最新可提取条目10月9日Qwen-Image2.1-Turbo，早于新闻7天窗口；Qwen博客动态壳、集团入口及HF/GitHub补线索，不宣称覆盖全部Qwen渠道。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "DeepSeek",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:22.965947+08:00",
+      "note": "更新页明确10月17日Search/Fetch与Flash1017同轮更新，10月18日已合并报道，本期不拆条重复。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "ByteDance",
+      "url": "https://seed.bytedance.com/en/research",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:23.419670+08:00",
+      "note": "Seed研究列表可读，可提取的最近项为9月28日；不能据此推断豆包全部渠道没有新发布。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Tencent",
+      "url": "https://hunyuan.tencent.com/",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:23.780628+08:00",
+      "note": "混元首页首轮仅动态壳，Jina复查取得研究和产品内容，可提取研究日期截至9月21日；页面响应时间不当产品首发。HF腾讯DSpine权重与实现另核验，仍不代表全部产品渠道。 补查Hy4研究页仍Loading，随后用web读取集团公告正文，确认原发布日期2026-08-28并排除。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖",
+      "supplementalSources": [
+        "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/"
+      ]
+    },
+    {
+      "provider": "Baidu",
+      "url": "https://ai.baidu.com/support/news?module=AIOfficialWeb&tag=2",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:34.190224+08:00",
+      "note": "AI开放平台新闻入口可读，最新可提取条目为9月11日；此入口不能代表文心全部产品。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Zhipu",
+      "url": "https://docs.bigmodel.cn/cn/update/new-releases",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:23.851323+08:00",
+      "note": "开放文档更新页可提取最新记录8月26日；GLM-Legal近期开启已在10月18日归档，未凭旧列表断言无更新。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "Kimi",
+      "url": "https://www.kimi.com/help/kimi-work/release-notes",
+      "status": "read",
+      "checkedAt": "2026-10-19T08:01:25.882947+08:00",
+      "note": "Kimi Work发布日志已读，3.2.17为10月15日、3.2.16为10月12日，主要显示/体验修复；未包装成重大模型新品。范围限已访问入口。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    },
+    {
+      "provider": "MiniMax",
+      "url": "https://www.minimax.io/news",
+      "status": "partial",
+      "checkedAt": "2026-10-19T08:01:24.117667+08:00",
+      "note": "新闻列表是导航壳；补读Speech2.8、Music3、H3具体页面，元数据分别指向1月、8月、7月，导航NEW不能作为当天发布日期。",
+      "receipt": "docs/frontiers-source-audits/2026-10-19-evidence/source-register.json",
+      "scope": "已访问公开入口与具体补查；不代表全渠道覆盖"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "glimpse",
+      "title": "Glimpse 把视觉信息留在推理过程中",
+      "eventDate": "2026-10-16",
+      "sourceUrl": "https://elorian.ai/blog/introducing-glimpse",
+      "selected": true,
+      "order": 1,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新视觉推理模型开放研究预览与API；关注可回看视觉证据的工作方式。",
+      "subjectKeys": [
+        "event:glimpse"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879632+08:00",
+      "image": "glimpse-concept.webp",
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-16",
+        "newFact": "新视觉推理模型开放研究预览与API；关注可回看视觉证据的工作方式。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Elorian 发布 Glimpse 研究预览，提供聊天入口与 API。它要改善的问题是：模型看完图片后，如果主要靠文字继续推理，细小的空间关系与运动线索可能被过早压缩掉。团队描述的方向是在思考中继续保留、操作和回看视觉表示，让图像不只充当开场输入。公告没有公开基础模型名称，也没有宣布开放权重；“基于开放模型后训练”不能写成 Glimpse 本身已经开源。\n\n这种工作方式与只给图片写一次说明有区别。系统可以写代码、裁切图像、回放视频，并让子代理交换视觉材料。对“列车是否正在减速”这类问题，重要线索是多个时刻的位置变化；对工具开合和遮挡关系，关键是回到局部看细节。官方视频展示了列车进站分析，但页面中的轮胎、钳子静态示例同时含经过整理的参考答案，不能把它们当作完整、逐步记录的真实模型思维轨迹。\n\n基准表也需要按任务看。以官方最高思考强度、各模型原生运行框架为条件，Glimpse 在 WGO 为 42.70，表中 GPT-6 Astra 为 39.42；在 VideoMME v2 则是 56.68 对 64.06。这里没有一个“全面领先”的结论。不同框架、推理预算和题型都会改变成绩，当前证据是团队自己的比较，还不是本站复现或独立统一评测。\n\n开发者可以把它看成视觉调查工具的候选：先保留图片或视频原件，再检查回答能否定位到具体帧、区域和证据。官方机器人案例把它接入 π0.5，用一个任务比较规划成本；单个演示不足以证明通用机器人能力，直接输出机器人动作仍被列为后续方向。它也不意味着用户可以省去环境验证与动作安全约束。\n\n为什么现在值得看：新模型把“视觉信息在推理中何时丢失”变成了可检查的工程问题。官方 API 单价为每百万输入/输出 token 0.60/3 美元，但团队也承认 token 效率仍要改进，单价低不能直接推出一次复杂任务更便宜。适合先做小规模、有标准答案的视觉任务比较。标签：新近创新；验证程度：官方基准和演示，热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "为什么现在值得看：新模型把“视觉信息在推理中何时丢失”变成了可检查的工程问题。官方 API 单价为每百万输入/输出 token 0.60/3 美元，但团队也承认 token 效率仍要改进，单价低不能直接推出一次复杂任务更便宜。适合先做小规模、有标准答案的视觉任务比较。标签：新近创新；验证程度：官方基准和演示，热度待验证。",
+        "sourceUrl": "https://elorian.ai/blog/introducing-glimpse",
+        "observedAt": "2026-10-19T08:09:28.892163+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.892807+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "figma-specs",
+      "title": "Figma Specs 把需求、画布与代码上下文放到同一处",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://www.figma.com/blog/introducing-figma-specs/",
+      "selected": true,
+      "order": 2,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "Specs与同轮代码能力把需求说明、设计节点和代理协作连接起来。",
+      "subjectKeys": [
+        "event:figma-specs"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879805+08:00",
+      "image": "figma-specs.webp",
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-15",
+        "newFact": "Specs与同轮代码能力把需求说明、设计节点和代理协作连接起来。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Figma 推出 Specs，试图解决设计与编码代理之间最常见的断层：人看得到画布和讨论，代理拿到的却只有几句文字，随后靠猜测补全交互。Specs 是放在协作画布中的 Markdown 文档，可以保留需求、决策、评论，并嵌入设计画框、FigJam 内容与其他节点。它的价值在于让设计背景与实现任务之间有可反复更新的具体连接。\n\n一种可理解的流程是：先把产品约束和交互细节写入 spec，嵌入关键界面，再请代理读取已有实现、生成改动并把疑问写回评论。公告展示通过 GitHub 连接器组织技术说明、用 Hex 分析数据并留下评论，以及从说明创建组件。这里的截图是官方操作示例；并不证明所有仓库、数据源或复杂设计系统都能一次成功，也不等于本站已经跑过整条链路。\n\nSpecs 与此前纯文本提示的区别，在于文档可以指向具体设计对象，协作者能在同一位置修订要求。编码代理通过 MCP 获取关联上下文，之后仍需要核对实际组件、状态、权限与数据接口。对于“看起来像”的界面生成，最容易漏掉的是加载、空状态、失败重试以及已有组件约束；把这些放进可定位的 spec，比只追加一句“保持风格一致”更容易检查。\n\n同轮发布还包括进入开放测试的 code layers：代码生成的交互内容可以出现在设计环境中。这里把它们合并为一次设计与代码协作更新，不拆成两条新闻。Specs 不是自动把所有设计稿变成可上线软件的保证；代码层的交互效果、真实项目依赖与生产环境集成仍是不同阶段。使用前应核对当前账号、连接器权限和测试版入口。\n\n为什么现在值得看：它为设计师和开发者提供了一个能持续维护的交接物，而不是一次性导出截图。读者可以用一个含两个页面、一个失败状态的小任务测试：修改 spec 后，代理是否真的更新对应实现，评论能否回到原设计位置。标签：新近实用；验证程度：官方说明与界面演示。公开材料尚不足以证明团队效率提升幅度，热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "为什么现在值得看：它为设计师和开发者提供了一个能持续维护的交接物，而不是一次性导出截图。读者可以用一个含两个页面、一个失败状态的小任务测试：修改 spec 后，代理是否真的更新对应实现，评论能否回到原设计位置。标签：新近实用；验证程度：官方说明与界面演示。公开材料尚不足以证明团队效率提升幅度，热度待验证。",
+        "sourceUrl": "https://www.figma.com/blog/introducing-figma-specs/",
+        "observedAt": "2026-10-19T08:09:28.892811+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.893253+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "goodfire-clean",
+      "title": "Goodfire 重新检查“一个神经元混装多个概念”的解释",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://already-clean.goodfire.com/",
+      "selected": true,
+      "order": 3,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新研究随笔提出可直接检验的机制解释，并明确仍是工作假说。",
+      "subjectKeys": [
+        "event:goodfire-clean"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879810+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-15",
+        "newFact": "新研究随笔提出可直接检验的机制解释，并明确仍是工作假说。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Goodfire 的 Nick Cammarata 发表研究随笔《Neural Networks Are Already Clean》，重新审视机制可解释性中的一个常见判断：单个神经元看起来响应不相干对象，是否就说明模型把大量独立概念任意叠放在同一位置？作者认为，一部分经典例子可能是对共同视觉结构、递归泛化或模型架构问题的误读。这是一篇明确标为工作假说的研究随笔，不是“可解释性已经解决”的公告。\n\n直觉上，观察到同一神经元对猫和汽车都活跃，还不能确定它分别存了一个“猫概念”和一个“车概念”。它也可能响应两类图像共有的形状。作者重新检查著名例子，提出尖锐与圆润形状等解释，并强调同时检查强正激活、负激活以及上下游连接。只挑几张最强响应图，很容易让解释迎合观察者的命名习惯。\n\n随笔还讨论对 InceptionV1 与不同尺度卷积网络的重新训练。作者把早期网络后层的混乱，与架构限制和分析工具不足联系起来；加入较现代的结构后，报告同等模型规模、训练数据条件下有更清晰的解释。这里的判断依赖作者如何定义“可理解”、检查哪些激活与如何验证假说，不能把视觉网络中的例子直接推广为所有语言模型都不存在叠加表示。\n\n语言模型部分尤其需要保留限定。文章给出 Qwen3-32B 的初步审计估计：约九成神经元极性具有一个主要作用，另有相关的多重作用和未理解部分。作者同时说明强激活阈值与审计方式会影响结果，配套技术论文尚待发布。因此，百分比适合当作待复核的研究线索，不能当作模型安全性或完整可解释程度的认证。\n\n对研究读者，最有用的是实验路线的改变：先提出神经元或电路的具体解释，再用新输入、因果干预与上下游检查寻找反例，而不是只展示一组“看起来符合”的样本。为什么现在值得看：它挑战了常用分析工具背后的诊断前提，提出了可比较的新问题。标签：新近创新；验证程度：作者实验与初步审计，尚缺本期独立复现；热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "对研究读者，最有用的是实验路线的改变：先提出神经元或电路的具体解释，再用新输入、因果干预与上下游检查寻找反例，而不是只展示一组“看起来符合”的样本。为什么现在值得看：它挑战了常用分析工具背后的诊断前提，提出了可比较的新问题。标签：新近创新；验证程度：作者实验与初步审计，尚缺本期独立复现；热度待验证。",
+        "sourceUrl": "https://already-clean.goodfire.com/",
+        "observedAt": "2026-10-19T08:09:28.893257+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.893689+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "google-universal-cart",
+      "title": "Google 统一购物车开始在美国 Search 与 Gemini 推出",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
+      "selected": true,
+      "order": 4,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "五月预告后进入美国推出阶段，保存购物意图与实际结账边界更清楚。",
+      "subjectKeys": [
+        "event:google-universal-cart"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879813+08:00",
+      "image": "cart.webp",
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-15",
+        "newFact": "五月预告后进入美国推出阶段，保存购物意图与实际结账边界更清楚。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Google 宣布统一购物车开始在美国的 Search 与 Gemini 推出。这个功能曾在 5 月预告，本次值得记录的是进入推出阶段，而不是把旧预告再写成新产品。用户在搜索或对话中找到商品后，可以保存到同一个购物车，稍后接着比较、检查价格和库存，再选择完成购买的位置。地区与商家支持范围仍有限，不能写成全球所有商店都已接通。\n\n它把过去分散的购物步骤连在一起：发现商品、跨商家保存、跟踪变化、查看可用优惠，再到结账。Google 表示购物图谱提供价格和库存信息，购物车还可展示与 Wallet 中支付卡相关的权益及促销。对用户而言，关键不只是“让 AI 推荐一件商品”，而是过几天回来时，先前选择、商家与当前状态仍能对上。\n\n官方截图展示优惠与卡片权益出现在购物车附近。读图时应注意这些是待用户确认的具体优惠条件，不能把示例金额当成所有订单都能获得的节省。价格、可售状态、优惠有效期以及最终运费也可能变化；列表中出现商品并不代表它已经被购买。只有把最后结账环节核对清楚，保存购物意图才真正变成可完成的交易。\n\n结账可以通过支持商家的 Google Pay 流程，也可以转到商家完成。相关连接依赖 Universal Commerce Protocol；商家仍是销售方，订单确认与售后也有相应归属。这个边界很重要：统一界面并不自动改变履约责任，也不是让代理无条件地替人自主消费。对于研究 Agent 工作流的人，这提供了一个观察“搜索结果、持续状态、授权动作”如何连接的实际产品案例。\n\n为什么现在值得看：购物代理开始把一次性回答变成可延续的任务状态，同时保留用户确认和商家结账入口。适合关注消费型 Agent 的产品设计、状态同步与授权边界。标签：新近实用；验证程度：官方推出说明与界面演示，本站没有下单实测，也没有验证节省金额或覆盖全部商家；热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "为什么现在值得看：购物代理开始把一次性回答变成可延续的任务状态，同时保留用户确认和商家结账入口。适合关注消费型 Agent 的产品设计、状态同步与授权边界。标签：新近实用；验证程度：官方推出说明与界面演示，本站没有下单实测，也没有验证节省金额或覆盖全部商家；热度待验证。",
+        "sourceUrl": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
+        "observedAt": "2026-10-19T08:09:28.893691+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.894164+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "amazon-bee",
+      "title": "Amazon Bee 新设备把随身记录与服务连接分成不同层级",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+      "selected": true,
+      "order": 5,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "Frontier已可购买，Eclipse仍待上市；免费记录与Pro连接能力需分开。",
+      "subjectKeys": [
+        "event:amazon-bee"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879815+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-15",
+        "newFact": "Frontier已可购买，Eclipse仍待上市；免费记录与Pro连接能力需分开。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Amazon 介绍 Bee Frontier 与 Bee Eclipse 两款个人 AI 设备。Frontier 可以佩戴或夹在衣物上，官方标注 IP67、最长七天续航和 USB-C 充电，价格 74.99 美元，已提供购买入口。Eclipse 则是贴在手机上的磁吸形态，标注最长二十一天续航、99.99 美元，但状态是即将上市。把两者都写成“已发售”会误导读者。\n\n这类设备的基本用途是把日常谈话整理成转录、摘要和待办，再供用户回看。一个具体场景是会议结束后找出承诺的动作和时间，而不是从录音头尾重新听一遍。这里仍然要区分记录、提取和执行：系统整理出待办，不代表它已替用户完成，也不代表摘要不会遗漏条件。文章中的使用情境来自官方介绍，本期没有录音或识别质量实测。\n\n收费层级也影响实际能力。基本摘要、回顾与十四天记忆包含在基础体验中；可选 Bee Pro 为每月 11.99 美元，提供更丰富的记忆与 Alexa+、Amazon.com 等连接，并有试用安排。若读者只想整理对话，不应把需要订阅的跨服务能力算作设备默认功能。连接服务前也需要逐项理解账号授权与可执行动作。\n\n隐私说明是本次产品阅读中必须保留的一部分。Amazon 表示原始音频在实时处理后删除，转录涉及设备密钥，用户可以删除记录，并通过麦克风按钮与指示状态控制采集。这里转述的是厂商设计与承诺，不能延伸成“整个处理都在本机”“任何内容都不保存”或“已经通过本站独立隐私审计”。转录与音频是不同的数据对象。\n\n为什么现在值得看：新硬件把随身记录扩展到不同佩戴方式，但最值得比较的是采集控制、记忆期限、服务连接和当前可用状态。对于研究长时记忆 Agent 的读者，它展示了数据获取与行动授权之间仍需明确分层。标签：新近实用；验证程度：官方规格与说明，续航、识别准确率及隐私实现未独立验证，热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "为什么现在值得看：新硬件把随身记录扩展到不同佩戴方式，但最值得比较的是采集控制、记忆期限、服务连接和当前可用状态。对于研究长时记忆 Agent 的读者，它展示了数据获取与行动授权之间仍需明确分层。标签：新近实用；验证程度：官方规格与说明，续航、识别准确率及隐私实现未独立验证，热度待验证。",
+        "sourceUrl": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+        "observedAt": "2026-10-19T08:09:28.894166+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.894625+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "anthropic-public-benefit",
+      "title": "Anthropic 计划为公共利益基金划拨股份",
+      "eventDate": "2026-10-18",
+      "sourceUrl": "https://www.anthropic.com/news/public-benefit-fund",
+      "selected": true,
+      "order": 6,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新的权益分配承诺，须区分待批准安排与已交付现金。",
+      "subjectKeys": [
+        "event:anthropic-public-benefit"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879818+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-18",
+        "newFact": "新的权益分配承诺，须区分待批准安排与已交付现金。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Anthropic 公布公共利益基金安排：拟划拨公司 5% 股份，仍需股东批准；当估值超过基线并增长时，董事会还可按条件追加。基金是全资有限责任公司，不能直接称作免税非营利基金会。与创始人既有捐赠承诺合计的约两成权益，也不是本次已到账的现金。为什么现在值得看：AI 公司的收益分配开始进入具体股权安排，但批准、执行和未来用途仍要分别追踪。标签：新近实用；验证程度：官方承诺，尚待落实，热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "Anthropic 公布公共利益基金安排：拟划拨公司 5% 股份，仍需股东批准；当估值超过基线并增长时，董事会还可按条件追加。基金是全资有限责任公司，不能直接称作免税非营利基金会。与创始人既有捐赠承诺合计的约两成权益，也不是本次已到账的现金。为什么现在值得看：AI 公司的收益分配开始进入具体股权安排，但批准、执行和未来用途仍要分别追踪。标签：新近实用；验证程度：官方承诺，尚待落实，热度待验证。",
+        "sourceUrl": "https://www.anthropic.com/news/public-benefit-fund",
+        "observedAt": "2026-10-19T08:09:28.894628+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.895054+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "opencode-console-incident",
+      "title": "OpenCode 披露影响部分 Console 用户的安全事件",
+      "eventDate": "2026-10-18",
+      "sourceUrl": "https://twitter.com/opencode/status/2111519637049319818",
+      "selected": true,
+      "order": 7,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "北京时间10月18日官方更新确认影响范围与事件仍在处置。",
+      "subjectKeys": [
+        "event:opencode-console-incident"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879821+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-18",
+        "newFact": "北京时间10月18日官方更新确认影响范围与事件仍在处置。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "OpenCode 在 UTC 10月17日18:08（北京时间2026-10-18 02:08）更新说明，安全事件影响约 1.4% 的 Console 用户，涉及部分绑定外部提供方的用户；官方称已邮件通知受影响者，正与 Anthropic、OpenAI、Google 处理，事件尚未结束。“与大规模蒸馏攻击有关”是官方当前描述，不是已经公开验证的完整根因。为什么现在值得看：托管控制台保存的外部服务连接有独立风险边界，不能把此事泛化为所有本地 CLI 用户均受影响或已经修复。标签：新近实用；验证程度：官方阶段性通报。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "OpenCode 在 UTC 10月17日18:08（北京时间2026-10-18 02:08）更新说明，安全事件影响约 1.4% 的 Console 用户，涉及部分绑定外部提供方的用户；官方称已邮件通知受影响者，正与 Anthropic、OpenAI、Google 处理，事件尚未结束。“与大规模蒸馏攻击有关”是官方当前描述，不是已经公开验证的完整根因。为什么现在值得看：托管控制台保存的外部服务连接有独立风险边界，不能把此事泛化为所有本地 CLI 用户均受影响或已经修复。标签：新近实用；验证程度：官方阶段性通报。",
+        "sourceUrl": "https://twitter.com/opencode/status/2111519637049319818",
+        "observedAt": "2026-10-19T08:09:28.895056+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.895483+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "youtube-music-ai-label",
+      "title": "YouTube Music 开始标识主要由 AI 创作的音乐",
+      "eventDate": "2026-10-14",
+      "sourceUrl": "https://blog.youtube/news-and-events/youtube-music-ai-labels/",
+      "selected": true,
+      "order": 8,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "音乐生成内容的披露机制进入播放器层。",
+      "subjectKeys": [
+        "event:youtube-music-ai-label"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879823+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-14",
+        "newFact": "音乐生成内容的披露机制进入播放器层。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "YouTube Music 宣布为主要由 AI 生成的音乐增加标识，涉及主要由 AI 制作的作曲与人声，用户可以在播放界面进一步查看。平台结合合作方信息与检测工具推进，后续还计划扩展到主 YouTube。为什么现在值得看：生成音乐的分发开始要求更清楚的来源披露；标识不等于证明歌曲的权利状态，也不能覆盖一切 AI 辅助制作。标签：新近实用；验证程度：官方产品说明，检测准确率与完整覆盖尚无本期独立证据。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "YouTube Music 宣布为主要由 AI 生成的音乐增加标识，涉及主要由 AI 制作的作曲与人声，用户可以在播放界面进一步查看。平台结合合作方信息与检测工具推进，后续还计划扩展到主 YouTube。为什么现在值得看：生成音乐的分发开始要求更清楚的来源披露；标识不等于证明歌曲的权利状态，也不能覆盖一切 AI 辅助制作。标签：新近实用；验证程度：官方产品说明，检测准确率与完整覆盖尚无本期独立证据。",
+        "sourceUrl": "https://blog.youtube/news-and-events/youtube-music-ai-labels/",
+        "observedAt": "2026-10-19T08:09:28.895485+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.895931+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "x-unified-subscription",
+      "title": "X 推出连接 Grok、GrokBot 与 Cursor 的订阅方案",
+      "eventDate": "2026-10-12",
+      "sourceUrl": "https://x.ai/news/x-subscription",
+      "selected": true,
+      "order": 9,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "统一订阅和共享用量改变产品入口；旧订阅迁移非自动全部完成。",
+      "subjectKeys": [
+        "event:x-unified-subscription"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879825+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-12",
+        "newFact": "统一订阅和共享用量改变产品入口；旧订阅迁移非自动全部完成。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "xAI 公布连接 Grok、GrokBot、Cursor 与 X 的订阅方案，Grok 用量可在相应产品间共享。新用户自公告日开始采用新方案，既有用户可以保留现有安排或按推出进度切换；第三方模型并非都包含在共享额度内，相关用量另有规则。为什么现在值得看：编码工具与通用助手开始共享订阅入口，选套餐需要按实际模型与任务核算。标签：新近实用；验证程度：官方方案，全球推出进度与单用户权益以账号页面为准，热度待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "xAI 公布连接 Grok、GrokBot、Cursor 与 X 的订阅方案，Grok 用量可在相应产品间共享。新用户自公告日开始采用新方案，既有用户可以保留现有安排或按推出进度切换；第三方模型并非都包含在共享额度内，相关用量另有规则。为什么现在值得看：编码工具与通用助手开始共享订阅入口，选套餐需要按实际模型与任务核算。标签：新近实用；验证程度：官方方案，全球推出进度与单用户权益以账号页面为准，热度待验证。",
+        "sourceUrl": "https://x.ai/news/x-subscription",
+        "observedAt": "2026-10-19T08:09:28.895934+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.896346+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "meta-forum-engineering",
+      "title": "Meta 披露 Forum 的 AI 原生工程流程",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "selected": true,
+      "order": 10,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新工程复盘说明测试、UI检查与人工放行，而非把9月应用上线当新发布。",
+      "subjectKeys": [
+        "event:meta-forum-engineering"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879828+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-15",
+        "newFact": "新工程复盘说明测试、UI检查与人工放行，而非把9月应用上线当新发布。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Meta 发布 Forum 工程复盘，介绍规则、技能、命令和 hooks 如何组织代理开发，并把构建、测试、界面检查与人工确认连成验收流程。Forum 应用此前已经推出，本次新事实是工程方法披露。为什么现在值得看：代理产出代码后，团队仍需定义什么算完成，以及谁能批准上线。文章是内部实践总结，不能从中推出所有团队的开发效率倍数，也不能把自主开发目标当成已实现的无人流程。标签：新近实用；验证程度：官方工程案例。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "Meta 发布 Forum 工程复盘，介绍规则、技能、命令和 hooks 如何组织代理开发，并把构建、测试、界面检查与人工确认连成验收流程。Forum 应用此前已经推出，本次新事实是工程方法披露。为什么现在值得看：代理产出代码后，团队仍需定义什么算完成，以及谁能批准上线。文章是内部实践总结，不能从中推出所有团队的开发效率倍数，也不能把自主开发目标当成已实现的无人流程。标签：新近实用；验证程度：官方工程案例。",
+        "sourceUrl": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+        "observedAt": "2026-10-19T08:09:28.896348+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.896824+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "meta-opportunistic-inference",
+      "title": "Meta 用空闲推理容量扩大候选或切换大模型",
+      "eventDate": "2026-10-12",
+      "sourceUrl": "https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/",
+      "selected": true,
+      "order": 11,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新系统报告给出两种可回收的额外推理策略。",
+      "subjectKeys": [
+        "event:meta-opportunistic-inference"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879830+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-12",
+        "newFact": "新系统报告给出两种可回收的额外推理策略。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "Meta 介绍如何把短暂空闲容量用于广告推荐：RMA 让更多候选进入排序，需要 CPU 与 GPU；SBM 在候选量不变时切换更大模型，主要消耗额外 GPU。系统通过隔离基础容量、负载反馈与及时回收避免影响常规服务。为什么现在值得看：额外算力的价值取决于瓶颈位置，不能只看 GPU 是否空闲。标签：新近实用；验证程度：官方系统报告，本站未复现，也不把内部收益直接套到其他推荐或大模型服务。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "Meta 介绍如何把短暂空闲容量用于广告推荐：RMA 让更多候选进入排序，需要 CPU 与 GPU；SBM 在候选量不变时切换更大模型，主要消耗额外 GPU。系统通过隔离基础容量、负载反馈与及时回收避免影响常规服务。为什么现在值得看：额外算力的价值取决于瓶颈位置，不能只看 GPU 是否空闲。标签：新近实用；验证程度：官方系统报告，本站未复现，也不把内部收益直接套到其他推荐或大模型服务。",
+        "sourceUrl": "https://engineering.fb.com/2026/10/12/ml-applications/turning-opportunistic-ai-inference-capacity-into-better-ads-recommendations/",
+        "observedAt": "2026-10-19T08:09:28.896827+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.897364+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "nvidia-mercedes-next",
+      "title": "NVIDIA 与奔驰扩大下一代自动驾驶合作",
+      "eventDate": "2026-10-16",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/mercedes-benz-and-nvidia-expand-strategic-partnership-to-advance-safe-highly-automated-driving-in-the-next-decade",
+      "selected": true,
+      "order": 12,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新的长期平台合作规划；量产与获准运营状态不可混写。",
+      "subjectKeys": [
+        "event:nvidia-mercedes-next"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879832+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-16",
+        "newFact": "新的长期平台合作规划；量产与获准运营状态不可混写。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "奔驰与 NVIDIA 宣布扩大合作，把 MB.OS、Hyperion 计算与传感平台、Alpamayo 推理栈和 Halos 安全体系纳入下一代自动驾驶路线。公告涉及未来高度自动化车辆及 L4 出行场景规划。为什么现在值得看：推理模型正在进入整车系统设计，但模型能力只是感知、控制、冗余和监管条件中的一部分。这是合作与研发路线，不能写成新系统已经获准在所有道路无人运营。标签：新近实用；验证程度：联合公告，后续交付待验证。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "奔驰与 NVIDIA 宣布扩大合作，把 MB.OS、Hyperion 计算与传感平台、Alpamayo 推理栈和 Halos 安全体系纳入下一代自动驾驶路线。公告涉及未来高度自动化车辆及 L4 出行场景规划。为什么现在值得看：推理模型正在进入整车系统设计，但模型能力只是感知、控制、冗余和监管条件中的一部分。这是合作与研发路线，不能写成新系统已经获准在所有道路无人运营。标签：新近实用；验证程度：联合公告，后续交付待验证。",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/mercedes-benz-and-nvidia-expand-strategic-partnership-to-advance-safe-highly-automated-driving-in-the-next-decade",
+        "observedAt": "2026-10-19T08:09:28.897366+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.897902+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "github-app-least-privilege",
+      "title": "GitHub Apps 拆出创建仓库和管理安装范围的权限",
+      "eventDate": "2026-10-13",
+      "sourceUrl": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
+      "selected": true,
+      "order": 13,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "更细粒度权限降低自动化工具不必要的管理能力。",
+      "subjectKeys": [
+        "event:github-app-least-privilege"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879835+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-13",
+        "newFact": "更细粒度权限降低自动化工具不必要的管理能力。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "GitHub Apps 新增 repository_creation:write 等更细权限，使创建仓库不必同时取得包含删除、转移在内的宽泛管理能力；安装仓库范围管理也有独立权限，并补充短期令牌迁移选项。为什么现在值得看：给编码代理或内部平台授权时，可以按真正需要的动作拆分权限，而不是为了一个创建操作授予完整管理员能力。标签：新近实用；验证程度：官方发布说明，实际组织权限与 GitHub Enterprise Server 版本仍需核对。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "GitHub Apps 新增 repository_creation:write 等更细权限，使创建仓库不必同时取得包含删除、转移在内的宽泛管理能力；安装仓库范围管理也有独立权限，并补充短期令牌迁移选项。为什么现在值得看：给编码代理或内部平台授权时，可以按真正需要的动作拆分权限，而不是为了一个创建操作授予完整管理员能力。标签：新近实用；验证程度：官方发布说明，实际组织权限与 GitHub Enterprise Server 版本仍需核对。",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management",
+        "observedAt": "2026-10-19T08:09:28.897904+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.898370+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "github-secret-anthropic",
+      "title": "GitHub 扩展 Anthropic 密钥的推送保护",
+      "eventDate": "2026-10-13",
+      "sourceUrl": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
+      "selected": true,
+      "order": 14,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新版Anthropic密钥默认拦截范围与新增供应商检测明确。",
+      "subjectKeys": [
+        "event:github-secret-anthropic"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879837+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-13",
+        "newFact": "新版Anthropic密钥默认拦截范围与新增供应商检测明确。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "GitHub 为新的 Anthropic 服务与用户密钥格式启用默认推送保护，并扩展 Cloudsmith 检测及 Salesforce 合作。适用前提是仓库已启用相应 secret scanning；免费公共仓库包含在相关覆盖内，不能说所有未启用功能的私有仓库都会自动拦截。为什么现在值得看：AI 开发仓库中的令牌格式在变化，检测规则也要跟上。标签：新近实用；验证程度：官方说明。推送拦截是泄露前防线，不能代替已泄露密钥的撤销与轮换。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "GitHub 为新的 Anthropic 服务与用户密钥格式启用默认推送保护，并扩展 Cloudsmith 检测及 Salesforce 合作。适用前提是仓库已启用相应 secret scanning；免费公共仓库包含在相关覆盖内，不能说所有未启用功能的私有仓库都会自动拦截。为什么现在值得看：AI 开发仓库中的令牌格式在变化，检测规则也要跟上。标签：新近实用；验证程度：官方说明。推送拦截是泄露前防线，不能代替已泄露密钥的撤销与轮换。",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
+        "observedAt": "2026-10-19T08:09:28.898372+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.898855+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "benefit-street-case",
+      "title": "BSP 披露 Codex 支持信贷资料分析的内部案例",
+      "eventDate": "2026-10-16",
+      "sourceUrl": "https://openai.com/index/benefit-street-partners",
+      "selected": true,
+      "order": 15,
+      "kind": "news",
+      "priority": "normal",
+      "reason": "新披露的真实内部工作流保留了初筛与人工审阅的分工。",
+      "subjectKeys": [
+        "event:benefit-street-case"
+      ],
+      "checkedAt": "2026-10-19T07:59:37.879839+08:00",
+      "image": null,
+      "selectionEvidence": {
+        "lane": "新近实用 / 新近创新",
+        "timeWindow": "新闻：2026-10-12至19，先24小时再72小时/7天；仅日期来源保留日期精度",
+        "originalDate": "2026-10-16",
+        "newFact": "新披露的真实内部工作流保留了初筛与人工审阅的分工。",
+        "heatSignals": [],
+        "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+        "valueEvidence": "OpenAI 发布 Benefit Street Partners 的客户案例：团队用公开 SEC 文件制作贷款估值比较看板，也用内部工具分析三百页以上的信贷协议。客户报告首轮分析约二十分钟，之后仍需一小时以上人工审阅；持续监控整个组合仍是后续目标。为什么现在值得看：长文档工具的价值可以落在资料归并与追问响应，最终判断仍有明确人工环节。标签：新近实用；验证程度：厂商发布的客户自报案例，无独立对照，不能外推为投资收益或普遍节省比例。",
+        "validationLevel": "官方文档或作者实验，本站未运行",
+        "limitations": "OpenAI 发布 Benefit Street Partners 的客户案例：团队用公开 SEC 文件制作贷款估值比较看板，也用内部工具分析三百页以上的信贷协议。客户报告首轮分析约二十分钟，之后仍需一小时以上人工审阅；持续监控整个组合仍是后续目标。为什么现在值得看：长文档工具的价值可以落在资料归并与追问响应，最终判断仍有明确人工环节。标签：新近实用；验证程度：厂商发布的客户自报案例，无独立对照，不能外推为投资收益或普遍节省比例。",
+        "sourceUrl": "https://openai.com/index/benefit-street-partners",
+        "observedAt": "2026-10-19T08:09:28.898857+08:00",
+        "candidatePath": "官方近期标题与中英文媒体/HN线索 → 原始公告及日期 → 历史去重",
+        "deduplication": {
+          "window7": "2026-10-12..2026-10-18",
+          "window30": "2026-09-19..2026-10-18",
+          "sameCanonicalSource": [],
+          "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+        }
+      },
+      "editorialReview": {
+        "checkedAt": "2026-10-19T08:09:28.899285+08:00",
+        "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+      }
+    },
+    {
+      "id": "prior-0",
+      "title": "MAI-Base-2 完成预训练，后训练仍在进行",
+      "eventDate": null,
+      "sourceUrl": "https://microsoft.ai/?post_type=new",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-17",
+      "checkedAt": "2026-10-19T08:09:28.911557+08:00"
+    },
+    {
+      "id": "prior-1",
+      "title": "Grok Voice 3.0：语音更自然，业务任务仍要单独评估",
+      "eventDate": null,
+      "sourceUrl": "https://x.ai/news/grok-voice-3",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-15",
+      "checkedAt": "2026-10-19T08:09:28.911656+08:00"
+    },
+    {
+      "id": "prior-2",
+      "title": "Meta 开放 Muse Spark Open：大模型权重也需要算完整部署账",
+      "eventDate": null,
+      "sourceUrl": "https://research.meta.ai/blog/muse-spark-open",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-16",
+      "checkedAt": "2026-10-19T08:09:28.911754+08:00"
+    },
+    {
+      "id": "prior-3",
+      "title": "RTX Spark Windows PC 开始销售，峰值算力要与实际任务分开",
+      "eventDate": null,
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-rtx-spark-pcs-available-today-a-new-beginning-for-windows-pcs",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-17",
+      "checkedAt": "2026-10-19T08:09:28.911849+08:00"
+    },
+    {
+      "id": "prior-4",
+      "title": "Anthropic 扩大独立评估者的内部访问范围",
+      "eventDate": null,
+      "sourceUrl": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-16",
+      "checkedAt": "2026-10-19T08:09:28.911947+08:00"
+    },
+    {
+      "id": "prior-5",
+      "title": "Anthropic 在新加坡扩展团队，并明确区域推理入口",
+      "eventDate": null,
+      "sourceUrl": "https://www.anthropic.com/news/singapore-office-opening",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-15",
+      "checkedAt": "2026-10-19T08:09:28.912045+08:00"
+    },
+    {
+      "id": "prior-6",
+      "title": "新加坡端侧诈骗识别采用两级筛查，计划分阶段落地",
+      "eventDate": null,
+      "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-18",
+      "checkedAt": "2026-10-19T08:09:28.912047+08:00"
+    },
+    {
+      "id": "prior-7",
+      "title": "Claude 将补充美国中期选举信息入口",
+      "eventDate": null,
+      "sourceUrl": "https://www.anthropic.com/news/2026-us-midterms",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-15",
+      "checkedAt": "2026-10-19T08:09:28.912143+08:00"
+    },
+    {
+      "id": "prior-8",
+      "title": "GLM-Legal 公布法律 Agent 评测，API 仍需申请测试",
+      "eventDate": null,
+      "sourceUrl": "https://z.ai/blog/glm-legal",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-18",
+      "checkedAt": "2026-10-19T08:09:28.912237+08:00"
+    },
+    {
+      "id": "prior-9",
+      "title": "Gemini 4 Argon 扩大开放：重点是哪些入口现在可用",
+      "eventDate": null,
+      "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近7天已归档同一事件；本轮列表/线索未确认新的实质进展，不拆分或重复。",
+      "previousIssue": "2026-10-14",
+      "checkedAt": "2026-10-19T08:09:28.912333+08:00"
+    },
+    {
+      "id": "qwen-image-turbo",
+      "title": "Qwen-Image 2.1 Turbo",
+      "eventDate": "2026-10-09",
+      "sourceUrl": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+      "selected": false,
+      "priority": "normal",
+      "reason": "官方新模型页日期10月9日，超过7天窗口，导航/采集时间不代替首发。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912336+08:00"
+    },
+    {
+      "id": "mai-code-old",
+      "title": "MAI-Code-1.1-Flash",
+      "eventDate": "2026-10-07",
+      "sourceUrl": "https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "详情日期10月7日，超新闻窗口。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912339+08:00"
+    },
+    {
+      "id": "mai-transcribe-old",
+      "title": "MAI streaming transcription",
+      "eventDate": "2026-10-01",
+      "sourceUrl": "https://microsoft.ai/news/our-first-streaming-transcription-model/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "详情原日期10月1日，历史已10月2日报道。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912341+08:00"
+    },
+    {
+      "id": "guided-old",
+      "title": "Guided Vision in Gemini Live",
+      "eventDate": "2026-10-01",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "详情原日期10月1日，超出新闻窗口。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912342+08:00"
+    },
+    {
+      "id": "connected-old",
+      "title": "Gemini Connected Apps",
+      "eventDate": "2026-09-23",
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "原日期9月23日，不把列表位置当新发布。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912344+08:00"
+    },
+    {
+      "id": "kimi-patch",
+      "title": "Kimi Work3.2.17",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://www.kimi.com/help/kimi-work/release-notes",
+      "selected": false,
+      "priority": "normal",
+      "reason": "显示与修复更新，缺足以优先于已选事件的重要能力变化。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912346+08:00"
+    },
+    {
+      "id": "mercor-undated",
+      "title": "Mercor训练数据流程更新",
+      "eventDate": null,
+      "sourceUrl": "https://mercor.com/blog/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "近期讨论不能确认该原始页面首发日期；不把讨论日冒充公告日。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912348+08:00"
+    },
+    {
+      "id": "music-old",
+      "title": "MiniMax Music3.0",
+      "eventDate": "2026-08-13",
+      "sourceUrl": "https://www.minimax.io/blog/minimax-music-3-0-next-generation-open-weights-production-ready-versatile-music-model",
+      "selected": false,
+      "priority": "normal",
+      "reason": "详情元数据8月13日，非10月发布。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912350+08:00"
+    },
+    {
+      "id": "h3-old",
+      "title": "MiniMax H3",
+      "eventDate": "2026-07-31",
+      "sourceUrl": "https://www.minimax.io/blog/minimax-h3",
+      "selected": false,
+      "priority": "normal",
+      "reason": "详情元数据7月31日，导航NEW不是首发证据。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912357+08:00"
+    },
+    {
+      "id": "dspine-model",
+      "title": "DSpine-b16权重",
+      "eventDate": "2026-10-16",
+      "sourceUrl": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+      "selected": false,
+      "priority": "normal",
+      "reason": "在模型栏展开，不重复占用新闻名额。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912359+08:00"
+    },
+    {
+      "id": "sphinx-project",
+      "title": "Sphinx理解代码检查",
+      "eventDate": "2026-10-15",
+      "sourceUrl": "https://github.com/parthh01/sphinx",
+      "selected": false,
+      "priority": "normal",
+      "reason": "在项目栏展开上手与Git hook边界，跨栏去重。",
+      "previousIssue": null,
+      "checkedAt": "2026-10-19T08:09:28.912361+08:00"
+    },
+    {
+      "id": "hy4-original-date",
+      "title": "腾讯 Hy4 preview",
+      "eventDate": "2026-08-28",
+      "sourceUrl": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "selected": false,
+      "priority": "normal",
+      "reason": "集团原始公告明确2026年8月28日；首页展示/响应时间及近期转载不作为10月新品，无新增事实入选。",
+      "checkedAt": "2026-10-19T08:10:45.185310+08:00"
+    }
+  ],
+  "openSourceProjects": {
+    "checkedThrough": "2026-10-19T08:09:28.924199+08:00",
+    "channels": [
+      "GitHub日/周榜和仓库API",
+      "Show HN及V2EX公开入口",
+      "维护者README/项目官网/版本公告"
+    ],
+    "projects": [
+      {
+        "id": "parthh01-sphinx",
+        "order": 1,
+        "title": "Sphinx：推送代码前，先回答一个理解问题",
+        "repositoryUrl": "https://github.com/parthh01/sphinx",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/parthh01/sphinx/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.854241+08:00",
+        "originalDate": "2026-10-15",
+        "versionStatus": "当前主分支，未见正式Release",
+        "createdAt": "2026-10-14T20:26:45Z",
+        "pushedAt": "2026-10-18T19:47:49Z",
+        "implementationPaths": [
+          "bin/sphinx.js",
+          "eval/cases.js",
+          "eval/harness.js",
+          "eval/run.js",
+          "scripts/postinstall.js",
+          "src/activation-worker.js",
+          "src/activation.js",
+          "src/agent-settings.js",
+          "src/agent.js",
+          "src/browser-interview.js",
+          "src/browser-page.js",
+          "src/change-view.js",
+          "src/check-recovery.js",
+          "src/checkbox.js",
+          "src/cli.js",
+          "src/config.js",
+          "src/cursor-hook.js",
+          "src/evaluator.js",
+          "src/git-gate.js",
+          "src/git-interview.js"
+        ],
+        "subjectKeys": [
+          "repo:parthh01/sphinx"
+        ],
+        "reason": "10月15日北京时间创建的新工具，公开Git hook与独立审阅提示实现",
+        "task": "检查自己是否理解 AI 写出的代码",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-15",
+          "newFact": "10月15日北京时间创建的新工具，公开Git hook与独立审阅提示实现",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "检查自己是否理解 AI 写出的代码；Sphinx 在 `git push` 前读取待推送的代码，让一个不继承原对话的审阅模型提问。回答不充分时先解释，再换个场景追问；通过后才继续推送。它面向“代码能跑，但作者解释不清修改”的学习问题，不能替代测试或安全审查。\n\n需要 Node 22.19+、macOS / Linux / WSL，以及受支持的模型 CLI 或 API。文档路径是安装 `sphinx-understand`、运行 `sphinx install` 后初始化仓库；安装会修改全局 hooksPath 并衔接已有 hook，试用前应先检查当前配置。代码可能发送给所选模型服务，且有调用费用。本站没有安装或修改 Git hook。\n\n为什么现在值得看：仓库于北京时间 10 月 15 日创建，已有执行脚本与官方问答演示，提供一种可操作的代码理解练习。HN 讨论是单一近期信号，尚不足认定热门；验证程度为公开实现与维护者演示。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：仓库于北京时间 10 月 15 日创建，已有执行脚本与官方问答演示，提供一种可操作的代码理解练习。HN 讨论是单一近期信号，尚不足认定热门；验证程度为公开实现与维护者演示。",
+          "sourceUrl": "https://github.com/parthh01/sphinx",
+          "observedAt": "2026-10-19T08:09:28.904377+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.904797+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "obsidianmd-pele",
+        "order": 2,
+        "title": "Pele：把 Mermaid 文本渲染成可嵌入的 SVG",
+        "repositoryUrl": "https://github.com/obsidianmd/pele",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/obsidianmd/pele/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.855853+08:00",
+        "originalDate": "2026-10-06",
+        "versionStatus": "1.6.0",
+        "createdAt": "2026-10-05T23:32:40Z",
+        "pushedAt": "2026-10-18T16:34:29Z",
+        "implementationPaths": [
+          "src/core.ts",
+          "src/detect.ts",
+          "src/diagrams/agentflow/colorSlots.ts",
+          "src/diagrams/agentflow/db.ts",
+          "src/diagrams/agentflow/diagnostics.ts",
+          "src/diagrams/agentflow/graph.ts",
+          "src/diagrams/agentflow/index.ts",
+          "src/diagrams/agentflow/lexer.ts",
+          "src/diagrams/agentflow/parser.ts",
+          "src/diagrams/agentflow/render.ts",
+          "src/diagrams/agentflow/shapes.ts",
+          "src/diagrams/agentflow/tokens.ts",
+          "src/diagrams/agentflow/types.ts",
+          "src/diagrams/architecture/db.ts",
+          "src/diagrams/architecture/icons.ts",
+          "src/diagrams/architecture/index.ts",
+          "src/diagrams/architecture/layout.ts",
+          "src/diagrams/architecture/parser.ts",
+          "src/diagrams/architecture/render.ts",
+          "src/diagrams/block/arrows.ts"
+        ],
+        "subjectKeys": [
+          "repo:obsidianmd/pele"
+        ],
+        "reason": "10月17日北京时间发布1.6.0，新增原位错误反馈与挂载状态接口",
+        "task": "在笔记或 Agent 输出旁预览结构图",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-06",
+          "newFact": "10月17日北京时间发布1.6.0，新增原位错误反馈与挂载状态接口",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "在笔记或 Agent 输出旁预览结构图；Pele 接收 Mermaid 风格图表文本，输出 SVG；`render` 用于直接生成，`mount` 用于随编辑更新。它提供自己的布局与主题变量，无运行时依赖，适合笔记编辑器或 Agent 生成文档的预览区。兼容语法不等于每种图的像素布局都与 Mermaid 完全相同。\n\n最小路径是安装 npm 包 `pele`，给容器传入源文本。10 月 17 日北京时间发布的 1.6.0 将解析错误显示在图内，保留并淡化上一张成功结果，同时增加 source / error 状态；错误处理 API 也有变化，升级需查看回调行为。主体 MIT，所带 Lucide 图标另遵循 ISC。\n\n为什么现在值得看：这是近期新公开的渲染实现，最新版本解决实时编辑时错误反馈的问题。仓库始于 10 月 6 日，作为近 30 天近期补充；本站读源码树、README 与发布说明，未执行渲染，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：这是近期新公开的渲染实现，最新版本解决实时编辑时错误反馈的问题。仓库始于 10 月 6 日，作为近 30 天近期补充；本站读源码树、README 与发布说明，未执行渲染，热度待验证。",
+          "sourceUrl": "https://github.com/obsidianmd/pele",
+          "observedAt": "2026-10-19T08:09:28.904799+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.905220+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "finereli-whatsapp-mcp",
+        "order": 3,
+        "title": "WhatsApp MCP：把聊天记录变成只读查询接口",
+        "repositoryUrl": "https://github.com/finereli/whatsapp-mcp",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/finereli/whatsapp-mcp/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.856145+08:00",
+        "originalDate": "2026-10-19",
+        "versionStatus": "当前主分支，未见正式Release",
+        "createdAt": "2026-10-18T21:01:54Z",
+        "pushedAt": "2026-10-18T22:21:52Z",
+        "implementationPaths": [
+          "src/auth-state.ts",
+          "src/auth.ts",
+          "src/index.ts",
+          "src/landing.ts",
+          "src/lru-shim.ts",
+          "src/mcp.ts",
+          "src/pages.ts",
+          "src/phone.ts",
+          "src/polyfills.ts",
+          "src/privacy.ts",
+          "src/store.ts",
+          "src/tos.ts",
+          "src/ui.ts",
+          "src/verify-login.ts",
+          "src/whatsapp-do.ts",
+          "src/ws-shim.ts"
+        ],
+        "subjectKeys": [
+          "repo:finereli/whatsapp-mcp"
+        ],
+        "reason": "10月19日北京时间新公开Worker与MCP实现",
+        "task": "从自己的消息里查找约定、地址或文件线索",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-19",
+          "newFact": "10月19日北京时间新公开Worker与MCP实现",
+          "heatSignals": [
+            {
+              "type": "developer-discussion",
+              "source": "https://news.ycombinator.com/item?id=50145715",
+              "publishedAt": "2026-10-18T21:36:10Z",
+              "observedAt": "2026-10-19T07:29:42.179836+08:00",
+              "actualResult": {
+                "points": 17,
+                "comments": 7
+              },
+              "timeWindow": "2026-10-09起查询的单次截面，不推算7/30天增量"
+            }
+          ],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "从自己的消息里查找约定、地址或文件线索；把授权同步的聊天记录写入 Cloudflare Durable Object 的 SQLite，再通过全文搜索和 MCP 提供给客户端：例如查找上次讨论租约时约定的日期。当前接口侧重读取和搜索，不提供发消息；媒体只保留线索，并不自动下载或转写全部音视频。\n\n项目于北京时间 10 月 19 日创建。部署需要 Node 20、Cloudflare Workers 付费方案、存储及 OAuth 配置，再用手机关联；它使用 Baileys 非官方 WhatsApp 协议，兼容性和平台条款都是实际门槛。历史同步可能不完整，查询结果还会进入你连接的模型客户端，不能称为“数据完全不离设备”。\n\n为什么现在值得看：公开 Worker、数据库及认证实现给个人资料检索提供了具体路径。当前证据为维护者文档与代码，本站未关联账号、未购买服务、未验证真实消息同步；热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：公开 Worker、数据库及认证实现给个人资料检索提供了具体路径。当前证据为维护者文档与代码，本站未关联账号、未购买服务、未验证真实消息同步；热度待验证。",
+          "sourceUrl": "https://github.com/finereli/whatsapp-mcp",
+          "observedAt": "2026-10-19T08:09:28.905222+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.905643+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "szerintedmi-callsitter",
+        "order": 4,
+        "title": "CallSitter：用固定流程接住 AI 电话分类",
+        "repositoryUrl": "https://github.com/szerintedmi/callsitter",
+        "license": "Apache-2.0",
+        "licenseUrl": "https://github.com/szerintedmi/callsitter/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.856604+08:00",
+        "originalDate": "2026-09-26",
+        "versionStatus": "当前主分支，未见正式Release",
+        "createdAt": "2026-09-25T20:47:02Z",
+        "pushedAt": "2026-10-18T11:25:51Z",
+        "implementationPaths": [
+          "demos/tools/audio.ts",
+          "demos/tools/build.ts",
+          "demos/tools/prologue.ts",
+          "demos/tools/record.ts",
+          "demos/tools/sfx.ts",
+          "demos/tools/timeline.ts",
+          "demos/tools/transcribe.ts",
+          "drizzle.config.ts",
+          "evals/cases.ts",
+          "evals/jev.ts",
+          "evals/judge.ts",
+          "evals/live.ts",
+          "evals/luna.ts",
+          "evals/run.ts",
+          "scripts/backup-db.ts",
+          "scripts/check-config.ts",
+          "scripts/control.ts",
+          "scripts/direct-sip.ts",
+          "scripts/prod.ts",
+          "scripts/replay.ts"
+        ],
+        "subjectKeys": [
+          "repo:szerintedmi/callsitter"
+        ],
+        "reason": "9月26日北京时间创建，10月18日近期展示；近30天补充",
+        "task": "为授权电话设置可接管的语音留言与分类流程",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-09-26",
+          "newFact": "9月26日北京时间创建，10月18日近期展示；近30天补充",
+          "heatSignals": [
+            {
+              "type": "developer-discussion",
+              "source": "https://news.ycombinator.com/item?id=50140472",
+              "publishedAt": "2026-10-18T12:24:53Z",
+              "observedAt": "2026-10-19T07:29:42.179836+08:00",
+              "actualResult": {
+                "points": 10,
+                "comments": 9
+              },
+              "timeWindow": "2026-10-09起查询的单次截面，不推算7/30天增量"
+            }
+          ],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "为授权电话设置可接管的语音留言与分类流程；CallSitter 将电话接入、语音模型、分类器和确定性 YAML 流程分开。语音模型负责交谈，分类器随转写增长判断来电类型，流程引擎决定下一步；流程代码明确控制状态转换、调用时机和结束条件。一个可检查的用途是接待未能接听的来电，留下摘要，再由本人判断是否回拨。\n\n运行依赖 Bun、Telnyx 号码与转接、OpenAI 接口，通知渠道还需自行配置。文档提供录音回放和 fake 路径，适合先做离线流程检查，不能以成功回放替代真实电话可靠性测试。代码 Apache-2.0，演示素材另保留权利，不随代码许可任意使用。\n\n为什么现在值得看：9 月 26 日创建的近期补充项目提供了可执行流程与回放入口，10 月 18 日出现新的展示讨论。本站未通话；误分类、语音延迟及人工接管仍需按具体场景验证，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：9 月 26 日创建的近期补充项目提供了可执行流程与回放入口，10 月 18 日出现新的展示讨论。本站未通话；误分类、语音延迟及人工接管仍需按具体场景验证，热度待验证。",
+          "sourceUrl": "https://github.com/szerintedmi/callsitter",
+          "observedAt": "2026-10-19T08:09:28.905645+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.906063+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "fyzugx-desk",
+        "order": 5,
+        "title": "DEsk：研究桌面 Agent 时，也可以换一种界面组织",
+        "repositoryUrl": "https://github.com/fyzugx/DEsk",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/fyzugx/DEsk/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.857074+08:00",
+        "originalDate": "2026-10-10",
+        "versionStatus": "v0.1.2",
+        "createdAt": "2026-10-10T14:30:03Z",
+        "pushedAt": "2026-10-15T10:05:47Z",
+        "implementationPaths": [
+          "scripts/check-words.py",
+          "scripts/glsl2c.py",
+          "scripts/room-key.py",
+          "src/agenda.c",
+          "src/apps.c",
+          "src/camera.c",
+          "src/draw.c",
+          "src/fonts.c",
+          "src/gpu.c",
+          "src/gputest.c",
+          "src/i18n.c",
+          "src/ime.c",
+          "src/index.c",
+          "src/lock.c",
+          "src/media.c",
+          "src/memo.c",
+          "src/occasion.c",
+          "src/panel.c",
+          "src/post.c",
+          "src/power.c"
+        ],
+        "subjectKeys": [
+          "repo:fyzugx/desk"
+        ],
+        "reason": "10月10日首次发布的新桌面；10月15日0.1.2提供Fedora适配，非重大模型升级",
+        "task": "观察桌面信息如何组织及怎样被视觉系统识别",
+        "image": "desk.jpg",
+        "caption": "中文读图：纸张样式是实际窗口，抽屉是应用入口，便签呈现通知。DEsk 维护者提供的真实桌面截图，MIT；用于说明界面组织，不是本站运行结果，也不证明 Agent 操作效果。",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-10",
+          "newFact": "10月10日首次发布的新桌面；10月15日0.1.2提供Fedora适配，非重大模型升级",
+          "heatSignals": [
+            {
+              "type": "developer-discussion",
+              "source": "https://news.ycombinator.com/item?id=50103338",
+              "publishedAt": "2026-10-15T13:23:44Z",
+              "observedAt": "2026-10-19T07:29:42.179836+08:00",
+              "actualResult": {
+                "points": 694,
+                "comments": 279
+              },
+              "timeWindow": "2026-10-09起查询的单次截面，不推算7/30天增量"
+            }
+          ],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "观察桌面信息如何组织及怎样被视觉系统识别；DEsk 是 Linux Wayland 桌面实验：窗口像纸张，应用像活页夹，通知像便签，停靠区像抽屉。它将真实窗口与带光照的桌面合成，提供 GLES 渲染及回退路径；对视觉 Agent 研究者，价值是一个与常见扁平桌面不同的交互对象，而非已证明能提升操作成功率。\n\n仓库和首版在 10 月 10 日公开，本期作为近 30 天近期补充；0.1.2 于 10 月 15 日增加 Fedora 支持等适配。支持的发行版和安装脚本需逐项核对，涉及系统会话和权限，建议先在隔离测试环境尝试。它仍是早期桌面项目，不能把作者日常使用等同广泛稳定性验证。\n\n为什么现在值得看：已有窗口合成实现和真实桌面截图，能直接讨论界面层级与视觉线索的取舍。本站未安装或运行，验证为维护者演示与源码，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：已有窗口合成实现和真实桌面截图，能直接讨论界面层级与视觉线索的取舍。本站未安装或运行，验证为维护者演示与源码，热度待验证。",
+          "sourceUrl": "https://github.com/fyzugx/DEsk",
+          "observedAt": "2026-10-19T08:09:28.906066+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.906480+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "feder-cr-git-ai",
+        "order": 6,
+        "title": "git-ai：为多个编码 Agent 提供共享仓库服务",
+        "repositoryUrl": "https://github.com/feder-cr/git-ai",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/feder-cr/git-ai/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.860936+08:00",
+        "originalDate": "2026-10-15",
+        "versionStatus": "v0.2.0",
+        "createdAt": "2026-10-15T13:12:02Z",
+        "pushedAt": "2026-10-18T23:08:00Z",
+        "implementationPaths": [
+          "_support/benchmarking/cleanup/function/main.go",
+          "_support/benchmarking/cleanup/function/resource.go",
+          "_support/benchmarking/cleanup/function/resource_disk.go",
+          "_support/benchmarking/cleanup/function/resource_instance.go",
+          "_support/benchmarking/cleanup/function/resource_test.go",
+          "_support/benchmarking/experiments/fetch/k6-benchmark.js",
+          "_support/benchmarking/experiments/fetch/plot.py",
+          "_support/benchmarking/experiments/incluster-master/k6-benchmark.js",
+          "_support/benchmarking/experiments/incluster-master/plot.py",
+          "_support/benchmarking/experiments/master/k6-benchmark.js",
+          "_support/benchmarking/experiments/master/plot.py",
+          "_support/benchmarking/fetcher/main.go",
+          "_support/benchmarking/report.py",
+          "_support/benchmarking/roles/gitaly/files/mock-gitlab-api.py",
+          "auth/extract_test.go",
+          "auth/rpccredentials.go",
+          "auth/testhelper_test.go",
+          "auth/token.go",
+          "client/dial.go",
+          "client/dial_test.go"
+        ],
+        "subjectKeys": [
+          "repo:feder-cr/git-ai"
+        ],
+        "reason": "10月15日新公开；10月19日北京时间发布v0.2.0",
+        "task": "减少多 Agent 工作区重复传输并管理提交落地",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-15",
+          "newFact": "10月15日新公开；10月19日北京时间发布v0.2.0",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "减少多 Agent 工作区重复传输并管理提交落地；git-ai 把仓库服务、稀疏取用、派生缓存和提交落地集中到一个服务端。各 Agent 取得自己的工作视图和凭据，提交先进入落地流程，再按配置测试、定位失败或回退。它是独立的社区项目，不能因借鉴其他系统就当成相应公司的官方产品。\n\n仓库于 10 月 15 日创建，v0.2.0 在北京时间 10 月 19 日发布。源码构建需要 Go 1.26、C 工具链、Meson、Ninja；仓库的 quickstart 可在临时目录展示两个 Agent 的工作流。真实服务还要选择数据库、对象存储和测试策略，冲突不会因用了缓存自动消失。\n\n为什么现在值得看：公开的 RPC、存储与示例让多工作区同步问题有具体实现可读。核心 MIT；LICENSE 对可能存在的 ee 目录另设例外，使用时应按路径检查。本站未运行服务，也不采信未复测的加速宣传数值，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：公开的 RPC、存储与示例让多工作区同步问题有具体实现可读。核心 MIT；LICENSE 对可能存在的 ee 目录另设例外，使用时应按路径检查。本站未运行服务，也不采信未复测的加速宣传数值，热度待验证。",
+          "sourceUrl": "https://github.com/feder-cr/git-ai",
+          "observedAt": "2026-10-19T08:09:28.906482+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.906898+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "chenglou-handwired",
+        "order": 7,
+        "title": "Handwired：不训练，直接把一部分程序接成神经网络",
+        "repositoryUrl": "https://github.com/chenglou/handwired",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/chenglou/handwired/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.862930+08:00",
+        "originalDate": "2026-10-15",
+        "versionStatus": "当前主分支，未见正式Release",
+        "createdAt": "2026-10-15T02:15:09Z",
+        "pushedAt": "2026-10-17T01:12:12Z",
+        "implementationPaths": [
+          "knip.config.ts",
+          "lab/candidate-gallery/candidate-gallery.test.ts",
+          "lab/candidate-gallery/candidate-gallery.ts",
+          "lab/candidate-gallery/comparison.test.ts",
+          "lab/candidate-gallery/gather-lowering.test.ts",
+          "lab/candidate-gallery/oracle-trace.test.ts",
+          "lab/cascade-argmax/cascade-argmax.test.ts",
+          "lab/cascade-argmax/cascade-argmax.ts",
+          "lab/cascade-argmax/ramp.test.ts",
+          "lab/cascade-argmax/report.ts",
+          "lab/cascade-argmax/training.test.ts",
+          "lab/cascade-argmax/training.ts",
+          "lab/data-adapter/experiment.test.ts",
+          "lab/data-adapter/experiment.ts",
+          "lab/data-adapter/report.ts",
+          "lab/event-window/boundary-probe.test.ts",
+          "lab/event-window/circuit.ts",
+          "lab/event-window/demo.ts",
+          "lab/event-window/exactness.test.ts",
+          "lab/event-window/harness.ts"
+        ],
+        "subjectKeys": [
+          "repo:chenglou/handwired"
+        ],
+        "reason": "10月15日公开编译器与WebGPU演示",
+        "task": "理解程序操作与矩阵计算的对应关系",
+        "image": "handwired.webp",
+        "caption": "Handwired 作者的 HandwiredOS 演示截图，MIT。图中是受限演示程序的可交互输出；不是通用操作系统移植成功的证据，也不是本站测试。",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-15",
+          "newFact": "10月15日公开编译器与WebGPU演示",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "理解程序操作与矩阵计算的对应关系；Handwired 将受支持的 JavaScript 运算编译为矩阵乘法和 ReGLU 等网络操作，权重由程序结构直接构造，不经过数据训练。输入程序与输入值，输出是网络执行的结果；适合做编译和神经计算教学，比较一个条件判断如何落到数值运算。\n\n仓库于 10 月 15 日创建，提供源码、浏览器演示及 `bun install`、`bun start` 的本地入口。语法范围与数值边界都受实现限制，不能把几个演示推成“任意 JavaScript 都能被精确编译成通用大模型”。WebGPU 可用性也取决于浏览器与设备。\n\n为什么现在值得看：它给出了不用训练构造网络的公开实现，允许读者追踪中间表示。下图是作者的玩具 HandwiredOS 演示界面，用于说明可交互输出，不能用来证明任意操作系统功能等价。本站未运行，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：它给出了不用训练构造网络的公开实现，允许读者追踪中间表示。下图是作者的玩具 HandwiredOS 演示界面，用于说明可交互输出，不能用来证明任意操作系统功能等价。本站未运行，热度待验证。",
+          "sourceUrl": "https://github.com/chenglou/handwired",
+          "observedAt": "2026-10-19T08:09:28.906900+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.907318+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "arahim3-digup",
+        "order": 8,
+        "title": "DigUp：在本机文件里同时查词和查意思",
+        "repositoryUrl": "https://github.com/ARahim3/DigUp",
+        "license": "MIT",
+        "licenseUrl": "https://github.com/ARahim3/DigUp/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.863552+08:00",
+        "originalDate": "2026-10-09",
+        "versionStatus": "v0.7.0-beta.2",
+        "createdAt": "2026-10-08T20:37:51Z",
+        "pushedAt": "2026-10-18T05:30:06Z",
+        "implementationPaths": [
+          "Package.swift",
+          "Sources/DigUpApp/AddFolders.swift",
+          "Sources/DigUpApp/App.swift",
+          "Sources/DigUpApp/AppController.swift",
+          "Sources/DigUpApp/AppLog.swift",
+          "Sources/DigUpApp/AppModel.swift",
+          "Sources/DigUpApp/AppSettings.swift",
+          "Sources/DigUpApp/CodeEditors.swift",
+          "Sources/DigUpApp/CodeFolders.swift",
+          "Sources/DigUpApp/Components.swift",
+          "Sources/DigUpApp/DebugHooks.swift",
+          "Sources/DigUpApp/Engine.swift",
+          "Sources/DigUpApp/Estimates.swift",
+          "Sources/DigUpApp/FolderChoices.swift",
+          "Sources/DigUpApp/FolderWatcher.swift",
+          "Sources/DigUpApp/Hotkey.swift",
+          "Sources/DigUpApp/IndexSchedule.swift",
+          "Sources/DigUpApp/ModelDownload.swift",
+          "Sources/DigUpApp/Moments.swift",
+          "Sources/DigUpApp/Onboarding.swift"
+        ],
+        "subjectKeys": [
+          "repo:arahim3/digup"
+        ],
+        "reason": "10月9日北京时间新建，10月18日0.7.0-beta.2扩展桌面测试版本",
+        "task": "从文档、音视频与照片中找回本机资料",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-09",
+          "newFact": "10月9日北京时间新建，10月18日0.7.0-beta.2扩展桌面测试版本",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "从文档、音视频与照片中找回本机资料；DigUp 将关键词检索与本地向量检索结合，返回文件、PDF 页或音视频时间位置。它使用 SQLite 管理索引，嵌入模型在本机运行；一个典型任务是凭模糊记忆找出提过某个方案的文档，再跳回原文件核对，而非让模型凭记忆编答案。\n\n仓库始于北京时间 10 月 9 日，本期作为近 30 天近期补充；10 月 18 日发布 0.7.0-beta.2。文档列出 Apple Silicon macOS 14+、Windows 10/11 x64、Linux x64 路径，跨平台版本仍处于 beta。模型约 865 MB，首次大规模索引可能很久；选择哪些目录和代码文件进入索引也需要明确配置。\n\n为什么现在值得看：已提供可下载应用、检索实现和本地运行路径。核心 MIT，嵌入模型遵循其独立许可；本站未安装、未对私人目录建索引，也没有独立召回率测试，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：已提供可下载应用、检索实现和本地运行路径。核心 MIT，嵌入模型遵循其独立许可；本站未安装、未对私人目录建索引，也没有独立召回率测试，热度待验证。",
+          "sourceUrl": "https://github.com/ARahim3/DigUp",
+          "observedAt": "2026-10-19T08:09:28.907320+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.907734+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "onehumanbeing-esp32-iphone-agent",
+        "order": 9,
+        "title": "ESP32 iPhone Agent：板子负责看与点，手机 App 负责推理",
+        "repositoryUrl": "https://github.com/onehumanbeing/esp32-iphone-agent",
+        "license": "MIT（主体）；GPL-3.0（AirPlay固件部分）",
+        "licenseUrl": "https://github.com/onehumanbeing/esp32-iphone-agent/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.864027+08:00",
+        "originalDate": "2026-10-12",
+        "versionStatus": "v0.1.0",
+        "createdAt": "2026-10-11T19:10:25Z",
+        "pushedAt": "2026-10-18T15:47:34Z",
+        "implementationPaths": [
+          "hardware/hid_bridge/ble_link.cpp",
+          "hardware/hid_bridge/hid_bridge.ino",
+          "hardware/hid_bridge/netcfg.cpp",
+          "hardware/hid_bridge/src/airplay/fairplay.c",
+          "hardware/hid_bridge/src/airplay/handlers.c",
+          "hardware/hid_bridge/src/airplay/mdns.c",
+          "hardware/hid_bridge/src/airplay/mirror.c",
+          "hardware/hid_bridge/src/airplay/pairing.c",
+          "hardware/hid_bridge/src/airplay/playfair/hand_garble.c",
+          "hardware/hid_bridge/src/airplay/playfair/modified_md5.c",
+          "hardware/hid_bridge/src/airplay/playfair/omg_hax.c",
+          "hardware/hid_bridge/src/airplay/playfair/playfair.c",
+          "hardware/hid_bridge/src/airplay/playfair/sap_hash.c",
+          "hardware/hid_bridge/src/airplay/rtsp.c",
+          "hardware/hid_bridge/src/bplist/bplist.c",
+          "hardware/hid_bridge/src/video/gop.c",
+          "hardware/hid_bridge/video_link.cpp",
+          "hardware/tests/test_main.c",
+          "hardware/tools/board_test.py",
+          "ios/AgentActivity/AgentActivityWidget.swift"
+        ],
+        "subjectKeys": [
+          "repo:onehumanbeing/esp32-iphone-agent"
+        ],
+        "reason": "10月12日北京时间新建；当前主分支移除运行时电脑，与旧v0.1.0区分",
+        "task": "研究实体手机的视觉观察、坐标校准与动作回放",
+        "image": "esp32.webp",
+        "caption": "作者真实 App 截图：对照手机画面与经板子镜像后 Agent 收到的画面，再看指针校准。主体图片随 MIT 项目资料引用；固件的 GPL-3.0 范围另述。它展示观察链路，不是本站执行手机任务的记录。",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-12",
+          "newFact": "10月12日北京时间新建；当前主分支移除运行时电脑，与旧v0.1.0区分",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "研究实体手机的视觉观察、坐标校准与动作回放；当前主分支让 ESP32-S3 接收 iPhone 的 AirPlay 镜像，再经 BLE 转给同一手机上的 App；App 解码、调用视觉模型，把操作指令送回板子，由 USB HID 执行点击与键盘动作。它保留运行回放和指针校准，比只看最终截图更便于定位操作失败。\n\n仓库始于北京时间 10 月 12 日。10 月 15 日的旧 v0.1.0 仍需电脑，本文介绍的“运行时不需电脑”属于当前主分支。首次刷板和构建仍需 Mac / Xcode、带 PSRAM 的 ESP32-S3、iOS 18+及模型端点；免费签名需定期重签。主体 MIT，但 AirPlay 移植部分 GPL-3.0，链接它的固件按 GPL-3.0 分发。\n\n为什么现在值得看：公开的镜像、校准、动作与轨迹导出实现提供了研究入口。当前仍限竖屏、ASCII 输入，截图发往所选模型，模型调用有成本；本站未操控手机，验证为维护者演示与代码，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：公开的镜像、校准、动作与轨迹导出实现提供了研究入口。当前仍限竖屏、ASCII 输入，截图发往所选模型，模型调用有成本；本站未操控手机，验证为维护者演示与代码，热度待验证。",
+          "sourceUrl": "https://github.com/onehumanbeing/esp32-iphone-agent",
+          "observedAt": "2026-10-19T08:09:28.907737+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.908168+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "asobeast-asobeast",
+        "order": 10,
+        "title": "AsoBeast：把商店榜单变化与评论回复放进自托管工具",
+        "repositoryUrl": "https://github.com/AsoBeast/asobeast",
+        "license": "AGPL-3.0",
+        "licenseUrl": "https://github.com/AsoBeast/asobeast/blob/main/LICENSE",
+        "checkedAt": "2026-10-19T08:05:03.867383+08:00",
+        "originalDate": "2026-08-24",
+        "versionStatus": "v1.11.0",
+        "createdAt": "2026-08-24T12:44:40Z",
+        "pushedAt": "2026-10-18T17:19:11Z",
+        "implementationPaths": [
+          "apps/api/prisma.config.ts",
+          "apps/api/prisma/seed.ts",
+          "apps/api/scripts/create-stripe-catalog.ts",
+          "apps/api/scripts/popularity-study.ts",
+          "apps/api/scripts/scoring-calibrate.ts",
+          "apps/api/scripts/stripe-simulate.ts",
+          "apps/api/src/account/account-deletion.service.spec.ts",
+          "apps/api/src/account/account-deletion.service.ts",
+          "apps/api/src/account/account-export.service.spec.ts",
+          "apps/api/src/account/account-export.service.ts",
+          "apps/api/src/account/account.controller.ts",
+          "apps/api/src/account/account.module.ts",
+          "apps/api/src/account/dto/request-deletion.dto.ts",
+          "apps/api/src/account/export-tables.spec.ts",
+          "apps/api/src/account/export-tables.ts",
+          "apps/api/src/actions/action-activity.service.ts",
+          "apps/api/src/actions/action-activity.spec.ts",
+          "apps/api/src/actions/action-activity.ts",
+          "apps/api/src/actions/action-competitors.ts",
+          "apps/api/src/actions/action-context.spec.ts"
+        ],
+        "subjectKeys": [
+          "repo:asobeast/asobeast"
+        ],
+        "reason": "8月24日旧项目，10月17日北京时间v1.11.0新增榜单跟踪和评论回复草稿",
+        "task": "给自己的应用跟踪商店变化并准备可人工审核的回复",
+        "image": "",
+        "caption": "",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-08-24",
+          "newFact": "8月24日旧项目，10月17日北京时间v1.11.0新增榜单跟踪和评论回复草稿",
+          "heatSignals": [
+            {
+              "type": "developer-discussion",
+              "source": "https://news.ycombinator.com/item?id=50032812",
+              "publishedAt": "2026-10-10T13:34:34Z",
+              "observedAt": "2026-10-19T07:29:42.179836+08:00",
+              "actualResult": {
+                "points": 11,
+                "comments": 0
+              },
+              "timeWindow": "2026-10-09起查询的单次截面，不推算7/30天增量"
+            }
+          ],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "给自己的应用跟踪商店变化并准备可人工审核的回复；这不是新诞生的项目：仓库始于 8 月 24 日，本次选择依据是北京时间 10 月 17 日的 v1.11.0。版本新增按商店、地区、类别查看榜单及跟踪变化，并提供评论回复编辑器；可选 AI 只生成草稿，不直接替用户发布回复。\n\n自托管使用 Docker Compose，包含 PostgreSQL 18、Redis 8、前后端，文档建议至少 2 GB 内存、5 GB 磁盘。公开商店查询与 AI 服务是不同依赖：前者不要求购买 ASO API，后者如启用仍需模型配置及费用。升级包含数据库迁移，现有使用者应先备份。\n\n为什么现在值得看：这次实质更新把“看见应用市场变化”接到“准备具体回应”的工作流，且核心以 AGPL-3.0 提供。榜单、评分变化不是因果归因，抓取覆盖也受商店接口限制。本站读发布说明与实现目录，未部署，热度待验证。",
+          "validationLevel": "公开实现、维护者文档与演示，本站未安装",
+          "limitations": "为什么现在值得看：这次实质更新把“看见应用市场变化”接到“准备具体回应”的工作流，且核心以 AGPL-3.0 提供。榜单、评分变化不是因果归因，抓取覆盖也受商店接口限制。本站读发布说明与实现目录，未部署，热度待验证。",
+          "sourceUrl": "https://github.com/AsoBeast/asobeast",
+          "observedAt": "2026-10-19T08:09:28.908170+08:00",
+          "candidatePath": "GitHub日/周榜、近期仓库与Show HN/V2EX → 作者页/实现/Release/LICENSE",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.908586+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      }
+    ],
+    "candidateCount": 27,
+    "candidateEvidence": "docs/frontiers-source-audits/2026-10-19-evidence/project-candidate-comparison.json"
+  },
+  "expandedSelections": {
+    "expectedModels": 6,
+    "expectedPapers": 6,
+    "models": [
+      {
+        "id": "theforecastingcompany-t0-gamma",
+        "order": 1,
+        "title": "t0-gamma：把未来已知条件也放进时间序列预测",
+        "sourceUrl": "https://huggingface.co/theforecastingcompany/t0-gamma",
+        "modelId": "theforecastingcompany/t0-gamma",
+        "date": "2026-10-12",
+        "checkedAt": "2026-10-19T07:59:37.914903+08:00",
+        "license": "Apache-2.0",
+        "weightFileCount": 1,
+        "weightFiles": [
+          "model.safetensors"
+        ],
+        "revision": "e08aee083778f1f32da4974c0a34276776a35c52",
+        "subjectKeys": [
+          "model:theforecastingcompany/t0-gamma"
+        ],
+        "reason": "t0-gamma：把未来已知条件也放进时间序列预测",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-12",
+          "newFact": "近期公开的具体权重检查点，日期来自模型仓库创建记录",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "t0-gamma：把未来已知条件也放进时间序列预测",
+          "validationLevel": "官方文档或作者实验，本站未运行",
+          "limitations": "为什么现在值得看：10 月 12 日公开的 gamma 检查点把概率预测与已知未来条件一并提供，适合先在自己的滚动验证集上比较“只看历史”与“加入日历”。本站核验模型卡、权重文件与代码说明，未运行；榜单自报分数未作为独立验证，热度待验证。下图来自同家族的 Alpha 演示，只解释输入输出，不能当成 gamma 的实验成绩。",
+          "sourceUrl": "https://huggingface.co/theforecastingcompany/t0-gamma",
+          "observedAt": "2026-10-19T08:09:28.899287+08:00",
+          "candidatePath": "HF trendingScore和createdAt两路 → 模型卡/权重/许可",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "image": "t0.webp",
+        "caption": "中文读图：同一段负荷历史，在加入假日信息后，未来曲线的形状可以变化；阴影是预测区间。The Forecasting Company 的 t0 Alpha 示例原图（Apache-2.0），用于解释家族的协变量接口，不是 t0-gamma 的新评测。",
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.899716+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "tencent-qwen3-8b-dspine-b16",
+        "order": 2,
+        "title": "DSpine-b16：让草稿模型借用目标模型的多层信息",
+        "sourceUrl": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+        "modelId": "tencent/Qwen3-8B-DSpine-b16",
+        "date": "2026-10-16",
+        "checkedAt": "2026-10-19T07:59:37.915144+08:00",
+        "license": "Apache-2.0",
+        "weightFileCount": 1,
+        "weightFiles": [
+          "model.safetensors"
+        ],
+        "revision": "9fc2ab3d4db06ca06dd30d91b2f8d28537673add",
+        "subjectKeys": [
+          "model:tencent/qwen3-8b-dspine-b16"
+        ],
+        "reason": "DSpine-b16：让草稿模型借用目标模型的多层信息",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-16",
+          "newFact": "近期公开的具体权重检查点，日期来自模型仓库创建记录",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "DSpine-b16：让草稿模型借用目标模型的多层信息",
+          "validationLevel": "官方文档或作者实验，本站未运行",
+          "limitations": "为什么现在值得看：10 月 16 日公开了具体草稿权重与 SGLang 适配推理路径，使多层特征的取舍可以复查。要同时准备匹配的目标模型、专用插件和 CUDA 环境；模型卡的示例涉及 BF16、FA3 等设置，并非任意稳定版框架即装即用。推理代码已公开，训练流程仍有后续开放计划。本站未运行，依据为作者实验，热度待验证。",
+          "sourceUrl": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+          "observedAt": "2026-10-19T08:09:28.899718+08:00",
+          "candidatePath": "HF trendingScore和createdAt两路 → 模型卡/权重/许可",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "image": "dspine.jpg",
+        "caption": "中文读图：左侧是目标模型各层，中部把上一时刻不同深度的特征送入草稿网络，右侧展示并行提出 token 的位置。腾讯 DSpine 官方结构图；它解释信息如何传递，不代表同等比例的端到端加速。",
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.900143+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "xibushu-uniforge3d",
+        "order": 3,
+        "title": "UniForge3D：把看得见的表面和看不见的补全放在一起",
+        "sourceUrl": "https://huggingface.co/xibushu/UniForge3D",
+        "modelId": "xibushu/UniForge3D",
+        "date": "2026-10-10",
+        "checkedAt": "2026-10-19T07:59:37.915214+08:00",
+        "license": "CC-BY-NC-4.0（权重）；MIT（代码）",
+        "weightFileCount": 9,
+        "weightFiles": [
+          "uniforge3d/shape1024/uniforge3d_stage2_shape1024_denoiser.pt",
+          "uniforge3d/shape1024/uniforge3d_stage2_shape1024_vggt_adapter.pt",
+          "uniforge3d/shape512/uniforge3d_stage2_shape512_denoiser.pt",
+          "uniforge3d/shape512/uniforge3d_stage2_shape512_vggt_adapter.pt",
+          "uniforge3d/stage1/uniforge3d_stage1_structure_joint_model.pt",
+          "uniforge3d/texture/uniforge3d_stage3_texture1024_denoiser.pt",
+          "uniforge3d/texture/uniforge3d_stage3_texture1024_vggt_adapter.pt",
+          "uniforge3d/vggt/uniforge3d_shape_texture_vggt_conditioner.pt",
+          "uniforge3d/vggt/uniforge3d_stage1_structure_vggt_backbone.pt"
+        ],
+        "revision": "a084333f2aae0213e85b9a4541752d1221d618db",
+        "subjectKeys": [
+          "model:xibushu/uniforge3d"
+        ],
+        "reason": "UniForge3D：把看得见的表面和看不见的补全放在一起",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-10",
+          "newFact": "近期公开的具体权重检查点，日期来自模型仓库创建记录",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "UniForge3D：把看得见的表面和看不见的补全放在一起",
+          "validationLevel": "官方文档或作者实验，本站未运行",
+          "limitations": "为什么现在值得看：10 月 10 日公开模型，作为近 30 天的近期补充，提供了可检查的联合实现与权重。安装脚本使用 Python 3.10、PyTorch 2.6 / CUDA 12.4、FlashAttention，并编译 TRELLIS.2、CuMesh 等依赖，属于 GPU 研究环境。代码 MIT 与权重 CC BY-NC 4.0 必须分开看；相关背景去除模型还需遵循其独立条款。本站未运行，依据为作者方法与演示，热度待验证。",
+          "sourceUrl": "https://huggingface.co/xibushu/UniForge3D",
+          "observedAt": "2026-10-19T08:09:28.900146+08:00",
+          "candidatePath": "HF trendingScore和createdAt两路 → 模型卡/权重/许可",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "image": "",
+        "caption": "",
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.900564+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "ozgurguler-ahenk-tts-tr",
+        "order": 4,
+        "title": "Ahenk：土耳其语语音适配，收益要与速度一起看",
+        "sourceUrl": "https://huggingface.co/ozgurguler/ahenk-tts-tr",
+        "modelId": "ozgurguler/ahenk-tts-tr",
+        "date": "2026-10-16",
+        "checkedAt": "2026-10-19T07:59:37.915286+08:00",
+        "license": "CC-BY-4.0（适配权重）；Apache-2.0（基础与辅助代码）",
+        "weightFileCount": 1,
+        "weightFiles": [
+          "lora_weights.safetensors"
+        ],
+        "revision": "6bcef95c9e8401058253518d08028369958522cc",
+        "subjectKeys": [
+          "model:ozgurguler/ahenk-tts-tr"
+        ],
+        "reason": "Ahenk：土耳其语语音适配，收益要与速度一起看",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-16",
+          "newFact": "近期公开的具体权重检查点，日期来自模型仓库创建记录",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "Ahenk：土耳其语语音适配，收益要与速度一起看",
+          "validationLevel": "官方文档或作者实验，本站未运行",
+          "limitations": "为什么现在值得看：10 月 16 日的公开适配权重提供了语言规范化、情绪和语音生成的完整检查对象。单人、10 例的盲听偏好仅能作初步线索；无疑问助词的问句语调、缩写及英文控制指令仍有失败。本站未合成音频，验证程度为作者实验与模型卡，热度待验证。",
+          "sourceUrl": "https://huggingface.co/ozgurguler/ahenk-tts-tr",
+          "observedAt": "2026-10-19T08:09:28.900566+08:00",
+          "candidatePath": "HF trendingScore和createdAt两路 → 模型卡/权重/许可",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "image": "",
+        "caption": "",
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.900989+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "codacus-qwen3.6-35b-a3b-microturn-duplex-lora",
+        "order": 5,
+        "title": "MicroTurn Duplex LoRA：让语言模型每小步决定说话还是等待",
+        "sourceUrl": "https://huggingface.co/codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA",
+        "modelId": "codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA",
+        "date": "2026-10-12",
+        "checkedAt": "2026-10-19T07:59:37.915355+08:00",
+        "license": "Apache-2.0",
+        "weightFileCount": 1,
+        "weightFiles": [
+          "microturn-duplex-lora.gguf"
+        ],
+        "revision": "f423b2991495a8cb88e3577d6d9515e37d651828",
+        "subjectKeys": [
+          "model:codacus/qwen3.6-35b-a3b-microturn-duplex-lora"
+        ],
+        "reason": "MicroTurn Duplex LoRA：让语言模型每小步决定说话还是等待",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-12",
+          "newFact": "近期公开的具体权重检查点，日期来自模型仓库创建记录",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "MicroTurn Duplex LoRA：让语言模型每小步决定说话还是等待",
+          "validationLevel": "官方文档或作者实验，本站未运行",
+          "limitations": "为什么现在值得看：10 月 12 日开放的小型适配器把“该不该开口”写进可复用控制输出。测试中仍出现打断失败；公开说明还披露训练数据审计后删除了不安全样本。适合做受控语音实验，不应直接当作可靠的无人值守通话系统。本站未运行，依据为作者模拟实验，热度待验证。",
+          "sourceUrl": "https://huggingface.co/codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA",
+          "observedAt": "2026-10-19T08:09:28.900991+08:00",
+          "candidatePath": "HF trendingScore和createdAt两路 → 模型卡/权重/许可",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "image": "",
+        "caption": "",
+        "weightFormat": "GGUF",
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.901432+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "mrm8488-embeddinggemma-2-ft-typed-decision",
+        "order": 6,
+        "title": "EmbeddingGemma 2 typed-decision：将结构化选择接到嵌入模型",
+        "sourceUrl": "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+        "modelId": "mrm8488/embeddinggemma-2-ft-typed-decision",
+        "date": "2026-10-12",
+        "checkedAt": "2026-10-19T07:59:37.915428+08:00",
+        "license": "Apache-2.0",
+        "weightFileCount": 1,
+        "weightFiles": [
+          "model.safetensors"
+        ],
+        "revision": "8403ff7fddc75b6994130e581a832f875fb5bd0e",
+        "subjectKeys": [
+          "model:mrm8488/embeddinggemma-2-ft-typed-decision"
+        ],
+        "reason": "EmbeddingGemma 2 typed-decision：将结构化选择接到嵌入模型",
+        "selectionEvidence": {
+          "lane": "新近实用 / 新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-12",
+          "newFact": "近期公开的具体权重检查点，日期来自模型仓库创建记录",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "EmbeddingGemma 2 typed-decision：将结构化选择接到嵌入模型",
+          "validationLevel": "官方文档或作者实验，本站未运行",
+          "limitations": "为什么现在值得看：北京时间 10 月 12 日的适配检查点，给出了两阶段训练与结构化输出的具体实现。运行应遵循 BF16 / FP32 说明，FP16 可能出现数值问题；使用远程自定义代码前需检查实现。本站未运行或独立复现，热度待验证。它与同名基础嵌入模型是不同的适配对象。",
+          "sourceUrl": "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+          "observedAt": "2026-10-19T08:09:28.901434+08:00",
+          "candidatePath": "HF trendingScore和createdAt两路 → 模型卡/权重/许可",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "image": "",
+        "caption": "",
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.901870+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      }
+    ],
+    "papers": [
+      {
+        "id": "2610.22194",
+        "order": 1,
+        "title": "AutoSFT：把训练数据调整变成可检查的实验循环",
+        "originalTitle": "AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning",
+        "authors": "He, Bingxiang、Sun, Pengqi、Peng, Shihao、Li, Shaoxuan、Xiao, Huiyu、Shi, Hongjian、Fu, Zixuan、Qiao, Ziqing、Zuo, Yuxin、Qian, Cheng、Yu, Xinqiang、Li, Jiayi、Chen, Xiusi、Song, Yizhen、Wang, Xiangyang、Lei, Iofai、Wang, Yudong、Ding, Ning、Liu, Zhiyuan、Wang, Xiaozhi、Xiao, Chaojun",
+        "sourceUrl": "https://arxiv.org/abs/2610.22194",
+        "version": "v1",
+        "submittedDate": "2026-10-15",
+        "checkedAt": "2026-10-19T07:59:37.951422+08:00",
+        "archivePath": "content/papers/frontiers/2610.22194/00-阅读卡.md",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "image": "autosft.webp",
+        "caption": "图中从数据配方到训练、评估再回到配方，表示每轮可以更换数据操作；不是沿同一个检查点无限续训。He 等，AutoSFT 原图，CC BY 4.0。中文说明与图分开，保留完整原图。",
+        "reason": "分离执行、分析与合成，扩大自动SFT可探索的数据操作范围。",
+        "subjectKeys": [
+          "paper:2610.22194"
+        ],
+        "selectionEvidence": {
+          "lane": "新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-15",
+          "newFact": "本周v1预印本公开",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "分离执行、分析与合成，扩大自动SFT可探索的数据操作范围。",
+          "validationLevel": "已阅读原文核心方法、主要实验与条件；作者实验，本站未复现",
+          "limitations": "为什么现在值得看：它提出的不只是“多开几个 Agent”，而是让不同数据修改动作真正进入可检验循环。本站读方法、主要对照和预算说明，未训练复现；实现仓库可读，但本次未找到正式 LICENSE，不能把公开源码写成已确认的宽松开源项目。",
+          "sourceUrl": "https://arxiv.org/abs/2610.22194",
+          "observedAt": "2026-10-19T08:09:28.901873+08:00",
+          "candidatePath": "HF每日论文与arXiv近期列表 → 12篇候选比较 → 核心方法/实验",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.902287+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "2610.17560",
+        "order": 2,
+        "title": "EdgeWise：把难步骤交给云端，但别漏算本地成本",
+        "originalTitle": "EdgeWise: Bringing Long-Horizon Agents to the Edge via Selective Cloud Delegation",
+        "authors": "Shi, Zeru、Jiang, Jindong、Hachiuma, Ryo、Fu, Yonggan、Lee, Byung-Kwan、Belcak, Peter、Muralidharan, Saurav、Agarwal, Ayush、Tang, Ruixiang、Dantrey, Ambrish、Molchanov, Pavlo、Patney, Anjul、Radhakrishnan, Subhashree",
+        "sourceUrl": "https://arxiv.org/abs/2610.17560",
+        "version": "v1",
+        "submittedDate": "2026-10-13",
+        "checkedAt": "2026-10-19T07:59:37.951757+08:00",
+        "archivePath": "content/papers/frontiers/2610.17560/00-阅读卡.md",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "image": "edgewise.webp",
+        "caption": "中文读图：本地模型是默认执行者，委托发生在它判断需要帮助的步骤；云端回复又回到同一任务上下文。Shi 等，EdgeWise 方法图，CC BY 4.0。箭头表示协作过程，不表示所有步骤都经过两个模型。",
+        "reason": "训练本地模型自己决定何时委托云端，并检查上下文保留与成本边界。",
+        "subjectKeys": [
+          "paper:2610.17560"
+        ],
+        "selectionEvidence": {
+          "lane": "新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-13",
+          "newFact": "本周v1预印本公开",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "训练本地模型自己决定何时委托云端，并检查上下文保留与成本边界。",
+          "validationLevel": "已阅读原文核心方法、主要实验与条件；作者实验，本站未复现",
+          "limitations": "为什么现在值得看：它给出了可训练的委托机制及本地工作站部署实验。但论文费用只计云端 API，未把本地设备、运行电耗与训练成本全部算入；“少付云账单”不等于“总成本同幅下降”。本站未复现，结果为作者实验。",
+          "sourceUrl": "https://arxiv.org/abs/2610.17560",
+          "observedAt": "2026-10-19T08:09:28.902288+08:00",
+          "candidatePath": "HF每日论文与arXiv近期列表 → 12篇候选比较 → 核心方法/实验",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.902707+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "2610.20341",
+        "order": 3,
+        "title": "InfiniSplat v2：先固定几何，再改善大视角变化下的外观",
+        "originalTitle": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views",
+        "authors": "Hu, Yongzhen、Yu, Hao、Wang, Jiawei、Zeng, Xianming、Xu, Jianyun、Liu, Xingliang、Hu, Ruizhen、Zhou, Xiaowei、Bao, Hujun、Peng, Sida",
+        "sourceUrl": "https://arxiv.org/abs/2610.20341",
+        "version": "v1",
+        "submittedDate": "2026-10-14",
+        "checkedAt": "2026-10-19T07:59:37.951910+08:00",
+        "archivePath": "content/papers/frontiers/2610.20341/00-阅读卡.md",
+        "license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "image": "",
+        "caption": "",
+        "reason": "解耦冻结的几何预测与可训练的高斯属性，检查监督角度与细化的影响。",
+        "subjectKeys": [
+          "paper:2610.20341"
+        ],
+        "selectionEvidence": {
+          "lane": "新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-14",
+          "newFact": "本周v1预印本公开",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "解耦冻结的几何预测与可训练的高斯属性，检查监督角度与细化的影响。",
+          "validationLevel": "已阅读原文核心方法、主要实验与条件；作者实验，本站未复现",
+          "limitations": "为什么现在值得看：论文把训练对齐、监督角度和属性建模分开分析，适合研究“图看着更好”和“几何真的更对”之间的差别。本站读原文方法、主表与细化结果，未复现；预印本原图可在原文查看，本期用文字保留关键条件。",
+          "sourceUrl": "https://arxiv.org/abs/2610.20341",
+          "observedAt": "2026-10-19T08:09:28.902709+08:00",
+          "candidatePath": "HF每日论文与arXiv近期列表 → 12篇候选比较 → 核心方法/实验",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.903122+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "2610.21656",
+        "order": 4,
+        "title": "Data World：先造出数据背后的世界，再生成文件",
+        "originalTitle": "Data World: Scaling Data Environments from Scratch",
+        "authors": "Li, Zhanli、Xu, Zeyuan、Pang, Chaoxu、Liu, Zeyuan、Ji, Anyang、Sun, Te、Zhang, Kongcheng、Xu, Wenbo、Yue, Xubin、Luo, Shipeng、Zhao, Junjie、Hua, Yingfan、Ruan, Jingqing、Su, Zhongda、Hong, Feng、Zeng, Zhizhao、Zeng, Ke、Cai, Xunliang、Ye, Hanjia",
+        "sourceUrl": "https://arxiv.org/abs/2610.21656",
+        "version": "v1",
+        "submittedDate": "2026-10-15",
+        "checkedAt": "2026-10-19T07:59:37.952063+08:00",
+        "archivePath": "content/papers/frontiers/2610.21656/00-阅读卡.md",
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "image": "dataworld.webp",
+        "caption": "图 2，Li 等，Data World 原图，CC BY-NC-ND 4.0。先沿上方看机制与真值，再看观测文件、审计及任务；审计器不回写真值。图片未经修改，用于本站非商业研究讲解；密集标签请打开原尺寸，中文解读在图外。",
+        "reason": "显式机制、不可变真值和独立审计让合成分析任务具有可核验答案。",
+        "subjectKeys": [
+          "paper:2610.21656"
+        ],
+        "selectionEvidence": {
+          "lane": "新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-15",
+          "newFact": "本周v1预印本公开",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "显式机制、不可变真值和独立审计让合成分析任务具有可核验答案。",
+          "validationLevel": "已阅读原文核心方法、主要实验与条件；作者实验，本站未复现",
+          "limitations": "为什么现在值得看：明确的生成机制让合成任务有了可以审查的真值与可恢复性约束。仍需警惕合成世界与真实业务分布的差异、模型评判偏差，以及评分规则不能囊括所有合理洞见。本站未训练复现。",
+          "sourceUrl": "https://arxiv.org/abs/2610.21656",
+          "observedAt": "2026-10-19T08:09:28.903124+08:00",
+          "candidatePath": "HF每日论文与arXiv近期列表 → 12篇候选比较 → 核心方法/实验",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.903537+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "2610.17666",
+        "order": 5,
+        "title": "DeltaTTG：用剩余工作量分配每一步的信用",
+        "originalTitle": "DeltaTTG: Training Multi-Turn Agents with a Token-to-Go Progress Meter",
+        "authors": "Ye, Xuyan、Fu, Xiyan、Fan, Shengda、Cui, Jiawei、Lin, Yankai、Lu, Wei",
+        "sourceUrl": "https://arxiv.org/abs/2610.17666",
+        "version": "v1",
+        "submittedDate": "2026-10-13",
+        "checkedAt": "2026-10-19T07:59:37.952208+08:00",
+        "archivePath": "content/papers/frontiers/2610.17666/00-阅读卡.md",
+        "license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "image": "",
+        "caption": "",
+        "reason": "冻结的Token-to-Go估计器重分配终局优势，保留符号和按token计算的平均尺度。",
+        "subjectKeys": [
+          "paper:2610.17666"
+        ],
+        "selectionEvidence": {
+          "lane": "新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-13",
+          "newFact": "本周v1预印本公开",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "冻结的Token-to-Go估计器重分配终局优势，保留符号和按token计算的平均尺度。",
+          "validationLevel": "已阅读原文核心方法、主要实验与条件；作者实验，本站未复现",
+          "limitations": "为什么现在值得看：它把稀疏终局反馈变成可复用的步骤信号，同时约束尺度。Actor 训练 GPU 小时比较纳入估计器推理，却未纳入预先训练估计器的开销；例如另有约 10.45 GPU 小时的估计器训练。本站未复现论文训练；本期技术实践只检验一个合成的归一化算例。",
+          "sourceUrl": "https://arxiv.org/abs/2610.17666",
+          "observedAt": "2026-10-19T08:09:28.903539+08:00",
+          "candidatePath": "HF每日论文与arXiv近期列表 → 12篇候选比较 → 核心方法/实验",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.903956+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      },
+      {
+        "id": "2610.22322",
+        "order": 6,
+        "title": "MPT：让多个 Agent 学会争取行动，也学会分担结果",
+        "originalTitle": "Learning Self-Orchestration in Decentralized Agent Swarms",
+        "authors": "Xu, Guowei、Qi, Zhenting、Kiruga, Amani、Lakkaraju, Himabindu、Du, Yilun",
+        "sourceUrl": "https://arxiv.org/abs/2610.22322",
+        "version": "v1",
+        "submittedDate": "2026-10-15",
+        "checkedAt": "2026-10-19T07:59:37.952347+08:00",
+        "archivePath": "content/papers/frontiers/2610.22322/00-阅读卡.md",
+        "license": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+        "image": "",
+        "caption": "",
+        "reason": "通过出价、后向信用传递和反事实比较联合学习行动与自组织。",
+        "subjectKeys": [
+          "paper:2610.22322"
+        ],
+        "selectionEvidence": {
+          "lane": "新近创新",
+          "timeWindow": "优先2026-10-12至19；必要时扩至2026-09-19；旧对象须有近7天实质进展",
+          "originalDate": "2026-10-15",
+          "newFact": "本周v1预印本公开",
+          "heatSignals": [],
+          "heatGap": "缺独立的第二类近期热度信号和连续7/30天基线，热度待验证；不以总Star/引用认定热门",
+          "valueEvidence": "通过出价、后向信用传递和反事实比较联合学习行动与自组织。",
+          "validationLevel": "已阅读原文核心方法、主要实验与条件；作者实验，本站未复现",
+          "limitations": "为什么现在值得看：它把“谁行动”与“怎么行动”一起学习，而非只手工固定角色顺序。实验仍以三个角色和有限环境为主，扩群与抗掉线结果不等于真实开放任务上的普遍可靠性。代码与训练模型有作者入口；本站核对原文，未运行或独立验证部署。",
+          "sourceUrl": "https://arxiv.org/abs/2610.22322",
+          "observedAt": "2026-10-19T08:09:28.903958+08:00",
+          "candidatePath": "HF每日论文与arXiv近期列表 → 12篇候选比较 → 核心方法/实验",
+          "deduplication": {
+            "window7": "2026-10-12..2026-10-18",
+            "window30": "2026-09-19..2026-10-18",
+            "sameCanonicalSource": [],
+            "result": "未发现同一选题的近7/30天重复；共享基础模型不同检查点不合并，跨栏独立事件分开。"
+          }
+        },
+        "editorialReview": {
+          "checkedAt": "2026-10-19T08:09:28.904374+08:00",
+          "result": "正文已对照原始资料，核对日期、当前开放状态、实验分母、使用门槛、许可和验证级别"
+        }
+      }
+    ],
+    "paperCandidateCount": 12,
+    "candidateEvidence": "docs/frontiers-source-audits/2026-10-19-evidence/paper-candidate-comparison.json"
+  },
+  "sourceGaps": [
+    "X/Reddit专用后端未配置，公众号持续采集未验证；仅取得一个OpenCode公开官方X公告，不宣称覆盖当天热榜。",
+    "Qwen、混元、MiniMax动态列表和部分国内官方入口时效有限；补查范围逐厂商列明，抓取空白不等于没有发布。",
+    "Exa连接超时；部分官方直连TLS/403错误，经Jina、官方API、RSS和web原文补查，错误与重试保留。",
+    "未建立两类独立近期热度信号和连续7/30天增长基线，因此不标近期热门，不虚构增量。",
+    "六篇论文均为预印本；模型/论文/项目未在本机运行，技术实践仅为合成算例。",
+    "整站接近1GB容量上限，许可明确论文也采用站内阅读卡及作者PDF链接，本期未新增全文PDF。"
+  ],
+  "errorsAndRecovery": [
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://www.alibabacloud.com/help/zh/model-studio/newly-released-models",
+      "checkedAt": "2026-10-19T07:29:40.036149+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://www.anthropic.com/research",
+      "checkedAt": "2026-10-19T07:29:39.721915+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://www.anthropic.com/news",
+      "checkedAt": "2026-10-19T07:29:39.727390+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://blog.google/technology/ai/",
+      "checkedAt": "2026-10-19T07:29:39.722907+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://research.google/blog/",
+      "checkedAt": "2026-10-19T07:29:39.723987+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://deepmind.google/discover/blog/",
+      "checkedAt": "2026-10-19T07:29:39.718075+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 400: Bad Request",
+      "url": "https://huggingface.co/api/daily_papers?date=2026-10-19",
+      "checkedAt": "2026-10-19T07:29:46.278952+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://www.microsoft.com/en-us/ai/blog/",
+      "checkedAt": "2026-10-19T07:44:25.991968+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://news.microsoft.com/source/view-all/",
+      "checkedAt": "2026-10-19T07:30:21.111080+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://news.microsoft.com/source/view-all/",
+      "checkedAt": "2026-10-19T07:29:44.805914+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 401: Unauthorized",
+      "url": "https://huggingface.co/orcarouter/OrcaCyber-Nano-1.0/raw/main/README.md",
+      "checkedAt": "2026-10-19T07:35:13.725756+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "checkedAt": "2026-10-19T07:29:43.938236+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://openai.com/news/rss.xml",
+      "checkedAt": "2026-10-19T07:29:39.722366+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://qwen.ai/blog",
+      "checkedAt": "2026-10-19T07:29:40.216212+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 422: Unprocessable Entity",
+      "url": "https://www.xinzhiyuan.com/",
+      "checkedAt": "2026-10-19T07:30:39.568232+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+      "url": "https://www.xinzhiyuan.com/",
+      "checkedAt": "2026-10-19T07:29:54.216444+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "source-collection",
+      "error": "HTTP Error 403: Forbidden",
+      "url": "https://z.ai/blog",
+      "checkedAt": "2026-10-19T07:44:26.152431+08:00",
+      "recovery": "保留失败；可用官方入口/读者代理/API继续，见source-register实际重试"
+    },
+    {
+      "stage": "content-check",
+      "error": "GGUF权重在初始证据提取中漏计，导致MicroTurn weightFileCount=0",
+      "recovery": "重新核对HF文件树及已取得的API metadata，补记microturn-duplex-lora.gguf；目标日期校验随后通过",
+      "checkedAt": "2026-10-19T08:10:45.185511+08:00"
+    }
+  ],
+  "discoveryPools": {
+    "news": {
+      "hot": "中英文AI媒体、HN讨论与近期榜单线索",
+      "newValue": "15家官方入口、具体公告/研究及读者任务"
+    },
+    "projects": {
+      "hot": "GitHub日周榜、Show HN和V2EX",
+      "newValue": "27个仓库元数据/README/许可/版本候选；已选10项另查入口实现"
+    },
+    "papers": {
+      "hot": "HF每日论文榜、arXiv近期列表",
+      "newValue": "12篇摘要及元数据比较，入选6篇核心方法/实验/基线细读"
+    }
+  },
+  "visualReview": {
+    "status": "passed",
+    "figures": [
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/autosft.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/03-论文精选.md"
+        ],
+        "level": "source-original",
+        "purpose": "每轮数据配方、训练和评估的闭环",
+        "sourceUrl": "https://arxiv.org/html/2610.22194v1/AutoSFT_Flow.png",
+        "sourceCheckedAt": "2026-10-18T23:44:53.141904+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://arxiv.org/html/2610.22194v1/AutoSFT_Flow.png",
+          "checkedAt": "2026-10-18T23:44:53.141904+00:00",
+          "status": "downloaded",
+          "bytes": 199747,
+          "sha256": "2cd7a8dee8a97b05b9b7b16953685068687db72fdbda8682a4527db5cc5135ca"
+        },
+        "sha256": "7dcf4fb71233b3329b1c6f4a6a7bc276345d4b9072669d7e875d38e2bb5f3e98",
+        "bytes": 121464,
+        "license": "CC BY 4.0，归属原文作者；完整原图，只转换编码格式",
+        "caption": "图中从数据配方到训练、评估再回到配方，表示每轮可以更换数据操作；不是沿同一个检查点无限续训。He 等，AutoSFT 原图，CC BY 4.0。中文说明与图分开，保留完整原图。（[来源原图](https://arxiv.org/abs/2610.22194)；[查看原尺寸](images/autosft.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://arxiv.org/html/2610.22194v1/AutoSFT_Flow.png",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.275958+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/cart.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/01-AI动态.md"
+        ],
+        "level": "source-original",
+        "purpose": "购物车权益提示与用户确认的交互位置",
+        "sourceUrl": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3._Card_points_and_promos_in_car.width-1200.format-webp.webp",
+        "sourceCheckedAt": "2026-10-18T23:44:53.141618+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3._Card_points_and_promos_in_car.width-1200.format-webp.webp",
+          "checkedAt": "2026-10-18T23:44:53.141618+00:00",
+          "status": "downloaded",
+          "bytes": 22516,
+          "sha256": "4f58453ce5e34ccf9a8c7cb3394b72a057acd21f592eb5dc6dbf11592fbdc45c"
+        },
+        "sha256": "4f58453ce5e34ccf9a8c7cb3394b72a057acd21f592eb5dc6dbf11592fbdc45c",
+        "bytes": 22516,
+        "license": "保留作者及来源，仅引用一幅图用于紧邻产品评论；未获得整页/素材的开放再分发许可，不宣称图片为开放授权",
+        "caption": "读图：优惠提示附着在购物车上，用户仍需确认条件与结账。Google 官方界面原图，仅作功能说明引用；示例优惠不是本站实测节省。（[来源原图](https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/)；[查看原尺寸](images/cart.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/3._Card_points_and_promos_in_car.width-1200.format-webp.webp",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276131+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/dataworld.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/03-论文精选.md"
+        ],
+        "level": "source-original",
+        "purpose": "机制真值、观测文件、审计和任务之间的顺序",
+        "sourceUrl": "https://arxiv.org/html/2610.21656v1/dataworld_main.png",
+        "sourceCheckedAt": "2026-10-18T23:44:53.142396+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://arxiv.org/html/2610.21656v1/dataworld_main.png",
+          "checkedAt": "2026-10-18T23:44:53.142396+00:00",
+          "status": "downloaded",
+          "bytes": 1404890,
+          "sha256": "d992cdb534e42d8ccd6d5df9d3132491b88a442aefe897d8dad28711f9a4de23"
+        },
+        "sha256": "a16f30c34ea2418f21c1d59674e1de925f12cb78b3aa6d18e88ddab6a26bb66d",
+        "bytes": 853544,
+        "license": "CC BY-NC-ND 4.0，本站非商业研究讲解，像素无损转WebP，中文说明位于图外",
+        "caption": "图 2，Li 等，Data World 原图，CC BY-NC-ND 4.0。先沿上方看机制与真值，再看观测文件、审计及任务；审计器不回写真值。图片未经修改，用于本站非商业研究讲解；密集标签请打开原尺寸，中文解读在图外。（[来源原图](https://arxiv.org/abs/2610.21656)；[查看原尺寸](images/dataworld.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://arxiv.org/html/2610.21656v1/dataworld_main.png",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276140+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/desk.jpg",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/04-开源项目.md"
+        ],
+        "level": "source-original",
+        "purpose": "真实桌面中窗口、抽屉和通知的层级",
+        "sourceUrl": "https://raw.githubusercontent.com/fyzugx/DEsk/main/docs/screenshots/desk.jpg",
+        "sourceCheckedAt": "2026-10-18T23:44:53.649549+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://raw.githubusercontent.com/fyzugx/DEsk/main/docs/screenshots/desk.jpg",
+          "checkedAt": "2026-10-18T23:44:53.649549+00:00",
+          "status": "downloaded",
+          "bytes": 119497,
+          "sha256": "45f87b2e175998018ba15874f1ff1eca583879e8913388339c54cff1751b499c"
+        },
+        "sha256": "45f87b2e175998018ba15874f1ff1eca583879e8913388339c54cff1751b499c",
+        "bytes": 119497,
+        "license": "MIT附图，保留作者/项目归属和完整LICENSE；ESP32固件GPL范围另述",
+        "caption": "中文读图：纸张样式是实际窗口，抽屉是应用入口，便签呈现通知。DEsk 维护者提供的真实桌面截图，MIT；用于说明界面组织，不是本站运行结果，也不证明 Agent 操作效果。（[来源原图](https://github.com/fyzugx/DEsk)；[查看原尺寸](images/desk.jpg)。）",
+        "originalCandidates": [
+          {
+            "url": "https://raw.githubusercontent.com/fyzugx/DEsk/main/docs/screenshots/desk.jpg",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276146+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/dspine.jpg",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/02-开源模型.md"
+        ],
+        "level": "source-original",
+        "purpose": "目标模型多深度特征到并行草稿的信息流",
+        "sourceUrl": "https://dspine-project.github.io/assets/overview.jpg",
+        "sourceCheckedAt": "2026-10-18T23:44:53.583429+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://dspine-project.github.io/assets/overview.jpg",
+          "checkedAt": "2026-10-18T23:44:53.583429+00:00",
+          "status": "downloaded",
+          "bytes": 489565,
+          "sha256": "9a27614d2cc1e13019411d3783254f5c956fdafa4ab901d10d5be67c2e0c7331"
+        },
+        "sha256": "9a27614d2cc1e13019411d3783254f5c956fdafa4ab901d10d5be67c2e0c7331",
+        "bytes": 489565,
+        "license": "Apache-2.0，保留来源/作者与完整LICENSE，t0示例属于Alpha版本",
+        "caption": "中文读图：左侧是目标模型各层，中部把上一时刻不同深度的特征送入草稿网络，右侧展示并行提出 token 的位置。腾讯 DSpine 官方结构图；它解释信息如何传递，不代表同等比例的端到端加速。（[来源原图](https://huggingface.co/tencent/Qwen3-8B-DSpine-b16)；[查看原尺寸](images/dspine.jpg)。）",
+        "originalCandidates": [
+          {
+            "url": "https://dspine-project.github.io/assets/overview.jpg",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276152+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/edgewise.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/03-论文精选.md"
+        ],
+        "level": "source-original",
+        "purpose": "本地默认执行与关键步云端委托",
+        "sourceUrl": "https://arxiv.org/html/2610.17560v1/pipeline.png",
+        "sourceCheckedAt": "2026-10-18T23:44:53.142160+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://arxiv.org/html/2610.17560v1/pipeline.png",
+          "checkedAt": "2026-10-18T23:44:53.142160+00:00",
+          "status": "downloaded",
+          "bytes": 297843,
+          "sha256": "30637aec3969c4457a8dcb2caee71b95a69fdbc1e96d820c9a93dd534ed914c0"
+        },
+        "sha256": "9a41aa67c01aae033bd244a742056bb9f0a6755b3d8c89b06ec738ef7e28a7d5",
+        "bytes": 208696,
+        "license": "CC BY 4.0，归属原文作者；完整原图，只转换编码格式",
+        "caption": "中文读图：本地模型是默认执行者，委托发生在它判断需要帮助的步骤；云端回复又回到同一任务上下文。Shi 等，EdgeWise 方法图，CC BY 4.0。箭头表示协作过程，不表示所有步骤都经过两个模型。（[来源原图](https://arxiv.org/abs/2610.17560)；[查看原尺寸](images/edgewise.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://arxiv.org/html/2610.17560v1/pipeline.png",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276158+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/esp32.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/04-开源项目.md"
+        ],
+        "level": "source-original",
+        "purpose": "手机屏幕、Agent观察和指针校准的对应",
+        "sourceUrl": "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png",
+        "sourceCheckedAt": "2026-10-18T23:44:53.965341+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png",
+          "checkedAt": "2026-10-18T23:44:53.965341+00:00",
+          "status": "downloaded",
+          "bytes": 1313656,
+          "sha256": "022e17e0aaa76e114eff6a9fbe22cafc4621944c2c2765198ef2e9dea7a9229a"
+        },
+        "sha256": "19f1ba8bc9c5a02fb0c50d528c6c58b08336b7c2898abe3d1d1cdf3f8a971c2d",
+        "bytes": 204718,
+        "license": "MIT附图，保留作者/项目归属和完整LICENSE；ESP32固件GPL范围另述",
+        "caption": "作者真实 App 截图：对照手机画面与经板子镜像后 Agent 收到的画面，再看指针校准。主体图片随 MIT 项目资料引用；固件的 GPL-3.0 范围另述。它展示观察链路，不是本站执行手机任务的记录。（[来源原图](https://github.com/onehumanbeing/esp32-iphone-agent)；[查看原尺寸](images/esp32.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276164+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/figma-specs.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/01-AI动态.md"
+        ],
+        "level": "source-original",
+        "purpose": "代码上下文到结构化规格的真实产品界面",
+        "sourceUrl": "https://cdn.sanity.io/images/599r6htc/regionalized/bbbca76b8e9aa644e38e72e1eb45083513d3e8a4-3840x2160.png",
+        "sourceCheckedAt": "2026-10-18T23:44:53.141057+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://cdn.sanity.io/images/599r6htc/regionalized/bbbca76b8e9aa644e38e72e1eb45083513d3e8a4-3840x2160.png",
+          "checkedAt": "2026-10-18T23:44:53.141057+00:00",
+          "status": "downloaded",
+          "bytes": 1165643,
+          "sha256": "e4f98954a67289834ed7414f618896caab1b2ba6ab614ebf4a3b239a6adf0509"
+        },
+        "sha256": "91f2c55272e2e1bb9020b4e2ee8f3fb97a551688e34b74f9fac0ba301527643c",
+        "bytes": 152876,
+        "license": "保留作者及来源，仅引用一幅图用于紧邻产品评论；未获得整页/素材的开放再分发许可，不宣称图片为开放授权",
+        "caption": "读图：左边是带 GitHub 上下文的请求，右边是生成的 spec。它说明需求文档与代码来源的连接，不代表生产代码已经验证。Figma 官方界面原图，仅作本条产品评述引用。（[来源原图](https://www.figma.com/blog/introducing-figma-specs/)；[查看原尺寸](images/figma-specs.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://cdn.sanity.io/images/599r6htc/regionalized/bbbca76b8e9aa644e38e72e1eb45083513d3e8a4-3840x2160.png",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276170+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/glimpse-concept.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/01-AI动态.md"
+        ],
+        "level": "imagegen",
+        "purpose": "说明推理中反复回看视觉证据，而非实际模型轨迹",
+        "sourceUrl": "https://elorian.ai/blog/introducing-glimpse",
+        "sourceCheckedAt": null,
+        "originalSourceSnapshot": {},
+        "sha256": "151ddb5df58dd97bd70ffe70096cf2e8361149a9b92e52bd5fcadc6fd20b9865",
+        "bytes": 222770,
+        "license": "本期原创解释图，明确AI生成或合成数据，不冒充实际模型结果",
+        "caption": "概念读图：重点看视觉材料与推理之间的回看关系。这是 AI 生成概念示意，不是 Glimpse 界面、模型轨迹或性能证据。（[事实依据](https://elorian.ai/blog/introducing-glimpse)；[查看原尺寸](images/glimpse-concept.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://elorian.ai/blog/introducing-glimpse",
+            "decision": "公告钳子照片不能代表完整视觉推理轨迹，选择概念示意"
+          }
+        ],
+        "promptPath": "content/frontiers/2026/10/2026-10-19/code/imagegen-prompt.txt",
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276175+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        },
+        "generationOutput": "/Users/fujiasen/.codex/generated_images/01a088de-fb45-7c00-bead-09bc5c14279e/exec-880931dd-72cc-4a91-9dc7-2bc79774c134.png",
+        "adoptedOutput": "content/frontiers/2026/10/2026-10-19/images/glimpse-concept.webp"
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/handwired.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/04-开源项目.md"
+        ],
+        "level": "source-original",
+        "purpose": "受限程序网络化后的作者可交互输出演示",
+        "sourceUrl": "https://raw.githubusercontent.com/chenglou/handwired/main/assets/demos-handwiredos.webp",
+        "sourceCheckedAt": "2026-10-18T23:44:53.808578+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://raw.githubusercontent.com/chenglou/handwired/main/assets/demos-handwiredos.webp",
+          "checkedAt": "2026-10-18T23:44:53.808578+00:00",
+          "status": "downloaded",
+          "bytes": 122266,
+          "sha256": "9ff8dd749adba0a6c72bef28e7087cf4f2ada54d772114132b837a616b9c58ae"
+        },
+        "sha256": "9ff8dd749adba0a6c72bef28e7087cf4f2ada54d772114132b837a616b9c58ae",
+        "bytes": 122266,
+        "license": "MIT附图，保留作者/项目归属和完整LICENSE；ESP32固件GPL范围另述",
+        "caption": "Handwired 作者的 HandwiredOS 演示截图，MIT。图中是受限演示程序的可交互输出；不是通用操作系统移植成功的证据，也不是本站测试。（[来源原图](https://github.com/chenglou/handwired)；[查看原尺寸](images/handwired.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://raw.githubusercontent.com/chenglou/handwired/main/assets/demos-handwiredos.webp",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276181+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/normalization.png",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/05-技术实践.md"
+        ],
+        "level": "html-js",
+        "purpose": "合成实际算例中加权均值、上限与再分配",
+        "sourceUrl": "https://arxiv.org/abs/2610.17666",
+        "sourceCheckedAt": null,
+        "originalSourceSnapshot": {},
+        "sha256": "340de87e31de72dc952ab308e903e11733ef878b3b9c42598b29ba2c6396d416",
+        "bytes": 93328,
+        "license": "本期原创解释图，明确AI生成或合成数据，不冒充实际模型结果",
+        "caption": "中文读图：第一行虽然按步骤平均为 1，右侧按 token 的平均只有 0.462；第二行修正尺度，但第一步权重超过上限；第三行截断后再分配。图由本机 Python 输出的合成数据经 HTML/JS 导出，非模型性能或训练实验。[原尺寸](images/normalization.png) · [原始输出](code/normalization-result.json) · [可复现 HTML](code/normalization.html)。",
+        "originalCandidates": [
+          {
+            "url": "https://arxiv.org/abs/2610.17666",
+            "decision": "论文原图不是本次合成运行结果；imagegen不适合精确数字，因此HTML/JS绑定实际JSON"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": "content/frontiers/2026/10/2026-10-19/code/normalization-result.json",
+        "sourcePath": "content/frontiers/2026/10/2026-10-19/code/render-normalization.mjs",
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276187+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      },
+      {
+        "file": "content/frontiers/2026/10/2026-10-19/images/t0.webp",
+        "articlePaths": [
+          "content/frontiers/2026/10/2026-10-19/02-开源模型.md"
+        ],
+        "level": "source-original",
+        "purpose": "未来已知协变量如何改变预测；明确Alpha示例不当Gamma结果",
+        "sourceUrl": "https://raw.githubusercontent.com/theforecastingcompany/tfc-t0/main/assets/enedis_with_holidays.webp",
+        "sourceCheckedAt": "2026-10-18T23:44:53.142618+00:00",
+        "originalSourceSnapshot": {
+          "url": "https://raw.githubusercontent.com/theforecastingcompany/tfc-t0/main/assets/enedis_with_holidays.webp",
+          "checkedAt": "2026-10-18T23:44:53.142618+00:00",
+          "status": "downloaded",
+          "bytes": 62188,
+          "sha256": "1c66fc4dcfdf3294dadf3d0e9b3c3854cb3c55fb63675829d4860e1806cc035f"
+        },
+        "sha256": "1c66fc4dcfdf3294dadf3d0e9b3c3854cb3c55fb63675829d4860e1806cc035f",
+        "bytes": 62188,
+        "license": "Apache-2.0，保留来源/作者与完整LICENSE，t0示例属于Alpha版本",
+        "caption": "中文读图：同一段负荷历史，在加入假日信息后，未来曲线的形状可以变化；阴影是预测区间。The Forecasting Company 的 t0 Alpha 示例原图（Apache-2.0），用于解释家族的协变量接口，不是 t0-gamma 的新评测。（[来源原图](https://huggingface.co/theforecastingcompany/t0-gamma)；[查看原尺寸](images/t0.webp)。）",
+        "originalCandidates": [
+          {
+            "url": "https://raw.githubusercontent.com/theforecastingcompany/tfc-t0/main/assets/enedis_with_holidays.webp",
+            "decision": "采用直接解释正文的原图，保持数值、图例、轴线与关系；格式压缩，不重新绘制"
+          }
+        ],
+        "promptPath": null,
+        "dataPath": null,
+        "sourcePath": null,
+        "inspection": {
+          "content": "原图和最终网页逐图查看，中文图注与上下文相符；生成图不冒充真实轨迹；实践数字与输出JSON吻合。",
+          "desktopMobile": "passed",
+          "checkedAt": "2026-10-19T08:12:05.276193+08:00",
+          "desktopViewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "mobileViewport": {
+            "width": 390,
+            "height": 1000
+          },
+          "layout": "全部图片加载成功、保持比例，无横向溢出或图注遮挡。",
+          "legibility": "方法原图的小字在手机缩略显示时需打开原尺寸；图外中文读图说明可读，原尺寸链接已提供。",
+          "screenshots": "docs/frontiers-source-audits/2026-10-19-evidence",
+          "results": "docs/frontiers-source-audits/2026-10-19-evidence/viewport-results.json"
+        }
+      }
+    ],
+    "itemAssessments": [
+      {
+        "module": "news",
+        "id": "glimpse",
+        "source": "https://elorian.ai/blog/introducing-glimpse",
+        "decision": "官方示例照片已查看，不能用作实际推理轨迹；使用imagegen概念图。",
+        "image": "glimpse-concept.webp"
+      },
+      {
+        "module": "news",
+        "id": "figma-specs",
+        "source": "https://www.figma.com/blog/introducing-figma-specs/",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "figma-specs.webp"
+      },
+      {
+        "module": "news",
+        "id": "goodfire-clean",
+        "source": "https://already-clean.goodfire.com/",
+        "decision": "已实际查看4d:477尖耳面部特征可视化原图；它可解释一个特征，但不能支撑本条重点90%神经计算假设，保留方法条件与正文限定。",
+        "image": null,
+        "originalCandidate": {
+          "url": "https://already-clean.goodfire.com/assets/v-figure-10x/fv-4d477.webp",
+          "checkedAt": "2026-10-19T00:08:46.081823+00:00",
+          "status": "downloaded",
+          "bytes": 33904,
+          "sha256": "1e33a7815d84ee860432c482756f6d27060c351cefc8209245033314ccfb50e2"
+        },
+        "sourceCandidateImage": ".frontiers/sources/2026-10-19/visuals/goodfire-candidate.webp",
+        "viewedAt": "2026-10-19T08:10:45.185589+08:00"
+      },
+      {
+        "module": "news",
+        "id": "google-universal-cart",
+        "source": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "cart.webp"
+      },
+      {
+        "module": "news",
+        "id": "amazon-bee",
+        "source": "https://www.aboutamazon.com/news/devices/amazon-personal-ai-bee-frontier-bee-eclipse",
+        "decision": "已实际查看Frontier腕带与Eclipse背贴原图；图解释外观，不解释已售/即将推出及服务状态，本条用文字对照。",
+        "image": null,
+        "originalCandidate": {
+          "url": "https://assets.aboutamazon.com/20/14/9d6951844795a24f71e544c24dce/bee-frontier-eclipse-hero-amazonnews-ck101426.jpg",
+          "checkedAt": "2026-10-19T00:08:46.082423+00:00",
+          "status": "downloaded",
+          "bytes": 367084,
+          "sha256": "cc80c0964462d1f3694ba1e24087f1ea3debca6ff12abf6466d2f6f164d570b7"
+        },
+        "sourceCandidateImage": ".frontiers/sources/2026-10-19/visuals/bee-candidate.jpg",
+        "viewedAt": "2026-10-19T08:10:45.185643+08:00"
+      },
+      {
+        "module": "models",
+        "id": "theforecastingcompany-t0-gamma",
+        "source": "https://huggingface.co/theforecastingcompany/t0-gamma",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "t0.webp"
+      },
+      {
+        "module": "models",
+        "id": "tencent-qwen3-8b-dspine-b16",
+        "source": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "dspine.jpg"
+      },
+      {
+        "module": "models",
+        "id": "xibushu-uniforge3d",
+        "source": "https://huggingface.co/xibushu/UniForge3D",
+        "decision": "已实际查看原方法图，左侧VGGT与DiT双向融合、右侧逐体素选视角；未取得该网站图的独立再分发许可，正文解释并保留项目入口。",
+        "image": "",
+        "originalCandidate": {
+          "url": "https://xishuxishu.github.io/uniforge3d-project/assets/pipeline.webp",
+          "checkedAt": "2026-10-19T00:08:46.082787+00:00",
+          "status": "downloaded",
+          "bytes": 146940,
+          "sha256": "0e3e52cf4203ef3119072d602830bd41cd9a2b05ca8f8652e6003426e11fd6bd"
+        },
+        "sourceCandidateImage": ".frontiers/sources/2026-10-19/visuals/uniforge-method.webp",
+        "viewedAt": "2026-10-19T08:10:45.185687+08:00"
+      },
+      {
+        "module": "models",
+        "id": "ozgurguler-ahenk-tts-tr",
+        "source": "https://huggingface.co/ozgurguler/ahenk-tts-tr",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "models",
+        "id": "codacus-qwen3.6-35b-a3b-microturn-duplex-lora",
+        "source": "https://huggingface.co/codacus/Qwen3.6-35B-A3B-MicroTurn-Duplex-LoRA",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "models",
+        "id": "mrm8488-embeddinggemma-2-ft-typed-decision",
+        "source": "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "papers",
+        "id": "2610.22194",
+        "source": "https://arxiv.org/abs/2610.22194",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "autosft.webp"
+      },
+      {
+        "module": "papers",
+        "id": "2610.17560",
+        "source": "https://arxiv.org/abs/2610.17560",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "edgewise.webp"
+      },
+      {
+        "module": "papers",
+        "id": "2610.20341",
+        "source": "https://arxiv.org/abs/2610.20341",
+        "decision": "原方法图已下载查看；arXiv非独占许可未确认本站再分发依据，本期正文解释并保留原文入口；无需再用流程框复述。",
+        "image": ""
+      },
+      {
+        "module": "papers",
+        "id": "2610.21656",
+        "source": "https://arxiv.org/abs/2610.21656",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "dataworld.webp"
+      },
+      {
+        "module": "papers",
+        "id": "2610.17666",
+        "source": "https://arxiv.org/abs/2610.17666",
+        "decision": "原方法图已下载查看；arXiv非独占许可未确认本站再分发依据，本期正文解释并保留原文入口；无需再用流程框复述。",
+        "image": ""
+      },
+      {
+        "module": "papers",
+        "id": "2610.22322",
+        "source": "https://arxiv.org/abs/2610.22322",
+        "decision": "原方法图已下载查看；arXiv非独占许可未确认本站再分发依据，本期正文解释并保留原文入口；无需再用流程框复述。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "parthh01-sphinx",
+        "source": "https://github.com/parthh01/sphinx",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "obsidianmd-pele",
+        "source": "https://github.com/obsidianmd/pele",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "finereli-whatsapp-mcp",
+        "source": "https://github.com/finereli/whatsapp-mcp",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "szerintedmi-callsitter",
+        "source": "https://github.com/szerintedmi/callsitter",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "fyzugx-desk",
+        "source": "https://github.com/fyzugx/DEsk",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "desk.jpg"
+      },
+      {
+        "module": "projects",
+        "id": "feder-cr-git-ai",
+        "source": "https://github.com/feder-cr/git-ai",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "chenglou-handwired",
+        "source": "https://github.com/chenglou/handwired",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "handwired.webp"
+      },
+      {
+        "module": "projects",
+        "id": "arahim3-digup",
+        "source": "https://github.com/ARahim3/DigUp",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      },
+      {
+        "module": "projects",
+        "id": "onehumanbeing-esp32-iphone-agent",
+        "source": "https://github.com/onehumanbeing/esp32-iphone-agent",
+        "decision": "采用匹配原图，中文读图与原尺寸入口",
+        "image": "esp32.webp"
+      },
+      {
+        "module": "projects",
+        "id": "asobeast-asobeast",
+        "source": "https://github.com/AsoBeast/asobeast",
+        "decision": "来源正文、卡片或README已读；本条使用门槛、实验条件或开放状态用段落/对照说明，未用Logo/封面填充。",
+        "image": ""
+      }
+    ],
+    "notes": [
+      "12幅图：来源原图10幅、imagegen1幅、HTML/JS合成结果1幅",
+      "完整原图候选及源数据哈希保留；本期最终图均保存images/",
+      "正文原图格式压缩，未修改数值或关键关系；Data World无损转码"
+    ],
+    "navigation": {
+      "overviewLinks": 5,
+      "paperCards": 6,
+      "fullSizeImage": {
+        "type": "full-size-image",
+        "complete": true,
+        "width": 1200,
+        "height": 720
+      },
+      "result": "全部实际点击成功",
+      "checkedAt": "2026-10-19T08:12:05.276199+08:00"
+    }
+  },
+  "technicalPractice": {
+    "status": "executed",
+    "python": "3.14.3",
+    "result": "content/frontiers/2026/10/2026-10-19/code/normalization-result.json",
+    "invariantCasesPassed": 5,
+    "scope": "手工合成权重与长度；验证归一化与符号，不是DeltaTTG完整训练复现"
+  },
+  "manualReview": {
+    "checkedAt": "2026-10-19T08:12:05.276201+08:00",
+    "result": "逐条对照日期、状态、实验条件、许可、近7/30天去重；桌面手机逐图查看和导读/六论文卡跳转通过。"
+  },
+  "evidenceDirectory": "docs/frontiers-source-audits/2026-10-19-evidence",
+  "checks": {
+    "targetDateCheck": {
+      "status": "passed",
+      "command": "npm run check:frontiers -- --date 2026-10-19",
+      "checkedAt": "2026-10-19T08:12:39.649190+08:00"
+    },
+    "initialBuild": {
+      "status": "passed",
+      "bytes": 999937391,
+      "note": "增加t0 NOTICE与导读措辞后将再次执行最终构建"
+    },
+    "browser": {
+      "status": "passed",
+      "viewports": [
+        1440,
+        390
+      ],
+      "modules": 6,
+      "imageChecks": 24,
+      "navigationChecks": 12
+    },
+    "finalBuild": {
+      "status": "passed",
+      "command": "npm run build",
+      "checkedAt": "2026-10-19T08:12:39.648981+08:00",
+      "bytes": 999938110,
+      "limitBytes": 1000000000
+    }
+  },
+  "supplementalChecks": [
+    {
+      "sourceUrl": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
+      "method": "web原页面正文读取；Jina返回icon-wechat.svg，未把该响应当公告正文",
+      "result": "原公告日期2026-08-28；超出本期窗口",
+      "recordedAt": "2026-10-19T08:10:45.185508+08:00"
+    }
+  ]
+}

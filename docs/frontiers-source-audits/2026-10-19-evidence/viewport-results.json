@@ -1,0 +1,330 @@
+[
+  {
+    "mode": "desktop",
+    "kind": "overview",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-19-news",
+      "#/read/frontiers-2026-10-19-models",
+      "#/read/frontiers-2026-10-19-papers",
+      "#/read/frontiers-2026-10-19-projects",
+      "#/read/frontiers-2026-10-19-practice"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "news",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/glimpse-concept.webp",
+        "alt": "视觉材料与推理笔记之间反复回看的概念示意",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 720,
+        "height": 480
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/figma-specs.webp",
+        "alt": "Figma官方示例由GitHub上下文生成配送功能技术说明",
+        "complete": true,
+        "naturalWidth": 3840,
+        "width": 720,
+        "height": 405
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/cart.webp",
+        "alt": "Google购物车在结账前展示卡片权益与优惠条件",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 720,
+        "height": 405
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "models",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/t0.webp",
+        "alt": "中文读图：同一段负荷历史，在加入假日信息后，未来曲线的形状可以变化；阴影是预测区间",
+        "complete": true,
+        "naturalWidth": 1760,
+        "width": 720,
+        "height": 405
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/dspine.jpg",
+        "alt": "中文读图：左侧是目标模型各层，中部把上一时刻不同深度的特征送入草稿网络，右侧展示并行提出 token 的位置",
+        "complete": true,
+        "naturalWidth": 4500,
+        "width": 719.9921875,
+        "height": 263.0390625
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "papers",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/autosft.webp",
+        "alt": "图中从数据配方到训练、评估再回到配方，表示每轮可以更换数据操作；不是沿同一个检查点无限续训",
+        "complete": true,
+        "naturalWidth": 2041,
+        "width": 719.96875,
+        "height": 184.84375
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/edgewise.webp",
+        "alt": "中文读图：本地模型是默认执行者，委托发生在它判断需要帮助的步骤；云端回复又回到同一任务上下文",
+        "complete": true,
+        "naturalWidth": 2027,
+        "width": 719.9921875,
+        "height": 346.6796875
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/dataworld.webp",
+        "alt": "图 2，Li 等，Data World 原图，CC BY-NC-ND 4.0",
+        "complete": true,
+        "naturalWidth": 1795,
+        "width": 719.9921875,
+        "height": 442.828125
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-22194",
+      "#/read/paper-2610-17560",
+      "#/read/paper-2610-20341",
+      "#/read/paper-2610-21656",
+      "#/read/paper-2610-17666",
+      "#/read/paper-2610-22322"
+    ]
+  },
+  {
+    "mode": "desktop",
+    "kind": "projects",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/desk.jpg",
+        "alt": "中文读图：纸张样式是实际窗口，抽屉是应用入口，便签呈现通知",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 720,
+        "height": 450
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/handwired.webp",
+        "alt": "Handwired 作者的 HandwiredOS 演示截图，MIT",
+        "complete": true,
+        "naturalWidth": 1520,
+        "width": 719.9921875,
+        "height": 378.9453125
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/esp32.webp",
+        "alt": "作者真实 App 截图：对照手机画面与经板子镜像后 Agent 收到的画面，再看指针校准",
+        "complete": true,
+        "naturalWidth": 1983,
+        "width": 719.984375,
+        "height": 326.7734375
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "desktop",
+    "kind": "practice",
+    "scrollWidth": 720,
+    "clientWidth": 720,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/normalization.png",
+        "alt": "三种归一化下每步权重及token加权平均的真实算例结果",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 720,
+        "height": 432
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-19-papers"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "overview",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-19-news",
+      "#/read/frontiers-2026-10-19-models",
+      "#/read/frontiers-2026-10-19-papers",
+      "#/read/frontiers-2026-10-19-projects",
+      "#/read/frontiers-2026-10-19-practice"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "news",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/glimpse-concept.webp",
+        "alt": "视觉材料与推理笔记之间反复回看的概念示意",
+        "complete": true,
+        "naturalWidth": 1536,
+        "width": 343.9921875,
+        "height": 229.328125
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/figma-specs.webp",
+        "alt": "Figma官方示例由GitHub上下文生成配送功能技术说明",
+        "complete": true,
+        "naturalWidth": 3840,
+        "width": 344,
+        "height": 193.5
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/cart.webp",
+        "alt": "Google购物车在结账前展示卡片权益与优惠条件",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 344,
+        "height": 193.5
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "models",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/t0.webp",
+        "alt": "中文读图：同一段负荷历史，在加入假日信息后，未来曲线的形状可以变化；阴影是预测区间",
+        "complete": true,
+        "naturalWidth": 1760,
+        "width": 344,
+        "height": 193.5
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/dspine.jpg",
+        "alt": "中文读图：左侧是目标模型各层，中部把上一时刻不同深度的特征送入草稿网络，右侧展示并行提出 token 的位置",
+        "complete": true,
+        "naturalWidth": 4500,
+        "width": 343.9921875,
+        "height": 125.671875
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "papers",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/autosft.webp",
+        "alt": "图中从数据配方到训练、评估再回到配方，表示每轮可以更换数据操作；不是沿同一个检查点无限续训",
+        "complete": true,
+        "naturalWidth": 2041,
+        "width": 343.9765625,
+        "height": 88.3125
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/edgewise.webp",
+        "alt": "中文读图：本地模型是默认执行者，委托发生在它判断需要帮助的步骤；云端回复又回到同一任务上下文",
+        "complete": true,
+        "naturalWidth": 2027,
+        "width": 343.9921875,
+        "height": 165.6328125
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/dataworld.webp",
+        "alt": "图 2，Li 等，Data World 原图，CC BY-NC-ND 4.0",
+        "complete": true,
+        "naturalWidth": 1795,
+        "width": 343.9921875,
+        "height": 211.5703125
+      }
+    ],
+    "internalLinks": [
+      "#/read/paper-2610-22194",
+      "#/read/paper-2610-17560",
+      "#/read/paper-2610-20341",
+      "#/read/paper-2610-21656",
+      "#/read/paper-2610-17666",
+      "#/read/paper-2610-22322"
+    ]
+  },
+  {
+    "mode": "mobile",
+    "kind": "projects",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/desk.jpg",
+        "alt": "中文读图：纸张样式是实际窗口，抽屉是应用入口，便签呈现通知",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 344,
+        "height": 215
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/handwired.webp",
+        "alt": "Handwired 作者的 HandwiredOS 演示截图，MIT",
+        "complete": true,
+        "naturalWidth": 1520,
+        "width": 343.984375,
+        "height": 181.046875
+      },
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/esp32.webp",
+        "alt": "作者真实 App 截图：对照手机画面与经板子镜像后 Agent 收到的画面，再看指针校准",
+        "complete": true,
+        "naturalWidth": 1983,
+        "width": 343.9921875,
+        "height": 156.125
+      }
+    ],
+    "internalLinks": []
+  },
+  {
+    "mode": "mobile",
+    "kind": "practice",
+    "scrollWidth": 344,
+    "clientWidth": 344,
+    "images": [
+      {
+        "src": "http://127.0.0.1:50619/github-learning-site/documents/frontiers/2026/10/2026-10-19/images/normalization.png",
+        "alt": "三种归一化下每步权重及token加权平均的真实算例结果",
+        "complete": true,
+        "naturalWidth": 1200,
+        "width": 343.9921875,
+        "height": 206.3984375
+      }
+    ],
+    "internalLinks": [
+      "#/read/frontiers-2026-10-19-papers"
+    ]
+  }
+]
